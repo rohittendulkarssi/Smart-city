@@ -1,0 +1,37 @@
+{
+    "id": "c61ffd6a-e449-4eb0-b05d-f3aa76406d36",
+    "author": "",
+    "widgets": [
+        {
+            "id": "smart_city",
+            "name": "smart_city",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
+    ],
+    "sidebarLinks": [
+        {
+            "id": "smart_cityLink",
+            "label": "",
+            "description": "",
+            "target": "",
+            "icon": "",
+            "roles":[]
+        }
+    ],
+    "uis": [
+        {
+            "id": "smart_cityLink",
+            "label":"",
+            "description": "",
+            "roles": []
+        }
+    ],
+    "menuItems": [
+        {
+            "id": "smart_cityLink",
+            "title": "smart_city"
+        }
+    ]
+}

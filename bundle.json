@@ -1,0 +1,46 @@
+{
+    "id": "e6a7f72a-85de-4259-ed4e-7412d22635d9",
+    "author": "",
+    "widgets": [
+        {
+            "id": "order_Trend",
+            "name": "Order Trend",
+            "description": "Order Trend widget",
+            "icon": "",
+            "tags":[]
+        },
+
+        {
+            "id": "Order_Summary",
+            "name": "Order Summary",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+
+        {
+            "id": "segregation_Metrics",
+            "name": "Segregation Metrics",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        
+        {
+            "id": "cctvWidget",
+            "name": "CCTV Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        } 
+    ],
+    "sidebarLinks": [
+        
+    ],
+    "uis": [
+       
+    ],
+    "menuItems": [
+        
+    ]
+}
