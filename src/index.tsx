@@ -418,36 +418,42 @@ const Waste_binWidget: React.FunctionComponent<IWidgetProps> = () => {
 
 
 
-// const Waste_CollectionWidget: React.FunctionComponent<IWidgetProps> = () => {  
+const Waste_CollectionWidget: React.FunctionComponent<IWidgetProps> = () => {  
 
-//     return ( 
+    return ( 
 
-//          <WidgetWrapper className="smart-city_box waste-bin-box">  
+         <WidgetWrapper className="smart-city_box waste-collection-vehicle">  
 
-//             <TitleBar title="Waste Collection vehicle"></TitleBar> 
+            <TitleBar title="Waste Collection vehicle"></TitleBar> 
 
-//             <div className="smart-city-content">  
+            <div className="smart-city-content">  
 
-//                 <div className='status-content'>
-//                         <div className='status attention-status'>
-//                             <h3>68</h3>
-//                             <p>Attention</p>
-//                         </div>
-//                         <div className='status pending-status'>
-//                             <h3>36</h3>
-//                             <p>Pending</p>
-//                         </div>
-//                         <div className='status resolved-status'>
-//                             <h3>79</h3>
-//                             <p>Resloved</p>
-//                         </div>
-//                 </div>
+                <div className='status-content'>
+                        <div className='status attention-status'>
+                            <div className='vahicle-icon co2-icon'></div>
+                            <p>Carbon Footprint</p>
+                            <h2>1,236.0</h2>
+                            <span>mgCO2</span>
+                        </div>
+                        <div className='status fuel-consumption-status'>
+                            <div className='vahicle-icon fuel-consumption-icon'></div>
+                            <p>Fuel Consumption</p>
+                            <h2>1,500</h2>
+                            <span>Gallons</span>
+                        </div>
+                        <div className='status s-consumption-status'>
+                            <div className='vahicle-icon s-consumption-icon'></div>
+                            <p>S Consumption</p>
+                            <h2>80,730</h2>
+                            <span>Riyal</span>
+                        </div>
+                </div>
   
-//             </div>
+            </div>
 
-//         </WidgetWrapper> 
-//     )
-// }; 
+        </WidgetWrapper> 
+    )
+}; 
 
 
 

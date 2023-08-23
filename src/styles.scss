@@ -239,6 +239,97 @@
             }
         }
     }
+
+
+    &.waste-collection-vehicle{ 
+
+        .smart-city-content{
+             
+            .status-content{
+                display: flex;
+                width: 100%;
+                padding: 0.5em 8% 3em 8%;
+
+                .status{
+                    display: inline-block;
+                    width: 33%;
+                    text-align: center;
+
+                    .vahicle-icon{
+                        display: inline-block;
+                        width: 60px;
+                        height: 60px;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 65% auto;
+                        margin-bottom: 0.5em;
+                        background-color: #ffffff9c;
+                        border-radius: 10px;
+
+                        &.co2-icon{
+                            background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);
+                        }
+                        &.fuel-consumption-icon{
+                            background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);
+                        }
+                        &.s-consumption-icon{
+                            background-image: url(https://static.iviva.com/images/Udhayimages/money.png);
+                        }
+                    }
+
+                    p{
+                        font-size: 0.9em;
+                        padding: 0em 0 0 0;
+                        margin: 0;
+                        color: #fff;
+                    }
+                    h2{
+                        font-size: 2.2em;
+                        padding: 0;
+                        margin: 0.4em 0 0.2em 0;
+                        color: #fff;
+                    }
+                   span{
+                        font-size: 0.75em;
+                        color: #fff;
+                   }
+
+                }
+            }
+
+
+            .technician_chart{
+                .chart-sec{
+                    width: 100%;
+                    display: flex;
+                    margin-top: 1.2em;
+
+                    .chart-issue{
+                       display: inline-block;
+                       width: 75%;
+                       text-align: center;
+                    }
+                    .chart-pending{
+                        display: inline-block;
+                        width: 25%;
+                        text-align: center;
+                    }
+                    h3{
+                        font-size: 2em;
+                        padding: 0;
+                        margin: 0;
+                        color: #fff;
+                    }
+                    p{
+                        font-size: 1em;
+                        padding: 0;
+                        margin: 0.5em 0 0 0;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

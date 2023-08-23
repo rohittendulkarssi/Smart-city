@@ -37,7 +37,14 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        }  
+        },
+        {
+            "id": "waste_Collection_Vehicle",
+            "name": "Waste Collection Vehicle",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
         
         
     ],
