@@ -10,6 +10,53 @@
 //     display: inline-flex;
 //     color: #000; 
 
+
+.main-content-block {
+    width: 100%;
+    display: inline-block;
+    background-image: url(/images/al_haram-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+    &::before{
+        content: "";
+        background: #023d28;
+        left: 0;
+        top: 0;
+        width: 35%;
+        height: 112vh;
+        position: absolute;
+        z-index:0;
+        background: rgb(2,61,40);
+        background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 41 26) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &::after{
+        content: "";
+        // background: #023d28;
+        right: 0;
+        top: 0;
+        width: 35%;
+        height: 112vh;
+        position: absolute;
+        z-index:0;
+
+        background: rgb(2,61,40);
+       // background: linear-gradient(270deg, rgba(2,61,40,1) 0%, rgba(2,61,40,1) 50%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(270deg, rgb(0 0 0) 0%, rgb(0 41 26) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .widget-container-block {
+        z-index: 1;
+        position: relative;
+        min-height: 112vh;
+        background: #023d2875;
+    }
+}
+
     .smart-city_box{
         // width: 40%;
         // display: inline-block;
@@ -18,44 +65,9 @@
         box-shadow: none;
         border-radius: 10px;
         z-index: 1;
-        // border-radius: 25px;
-        // padding: 20px;
-        // position: absolute;
-        // left: 3%;
-        // top: 8%;
-        // z-index: 9999;
-        // height: 76%;
-        /* backdrop-filter: blur(34px); */
-        // box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1803921569);
-        // opacity: 1;
-        // height: auto;
-
-        // .header{
-        //     width: 100%;
-        //     display: inline-flex;
-        //     position: relative;
-        //     padding: 10px 0 20px 0;
-
-        //     .title{
-        //         width: 100%;
-        //         display: inline-block;
-        //         font-size: 1.2em;
-        //         padding: 0;
-        //         margin: 0;
-        //         position: relative;
-        //         text-transform: uppercase;
-        //         color: #ffffff;
-        //     }
-           
-        // }  
+        
          .uxp-widget-title-bar{
-            // background: transparent;
-            // color: #001810;
-            // border-bottom: 1px solid #001810;
-            // margin-bottom: 1em;
-            // padding: 0;
-            // outline: none;
-            // min-height: 30px;
+            
 
             background: transparent;
             color: #1dcb8d;
@@ -64,26 +76,28 @@
             padding: 0;
             outline: none;
             min-height: 30px;
+            width: 95%;
         }
 
     .smart-city-content{ 
         display: inline-block;
         // width: 100%;
         width: 95%;
-        margin-top: 0em; 
-
-        
+        margin-top: 1em;  
     
     }  
 
-    // &.order_trend-box{
-    //     left: 2%;
-    //     width: 43%;
-    //     top: 3%;
-    // }
+    &.order_trend-box{
+        .smart-city-content{
+            .technician_chart{ 
+                .recharts-text{
+                    fill:#ededed;
+                }
+            } 
+        }
+    }
 
-    &.order_summary-box{
-        
+    &.order_summary-box{ 
 
         .smart-city-content{
             height: 250px; 
@@ -147,6 +161,84 @@
             background-repeat: no-repeat;
         }
     }
+
+    &.waste-bin-box{ 
+
+        .smart-city-content{
+             
+            .status-content{
+                display: flex;
+                width: 100%;
+                padding: 0.5em 8% 3em 8%;
+
+                .status{
+                    display: inline-block;
+                    width: 33%;
+                    text-align: center;
+
+                    h3{
+                        font-size: 1.8em;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    p{
+                        font-size: 1em;
+                        padding: 1em 0 0 0;
+                        margin: 0;
+                        color: #fff;
+                    }
+
+                &.attention-status{
+                    h3{
+                       color: rgb(211, 1, 1);
+                    } 
+                }
+                &.pending-status{
+                    h3{
+                        color: rgb(218, 218, 1);
+                    } 
+                }
+                &.resolved-status{
+                    h3{
+                        color: rgb(19 232 61);
+                    } 
+                }
+                }
+            }
+
+
+            .technician_chart{
+                .chart-sec{
+                    width: 100%;
+                    display: flex;
+                    margin-top: 1.2em;
+
+                    .chart-issue{
+                       display: inline-block;
+                       width: 75%;
+                       text-align: center;
+                    }
+                    .chart-pending{
+                        display: inline-block;
+                        width: 25%;
+                        text-align: center;
+                    }
+                    h3{
+                        font-size: 2em;
+                        padding: 0;
+                        margin: 0;
+                        color: #fff;
+                    }
+                    p{
+                        font-size: 1em;
+                        padding: 0;
+                        margin: 0.5em 0 0 0;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -154,51 +246,6 @@
 // }
 
 
-.main-content-block {
-    width: 100%;
-    display: inline-block;
-    background-image: url(/images/al_haram-bg.jpg);
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-
-
-    &::before{
-        content: "";
-        background: #023d28;
-        left: 0;
-        top: 0;
-        width: 35%;
-        height: 112vh;
-        position: absolute;
-        z-index:0;
-        background: rgb(2,61,40);
-        background: linear-gradient(90deg, rgba(2,61,40,1) 0%, rgba(2,61,40,1) 50%, rgba(255,255,255,0) 100%);
-    }
-
-    &::after{
-        content: "";
-        // background: #023d28;
-        right: 0;
-        top: 0;
-        width: 35%;
-        height: 112vh;
-        position: absolute;
-        z-index:0;
-
-        background: rgb(2,61,40);
-        background: linear-gradient(270deg, rgba(2,61,40,1) 0%, rgba(2,61,40,1) 50%, rgba(255,255,255,0) 100%);
-
-    }
-
-    .widget-container-block {
-        z-index: 1;
-        position: relative;
-        min-height: 112vh;
-        background: #023d2875;
-    }
-}
 // .smart_widget_pict{
 //     width: 100%;
 //     display: inline-block;

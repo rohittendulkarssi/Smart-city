@@ -10,7 +10,9 @@ import { Pie } from 'react-chartjs-2';
 
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Cell, ComposedChart, } from 'recharts';
 
-import { ResponsivePie } from '@nivo/pie'
+import { ResponsivePie } from '@nivo/pie';
+
+import { Line, Circle } from 'rc-progress';
 
 interface IWidgetProps {
     uxpContext?: IContextProvider,
@@ -70,10 +72,7 @@ export default class OrderSummary extends PureComponent {
     );
   }
 }
-
- 
-   
- 
+  
 
 const Order_TrendWidget: React.FunctionComponent<IWidgetProps> = () => {  
 
@@ -91,8 +90,7 @@ const Order_TrendWidget: React.FunctionComponent<IWidgetProps> = () => {
 
         </WidgetWrapper> 
     )
-};
-
+}; 
 
 
 const Order_SummaryWidget: React.FunctionComponent<IWidgetProps> = () => {  
@@ -244,12 +242,7 @@ const getDataItems = (max: number, pageToken: string) => {
 
 
 const Segregation_MetricsWidget: React.FunctionComponent<IWidgetProps> = () => {  
-
-    // <Bar barSize={20} dataKey="Aug_duration_meeting" fill="#025639" />
-    // <Bar barSize={25} dataKey="Total_hours_booked" fill="#0c7652" />
-    // <Bar barSize={25} dataKey="Total_hours_accupied" fill="#0c2e23" />
-    
-
+ 
 
 var data =[
     {
@@ -383,6 +376,81 @@ const CCTVWidget: React.FunctionComponent<IWidgetProps> = () => {
     )
 };
 
+
+
+const Waste_binWidget: React.FunctionComponent<IWidgetProps> = () => {  
+
+    return ( 
+
+         <WidgetWrapper className="smart-city_box waste-bin-box">  
+
+            <TitleBar title="Waste Bin Status"></TitleBar> 
+
+            <div className="smart-city-content">  
+
+                <div className='status-content'>
+                        <div className='status attention-status'>
+                            <h3>68</h3>
+                            <p>Attention</p>
+                        </div>
+                        <div className='status pending-status'>
+                            <h3>36</h3>
+                            <p>Pending</p>
+                        </div>
+                        <div className='status resolved-status'>
+                            <h3>79</h3>
+                            <p>Resloved</p>
+                        </div>
+                </div>
+
+                <div className="technician_chart">  
+                    <Line percent={70} strokeWidth={1.5} strokeColor="#076d49" />
+                    <div className='chart-sec'>
+                        <div className='chart-issue'><h3>147</h3><p>Issued</p></div>
+                        <div className='chart-pending'><h3>36</h3><p>Pending</p></div>
+                    </div>
+                </div>  
+            </div>
+
+        </WidgetWrapper> 
+    )
+}; 
+
+
+
+// const Waste_CollectionWidget: React.FunctionComponent<IWidgetProps> = () => {  
+
+//     return ( 
+
+//          <WidgetWrapper className="smart-city_box waste-bin-box">  
+
+//             <TitleBar title="Waste Collection vehicle"></TitleBar> 
+
+//             <div className="smart-city-content">  
+
+//                 <div className='status-content'>
+//                         <div className='status attention-status'>
+//                             <h3>68</h3>
+//                             <p>Attention</p>
+//                         </div>
+//                         <div className='status pending-status'>
+//                             <h3>36</h3>
+//                             <p>Pending</p>
+//                         </div>
+//                         <div className='status resolved-status'>
+//                             <h3>79</h3>
+//                             <p>Resloved</p>
+//                         </div>
+//                 </div>
+  
+//             </div>
+
+//         </WidgetWrapper> 
+//     )
+// }; 
+
+
+
  
 /**
  * Register as a Widget
@@ -441,6 +509,33 @@ registerWidget({
     }
 }); 
 
+
+registerWidget({
+    id: "wasteBinStatus", 
+    widget: Waste_binWidget,
+    configs: {
+        layout: {
+            // w: 12,
+            // h: 12,
+            // minH: 12,
+            // minW: 12
+        }
+    }
+}); 
+
+
+registerWidget({
+    id: "waste_Collection_Vehicle", 
+    widget: Waste_CollectionWidget,
+    configs: {
+        layout: {
+            // w: 12,
+            // h: 12,
+            // minH: 12,
+            // minW: 12
+        }
+    }
+}); 
 
 
 /**

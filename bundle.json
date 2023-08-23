@@ -16,23 +16,30 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        },
-
+        }, 
         {
             "id": "segregation_Metrics",
             "name": "Segregation Metrics",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        },
-        
+        }, 
         {
             "id": "cctvWidget",
             "name": "CCTV Widget",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        } 
+        },
+        {
+            "id": "wasteBinStatus",
+            "name": "Waste Bin Status",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }  
+        
+        
     ],
     "sidebarLinks": [
         
