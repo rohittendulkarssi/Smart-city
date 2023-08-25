@@ -44,7 +44,36 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
+        },
+        {
+            "id": "segregation_Metrics_vehicle",
+            "name": "Segregation Metrics Vehicle",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }, 
+        {
+            "id": "vehicleSummaryWidget",
+            "name": "Vehicle Summary Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }, 
+        {
+            "id": "energyConsumption",
+            "name": "Energy Consumption Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }, 
+        {
+            "id": "waterSummary",
+            "name": "Energy Consumption Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
         }
+        
         
         
     ],

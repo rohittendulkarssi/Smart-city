@@ -1,16 +1,4 @@
-// .widget-wrapper{
-//     border-radius: 25px;
-//     z-index: 1;
-// }
-
-// .smart-city_widget{
-//     width: 100%;
-//     height: 100%;
-//     padding: 0px;
-//     display: inline-flex;
-//     color: #000; 
-
-
+ 
 .main-content-block {
     width: 100%;
     display: inline-block;
@@ -27,7 +15,7 @@
         left: 0;
         top: 0;
         width: 35%;
-        height: 112vh;
+        height: 162vh;
         position: absolute;
         z-index:0;
         background: rgb(2,61,40);
@@ -40,7 +28,7 @@
         right: 0;
         top: 0;
         width: 35%;
-        height: 112vh;
+        height: 162vh;
         position: absolute;
         z-index:0;
 
@@ -52,7 +40,7 @@
     .widget-container-block {
         z-index: 1;
         position: relative;
-        min-height: 112vh;
+        min-height: 162vh;
         background: #023d2875;
     }
 }
@@ -66,9 +54,7 @@
         border-radius: 10px;
         z-index: 1;
         
-         .uxp-widget-title-bar{
-            
-
+         .uxp-widget-title-bar{ 
             background: transparent;
             color: #1dcb8d;
             border-bottom: 1px solid #c2e6da;
@@ -77,6 +63,17 @@
             outline: none;
             min-height: 30px;
             width: 95%;
+        }
+
+        .sub_title_bar{
+            border-bottom: 1px solid #c2e6da;
+            margin-bottom: 1em;
+            padding: 0;
+            min-height: 20px;
+            width: 100%;
+            font-size: 1em;
+            color: #fff;
+            font-weight: 600;
         }
 
     .smart-city-content{ 
@@ -141,14 +138,7 @@
             }
         }
     }
-
-    // &.segregation_metrics-box{
-    //     right: 2%;
-    //     left: auto;
-    //     top: 3%;
-    //     width: 43%;
-    // }
-
+ 
     &.cctv-box{ 
 
         .body{
@@ -330,18 +320,265 @@
             }
         }
     }
+
+    &.vehicle_summary-box{
+        .smart-city-content{
+            .technician_chart{
+                text{color: #fff; fill:#fff!important;} 
+            }
+        }
+    }
+
+    &.energy_consumption-box{ 
+        .technician_chart{
+            margin-top: 1em;
+            .highcharts-background{
+                fill: transparent; 
+            }
+            .highcharts-axis-labels, .highcharts-legend-item{
+                text{ fill:#fff!important;} 
+            }
+            .highcharts-title{
+                fill:#fff!important;
+            }
+        }
+    }
+
+
+    &.water_summary-box{ 
+
+        .smart-city-content{
+             
+            .status-content{
+                display: flex;
+                width: 100%;
+                padding: 0.5em 0% 0em 0%;
+
+                .status{
+                    display: inline-block;
+                    width: 33%;
+                    text-align: center;
+                    background-color: rgba(0, 97, 67, 0.61);
+                    border-radius: 10px;
+                    margin-right: 4%;
+                    padding-bottom: 2em;
+
+                    .vahicle-icon{
+                        display: inline-block;
+                        width: 100px;
+                        height: 100px;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 75% auto;
+                        margin-bottom: 0.5em;
+                       
+                       
+
+                        &.co2-icon{
+                            background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);
+                        }
+                        &.fuel-consumption-icon{
+                            background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);
+                        }
+                        &.s-consumption-icon{
+                            background-image: url(https://static.iviva.com/images/Udhayimages/money.png);
+                        }
+                    }
+
+                    p{
+                        font-size: 1em;
+                        padding: 0em 0 0 0;
+                        margin: 0;
+                        color: #fff;
+                    }
+                    h2{
+                        font-size: 2.7em;
+                        padding: 0;
+                        margin: 0.4em 0 0.2em 0;
+                        color: #fff;
+                    }
+                   span{
+                        font-size: 0.85em;
+                        padding-bottom: 1em;
+                       
+                        &.red{
+                            color: #ff0000;
+                        }
+                        &.green{
+                            color: #00e51a;
+                        }
+                   }
+
+                }
+            }
+ 
+        }
+    }
 }
 
 
+ 
 
-// }
+ 
+   
+   
+  
+  // After Hours Start
+  .afterhours_inner_widget {
+    display: inline-block;
+    width: 100%;
+    margin-top: -8px;
+    .afterhours_tree {
+      display: inline-flex;
+      width: 98%; 
+      height: 100%;
+      position: relative;
+     
+  
+      ul {
+        margin: 3px 0 0 0;
+        padding: 0;
+        display: inline-block;
+        width: 95%;
+        margin-left: 5%;
+        column-count: 2;
+  
+        li {
+            display: inline-block;
+            padding-left: 10px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 3px 0;
+           
+          &:last-child {
+            &::before {
+              display: none;
+            }
+          }
+          p {
+            font-size: 9px;
+            margin: 4px 0;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            color: #fff;
 
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: -20px;
+                width: 15px;
+                height: 7px;
+                text-align: center;
+                pointer-events: none;
+                border-radius: 2px;
+              }
 
-// .smart_widget_pict{
-//     width: 100%;
-//     display: inline-block;
-//     background-image: url(/images/al_haram-bg.jpg);
-//     background-size: 100% 100%;
-//     background-position: center center;
-//     background-repeat: no-repeat;
-// }
+            span { 
+                width: 18%;
+                font-size: 8px;
+                float: right; 
+            }
+          }
+
+            &:nth-child(n + 1) { p {&::before { background-color: #82d963; }}} 
+            &:nth-child(n + 2) { p {&::before { background-color: #f5ec00; }}} 
+            &:nth-child(n + 3) { p {&::before { background-color: #d879e1; }}} 
+            &:nth-child(n + 4) { p {&::before { background-color: #5ee3f4; }}} 
+            &:nth-child(n + 5) { p {&::before { background-color: #7cbef6; }}} 
+            &:nth-child(n + 6) { p {&::before { background-color: #9d7cf6; }}} 
+            &:nth-child(n + 7) { p {&::before { background-color: #f79598; }}}  
+            &:nth-child(n + 8) { p {&::before { background-color: #f6a67c; }}}  
+            &:nth-child(n + 9) { p {&::before { background-color: #1057b4; }}} 
+            &:nth-child(n + 10) { p {&::before { background-color: #0bccb2; }}} 
+            &:nth-child(n + 11) { p {&::before { background-color: #650bcc; }}}  
+            &:nth-child(n + 12) { p {&::before { background-color: #3bcc0b; }}}  
+            &:nth-child(n + 13) { p {&::before { background-color: #0bccb2; }}} 
+            &:nth-child(n + 14) { p {&::before { background-color: #0b42cc; }}} 
+            &:nth-child(n + 15) { p {&::before { background-color: #cc0b58; }}}  
+            &:nth-child(n + 16) { p {&::before { background-color: #e0a3e7; }}}  
+            &:nth-child(n + 17) { p {&::before { background-color: #67d7e9; }}} 
+            &:nth-child(n + 18) { p {&::before { background-color: #bfcc0b; }}} 
+            &:nth-child(n + 19) { p {&::before { background-color: #0b78cc; }}}  
+            &:nth-child(n + 20) { p {&::before { background-color: #cc0b78; }}}  
+            &:nth-child(n + 21) { p {&::before { background-color: #f21456; }}} 
+            &:nth-child(n + 22) { p {&::before { background-color: #650bcc; }}} 
+            &:nth-child(n + 23) { p {&::before { background-color: #0b78cc; }}}  
+            &:nth-child(n + 24) { p {&::before { background-color: #06f51a; }}} 
+ 
+          }
+        }
+      }
+     
+
+    .color_value {
+      display: inline-block;
+      width: 100%; 
+      ul {
+        display: flex;
+        margin: 0;
+        padding: 0; 
+        overflow: hidden;
+        li {
+          display: inline-block;
+          height: 4vh;
+          width: 10vw;
+  
+          &:nth-child(n + 1) { background-color: #82d963; }
+          &:nth-child(n + 2) { background-color: #f5ec00; }
+          &:nth-child(n + 3) { background-color: #d879e1; }
+          &:nth-child(n + 4) { background-color: #5ee3f4; }
+          &:nth-child(n + 5) { background-color: #7cbef6; }
+          &:nth-child(n + 6) { background-color: #9d7cf6; }
+          &:nth-child(n + 7) { background-color: #f79598; }
+          &:nth-child(n + 8) { background-color: #f6a67c; }
+          &:nth-child(n + 9) { background-color: #1057b4; }
+          &:nth-child(n + 10) { background-color: #0bccb2; }
+          &:nth-child(n + 11) { background-color: #650bcc; }
+          &:nth-child(n + 12) { background-color: #3bcc0b; }
+          &:nth-child(n + 13) { background-color: #0bccb2; }
+          &:nth-child(n + 14) { background-color: #0b42cc; }
+          &:nth-child(n + 15) { background-color: #cc0b58; }
+          &:nth-child(n + 16) { background-color: #e0a3e7; }
+          &:nth-child(n + 17) { background-color: #67d7e9; }
+          &:nth-child(n + 18) { background-color: #bfcc0b; }
+          &:nth-child(n + 19) { background-color: #0b78cc; }
+          &:nth-child(n + 20) { background-color: #cc0b78; } 
+          &:nth-child(n + 21) { background-color: #f21456; }
+          &:nth-child(n + 22) { background-color: #650bcc; }
+          &:nth-child(n + 23) { background-color: #0b78cc; }
+          &:nth-child(n + 24) { background-color: #06f51a; }
+        }
+      }
+    }
+  }
+  
+  .afterhours-arrow {
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.445' height='23.445' viewBox='0 0 23.445 23.445'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23424242;opacity:0.333;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M23.445,11.722A11.722,11.722,0,1,1,11.722,0,11.72,11.72,0,0,1,23.445,11.722ZM9.643,6.239v5.483H6.291a.568.568,0,0,0-.4.969l5.431,5.4a.562.562,0,0,0,.8,0l5.431-5.4a.567.567,0,0,0-.4-.969H13.8V6.239a.569.569,0,0,0-.567-.567H10.21A.569.569,0,0,0,9.643,6.239Z' transform='translate(23.445) rotate(90)'/%3E%3C/svg%3E");
+    left: 50%;
+    margin-left: -10px;
+    cursor: pointer;
+    z-index: 11;
+    position: relative;
+  
+    &#topArrowAfterhours {
+      transform: rotate(90deg);
+      top: -10px;
+      margin-bottom: -11px;
+    }
+    &#downArrowAfterhours {
+      transform: rotate(270deg);
+    }
+  }
+  
+  // After Hours End
+   
+  
