@@ -2,9 +2,20 @@
     "id": "e6a7f72a-85de-4259-ed4e-7412d22635d9",
     "author": "",
     "widgets": [
+
+
+        
+
         {
-            "id": "order_Trend",
-            "name": "Order Trend",
+            "id": "cesiumOSMMap",
+            "name": "Cesium OSM Map",
+            "description": "Order Trend widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "maintenance_WorkOrder_Trend",
+            "name": "Maintenance Work Order Trend",
             "description": "Order Trend widget",
             "icon": "",
             "tags":[]
@@ -18,8 +29,8 @@
             "tags":[]
         }, 
         {
-            "id": "segregation_Metrics",
-            "name": "Segregation Metrics",
+            "id": "segregation_Metrics_Chart",
+            "name": "Segregation Metrics Chart",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
@@ -46,8 +57,8 @@
             "tags":[]
         },
         {
-            "id": "segregation_Metrics_vehicle",
-            "name": "Segregation Metrics Vehicle",
+            "id": "waste_segregation_Metrics",
+            "name": "Waste Segregation Metrics",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
@@ -65,14 +76,126 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        }, 
+        },
         {
-            "id": "waterSummary",
-            "name": "Energy Consumption Widget",
+            "id": "streetLightStatusWidget",
+            "name": "Street Ligh Status Widget",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        }
+        },   
+        {
+            "id": "waterSummary",
+            "name": "Water Summary Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }, 
+        {
+            "id": "water_consumption",
+            "name": "Water Consumption Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "mapComponent",
+            "name": "Map Component",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "streetLightWorkOrder",
+            "name": "Street Light Work Order",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "waste-Generated-Trend",
+            "name": "Waste Generated Trend",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "maintenance-Work-Order-Summary",
+            "name": "Maintenance Work Order Summary",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "water_Leakage_Work_Order",
+            "name": "Water Leakage Work Order",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "alert-Work-Order-Summary",
+            "name": "Alert WOrk Order Summary",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "counts_Widget",
+            "name": "Counts",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "alertTrends",
+            "name": "Alert Trends",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "emergencyWorkOrderSummary",
+            "name": "Emergency Work Order Summary",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "traffic_Control",
+            "name": "Traffic Control",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "iaq_Summary",
+            "name": "IAQ Summary",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "iaq_Widget",
+            "name": "IAQ",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "comapre-IAQ",
+            "name": "Comapre IAQ",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "cctvoverviewWidget",
+            "name": "CCTV Overview Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        } 
         
         
         

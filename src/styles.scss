@@ -2,11 +2,13 @@
 .main-content-block {
     width: 100%;
     display: inline-block;
-    background-image: url(/images/al_haram-bg.jpg);
+    // background-image: url(/images/al_haram-bg.jpg);
+    background-image: url(/images/Madina_1.jpeg);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
+    z-index: 0;
 
 
     &::before{
@@ -15,7 +17,7 @@
         left: 0;
         top: 0;
         width: 35%;
-        height: 162vh;
+        height: 176vh;
         position: absolute;
         z-index:0;
         background: rgb(2,61,40);
@@ -28,7 +30,7 @@
         right: 0;
         top: 0;
         width: 35%;
-        height: 162vh;
+        height: 176vh;
         position: absolute;
         z-index:0;
 
@@ -40,7 +42,7 @@
     .widget-container-block {
         z-index: 1;
         position: relative;
-        min-height: 162vh;
+        min-height: 176vh;
         background: #023d2875;
     }
 }
@@ -56,24 +58,32 @@
         
          .uxp-widget-title-bar{ 
             background: transparent;
-            color: #1dcb8d;
+            color: #1f9b7f;
             border-bottom: 1px solid #c2e6da;
             margin-bottom: 1em;
             padding: 0;
             outline: none;
-            min-height: 30px;
+            min-height: 38px;
             width: 95%;
+
+                .txt{
+                    // color: #1f9b7f;  
+                    color: #0fd6a9;
+                    font-weight: 600;
+                    font-size: 1.1em;
+                }
         }
 
         .sub_title_bar{
-            border-bottom: 1px solid #c2e6da;
-            margin-bottom: 1em;
+            /* border-bottom: 1px solid #c2e6da; */
+            margin-bottom: 0.8em;
             padding: 0;
-            min-height: 20px;
+            min-height: 15px;
             width: 100%;
-            font-size: 1em;
+            font-size: 1.2em;
             color: #fff;
-            font-weight: 600;
+            font-weight: 500;
+            outline: none;
         }
 
     .smart-city-content{ 
@@ -115,13 +125,49 @@
                                 background-color: transparent;
                                 color: #1dcb8d;
                                 text-align: left;
-                                padding: 5px 10px;
+                                padding: 5px 3px;
+                                font-size: 10px;
                             }
                             td{
                                 .item-card{
                                     background-color: transparent;
                                     color: #ffffff;
-                                    min-height: 40px;
+                                    min-height: 30px; 
+
+                                    .content{
+                                        padding: 0;
+                                        .sub-title{
+                                            font-size: 10px;
+                                        }
+                                    }
+
+                                        &::after{
+                                            content: "";
+                                            width: 18px;
+                                            height: 18px;
+                                            position: absolute;
+                                            top: 8px;
+                                            background-size: 100% auto;
+                                            background-repeat: no-repeat;
+                                            left: 0%;
+                                        } 
+
+                                        &.attention{ 
+                                                &::after{
+                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');
+                                                } 
+                                        }
+                                        &.pending{ 
+                                                &::after{
+                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');
+                                                } 
+                                        }
+                                        &.resloved{
+                                            
+                                                &::after{
+                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');
+                                                } 
+                                        } 
                                 }
                             } 
                         }
@@ -155,11 +201,11 @@
     &.waste-bin-box{ 
 
         .smart-city-content{
-             
+             margin-top: 0;
             .status-content{
                 display: flex;
                 width: 100%;
-                padding: 0.5em 8% 3em 8%;
+                padding: 1em 8% 2em 8%;
 
                 .status{
                     display: inline-block;
@@ -172,26 +218,53 @@
                         margin: 0;
                     }
                     p{
-                        font-size: 1em;
+                        font-size: 0.8em;
                         padding: 1em 0 0 0;
                         margin: 0;
                         color: #fff;
+                        position: relative;
+
+                        &::after{
+                            content: "";
+                            width: 18px;
+                            height: 18px;
+                            position: absolute;
+                            top: 8px;
+                            background-size: 100% auto;
+                            background-repeat: no-repeat;
+                            right: 11%;
+                        }
                     }
 
-                &.attention-status{
+                &.Attention{
                     h3{
                        color: rgb(211, 1, 1);
                     } 
+                    p{
+                        &::after{
+                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');
+                        }
+                    }
                 }
-                &.pending-status{
+                &.Pending{
                     h3{
                         color: rgb(218, 218, 1);
                     } 
+                    p{
+                        &::after{
+                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');
+                        }
+                    }
                 }
-                &.resolved-status{
+                &.Resloved{
                     h3{
                         color: rgb(19 232 61);
                     } 
+                    p{
+                        &::after{
+                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');
+                        }
+                    }
                 }
                 }
             }
@@ -201,7 +274,7 @@
                 .chart-sec{
                     width: 100%;
                     display: flex;
-                    margin-top: 1.2em;
+                    margin-top: 0.85em;
 
                     .chart-issue{
                        display: inline-block;
@@ -214,15 +287,15 @@
                         text-align: center;
                     }
                     h3{
-                        font-size: 2em;
+                        font-size: 1.7em;
                         padding: 0;
                         margin: 0;
                         color: #fff;
                     }
                     p{
-                        font-size: 1em;
+                        font-size: .85em;
                         padding: 0;
-                        margin: 0.5em 0 0 0;
+                        margin: 0.3em 0 0 0;
                         color: #fff;
                     }
                 }
@@ -234,11 +307,11 @@
     &.waste-collection-vehicle{ 
 
         .smart-city-content{
-             
+             margin-top: 0;
             .status-content{
                 display: flex;
                 width: 100%;
-                padding: 0.5em 8% 3em 8%;
+                padding: 0.5em 2% 3em 2%;
 
                 .status{
                     display: inline-block;
@@ -247,11 +320,11 @@
 
                     .vahicle-icon{
                         display: inline-block;
-                        width: 60px;
-                        height: 60px;
+                        width: 52px;
+                        height: 52px;
                         background-position: center center;
                         background-repeat: no-repeat;
-                        background-size: 65% auto;
+                        background-size: 75% auto;
                         margin-bottom: 0.5em;
                         background-color: #ffffff9c;
                         border-radius: 10px;
@@ -274,7 +347,7 @@
                         color: #fff;
                     }
                     h2{
-                        font-size: 2.2em;
+                        font-size: 1.8em;
                         padding: 0;
                         margin: 0.4em 0 0.2em 0;
                         color: #fff;
@@ -288,33 +361,65 @@
             }
 
 
-            .technician_chart{
-                .chart-sec{
-                    width: 100%;
-                    display: flex;
-                    margin-top: 1.2em;
+            // .technician_chart{
+            //     .chart-sec{
+            //         width: 100%;
+            //         display: flex;
+            //         margin-top: 1.2em;
 
-                    .chart-issue{
-                       display: inline-block;
-                       width: 75%;
-                       text-align: center;
+            //         .chart-issue{
+            //            display: inline-block;
+            //            width: 75%;
+            //            text-align: center;
+            //         }
+            //         .chart-pending{
+            //             display: inline-block;
+            //             width: 25%;
+            //             text-align: center;
+            //         }
+            //         h3{
+            //             font-size: 2em;
+            //             padding: 0;
+            //             margin: 0;
+            //             color: #fff;
+            //         }
+            //         p{
+            //             font-size: 1em;
+            //             padding: 0;
+            //             margin: 0.5em 0 0 0;
+            //             color: #fff;
+            //         }
+            //     }
+            // }
+        }
+    }
+
+    &.segregation_metrics-box{
+        .recharts-legend-wrapper{
+            width: 180px !important;
+            right: -145px !important;
+            top: 20px;
+            left: auto !important;
+
+            ul{
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                li{
+                    padding: 0.7em 0;
+                    list-style: none;
+
+                    .data_values{
+                        margin-left: 10px;
                     }
-                    .chart-pending{
+                    em{
+                        width: 10px;
+                        height: 7px;
                         display: inline-block;
-                        width: 25%;
-                        text-align: center;
-                    }
-                    h3{
-                        font-size: 2em;
-                        padding: 0;
-                        margin: 0;
-                        color: #fff;
-                    }
-                    p{
-                        font-size: 1em;
-                        padding: 0;
-                        margin: 0.5em 0 0 0;
-                        color: #fff;
+                        margin-right: 5px;
+                        vertical-align: top;
+                        margin-top: 3px;
                     }
                 }
             }
@@ -330,16 +435,19 @@
     }
 
     &.energy_consumption-box{ 
-        .technician_chart{
-            margin-top: 1em;
-            .highcharts-background{
+
+        .technician_chart{ 
+            margin-top: 0em; 
+            .recharts-wrapper{
                 fill: transparent; 
+                font-size: .88em;
             }
-            .highcharts-axis-labels, .highcharts-legend-item{
+            .recharts-layer, .recharts-cartesian-axis-line{
                 text{ fill:#fff!important;} 
             }
-            .highcharts-title{
+            .recharts-cartesian-axis-ticks, .recharts-legend-item-text{
                 fill:#fff!important;
+                color: #fff;
             }
         }
     }
@@ -363,16 +471,14 @@
                     margin-right: 4%;
                     padding-bottom: 2em;
 
-                    .vahicle-icon{
+                    .vehicle-icon{
                         display: inline-block;
                         width: 100px;
                         height: 100px;
                         background-position: center center;
                         background-repeat: no-repeat;
                         background-size: 75% auto;
-                        margin-bottom: 0.5em;
-                       
-                       
+                        margin-bottom: 0.5em; 
 
                         &.co2-icon{
                             background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);
@@ -414,6 +520,394 @@
  
         }
     }
+
+    &.water_consumption-box{
+        .smart-city-content{
+             
+            .status-content{
+                display: flex;
+                width: 100%;
+                padding: 0.5em 0% 0em 0%;
+                color: #ffffff;
+
+                .recharts-surface{
+                    fill: #ffffff;
+                    color: #ffffff;
+                    .recharts-layer{
+                        fill: #ffffff;
+                        color: #ffffff;
+                    } 
+                } 
+                 
+            }
+ 
+        }
+    }
+
+    &.iaq-box{ 
+
+        .smart-city-content{
+             
+            .status-content{
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+
+                .status{
+                    display: inline-block;
+                    width: 29%;
+                    text-align: center;
+                    background-color: rgba(0, 97, 67, 0.61);
+                    border-radius: 2px;
+                    padding: 2em;
+                    margin: 1em 1em 1em 1em; 
+                    
+
+                    p{
+                        font-size: 1em;
+                        padding: 0em 0 0 0;
+                        margin: 0;
+                        color: #fff;
+                    }
+                    h2{
+                        font-size: 2.7em;
+                        padding: 0;
+                        margin: 0.4em 0 0.2em 0;
+                        color: #fff;
+                    }
+                   span{
+                        font-size: 0.85em;
+                        padding-bottom: 1em;
+                        color: #fff;
+                       
+                   }
+
+                }
+
+                .air-quality-status-overall{
+                    
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+
+                    .air-quality-status-box{
+                        display: inherit;
+                        width: 60%;
+                        background-color: rgba(0, 97, 67, 0.61);
+                        border-radius: 2px;
+                        padding: 2em;
+                        margin: 0em 1em 1em 1em;
+                        text-align: center;
+                        text-transform: uppercase;
+                        align-items: center;
+    
+                        p{
+                            font-size: 1em;
+                            padding: 0em 0 0 0;
+                            margin: 0;
+                            color: #fff;
+                        }
+                        h5{
+                            font-size: 2.7em;
+                            padding: 0;
+                            margin: 0.4em 0 0.2em 0;
+                            color: #fff;
+                        }
+                    }
+
+                        .air-progress-bars{
+                            display: flex;
+                            width: 60%;
+                            margin-left: 20%;
+                            margin-top: 2em;
+                      
+
+                            .semi-circle-progress-bar {
+                                width: 50%;
+                                height: 130px;
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-direction: column;
+
+                                svg {
+                                    transform: rotate(-90deg);
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                
+                                circle {
+                                    fill: transparent;
+                                    stroke-width: 8;
+                                    stroke: #fff;
+                                }
+                                
+                                .progress-bar {
+                                    fill: transparent;
+                                    stroke-width: 10px;
+                                    stroke: rgb(0 97 67);
+                                    stroke-dasharray: 64;
+                                    stroke-dashoffset: 0;
+                                    transition: stroke-dashoffset 0.5s ease;
+                                }
+                                
+                                .percentage {
+                                    position: absolute;
+                                    top: 40%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: #fff;
+                                }
+                                .value{
+                                    font-size: 13px;
+                                    font-weight: normal;
+                                    color: #fff;
+                                    position: absolute;
+                                    top: 58%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                            }
+                            
+                           
+
+                        }
+                }
+
+                
+            }
+ 
+        }
+    }
+
+    &.compare-iaq{
+
+        .smart-city-content {
+            .status-content {
+                .loaction-status-content{
+                    display: inline-block;
+                    width: 47%;
+                    text-align: center;
+        
+                   .status {
+                        display: inline-block;
+                        width: 26%;
+                        text-align: center;
+                        background-color: rgba(0, 97, 67, 0.61);
+                        border-radius: 2px;
+                        padding: 1em;
+                        margin: 1em 1em 0em 0em;
+        
+                        h2 {
+                            font-size: 2em;
+                            padding: 0;
+                            margin: 0.2em 0 0.1em 0;
+                            color: #fff;
+                        }
+                    }
+                    &.loaction2-status-content { 
+                            margin-left:1em; 
+                    }
+                }
+
+                .versus{
+                    display: inline-block;
+                    width: 4%;
+                    color: #fff;
+                    font-size: 1.5em;
+                    text-align: center;
+                    vertical-align: top;
+                    padding-top: 8em;
+                }
+            } 
+        }
+      
+    }
+
+    .top_tabs{
+        float: right;
+        width: auto;
+
+        .uxp-toggle-filter{
+                background: transparent;
+                float: right;
+                margin: 0;
+                display: inline-flex;
+
+            .uxp-toggle-option{
+
+                    background: rgb(3, 7, 9);
+                    color: #fff;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    border-radius: 2px;
+                    margin: auto 0px;
+
+                &.selected{
+                    background: rgb(0, 180, 151);
+                    box-shadow: 0px 0px 5px 0px rgb(0, 180, 151);
+                }
+            }
+        } 
+    }
+
+    &.cctv-overview-box{
+        .uxp-widget-title-bar{
+            width: 100%;
+        }
+
+        .uxp-toggle-filter{
+            background: transparent;
+            .uxp-toggle-option{
+
+                    background: rgb(3, 7, 9);
+                    color: #fff;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    border-radius: 2px;
+                    margin: auto 0px;
+
+                &.selected{
+                    background: rgb(0 180 151);
+                }
+            }
+        }
+
+        .smart-city-content{
+            width: 100%;
+            .status-content{
+                .cctv-list{
+                    display: inline-block;
+                    width: 18%;
+                    margin-right: 2%;
+                    margin-bottom: 2em;
+
+                    &:nth-child(5n){
+                        margin-right: 0;
+                    }
+                    select{
+                        background: transparent;
+                        outline: none;
+                        border: none;
+                        color: #fff;
+                        font-size: 1em;
+                        margin: 10px 0px;
+                        width: 100%;
+                        text-transform: uppercase;
+                        option {
+                            padding: 8px 12px;
+                            cursor: pointer;
+                            background-color: rgba(0, 97, 67, 0.61);
+
+                            &:checked, &:hover {
+                                background-color: rgba(0, 97, 67, 0.61);
+                                color: #fff;
+                            }
+                            
+                        }
+                    }
+                    .cctv-pict{
+                        display: inline-block;
+                        width: 100%;
+                        img{
+                            height: 175px;
+                            width: 100%;
+                            border: 1px solid #012417;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .chart-top{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1em;
+
+        .uxp-toggle-filter{
+            background: transparent;
+            display: inline-flex;
+            padding: 0;
+
+            .uxp-toggle-option{
+                color: #00c397;
+                box-shadow: none;
+                font-weight: bold;
+                font-size: 1em;
+                padding: 8px 6px;
+                border-radius: 0;
+
+                &.selected{
+                    box-shadow: none;
+                    background: transparent;
+                    color: #ffffff;
+                }
+            }
+        }
+        .showcase-input{
+            display: flex;
+            width: 100%!important;
+
+            .uxp-search-box-container{
+                display: inline-block;
+                margin-right: 1.2em;
+                width: 22%;
+                min-width: 22%;
+                
+                .uxp-input-container{
+                    width: 80%;
+                    min-width: 80%;
+                    .uxp-form-input{
+                        width: 100%;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .uxp-form-select{
+                display: inline-block;
+                margin-right: 1.5em;
+                width: 23%;
+                min-width: 23%;
+
+                .uxp-select-placeholder{
+                    padding: 14px 9px;
+                    font-size: 10px;
+                }
+            }
+            .uxp-date-time-picker-container{
+                display: inline-block;
+                margin-right: 1.5em;
+                width: 23%;
+                min-width: 23%;
+            }
+        }
+
+
+
+    }
+
+    .technician_chart{ 
+        margin-top: 0em; 
+        .recharts-wrapper{
+            fill: transparent; 
+        }
+        .recharts-layer, .recharts-cartesian-axis-line{
+            text{ fill:#fff!important;} 
+        }
+        .recharts-cartesian-axis-ticks, .recharts-legend-item-text{
+            fill:#fff!important;
+            color: #fff;
+        }
+
+        .sub_title_bar{
+           width: 90%;
+        }
+    }
 }
 
 
@@ -427,7 +921,7 @@
   .afterhours_inner_widget {
     display: inline-block;
     width: 100%;
-    margin-top: -8px;
+    margin-top: 0px;
     .afterhours_tree {
       display: inline-flex;
       width: 98%; 
@@ -441,7 +935,7 @@
         display: inline-block;
         width: 95%;
         margin-left: 5%;
-        column-count: 2;
+        column-count: 3;
   
         li {
             display: inline-block;
@@ -449,7 +943,7 @@
             position: relative;
             width: 100%;
             box-sizing: border-box;
-            padding: 3px 0;
+            padding: 1px 0;
            
           &:last-child {
             &::before {
@@ -457,11 +951,11 @@
             }
           }
           p {
-            font-size: 9px;
-            margin: 4px 0;
+            font-size: 7px;
+            margin: 3px 0;
             position: relative;
             display: inline-block;
-            width: 100%;
+            width: 95%;
             color: #fff;
 
             &::before {
@@ -477,9 +971,9 @@
               }
 
             span { 
-                width: 18%;
-                font-size: 8px;
-                float: right; 
+                width: 25%;
+                font-size: 6px;
+                float: right;
             }
           }
 
@@ -523,7 +1017,7 @@
         overflow: hidden;
         li {
           display: inline-block;
-          height: 4vh;
+          height: 3.4vh;
           width: 10vw;
   
           &:nth-child(n + 1) { background-color: #82d963; }
@@ -578,7 +1072,17 @@
       transform: rotate(270deg);
     }
   }
+    
+
+
+.progress-bar-container {
+    width: 100%; 
+    background: linear-gradient(to right,  #005936 1%,#005842 71%,#01af94 100%);  
+
+    .progress-bar {
+        height: 17px; 
+        background: linear-gradient(to right,  #005842 1%,#005842 41%,#01af94 100%);  
+      }
+  }
   
-  // After Hours End
-   
-  
+ 
