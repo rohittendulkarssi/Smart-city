@@ -1,9 +1,31 @@
 {
     "id": "e6a7f72a-85de-4259-ed4e-7412d22635d9",
-    "author": "",
+    "author": "eutech",
     "widgets": [
 
 
+        
+        {
+            "id": "topNavTabs",
+            "name": "Top Nav Tabs",
+            "description": " ",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "weatherIcons",
+            "name": "Weather Icons",
+            "description": " ",
+            "icon": "",
+            "tags":[]
+        }, 
+        {
+            "id": "mapChangeMode",
+            "name": "map Change Mode",
+            "description": " ",
+            "icon": "",
+            "tags":[]
+        },
         
 
         {

@@ -122,7 +122,7 @@ const CountsWidget: React.FunctionComponent<{}> = () => {
                     </div>
 
               
-                    <div className="technician_chart" style={{ height: 300 }}>  
+                    <div className="technician_chart" style={{ height: 270 }}>  
                         <MyResponsiveRadar/>
                     </div>  
                 </div>

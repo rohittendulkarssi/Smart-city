@@ -164,7 +164,7 @@ const Water_ConsumptionWidget: React.FunctionComponent<{}> = () => {
     
                     <div className='status-content'>
     
-                     <ResponsiveContainer width="100%" height={350}>
+                     <ResponsiveContainer width="100%" height={270}>
                         <LineChart
                         width={500}
                         height={350}

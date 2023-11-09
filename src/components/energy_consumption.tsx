@@ -169,7 +169,7 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
             
                         <div className="smart-city-content">  
 
-                            <div className="technician_chart" style={{ height: 300 }}>   
+                            <div className="technician_chart" style={{ height: 270 }}>   
                            
                            <div  className='chart-top'>
 
@@ -236,6 +236,7 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
 
                             </div>  
                         </div>
+ 
             
                     </WidgetWrapper>
                 )

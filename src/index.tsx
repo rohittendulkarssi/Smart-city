@@ -46,6 +46,9 @@ import IAQ_Widget from './components/IAQ';
 import Comapre_IAQ from './components/compare_IAQ'
 import CCTVOverviewWidget from './components/CCTV-overview'
 
+import TopNavTabs from './components/top-section'
+import WeatherIcons from './components/WeatherIcons'
+import MapChangeMode from './components/map-change-mode'
 
 import SemiCircle from './components/semi-circle';
 
@@ -54,8 +57,18 @@ import SemiCircle from './components/semi-circle';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // import 'react-tabs/style/react-tabs.css';
 
+  
+const TopNavBar: React.FunctionComponent<{}> = () => {   
 
+    
+    return (
+              <div>Hi Udhaya</div>
+  
+    );
+   
+  }
 
+//   <TopNavBar/>
 
 /**
  * Register as a Widget
@@ -120,7 +133,7 @@ registerWidget({
     configs: {
         layout: {
             w: 10,
-            h: 11,
+            h: 12,
             // minH: 9,
             // minW: 14
         }
@@ -171,8 +184,8 @@ registerWidget({
     widget: EnergyConsumption,
     configs: {
         layout: {
-            w: 15,
-            h: 11,
+            w: 10,
+            h: 9,
             // minH: 13,
             // minW: 14
         }
@@ -197,8 +210,8 @@ registerWidget({
     widget: Street_Light__Status_Widget,
     configs: {
         layout: {
-            w: 15,
-            h: 16,
+            w: 10,
+            h: 14,
             // minH: 13,
             // minW: 14
         }
@@ -210,8 +223,8 @@ registerWidget({
     widget: VehicleSummaryWidget,
     configs: {
         layout: {
-            w: 15,
-            h: 11,
+            w: 10,
+            h: 10,
             // minH: 12,
             // minW: 12
         }
@@ -223,7 +236,7 @@ registerWidget({
     widget: StreetLightWorkOrder,
     configs: {
         layout: {
-            w: 15,
+            w: 10,
             h: 14,
             // minH: 13,
             // minW: 14
@@ -236,8 +249,8 @@ registerWidget({
     widget: Water_SummaryWidget,
     configs: {
         layout: {
-            w: 15,
-            h: 9,
+            w: 10,
+            h: 7,
             // minH: 13,
             // minW: 14
         }
@@ -249,7 +262,7 @@ registerWidget({
     widget: Water_ConsumptionWidget,
     configs: {
         layout: {
-            w: 15,
+            w: 10,
             h: 11,
             // minH: 13,
             // minW: 14
@@ -262,8 +275,8 @@ registerWidget({
     widget: WaterLeakageWorkOrder,
     configs: {
         layout: {
-            w: 15,
-            h: 20,
+            w: 10,
+            h: 19,
             // minH: 13,
             // minW: 14
         }
@@ -275,7 +288,7 @@ registerWidget({
     widget: AlertWorkOrderSummary,
     configs: {
         layout: {
-            w: 15,
+            w: 10,
             h: 20,
             // minH: 13,
             // minW: 14
@@ -288,7 +301,7 @@ registerWidget({
     widget: CountsWidget,
     configs: {
         layout: {
-            w: 15,
+            w: 10,
             h: 13,
             // minH: 13,
             // minW: 14
@@ -302,7 +315,7 @@ registerWidget({
     widget: AlertTrends,
     configs: {
         layout: {
-            w: 15,
+            w: 10,
             h: 13,
             // minH: 13,
             // minW: 14
@@ -315,7 +328,7 @@ registerWidget({
     widget: EmergencyWorkOrderSummary,
     configs: {
         layout: {
-            w: 15,
+            w: 10,
             h: 20,
             // minH: 13,
             // minW: 14
@@ -328,7 +341,7 @@ registerWidget({
     widget: Traffic_Control,
     configs: {
         layout: {
-            w: 15,
+            w: 10,
             h: 20,
             // minH: 13,
             // minW: 14
@@ -341,8 +354,8 @@ registerWidget({
     widget: IAQ_Summary,
     configs: {
         layout: {
-            w: 15,
-            h: 20,
+            w: 10,
+            h: 11,
             // minH: 13,
             // minW: 14
         }
@@ -354,7 +367,7 @@ registerWidget({
     widget: IAQ_Widget,
     configs: {
         layout: {
-            w: 15,
+            w: 10,
             h: 20,
             // minH: 13,
             // minW: 14
@@ -368,7 +381,7 @@ registerWidget({
     widget: Comapre_IAQ,
     configs: {
         layout: {
-            w: 15,
+            w: 10,
             h: 20,
             // minH: 13,
             // minW: 14
@@ -387,6 +400,52 @@ registerWidget({
             minW: 30,
              maxH: 16,
              maxW: 30
+        }
+    }
+});
+
+registerWidget({
+    id: "topNavTabs", 
+    widget: TopNavTabs,
+    configs: {
+        layout: {
+            w: 12,
+            h: 3, 
+            minH: 3,
+            minW: 12,
+             maxH: 3,
+             maxW: 12
+        }
+    }
+});
+
+registerWidget({
+    id: "weatherIcons", 
+    widget: WeatherIcons,
+    configs: {
+        layout: {
+            w: 8,
+            h: 3, 
+            // minH: 3,
+            // minW: 8,
+            //  maxH: 3,
+            //  maxW: 8
+        }
+    }
+});
+
+
+registerWidget({
+    id: "mapChangeMode", 
+    widget: MapChangeMode,
+    configs: {
+        layout: {
+            w: 2,
+            h: 9,
+            minH: 9,
+            minW: 2,
+             maxH: 9,
+             maxW: 2
         }
     }
 });

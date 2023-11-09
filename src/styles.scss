@@ -1,27 +1,31 @@
  
 .main-content-block {
     width: 100%;
-    display: inline-block;
-    // background-image: url(/images/al_haram-bg.jpg);
-    background-image: url(/images/Madina_1.jpeg);
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
+    display: inline-block; 
+    // background-image: url(/images/Madina_1.jpeg);
+    // background-image: url(https://static.iviva.com/images/Udhayimages/Madina_1.jpeg);
+    // background-size: 100% 100%;
+    // background-position: center center;
+    // background-repeat: no-repeat;
     position: relative;
     z-index: 0;
 
 
-    &::before{
+    &::before{ 
+        
         content: "";
         background: #023d28;
         left: 0;
         top: 0;
-        width: 35%;
+        width: 40%;
         height: 176vh;
         position: absolute;
-        z-index:0;
-        background: rgb(2,61,40);
-        background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 41 26) 50%, rgba(255, 255, 255, 0) 100%);
+        z-index: 1;
+        background: rgb(2, 61, 40);
+        // background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 41 26) 50%, rgba(255, 255, 255, 0) 100%);  
+        // background: linear-gradient(90deg, rgb(0 0 0 / 72%) 0%, rgb(0 41 26 / 69%) 50%, rgb(255 255 255 / 0%) 100%);
+        background:linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgb(0 41 26 / 58%) 35%, rgba(255, 255, 255, 0) 100%)
+
     }
 
     &::after{
@@ -29,14 +33,17 @@
         // background: #023d28;
         right: 0;
         top: 0;
-        width: 35%;
+        width: 40%;
         height: 176vh;
         position: absolute;
         z-index:0;
 
         background: rgb(2,61,40);
        // background: linear-gradient(270deg, rgba(2,61,40,1) 0%, rgba(2,61,40,1) 50%, rgba(255,255,255,0) 100%);
-        background: linear-gradient(270deg, rgb(0 0 0) 0%, rgb(0 41 26) 50%, rgba(255, 255, 255, 0) 100%);
+        // background: linear-gradient(270deg, rgb(0 0 0) 0%, rgb(0 41 26) 50%, rgba(255, 255, 255, 0) 100%);
+       // background: linear-gradient(270deg, rgb(0 0 0 / 72%) 0%, rgb(0 41 26 / 69%) 50%, rgb(255 255 255 / 0%) 100%); 
+
+       background:linear-gradient(270deg, rgba(0, 0, 0, 0.72) 0%, rgb(0 41 26 / 58%) 35%, rgba(255, 255, 255, 0) 100%)
     }
 
     .widget-container-block {
@@ -59,12 +66,35 @@
          .uxp-widget-title-bar{ 
             background: transparent;
             color: #1f9b7f;
-            border-bottom: 1px solid #c2e6da;
+            border-bottom: 1px solid #dedede;
             margin-bottom: 1em;
             padding: 0;
             outline: none;
             min-height: 38px;
             width: 95%;
+            position: relative;
+
+            &::before{
+                content: "";
+                position: absolute;
+                background-color: #dededea1;
+                width: 6%;
+                height: 3px;
+                bottom: -4px;
+                left: 0;
+                border-radius: 0px 0px 30px 30px;
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: #dededea1;
+                width: 6px;
+                height: 6px;
+                bottom: -3px;
+                right: -6px;
+                border-radius: 50%;
+            }
 
                 .txt{
                     // color: #1f9b7f;  
@@ -79,8 +109,8 @@
             margin-bottom: 0.8em;
             padding: 0;
             min-height: 15px;
-            width: 100%;
-            font-size: 1.2em;
+            width: 80%;
+            font-size: 0.95em;
             color: #fff;
             font-weight: 500;
             outline: none;
@@ -134,6 +164,8 @@
                                     color: #ffffff;
                                     min-height: 30px; 
 
+                                   
+
                                     .content{
                                         padding: 0;
                                         .sub-title{
@@ -168,6 +200,29 @@
                                                     background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');
                                                 } 
                                         } 
+
+                                        &.Green{
+                                            .content{
+                                                .sub-title{
+                                                    background-color: #00b36c; 
+                                                    padding: 5px 5px;
+                                                    border-radius: 1px;
+                                                    width: 44px;
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
+                                        &.Red{
+                                            .content{
+                                                .sub-title{
+                                                    background-color: #cb0000; 
+                                                    padding: 5px 5px;
+                                                    border-radius: 1px;
+                                                    width: 44px;
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
                                 }
                             } 
                         }
@@ -191,7 +246,7 @@
             height: 250px;  
             width: 100%;
             display: inline-block;
-            background-image: url(/images/al_haram-bg.jpg);
+            background-image: url(https://static.iviva.com/images/Udhayimages/Al-Haram-District2.jpg);
             background-size: 100% 100%;
             background-position: center center;
             background-repeat: no-repeat;
@@ -226,13 +281,13 @@
 
                         &::after{
                             content: "";
-                            width: 18px;
-                            height: 18px;
+                            width: 16px;
+                            height: 16px;
                             position: absolute;
                             top: 8px;
                             background-size: 100% auto;
                             background-repeat: no-repeat;
-                            right: 11%;
+                            right: 8%;
                         }
                     }
 
@@ -468,13 +523,13 @@
                     text-align: center;
                     background-color: rgba(0, 97, 67, 0.61);
                     border-radius: 10px;
-                    margin-right: 4%;
-                    padding-bottom: 2em;
+                    margin-right: 3%;
+                    padding-bottom: 1em;
 
                     .vehicle-icon{
                         display: inline-block;
-                        width: 100px;
-                        height: 100px;
+                        width: 75px;
+                        height: 75px;
                         background-position: center center;
                         background-repeat: no-repeat;
                         background-size: 75% auto;
@@ -492,13 +547,13 @@
                     }
 
                     p{
-                        font-size: 1em;
+                        font-size: 0.85em;
                         padding: 0em 0 0 0;
                         margin: 0;
                         color: #fff;
                     }
                     h2{
-                        font-size: 2.7em;
+                        font-size: 2.2em;
                         padding: 0;
                         margin: 0.4em 0 0.2em 0;
                         color: #fff;
@@ -514,7 +569,9 @@
                             color: #00e51a;
                         }
                    }
-
+                    &:last-child{
+                        margin-right: 0;
+                    }
                 }
             }
  
@@ -556,12 +613,12 @@
 
                 .status{
                     display: inline-block;
-                    width: 29%;
+                    width: 30%;
                     text-align: center;
                     background-color: rgba(0, 97, 67, 0.61);
                     border-radius: 2px;
                     padding: 2em;
-                    margin: 1em 1em 1em 1em; 
+                    margin: 1em 0em 0em 1em;
                     
 
                     p{
@@ -571,7 +628,7 @@
                         color: #fff;
                     }
                     h2{
-                        font-size: 2.7em;
+                        font-size: 2.2em;
                         padding: 0;
                         margin: 0.4em 0 0.2em 0;
                         color: #fff;
@@ -609,7 +666,7 @@
                             color: #fff;
                         }
                         h5{
-                            font-size: 2.7em;
+                            font-size: 2.3em;
                             padding: 0;
                             margin: 0.4em 0 0.2em 0;
                             color: #fff;
@@ -690,38 +747,79 @@
             .status-content {
                 .loaction-status-content{
                     display: inline-block;
-                    width: 47%;
+                    width: 46%;
                     text-align: center;
         
                    .status {
+                        // display: inline-block;
+                        // width: 33%;
+                        // text-align: center;
+                        // background-color: rgba(0, 97, 67, 0.61);
+                        // border-radius: 2px;
+                        // padding: 1em;
+                        // margin: 1em 1em 0em 0em;
+
                         display: inline-block;
-                        width: 26%;
+                        width: 28%;
                         text-align: center;
                         background-color: rgba(0, 97, 67, 0.61);
                         border-radius: 2px;
-                        padding: 1em;
-                        margin: 1em 1em 0em 0em;
+                        padding: 0.8em;
+                        margin: 0.8em 0.8em 0em 0em;
+                        
+                        p{
+                            font-size: 0.88em;
+                        }
+                        span{
+                            font-size: 0.75em;
+                        }
+
+                        &:nth-child(4n), &:nth-child(7n){
+                            margin-right: 0em;
+                        }
         
                         h2 {
-                            font-size: 2em;
+                            font-size: 1.3em;
                             padding: 0;
                             margin: 0.2em 0 0.1em 0;
                             color: #fff;
                         }
+
+
+                       
                     }
                     &.loaction2-status-content { 
-                            margin-left:1em; 
+                            margin-left:0em; 
+                    }
+
+
+                    
+
+                    // .uxp-search-box-container .search-box-container .uxp-search-box .uxp-form-input{
+                    //     width: 100%;
+                    //                 min-width: 100%;
+                    // }
+
+                    .uxp-form-group{
+                        .uxp-search-box-container{
+                            .uxp-input-container{
+                                .uxp-form-input{
+                                    width: 100%;
+                                    min-width: 100%;
+                                }
+                            }
+                        }
                     }
                 }
 
                 .versus{
                     display: inline-block;
-                    width: 4%;
+                    width: 8%;
                     color: #fff;
-                    font-size: 1.5em;
+                    font-size: 1.2em;
                     text-align: center;
                     vertical-align: top;
-                    padding-top: 8em;
+                    padding-top: 10em;
                 }
             } 
         }
@@ -732,13 +830,13 @@
         float: right;
         width: auto;
 
-        .uxp-toggle-filter{
+        .uxp-toggle-filter, .toggle-filter{
                 background: transparent;
                 float: right;
                 margin: 0;
                 display: inline-flex;
 
-            .uxp-toggle-option{
+            .uxp-toggle-option, button{
 
                     background: rgb(3, 7, 9);
                     color: #fff;
@@ -746,10 +844,17 @@
                     text-transform: uppercase;
                     border-radius: 2px;
                     margin: auto 0px;
+                    outline: none;
+                    border: none;
+                    padding: 8px 20px;
+                    cursor: pointer;
 
-                &.selected{
-                    background: rgb(0, 180, 151);
-                    box-shadow: 0px 0px 5px 0px rgb(0, 180, 151);
+                &.selected, &.active{
+                    // background: rgb(0, 180, 151);
+                    // box-shadow: 0px 0px 5px 0px rgb(0, 180, 151);
+
+                    background: #18d6b8;
+                    box-shadow: 0px 0px 12px 1px #02eec9;
                 }
             }
         } 
@@ -772,7 +877,9 @@
                     margin: auto 0px;
 
                 &.selected{
-                    background: rgb(0 180 151);
+                    // background: rgb(0 180 151);
+                    background: #18d6b8;
+                    box-shadow: 0px 0px 12px 1px #02eec9;
                 }
             }
         }
@@ -819,6 +926,32 @@
                             border: 1px solid #012417;
                         }
                     }
+
+                    .loction{
+                        color: #fff;
+                        font-size: 0.8em;
+                        margin-top: .7em;
+                    }
+                    .loction-number{
+                        color: #fff;
+                        font-size: 0.8em;
+                        margin-top: .7em;
+                    }
+                    .loction-status{
+                        color: #fff;
+                        padding: 4px 0;
+                        width: 60px;
+                        text-align: center;
+                        margin-top: 0.7em;
+                        font-size: 0.85em;
+
+                        &.Red{
+                            background: #cb0000;
+                        }
+                        &.Green{
+                            background: #00b36c;
+                        }
+                    }
                 }
             }
         }
@@ -833,6 +966,8 @@
             background: transparent;
             display: inline-flex;
             padding: 0;
+
+            width: 158px;
 
             .uxp-toggle-option{
                 color: #00c397;
@@ -858,13 +993,19 @@
                 margin-right: 1.2em;
                 width: 22%;
                 min-width: 22%;
-                
+
                 .uxp-input-container{
-                    width: 80%;
-                    min-width: 80%;
+                    // width: 80%;
+                    // min-width: 80%;
+                    width: 70%;
+                    min-width: 70%;
+
                     .uxp-form-input{
+                        // width: 100%;
+                        // font-size: 10px;
                         width: 100%;
-                        font-size: 10px;
+                        font-size: 9px;
+                        min-width: 140%;
                     }
                 }
             }
@@ -876,7 +1017,7 @@
 
                 .uxp-select-placeholder{
                     padding: 14px 9px;
-                    font-size: 10px;
+                    font-size: 9px;
                 }
             }
             .uxp-date-time-picker-container{
@@ -884,6 +1025,18 @@
                 margin-right: 1.5em;
                 width: 23%;
                 min-width: 23%;
+
+                .placeholder{
+                    .label{
+                        padding: 10px 10px;
+                    }
+                    .value{
+                        padding: 10px 0px;
+                        min-width: 80px;
+                        width: 80%;
+                        font-size: 9px;
+                    }
+                }
             }
         }
 
@@ -905,7 +1058,8 @@
         }
 
         .sub_title_bar{
-           width: 90%;
+            width: 90%;
+            font-size: 1em;
         }
     }
 }
@@ -1086,3 +1240,238 @@
   }
   
  
+
+.top-nav-tabs{
+   
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    width: 100%;
+
+    ul{
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        width: 100%;
+
+        li{
+            list-style: none;
+            width: 17%;
+            display: inline-block;
+            text-align: center;
+
+            a{
+                cursor: pointer;
+                display: inline-block;
+                width: 100%;
+
+            span{ 
+                
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: relative;  
+            }
+            label{
+                color: #fff;
+                font-size: 0.8em;
+                width: 100%;
+                display: inline-block;
+                padding: 5px 0 0 0;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 600;
+            } 
+        } 
+            &.waste{
+                span{
+                    background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock.png);
+                }
+            } 
+            &.energy{
+                span{
+                    background-image: url(https://static.iviva.com/images/Udhayimages/energy.png);
+                }
+            } 
+            &.streetlight{
+                span{
+                        background-image: url(https://static.iviva.com/images/Udhayimages/street-light.png);
+                    // background-image: url(https://static.iviva.com/images/Udhayimages/garden-light.png);
+                   // background-image: url(https://static.iviva.com/images/Udhayimages/lamp-post.png);
+                }
+            }  
+            &.cctv{
+                span{
+                    background-image: url(https://static.iviva.com/images/Udhayimages/security-camera.png);
+                }
+            } 
+            &.water{
+                span{
+                    background-image: url(https://static.iviva.com/images/Udhayimages/waterdrop.png);
+                }
+            }
+            &.pollution{
+                span{
+                    background-image: url(https://static.iviva.com/images/Udhayimages/factory.png);
+                }
+            }
+            &.fire{
+                span{
+                    background-image: url(https://static.iviva.com/images/Udhayimages/fire.png);
+                }
+            }
+
+             &.active{
+                label{
+                    color: #0fd6a9; 
+                } 
+
+
+                &.waste{
+                    span{
+                        background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock-active.png);
+                    }
+                } 
+                &.energy{
+                    span{
+                        background-image: url(https://static.iviva.com/images/Udhayimages/energy-active.png);
+                    }
+                } 
+                &.streetlight{
+                    span{
+                           background-image: url(https://static.iviva.com/images/Udhayimages/street-light-active.png);
+                        // background-image: url(https://static.iviva.com/images/Udhayimages/garden-light-active.png);
+                       // background-image: url(https://static.iviva.com/images/Udhayimages/lamp-post-active.png);
+                    }
+                }  
+                &.cctv{
+                    span{
+                        background-image: url(https://static.iviva.com/images/Udhayimages/security-camera-active.png);
+                    }
+                } 
+                &.water{
+                    span{
+                        background-image: url(https://static.iviva.com/images/Udhayimages/drop-active.png);
+                    }
+                }
+                &.pollution{
+                    span{
+                        background-image: url(https://static.iviva.com/images/Udhayimages/factory-active.png);
+                    }
+                }
+                &.fire{
+                    span{
+                        background-image: url(https://static.iviva.com/images/Udhayimages/fire-active.png);
+                    }
+                } 
+              
+            }
+        }
+    }
+}
+ 
+
+
+  
+.weather-list{
+    display: inline-block;
+    position: absolute;
+    top: 2.5em;
+    right: 2em;
+
+    ul{  
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      background: rgba(0, 0, 0, 0.47);
+      width: auto;
+      border-radius: 5px;
+
+      li{
+        list-style: none;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 8px 10px;
+
+        a{
+          cursor: pointer;
+
+          img{
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+
+          
+      }
+    }
+  }
+
+
+
+  
+  .slider {   
+    width: 2px;
+    height: 20vh;
+    position: absolute;
+    top: 1em;
+    right: 0em;
+    border-radius: 20px;
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.100) 0%, rgb(255 255 255 / 100%) 35%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(180deg);
+    box-shadow: 0px 0px 1px #353535;
+
+    &::before{
+      background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);
+      content: "";
+      width: 12px;
+      height: 12px;
+      display: block;
+      background-size: 100% auto;
+      position: absolute;
+      bottom: -1.8em;
+      left: -4px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transform: rotate(180deg);
+    }
+    &::after{
+      background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);
+      content: "";
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-size: 100% auto;
+      position: absolute;
+      top: -2.5em;
+      left: -8px;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+
+    span{
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-color: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+      left: -9px;
+      bottom: 0.7em;
+      box-shadow: 0px 0px 3px #353535;
+      transition: bottom 0.4s ease;
+    }
+  }
+   
+  .slider.active {  
+    span{
+      bottom: 16vh; /* Change the bottom property for the active class */
+    }
+  }

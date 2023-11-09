@@ -16,7 +16,116 @@
 </head>
 
 <body>
-    <div id="root"></div>
+    <div id="root">  </div> 
+ 
+    <!-- <div class="top-nav-tabs">
+        <ul> 
+            <li class="nav-link waste active"><a href="#"><span></span><label>Waste</label></a></li>
+            <li class="nav-link energy"><a href="#"><span></span><label>Energy</label></a></li>
+            <li class="nav-link cctv"><a href="#"><span></span><label>Cctv</label></a></li>
+            <li class="nav-link water"><a href="#"><span></span><label>Water</label></a></li>
+            <li class="nav-link pollution"><a href="#"><span></span><label>Pollution</label></a></li>
+            <li class="nav-link fire"><a href="#"><span></span><label>Fire</label></a></li>
+        </ul>
+    </div> 
+
+    <div id="messageBox"></div>  
+
+     <script>
+            
+            const navLinks = document.getElementsByClassName('nav-link');
+            const messageBox = document.getElementById('messageBox'); 
+            
+            for (let link of navLinks) {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();  
+                    for (let link of navLinks) {
+                        link.classList.remove('active');
+                    } 
+                    link.classList.add('active'); 
+                    const linkText = link.textContent; 
+                    sendMessage(`You clicked on: ${linkText}`);
+                });
+            }
+            
+            function sendMessage(message) { 
+                alert(message);
+            }
+
+    </script> -->
+
+
+    
+<!-- 
+    <script>
+                     
+           
+        var parentElement = document.getElementById("root");
+ 
+        var listItemsData = [
+        { class: "nav-link waste", text: "Waste" },
+        { class: "nav-link energy", text: "Energy" },
+        { class: "nav-link cctv", text: "Cctv" },
+        { class: "nav-link water", text: "Water" },
+        { class: "nav-link pollution", text: "Pollution" },
+        { class: "nav-link fire", text: "Fire" }
+        ];
+        
+        var massage = document.createElement("div"); 
+        parentElement.appendChild(massage); 
+
+        var top_nav_tabs = document.createElement("div"); 
+        top_nav_tabs.classList.add('top-nav-tabs');  
+
+
+        var ulist = document.createElement("ul"); 
+        parentElement.appendChild(ulist); 
+
+        listItemsData.forEach(function(itemData) {
+            var listItem = document.createElement("li");
+            listItem.className = itemData.class;
+
+            var anchor = document.createElement("a");
+            anchor.href = "#";
+
+            var span = document.createElement("span");
+            var label = document.createElement("label");
+            label.textContent = itemData.text;
+
+            anchor.appendChild(span);
+            anchor.appendChild(label);
+            listItem.appendChild(anchor);
+
+            parentElement.appendChild(top_nav_tabs);
+            top_nav_tabs.appendChild(ulist); 
+            
+            ulist.appendChild(listItem); 
+            
+        }); 
+            
+    const navLinks = document.getElementsByClassName('nav-link');
+    const messageBox = document.getElementById('messageBox'); 
+    
+    for (let link of navLinks) {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();  
+            for (let link of navLinks) {
+                link.classList.remove('active');
+            } 
+            link.classList.add('active'); 
+            const linkText = link.textContent; 
+            sendMessage(`You clicked on: ${linkText}`);
+        });
+    }
+    
+    function sendMessage(message) { 
+        alert(message);
+    }
+
+</script>   -->
+
+  
+
 
     <!-- Dependencies -->
     <!-- React | Production | Loading from S3 -->

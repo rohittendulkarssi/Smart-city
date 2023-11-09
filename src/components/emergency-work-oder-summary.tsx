@@ -177,13 +177,35 @@ const EmergencyWorkOrderSummary: React.FunctionComponent<{}> = () => {
   
       return p;
   }
+
+
+        
+        const [toggleFilterValueday, setToggleFilterValueday] = React.useState<string>("1");  
+
+        const handleFilterChangeday = (value:any) => { 
+            setToggleFilterValueday(value);
+        }; 
   
       return ( 
   
          
          <WidgetWrapper className="smart-city_box order_summary-box"> 
   
-          <TitleBar title="Emergency Work Order Summary" icon='https://static.iviva.com/images/Udhayimages/emergency.png'></TitleBar>
+          <TitleBar title="Emergency Work Order" icon='https://static.iviva.com/images/Udhayimages/emergency.png'>
+
+          <div className='top_tabs' style={{width:'100%'}}>
+                <ToggleFilter  
+                      options={[
+                          { label: "2023", value: "1" },
+                          { label: "1D", value: "2" } 
+                      ]}
+                      value={toggleFilterValueday}
+                      onChange={handleFilterChangeday}
+                  /> 
+               </div>
+
+
+          </TitleBar>
   
           
           <div className="smart-city-content"  style={{height:'800px'}}>
