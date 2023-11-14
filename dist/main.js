@@ -2716,11 +2716,15 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
-const MapChangeMode = () => {
+const index_1 = __webpack_require__(/*! ../index */ "./src/index.tsx");
+const MapChangeMode = (props) => {
+    const { uxpContext } = props;
     const mapContainerRef = (0, react_1.useRef)(null);
     const [isDarkMode, setIsDarkMode] = (0, react_1.useState)(false);
     const toggleDarkMode = () => {
+        var _a;
         setIsDarkMode(!isDarkMode);
+        (_a = uxpContext.eventHandler) === null || _a === void 0 ? void 0 : _a.call(uxpContext, index_1.EventsEnum.MapMode, { 'mode': isDarkMode ? 'dark' : 'light' });
     };
     return (react_1.default.createElement("div", { className: `map-container ${isDarkMode ? 'dark-mode' : 'light-mode'}` },
         react_1.default.createElement("div", { className: `slider ${isDarkMode ? 'active' : ''}` },
@@ -4730,6 +4734,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.EventsEnum = void 0;
 const react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
 const uxp_1 = __webpack_require__(/*! ./uxp */ "./src/uxp.ts");
 __webpack_require__(/*! ./styles.scss */ "./src/styles.scss");
@@ -4763,9 +4768,18 @@ const CCTV_overview_1 = __importDefault(__webpack_require__(/*! ./components/CCT
 const top_section_1 = __importDefault(__webpack_require__(/*! ./components/top-section */ "./src/components/top-section.tsx"));
 const WeatherIcons_1 = __importDefault(__webpack_require__(/*! ./components/WeatherIcons */ "./src/components/WeatherIcons.tsx"));
 const map_change_mode_1 = __importDefault(__webpack_require__(/*! ./components/map-change-mode */ "./src/components/map-change-mode.tsx"));
-// import 'react-tabs/style/react-tabs.css';
+// export enum EventsEnum {
+//   Mode = 'mode',
+//   MapModeChange = "MapModeChange"
+// }
+// export type genericEventHandler = (eventType: EventsEnum, payload: any) =>  void;
+var EventsEnum;
+(function (EventsEnum) {
+    EventsEnum["Zoom"] = "zoom";
+    EventsEnum["MapMode"] = "map-mode";
+})(EventsEnum = exports.EventsEnum || (exports.EventsEnum = {}));
 const TopNavBar = () => {
-    return (react_1.default.createElement("div", null, "Hi Udhaya"));
+    return (react_1.default.createElement("div", null));
 };
 //   <TopNavBar/>
 /**

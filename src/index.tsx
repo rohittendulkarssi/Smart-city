@@ -53,16 +53,28 @@ import MapChangeMode from './components/map-change-mode'
 import SemiCircle from './components/semi-circle';
 
 
- 
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-// import 'react-tabs/style/react-tabs.css';
 
-  
+
+// export enum EventsEnum {
+//   Mode = 'mode',
+//   MapModeChange = "MapModeChange"
+// }
+
+// export type genericEventHandler = (eventType: EventsEnum, payload: any) =>  void;
+
+
+export enum EventsEnum { 
+    SunPosition = 'map-mode'
+}
+
+export type genericEventHandler = (eventType: EventsEnum, payload: any) =>  void;
+
+ 
 const TopNavBar: React.FunctionComponent<{}> = () => {   
 
     
     return (
-              <div>Hi Udhaya</div>
+              <div></div>
   
     );
    

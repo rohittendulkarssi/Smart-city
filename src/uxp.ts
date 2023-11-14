@@ -118,6 +118,7 @@ interface IShowUIOptions {
     target?: "_blank" | "_self"
 }
 export interface IContextProvider extends IPartialContextProvider {
+    [x: string]: any;
     executeAction: (model: string, action: string, parameters: any, options?: ILucyActionExecutionOptions) => Promise<any>;
     executeService: (app: string, service: string, parameters: any, options?: ILucyActionExecutionOptions) => Promise<any>;
     fireEvent: (eventID: string) => Promise<void>;
