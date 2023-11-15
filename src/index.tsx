@@ -48,7 +48,7 @@ import CCTVOverviewWidget from './components/CCTV-overview'
 
 import TopNavTabs from './components/top-section'
 import WeatherIcons from './components/WeatherIcons'
-import MapChangeMode from './components/map-change-mode'
+import SunController from './components/SunController.tsx'
 
 import SemiCircle from './components/semi-circle';
 
@@ -63,8 +63,12 @@ import SemiCircle from './components/semi-circle';
 // export type genericEventHandler = (eventType: EventsEnum, payload: any) =>  void;
 
 
-export enum EventsEnum { 
-    SunPosition = 'map-mode'
+export enum EventsEnum {  
+    //SunPosition = 'map-mode' //sample payload - { 'time' : '12:15' }
+    WeatherControl = 'weather',
+    SunPosition = 'solar-time', //sample payload - { 'time' : '12:15' }
+    Navigation = 'navigation'
+
 }
 
 export type genericEventHandler = (eventType: EventsEnum, payload: any) =>  void;
@@ -448,16 +452,16 @@ registerWidget({
 
 
 registerWidget({
-    id: "mapChangeMode", 
-    widget: MapChangeMode,
+    id: "sunController", 
+    widget: SunController,
     configs: {
         layout: {
             w: 2,
             h: 9,
-            minH: 9,
-            minW: 2,
-             maxH: 9,
-             maxW: 2
+            // minH: 9,
+            // minW: 2,
+            //  maxH: 9,
+            //  maxW: 2
         }
     }
 });

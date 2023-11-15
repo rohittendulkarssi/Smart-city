@@ -20,8 +20,8 @@
             "tags":[]
         }, 
         {
-            "id": "mapChangeMode",
-            "name": "map Change Mode",
+            "id": "sunController",
+            "name": "Sun Controller",
             "description": " ",
             "icon": "",
             "tags":[]

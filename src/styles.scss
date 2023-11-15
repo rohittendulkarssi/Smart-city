@@ -1475,3 +1475,61 @@
       bottom: 16vh; /* Change the bottom property for the active class */
     }
   }
+
+
+  .timer-widget{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+        .timer-slider{
+            position: absolute;
+            top: 7em;
+            right: -2em;
+            width: 20vh;
+            height: 15vh;
+
+            &::before{ 
+                background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);
+                content: "";
+                width: 12px;
+                height: 12px;
+                display: block;
+                background-size: 100% auto;
+                position: absolute;
+                top: -85px;
+                left: 6em;
+                background-repeat: no-repeat;
+                background-position: center center;
+                transform: rotate(180deg);
+           } 
+           
+           &::after{ 
+                background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);
+                content: "";
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-size: 100% auto;
+                position: absolute;
+                bottom: -0.5em;
+                left: 67px;
+                background-repeat: no-repeat;
+                background-position: center center;
+          }
+
+           .timer-range{
+                display: inline-block;
+                width: 100%;
+                transform: rotate(90deg); 
+              } 
+
+            span{
+                color: #ffffff;
+                position: absolute;
+                bottom: -30px;
+                left: 50px;
+            }
+       }
+          
+  }

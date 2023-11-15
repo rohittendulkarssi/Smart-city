@@ -1,8 +1,18 @@
 import React, { useState } from 'react'; 
 import {WidgetWrapper} from "uxp/components";
+
+import { IContextProvider } from '../uxp';
+import { EventsEnum } from '../index';
+
+interface IMapChangeMode {
+  uxpContext: IContextProvider;
+}
+
  
-const WeatherIcons = () => {
-   
+// const WeatherIcons = () => { 
+  const WeatherIcons: React.FunctionComponent<IMapChangeMode> = (props) => {
+
+    const { uxpContext } = props;
 
   var weather_list = [ 
     {
@@ -36,8 +46,15 @@ const WeatherIcons = () => {
       <div className='weather-list'>
           <ul> 
               {weather_list.map((item) => (
-                <li key={item.id}><a href='#'><img src={item.pict} /></a></li>
-              ))}   
+                
+                
+                // <li key={item.id}><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.SunPosition, { time: '12:15' })}><img src={item.pict} /></a></li>
+
+<li key={item.id}><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'sunny' })}><img src={item.pict} /></a></li>
+
+              ))} 
+              
+                
 
           </ul>
       </div> 
