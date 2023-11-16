@@ -49,6 +49,7 @@ import CCTVOverviewWidget from './components/CCTV-overview'
 import TopNavTabs from './components/top-section'
 import WeatherIcons from './components/WeatherIcons'
 import SunController from './components/SunController.tsx'
+import HeightMap from './components/heightMap'
 
 import SemiCircle from './components/semi-circle';
 
@@ -65,6 +66,8 @@ import SemiCircle from './components/semi-circle';
 
 export enum EventsEnum {  
     //SunPosition = 'map-mode' //sample payload - { 'time' : '12:15' }
+    Zoom = 'zoom', 
+    HeightMap = 'height-map', 
     WeatherControl = 'weather',
     SunPosition = 'solar-time', //sample payload - { 'time' : '12:15' }
     Navigation = 'navigation'
@@ -466,7 +469,20 @@ registerWidget({
     }
 });
 
-
+registerWidget({
+    id: "heightMap", 
+    widget: HeightMap,
+    configs: {
+        layout: {
+            w: 2,
+            h: 2,
+            // minH: 9,
+            // minW: 2,
+            //  maxH: 9,
+            //  maxW: 2
+        }
+    }
+});
 
 
 

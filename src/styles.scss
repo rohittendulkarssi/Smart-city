@@ -1533,3 +1533,44 @@
        }
           
   }
+
+
+  .toggle-container {
+    display: inline-block;
+        
+        
+        .toggle-button {
+            position: relative;
+            width: 66px;
+            height: 32px;
+            border: none;
+            background-color: #ccc;
+            outline: none;
+            cursor: pointer;
+            border-radius: 15px;
+            padding: 2px;
+
+            .slider-toggle {
+                position: absolute;
+                width: 27px;
+                height: 27px;
+                border-radius: 50%;
+                background-color: #034d3c;
+                transition: transform 0.3s ease;
+                top: 2px;
+                left: 5px;
+
+                &.on{
+                    transform: translateX(30px);
+                }
+                
+                &.off {
+                    transform: translateX(0);
+                }
+            }
+        }
+  
+    
+    
+   
+}

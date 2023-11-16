@@ -40,12 +40,7 @@ import { EventsEnum } from '../index';
 
 interface IMapChangeMode {
   uxpContext: IContextProvider;
-}
-
-
-
-
-  
+} 
 
 const SunController: React.FunctionComponent<IMapChangeMode> = (props) => {
   const { uxpContext } = props;
@@ -71,15 +66,12 @@ const SunController: React.FunctionComponent<IMapChangeMode> = (props) => {
               max={24}
               step={1}
               value={currentTime}
-                onChange={handleTimeChange} 
-              //onClick={() => uxpContext.eventHandler?.(EventsEnum.Zoom, { 'mode': '+' })}
-
-              //onClick={() => uxpContext.eventHandler?.(EventsEnum.Zoom, { 'mode': '+' })}
+                onChange={handleTimeChange}  
               onClick={() =>uxpContext.eventHandler?.( EventsEnum.SunPosition, { time: '12:15' })}
 
                 
             />
-             <span>{currentTime} hours</span> 
+             {/* <span>{currentTime} hours</span>  */}
 
         </div> 
       

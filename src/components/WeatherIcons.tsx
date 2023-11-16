@@ -50,7 +50,7 @@ interface IMapChangeMode {
                 
                   {/* <li key={item.id}><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.SunPosition, { time: '12:15' })}><img src={item.pict} /></a></li> */}
 
-            <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'snowflake' })}><img src='https://static.iviva.com/images/Udhayimages/snowflake.png' /></a></li>
+            <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'clear' })}><img src='https://static.iviva.com/images/Udhayimages/snowflake.png' /></a></li>
             <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'rainy' })}><img src="https://static.iviva.com/images/Udhayimages/rainy.png" /></a></li>
             <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'thunder' })}><img src="https://static.iviva.com/images/Udhayimages/thunder.png" /></a></li>
             <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'cloud' })}><img src="https://static.iviva.com/images/Udhayimages/cloudy-day.png" /></a></li>

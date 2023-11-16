@@ -217,6 +217,13 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
+        } ,
+        {
+            "id": "heightMap",
+            "name": "Height Map",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
         } 
         
         
