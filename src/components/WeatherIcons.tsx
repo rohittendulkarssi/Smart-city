@@ -1,6 +1,5 @@
-import React, { useState } from 'react'; 
-import {WidgetWrapper} from "uxp/components";
-
+import React from 'react';
+import { WidgetWrapper } from "uxp/components";
 import { IContextProvider } from '../uxp';
 import { EventsEnum } from '../index';
 
@@ -8,64 +7,120 @@ interface IMapChangeMode {
   uxpContext: IContextProvider;
 }
 
- 
-// const WeatherIcons = () => { 
-  const WeatherIcons: React.FunctionComponent<IMapChangeMode> = (props) => {
+const WeatherIcons: React.FC<IMapChangeMode> = ({ uxpContext }) => {
+  const weatherIcons = [
+    //'snowflake', 
+    'rainy', 
+    //'thunder',
+    //'cloudy-day',
+    'cloud',
+    'sun'
+  ];
 
-    const { uxpContext } = props;
+  const handleWeatherClick = (state: string) => {
+    uxpContext.eventHandler?.(EventsEnum.WeatherControl, { state });
+    console.log('Weather', state)
+  };
 
-  var weather_list = [ 
-    {
-      id:1,
-      pict: "https://static.iviva.com/images/Udhayimages/snowflake.png"
-    },
-    {
-      id:2,
-      pict: "https://static.iviva.com/images/Udhayimages/rainy.png"
-    },
-    {
-      id:3,
-      pict: "https://static.iviva.com/images/Udhayimages/thunder.png"
-    },
-    {
-      id:4,
-      pict: "https://static.iviva.com/images/Udhayimages/cloudy-day.png"
-    },
-    {
-      id:5,
-      pict: "https://static.iviva.com/images/Udhayimages/cloud.png"
-    },
-    {
-      id:6,
-      pict: "https://static.iviva.com/images/Udhayimages/sun.png"
-    }
-  ]
-
-  return (  
-    <WidgetWrapper className="smart-city_box">   
+  return (
+    <WidgetWrapper className="smart-city_box">
       <div className='weather-list'>
-          <ul> 
-              {/* {weather_list.map((item) => ( */}
-                
-                
-                  {/* <li key={item.id}><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.SunPosition, { time: '12:15' })}><img src={item.pict} /></a></li> */}
-
-            <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'clear' })}><img src='https://static.iviva.com/images/Udhayimages/snowflake.png' /></a></li>
-            <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'rainy' })}><img src="https://static.iviva.com/images/Udhayimages/rainy.png" /></a></li>
-            <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'thunder' })}><img src="https://static.iviva.com/images/Udhayimages/thunder.png" /></a></li>
-            <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'cloud' })}><img src="https://static.iviva.com/images/Udhayimages/cloudy-day.png" /></a></li>
-            <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'cloud' })}><img src="https://static.iviva.com/images/Udhayimages/cloud.png" /></a></li>
-            <li><a href='#'  onClick={() => uxpContext.eventHandler?.( EventsEnum.WeatherControl, { state: 'sunny' })}><img src="https://static.iviva.com/images/Udhayimages/sun.png" /></a></li>
-
-              {/* ))}  */}
-              
-                
-
-          </ul>
-      </div> 
-      </WidgetWrapper> 
+        <ul>
+          {weatherIcons.map((icon, index) => (
+            <li key={index}>
+              <a href="javascript:void(0);" onClick={() => handleWeatherClick(icon)}>
+                <img src={`https://static.iviva.com/images/Udhayimages/${icon}.png`} alt={icon} />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </WidgetWrapper>
   );
 };
 
 export default WeatherIcons;
+
+
+
+//2
+ 
+ 
+// import React, { useState } from 'react';
+// import axios from 'axios';
+// import { WidgetWrapper } from 'uxp/components';
+// import { IContextProvider } from '../uxp';
+// import { EventsEnum } from '../index';
+
+// interface IMapChangeMode {
+//   uxpContext: IContextProvider;
+// }
+
+// const WeatherIcons: React.FC<IMapChangeMode> = ({ uxpContext }) => {
+//   const [city, setCity] = useState('Medina');
+//   const [weather, setWeather] = useState(null);
+//   const [error, setError] = useState(null);
+
+//   const API_KEY = '607a538dc29b5380f8ed270cd7db39c2';
+
+//   const weatherIcons = ['rainy', 'cloud', 'sun'];
+
+//   const handleWeatherClick = async (icon: string) => {
+//     try {
+//       const response = await axios.get(
+//         `https://api.openweathermap.org/data/2.5/weather?q=${city},SA&appid=${API_KEY}`
+//       );
+
+//       setWeather(response.data);
+//       setError(null);
+
+//       uxpContext.eventHandler?.(EventsEnum.WeatherControl, { state: icon });
+//       console.log('Weather', icon);
+//     } catch (err) {
+//       setWeather(null);
+//       setError('City not found');
+//     }
+//     console.log('Hello',setWeather);
+//   };
+
+//   return (
+//     <WidgetWrapper className="smart-city_box">
+//       <div>
+//         {/* <h2>Weather Icons</h2>
+//         <input
+//           type="text"
+//           placeholder="Enter city"
+//           value={city}
+//           onChange={(e) => setCity(e.target.value)}
+//         /> */}
+
+//         <div className='weather-list'>
+//           <ul>
+//             {weatherIcons.map((icon, index) => (
+//               <li key={index}>
+//                 <a href="javascript:void(0);" onClick={() => handleWeatherClick(icon)}>
+//                   <img src={`https://static.iviva.com/images/Udhayimages/${icon}.png`} alt={icon} />
+//                 </a>
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+
+//         {weather && (
+//           <div>
+//             <h3>{weather.name}, {weather.sys.country}</h3>
+//             <p>Temperature: {weather.main.temp} K</p>
+//             <p>Weather: {weather.weather[0].description}</p>
+//           </div>
+//         )}
+
+//         {error && <p style={{ color: 'red' }}>{error}</p>}
+//       </div>
+//     </WidgetWrapper>
+//   );
+// };
+
+// export default WeatherIcons;
+
+
  

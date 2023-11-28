@@ -55,9 +55,21 @@ const HeightMap: React.FunctionComponent<IMapChangeMode> = (props) => {
   const [isToggled, setToggled] = useState(false);
 
  
+  // const handleButtonClick = () => {
+  //   uxpContext.eventHandler?.( EventsEnum.HeightMap, { showHeightMap: true } ); 
+  //   setToggled(!isToggled);  
+  // };
+
+ 
+
   const handleButtonClick = () => {
-    uxpContext.eventHandler?.( EventsEnum.HeightMap, { showHeightMap: true } ); 
-    setToggled(!isToggled);
+    setToggled((prevState) => {
+      // console.log('Previous state:', prevState); 
+      const nextState = !prevState; 
+      // console.log('Next state:', nextState); 
+      uxpContext.eventHandler?.(EventsEnum.HeightMap, { showHeightMap: nextState });
+      return nextState;
+    });
   };
 
   return (
@@ -65,6 +77,8 @@ const HeightMap: React.FunctionComponent<IMapChangeMode> = (props) => {
       <button onClick={handleButtonClick} className="toggle-button">
         <div className={`slider-toggle ${isToggled ? 'on' : 'off'}`} />
       </button>
+
+      <label className="toggle-label">{isToggled ? 'On' : 'Off'}</label>
     </div>
   );
 }

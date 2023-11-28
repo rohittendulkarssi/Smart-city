@@ -114,7 +114,11 @@ const Waste_Generated_Trend: React.FunctionComponent<{}> = () => {
 
 
         <WidgetWrapper className="smart-city_box energy_consumption-box"> 
+          
             
+            <TitleBar title="Waste Generated Trends" icon='https://static.iviva.com/images/Udhayimages/recycling-symbol.png'>
+                
+                  
             <div className='top_tabs'>
                 <ToggleFilter  
                       options={[
@@ -125,8 +129,9 @@ const Waste_Generated_Trend: React.FunctionComponent<{}> = () => {
                       onChange={handleFilterChangeday}
                   /> 
                </div>
-            
-            <TitleBar title="Waste Generated Trends" icon='https://static.iviva.com/images/Udhayimages/recycling-symbol.png'></TitleBar> 
+                
+                </TitleBar>  
+
 
         <div className="smart-city-content">  
 

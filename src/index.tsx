@@ -428,12 +428,12 @@ registerWidget({
     widget: TopNavTabs,
     configs: {
         layout: {
-            w: 12,
+            w: 15,
             h: 3, 
             minH: 3,
-            minW: 12,
+            minW: 15,
              maxH: 3,
-             maxW: 12
+             maxW: 15
         }
     }
 });
@@ -443,12 +443,12 @@ registerWidget({
     widget: WeatherIcons,
     configs: {
         layout: {
-            w: 8,
+            w: 7,
             h: 3, 
-            // minH: 3,
-            // minW: 8,
-            //  maxH: 3,
-            //  maxW: 8
+            minH: 3,
+            minW: 7,
+             maxH: 3,
+             maxW: 7
         }
     }
 });
@@ -460,11 +460,11 @@ registerWidget({
     configs: {
         layout: {
             w: 2,
-            h: 9,
-            // minH: 9,
-            // minW: 2,
-            //  maxH: 9,
-            //  maxW: 2
+            h: 7,
+            minH: 7,
+            minW: 2,
+             maxH: 7,
+             maxW: 2
         }
     }
 });
@@ -475,11 +475,11 @@ registerWidget({
     configs: {
         layout: {
             w: 2,
-            h: 2,
-            // minH: 9,
-            // minW: 2,
-            //  maxH: 9,
-            //  maxW: 2
+            h: 3,
+            minH: 3,
+            minW: 2,
+             maxH: 3,
+             maxW: 2
         }
     }
 });
