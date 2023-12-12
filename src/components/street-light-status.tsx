@@ -69,7 +69,7 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = () =>
 
                 <div className="technician_chart">  
                 
-                <div className='sub_title_bar'>Maintenance Permits</div>  
+                <div className='sub_title_bar'>Streetlight Maintenance permits</div>  
 
                     <div className="progress-bar-container"><div className="progress-bar" style={{ width: `${completionPercentage}%`}}></div></div> 
    

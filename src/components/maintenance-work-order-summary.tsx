@@ -115,7 +115,7 @@ const Maintenance_Work_Order_Summary: React.FunctionComponent<{}> = () => {
           
           <div className="smart-city-content"  style={{height:'350px'}}>
 
-              <div className="chart-top">
+              {/* <div className="chart-top">
                 
                   <FormField inline className="showcase-input" >
 
@@ -157,7 +157,7 @@ const Maintenance_Work_Order_Summary: React.FunctionComponent<{}> = () => {
                       />  
                         
                   </FormField>
-            </div>
+            </div> */}
 
 
               <DataTable

@@ -165,7 +165,7 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
                 return ( 
                    
                     <WidgetWrapper className="smart-city_box energy_consumption-box">  
-                        <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Energy Consumption"> </TitleBar>  
+                        <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Streetlight Energy Consumption"> </TitleBar>  
             
                         <div className="smart-city-content">  
 
@@ -204,7 +204,7 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
                                     <Legend />
                                     <Area
                                     type="monotone"
-                                    dataKey="power"
+                                    dataKey="2023"
                                     stackId="1"
                                     stroke="#001912"
                                     fill="url(#gradient1)"  
@@ -212,7 +212,7 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
 
                                     <Area
                                     type="monotone"
-                                    dataKey="solar"
+                                    dataKey="2022"
                                     stackId="1"
                                     stroke="#79dccc"
                                     fill="url(#gradient2)"  

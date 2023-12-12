@@ -7,7 +7,7 @@ interface IMapChangeMode {
 } 
 
 const SunController: React.FunctionComponent<IMapChangeMode> = (props) => {
-  const [currentTime, setCurrentTime] = useState(12.15);
+  const [currentTime, setCurrentTime] = useState(12.00);
 
   const { uxpContext } = props;
   const mapContainerRef = useRef(null);
@@ -24,6 +24,7 @@ const SunController: React.FunctionComponent<IMapChangeMode> = (props) => {
 
   const handleTimeChange = (event:any) => {
     setCurrentTime(parseFloat(event.target.value));
+    console.log("currentTime", currentTime)
   };
 
   return (

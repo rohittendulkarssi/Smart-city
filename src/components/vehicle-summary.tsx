@@ -11,36 +11,67 @@ const VehicleSummaryWidget: React.FunctionComponent<{}> = () => {
  
 
     var vehicledata = [  
+        // {
+        //     vehicle: 'Car',
+        //     value: 120, 
+        //     fullValue: 150,
+        //   },
+        //   {
+        //     vehicle: 'Taxi',
+        //     value: 98, 
+        //     fullValue: 150,
+        //   },
+        //   {
+        //     vehicle: 'Bus',
+        //     value: 86, 
+        //     fullValue: 150,
+        //   },
+        //   {
+        //     vehicle: 'Truck',
+        //     value: 99, 
+        //     fullValue: 150,
+        //   },
+        //   {
+        //     vehicle: 'Motorcycle',
+        //     value: 85, 
+        //     fullValue: 150,
+        //   },
+        //   {
+        //     vehicle: 'Van',
+        //     value: 65, 
+        //     fullValue: 150,
+        //   }
+
         {
-            vehicle: 'Car',
-            value: 120, 
-            fullValue: 150,
-          },
-          {
-            vehicle: 'Taxi',
-            value: 98, 
-            fullValue: 150,
-          },
-          {
-            vehicle: 'Bus',
-            value: 86, 
-            fullValue: 150,
-          },
-          {
-            vehicle: 'Truck',
-            value: 99, 
-            fullValue: 150,
-          },
-          {
-            vehicle: 'Motorcycle',
-            value: 85, 
-            fullValue: 150,
-          },
-          {
-            vehicle: 'Van',
-            value: 65, 
-            fullValue: 150,
-          },
+          vehicle: 'Load fail',
+          value: 120, 
+          fullValue: 150,
+        },
+        {
+          vehicle: 'Main Fail',
+          value: 98, 
+          fullValue: 150,
+        },
+        {
+          vehicle: 'Voltage trip alert',
+          value: 86, 
+          fullValue: 150,
+        },
+        {
+          vehicle: 'Lux Sensor Blocked',
+          value: 99, 
+          fullValue: 150,
+        },
+        {
+          vehicle: 'Excessive power drawn alert',
+          value: 85, 
+          fullValue: 150,
+        },
+        {
+          vehicle: 'Overload Alert',
+          value: 65, 
+          fullValue: 150,
+        },
     ] 
     
       const MyResponsiveRadar = ({}) => (

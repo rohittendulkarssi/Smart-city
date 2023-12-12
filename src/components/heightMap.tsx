@@ -54,19 +54,13 @@ const HeightMap: React.FunctionComponent<IMapChangeMode> = (props) => {
   const { uxpContext } = props;
   const [isToggled, setToggled] = useState(false);
 
- 
-  // const handleButtonClick = () => {
-  //   uxpContext.eventHandler?.( EventsEnum.HeightMap, { showHeightMap: true } ); 
-  //   setToggled(!isToggled);  
-  // };
-
- 
+   
 
   const handleButtonClick = () => {
     setToggled((prevState) => {
-      // console.log('Previous state:', prevState); 
+        console.log('Previous state:', prevState); 
       const nextState = !prevState; 
-      // console.log('Next state:', nextState); 
+        console.log('Next state:', nextState); 
       uxpContext.eventHandler?.(EventsEnum.HeightMap, { showHeightMap: nextState });
       return nextState;
     });

@@ -490,6 +490,14 @@ registerWidget({
 function componentDidMount() {
     throw new Error('Function not implemented.');
 }
+
+
+// <script> 
+//   var myElement = document.getElementById("root"); 
+//   myElement.classList.add("blueTheme");
+//   </script>
+
+
 /**
  * Register as a Sidebar Link
  */
