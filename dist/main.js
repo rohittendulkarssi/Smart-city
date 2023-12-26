@@ -11,7 +11,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.id, ".main-content-block {\n  width: 100%;\n  display: inline-block;\n  position: relative;\n  z-index: 0;\n}\n.main-content-block::before {\n  content: \"\";\n  background: #023d28;\n  left: 0;\n  top: 0;\n  width: 40%;\n  height: 176vh;\n  position: absolute;\n  z-index: 1;\n  background: rgb(2, 61, 40);\n  background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 41, 26, 0.58) 35%, rgba(255, 255, 255, 0) 100%);\n  pointer-events: none;\n}\n.main-content-block::after {\n  content: \"\";\n  right: 0;\n  top: 0;\n  width: 40%;\n  height: 176vh;\n  position: absolute;\n  z-index: 0;\n  background: rgb(2, 61, 40);\n  background: linear-gradient(270deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 41, 26, 0.58) 35%, rgba(255, 255, 255, 0) 100%);\n  pointer-events: none;\n}\n.main-content-block .widget-container-block {\n  z-index: 1;\n  position: relative;\n  min-height: 176vh;\n  background: rgba(2, 61, 40, 0.4588235294);\n}\n\n.smart-city_box {\n  background: rgba(0, 0, 0, 0);\n  /* backdrop-filter: blur(34px); */\n  box-shadow: none;\n  border-radius: 10px;\n  z-index: 1;\n}\n.smart-city_box .uxp-widget-title-bar {\n  background: transparent;\n  color: #1f9b7f;\n  border-bottom: 1px solid #dedede;\n  margin-bottom: 1em;\n  padding: 0;\n  outline: none;\n  min-height: 38px;\n  width: 95%;\n  position: relative;\n}\n.smart-city_box .uxp-widget-title-bar::before {\n  content: \"\";\n  position: absolute;\n  background-color: rgba(222, 222, 222, 0.631372549);\n  width: 6%;\n  height: 3px;\n  bottom: -4px;\n  left: 0;\n  border-radius: 0px 0px 30px 30px;\n}\n.smart-city_box .uxp-widget-title-bar::after {\n  content: \"\";\n  position: absolute;\n  background-color: rgba(222, 222, 222, 0.631372549);\n  width: 6px;\n  height: 6px;\n  bottom: -3px;\n  right: -6px;\n  border-radius: 50%;\n}\n.smart-city_box .uxp-widget-title-bar .txt {\n  color: #0fd6a9;\n  font-weight: 600;\n  font-size: 1.1em;\n}\n.smart-city_box .sub_title_bar {\n  /* border-bottom: 1px solid #c2e6da; */\n  margin-bottom: 0.8em;\n  padding: 0;\n  min-height: 15px;\n  width: 80%;\n  font-size: 0.95em;\n  color: #fff;\n  font-weight: 500;\n  outline: none;\n}\n.smart-city_box .smart-city-content {\n  display: inline-block;\n  width: 95%;\n  margin-top: 1em;\n}\n.smart-city_box.order_trend-box .smart-city-content .technician_chart .recharts-text {\n  fill: #ededed;\n}\n.smart-city_box.order_summary-box .smart-city-content {\n  height: 250px;\n  overflow: auto;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr th {\n  background-color: transparent;\n  color: #1dcb8d;\n  text-align: left;\n  padding: 5px 3px;\n  font-size: 10px;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card {\n  background-color: transparent;\n  color: #ffffff;\n  min-height: 30px;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card .content {\n  padding: 0;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card .content .sub-title {\n  font-size: 10px;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card::after {\n  content: \"\";\n  width: 18px;\n  height: 18px;\n  position: absolute;\n  top: 8px;\n  background-size: 100% auto;\n  background-repeat: no-repeat;\n  left: 0%;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.attention::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==\");\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.pending::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=\");\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.resloved::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==\");\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.Green .content .sub-title {\n  background-color: #00b36c;\n  padding: 5px 5px;\n  border-radius: 1px;\n  width: 44px;\n  text-align: center;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.Red .content .sub-title {\n  background-color: #cb0000;\n  padding: 5px 5px;\n  border-radius: 1px;\n  width: 44px;\n  text-align: center;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list-footer {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list-footer .go-up-btn-container {\n  background-color: rgba(5, 81, 54, 0.34);\n}\n.smart-city_box.cctv-box .body {\n  height: 250px;\n  width: 100%;\n  display: inline-block;\n  background-image: url(https://static.iviva.com/images/Udhayimages/Al-Haram-District2.jpg);\n  background-size: 100% 100%;\n  background-position: center center;\n  background-repeat: no-repeat;\n}\n.smart-city_box.waste-bin-box .smart-city-content {\n  margin-top: 0;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content {\n  display: flex;\n  width: 100%;\n  padding: 1em 8% 2em 8%;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status {\n  display: inline-block;\n  width: 33%;\n  text-align: center;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status h3 {\n  font-size: 1.8em;\n  padding: 0;\n  margin: 0;\n  text-shadow: 1px 1px #000000, 1px 1px #000;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status p {\n  font-size: 0.8em;\n  padding: 1em 0 0 0;\n  margin: 0;\n  color: #fff;\n  position: relative;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status p::after {\n  content: \"\";\n  width: 16px;\n  height: 16px;\n  position: absolute;\n  top: 8px;\n  background-size: 100% auto;\n  background-repeat: no-repeat;\n  right: 8%;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Attention h3 {\n  color: rgb(211, 1, 1);\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Attention p::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==\");\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Pending h3 {\n  color: rgb(218, 218, 1);\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Pending p::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=\");\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Resloved h3 {\n  color: rgb(19, 232, 61);\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Resloved p::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==\");\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec {\n  width: 100%;\n  display: flex;\n  margin-top: 0.85em;\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec .chart-issue {\n  display: inline-block;\n  width: 75%;\n  text-align: center;\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec .chart-pending {\n  display: inline-block;\n  width: 25%;\n  text-align: center;\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec h3 {\n  font-size: 1.7em;\n  padding: 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec p {\n  font-size: 0.85em;\n  padding: 0;\n  margin: 0.3em 0 0 0;\n  color: #fff;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content {\n  margin-top: 0;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content {\n  display: flex;\n  width: 100%;\n  padding: 0.5em 2% 3em 2%;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status {\n  display: inline-block;\n  width: 33%;\n  text-align: center;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status .vahicle-icon {\n  display: inline-block;\n  width: 52px;\n  height: 52px;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: 75% auto;\n  margin-bottom: 0.5em;\n  background-color: rgba(255, 255, 255, 0.6117647059);\n  border-radius: 10px;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status .vahicle-icon.co2-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status .vahicle-icon.fuel-consumption-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status .vahicle-icon.s-consumption-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/money.png);\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status p {\n  font-size: 0.9em;\n  padding: 0em 0 0 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status h2 {\n  font-size: 1.8em;\n  padding: 0;\n  margin: 0.4em 0 0.2em 0;\n  color: #fff;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status span {\n  font-size: 0.75em;\n  color: #fff;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper {\n  width: 180px !important;\n  right: -145px !important;\n  top: 20px;\n  left: auto !important;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper ul {\n  display: inline-block;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper ul li {\n  padding: 0.7em 0;\n  list-style: none;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper ul li .data_values {\n  margin-left: 10px;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper ul li em {\n  width: 10px;\n  height: 7px;\n  display: inline-block;\n  margin-right: 5px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n.smart-city_box.vehicle_summary-box .smart-city-content .technician_chart text {\n  color: #fff;\n  fill: #fff !important;\n}\n.smart-city_box.energy_consumption-box .technician_chart {\n  margin-top: 0em;\n}\n.smart-city_box.energy_consumption-box .technician_chart .recharts-wrapper {\n  fill: transparent;\n  font-size: 0.88em;\n}\n.smart-city_box.energy_consumption-box .technician_chart .recharts-layer text, .smart-city_box.energy_consumption-box .technician_chart .recharts-cartesian-axis-line text {\n  fill: #fff !important;\n}\n.smart-city_box.energy_consumption-box .technician_chart .recharts-cartesian-axis-ticks, .smart-city_box.energy_consumption-box .technician_chart .recharts-legend-item-text {\n  fill: #fff !important;\n  color: #fff;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content {\n  display: flex;\n  width: 100%;\n  padding: 0.5em 0% 0em 0%;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status {\n  display: inline-block;\n  width: 33%;\n  text-align: center;\n  background-color: rgba(0, 97, 67, 0.61);\n  border-radius: 10px;\n  margin-right: 3%;\n  padding-bottom: 1em;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status .vehicle-icon {\n  display: inline-block;\n  width: 75px;\n  height: 75px;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: 75% auto;\n  margin-bottom: 0.5em;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status .vehicle-icon.co2-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status .vehicle-icon.fuel-consumption-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status .vehicle-icon.s-consumption-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/money.png);\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status p {\n  font-size: 0.85em;\n  padding: 0em 0 0 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status h2 {\n  font-size: 2.2em;\n  padding: 0;\n  margin: 0.4em 0 0.2em 0;\n  color: #fff;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status span {\n  font-size: 0.85em;\n  padding-bottom: 1em;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status span.red {\n  color: #ff0000;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status span.green {\n  color: #00e51a;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status:last-child {\n  margin-right: 0;\n}\n.smart-city_box.water_consumption-box .smart-city-content .status-content {\n  display: flex;\n  width: 100%;\n  padding: 0.5em 0% 0em 0%;\n  color: #ffffff;\n}\n.smart-city_box.water_consumption-box .smart-city-content .status-content .recharts-surface {\n  fill: #ffffff;\n  color: #ffffff;\n}\n.smart-city_box.water_consumption-box .smart-city-content .status-content .recharts-surface .recharts-layer {\n  fill: #ffffff;\n  color: #ffffff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content {\n  display: inline-block;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .status {\n  display: inline-block;\n  width: 30%;\n  text-align: center;\n  background-color: rgba(0, 97, 67, 0.61);\n  border-radius: 2px;\n  padding: 2em;\n  margin: 1em 0em 0em 1em;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .status p {\n  font-size: 1em;\n  padding: 0em 0 0 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .status h2 {\n  font-size: 2.2em;\n  padding: 0;\n  margin: 0.4em 0 0.2em 0;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .status span {\n  font-size: 0.85em;\n  padding-bottom: 1em;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall {\n  display: inline-block;\n  width: 100%;\n  text-align: center;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-quality-status-box {\n  display: inherit;\n  width: 60%;\n  background-color: rgba(0, 97, 67, 0.61);\n  border-radius: 2px;\n  padding: 2em;\n  margin: 0em 1em 1em 1em;\n  text-align: center;\n  text-transform: uppercase;\n  align-items: center;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-quality-status-box p {\n  font-size: 1em;\n  padding: 0em 0 0 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-quality-status-box h5 {\n  font-size: 2.3em;\n  padding: 0;\n  margin: 0.4em 0 0.2em 0;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars {\n  display: flex;\n  width: 60%;\n  margin-left: 20%;\n  margin-top: 2em;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar {\n  width: 50%;\n  height: 130px;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar svg {\n  transform: rotate(-90deg);\n  width: 100%;\n  height: 100%;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar circle {\n  fill: transparent;\n  stroke-width: 8;\n  stroke: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar .progress-bar {\n  fill: transparent;\n  stroke-width: 10px;\n  stroke: rgb(0, 97, 67);\n  stroke-dasharray: 64;\n  stroke-dashoffset: 0;\n  transition: stroke-dashoffset 0.5s ease;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar .percentage {\n  position: absolute;\n  top: 40%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 18px;\n  font-weight: bold;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar .value {\n  font-size: 13px;\n  font-weight: normal;\n  color: #fff;\n  position: absolute;\n  top: 58%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content {\n  display: inline-block;\n  width: 46%;\n  text-align: center;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status {\n  display: inline-block;\n  width: 28%;\n  text-align: center;\n  background-color: rgba(0, 97, 67, 0.61);\n  border-radius: 2px;\n  padding: 0.8em;\n  margin: 0.8em 0.8em 0em 0em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status p {\n  font-size: 0.88em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status span {\n  font-size: 0.75em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status:nth-child(4n), .smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status:nth-child(7n) {\n  margin-right: 0em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status h2 {\n  font-size: 1.3em;\n  padding: 0;\n  margin: 0.2em 0 0.1em 0;\n  color: #fff;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content.loaction2-status-content {\n  margin-left: 0em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .uxp-form-group .uxp-search-box-container .uxp-input-container .uxp-form-input {\n  width: 100%;\n  min-width: 100%;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .versus {\n  display: inline-block;\n  width: 8%;\n  color: #fff;\n  font-size: 1.2em;\n  text-align: center;\n  vertical-align: top;\n  padding-top: 10em;\n}\n.smart-city_box .top_tabs {\n  float: right;\n  width: auto;\n}\n.smart-city_box .top_tabs .uxp-toggle-filter, .smart-city_box .top_tabs .toggle-filter {\n  background: transparent;\n  float: right;\n  margin: 0;\n  display: inline-flex;\n}\n.smart-city_box .top_tabs .uxp-toggle-filter .uxp-toggle-option, .smart-city_box .top_tabs .uxp-toggle-filter button, .smart-city_box .top_tabs .toggle-filter .uxp-toggle-option, .smart-city_box .top_tabs .toggle-filter button {\n  background: rgb(3, 7, 9);\n  color: #fff;\n  font-size: 1em;\n  text-transform: uppercase;\n  border-radius: 2px;\n  margin: auto 0px;\n  outline: none;\n  border: none;\n  padding: 8px 20px;\n  cursor: pointer;\n}\n.smart-city_box .top_tabs .uxp-toggle-filter .uxp-toggle-option.selected, .smart-city_box .top_tabs .uxp-toggle-filter .uxp-toggle-option.active, .smart-city_box .top_tabs .uxp-toggle-filter button.selected, .smart-city_box .top_tabs .uxp-toggle-filter button.active, .smart-city_box .top_tabs .toggle-filter .uxp-toggle-option.selected, .smart-city_box .top_tabs .toggle-filter .uxp-toggle-option.active, .smart-city_box .top_tabs .toggle-filter button.selected, .smart-city_box .top_tabs .toggle-filter button.active {\n  background: #18d6b8;\n  box-shadow: 0px 0px 12px 1px #02eec9;\n}\n.smart-city_box.cctv-overview-box .uxp-widget-title-bar {\n  width: 100%;\n}\n.smart-city_box.cctv-overview-box .uxp-toggle-filter {\n  background: transparent;\n}\n.smart-city_box.cctv-overview-box .uxp-toggle-filter .uxp-toggle-option {\n  background: rgb(3, 7, 9);\n  color: #fff;\n  font-size: 1em;\n  text-transform: uppercase;\n  border-radius: 2px;\n  margin: auto 0px;\n}\n.smart-city_box.cctv-overview-box .uxp-toggle-filter .uxp-toggle-option.selected {\n  background: #18d6b8;\n  box-shadow: 0px 0px 12px 1px #02eec9;\n}\n.smart-city_box.cctv-overview-box .smart-city-content {\n  width: 100%;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list {\n  display: inline-block;\n  width: 18%;\n  margin-right: 2%;\n  margin-bottom: 2em;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list:nth-child(5n) {\n  margin-right: 0;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list select {\n  background: transparent;\n  outline: none;\n  border: none;\n  color: #fff;\n  font-size: 1em;\n  margin: 10px 0px;\n  width: 100%;\n  text-transform: uppercase;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list select option {\n  padding: 8px 12px;\n  cursor: pointer;\n  background-color: rgba(0, 97, 67, 0.61);\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list select option:checked, .smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list select option:hover {\n  background-color: rgba(0, 97, 67, 0.61);\n  color: #fff;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .cctv-pict {\n  display: inline-block;\n  width: 100%;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .cctv-pict img {\n  height: 175px;\n  width: 100%;\n  border: 1px solid #012417;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction {\n  color: #fff;\n  font-size: 0.8em;\n  margin-top: 0.7em;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction-number {\n  color: #fff;\n  font-size: 0.8em;\n  margin-top: 0.7em;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction-status {\n  color: #fff;\n  padding: 4px 0;\n  width: 60px;\n  text-align: center;\n  margin-top: 0.7em;\n  font-size: 0.85em;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction-status.Red {\n  background: #cb0000;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction-status.Green {\n  background: #00b36c;\n}\n.smart-city_box .chart-top {\n  display: flex;\n  justify-content: flex-end;\n  margin-bottom: 1em;\n}\n.smart-city_box .chart-top .uxp-toggle-filter {\n  background: transparent;\n  display: inline-flex;\n  padding: 0;\n  width: 158px;\n}\n.smart-city_box .chart-top .uxp-toggle-filter .uxp-toggle-option {\n  color: #00c397;\n  box-shadow: none;\n  font-weight: bold;\n  font-size: 1em;\n  padding: 8px 6px;\n  border-radius: 0;\n}\n.smart-city_box .chart-top .uxp-toggle-filter .uxp-toggle-option.selected {\n  box-shadow: none;\n  background: transparent;\n  color: #ffffff;\n}\n.smart-city_box .chart-top .showcase-input {\n  display: flex;\n  width: 100% !important;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container {\n  display: inline-block;\n  margin-right: 1.2em;\n  width: 22%;\n  min-width: 22%;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container .uxp-input-container {\n  width: 70%;\n  min-width: 70%;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container .uxp-input-container .uxp-form-input {\n  width: 100%;\n  font-size: 9px;\n  min-width: 140%;\n}\n.smart-city_box .chart-top .showcase-input .uxp-form-select {\n  display: inline-block;\n  margin-right: 1.5em;\n  width: 23%;\n  min-width: 23%;\n}\n.smart-city_box .chart-top .showcase-input .uxp-form-select .uxp-select-placeholder {\n  padding: 14px 9px;\n  font-size: 9px;\n}\n.smart-city_box .chart-top .showcase-input .uxp-date-time-picker-container {\n  display: inline-block;\n  margin-right: 1.5em;\n  width: 23%;\n  min-width: 23%;\n}\n.smart-city_box .chart-top .showcase-input .uxp-date-time-picker-container .placeholder .label {\n  padding: 10px 10px;\n}\n.smart-city_box .chart-top .showcase-input .uxp-date-time-picker-container .placeholder .value {\n  padding: 10px 0px;\n  min-width: 80px;\n  width: 80%;\n  font-size: 9px;\n}\n.smart-city_box .technician_chart {\n  margin-top: 0em;\n}\n.smart-city_box .technician_chart .recharts-wrapper {\n  fill: transparent;\n}\n.smart-city_box .technician_chart .recharts-layer text, .smart-city_box .technician_chart .recharts-cartesian-axis-line text {\n  fill: #fff !important;\n}\n.smart-city_box .technician_chart .recharts-cartesian-axis-ticks, .smart-city_box .technician_chart .recharts-legend-item-text {\n  fill: #fff !important;\n  color: #fff;\n}\n.smart-city_box .technician_chart .sub_title_bar {\n  width: 90%;\n  font-size: 1em;\n}\n\n.afterhours_inner_widget {\n  display: inline-block;\n  width: 100%;\n  margin-top: 0px;\n}\n.afterhours_inner_widget .afterhours_tree {\n  display: inline-flex;\n  width: 98%;\n  height: 100%;\n  position: relative;\n}\n.afterhours_inner_widget .afterhours_tree ul {\n  margin: 3px 0 0 0;\n  padding: 0;\n  display: inline-block;\n  width: 95%;\n  margin-left: 5%;\n  column-count: 3;\n}\n.afterhours_inner_widget .afterhours_tree ul li {\n  display: inline-block;\n  padding-left: 10px;\n  position: relative;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 1px 0;\n}\n.afterhours_inner_widget .afterhours_tree ul li:last-child::before {\n  display: none;\n}\n.afterhours_inner_widget .afterhours_tree ul li p {\n  font-size: 7px;\n  margin: 3px 0;\n  position: relative;\n  display: inline-block;\n  width: 95%;\n  color: #fff;\n}\n.afterhours_inner_widget .afterhours_tree ul li p::before {\n  content: \"\";\n  position: absolute;\n  top: 0px;\n  left: -20px;\n  width: 15px;\n  height: 7px;\n  text-align: center;\n  pointer-events: none;\n  border-radius: 2px;\n}\n.afterhours_inner_widget .afterhours_tree ul li p span {\n  width: 25%;\n  font-size: 6px;\n  float: right;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+1) p::before {\n  background-color: #82d963;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+2) p::before {\n  background-color: #f5ec00;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+3) p::before {\n  background-color: #d879e1;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+4) p::before {\n  background-color: #5ee3f4;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+5) p::before {\n  background-color: #7cbef6;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+6) p::before {\n  background-color: #9d7cf6;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+7) p::before {\n  background-color: #f79598;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+8) p::before {\n  background-color: #f6a67c;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+9) p::before {\n  background-color: #1057b4;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+10) p::before {\n  background-color: #0bccb2;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+11) p::before {\n  background-color: #650bcc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+12) p::before {\n  background-color: #3bcc0b;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+13) p::before {\n  background-color: #0bccb2;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+14) p::before {\n  background-color: #0b42cc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+15) p::before {\n  background-color: #cc0b58;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+16) p::before {\n  background-color: #e0a3e7;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+17) p::before {\n  background-color: #67d7e9;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+18) p::before {\n  background-color: #bfcc0b;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+19) p::before {\n  background-color: #0b78cc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+20) p::before {\n  background-color: #cc0b78;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+21) p::before {\n  background-color: #f21456;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+22) p::before {\n  background-color: #650bcc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+23) p::before {\n  background-color: #0b78cc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+24) p::before {\n  background-color: #06f51a;\n}\n.afterhours_inner_widget .color_value {\n  display: inline-block;\n  width: 100%;\n}\n.afterhours_inner_widget .color_value ul {\n  display: flex;\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n}\n.afterhours_inner_widget .color_value ul li {\n  display: inline-block;\n  height: 3.4vh;\n  width: 10vw;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+1) {\n  background-color: #82d963;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+2) {\n  background-color: #f5ec00;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+3) {\n  background-color: #d879e1;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+4) {\n  background-color: #5ee3f4;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+5) {\n  background-color: #7cbef6;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+6) {\n  background-color: #9d7cf6;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+7) {\n  background-color: #f79598;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+8) {\n  background-color: #f6a67c;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+9) {\n  background-color: #1057b4;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+10) {\n  background-color: #0bccb2;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+11) {\n  background-color: #650bcc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+12) {\n  background-color: #3bcc0b;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+13) {\n  background-color: #0bccb2;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+14) {\n  background-color: #0b42cc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+15) {\n  background-color: #cc0b58;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+16) {\n  background-color: #e0a3e7;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+17) {\n  background-color: #67d7e9;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+18) {\n  background-color: #bfcc0b;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+19) {\n  background-color: #0b78cc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+20) {\n  background-color: #cc0b78;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+21) {\n  background-color: #f21456;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+22) {\n  background-color: #650bcc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+23) {\n  background-color: #0b78cc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+24) {\n  background-color: #06f51a;\n}\n\n.afterhours-arrow {\n  display: inline-block;\n  background-position: center center;\n  background-repeat: no-repeat;\n  width: 17px;\n  height: 17px;\n  background-size: contain;\n  background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.445' height='23.445' viewBox='0 0 23.445 23.445'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23424242;opacity:0.333;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M23.445,11.722A11.722,11.722,0,1,1,11.722,0,11.72,11.72,0,0,1,23.445,11.722ZM9.643,6.239v5.483H6.291a.568.568,0,0,0-.4.969l5.431,5.4a.562.562,0,0,0,.8,0l5.431-5.4a.567.567,0,0,0-.4-.969H13.8V6.239a.569.569,0,0,0-.567-.567H10.21A.569.569,0,0,0,9.643,6.239Z' transform='translate(23.445) rotate(90)'/%3E%3C/svg%3E\");\n  left: 50%;\n  margin-left: -10px;\n  cursor: pointer;\n  z-index: 11;\n  position: relative;\n}\n.afterhours-arrow#topArrowAfterhours {\n  transform: rotate(90deg);\n  top: -10px;\n  margin-bottom: -11px;\n}\n.afterhours-arrow#downArrowAfterhours {\n  transform: rotate(270deg);\n}\n\n.progress-bar-container {\n  width: 100%;\n  background: linear-gradient(to right, #005936 1%, #005842 71%, #01af94 100%);\n}\n.progress-bar-container .progress-bar {\n  height: 17px;\n  background: linear-gradient(to right, #005842 1%, #005842 41%, #01af94 100%);\n}\n\n.top-nav-tabs {\n  position: absolute;\n  top: 1em;\n  left: 50%;\n  z-index: 2;\n  transform: translateX(-50%);\n  width: 100%;\n}\n.top-nav-tabs ul {\n  padding: 0;\n  margin: 0;\n  display: inline-flex;\n  width: 100%;\n}\n.top-nav-tabs ul li {\n  list-style: none;\n  width: 17%;\n  display: inline-block;\n  text-align: center;\n}\n.top-nav-tabs ul li a {\n  cursor: pointer;\n  display: inline-block;\n  width: 100%;\n}\n.top-nav-tabs ul li a span {\n  width: 20px;\n  height: 20px;\n  display: inline-block;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: contain;\n  position: relative;\n}\n.top-nav-tabs ul li a label {\n  color: #fff;\n  font-size: 0.8em;\n  width: 100%;\n  display: inline-block;\n  padding: 5px 0 0 0;\n  margin: 0;\n  text-transform: uppercase;\n  font-weight: 600;\n  cursor: pointer;\n}\n.top-nav-tabs ul li.waste span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock.png);\n}\n.top-nav-tabs ul li.energy span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/energy.png);\n}\n.top-nav-tabs ul li.streetlight span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/street-light.png);\n}\n.top-nav-tabs ul li.cctv span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/security-camera.png);\n}\n.top-nav-tabs ul li.water span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/waterdrop.png);\n}\n.top-nav-tabs ul li.pollution span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/factory.png);\n}\n.top-nav-tabs ul li.fire span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/fire.png);\n}\n.top-nav-tabs ul li.active label {\n  color: #0fd6a9;\n}\n.top-nav-tabs ul li.active.waste span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock-active.png);\n}\n.top-nav-tabs ul li.active.energy span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/energy-active.png);\n}\n.top-nav-tabs ul li.active.streetlight span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/street-light-active.png);\n}\n.top-nav-tabs ul li.active.cctv span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/security-camera-active.png);\n}\n.top-nav-tabs ul li.active.water span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/drop-active.png);\n}\n.top-nav-tabs ul li.active.pollution span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/factory-active.png);\n}\n.top-nav-tabs ul li.active.fire span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/fire-active.png);\n}\n\n.weather-list {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n.weather-list ul {\n  margin: 0;\n  padding: 0;\n  display: inline-flex;\n  background: rgba(0, 0, 0, 0.47);\n  width: auto;\n  border-radius: 5px;\n}\n.weather-list ul li {\n  list-style: none;\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  margin: 8px 10px;\n}\n.weather-list ul li a {\n  cursor: pointer;\n}\n.weather-list ul li a img {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.slider {\n  width: 2px;\n  height: 20vh;\n  position: absolute;\n  top: 1em;\n  right: 0em;\n  border-radius: 20px;\n  background: linear-gradient(100deg, rgba(0, 0, 0, 0.1) 0%, rgb(255, 255, 255) 35%, rgba(255, 255, 255, 0) 100%);\n  transform: rotate(180deg);\n  box-shadow: 0px 0px 1px #353535;\n}\n.slider::before {\n  background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\n  content: \"\";\n  width: 12px;\n  height: 12px;\n  display: block;\n  background-size: 100% auto;\n  position: absolute;\n  bottom: -1.8em;\n  left: -4px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  transform: rotate(180deg);\n}\n.slider::after {\n  background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  display: block;\n  background-size: 100% auto;\n  position: absolute;\n  top: -2.5em;\n  left: -8px;\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.slider span {\n  width: 20px;\n  height: 20px;\n  display: inline-block;\n  background-color: #fff;\n  border-radius: 50%;\n  cursor: pointer;\n  position: absolute;\n  left: -9px;\n  bottom: 0.7em;\n  box-shadow: 0px 0px 3px #353535;\n  transition: bottom 0.4s ease;\n}\n\n.slider.active span {\n  bottom: 16vh; /* Change the bottom property for the active class */\n}\n\n.timer-widget {\n  display: inline-block;\n  width: 100%;\n  position: relative;\n}\n.timer-widget .timer-slider {\n  position: absolute;\n  top: 7em;\n  right: -2em;\n  width: 20vh;\n  height: 15vh;\n}\n.timer-widget .timer-slider .timer-range {\n  display: inline-block;\n  width: 100%;\n  transform: rotate(90deg);\n  background: linear-gradient(100deg, rgba(0, 0, 0, 0.1) 0%, rgb(255, 255, 255) 35%, rgba(255, 255, 255, 0) 100%);\n  box-shadow: 0px 0px 1px #353535;\n  -webkit-appearance: none;\n  appearance: none;\n  -moz-appearance: none;\n  outline: none;\n  height: 2px;\n  position: relative;\n}\n.timer-widget .timer-slider .timer-range::before {\n  background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\n  content: \"\";\n  width: 12px;\n  height: 12px;\n  display: block;\n  background-size: 100% auto;\n  position: absolute;\n  top: -4px;\n  left: -20px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  transform: rotate(180deg);\n}\n.timer-widget .timer-slider .timer-range::after {\n  background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  display: block;\n  background-size: 100% auto;\n  position: absolute;\n  bottom: -9px;\n  right: -20px;\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.timer-widget .timer-slider .timer-range::-webkit-slider-thumb {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  background: #ffffff;\n  width: 18px;\n  height: 18px;\n  border-radius: 50%;\n  cursor: pointer;\n  box-shadow: 0px 0px 3px #353535;\n}\n\n.toggle-container {\n  display: inline-block;\n}\n.toggle-container .toggle-button {\n  position: relative;\n  width: 66px;\n  height: 32px;\n  border: none;\n  background-color: #ccc;\n  outline: none;\n  cursor: pointer;\n  border-radius: 15px;\n  padding: 2px;\n  margin-top: 1em;\n  transform: rotate(90deg);\n}\n.toggle-container .toggle-button .slider-toggle {\n  position: absolute;\n  width: 27px;\n  height: 27px;\n  border-radius: 50%;\n  background-color: #034d3c;\n  transition: transform 0.3s ease;\n  top: 2px;\n  left: 5px;\n}\n.toggle-container .toggle-button .slider-toggle.on {\n  transform: translateX(30px);\n}\n.toggle-container .toggle-button .slider-toggle.off {\n  transform: translateX(0);\n}\n.toggle-container .toggle-label {\n  color: #ffffff;\n  font-size: 1em;\n  text-align: center;\n  margin: 15px 0 0 0;\n  font-weight: 600;\n}\n\n.ed3-map-controls-widget-wrapper {\n  width: 15%;\n}\n.ed3-map-controls-widget-wrapper .ed3-map-zoom-controls-container {\n  transform: rotate(90deg);\n}\n.ed3-map-controls-widget-wrapper .ed3-map-zoom-controls-container .ed3-map-zoom-controls-button {\n  border-radius: 0;\n  background-color: rgba(210, 210, 210, 0.2901960784);\n  margin: 0;\n}\n.ed3-map-controls-widget-wrapper .ed3-map-zoom-controls-container .ed3-map-zoom-controls-button:nth-child(3) {\n  transform: rotate(90deg);\n}", ""]);
+exports.push([module.id, ".main-content-block {\n  width: 100%;\n  display: inline-block;\n  position: relative;\n  z-index: 0;\n}\n.main-content-block .widget-container-block {\n  z-index: 1;\n  position: relative;\n  min-height: 176vh;\n  background: rgba(2, 61, 40, 0.4588235294);\n}\n.main-content-block .react-grid-layout {\n  z-index: 1;\n}\n.main-content-block .react-grid-layout.player {\n  z-index: 1;\n  position: relative;\n  background: radial-gradient(ellipse at center center, rgba(255, 255, 255, 0) 0%, rgba(0, 29, 19, 0.6) 45%, rgba(0, 0, 0, 0.84) 100%);\n}\n.main-content-block .react-grid-layout.player::before {\n  content: \"\";\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100vh;\n  position: absolute;\n  z-index: 1;\n  background: radial-gradient(ellipse at center center, rgba(255, 255, 255, 0) 0%, rgba(0, 29, 19, 0.9) 57%, rgba(0, 0, 0, 0.84) 100%);\n  pointer-events: none;\n}\n\n.smart-city_box {\n  background: rgba(0, 0, 0, 0);\n  /* backdrop-filter: blur(34px); */\n  box-shadow: none;\n  border-radius: 10px;\n  z-index: 1;\n}\n.smart-city_box .uxp-widget-title-bar {\n  background: transparent;\n  color: #1f9b7f;\n  border-bottom: 1px solid #dedede;\n  margin-bottom: 1em;\n  padding: 0;\n  outline: none;\n  min-height: 38px;\n  width: 95%;\n  position: relative;\n}\n.smart-city_box .uxp-widget-title-bar .title-section {\n  font-size: 1em;\n}\n.smart-city_box .uxp-widget-title-bar::before {\n  content: \"\";\n  position: absolute;\n  background-color: rgba(222, 222, 222, 0.631372549);\n  width: 6%;\n  height: 3px;\n  bottom: -4px;\n  left: 0;\n  border-radius: 0px 0px 30px 30px;\n}\n.smart-city_box .uxp-widget-title-bar::after {\n  content: \"\";\n  position: absolute;\n  background-color: rgba(222, 222, 222, 0.631372549);\n  width: 6px;\n  height: 6px;\n  bottom: -3px;\n  right: -6px;\n  border-radius: 50%;\n}\n.smart-city_box .uxp-widget-title-bar .txt {\n  color: #0fd6a9;\n  font-weight: 600;\n  font-size: 1.1em;\n}\n.smart-city_box .sub_title_bar {\n  /* border-bottom: 1px solid #c2e6da; */\n  margin-bottom: 0.8em;\n  padding: 0;\n  min-height: 15px;\n  width: 80%;\n  font-size: 0.95em;\n  color: #fff;\n  font-weight: 500;\n  outline: none;\n}\n.smart-city_box .smart-city-content {\n  display: inline-block;\n  width: 95%;\n  margin-top: 1em;\n}\n.smart-city_box.order_trend-box .smart-city-content .technician_chart .recharts-text {\n  fill: #ededed;\n}\n.smart-city_box.order_summary-box .smart-city-content {\n  height: 250px;\n  overflow: auto;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr th {\n  background-color: transparent;\n  color: #1dcb8d;\n  text-align: left;\n  padding: 5px 3px;\n  font-size: 10px;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card {\n  background-color: transparent;\n  color: #ffffff;\n  min-height: 30px;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card .content {\n  padding: 0;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card .content .sub-title {\n  font-size: 10px;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card::after {\n  content: \"\";\n  width: 18px;\n  height: 18px;\n  position: absolute;\n  top: 8px;\n  background-size: 100% auto;\n  background-repeat: no-repeat;\n  left: 0%;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.attention::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==\");\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.pending::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=\");\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.resloved::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==\");\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.Green .content .sub-title {\n  background-color: #00b36c;\n  padding: 5px 5px;\n  border-radius: 1px;\n  width: 44px;\n  text-align: center;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list .data-table tr td .item-card.Red .content .sub-title {\n  background-color: #cb0000;\n  padding: 5px 5px;\n  border-radius: 1px;\n  width: 44px;\n  text-align: center;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list-footer {\n  background-color: transparent;\n}\n.smart-city_box.order_summary-box .smart-city-content .data-list-container .data-list-footer .go-up-btn-container {\n  background-color: rgba(5, 81, 54, 0.34);\n}\n.smart-city_box.cctv-box .body {\n  height: 250px;\n  width: 100%;\n  display: inline-block;\n  background-image: url(https://static.iviva.com/images/Udhayimages/Al-Haram-District2.jpg);\n  background-size: 100% 100%;\n  background-position: center center;\n  background-repeat: no-repeat;\n}\n.smart-city_box.waste-bin-box .smart-city-content {\n  margin-top: 0;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content {\n  display: flex;\n  width: 100%;\n  padding: 1em 8% 2em 8%;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status {\n  display: inline-block;\n  width: 33%;\n  text-align: center;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status h3 {\n  font-size: 1.8em;\n  padding: 0;\n  margin: 0;\n  text-shadow: 0px 0px 1px #000000, 0px 0px 2px #dcdcdc;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status h3 span {\n  font-size: 0.5em;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status p {\n  font-size: 0.8em;\n  padding: 1em 0 0 0;\n  margin: 0;\n  color: #fff;\n  position: relative;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status p::after {\n  content: \"\";\n  width: 16px;\n  height: 16px;\n  position: absolute;\n  top: 8px;\n  background-size: 100% auto;\n  background-repeat: no-repeat;\n  right: 12%;\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Attention h3 {\n  color: rgb(211, 1, 1);\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Attention p::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==\");\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Pending h3 {\n  color: rgb(218, 218, 1);\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Pending p::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=\");\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Resloved h3 {\n  color: rgb(19, 232, 61);\n}\n.smart-city_box.waste-bin-box .smart-city-content .status-content .status.Resloved p::after {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==\");\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec {\n  width: 100%;\n  display: flex;\n  margin-top: 0.85em;\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec .chart-issue {\n  display: inline-block;\n  width: 75%;\n  text-align: center;\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec .chart-pending {\n  display: inline-block;\n  width: 25%;\n  text-align: center;\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec h3 {\n  font-size: 1.7em;\n  padding: 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.waste-bin-box .smart-city-content .technician_chart .chart-sec p {\n  font-size: 0.85em;\n  padding: 0;\n  margin: 0.3em 0 0 0;\n  color: #fff;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content {\n  margin-top: 0;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content {\n  display: flex;\n  width: 100%;\n  padding: 0.5em 2% 3em 2%;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status {\n  display: inline-block;\n  width: 33%;\n  text-align: center;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status .vahicle-icon {\n  display: inline-block;\n  width: 52px;\n  height: 52px;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: 75% auto;\n  margin-bottom: 0.5em;\n  border-radius: 10px;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status .vahicle-icon.co2-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status .vahicle-icon.fuel-consumption-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status .vahicle-icon.s-consumption-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/money.png);\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status p {\n  font-size: 0.9em;\n  padding: 0em 0 0 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status h2 {\n  font-size: 1.8em;\n  padding: 0;\n  margin: 0.4em 0 0.2em 0;\n  color: #fff;\n}\n.smart-city_box.waste-collection-vehicle .smart-city-content .status-content .status span {\n  font-size: 0.75em;\n  color: #fff;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper {\n  width: 180px !important;\n  right: -145px !important;\n  top: 20px;\n  left: auto !important;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper ul {\n  display: inline-block;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper ul li {\n  padding: 0.7em 0;\n  list-style: none;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper ul li .data_values {\n  margin-left: 10px;\n}\n.smart-city_box.segregation_metrics-box .recharts-legend-wrapper ul li em {\n  width: 10px;\n  height: 7px;\n  display: inline-block;\n  margin-right: 5px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n.smart-city_box.vehicle_summary-box .smart-city-content .technician_chart text {\n  color: #fff;\n  fill: #fff !important;\n}\n.smart-city_box.energy_consumption-box .technician_chart {\n  margin-top: 0em;\n}\n.smart-city_box.energy_consumption-box .technician_chart .recharts-wrapper {\n  fill: transparent;\n  font-size: 0.88em;\n}\n.smart-city_box.energy_consumption-box .technician_chart .recharts-layer text, .smart-city_box.energy_consumption-box .technician_chart .recharts-cartesian-axis-line text {\n  fill: #fff !important;\n}\n.smart-city_box.energy_consumption-box .technician_chart .recharts-cartesian-axis-ticks, .smart-city_box.energy_consumption-box .technician_chart .recharts-legend-item-text {\n  fill: #fff !important;\n  color: #fff;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content {\n  display: flex;\n  width: 100%;\n  padding: 0.5em 0% 0em 0%;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status {\n  display: inline-block;\n  width: 33%;\n  text-align: center;\n  background-color: rgba(0, 97, 67, 0.61);\n  border-radius: 10px;\n  margin-right: 3%;\n  padding-bottom: 1em;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status .vehicle-icon {\n  display: inline-block;\n  width: 75px;\n  height: 75px;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: 75% auto;\n  margin-bottom: 0.5em;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status .vehicle-icon.co2-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status .vehicle-icon.fuel-consumption-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status .vehicle-icon.s-consumption-icon {\n  background-image: url(https://static.iviva.com/images/Udhayimages/money.png);\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status p {\n  font-size: 0.85em;\n  padding: 0em 0 0 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status h2 {\n  font-size: 2.2em;\n  padding: 0;\n  margin: 0.4em 0 0.2em 0;\n  color: #fff;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status span {\n  font-size: 0.85em;\n  padding-bottom: 1em;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status span.red {\n  color: #ff0000;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status span.green {\n  color: #00e51a;\n}\n.smart-city_box.water_summary-box .smart-city-content .status-content .status:last-child {\n  margin-right: 0;\n}\n.smart-city_box.water_consumption-box .smart-city-content .status-content {\n  display: flex;\n  width: 100%;\n  padding: 0.5em 0% 0em 0%;\n  color: #ffffff;\n}\n.smart-city_box.water_consumption-box .smart-city-content .status-content .recharts-surface {\n  fill: #ffffff;\n  color: #ffffff;\n}\n.smart-city_box.water_consumption-box .smart-city-content .status-content .recharts-surface .recharts-layer {\n  fill: #ffffff;\n  color: #ffffff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content {\n  display: inline-block;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .status {\n  display: inline-block;\n  width: 30%;\n  text-align: center;\n  background-color: rgba(0, 97, 67, 0.61);\n  border-radius: 2px;\n  padding: 2em;\n  margin: 1em 0em 0em 1em;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .status p {\n  font-size: 1em;\n  padding: 0em 0 0 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .status h2 {\n  font-size: 2.2em;\n  padding: 0;\n  margin: 0.4em 0 0.2em 0;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .status span {\n  font-size: 0.85em;\n  padding-bottom: 1em;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall {\n  display: inline-block;\n  width: 100%;\n  text-align: center;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-quality-status-box {\n  display: inherit;\n  width: 60%;\n  background-color: rgba(0, 97, 67, 0.61);\n  border-radius: 2px;\n  padding: 2em;\n  margin: 0em 1em 1em 1em;\n  text-align: center;\n  text-transform: uppercase;\n  align-items: center;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-quality-status-box p {\n  font-size: 1em;\n  padding: 0em 0 0 0;\n  margin: 0;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-quality-status-box h5 {\n  font-size: 2.3em;\n  padding: 0;\n  margin: 0.4em 0 0.2em 0;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars {\n  display: flex;\n  width: 60%;\n  margin-left: 20%;\n  margin-top: 2em;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar {\n  width: 50%;\n  height: 130px;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar svg {\n  transform: rotate(-90deg);\n  width: 100%;\n  height: 100%;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar circle {\n  fill: transparent;\n  stroke-width: 8;\n  stroke: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar .progress-bar {\n  fill: transparent;\n  stroke-width: 10px;\n  stroke: rgb(0, 97, 67);\n  stroke-dasharray: 64;\n  stroke-dashoffset: 0;\n  transition: stroke-dashoffset 0.5s ease;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar .percentage {\n  position: absolute;\n  top: 40%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 18px;\n  font-weight: bold;\n  color: #fff;\n}\n.smart-city_box.iaq-box .smart-city-content .status-content .air-quality-status-overall .air-progress-bars .semi-circle-progress-bar .value {\n  font-size: 13px;\n  font-weight: normal;\n  color: #fff;\n  position: absolute;\n  top: 58%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content {\n  display: inline-block;\n  width: 46%;\n  text-align: center;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status {\n  display: inline-block;\n  width: 28%;\n  text-align: center;\n  background-color: rgba(0, 97, 67, 0.61);\n  border-radius: 2px;\n  padding: 0.8em;\n  margin: 0.8em 0.8em 0em 0em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status p {\n  font-size: 0.88em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status span {\n  font-size: 0.75em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status:nth-child(4n), .smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status:nth-child(7n) {\n  margin-right: 0em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .status h2 {\n  font-size: 1.3em;\n  padding: 0;\n  margin: 0.2em 0 0.1em 0;\n  color: #fff;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content.loaction2-status-content {\n  margin-left: 0em;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .loaction-status-content .uxp-form-group .uxp-search-box-container .uxp-input-container .uxp-form-input {\n  width: 100%;\n  min-width: 100%;\n}\n.smart-city_box.compare-iaq .smart-city-content .status-content .versus {\n  display: inline-block;\n  width: 8%;\n  color: #fff;\n  font-size: 1.2em;\n  text-align: center;\n  vertical-align: top;\n  padding-top: 10em;\n}\n.smart-city_box .top_tabs {\n  float: right;\n  width: auto;\n}\n.smart-city_box .top_tabs .uxp-toggle-filter, .smart-city_box .top_tabs .toggle-filter {\n  background: transparent;\n  float: right;\n  margin: 0;\n  display: inline-flex;\n}\n.smart-city_box .top_tabs .uxp-toggle-filter .uxp-toggle-option, .smart-city_box .top_tabs .uxp-toggle-filter button, .smart-city_box .top_tabs .toggle-filter .uxp-toggle-option, .smart-city_box .top_tabs .toggle-filter button {\n  background: rgb(3, 7, 9);\n  color: #fff;\n  font-size: 1em;\n  text-transform: uppercase;\n  border-radius: 2px;\n  margin: auto 0px;\n  outline: none;\n  border: none;\n  padding: 8px 20px;\n  cursor: pointer;\n}\n.smart-city_box .top_tabs .uxp-toggle-filter .uxp-toggle-option.selected, .smart-city_box .top_tabs .uxp-toggle-filter .uxp-toggle-option.active, .smart-city_box .top_tabs .uxp-toggle-filter button.selected, .smart-city_box .top_tabs .uxp-toggle-filter button.active, .smart-city_box .top_tabs .toggle-filter .uxp-toggle-option.selected, .smart-city_box .top_tabs .toggle-filter .uxp-toggle-option.active, .smart-city_box .top_tabs .toggle-filter button.selected, .smart-city_box .top_tabs .toggle-filter button.active {\n  background: #18d6b8;\n  box-shadow: 0px 0px 12px 1px #02eec9;\n}\n.smart-city_box.cctv-overview-box .uxp-widget-title-bar {\n  width: 100%;\n}\n.smart-city_box.cctv-overview-box .uxp-toggle-filter {\n  background: transparent;\n}\n.smart-city_box.cctv-overview-box .uxp-toggle-filter .uxp-toggle-option {\n  background: rgb(3, 7, 9);\n  color: #fff;\n  font-size: 1em;\n  text-transform: uppercase;\n  border-radius: 2px;\n  margin: auto 0px;\n}\n.smart-city_box.cctv-overview-box .uxp-toggle-filter .uxp-toggle-option.selected {\n  background: #18d6b8;\n  box-shadow: 0px 0px 12px 1px #02eec9;\n}\n.smart-city_box.cctv-overview-box .smart-city-content {\n  width: 100%;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list {\n  display: inline-block;\n  width: 18%;\n  margin-right: 2%;\n  margin-bottom: 2em;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list:nth-child(5n) {\n  margin-right: 0;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list select {\n  background: transparent;\n  outline: none;\n  border: none;\n  color: #fff;\n  font-size: 1em;\n  margin: 10px 0px;\n  width: 100%;\n  text-transform: uppercase;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list select option {\n  padding: 8px 12px;\n  cursor: pointer;\n  background-color: rgba(0, 97, 67, 0.61);\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list select option:checked, .smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list select option:hover {\n  background-color: rgba(0, 97, 67, 0.61);\n  color: #fff;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .cctv-pict {\n  display: inline-block;\n  width: 100%;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .cctv-pict img {\n  height: 175px;\n  width: 100%;\n  border: 1px solid #012417;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction {\n  color: #fff;\n  font-size: 0.8em;\n  margin-top: 0.7em;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction-number {\n  color: #fff;\n  font-size: 0.8em;\n  margin-top: 0.7em;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction-status {\n  color: #fff;\n  padding: 4px 0;\n  width: 60px;\n  text-align: center;\n  margin-top: 0.7em;\n  font-size: 0.85em;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction-status.Red {\n  background: #cb0000;\n}\n.smart-city_box.cctv-overview-box .smart-city-content .status-content .cctv-list .loction-status.Green {\n  background: #00b36c;\n}\n.smart-city_box .chart-top {\n  display: flex;\n  justify-content: flex-end;\n  margin-bottom: 1em;\n}\n.smart-city_box .chart-top .uxp-toggle-filter {\n  background: transparent;\n  display: inline-flex;\n  padding: 0;\n  width: 158px;\n}\n.smart-city_box .chart-top .uxp-toggle-filter .uxp-toggle-option {\n  color: #00c397;\n  box-shadow: none;\n  font-weight: bold;\n  font-size: 1em;\n  padding: 8px 6px;\n  border-radius: 0;\n}\n.smart-city_box .chart-top .uxp-toggle-filter .uxp-toggle-option.selected {\n  box-shadow: none;\n  background: transparent;\n  color: #ffffff;\n}\n.smart-city_box .chart-top .showcase-input {\n  display: flex;\n  width: 100% !important;\n  padding: 0;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container {\n  display: inline-block;\n  margin-right: 0.5em;\n  width: 27%;\n  min-width: 27%;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container .uxp-input-container {\n  width: 70%;\n  min-width: 70%;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container .uxp-input-container .uxp-form-input {\n  width: 100%;\n  font-size: 9px;\n  min-width: 140%;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container.active {\n  display: grid;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container.active .search-box-container {\n  background-color: transparent;\n  box-shadow: none;\n  border-bottom: 1px solid #fff;\n  border-radius: 0;\n  color: #fff;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container.active .search-box-container .uxp-input-container .uxp-form-input {\n  font-size: 10px;\n  color: #fff;\n  padding: 10px 3px;\n}\n.smart-city_box .chart-top .showcase-input .uxp-search-box-container.active .search-box-container .uxp-search-box-icons .uxp-icon-button .icon-container .icon.close {\n  filter: brightness(0) invert(1);\n  top: 2px;\n  background-size: 27%;\n  opacity: 0.8;\n}\n.smart-city_box .chart-top .showcase-input .uxp-form-select {\n  display: inline-block;\n  margin-right: 0.5em;\n  width: 27%;\n  min-width: 27%;\n}\n.smart-city_box .chart-top .showcase-input .uxp-form-select .uxp-select-placeholder {\n  font-size: 10px;\n  background-color: transparent;\n  box-shadow: none;\n  color: #fff;\n  border-radius: 0;\n  padding: 14px 3px;\n}\n.smart-city_box .chart-top .showcase-input .uxp-form-select .uxp-select-placeholder::before {\n  filter: brightness(0) invert(1);\n}\n.smart-city_box .chart-top .showcase-input .uxp-date-time-picker-container {\n  display: inline-block;\n  margin-right: 0.5em;\n  width: 23%;\n  min-width: 23%;\n  padding: 0;\n}\n.smart-city_box .chart-top .showcase-input .uxp-date-time-picker-container .placeholder .label {\n  padding: 10px 10px;\n}\n.smart-city_box .chart-top .showcase-input .uxp-date-time-picker-container .placeholder .value {\n  padding: 10px 0px;\n  min-width: 80px;\n  width: 80%;\n  font-size: 9px;\n}\n.smart-city_box .technician_chart {\n  margin-top: 0em;\n}\n.smart-city_box .technician_chart .recharts-wrapper {\n  fill: transparent;\n}\n.smart-city_box .technician_chart .recharts-layer text, .smart-city_box .technician_chart .recharts-cartesian-axis-line text {\n  fill: #fff !important;\n}\n.smart-city_box .technician_chart .recharts-cartesian-axis-ticks, .smart-city_box .technician_chart .recharts-legend-item-text {\n  fill: #fff !important;\n  color: #fff;\n}\n.smart-city_box .technician_chart .sub_title_bar {\n  width: 90%;\n  font-size: 1em;\n}\n\n.afterhours_inner_widget {\n  display: inline-block;\n  width: 100%;\n  margin-top: 0px;\n}\n.afterhours_inner_widget .afterhours_tree {\n  display: inline-flex;\n  width: 98%;\n  height: 100%;\n  position: relative;\n}\n.afterhours_inner_widget .afterhours_tree ul {\n  margin: 3px 0 0 0;\n  padding: 0;\n  display: inline-block;\n  width: 95%;\n  margin-left: 5%;\n  column-count: 3;\n}\n.afterhours_inner_widget .afterhours_tree ul li {\n  display: inline-block;\n  padding-left: 10px;\n  position: relative;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 1px 0;\n}\n.afterhours_inner_widget .afterhours_tree ul li:last-child::before {\n  display: none;\n}\n.afterhours_inner_widget .afterhours_tree ul li p {\n  font-size: 7px;\n  margin: 3px 0;\n  position: relative;\n  display: inline-block;\n  width: 95%;\n  color: #fff;\n}\n.afterhours_inner_widget .afterhours_tree ul li p::before {\n  content: \"\";\n  position: absolute;\n  top: 0px;\n  left: -20px;\n  width: 15px;\n  height: 7px;\n  text-align: center;\n  pointer-events: none;\n  border-radius: 2px;\n}\n.afterhours_inner_widget .afterhours_tree ul li p span {\n  width: 25%;\n  font-size: 6px;\n  float: right;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+1) p::before {\n  background-color: #82d963;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+2) p::before {\n  background-color: #f5ec00;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+3) p::before {\n  background-color: #d879e1;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+4) p::before {\n  background-color: #5ee3f4;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+5) p::before {\n  background-color: #7cbef6;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+6) p::before {\n  background-color: #9d7cf6;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+7) p::before {\n  background-color: #f79598;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+8) p::before {\n  background-color: #f6a67c;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+9) p::before {\n  background-color: #1057b4;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+10) p::before {\n  background-color: #0bccb2;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+11) p::before {\n  background-color: #650bcc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+12) p::before {\n  background-color: #3bcc0b;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+13) p::before {\n  background-color: #0bccb2;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+14) p::before {\n  background-color: #0b42cc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+15) p::before {\n  background-color: #cc0b58;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+16) p::before {\n  background-color: #e0a3e7;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+17) p::before {\n  background-color: #67d7e9;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+18) p::before {\n  background-color: #bfcc0b;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+19) p::before {\n  background-color: #0b78cc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+20) p::before {\n  background-color: #cc0b78;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+21) p::before {\n  background-color: #f21456;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+22) p::before {\n  background-color: #650bcc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+23) p::before {\n  background-color: #0b78cc;\n}\n.afterhours_inner_widget .afterhours_tree ul li:nth-child(n+24) p::before {\n  background-color: #06f51a;\n}\n.afterhours_inner_widget .color_value {\n  display: inline-block;\n  width: 100%;\n}\n.afterhours_inner_widget .color_value ul {\n  display: flex;\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n}\n.afterhours_inner_widget .color_value ul li {\n  display: inline-block;\n  height: 3.4vh;\n  width: 10vw;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+1) {\n  background-color: #82d963;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+2) {\n  background-color: #f5ec00;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+3) {\n  background-color: #d879e1;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+4) {\n  background-color: #5ee3f4;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+5) {\n  background-color: #7cbef6;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+6) {\n  background-color: #9d7cf6;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+7) {\n  background-color: #f79598;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+8) {\n  background-color: #f6a67c;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+9) {\n  background-color: #1057b4;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+10) {\n  background-color: #0bccb2;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+11) {\n  background-color: #650bcc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+12) {\n  background-color: #3bcc0b;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+13) {\n  background-color: #0bccb2;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+14) {\n  background-color: #0b42cc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+15) {\n  background-color: #cc0b58;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+16) {\n  background-color: #e0a3e7;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+17) {\n  background-color: #67d7e9;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+18) {\n  background-color: #bfcc0b;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+19) {\n  background-color: #0b78cc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+20) {\n  background-color: #cc0b78;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+21) {\n  background-color: #f21456;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+22) {\n  background-color: #650bcc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+23) {\n  background-color: #0b78cc;\n}\n.afterhours_inner_widget .color_value ul li:nth-child(n+24) {\n  background-color: #06f51a;\n}\n\n.afterhours-arrow {\n  display: inline-block;\n  background-position: center center;\n  background-repeat: no-repeat;\n  width: 17px;\n  height: 17px;\n  background-size: contain;\n  background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.445' height='23.445' viewBox='0 0 23.445 23.445'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23424242;opacity:0.333;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M23.445,11.722A11.722,11.722,0,1,1,11.722,0,11.72,11.72,0,0,1,23.445,11.722ZM9.643,6.239v5.483H6.291a.568.568,0,0,0-.4.969l5.431,5.4a.562.562,0,0,0,.8,0l5.431-5.4a.567.567,0,0,0-.4-.969H13.8V6.239a.569.569,0,0,0-.567-.567H10.21A.569.569,0,0,0,9.643,6.239Z' transform='translate(23.445) rotate(90)'/%3E%3C/svg%3E\");\n  left: 50%;\n  margin-left: -10px;\n  cursor: pointer;\n  z-index: 11;\n  position: relative;\n}\n.afterhours-arrow#topArrowAfterhours {\n  transform: rotate(90deg);\n  top: -10px;\n  margin-bottom: -11px;\n}\n.afterhours-arrow#downArrowAfterhours {\n  transform: rotate(270deg);\n}\n\n.progress-bar-container {\n  width: 100%;\n  background: linear-gradient(to right, #005936 1%, #005842 71%, #01af94 100%);\n}\n.progress-bar-container .progress-bar {\n  height: 17px;\n  background: linear-gradient(to right, #005842 1%, #005842 41%, #01af94 100%);\n}\n\n.top-nav-tabs {\n  position: absolute;\n  top: 1em;\n  left: 50%;\n  z-index: 2;\n  transform: translateX(-50%);\n  width: 100%;\n}\n.top-nav-tabs ul {\n  padding: 0;\n  margin: 0;\n  display: inline-flex;\n  width: 100%;\n}\n.top-nav-tabs ul li {\n  list-style: none;\n  width: 17%;\n  display: inline-block;\n  text-align: center;\n}\n.top-nav-tabs ul li a {\n  cursor: pointer;\n  display: inline-block;\n  width: 100%;\n}\n.top-nav-tabs ul li a span {\n  width: 20px;\n  height: 20px;\n  display: inline-block;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: contain;\n  position: relative;\n}\n.top-nav-tabs ul li a label {\n  color: #fff;\n  font-size: 0.8em;\n  width: 100%;\n  display: inline-block;\n  padding: 5px 0 0 0;\n  margin: 0;\n  text-transform: uppercase;\n  font-weight: 600;\n  cursor: pointer;\n}\n.top-nav-tabs ul li.waste span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock.png);\n}\n.top-nav-tabs ul li.energy span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/energy.png);\n}\n.top-nav-tabs ul li.streetlight span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/street-light.png);\n}\n.top-nav-tabs ul li.cctv span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/security-camera.png);\n}\n.top-nav-tabs ul li.water span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/waterdrop.png);\n}\n.top-nav-tabs ul li.pollution span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/factory.png);\n}\n.top-nav-tabs ul li.fire span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/fire.png);\n}\n.top-nav-tabs ul li.active label {\n  color: #0fd6a9;\n}\n.top-nav-tabs ul li.active.waste span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock-active.png);\n}\n.top-nav-tabs ul li.active.energy span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/energy-active.png);\n}\n.top-nav-tabs ul li.active.streetlight span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/street-light-active.png);\n}\n.top-nav-tabs ul li.active.cctv span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/security-camera-active.png);\n}\n.top-nav-tabs ul li.active.water span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/drop-active.png);\n}\n.top-nav-tabs ul li.active.pollution span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/factory-active.png);\n}\n.top-nav-tabs ul li.active.fire span {\n  background-image: url(https://static.iviva.com/images/Udhayimages/fire-active.png);\n}\n\n.weather-list {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n.weather-list ul {\n  margin: 0;\n  padding: 0;\n  display: inline-flex;\n  background: rgba(0, 0, 0, 0.47);\n  width: auto;\n  border-radius: 5px;\n}\n.weather-list ul li {\n  list-style: none;\n  display: inline-block;\n  width: 25px;\n  height: 25px;\n  margin: 5px 8px;\n}\n.weather-list ul li a {\n  cursor: pointer;\n}\n.weather-list ul li a img {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.slider {\n  width: 2px;\n  height: 20vh;\n  position: absolute;\n  top: 1em;\n  right: 0em;\n  border-radius: 20px;\n  background: linear-gradient(100deg, rgba(0, 0, 0, 0.1) 0%, rgb(255, 255, 255) 35%, rgba(255, 255, 255, 0) 100%);\n  transform: rotate(180deg);\n  box-shadow: 0px 0px 1px #353535;\n}\n.slider::before {\n  background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\n  content: \"\";\n  width: 12px;\n  height: 12px;\n  display: block;\n  background-size: 100% auto;\n  position: absolute;\n  bottom: -1.8em;\n  left: -4px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  transform: rotate(180deg);\n}\n.slider::after {\n  background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  display: block;\n  background-size: 100% auto;\n  position: absolute;\n  top: -2.5em;\n  left: -8px;\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.slider span {\n  width: 20px;\n  height: 20px;\n  display: inline-block;\n  background-color: #fff;\n  border-radius: 50%;\n  cursor: pointer;\n  position: absolute;\n  left: -9px;\n  bottom: 0.7em;\n  box-shadow: 0px 0px 3px #ffffff;\n  transition: bottom 0.4s ease;\n}\n\n.slider.active span {\n  bottom: 16vh; /* Change the bottom property for the active class */\n}\n\n.timer-widget {\n  display: inline-block;\n  width: 100%;\n  position: relative;\n}\n.timer-widget .timer-slider {\n  position: absolute;\n  top: 7em;\n  right: -4.4em;\n  width: 23vh;\n  height: 15vh;\n}\n.timer-widget .timer-slider .timer-range {\n  display: inline-block;\n  width: 100%;\n  transform: rotate(90deg);\n  background: linear-gradient(100deg, rgba(0, 0, 0, 0.1) 0%, rgb(255, 255, 255) 35%, rgba(255, 255, 255, 0) 100%);\n  box-shadow: 0px 0px 1px #353535;\n  -webkit-appearance: none;\n  appearance: none;\n  -moz-appearance: none;\n  outline: none;\n  height: 2px;\n  position: relative;\n}\n.timer-widget .timer-slider .timer-range::before {\n  background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  display: block;\n  background-size: 100% auto;\n  position: absolute;\n  top: -8px;\n  left: -28px;\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.timer-widget .timer-slider .timer-range::after {\n  background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\n  content: \"\";\n  width: 15px;\n  height: 15px;\n  display: block;\n  background-size: 100% auto;\n  position: absolute;\n  bottom: -5px;\n  right: -25px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  transform: rotate(160deg);\n}\n.timer-widget .timer-slider .timer-range::-webkit-slider-thumb {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  background: #fefefe;\n  width: 18px;\n  height: 18px;\n  border-radius: 50%;\n  cursor: pointer;\n  box-shadow: 0px 0px 3px #9f9f9f;\n}\n\n.toggle-container {\n  display: inline-block;\n}\n.toggle-container .toggle-button {\n  position: relative;\n  width: 66px;\n  height: 32px;\n  border: none;\n  background-color: #ccc;\n  outline: none;\n  cursor: pointer;\n  border-radius: 15px;\n  padding: 2px;\n  margin-top: 1em;\n  transform: rotate(90deg);\n}\n.toggle-container .toggle-button .slider-toggle {\n  position: absolute;\n  width: 27px;\n  height: 27px;\n  border-radius: 50%;\n  background-color: #034d3c;\n  transition: transform 0.3s ease;\n  top: 2px;\n  left: 5px;\n}\n.toggle-container .toggle-button .slider-toggle.on {\n  transform: translateX(30px);\n}\n.toggle-container .toggle-button .slider-toggle.off {\n  transform: translateX(0);\n}\n.toggle-container .toggle-label {\n  color: #ffffff;\n  font-size: 1em;\n  text-align: center;\n  margin: 15px 0 0 0;\n  font-weight: 600;\n}\n\n.ed3-map-controls-widget-wrapper {\n  width: 15%;\n}\n.ed3-map-controls-widget-wrapper .ed3-map-zoom-controls-container {\n  transform: rotate(90deg);\n}\n.ed3-map-controls-widget-wrapper .ed3-map-zoom-controls-container .ed3-map-zoom-controls-button {\n  border-radius: 0;\n  background-color: rgba(210, 210, 210, 0.2901960784);\n  margin: 0;\n}\n.ed3-map-controls-widget-wrapper .ed3-map-zoom-controls-container .ed3-map-zoom-controls-button:nth-child(3) {\n  transform: rotate(90deg);\n}\n\n.uxp-form-select {\n  display: inline-block;\n  margin-right: 0.5em;\n  width: 23%;\n  min-width: 23%;\n}\n.uxp-form-select .uxp-select-placeholder {\n  font-size: 10px;\n  background-color: transparent;\n  box-shadow: none;\n  color: #fff;\n  border-radius: 0;\n  padding: 14px 3px;\n}\n.uxp-form-select .uxp-select-placeholder::before {\n  filter: brightness(0) invert(1);\n}\n\n.uxp-date-time-picker-container {\n  font-size: 10px;\n  background-color: transparent;\n  box-shadow: none;\n  color: #fff;\n  border-radius: 0;\n  padding: 14px 3px;\n}\n.uxp-date-time-picker-container .date-time-placeholder-container .placeholder {\n  font-size: 10px;\n}\n.uxp-date-time-picker-container .date-time-placeholder-container .icon-container .icon {\n  filter: brightness(0) invert(1);\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -887,12 +887,12 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 const index_1 = __webpack_require__(/*! ../index */ "./src/index.tsx");
 const SunController = (props) => {
-    const [currentTime, setCurrentTime] = (0, react_1.useState)(12.00);
+    const [currentTime, setCurrentTime] = (0, react_1.useState)(360); // 6 am in minutes
     const { uxpContext } = props;
     const mapContainerRef = (0, react_1.useRef)(null);
     const changeFormatTime = (value) => {
-        const hours = Math.floor(value);
-        const minutes = Math.round((value % 1) * 60);
+        const hours = Math.floor(value / 60);
+        const minutes = value % 60;
         const formattedHours = String(hours).padStart(2, '0');
         const formattedMinutes = String(minutes).padStart(2, '0');
         return `${formattedHours}:${formattedMinutes}`;
@@ -901,11 +901,64 @@ const SunController = (props) => {
         setCurrentTime(parseFloat(event.target.value));
         console.log("currentTime", currentTime);
     };
+    const calculateGradientPercentage = () => {
+        const start = 360;
+        const end = 1439 + 360;
+        return ((currentTime - start) / (end - start)) * 100;
+    };
     return (react_1.default.createElement("div", { className: 'timer-widget' },
         react_1.default.createElement("div", { className: 'timer-slider' },
-            react_1.default.createElement("input", { className: 'timer-range', type: "range", min: 0, max: 24, step: 0.01, value: currentTime, onChange: handleTimeChange, onClick: () => { var _a; return (_a = uxpContext.eventHandler) === null || _a === void 0 ? void 0 : _a.call(uxpContext, index_1.EventsEnum.SunPosition, { time: changeFormatTime(currentTime) }); } }))));
+            react_1.default.createElement("input", { className: 'timer-range', type: "range", min: 360, max: 1439 + 360, step: 359, value: currentTime, onChange: handleTimeChange, onClick: () => { var _a; return (_a = uxpContext.eventHandler) === null || _a === void 0 ? void 0 : _a.call(uxpContext, index_1.EventsEnum.SunPosition, { time: changeFormatTime(currentTime) }); }, style: {
+                    background: `linear-gradient(to right, #023d28 0%, #023d28 ${calculateGradientPercentage()}%, #fff ${calculateGradientPercentage()}%, #ddd 100%)`
+                } }))));
 };
 exports["default"] = SunController;
+// const SunController: React.FunctionComponent<IMapChangeMode> = (props) => {
+//   // const [currentTime, setCurrentTime] = useState(1180);
+//   const [currentTime, setCurrentTime] = useState(12.00);
+//   const { uxpContext } = props;
+//   const mapContainerRef = useRef(null);
+//   const changeFormatTime = (value: number) => {
+//     const hours = Math.floor(value);
+//     const minutes = Math.round((value % 1) * 60);
+//     const formattedHours = String(hours).padStart(2, '0');
+//     const formattedMinutes = String(minutes).padStart(2, '0');
+//     return `${formattedHours}:${formattedMinutes}`;
+//   };
+//   const handleTimeChange = (event:any) => {
+//     setCurrentTime(parseFloat(event.target.value));
+//     console.log("currentTime", currentTime)
+//   };
+//   return (
+//       <div className='timer-widget'>
+//          {/* <div className='timer-icons'>
+//               <ul>
+//                   <li><img src='https://static.iviva.com/images/Udhayimages/moon.png' /></li>
+//                   <li><img style={{transform :"rotate(-90deg)", maxHeight:"100%",  maxWidth:"100%"}}  src='https://static.iviva.com/images/Udhayimages/sunset.png' /></li>
+//                   <li><img src='https://static.iviva.com/images/Udhayimages/sun.png' /></li>
+//                   <li><img style={{transform :"rotate(90deg)", maxHeight:"100%",  maxWidth:"100%"}} src='https://static.iviva.com/images/Udhayimages/sunrise.png' /></li>
+//                   <li><img src='https://static.iviva.com/images/Udhayimages/moon.png' /></li>
+//               </ul>
+//           </div> */}
+//         <div className='timer-slider'> 
+//           <input
+//             className='timer-range'
+//             type="range"
+//             min={0}
+//             max={2359}
+//             // step={0.01}
+//             step={589}
+//             value={currentTime}
+//             onChange={handleTimeChange}
+//             onClick={() => uxpContext.eventHandler?.(EventsEnum.SunPosition, { time: changeFormatTime(currentTime) })}
+//             style={{ background: `linear-gradient(to right, #023d28 0%, #023d28 ${(currentTime / 2359) * 100}%, #fff ${(currentTime / 2359) * 100}%, #ddd 100%)` }}
+//           />
+//       {/* <p>Selected Time: {changeFormatTime(currentTime)}</p> */}
+//     </div>
+//     </div>
+//   );
+// };
+// export default SunController;
 
 
 /***/ }),
@@ -1971,135 +2024,539 @@ const EnergyConsumption = (props) => {
     const energyConsumptionData1 = [
         {
             name: '1 Jan',
-            power: 180000,
-            solar: 250000,
-            amt: 2400,
+            power_consumption: 38,
+            burning_hours: 25,
+            amt: 1,
         },
         {
             name: '2 Jan',
-            power: 300000,
-            solar: 150000,
-            amt: 2210,
+            power_consumption: 30,
+            burning_hours: 15,
+            amt: 2,
         },
         {
             name: '3 Jan',
-            power: 180000,
-            solar: 420000,
-            amt: 2290,
+            power_consumption: 38,
+            burning_hours: 22,
+            amt: 3,
         },
         {
             name: '4 Jan',
-            power: 320000,
-            solar: 340000,
-            amt: 2000,
+            power_consumption: 42,
+            burning_hours: 34,
+            amt: 4,
         },
         {
             name: '5 Jan',
-            power: 190000,
-            solar: 670000,
-            amt: 2181,
+            power_consumption: 19,
+            burning_hours: 12,
+            amt: 5,
         },
         {
             name: '6 Jan',
-            power: 350000,
-            solar: 270000,
-            amt: 2500,
+            power_consumption: 35,
+            burning_hours: 27,
+            amt: 6,
         },
         {
             name: '7 Jan',
-            power: 100000,
-            solar: 100000,
-            amt: 2100,
+            power_consumption: 20,
+            burning_hours: 10,
+            amt: 7,
         },
+        {
+            name: '8 Jan',
+            power_consumption: 28,
+            burning_hours: 25,
+            amt: 8,
+        },
+        {
+            name: '9 Jan',
+            power_consumption: 30,
+            burning_hours: 15,
+            amt: 9,
+        },
+        {
+            name: '10 Jan',
+            power_consumption: 18,
+            burning_hours: 12,
+            amt: 10,
+        },
+        {
+            name: '11 Jan',
+            power_consumption: 42,
+            burning_hours: 34,
+            amt: 11,
+        },
+        {
+            name: '12 Jan',
+            power_consumption: 49,
+            burning_hours: 27,
+            amt: 12,
+        },
+        {
+            name: '13 Jan',
+            power_consumption: 35,
+            burning_hours: 27,
+            amt: 13,
+        },
+        {
+            name: '14 Jan',
+            power_consumption: 22,
+            burning_hours: 10,
+            amt: 14,
+        },
+        {
+            name: '15 Jan',
+            power_consumption: 37,
+            burning_hours: 34,
+            amt: 15,
+        },
+        {
+            name: '16 Jan',
+            power_consumption: 29,
+            burning_hours: 17,
+            amt: 16,
+        },
+        {
+            name: '17 Jan',
+            power_consumption: 35,
+            burning_hours: 27,
+            amt: 17,
+        },
+        {
+            name: '18 Jan',
+            power_consumption: 18,
+            burning_hours: 10,
+            amt: 18,
+        },
+        {
+            name: '19 Jan',
+            power_consumption: 38,
+            burning_hours: 25,
+            amt: 19,
+        },
+        {
+            name: '20 Jan',
+            power_consumption: 30,
+            burning_hours: 15,
+            amt: 20,
+        },
+        {
+            name: '21 Jan',
+            power_consumption: 30,
+            burning_hours: 27,
+            amt: 21,
+        },
+        {
+            name: '22 Jan',
+            power_consumption: 35,
+            burning_hours: 27,
+            amt: 22,
+        },
+        {
+            name: '23 Jan',
+            power_consumption: 20,
+            burning_hours: 10,
+            amt: 23,
+        },
+        {
+            name: '24 Jan',
+            power_consumption: 38,
+            burning_hours: 27,
+            amt: 24,
+        }
     ];
     const energyConsumptionData2 = [
         {
             name: '1 Jan',
-            power: 180000,
-            solar: 250000,
-            amt: 25000,
+            power_consumption: 30,
+            burning_hours: 25,
+            amt: 1,
         },
         {
             name: '2 Jan',
-            power: 250000,
-            solar: 310000,
-            amt: 13610,
+            power_consumption: 35,
+            burning_hours: 30,
+            amt: 2,
         },
         {
             name: '3 Jan',
-            power: 140000,
-            solar: 220000,
-            amt: 2290,
+            power_consumption: 38,
+            burning_hours: 22,
+            amt: 3,
         },
         {
             name: '4 Jan',
-            power: 320000,
-            solar: 340000,
-            amt: 2000,
+            power_consumption: 42,
+            burning_hours: 34,
+            amt: 4,
         },
         {
             name: '5 Jan',
-            power: 360000,
-            solar: 780000,
-            amt: 2181,
+            power_consumption: 36,
+            burning_hours: 27,
+            amt: 5,
         },
         {
             name: '6 Jan',
-            power: 520000,
-            solar: 270000,
-            amt: 2500,
+            power_consumption: 44,
+            burning_hours: 20,
+            amt: 6,
         },
         {
             name: '7 Jan',
-            power: 100000,
-            solar: 200000,
-            amt: 2100,
+            power_consumption: 30,
+            burning_hours: 20,
+            amt: 7,
         },
+        {
+            name: '8 Jan',
+            power_consumption: 38,
+            burning_hours: 25,
+            amt: 8,
+        },
+        {
+            name: '9 Jan',
+            power_consumption: 30,
+            burning_hours: 15,
+            amt: 9,
+        },
+        {
+            name: '10 Jan',
+            power_consumption: 38,
+            burning_hours: 22,
+            amt: 10,
+        },
+        {
+            name: '11 Jan',
+            power_consumption: 42,
+            burning_hours: 34,
+            amt: 11,
+        },
+        {
+            name: '12 Jan',
+            power_consumption: 39,
+            burning_hours: 27,
+            amt: 12,
+        },
+        {
+            name: '13 Jan',
+            power_consumption: 41,
+            burning_hours: 35,
+            amt: 13,
+        },
+        {
+            name: '14 Jan',
+            power_consumption: 33,
+            burning_hours: 10,
+            amt: 14,
+        },
+        {
+            name: '15 Jan',
+            power_consumption: 30,
+            burning_hours: 24,
+            amt: 15,
+        },
+        {
+            name: '16 Jan',
+            power_consumption: 39,
+            burning_hours: 27,
+            amt: 16,
+        },
+        {
+            name: '17 Jan',
+            power_consumption: 35,
+            burning_hours: 22,
+            amt: 17,
+        },
+        {
+            name: '18 Jan',
+            power_consumption: 35,
+            burning_hours: 22,
+            amt: 18,
+        },
+        {
+            name: '19 Jan',
+            power_consumption: 31,
+            burning_hours: 27,
+            amt: 19,
+        },
+        {
+            name: '20 Jan',
+            power_consumption: 22,
+            burning_hours: 15,
+            amt: 20,
+        },
+        {
+            name: '21 Jan',
+            power_consumption: 37,
+            burning_hours: 35,
+            amt: 21,
+        },
+        {
+            name: '22 Jan',
+            power_consumption: 25,
+            burning_hours: 17,
+            amt: 22,
+        },
+        {
+            name: '23 Jan',
+            power_consumption: 37,
+            burning_hours: 31,
+            amt: 23,
+        },
+        {
+            name: '24 Jan',
+            power_consumption: 21,
+            burning_hours: 18,
+            amt: 24,
+        }
     ];
     const energyConsumptionData3 = [
         {
             name: '1 Jan',
-            power: 350000,
-            solar: 100000,
-            amt: 25000,
+            power_consumption: 36,
+            burning_hours: 31,
+            amt: 1,
         },
         {
             name: '2 Jan',
-            power: 180000,
-            solar: 240000,
-            amt: 13610,
+            power_consumption: 23,
+            burning_hours: 16,
+            amt: 2,
         },
         {
             name: '3 Jan',
-            power: 140000,
-            solar: 220000,
-            amt: 2290,
+            power_consumption: 25,
+            burning_hours: 18,
+            amt: 3,
         },
         {
             name: '4 Jan',
-            power: 320000,
-            solar: 340000,
-            amt: 2000,
+            power_consumption: 32,
+            burning_hours: 28,
+            amt: 4,
         },
         {
             name: '5 Jan',
-            power: 400000,
-            solar: 160000,
-            amt: 2181,
+            power_consumption: 38,
+            burning_hours: 30,
+            amt: 5,
         },
         {
             name: '6 Jan',
-            power: 340000,
-            solar: 200000,
-            amt: 2500,
+            power_consumption: 30,
+            burning_hours: 23,
+            amt: 6,
         },
         {
             name: '7 Jan',
-            power: 150000,
-            solar: 340000,
-            amt: 2100,
+            power_consumption: 28,
+            burning_hours: 17,
+            amt: 7,
         },
+        {
+            name: '8 Jan',
+            power_consumption: 32,
+            burning_hours: 25,
+            amt: 8,
+        },
+        {
+            name: '9 Jan',
+            power_consumption: 40,
+            burning_hours: 32,
+            amt: 9,
+        },
+        {
+            name: '10 Jan',
+            power_consumption: 38,
+            burning_hours: 24,
+            amt: 10,
+        },
+        {
+            name: '11 Jan',
+            power_consumption: 36,
+            burning_hours: 30,
+            amt: 11,
+        },
+        {
+            name: '12 Jan',
+            power_consumption: 35,
+            burning_hours: 27,
+            amt: 12,
+        },
+        {
+            name: '13 Jan',
+            power_consumption: 36,
+            burning_hours: 25,
+            amt: 13,
+        },
+        {
+            name: '14 Jan',
+            power_consumption: 30,
+            burning_hours: 20,
+            amt: 14,
+        },
+        {
+            name: '15 Jan',
+            power_consumption: 34,
+            burning_hours: 24,
+            amt: 15,
+        },
+        {
+            name: '16 Jan',
+            power_consumption: 36,
+            burning_hours: 28,
+            amt: 16,
+        },
+        {
+            name: '17 Jan',
+            power_consumption: 35,
+            burning_hours: 31,
+            amt: 17,
+        },
+        {
+            name: '18 Jan',
+            power_consumption: 25,
+            burning_hours: 22,
+            amt: 18,
+        },
+        {
+            name: '19 Jan',
+            power_consumption: 37,
+            burning_hours: 31,
+            amt: 19,
+        },
+        {
+            name: '20 Jan',
+            power_consumption: 39,
+            burning_hours: 32,
+            amt: 20,
+        },
+        {
+            name: '21 Jan',
+            power_consumption: 34,
+            burning_hours: 28,
+            amt: 21,
+        },
+        {
+            name: '22 Jan',
+            power_consumption: 25,
+            burning_hours: 17,
+            amt: 22,
+        },
+        {
+            name: '23 Jan',
+            power_consumption: 34,
+            burning_hours: 31,
+            amt: 23,
+        },
+        {
+            name: '24 Jan',
+            power_consumption: 36,
+            burning_hours: 31,
+            amt: 24,
+        }
     ];
+    // const hours_count  = [ 
+    //     {
+    //         id: '1', 
+    //         count: 1,
+    //     },
+    //     {
+    //         id: '2', 
+    //         count: 2,
+    //     },
+    //     {
+    //         id: '3', 
+    //         count: 3,
+    //     },
+    //     {
+    //         id: '4', 
+    //         count: 4,
+    //     },
+    //     {
+    //         id: '5', 
+    //         count: 5,
+    //     },
+    //     {
+    //         id: '6', 
+    //         count: 6,
+    //     },
+    //     {
+    //         id: '7', 
+    //         count: 7,
+    //     },
+    //     {
+    //         id: '8', 
+    //         count: 8,
+    //     },
+    //     {
+    //         id: '9', 
+    //         count: 9,
+    //     },
+    //     {
+    //         id: '10', 
+    //         count: 10,
+    //     },
+    //     {
+    //         id: '11', 
+    //         count: 11,
+    //     },
+    //     {
+    //         id: '12', 
+    //         count: 12,
+    //     },
+    //     {
+    //         id: '13', 
+    //         count: 13,
+    //     },
+    //     {
+    //         id: '14', 
+    //         count: 14,
+    //     },
+    //     {
+    //         id: '15', 
+    //         count: 15,
+    //     },
+    //     {
+    //         id: '16', 
+    //         count: 16,
+    //     },
+    //     {
+    //         id: '17', 
+    //         count: 17,
+    //     },
+    //     {
+    //         id: '18', 
+    //         count: 18,
+    //     },
+    //     {
+    //         id: '19', 
+    //         count: 19,
+    //     },
+    //     {
+    //         id: '20', 
+    //         count: 20,
+    //     },
+    //     {
+    //         id: '21', 
+    //         count: 21,
+    //     }, 
+    //     {
+    //         id: '22', 
+    //         count: 22,
+    //     },
+    //     {
+    //         id: '23', 
+    //         count: 23,
+    //     },
+    //     {
+    //         id: '24', 
+    //         count: 24,
+    //     },
+    // ]; 
     const [toggleFilterValue, setToggleFilterValue] = react_1.default.useState("day");
     const handleFilterChange = (value) => {
         console.log("Selected Filter Value:", value);
@@ -2116,7 +2573,7 @@ const EnergyConsumption = (props) => {
         react_1.default.createElement("div", { className: "smart-city-content" },
             react_1.default.createElement("div", { className: "technician_chart", style: { height: 270 } },
                 react_1.default.createElement("div", { className: 'chart-top' },
-                    react_1.default.createElement("div", { className: "sub_title_bar" }, "Total kW"),
+                    react_1.default.createElement("div", { className: "sub_title_bar" }, "Total kWh"),
                     react_1.default.createElement(components_1.ToggleFilter, { options: [
                             { label: "7D", value: "day" },
                             { label: "1M", value: "week" },
@@ -2125,24 +2582,25 @@ const EnergyConsumption = (props) => {
                 react_1.default.createElement(recharts_1.ResponsiveContainer, { width: "100%", height: "100%" },
                     react_1.default.createElement(recharts_1.AreaChart, { width: 400, height: 300, data: selectedData, margin: {
                             top: 10,
-                            right: 10,
+                            right: 0,
                             left: 0,
                             bottom: 30,
                         } },
                         react_1.default.createElement(recharts_1.CartesianGrid, { strokeDasharray: "3 3" }),
                         react_1.default.createElement(recharts_1.XAxis, { dataKey: "name" }),
-                        react_1.default.createElement(recharts_1.YAxis, null),
-                        react_1.default.createElement(recharts_1.Tooltip, null),
+                        react_1.default.createElement(recharts_1.YAxis, { yAxisId: "left" }),
+                        react_1.default.createElement(recharts_1.YAxis, { yAxisId: "right", orientation: "right" }),
                         react_1.default.createElement(recharts_1.Legend, null),
-                        react_1.default.createElement(recharts_1.Area, { type: "monotone", dataKey: "2023", stackId: "1", stroke: "#001912", fill: "url(#gradient1)" }),
-                        react_1.default.createElement(recharts_1.Area, { type: "monotone", dataKey: "2022", stackId: "1", stroke: "#79dccc", fill: "url(#gradient2)" }),
+                        react_1.default.createElement(recharts_1.Area, { type: "monotone", dataKey: "power_consumption", stackId: "1", stroke: "#001912", fill: "url(#gradient1)", yAxisId: "left" }),
+                        react_1.default.createElement(recharts_1.Area, { type: "monotone", dataKey: "burning_hours", stackId: "1", stroke: "#79dccc", fill: "url(#gradient2)", yAxisId: "left" }),
+                        react_1.default.createElement(recharts_1.Area, { type: "monotone", dataKey: "amt", stackId: "0", fill: "url(#gradient3)", yAxisId: "right", style: { display: "none" }, legendType: "none" }),
                         react_1.default.createElement("defs", null,
                             react_1.default.createElement("linearGradient", { id: "gradient1", x1: "0", y1: "0", x2: "0", y2: "1" },
                                 react_1.default.createElement("stop", { offset: "5%", stopColor: "#00516a", stopOpacity: 0.8 }),
-                                react_1.default.createElement("stop", { offset: "95%", stopColor: "#001912", stopOpacity: 0.2 })),
+                                react_1.default.createElement("stop", { offset: "95%", stopColor: "#001912", stopOpacity: 0.3 })),
                             react_1.default.createElement("linearGradient", { id: "gradient2", x1: "0", y1: "0", x2: "0", y2: "1" },
                                 react_1.default.createElement("stop", { offset: "5%", stopColor: "#008b74", stopOpacity: 0.8 }),
-                                react_1.default.createElement("stop", { offset: "95%", stopColor: "#79dccc", stopOpacity: 0.2 })))))))));
+                                react_1.default.createElement("stop", { offset: "95%", stopColor: "#79dccc", stopOpacity: 0.3 })))))))));
 };
 exports["default"] = EnergyConsumption;
 
@@ -2328,7 +2786,7 @@ const StreetLightStatusChart = () => {
     };
     return (react_1.default.createElement("div", { className: "smart-city-content" },
         react_1.default.createElement("div", { className: "technician_chart", style: { height: 250 } },
-            react_1.default.createElement("div", { className: "chart-top" },
+            react_1.default.createElement("div", { className: "chart-top", style: { marginTop: "10px" } },
                 react_1.default.createElement("div", { className: "sub_title_bar" }, "Total Revenue (Riyal)"),
                 react_1.default.createElement(components_1.ToggleFilter, { options: [
                         { label: '7D', value: 'day' },
@@ -3008,52 +3466,76 @@ const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components")
 const lightStatusChart_1 = __importDefault(__webpack_require__(/*! ./lightStatusChart */ "./src/components/lightStatusChart.tsx"));
 const Street_Light__Status_Widget = () => {
     const completionPercentage = 75;
+    // const streetLightData  = [ 
+    //     {
+    //         id: '1',
+    //         name: 'Attention', 
+    //         value: 135 
+    //     },
+    //     {
+    //         id: '2',
+    //         name: 'Pending', 
+    //         value: 56 
+    //     },
+    //     {
+    //         id: '3',
+    //         name: 'Resloved', 
+    //         value: 245 
+    //     }
+    // ];  
     const streetLightData = [
         {
             id: '1',
-            name: 'Attention',
+            name: 'Open',
+            clname: 'Attention',
+            unit: '',
             value: 135
         },
         {
             id: '2',
-            name: 'Pending',
+            name: 'TAT',
+            clname: 'Pending',
+            unit: 'mints',
             value: 56
         },
         {
             id: '3',
-            name: 'Resloved',
+            name: 'Closed',
+            clname: 'Resloved',
+            unit: '',
             value: 245
         }
     ];
     const maintenance_Permits_Data = [
         {
             id: '1',
-            name: 'Issued',
-            value: 135
+            name: 'Installed lamps',
+            clname: 'chart-issue',
+            value: 234
         },
         {
             id: '2',
-            name: 'Pending',
-            value: 56
+            name: 'Working lamps',
+            clname: 'chart-pending',
+            value: 13
         }
     ];
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box waste-bin-box" },
-        react_1.default.createElement(components_1.TitleBar, { title: "Street Light Status", icon: 'https://static.iviva.com/images/Udhayimages/traffic-light.png' }),
+        react_1.default.createElement(components_1.TitleBar, { title: "Street Light Alerts", icon: 'https://static.iviva.com/images/Udhayimages/traffic-light.png' }),
         react_1.default.createElement("div", { className: "smart-city-content" },
-            react_1.default.createElement("div", { className: 'status-content' }, streetLightData.map((item) => (react_1.default.createElement("div", { key: item.id, className: `status ${item.name}` },
-                react_1.default.createElement("h3", null, item.value),
+            react_1.default.createElement("div", { className: 'status-content' }, streetLightData.map((item) => (react_1.default.createElement("div", { key: item.id, className: `status ${item.clname}` },
+                react_1.default.createElement("h3", null,
+                    item.value,
+                    " ",
+                    react_1.default.createElement("span", null, item.unit)),
                 react_1.default.createElement("p", null, item.name))))),
             react_1.default.createElement("div", { className: "technician_chart" },
-                react_1.default.createElement("div", { className: 'sub_title_bar' }, "Streetlight Maintenance permits"),
+                react_1.default.createElement("div", { className: 'sub_title_bar' }, "Installed vs Working lamps"),
                 react_1.default.createElement("div", { className: "progress-bar-container" },
                     react_1.default.createElement("div", { className: "progress-bar", style: { width: `${completionPercentage}%` } })),
-                react_1.default.createElement("div", { className: 'chart-sec' },
-                    react_1.default.createElement("div", { className: 'chart-issue' },
-                        react_1.default.createElement("h3", null, "234"),
-                        react_1.default.createElement("p", null, "Issued")),
-                    react_1.default.createElement("div", { className: 'chart-pending' },
-                        react_1.default.createElement("h3", null, "13"),
-                        react_1.default.createElement("p", null, "Pending")))),
+                react_1.default.createElement("div", { className: 'chart-sec' }, maintenance_Permits_Data.map((item) => (react_1.default.createElement("div", { key: item.id, className: item.clname },
+                    react_1.default.createElement("h3", null, item.value),
+                    react_1.default.createElement("p", null, item.name)))))),
             react_1.default.createElement("div", { className: "smart-city-content" },
                 react_1.default.createElement(lightStatusChart_1.default, null)))));
 };
@@ -3260,8 +3742,18 @@ const TopNavTabs = (props) => {
     const { uxpContext } = props;
     const [activeTab, setActiveTab] = (0, react_1.useState)('Streetlight');
     const tabs = {
+        Waste: { label: 'Waste', className: 'waste', id: 'waste' },
         Streetlight: { label: 'Streetlight', className: 'streetlight', id: 'streetlight' },
-        CCTV: { label: 'CCTV', className: 'cctv', id: 'cctv' }
+        CCTV: { label: 'CCTV', className: 'cctv', id: 'cctv' },
+        Water: { label: 'Water', className: 'water', id: 'water' },
+        Pollution: { label: 'Pollution', className: 'pollution', id: 'pollution' },
+        Fire: { label: 'Fire', className: 'fire', id: 'fire' },
+        // { label: 'Waste', className: 'waste', id: 'waste' },
+        // { label: 'Streetlight', className: 'streetlight', id: 'streetlight' },
+        // { label: 'CCTV', className: 'cctv', id: 'cctv' },
+        // { label: 'Water', className: 'water', id: 'water' },
+        // { label: 'Pollution', className: 'pollution', id: 'pollution' },
+        // { label: 'Fire', className: 'fire', id: 'fire' },
     };
     const handleTabClick = (label) => {
         var _a;
@@ -3795,7 +4287,7 @@ const VehicleSummaryWidget = () => {
                 react_1.default.createElement(recharts_2.LabelList, { dataKey: "value", position: "top" })),
             react_1.default.createElement(recharts_1.Tooltip, null))));
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box vehicle_summary-box" },
-        react_1.default.createElement(components_1.TitleBar, { title: "vehicle Summary", icon: 'https://static.iviva.com/images/Car_widget/Car.svg' }),
+        react_1.default.createElement(components_1.TitleBar, { title: "Streetlight health summary", icon: 'https://static.iviva.com/images/Car_widget/Car.svg' }),
         react_1.default.createElement("div", { className: "smart-city-content" },
             react_1.default.createElement("div", { className: "technician_chart", style: { height: 300 } },
                 react_1.default.createElement(MyResponsiveRadar, null)))));
@@ -3876,7 +4368,7 @@ const react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
 const Waste_CollectionVehicle = () => {
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box waste-collection-vehicle" },
-        react_1.default.createElement(components_1.TitleBar, { title: "Waste Collection vehicle", icon: 'https://static.iviva.com/images/cargo-truck.png' }),
+        react_1.default.createElement(components_1.TitleBar, { title: "Waste Collection vehicle", icon: 'https://static.iviva.com/images/Udhayimages/cargo-truck.png' }),
         react_1.default.createElement("div", { className: "smart-city-content" },
             react_1.default.createElement("div", { className: 'status-content' },
                 react_1.default.createElement("div", { className: 'status attention-status' },
@@ -3893,7 +4385,7 @@ const Waste_CollectionVehicle = () => {
                     react_1.default.createElement("div", { className: 'vahicle-icon s-consumption-icon' }),
                     react_1.default.createElement("p", null, "S Consumption"),
                     react_1.default.createElement("h2", null, "80,730"),
-                    react_1.default.createElement("span", null, "Riyal"))))));
+                    react_1.default.createElement("span", null, "Saudi Riyal"))))));
 };
 exports["default"] = Waste_CollectionVehicle;
 
@@ -4339,7 +4831,7 @@ const Waste_Segregation_Metrics = (props) => {
             "id": "paper",
             "label": "Paper",
             "value": 2947,
-            "color": "rgb(2 108 92)"
+            "color": "rgb(25 190 92)"
         },
         {
             "id": "metal",
@@ -4360,65 +4852,7 @@ const Waste_Segregation_Metrics = (props) => {
             "color": "rgb(179 238 142)"
         }
     ];
-    const MyResponsivePie = ({}) => (
-    //  <ResponsivePie
-    //      data={data}
-    //      margin={{ top: 0, right: 40, bottom: 60, left: 40 }}
-    //      innerRadius={0.6}
-    //      padAngle={0.4}
-    //      cornerRadius={0}
-    //      activeOuterRadiusOffset={8}
-    //      borderWidth={1}
-    //      borderColor={{
-    //          from: 'color',
-    //          modifiers: [
-    //              [
-    //                  'darker',
-    //                  0.2
-    //              ]
-    //          ]
-    //      }}
-    //      arcLinkLabelsSkipAngle={10}
-    //      arcLinkLabelsTextColor="#ffffff"
-    //      arcLinkLabelsThickness={2}
-    //      arcLinkLabelsColor={{ from: 'color' }}
-    //      arcLabelsSkipAngle={10}
-    //      arcLabelsTextColor={{
-    //          from: 'color',
-    //          modifiers: [
-    //              [
-    //                  'darker',
-    //                  1
-    //              ]
-    //          ]
-    //      }}
-    //      legends={[
-    //          {
-    //              anchor: 'bottom',
-    //              direction: 'row',
-    //              justify: false,
-    //              translateX: 0,
-    //              translateY: 56,
-    //              itemsSpacing: 0,
-    //              itemWidth: 100,
-    //              itemHeight: 15,
-    //              itemTextColor: '#fff',
-    //              itemDirection: 'left-to-right',
-    //              itemOpacity: 1,
-    //              symbolSize: 18,
-    //              symbolShape: 'circle',
-    //              effects: [
-    //                  {
-    //                      on: 'hover',
-    //                      style: {
-    //                          itemTextColor: '#fff'
-    //                      }
-    //                  }
-    //              ]
-    //          }
-    //      ]}
-    //  />
-    react_1.default.createElement("div", { style: { display: 'flex', justifyContent: 'flex-start' } },
+    const MyResponsivePie = ({}) => (react_1.default.createElement("div", { style: { display: 'flex', justifyContent: 'flex-start' } },
         react_1.default.createElement(recharts_1.ResponsiveContainer, { width: 300, height: 250 },
             react_1.default.createElement(recharts_1.PieChart, null,
                 react_1.default.createElement(recharts_1.Pie, { data: data, dataKey: "value", nameKey: "label", innerRadius: "60%", outerRadius: "80%", paddingAngle: 0, startAngle: 90, endAngle: -270 }, data.map((entry, index) => (react_1.default.createElement(recharts_1.Cell, { key: `cell-${index}`, fill: entry.color })))),
@@ -4426,8 +4860,8 @@ const Waste_Segregation_Metrics = (props) => {
                         const { payload } = props;
                         return (react_1.default.createElement("ul", null, data.map((entry, index) => (react_1.default.createElement("li", { key: `legend-${index}`, style: { color: entry.color } },
                             react_1.default.createElement("em", { style: { background: entry.color } }),
-                            react_1.default.createElement("span", null, `${entry.label}:`),
-                            react_1.default.createElement("span", { className: "data_values" }, ` ${entry.value} Tons`))))));
+                            react_1.default.createElement("span", { style: { color: '#fff' } }, `${entry.label}:`),
+                            react_1.default.createElement("span", { className: "data_values", style: { color: '#fff' } }, ` ${entry.value} Tons`))))));
                     } })))));
     let [sectionAfterHours, setsectionAfterHours] = react_1.default.useState([]);
     let [afterhoursData, setafterhoursData] = react_1.default.useState([]);
@@ -5013,7 +5447,7 @@ const TopNavBar = () => {
     configs: {
         layout: {
             w: 10,
-            h: 12,
+            h: 11,
             // minH: 9,
             // minW: 14
         }
@@ -5314,12 +5748,12 @@ const TopNavBar = () => {
     widget: top_section_1.default,
     configs: {
         layout: {
-            w: 15,
+            w: 18,
             h: 3,
-            minH: 3,
-            minW: 15,
-            maxH: 3,
-            maxW: 15
+            // minH: 3,
+            // minW: 18,
+            //  maxH: 3,
+            //  maxW: 18
         }
     }
 });

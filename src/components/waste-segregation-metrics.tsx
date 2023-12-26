@@ -6,6 +6,7 @@ import { ResponsivePie } from '@nivo/pie';
 
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
 
+
  
 const Waste_Segregation_Metrics: React.FunctionComponent<{}> = (props) => {
  
@@ -291,8 +292,8 @@ const Waste_Segregation_Metrics: React.FunctionComponent<{}> = (props) => {
      {
        "id": "paper",
        "label": "Paper", 
-       "value": 2947 ,
-       "color": "rgb(2 108 92)"
+       "value": 2947,
+       "color": "rgb(25 190 92)"
      },
      {
        "id": "metal",
@@ -313,67 +314,11 @@ const Waste_Segregation_Metrics: React.FunctionComponent<{}> = (props) => {
        "color": "rgb(179 238 142)"
      }
    ]
+
+   
  
 const MyResponsivePie = ({  }) => (
-//  <ResponsivePie
-//      data={data}
-//      margin={{ top: 0, right: 40, bottom: 60, left: 40 }}
-//      innerRadius={0.6}
-//      padAngle={0.4}
-//      cornerRadius={0}
-//      activeOuterRadiusOffset={8}
-//      borderWidth={1}
-//      borderColor={{
-//          from: 'color',
-//          modifiers: [
-//              [
-//                  'darker',
-//                  0.2
-//              ]
-//          ]
-//      }}
-//      arcLinkLabelsSkipAngle={10}
-//      arcLinkLabelsTextColor="#ffffff"
-//      arcLinkLabelsThickness={2}
-//      arcLinkLabelsColor={{ from: 'color' }}
-//      arcLabelsSkipAngle={10}
-//      arcLabelsTextColor={{
-//          from: 'color',
-//          modifiers: [
-//              [
-//                  'darker',
-//                  1
-//              ]
-//          ]
-//      }}
-      
-//      legends={[
-//          {
-//              anchor: 'bottom',
-//              direction: 'row',
-//              justify: false,
-//              translateX: 0,
-//              translateY: 56,
-//              itemsSpacing: 0,
-//              itemWidth: 100,
-//              itemHeight: 15,
-//              itemTextColor: '#fff',
-//              itemDirection: 'left-to-right',
-//              itemOpacity: 1,
-//              symbolSize: 18,
-//              symbolShape: 'circle',
-//              effects: [
-//                  {
-//                      on: 'hover',
-//                      style: {
-//                          itemTextColor: '#fff'
-//                      }
-//                  }
-//              ]
-//          }
-//      ]}
-//  />
-
+ 
 <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
       <ResponsiveContainer width={300} height={250}>
         <PieChart>
@@ -402,8 +347,8 @@ const MyResponsivePie = ({  }) => (
                   {data.map((entry, index) => (
                     <li key={`legend-${index}`} style={{ color: entry.color }}>
                       <em style={{ background: entry.color }}></em>
-                      <span>{`${entry.label}:`}</span>
-                      <span className="data_values">{` ${entry.value} Tons`}</span>
+                      <span style={{color: '#fff'}}>{`${entry.label}:`}</span>
+                      <span className="data_values"  style={{color: '#fff'}}>{` ${entry.value} Tons`}</span>
                     </li>
                   ))}
                 </ul>

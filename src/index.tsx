@@ -100,7 +100,7 @@ registerWidget({
     configs: {
         layout: {
             w: 10,
-            h: 12,
+            h: 11,
             // minH: 9,
             // minW: 14
         }
@@ -428,12 +428,12 @@ registerWidget({
     widget: TopNavTabs,
     configs: {
         layout: {
-            w: 15,
+            w: 18,
             h: 3, 
-            minH: 3,
-            minW: 15,
-             maxH: 3,
-             maxW: 15
+            // minH: 3,
+            // minW: 18,
+            //  maxH: 3,
+            //  maxW: 18
         }
     }
 });

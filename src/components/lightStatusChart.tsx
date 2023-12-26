@@ -97,7 +97,7 @@ const StreetLightStatusChart: React.FunctionComponent<{}> = () => {
     <div className="smart-city-content">
       <div className="technician_chart" style={{ height: 250 }}>
        
-        <div className="chart-top">
+        <div className="chart-top" style={{marginTop:"10px"}}>
         <div className="sub_title_bar">Total Revenue (Riyal)</div>
           <ToggleFilter
             options={[

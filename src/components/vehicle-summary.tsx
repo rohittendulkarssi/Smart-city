@@ -93,7 +93,7 @@ const VehicleSummaryWidget: React.FunctionComponent<{}> = () => {
         return ( 
            
             <WidgetWrapper className="smart-city_box vehicle_summary-box">  
-                <TitleBar title="vehicle Summary" icon='https://static.iviva.com/images/Car_widget/Car.svg'></TitleBar>  
+                <TitleBar title="Streetlight health summary" icon='https://static.iviva.com/images/Car_widget/Car.svg'></TitleBar>  
     
                 <div className="smart-city-content">  
                     <div className="technician_chart" style={{ height: 300 }}>  

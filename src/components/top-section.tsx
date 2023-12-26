@@ -14,8 +14,21 @@ const TopNavTabs: React.FunctionComponent<IMapChangeMode> = (props) => {
   const { uxpContext } = props;
   const [activeTab, setActiveTab] = useState('Streetlight');
  const tabs: { [key: string]: ITab } = {
+
+      Waste: { label: 'Waste', className: 'waste', id: 'waste' },
       Streetlight:  { label: 'Streetlight', className: 'streetlight', id: 'streetlight' },
-      CCTV: { label: 'CCTV', className: 'cctv', id: 'cctv' }
+      CCTV: { label: 'CCTV', className: 'cctv', id: 'cctv' }, 
+      Water: { label: 'Water', className: 'water', id: 'water' },
+      Pollution: { label: 'Pollution', className: 'pollution', id: 'pollution' },
+      Fire: { label: 'Fire', className: 'fire', id: 'fire' }, 
+
+      // { label: 'Waste', className: 'waste', id: 'waste' },
+      // { label: 'Streetlight', className: 'streetlight', id: 'streetlight' },
+      // { label: 'CCTV', className: 'cctv', id: 'cctv' },
+      // { label: 'Water', className: 'water', id: 'water' },
+      // { label: 'Pollution', className: 'pollution', id: 'pollution' },
+      // { label: 'Fire', className: 'fire', id: 'fire' },
+
     };
   const handleTabClick = (label: string) => {
     setActiveTab(label)
