@@ -461,7 +461,7 @@ const Traffic_Control: React.FunctionComponent<{}> = () => {
                         </select>
     
                         <div className='cctv-pict'>
-                             <img src={item.cctv_pict} alt='CCTV Picture' style={{height:'100px'}}/>
+                             <img src={item.cctv_pict} alt='CCTV Picture' style={{height:'82px'}}/>
                         </div>
 
                         <div className='loction'>{item.location}</div>

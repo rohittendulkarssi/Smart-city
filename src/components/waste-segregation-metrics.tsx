@@ -429,7 +429,10 @@ return (
  </div>  
 
       <div className="body" style={{marginTop: '2em'}}>
-         <div className='sub_title_bar'> District Waste (Tons)</div>  
+
+      {/* <TitleBar className='sub_title_bar' title="District Waste (Tons)" icon='https://static.iviva.com/images/Udhayimages/garbage1.png'></TitleBar> */}
+
+         <div className='sub_title_bar district-waste'> District Waste (Tons)</div>  
          <div className='afterhours_inner_widget'> 
          
           <div className="afterhours_data_color" dangerouslySetInnerHTML={{__html: afterhoursColorData }}></div> 

@@ -110,12 +110,12 @@ const Maintenance_Work_Order_Summary: React.FunctionComponent<{}> = () => {
          
          <WidgetWrapper className="smart-city_box order_summary-box"> 
   
-          <TitleBar title="Maintenance Work Order Summary" icon='https://static.iviva.com/images/Udhayimages/warning.png'></TitleBar>
+          <TitleBar title="Maintenance Work Order Summary" icon='https://static.iviva.com/images/Udhayimages/agenda.png'></TitleBar>
   
           
           <div className="smart-city-content"  style={{height:'350px'}}>
 
-              {/* <div className="chart-top">
+                <div className="chart-top">
                 
                   <FormField inline className="showcase-input" >
 
@@ -157,7 +157,7 @@ const Maintenance_Work_Order_Summary: React.FunctionComponent<{}> = () => {
                       />  
                         
                   </FormField>
-            </div> */}
+            </div>  
 
 
               <DataTable
@@ -215,21 +215,7 @@ const Maintenance_Work_Order_Summary: React.FunctionComponent<{}> = () => {
               /> 
           </div>
 
-          <div className='smart-city_box waste-bin-box '>
-            <div className="smart-city-content" style={{height:'100px'}}>  
-          
-                  <div className='status-content'>
-
-                      {streetLightData.map((item) => ( 
-                          <div  key={item.id} className={`status ${item.name}`}>
-                              <h3>{item.value}</h3>
-                              <p>{item.name}</p>
-                          </div> 
-                      ))}
-
-                  </div>
-              </div>
-          </div>
+         
 
 
           </WidgetWrapper>  

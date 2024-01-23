@@ -2,11 +2,11 @@
 .main-content-block {
     width: 100%;
     display: inline-block; 
-    // background-image: url(/images/Madina_1.jpeg);
-    // background-image: url(https://static.iviva.com/images/Udhayimages/Madina_1.jpeg);
-    // background-size: 100% 100%;
-    // background-position: center center;
-    // background-repeat: no-repeat;
+    background-image: url(/images/Madina_1.jpeg);
+    background-image: url(https://static.iviva.com/images/Udhayimages/Madina_1.jpeg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
     position: relative;
     z-index: 0;
 
@@ -94,7 +94,8 @@
         z-index: 1;
         position: relative;
         background : radial-gradient(ellipse at center center, rgb(255 255 255 / 0%) 0%, rgb(0 29 19 / 60%) 45%, rgb(0 0 0 / 84%) 100%);
-      
+        padding-top: 1.5em; 
+
         &::before{ 
         
             // content: "";
@@ -161,6 +162,7 @@
 
             .title-section { 
                 font-size: 1em;
+                padding-left: 2.5em;
             }
 
             &::before{
@@ -203,15 +205,44 @@
             color: #fff;
             font-weight: 500;
             outline: none;
+
+            &.district-waste{
+                background-image: url("https://static.iviva.com/images/Udhayimages/garbage1.png");
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 100%;
+                padding-left: 20px;
+            }
         }
 
-    .smart-city-content{ 
-        display: inline-block;
-        // width: 100%;
-        width: 95%;
-        margin-top: 1em;  
-    
-    }  
+        .smart-city-content {
+            display: inline-block; 
+            width: 95%;
+            margin-top: 1em;   
+            // overflow-x: hidden!important;
+        
+            /* width */
+            &::-webkit-scrollbar {
+                width: 5px!important;
+            }
+        
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #aafbe8!important; 
+            }
+        
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                
+                background: #08ac87!important; 
+            }
+        
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #f0f!important; 
+            }
+        } 
 
     &.order_trend-box{
         .smart-city-content{
@@ -234,6 +265,7 @@
 
                 .data-list{
                     background-color: transparent;
+                    overflow: hidden;
 
                     .data-table{
                         background-color: transparent;
@@ -349,7 +381,7 @@
             .status-content{
                 display: flex;
                 width: 100%;
-                padding: 1em 8% 2em 8%;
+                padding: 1em 8% 1.3em 8%;
 
                 .status{
                     display: inline-block;
@@ -500,6 +532,8 @@
                         padding: 0;
                         margin: 0.4em 0 0.2em 0;
                         color: #fff;
+
+                       
                     }
                    span{
                         font-size: 0.75em;
@@ -651,6 +685,14 @@
                         padding: 0;
                         margin: 0.4em 0 0.2em 0;
                         color: #fff;
+
+                        span{
+                            font-size: 0.3em;
+                            /* width: 100%; */
+                            /* display: inline-block; */
+                            /* position: absolute; */
+                            /* transform: translate(50%); */
+                        }
                     }
                    span{
                         font-size: 0.85em;
@@ -709,7 +751,8 @@
                     display: inline-block;
                     width: 30%;
                     text-align: center;
-                    background-color: rgba(0, 97, 67, 0.61);
+                    // background-color: rgba(0, 97, 67, 0.61);
+                    background-color: rgb(7 34 26 / 77%);
                     border-radius: 2px;
                     padding: 2em;
                     margin: 1em 0em 0em 1em;
@@ -745,13 +788,14 @@
                     .air-quality-status-box{
                         display: inherit;
                         width: 60%;
-                        background-color: rgba(0, 97, 67, 0.61);
+                        // background-color: rgba(0, 97, 67, 0.61);
                         border-radius: 2px;
                         padding: 2em;
                         margin: 0em 1em 1em 1em;
                         text-align: center;
                         text-transform: uppercase;
                         align-items: center;
+                        background-color: rgb(7 34 26 / 77%);
     
                         p{
                             font-size: 1em;
@@ -1050,7 +1094,7 @@
     .chart-top{
         display: flex;
         justify-content: flex-end;
-        margin-bottom: 1em;
+        margin-bottom: 0em;
 
         .uxp-toggle-filter{
             background: transparent;
@@ -1140,8 +1184,8 @@
             .uxp-form-select{
                 display: inline-block;
                 margin-right: 0.5em;
-                width: 27%;
-                min-width: 27%;
+                width: 21%;
+                min-width: 21%;
 
                 .uxp-select-placeholder{
                     font-size: 10px;
@@ -1199,9 +1243,160 @@
             font-size: 1em;
         }
     }
+
+    &.empty-box{
+
+    //    border : 1px solid #f00;
+
+       .header-content{
+            display: inline-flex;
+            width: 100%;
+            padding: 1em 1em 0em 1em;
+
+            .logo{ 
+                display: inline-block;
+                width: 32%;
+                background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 90% auto;
+                margin-top: 0em;
+                height: 7.5em;
+            }
+            h2{
+                display: inline-block;
+                width: 65%;
+                font-size: 2.5em;
+                font-weight: bold;
+                color: #ffffff;
+                margin-left: 5%;
+                padding: 0;
+                margin: 1.3em 0 0 0%;
+                text-transform: uppercase;
+            }
+       }
+       h4{
+            display: inline-block;
+            width: 100%;
+            font-size: 1.2em;
+            color: #ffffff;
+            margin: 0em 0 0 1em;
+            padding: 0;
+            text-transform: uppercase;
+            margin-top: 1em;
+       }
+
+    }
+
+    &.top-rht-container-box{
+       
+        display: inline-block;
+
+        .header-rht-content{
+             
+            // width: 75%;
+            width: 100%;
+            margin-top: 2em;
+            float: right;
+
+                .rgt-head-cont{
+                    display: inline-block;
+                    width: 25%;
+                    text-align: center;
+                    font-size: 1.1em;
+                    color: #fff;
+                    border-left: 2px solid #fff;
+                    position: relative;
+
+                    &.head-timer{
+                        border-left: 0px solid transparent;
+                    }
+                    &.head-date{
+
+                    }
+                    &.head-weather{ 
+
+                        &::before {
+                                    background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);
+                                    content: "";
+                                    width: 15px;
+                                    height: 15px;
+                                    display: block;
+                                    background-size: 100% auto;
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 8px;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                }
+                    }
+                    &.head-location{
+                        font-size: 0.9em;
+                        padding-top: 3px;
+
+                        &::before {
+                            background-image: url(https://static.iviva.com/images/Udhayimages/pin.png);
+                            content: "";
+                            width: 12px;
+                            height: 12px;
+                            display: block;
+                            background-size: 100% auto;
+                            position: absolute;
+                            top: 2px;
+                            left: 5px;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                        }
+                    }
+                }
+        }
+        .power-by-cont{
+            display: inline-block;
+            width: 27%;
+            vertical-align: bottom;
+            padding: 0px 0 0 0;
+            margin: 0px 0 0 0;
+            position: relative;
+            top: 10px;
+            text-align: right;
+
+            p{
+                padding: 0;
+                margin: 0;
+                font-size: 0.75em;
+                color: #fff;
+                text-align: end;
+                position: absolute;
+                bottom: 6px;
+                right: 75px;
+            }
+            h1{
+                padding: 0;
+                margin: 0;
+                font-size: 3em;
+                color: #fff;
+                padding-left: 0;
+                padding-right: 0;
+
+                sub{
+                    font-size: 0.3em;
+                    bottom: 7px;
+                    position: relative;
+                }
+                 
+            }
+        }
+    }
+
 }
 
-
+.uxp-select-dropdown-container{
+    .uxp-select-dropdown{ 
+      .uxp-select-option {
+            padding: 12px 10px 12px 10px;
+        }
+    }
+}
  
 
  
@@ -1380,8 +1575,9 @@
 
 .top-nav-tabs{
    
-    position: absolute;
-    top: 1em;
+    // position: absolute;
+    position: relative;
+    top: 6em;
     left: 50%;
     z-index: 2;
     transform: translateX(-50%);
@@ -1518,32 +1714,36 @@
     display: inline-block;
     position: absolute;
     // top: 2.5em;
-    top: 0;
+    top: 1em;
     left: 0;
+      right: 30px !important;
 
     ul{  
       margin: 0;
       padding: 0;
-      display: inline-flex;
-      background: rgba(0, 0, 0, 0.47);
+      display: inline-flex; 
       width: auto;
       border-radius: 5px;
 
-      li{
-        // list-style: none;
-        // display: inline-block;
-        // width: 20px;
-        // height: 20px;
-        // margin: 8px 10px;
+      li{ 
+            // list-style: none;
+            // display: inline-block;
+            // width: 25px;
+            // height: 25px;
+            // margin: 5px 8px;
 
             list-style: none;
             display: inline-block;
-            width: 25px;
-            height: 25px;
-            margin: 5px 8px;
+            width: 50px;
+            height: 38px;
+            margin: 3px 3px;
+            text-align: center;
 
         a{
-          cursor: pointer;
+            cursor: pointer;
+            width: 100%;
+            display: inline-block;
+            height: 100%;
 
           img{
             max-width: 100%;
@@ -1650,35 +1850,13 @@
 
   .timer-slider {
 
-
-    //Changes for  E3D Team
+ 
     position: absolute;
-    top: 7em;
-    right: -4.4em;
-    width: 23vh;
-    height: 15vh;
-
-    // position: absolute;
-    // top: 0;
-    // left: -4em;
-    // width: 20vh;
-    // height: 15vh;
-
-    // &::before {
-    //         background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);
-    //         content: "";
-    //         width: 12px;
-    //         height: 12px;
-    //         display: block;
-    //         background-size: 100% auto;
-    //         position: absolute;
-    //         top: -85px;
-    //         left: 6em;
-    //         background-repeat: no-repeat;
-    //         background-position: center center;
-    //         transform: rotate(180deg);
-    //     }
-
+    top: 9em;
+    // right: -4.4em;
+    right: -5.75em !important;
+    width: 25vh;
+    height: 15vh; 
    
 
        .timer-range {
@@ -1694,31 +1872,32 @@
             height: 2px;
             position: relative;
 
-            &::before { 
+            &::before {  
+
                 background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);
                 content: "";
-                width: 20px;
-                height: 20px;
+                width: 40px;
+                height: 40px;
                 display: block;
                 background-size: 100% auto;
                 position: absolute;
-                top: -8px;
-                left: -28px;
+                top: -18px;
+                left: -50px;
                 background-repeat: no-repeat;
                 background-position: center center;
-                // transform: rotate(180deg);
                 
             }
             &::after {   
+                
                 background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);
                 content: "";
-                width: 15px;
-                height: 15px;
+                width: 35px;
+                height: 35px;
                 display: block;
                 background-size: 100% auto;
                 position: absolute;
-                bottom: -5px;
-                right: -25px;
+                bottom: -20px;
+                right: -45px;
                 background-repeat: no-repeat;
                 background-position: center center;
                 transform: rotate(160deg);
@@ -1735,22 +1914,50 @@
                     border-radius:50%; 
                     cursor:pointer;
                     box-shadow: 0px 0px 3px #9f9f9f;
-                }
+                } 
+                
         } 
 
-        // &::after {
-        //     background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);
-        //     content: "";
-        //     width: 20px;
-        //     height: 20px;
-        //     display: block;
-        //     background-size: 100% auto;
-        //     position: absolute;
-        //     bottom: -0.5em;
-        //     left: 67px;
-        //     background-repeat: no-repeat;
-        //     background-position: center center;
-        // }
+    //    .tooltip {
+    //         position: absolute;
+    //         margin: 0;
+    //         background: #1f9b7f;
+    //         padding: 10px;
+    //         border-radius: 8px;
+    //         color: #fff;
+    //         left: -1em; 
+    //         }
+
+    .timer-slider {
+        position: relative;
+      }
+      
+      .tooltip {
+        position: absolute;
+        background-color: #023d28;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        font-size: 0.9rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 8px 0 8px 8px;
+            border-color: transparent transparent transparent #023d28;
+            top: calc(50% - 8px);
+            right: -8px;
+          }
+      }
+          
+            
+        
+        .timer-range ~ .tooltip:hover p {
+            visibility: visible;
+            opacity: 1;
+          }
          
     }
      
@@ -1760,6 +1967,8 @@
 
   .toggle-container {
     display: inline-block;
+    right: 2.1em;
+    position: relative;
         
         
         .toggle-button { 
@@ -1772,9 +1981,10 @@
             outline: none;
             cursor: pointer;
             border-radius: 15px;
-            padding: 2px; 
+            padding: 2px;
             margin-top: 1em;
             transform: rotate(90deg);
+            margin-right: 0px;
 
             .slider-toggle {
                 position: absolute;
@@ -1809,6 +2019,11 @@
 
 .ed3-map-controls-widget-wrapper{
     width: 15%;
+    right: calc(-50% + 60px);
+    top: 1.5em;
+
+   // right: calc(-50% + 35px);
+    
 
     .ed3-map-zoom-controls-container { 
         transform: rotate(90deg);
@@ -1864,91 +2079,64 @@
             }
         }
 }
-
-// #root{
-
-//     .main-content-block {
-//         width: 100%;
-//         display: inline-block;  
-//         position: relative;
-//         z-index: 0; 
-    
-//         &::before {
-//             content: ""; 
-//             left: 0;
-//             top: 0;
-//             width: 30%!important;
-//             height: 176vh;
-//             position: absolute;
-//             z-index: 1;
-//             background: #033649;
-//               background: linear-gradient(90deg, rgb(0 0 0 / 89%) 0%, rgb(4 36 49 / 97%), rgb(0 0 0 / 0%) 100%);
-//             // background: linear-gradient(90deg, #021821 0%, #022431d6, #00000000 100%);
-//             pointer-events: none;
-//         } 
-    
-//         &::after{
-//             content: "";  
-//             right: 0;
-//             top: 0;
-//             width:30%!important;
-//             height: 176vh;
-//             position: absolute;
-//             z-index: 0; 
-//             background: #033649;
-//             background: linear-gradient(270deg, rgb(0 0 0 / 89%) 0%, rgb(4 36 49 / 97%), rgb(0 0 0 / 0%) 100%);
-//             pointer-events: none;
-//         }
-    
-//         .widget-container-block {
-//             z-index: 1;
-//             position: relative;
-//             min-height: 176vh;
-//             background: #03364994;
-
-//             .smart-city_box {
-//                 .chart-top {
-//                     display: none; 
-//                 }
-//             }
-
-
-//         }
-//     }
-// }
-
-// .smart-city_box  {
-//     .chart-top{
-//         display: none!important;  
-//     }
-// }
-
-
- 
- 
  
 
+  .searchBox-widget{
+    display: inline-block;
+    width: 100%;
 
-// .react-grid-layout.player > .react-grid-item.main-container.react-draggable.cssTransforms.react-resizable{  
-//     // height: 95%!important;
+    .searchbox-container{
+        position: relative;
+        top: 1.3em;
+        right: -1em;
 
+        .searchbox{
+            border: 1px solid #033649;
+            padding: 9px 5px;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            &:focus{
+                outline: none;
+            }
+        }
+ 
+        .clear-button{
+            position: absolute;
+            top: 0.6em;
+            right: 0.7em;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
 
-//     #left-container, #right-container{ 
-//         width: 100%;
-//         height: 100%;
-//         display: inline-block;
-//         position: relative;
-//     }
+   
 
-//     #left-container{ 
-//         left: -11px;
-//         background: linear-gradient(90deg, rgb(0 0 0 / 95%) 0%, rgb(0 29 19 / 90%) 70%, rgb(255 255 255 / 2%) 100%);
-//         // background: linear-gradient(90deg, rgb(0 0 0 / 84%) 0%, rgb(0 29 19 / 86%) 65%, rgb(255 255 255 / 0%) 100%);
-//     }
+    ul.search-list{
+        padding: 0;
+        margin: 1.5em 0 0 1em;
+        color: #fff;
+        height: 5em;
+        overflow: auto;
+        text-align: left;
+        width: 100%;
 
-//     #right-container{
-//         right: -11px;
-//         // background: linear-gradient(270deg, rgb(0 0 0 / 84%) 0%, rgb(0 29 19 / 86%) 65%, rgb(255 255 255 / 0%) 100%);
-//          background: linear-gradient(270deg, rgb(0 0 0 / 95%) 0%, rgb(0 29 19 / 90%) 70%, rgb(255 255 255 / 2%) 100%);
-//     }
-// }
+        li{
+            list-style: none;
+            /* padding-bottom: 0.8em; */
+            /* padding-left: 0.5em; */
+            margin: 0 0 3px 0;
+            padding: 6px 5px;
+            width: 100%;
+            cursor: pointer;
+            /* display: inline-block; */
+
+            &:hover{ 
+                background: rgba(17, 8, 8, 0.708);
+            }
+        }
+    }
+  }

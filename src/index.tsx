@@ -48,8 +48,14 @@ import CCTVOverviewWidget from './components/CCTV-overview'
 
 import TopNavTabs from './components/top-section'
 import WeatherIcons from './components/WeatherIcons'
-import SunController from './components/SunController.tsx'
+import SunController from './components/SunController'
 import HeightMap from './components/heightMap'
+// import DistrictToggle from './components/district-toggle'
+import TopHeader from './components/top-header'
+import TopRightHeader from './components/top-rht-header'
+import SearchBoxContainer from './components/search_box'
+
+
 
 import SemiCircle from './components/semi-circle';
 
@@ -70,9 +76,19 @@ export enum EventsEnum {
     HeightMap = 'height-map', 
     WeatherControl = 'weather',
     SunPosition = 'solar-time', //sample payload - { 'time' : '12:15' }
-    Navigation = 'navigation'
+    Navigation = 'navigation',
+    DistrictJump = 'district-jump'
 
 }
+
+// export interface IPayload {
+//     sectorName: string;
+//     longitude?: number;
+//     latitude?: number;
+//     viewAngle?: number;
+//     altitude?: number;
+// } 
+
 
 export type genericEventHandler = (eventType: EventsEnum, payload: any) =>  void;
 
@@ -459,12 +475,12 @@ registerWidget({
     widget: SunController,
     configs: {
         layout: {
-            w: 2,
-            h: 7,
-            minH: 7,
-            minW: 2,
-             maxH: 7,
-             maxW: 2
+            w: 3,
+            h: 8,
+            // minH: 7,
+            // minW: 2,
+            //  maxH: 7,
+            //  maxW: 2
         }
     }
 });
@@ -484,6 +500,68 @@ registerWidget({
     }
 });
 
+
+// registerWidget({
+//     id: "districtToggle", 
+//     widget: DistrictToggle,
+//     configs: {
+//         layout: {
+//             w: 2,
+//             h: 3,
+//             minH: 3,
+//             minW: 2,
+//              maxH: 3,
+//              maxW: 2
+//         }
+//     }
+// });
+
+registerWidget({
+    id: "top_Header", 
+    widget: TopHeader,
+    configs: {
+        layout: {
+            w: 2,
+            h: 3,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
+registerWidget({
+    id: "top_Right_Header", 
+    widget: TopRightHeader,
+    configs: {
+        layout: {
+            w: 10,
+            h: 3,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
+
+
+registerWidget({
+    id: "searchBox_Container", 
+    widget: SearchBoxContainer,
+    configs: {
+        layout: {
+            w: 4,
+            h: 3,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
 
 
 

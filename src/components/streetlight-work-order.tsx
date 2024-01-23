@@ -112,8 +112,25 @@ const StreetLightWorkOrder: React.FunctionComponent<{}> = () => {
   
           <TitleBar title="Street Light Work Order" icon='https://static.iviva.com/images/Udhayimages/traffic-light.png'></TitleBar>
   
+
+          <div className='smart-city_box waste-bin-box '>
+            <div className="smart-city-content" style={{height:'80px'}}>  
           
-          <div className="smart-city-content"  style={{height:'350px'}}>
+                  <div className='status-content'>
+
+                      {streetLightData.map((item) => ( 
+                          <div  key={item.id} className={`status ${item.name}`}>
+                              <h3>{item.value}</h3>
+                              <p>{item.name}</p>
+                          </div> 
+                      ))}
+
+                  </div>
+              </div>
+          </div>
+
+          
+          <div className="smart-city-content"  style={{height:'250px'}}>
 
               <div className="chart-top">
                 
@@ -215,7 +232,7 @@ const StreetLightWorkOrder: React.FunctionComponent<{}> = () => {
               /> 
           </div>
 
-          <div className='smart-city_box waste-bin-box '>
+          {/* <div className='smart-city_box waste-bin-box '>
             <div className="smart-city-content" style={{height:'100px'}}>  
           
                   <div className='status-content'>
@@ -229,7 +246,7 @@ const StreetLightWorkOrder: React.FunctionComponent<{}> = () => {
 
                   </div>
               </div>
-          </div>
+          </div> */}
 
 
           </WidgetWrapper>  

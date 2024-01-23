@@ -15,6 +15,7 @@ const Water_SummaryWidget: React.FunctionComponent<{}> = () => {
           value: '29',
           change: '+40%',
           statusClass: 'red',
+          value_status: 'mgd'
         },
         {
           iconClass: 'fuel-consumption-icon',
@@ -22,6 +23,7 @@ const Water_SummaryWidget: React.FunctionComponent<{}> = () => {
           value: '9,492',
           change: '+25%',
           statusClass: 'red',
+          value_status: ''
         },
         {
           iconClass: 's-consumption-icon',
@@ -29,6 +31,7 @@ const Water_SummaryWidget: React.FunctionComponent<{}> = () => {
           value: '38',
           change: '-15%',
           statusClass: 'green',
+          value_status: ''
         },
       ];
 
@@ -36,7 +39,7 @@ const Water_SummaryWidget: React.FunctionComponent<{}> = () => {
         <div className={`status ${item.iconClass}-status`} key={index}>
           <div className={`vehicle-icon ${item.iconClass}`}></div>
           <p>{item.title}</p>
-          <h2>{item.value}</h2>
+          <h2>{item.value} <span>{item.value_status}</span></h2>
           <span className={item.statusClass}>{item.change}</span>
         </div>
       ));

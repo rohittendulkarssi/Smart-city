@@ -136,7 +136,7 @@ const SemiCircleProgressBar1: React.FC<SemiCircleProgressBarProps> = ({ percenta
 
          <WidgetWrapper className="smart-city_box iaq-box">  
 
-            <TitleBar title="IAQ" icon='https://static.iviva.com/images/Udhayimages/wind-sign.png'></TitleBar> 
+            <TitleBar title="AQI" icon='https://static.iviva.com/images/Udhayimages/wind-sign.png'></TitleBar> 
 
             <div className="smart-city-content">   
 
@@ -154,17 +154,13 @@ const SemiCircleProgressBar1: React.FC<SemiCircleProgressBarProps> = ({ percenta
 
                     <SemiCircleProgressBar percentage={50} />
 
-                </div>
-                       
+                </div> 
 
-                    </div>
-
-                   
+                    </div> 
                         
                         {statusElements}
                         
-                        
-                        </div> 
+                  </div> 
   
             </div>
 

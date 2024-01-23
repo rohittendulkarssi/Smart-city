@@ -10,114 +10,114 @@ const IAQ_Summary: React.FunctionComponent<{}> = () => {
     const water_consumption_data1 = [
         {
           name: '1 Jan', 
-          consumption: 1950,
-          amt: 2400,
+          AQI_index: 150,
+          amt: 470,
         },
         {
           name: '2 Jan', 
-          consumption: 2100,
-          amt: 2210,
+          AQI_index: 100,
+          amt: 350,
         },
         {
           name: '3 Jan', 
-          consumption: 1800,
-          amt: 2290,
+          AQI_index: 324,
+          amt: 290,
         },
         {
           name: '4 Jan', 
-          consumption: 3908,
-          amt: 2000,
+          AQI_index: 187,
+          amt: 200,
         },
         {
           name: '5 Jan', 
-          consumption: 1680,
-          amt: 2181,
+          AQI_index: 398,
+          amt: 211,
         },
         {
           name: '6 Jan', 
-          consumption: 3800,
-          amt: 2500,
+          AQI_index: 400,
+          amt: 250,
         },
         {
           name: '7 Jan', 
-          consumption: 2350,
-          amt: 2100,
+          AQI_index: 169,
+          amt: 100,
         },
       ];
 
       const water_consumption_data2 = [
         {
           name: '1 Jan', 
-          consumption: 4000,
-          amt: 2400,
+          AQI_index: 400,
+          amt: 240,
         },
         {
           name: '2 Jan', 
-          consumption: 1398,
+          AQI_index: 337,
           amt: 2210,
         },
         {
           name: '3 Jan', 
-          consumption: 1680,
-          amt: 2290,
+          AQI_index: 168,
+          amt: 229,
         },
         {
           name: '4 Jan', 
-          consumption: 3908,
-          amt: 2000,
+          AQI_index: 335,
+          amt: 200,
         },
         {
           name: '5 Jan', 
-          consumption: 3800,
-          amt: 2181,
+          AQI_index: 175,
+          amt: 218,
         },
         {
           name: '6 Jan', 
-          consumption: 1680,
-          amt: 2500,
+          AQI_index: 248,
+          amt: 250,
         },
         {
           name: '7 Jan', 
-          consumption: 4900,
-          amt: 2100,
+          AQI_index: 357,
+          amt: 210,
         },
       ];
     
       const water_consumption_data3 = [
         {
           name: '1 Jan', 
-          consumption: 2354,
-          amt: 2400,
+          AQI_index: 235,
+          amt: 240,
         },
         {
           name: '2 Jan', 
-          consumption: 3654,
+          AQI_index: 400,
           amt: 2210,
         },
         {
           name: '3 Jan', 
-          consumption: 1257,
-          amt: 2290,
+          AQI_index: 275,
+          amt: 229,
         },
         {
           name: '4 Jan', 
-          consumption: 3580,
-          amt: 2000,
+          AQI_index: 280,
+          amt: 200,
         },
         {
           name: '5 Jan', 
-          consumption: 3610,
-          amt: 2181,
+          AQI_index: 210,
+          amt:  181,
         },
         {
           name: '6 Jan', 
-          consumption: 3254,
-          amt: 2500,
+          AQI_index:  254,
+          amt:  500,
         },
         {
           name: '7 Jan', 
-          consumption: 2168,
-          amt: 2100,
+          AQI_index:  168,
+          amt: 450,
         },
       ];
 
@@ -130,7 +130,7 @@ const IAQ_Summary: React.FunctionComponent<{}> = () => {
       };  
    
   
-      const filterToDataMap: Record<string, Array<{ name: string;  consumption: number; amt: number; }>> = {
+      const filterToDataMap: Record<string, Array<{ name: string;  AQI_index: number; amt: number; }>> = {
           month: water_consumption_data1,
           week: water_consumption_data2,
           day: water_consumption_data3, 
@@ -143,7 +143,7 @@ const IAQ_Summary: React.FunctionComponent<{}> = () => {
     
              <WidgetWrapper className="smart-city_box water_consumption-box">  
     
-                <TitleBar title="IAQ Summary" icon='https://static.iviva.com/images/Udhayimages/water-summary.png'></TitleBar> 
+                <TitleBar title="AQI Summary" icon='https://static.iviva.com/images/Udhayimages/water-summary.png'></TitleBar> 
     
                 <div className="smart-city-content">  
 
@@ -166,24 +166,21 @@ const IAQ_Summary: React.FunctionComponent<{}> = () => {
     
                      <ResponsiveContainer width="100%" height={280}>
                         <LineChart
-                        width={500}
-                        height={350}
-                        data={water_consumption_data}
-                        margin={{
-                            top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 5,
-                        }}
-                        
-                        >
-                        <CartesianGrid strokeDasharray="0 0" />
-                        <XAxis dataKey="name"  tick={{ fill: '#ffffff' }} />
-                        <YAxis  tick={{ fill: '#ffffff' }} />
-                        <Tooltip />
-                        <Legend />
-                        <Line type="monotone" dataKey="consumption" stroke="#ffffff" activeDot={{ r: 8 }} />
-                        
+                            width={500}
+                            height={350}
+                            data={water_consumption_data}
+                            margin={{
+                                top: 5,
+                                right: 30,
+                                left: 20,
+                                bottom: 5,
+                            }}>
+                            <CartesianGrid strokeDasharray="0 0" />
+                            <XAxis dataKey="name"  tick={{ fill: '#ffffff' }} />
+                            <YAxis  tick={{ fill: '#ffffff' }} />
+                            <Tooltip />
+                            <Legend />
+                            <Line type="monotone" dataKey="AQI_index" stroke="#ffffff" activeDot={{ r: 8 }} /> 
                         </LineChart>
                     </ResponsiveContainer>   
      

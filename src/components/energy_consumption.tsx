@@ -16,145 +16,145 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
             name: '1 Jan',
             power_consumption: 38,
             burning_hours: 25,
-            amt: 1,
+            hours: 1,
         },
         {
             name: '2 Jan',
             power_consumption: 30,
             burning_hours: 15,
-            amt: 2,
+            hours: 2,
         },
         {
             name: '3 Jan',
             power_consumption: 38,
             burning_hours: 22,
-            amt: 3,
+            hours: 3,
         },
         {
             name: '4 Jan',
             power_consumption: 42,
             burning_hours: 34,
-            amt: 4,
+            hours: 4,
         },
         {
             name: '5 Jan',
             power_consumption: 19,
             burning_hours: 12,
-            amt: 5,
+            hours: 5,
         },
         {
             name: '6 Jan',
             power_consumption: 35,
             burning_hours: 27,
-            amt: 6,
+            hours: 6,
         },
         {
             name: '7 Jan',
             power_consumption: 20,
             burning_hours: 10,
-            amt: 7,
+            hours: 7,
         },
         {
             name: '8 Jan',
             power_consumption: 28,
             burning_hours: 25,
-            amt: 8,
+            hours: 8,
         },
         {
             name: '9 Jan',
             power_consumption: 30,
             burning_hours: 15,
-            amt: 9,
+            hours: 9,
         },
         {
             name: '10 Jan',
             power_consumption: 18,
             burning_hours: 12,
-            amt: 10,
+            hours: 10,
         },
         {
             name: '11 Jan',
             power_consumption: 42,
             burning_hours: 34,
-            amt: 11,
+            hours: 11,
         },
         {
             name: '12 Jan',
             power_consumption: 49,
             burning_hours: 27,
-            amt: 12,
+            hours: 12,
         },
         {
             name: '13 Jan',
             power_consumption: 35,
             burning_hours: 27,
-            amt: 13,
+            hours: 13,
         },
         {
             name: '14 Jan',
             power_consumption: 22,
             burning_hours: 10,
-            amt: 14,
+            hours: 14,
         },
         {
             name: '15 Jan',
             power_consumption: 37,
             burning_hours: 34,
-            amt: 15,
+            hours: 15,
         },
         {
             name: '16 Jan',
             power_consumption: 29,
             burning_hours: 17,
-            amt: 16,
+            hours: 16,
         },
         {
             name: '17 Jan',
             power_consumption: 35,
             burning_hours: 27,
-            amt: 17,
+            hours: 17,
         },
         {
             name: '18 Jan',
             power_consumption: 18,
             burning_hours: 10,
-            amt: 18,
+            hours: 18,
         },
         {
             name: '19 Jan',
             power_consumption: 38,
             burning_hours: 25,
-            amt: 19,
+            hours: 19,
         },
         {
             name: '20 Jan',
             power_consumption: 30,
             burning_hours: 15,
-            amt: 20,
+            hours: 20,
         },
         {
             name: '21 Jan',
             power_consumption: 30,
             burning_hours: 27,
-            amt: 21,
+            hours: 21,
         },
         {
             name: '22 Jan',
             power_consumption: 35,
             burning_hours: 27,
-            amt: 22,
+            hours: 22,
         },
         {
             name: '23 Jan',
             power_consumption: 20,
             burning_hours: 10,
-            amt: 23,
+            hours: 23,
         },
         {
             name: '24 Jan',
             power_consumption: 38,
             burning_hours: 27,
-            amt: 24,
+            hours: 24,
         }
     ];    
     
@@ -164,145 +164,145 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
             name: '1 Jan',
             power_consumption: 30,
             burning_hours: 25,
-            amt: 1,
+            hours: 1,
         },
         {
             name: '2 Jan',
             power_consumption: 35,
             burning_hours: 30,
-            amt: 2,
+            hours: 2,
         },
         {
             name: '3 Jan',
             power_consumption: 38,
             burning_hours: 22,
-            amt: 3,
+            hours: 3,
         },
         {
             name: '4 Jan',
             power_consumption: 42,
             burning_hours: 34,
-            amt: 4,
+            hours: 4,
         },
         {
             name: '5 Jan',
             power_consumption: 36,
             burning_hours: 27,
-            amt: 5,
+            hours: 5,
         },
         {
             name: '6 Jan',
             power_consumption: 44,
             burning_hours: 20,
-            amt: 6,
+            hours: 6,
         },
         {
             name: '7 Jan',
             power_consumption: 30,
             burning_hours: 20,
-            amt: 7,
+            hours: 7,
         },
         {
             name: '8 Jan',
             power_consumption: 38,
             burning_hours: 25,
-            amt: 8,
+            hours: 8,
         },
         {
             name: '9 Jan',
             power_consumption: 30,
             burning_hours: 15,
-            amt: 9,
+            hours: 9,
         },
         {
             name: '10 Jan',
             power_consumption: 38,
             burning_hours: 22,
-            amt: 10,
+            hours: 10,
         },
         {
             name: '11 Jan',
             power_consumption: 42,
             burning_hours: 34,
-            amt: 11,
+            hours: 11,
         },
         {
             name: '12 Jan',
             power_consumption: 39,
             burning_hours: 27,
-            amt: 12,
+            hours: 12,
         },
         {
             name: '13 Jan',
             power_consumption: 41,
             burning_hours: 35,
-            amt: 13,
+            hours: 13,
         },
         {
             name: '14 Jan',
             power_consumption: 33,
             burning_hours: 10,
-            amt: 14,
+            hours: 14,
         },
         {
             name: '15 Jan',
             power_consumption: 30,
             burning_hours: 24,
-            amt: 15,
+            hours: 15,
         },
         {
             name: '16 Jan',
             power_consumption: 39,
             burning_hours: 27,
-            amt: 16,
+            hours: 16,
         },
         {
             name: '17 Jan',
             power_consumption: 35,
             burning_hours: 22,
-            amt: 17,
+            hours: 17,
         },
         {
             name: '18 Jan',
             power_consumption: 35,
             burning_hours: 22,
-            amt: 18,
+            hours: 18,
         },
         {
             name: '19 Jan',
             power_consumption: 31,
             burning_hours: 27,
-            amt: 19,
+            hours: 19,
         },
         {
             name: '20 Jan',
             power_consumption: 22,
             burning_hours: 15,
-            amt: 20,
+            hours: 20,
         },
         {
             name: '21 Jan',
             power_consumption: 37,
             burning_hours: 35,
-            amt: 21,
+            hours: 21,
         },
         {
             name: '22 Jan',
             power_consumption: 25,
             burning_hours: 17,
-            amt: 22,
+            hours: 22,
         },
         {
             name: '23 Jan',
             power_consumption: 37,
             burning_hours: 31,
-            amt: 23,
+            hours: 23,
         },
         {
             name: '24 Jan',
             power_consumption: 21,
             burning_hours: 18,
-            amt: 24,
+            hours: 24,
         }
     ]; 
     
@@ -312,248 +312,149 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
             name: '1 Jan',
             power_consumption: 36,
             burning_hours: 31,
-            amt: 1,
+            hours: 1,
         },
         {
             name: '2 Jan',
             power_consumption: 23,
             burning_hours: 16,
-            amt: 2,
+            hours: 2,
         },
         {
             name: '3 Jan',
             power_consumption: 25,
             burning_hours: 18,
-            amt: 3,
+            hours: 3,
         },
         {
             name: '4 Jan',
             power_consumption: 32,
             burning_hours: 28,
-            amt: 4,
+            hours: 4,
         },
         {
             name: '5 Jan',
             power_consumption: 38,
             burning_hours: 30,
-            amt: 5,
+            hours: 5,
         },
         {
             name: '6 Jan',
             power_consumption: 30,
             burning_hours: 23,
-            amt: 6,
+            hours: 6,
         },
         {
             name: '7 Jan',
             power_consumption: 28,
             burning_hours: 17,
-            amt: 7,
+            hours: 7,
         },
         {
             name: '8 Jan',
             power_consumption: 32,
             burning_hours: 25,
-            amt: 8,
+            hours: 8,
         },
         {
             name: '9 Jan',
             power_consumption: 40,
             burning_hours: 32,
-            amt: 9,
+            hours: 9,
         },
         {
             name: '10 Jan',
             power_consumption: 38,
             burning_hours: 24,
-            amt: 10,
+            hours: 10,
         },
         {
             name: '11 Jan',
             power_consumption: 36,
             burning_hours: 30,
-            amt: 11,
+            hours: 11,
         },
         {
             name: '12 Jan',
             power_consumption: 35,
             burning_hours: 27,
-            amt: 12,
+            hours: 12,
         },
         {
             name: '13 Jan',
             power_consumption: 36,
             burning_hours: 25,
-            amt: 13,
+            hours: 13,
         },
         {
             name: '14 Jan',
             power_consumption: 30,
             burning_hours: 20,
-            amt: 14,
+            hours: 14,
         },
         {
             name: '15 Jan',
             power_consumption: 34,
             burning_hours: 24,
-            amt: 15,
+            hours: 15,
         },
         {
             name: '16 Jan',
             power_consumption: 36,
             burning_hours: 28,
-            amt: 16,
+            hours: 16,
         },
         {
             name: '17 Jan',
             power_consumption: 35,
             burning_hours: 31,
-            amt: 17,
+            hours: 17,
         },
         {
             name: '18 Jan',
             power_consumption: 25,
             burning_hours: 22,
-            amt: 18,
+            hours: 18,
         },
         {
             name: '19 Jan',
             power_consumption: 37,
             burning_hours: 31,
-            amt: 19,
+            hours: 19,
         },
         {
             name: '20 Jan',
             power_consumption: 39,
             burning_hours: 32,
-            amt: 20,
+            hours: 20,
         },
         {
             name: '21 Jan',
             power_consumption: 34,
             burning_hours: 28,
-            amt: 21,
+            hours: 21,
         },
         {
             name: '22 Jan',
             power_consumption: 25,
             burning_hours: 17,
-            amt: 22,
+            hours: 22,
         },
         {
             name: '23 Jan',
             power_consumption: 34,
             burning_hours: 31,
-            amt: 23,
+            hours: 23,
         },
         {
             name: '24 Jan',
             power_consumption: 36,
             burning_hours: 31,
-            amt: 24,
+            hours: 24,
         }
     ];     
 
-    
-    // const hours_count  = [ 
-
-    //     {
-    //         id: '1', 
-    //         count: 1,
-    //     },
-    //     {
-    //         id: '2', 
-    //         count: 2,
-    //     },
-    //     {
-    //         id: '3', 
-    //         count: 3,
-    //     },
-    //     {
-    //         id: '4', 
-    //         count: 4,
-    //     },
-    //     {
-    //         id: '5', 
-    //         count: 5,
-    //     },
-    //     {
-    //         id: '6', 
-    //         count: 6,
-    //     },
-    //     {
-    //         id: '7', 
-    //         count: 7,
-    //     },
-    //     {
-    //         id: '8', 
-    //         count: 8,
-    //     },
-    //     {
-    //         id: '9', 
-    //         count: 9,
-    //     },
-    //     {
-    //         id: '10', 
-    //         count: 10,
-    //     },
-    //     {
-    //         id: '11', 
-    //         count: 11,
-    //     },
-    //     {
-    //         id: '12', 
-    //         count: 12,
-    //     },
-    //     {
-    //         id: '13', 
-    //         count: 13,
-    //     },
-    //     {
-    //         id: '14', 
-    //         count: 14,
-    //     },
-    //     {
-    //         id: '15', 
-    //         count: 15,
-    //     },
-    //     {
-    //         id: '16', 
-    //         count: 16,
-    //     },
-    //     {
-    //         id: '17', 
-    //         count: 17,
-    //     },
-    //     {
-    //         id: '18', 
-    //         count: 18,
-    //     },
-    //     {
-    //         id: '19', 
-    //         count: 19,
-    //     },
-    //     {
-    //         id: '20', 
-    //         count: 20,
-    //     },
-    //     {
-    //         id: '21', 
-    //         count: 21,
-    //     }, 
-    //     {
-    //         id: '22', 
-    //         count: 22,
-    //     },
-    //     {
-    //         id: '23', 
-    //         count: 23,
-    //     },
-    //     {
-    //         id: '24', 
-    //         count: 24,
-    //     },
-    // ]; 
+     
 
     const [toggleFilterValue, setToggleFilterValue] = React.useState<string>("day");  
 
@@ -562,7 +463,7 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
         setToggleFilterValue(value);
     }; 
 
-    const filterToDataMap: Record<string, Array<{ name: string; power_consumption: number; burning_hours: number; amt: number; }>> = {
+    const filterToDataMap: Record<string, Array<{ name: string; power_consumption: number; burning_hours: number; hours: number; }>> = {
         month: energyConsumptionData1,
         week: energyConsumptionData2,
         day: energyConsumptionData3, 
@@ -662,7 +563,7 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
                                     <XAxis dataKey="name" />
                                     <YAxis yAxisId="left" />
                                     <YAxis yAxisId="right" orientation="right" />
-                                    {/* <Tooltip /> */}
+                                      <Tooltip />  
                                     <Legend />
 
                                     <Area
@@ -685,7 +586,7 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
 
                                     <Area
                                         type="monotone"
-                                        dataKey="amt"
+                                        dataKey="hours"
                                         stackId="0" 
                                         fill="url(#gradient3)"
                                         yAxisId="right"

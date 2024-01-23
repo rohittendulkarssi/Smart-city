@@ -263,7 +263,7 @@ return (
       /> 
    </div>
 
-   <TitleBar title="Maintenance Work Order Trend" icon='https://static.iviva.com/images/Udhayimages/recycling-symbol.png'></TitleBar> 
+   <TitleBar title="Maintenance Work Order Trend" icon='https://static.iviva.com/images/Udhayimages/shopping-list.png'></TitleBar> 
 
 <div className="smart-city-content">  
 
@@ -271,7 +271,7 @@ return (
 
 <div  className='chart-top'>
 
-<div className="sub_title_bar">Total Waste (Tons)</div>  
+<div className="sub_title_bar">Workorder Trend (Tons)</div>  
 
     <ToggleFilter 
         options={[

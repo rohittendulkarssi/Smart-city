@@ -12,7 +12,7 @@ const Waste_CollectionVehicle: React.FunctionComponent<{}> = () => {
 
          <WidgetWrapper className="smart-city_box waste-collection-vehicle">  
 
-            <TitleBar title="Waste Collection vehicle" icon='https://static.iviva.com/images/Udhayimages/cargo-truck.png'></TitleBar> 
+            <TitleBar title="Waste Collection vehicle" icon='https://static.iviva.com/images/Udhayimages/garbage-truck.png'></TitleBar> 
 
             <div className="smart-city-content">  
 

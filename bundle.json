@@ -217,10 +217,38 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        } ,
+        },
         {
             "id": "heightMap",
             "name": "Height Map",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "districtToggle",
+            "name": "District Toggle",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "top_Header",
+            "name": "Top Header",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "top_Right_Header",
+            "name": "Top Right Header",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "searchBox_Container",
+            "name": "SearchBox Container",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
