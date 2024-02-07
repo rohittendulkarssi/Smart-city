@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
- 
-
-
+  
 const EmergencyWorkOrderSummary: React.FunctionComponent<{}> = () => {   
 
   let [selected, setSelected] = React.useState<string | null>("op-1");
   let [inputValue, setInputValue] = React.useState<string | null>("Work Order");
   let [inputValue1, setInputValue1] = React.useState<string | null>("Location");
-
  
-
   var order_Summarydata = [ 
       {
           "id": "1", 
@@ -177,10 +173,8 @@ const EmergencyWorkOrderSummary: React.FunctionComponent<{}> = () => {
   
       return p;
   }
-
-
-        
-        const [toggleFilterValueday, setToggleFilterValueday] = React.useState<string>("1");  
+ 
+   const [toggleFilterValueday, setToggleFilterValueday] = React.useState<string>("1");  
 
         const handleFilterChangeday = (value:any) => { 
             setToggleFilterValueday(value);
@@ -302,8 +296,7 @@ const EmergencyWorkOrderSummary: React.FunctionComponent<{}> = () => {
                               item={item}
                               subTitleField=""
                               className={`data-table-item ${item.status}`}
-                          />
-
+                          /> 
                            
                       }
                   ]}

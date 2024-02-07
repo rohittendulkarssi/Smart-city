@@ -1570,13 +1570,11 @@
   
 .weather-list{
     display: inline-block;
-    position: relative;
+    position: absolute;
     // top: 2.5em;
-    // top: 1em;
-    // left: 0;
-    //   right: 30px !important;
-    align-items: end;
-    text-align: right;
+    top: 1em;
+    left: 0;
+      right: 30px !important;
 
     ul{  
       margin: 0;
@@ -1704,13 +1702,11 @@
 
  
     position: absolute;
-    // top: 9em;
+    top: 9em;
     // right: -4.4em;
-    // right: -5.75em !important;
+    right: -5.75em !important;
     width: 25vh;
     height: 15vh; 
-    align-items: end;
-    text-align: right;
    
 
        .timer-range {
@@ -1808,10 +1804,8 @@
 
   .toggle-container {
     display: inline-block;
-    // right: 2.1em;
+    right: 2.1em;
     position: relative;
-    align-items: end;
-    text-align: right;
         
         
         .toggle-button { 
@@ -1862,15 +1856,11 @@
 
 .ed3-map-controls-widget-wrapper{
     width: 15%;
-    align-items: end;
-    text-align: right;
-    // right: calc(-50% + 60px);
-    // top: 1.5em; 
+    right: calc(-50% + 60px);
+    top: 1.5em; 
 
     .ed3-map-zoom-controls-container { 
         transform: rotate(90deg);
-        align-items: end;
-        text-align: right;
 
         .ed3-map-zoom-controls-button { 
             border-radius: 0;
@@ -1934,10 +1924,8 @@
 
     .searchbox-container{
         position: relative;
-        // top: 1.3em;
-        // right: -1em;
-        align-items: end;
-        text-align: right;
+        top: 1.3em;
+        right: -1em;
 
         .searchbox{
             border: 1px solid #033649;
@@ -1987,6 +1975,7 @@
     }
   }
 
+  
   #streamingVideo {
     top: -1.5em;
 }

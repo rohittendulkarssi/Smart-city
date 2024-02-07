@@ -14,44 +14,82 @@ const SearchBoxContainer: React.FunctionComponent<IMapChangeMode> = (props) => {
   
 
 
-// let [data,setData] = React.useState<any>([]) 
-// function getData () {  
-//     props.uxpContext.executeAction("E3D","GetDistrictDetails",{},{json:true}).then(res=>{ 
-//         console.log("District",res);
-//         setData(res);
-//     }).catch(e=>{
+let [data,setData] = React.useState<any>([]) 
+function getData () {  
+    props.uxpContext.executeAction("E3D","GetDistrictDetails",{},{json:true}).then(res=>{ 
+        console.log("District",res);
+        setData(res);
+    }).catch(e=>{
         
-//     }); 
-// }  
+    }); 
+}  
 
-// useEffect(() =>{
-//   getData() 
-// }, [])
+useEffect(() =>{
+  getData() 
+}, [])
 
  
+
+// const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+//   const inputValue = event.target.value.toLowerCase();
+//   setSearchTerm(inputValue);
+
+//   if (inputValue === '') { 
+//     setSearchResults([]);
+//   } else {    
+//    const filteredResults = data.filter((item: { name: string; }) => item.name.toLowerCase().includes(inputValue));
+//    setSearchResults(filteredResults);
+//   }
+// };
+
 
 const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
   const inputValue = event.target.value.toLowerCase();
   setSearchTerm(inputValue);
 
-  // if (inputValue === '') { 
-  //   setSearchResults([]);
-  // } else {    
-  //  const filteredResults = data.filter((item: { name: string; }) => item.name.toLowerCase().includes(inputValue));
-  //  setSearchResults(filteredResults);
-  // }
-};
-
-const handleResultClick = (result: { name: string }) => {
-  setSearchTerm(result.name);
-  setSearchResults([]);
-  if (uxpContext.eventHandler) {
-   // uxpContext.eventHandler(EventsEnum.DistrictJump, { name: result.name });
-
-   uxpContext.eventHandler?.( EventsEnum.DistrictJump,  { sectorName: 'Al Wabra Dist' } );  
+  if (inputValue === '') { 
+    setSearchResults([]);
+  } else {    
+    const filteredResults = data.filter((item: { name: string; longitude: number; latitude: number; }) => {
+      const lowerCaseName = item.name.toLowerCase();
+      const lowerCaseInput = inputValue.toLowerCase(); 
       
+      return (
+        lowerCaseName.includes(lowerCaseInput) ||
+        String(item.longitude).includes(inputValue) ||
+        String(item.latitude).includes(inputValue)
+      );
+    });
+
+    setSearchResults(filteredResults);
   }
 };
+
+
+
+
+
+// const handleResultClick = (result: { name: string }) => {
+//   setSearchTerm(result.name);
+//   setSearchResults([]);
+//   if (uxpContext.eventHandler) { 
+//     uxpContext.eventHandler(EventsEnum.DistrictJump, { name: result.name });   
+//   }
+// };
+
+const handleResultClick = (result: { name: string; longitude: number; latitude: number; }) => {
+  setSearchTerm(result.name);
+  setSearchResults([]);
+  
+  if (uxpContext.eventHandler) { 
+    uxpContext.eventHandler(EventsEnum.DistrictJump, {
+      name: result.name,
+      longitude: result.longitude,
+      latitude: result.latitude,
+    });
+  }
+};
+
 
 const handleClearClick = () => {
   setSearchTerm('');

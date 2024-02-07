@@ -494,58 +494,7 @@ const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
                                     value={toggleFilterValue}
                                     onChange={handleFilterChange}
                                 />
-                            </div>
-
-                                 {/* <ResponsiveContainer width="100%" height="100%">  
-
-                                    <AreaChart width={400} height={300} data={selectedData}
-
-                                    margin={{
-                                        top: 10,
-                                        right: 10,
-                                        left: 0,
-                                        bottom: 30,
-                                    }}
-                                    >
-                                    <CartesianGrid strokeDasharray="3 3" />
-                                    <XAxis dataKey="name" />
-                                    <YAxis />
-                                    <Tooltip /> 
-                                    <Legend />
-
-                                    <Area
-                                    type="monotone"
-                                    dataKey="2023"
-                                    stackId="1"
-                                    stroke="#001912"
-                                    fill="url(#gradient1)"  
-                                    />
-
-                                    <Area
-                                    type="monotone"
-                                    dataKey="2022"
-                                    stackId="1"
-                                    stroke="#79dccc"
-                                    fill="url(#gradient2)"  
-                                    />
-
-                                    <defs>
-                                    <linearGradient id="gradient1" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="5%" stopColor="#00516a" stopOpacity={0.8} />
-                                        <stop offset="95%" stopColor="#001912" stopOpacity={0.2} />
-                                    </linearGradient>
-
-                                    <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="5%" stopColor="#008b74" stopOpacity={0.8} />
-                                        <stop offset="95%" stopColor="#79dccc" stopOpacity={0.2} />
-                                    </linearGradient>
-                                    </defs>
-
-                                </AreaChart> 
-
-                            </ResponsiveContainer>  */}
-
-
+                            </div> 
 
                             <ResponsiveContainer width="100%" height="100%">
                                 <AreaChart

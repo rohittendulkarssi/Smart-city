@@ -95,7 +95,7 @@ const StreetLightStatusChart: React.FunctionComponent<{}> = () => {
 
   return (
     <div className="smart-city-content">
-      <div className="technician_chart" style={{ height: 250 }}>
+      <div className="technician_chart" style={{ height: 220 }}>
        
         <div className="chart-top" style={{marginTop:"10px"}}>
         <div className="sub_title_bar">Total Revenue (Riyal)</div>

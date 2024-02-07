@@ -56,6 +56,8 @@ import TopRightHeader from './components/top-rht-header'
 import SearchBoxContainer from './components/search_box'
 
 
+import SmartTestTable from './components/test-table'
+
 
 import SemiCircle from './components/semi-circle';
 
@@ -77,16 +79,19 @@ export enum EventsEnum {
     WeatherControl = 'weather',
     SunPosition = 'solar-time', //sample payload - { 'time' : '12:15' }
     Navigation = 'navigation',
-    DistrictJump = 'district-jump'
+    DistrictJump = 'district-jump' 
 
 }
 
 // export interface IPayload {
-//     sectorName: string;
-//     longitude?: number;
-//     latitude?: number;
-//     viewAngle?: number;
-//     altitude?: number;
+  //  sectorName: string;
+   // longitude?: number;
+   // latitude?: number;
+    // Where the camera will look at, with respect to north
+  //  viewAngle?: number;
+    // Height of the camera position, in meters
+  //  altitude?: number;
+
 // } 
 
 
@@ -459,12 +464,12 @@ registerWidget({
     widget: WeatherIcons,
     configs: {
         layout: {
-            w: 7,
-            h: 3, 
-            minH: 3,
-            minW: 7,
-             maxH: 3,
-             maxW: 7
+            w: 4,
+            h: 2, 
+            // minH: 3,
+            // minW: 7,
+            //  maxH: 3,
+            //  maxW: 7
         }
     }
 });
@@ -562,6 +567,26 @@ registerWidget({
         }
     }
 });
+
+
+
+
+
+registerWidget({
+    id: "smart_Test_Table", 
+    widget: SmartTestTable,
+    configs: {
+        layout: {
+            w: 4,
+            h: 3,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
 
 
 

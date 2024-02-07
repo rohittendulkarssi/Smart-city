@@ -252,7 +252,15 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        } 
+        },
+        {
+            "id": "smart_Test_Table",
+            "name": "smart Test Table Container",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
+        
         
         
         

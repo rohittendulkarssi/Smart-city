@@ -4,11 +4,7 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,LabelList
 
 import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
  
-
-
-// interface IWidgetProps { 
-//     percentage:number;
-// } 
+ 
 
 const Comapre_IAQ: React.FunctionComponent<{}> = () => {  
 

@@ -105,18 +105,7 @@ const CountsWidget: React.FunctionComponent<{}> = () => {
                                 title="Date"
                                 date={date1}
                                 onChange={(date1) => setDate1(date1)}
-                            />
-
-                              {/* <Select
-                                  selected={selected}
-                                  options={[
-                                      { label: "Alert Type", value: "op-1" },
-                                      { label: "Alert Type 1", value: "op-2" },
-                                      { label: "Alert Type 2", value: "op-3" },
-                                  ]}
-                                  onChange={(value) => { setSelected(value) }}
-                                  placeholder=" -- select --"
-                              />   */}
+                            /> 
                                 
                           </FormField>
                     </div>
@@ -130,9 +119,6 @@ const CountsWidget: React.FunctionComponent<{}> = () => {
             </WidgetWrapper>
     
         )
-    };
-    
- 
-  
+    }; 
 
 export default CountsWidget;

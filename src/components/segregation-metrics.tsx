@@ -44,64 +44,7 @@ const Segregation_MetricsChart: React.FunctionComponent<{}> = () => {
   ]
     
     const MyResponsivePie = ({  }) => (
-        // <ResponsivePie
-        //     data={data}
-        //     margin={{ top: 0, right: 40, bottom: 60, left: 40 }}
-        //     innerRadius={0.4}
-        //     padAngle={0.5}
-        //     cornerRadius={0}
-        //     activeOuterRadiusOffset={8}
-        //     borderWidth={1}
-        //     borderColor={{
-        //         from: 'color',
-        //         modifiers: [
-        //             [
-        //                 'darker',
-        //                 0.2
-        //             ]
-        //         ]
-        //     }}
-        //     arcLinkLabelsSkipAngle={10}
-        //     arcLinkLabelsTextColor="#ffffff"
-        //     arcLinkLabelsThickness={2}
-        //     arcLinkLabelsColor={{ from: 'color' }}
-        //     arcLabelsSkipAngle={10}
-        //     arcLabelsTextColor={{
-        //         from: 'color',
-        //         modifiers: [
-        //             [
-        //                 'darker',
-        //                 1
-        //             ]
-        //         ]
-        //     }}
-             
-        //     legends={[
-        //         {
-        //             anchor: 'bottom',
-        //             direction: 'row',
-        //             justify: false,
-        //             translateX: 0,
-        //             translateY: 56,
-        //             itemsSpacing: 0,
-        //             itemWidth: 100,
-        //             itemHeight: 15,
-        //             itemTextColor: '#fff',
-        //             itemDirection: 'left-to-right',
-        //             itemOpacity: 1,
-        //             symbolSize: 18,
-        //             symbolShape: 'circle',
-        //             effects: [
-        //                 {
-        //                     on: 'hover',
-        //                     style: {
-        //                         itemTextColor: '#fff'
-        //                     }
-        //                 }
-        //             ]
-        //         }
-        //     ]}
-        // />
+         
 
         <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
       <ResponsiveContainer width={300} height={250}>

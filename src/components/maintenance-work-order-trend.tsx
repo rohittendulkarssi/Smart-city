@@ -198,57 +198,7 @@ const handleFilterChangeday = (value:any) => {
 }; 
 
 return (  
-
-
-//     <WidgetWrapper className="smart-city_box energy_consumption-box">  
-        
-//         <TitleBar title="Maintenance Work Order Trend" icon='https://static.iviva.com/images/Udhayimages/recycling-symbol.png'></TitleBar> 
-
-//     <div className="smart-city-content">  
-
-//         <div className="technician_chart" style={{ height: 300 }}>   
-       
-//        <div  className='chart-top'>
-
-//        <div className="sub_title_bar">Total kW</div>  
-
-//             <ToggleFilter 
-//                 options={[
-//                     { label: "7D", value: "day" },
-//                     { label: "1M", value: "week" }, 
-//                     { label: "1Y", value: "month" },
-//                 ]}
-//                 value={toggleFilterValue}
-//                 onChange={handleFilterChange}
-//             />
-//         </div>
-
-//              <ResponsiveContainer width="100%" height="100%">  
-
-
-//                 <BarChart
-//                     width={500}
-//                     height={200}
-//                     data={selectedData}
-//                     margin={{
-//                         top: 2, right: 0, left: 0, bottom: 2,
-//                     }}>
-//                     <CartesianGrid strokeDasharray="0 0" />
-//                     <XAxis dataKey="name" />
-//                     <YAxis orientation="left" />
-//                     <Tooltip />
-//                     <Bar barSize={20} dataKey="Aug_duration_meeting" fill="#025639" />
-//                     <Bar barSize={25} dataKey="Total_hours_booked" fill="#0c7652" />
-//                     <Bar barSize={25} dataKey="Total_hours_accupied" fill="#0c2e23" />
-//                 </BarChart> 
-
-//         </ResponsiveContainer> 
-
-//         </div>  
-//     </div>
-
-// </WidgetWrapper>
-
+ 
 
 <WidgetWrapper className="smart-city_box energy_consumption-box"> 
             

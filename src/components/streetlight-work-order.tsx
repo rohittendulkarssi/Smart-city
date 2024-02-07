@@ -52,23 +52,7 @@ const StreetLightWorkOrder: React.FunctionComponent<{}> = () => {
           "alert_Time":"2023-01-11 07:56:46",
           "status" : "pending",
           "alert_Type" : "Working" 
-      } ,
-      {
-          "id": "6", 
-          "work_Order": 'Wo-123456789',
-          "location": "Al Haram Dist", 
-          "alert_Time":"2023-01-11 07:56:46",
-          "status" : "resloved",
-          "alert_Type" : "Working" 
-      } ,
-      {
-          "id": "7", 
-          "work_Order": 'Wo-123456789',
-          "location": "Al Haram Dist", 
-          "alert_Time":"2023-01-11 07:56:46",
-          "status" : "resloved",
-          "alert_Type" : "resloved" 
-      } 
+      }  
   ];
    
 
@@ -130,7 +114,7 @@ const StreetLightWorkOrder: React.FunctionComponent<{}> = () => {
           </div>
 
           
-          <div className="smart-city-content"  style={{height:'250px'}}>
+          <div className="smart-city-content"  style={{height:'215px', borderBottom:'1px solid'}}>
 
               <div className="chart-top">
                 
@@ -230,24 +214,7 @@ const StreetLightWorkOrder: React.FunctionComponent<{}> = () => {
                       }
                   ]}
               /> 
-          </div>
-
-          {/* <div className='smart-city_box waste-bin-box '>
-            <div className="smart-city-content" style={{height:'100px'}}>  
-          
-                  <div className='status-content'>
-
-                      {streetLightData.map((item) => ( 
-                          <div  key={item.id} className={`status ${item.name}`}>
-                              <h3>{item.value}</h3>
-                              <p>{item.name}</p>
-                          </div> 
-                      ))}
-
-                  </div>
-              </div>
-          </div> */}
-
+          </div> 
 
           </WidgetWrapper>  
   
