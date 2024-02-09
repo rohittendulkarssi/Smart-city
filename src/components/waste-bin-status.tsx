@@ -49,7 +49,8 @@ const Waste_bin_StatusWidget: React.FunctionComponent<{}> = () => {
                 <div className="technician_chart">  
                     {/* <Line percent={70} strokeWidth={1.5} strokeColor="#076d49" /> */} 
  
-                    <div className="progress-bar-container"><div className="progress-bar" style={{ width: `${completionPercentage}%`}}></div></div> 
+                    <div className="progress-bar-container">
+                        <div className="progress-bar" style={{ width: `${completionPercentage}%`}}></div></div> 
    
                     <div className='chart-sec'>
                         <div className='chart-issue'><h3>147</h3><p>Issued</p></div>

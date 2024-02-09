@@ -27,7 +27,8 @@
 .react-grid-layout.player{
     z-index: 1;
     position: relative;
-    background : radial-gradient(ellipse at center center, rgb(255 255 255 / 0%) 0%, rgb(0 29 19 / 60%) 45%, rgb(0 0 0 / 84%) 100%);
+    // background : radial-gradient(ellipse at center center, rgb(255 255 255 / 0%) 0%, rgb(0 29 19 / 60%) 45%, rgb(0 0 0 / 84%) 100%);
+    background : radial-gradient(ellipse at center center, rgb(255 255 255 / 0%) 0%, rgb(0 29 19 / 30%) 45%, rgb(0 0 0 / 43%) 100%);
     padding-top: 1.5em; 
 
     &::before{  
@@ -39,7 +40,8 @@
         height: 100vh;
         position: absolute;
         z-index: 1;
-        background: radial-gradient(ellipse at center center, rgba(255, 255, 255, 0) 0%, rgba(0, 29, 19, 0.9) 57%, rgba(0, 0, 0, 0.84) 100%);
+        // background: radial-gradient(ellipse at center center, rgba(255, 255, 255, 0) 0%, rgba(0, 29, 19, 0.9) 57%, rgba(0, 0, 0, 0.84) 100%);
+        background: radial-gradient(ellipse at center center, rgba(255, 255, 255, 0) 0%, rgba(0, 29, 19, 0.4) 57%, rgba(0, 0, 0, 0.42) 100%);
         pointer-events: none;
 
     } 
@@ -1181,7 +1183,7 @@
                     display: flex;
 
                     sub{
-                        font-size: 0.8em;
+                        font-size: 0.6em;
                     }
                 }
                 .raseel_logo{ 
@@ -1225,7 +1227,7 @@
                     display: flex;
 
                     sub{
-                        font-size: 0.8em;
+                        font-size: 0.6em;
                     }
                 }
                 .ssi_logo{ 
@@ -1238,6 +1240,7 @@
                     margin-top: 0em;
                     height: 5.5em;
                     margin-left: 1em;
+                    filter: brightness(0) invert(1);
                 }
              }  
         }  

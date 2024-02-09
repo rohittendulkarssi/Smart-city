@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell } from 'recharts';
 import { DataList, WidgetWrapper, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
  
 
+ 
 
       
         const data1 = [
@@ -32,7 +33,7 @@ import { DataList, WidgetWrapper, DataTable, MapComponent, TitleBar, ItemListCar
             { name: '4 Jan', value: 1040 },
             { name: '5 Jan', value: 25000 },
             { name: '6 Jan', value: 30035 },
-            { name: '7 Jan', value: 500 },
+            { name: '7 Jan', value: 5000 },
         ]; 
  
 
@@ -93,6 +94,10 @@ const StreetLightStatusChart: React.FunctionComponent<{}> = () => {
     }
   };
 
+  const data = getDataByFilter();  
+const colorArray = ['#056e5e', '#890000', '#dcb500', '#056e5e', '#056e5e', '#056e5e',];  
+
+
   return (
     <div className="smart-city-content">
       <div className="technician_chart" style={{ height: 220 }}>
@@ -109,7 +114,9 @@ const StreetLightStatusChart: React.FunctionComponent<{}> = () => {
             onChange={handleFilterChange}
           />
         </div>
-        <ResponsiveContainer width="100%" height="100%">
+
+
+        {/* <ResponsiveContainer width="100%" height="100%">
           <BarChart
             width={700}
             height={400}
@@ -119,13 +126,35 @@ const StreetLightStatusChart: React.FunctionComponent<{}> = () => {
             <CartesianGrid strokeDasharray="0 0" />
             <XAxis dataKey="name" />
             <YAxis />
-            <Tooltip />
-            {/* <Legend /> */}
+            <Tooltip /> 
             <Bar dataKey="value" barSize={20} shape={<CustomBar x={0} y={0} width={0} height={0} payload={{
                           value: 0
                       }} />} />
           </BarChart>
-        </ResponsiveContainer>
+        </ResponsiveContainer> */}
+
+
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              width={700}
+              height={400}
+              data={data}
+              margin={{ top: 10, right: 10, left: 10, bottom: 5 }}
+            >
+              <CartesianGrid strokeDasharray="0 0" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip /> 
+              <Bar dataKey="value" barSize={20}>
+                {data.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={colorArray[index % colorArray.length]} />
+                ))}
+              </Bar>
+            </BarChart>
+ 
+          </ResponsiveContainer>
+
+
       </div>
     </div>
   );
