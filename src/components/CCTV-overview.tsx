@@ -65,7 +65,37 @@ const CCTVOverviewWidget: React.FunctionComponent<{}> = () => {
           cctv_pict: 'https://static.iviva.com/images/Udhayimages/al_haram-bg.jpg', 
           selectOptions: ['Al Haram District, Cam 74', 'Al Haram District, Cam 75', 'Al Haram District, Cam 76'],
           selectedOption: 'Al Haram District, Cam 74', 
-        }     
+        },
+        {  
+          id: 11, 
+          cctv_pict: 'https://static.iviva.com/images/Udhayimages/Al-Haram-District1.jpeg',
+          selectOptions: ['Al Masjid An Nabawi, Cam 26', 'Al Masjid An Nabawi, Cam 27', 'Al Masjid An Nabawi, Cam 27'],
+          selectedOption: 'Al Masjid An Nabawi, Cam 26', 
+        },
+        {  
+          id: 12, 
+          cctv_pict: 'https://static.iviva.com/images/Udhayimages/Al-Haram-District2.jpg', 
+          selectOptions: ['Al Haram District, Cam 20', 'Al Haram District, Cam 21', 'Al Haram District, Cam 22'],
+          selectedOption: 'Al Haram District, Cam 20', 
+        },
+        {  
+          id: 13, 
+          cctv_pict: 'https://static.iviva.com/images/Udhayimages/Al-Haram-District3.jpg', 
+          selectOptions: ['Al Haram District, Cam 57', 'Al Haram District, Cam 58', 'Al Haram District, Cam 59'],
+          selectedOption: 'Al Haram District, Cam 57', 
+        },
+        {  
+          id: 14,  
+          cctv_pict: 'https://static.iviva.com/images/Udhayimages/Al-Haram-District4.jpg', 
+          selectOptions: ['Al Masjid An Nabawi, Cam 5', 'Al Masjid An Nabawi, Cam 6', 'Al Masjid An Nabawi, Cam 7'],
+          selectedOption: 'Al Masjid An Nabawi, Cam 5', 
+        },
+        {  
+          id: 15, 
+          cctv_pict: 'https://static.iviva.com/images/Udhayimages/al_haram-bg.jpg', 
+          selectOptions: ['Al Haram District, Cam 74', 'Al Haram District, Cam 75', 'Al Haram District, Cam 76'],
+          selectedOption: 'Al Haram District, Cam 74', 
+        }       
       ];
 
       const [data, setData] = useState(cctvData);

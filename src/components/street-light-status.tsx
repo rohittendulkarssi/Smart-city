@@ -151,7 +151,9 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = () =>
                             </div>
 
                             <div className='status Pending'>
-                                <h3>{health?.ilmAlerts?.["Main Fail"]} <span>mints</span></h3>
+                                <h3>{health?.ilmAlerts?.["Main Fail"]} 
+                                {/* <span>mints</span> */}
+                                </h3>
                                 <p>TAT</p>
                             </div>
 

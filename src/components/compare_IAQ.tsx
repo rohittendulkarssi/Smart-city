@@ -12,17 +12,19 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
         {  
           airtype: 'O2', 
           value: 65.54,
-          reading: 'Mg/m3' 
+          reading: 'Mg/m3'
         },
         {  
             airtype: 'NO2', 
             value: 0.12,
-            reading: 'Mg/m3' 
+            reading: 'Mg/m3', 
+            addclass:"yellow-bg" 
         },
         {  
             airtype: 'SO2', 
             value: 8.74,
-            reading: 'Mg/m3' 
+            reading: 'Mg/m3',
+            addclass:"red-bg" 
         },
         {  
             airtype: 'CO', 
@@ -32,7 +34,8 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
         {  
             airtype: 'PM10', 
             value: 15.33,
-            reading: 'Mg/m3' 
+            reading: 'Mg/m3', 
+            addclass:"yellow-bg" 
         },
         {  
             airtype: 'PM2.5', 
@@ -46,7 +49,8 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
         {  
           airtype: 'O2', 
           value: 83.68,
-          reading: 'Mg/m3' 
+          reading: 'Mg/m3',
+          addclass:"red-bg" 
         },
         {  
             airtype: 'NO2', 
@@ -56,17 +60,19 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
         {  
             airtype: 'SO2', 
             value: 9.59,
-            reading: 'Mg/m3' 
+            reading: 'Mg/m3',
+            addclass:"red-bg" 
         },
         {  
             airtype: 'CO', 
             value: 142.90,
-            reading: 'Mg/m3' 
+            reading: 'Mg/m3',
+            addclass:"yellow-bg"
         },
         {  
             airtype: 'PM10', 
             value: 29.75,
-            reading: 'Mg/m3' 
+            reading: 'Mg/m3'  
         },
         {  
             airtype: 'PM2.5', 
@@ -76,7 +82,7 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
       ];
 
       const statusElementsLocation1 = statusData1.map((item, index) => ( 
-        <div className='status' key={index}>
+        <div className= {`${item.addclass} status`}  key={index}>
           <p>{item.airtype}</p>
           <h2>{item.value}</h2>
           <span>{item.reading}</span>
@@ -85,7 +91,7 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
     
 
       const statusElementsLocation2 = statusData2.map((item, index) => ( 
-        <div className='status' key={index}>
+        <div className= {`${item.addclass} status`}  key={index}>
           <p>{item.airtype}</p>
           <h2>{item.value}</h2>
           <span>{item.reading}</span>
@@ -312,7 +318,7 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
     
                         <div className='status-content'>
         
-                              <ResponsiveContainer width="100%" height={250}>
+                              <ResponsiveContainer width="100%" height={230}>
                                   <LineChart
                                   width={500}
                                   height={350}

@@ -23,13 +23,14 @@ const TopNavTabs: React.FunctionComponent<IMapChangeMode> = (props) => {
       Fire: { label: 'Fire', className: 'fire', id: 'fire' },  
 
     };
-  const handleTabClick = (label: string) => {
-    setActiveTab(label)
-    const page = tabs[label];
-    if (page) {
-      uxpContext.eventHandler?.(EventsEnum.Navigation, { page: page.id });
-    }
-  };
+    const handleTabClick = (label: string) => {
+      setActiveTab(label);
+      const page = tabs[label];
+      if (page) {
+        uxpContext.eventHandler?.(EventsEnum.Navigation, { page: page.id });
+      }
+    };
+    
   return (
     <WidgetWrapper className="smart-city_box">
       <div className="top-nav-tabs">

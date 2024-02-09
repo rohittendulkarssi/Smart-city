@@ -254,12 +254,20 @@
             "tags":[]
         },
         {
-            "id": "smart_Test_Table",
-            "name": "smart Test Table Container",
+            "id": "powerBy_Widget",
+            "name": "PowerBy Widget",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        }
+        } ,
+        {
+            "id": "partnership_Widget",
+            "name": "Partnership Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }  
+        
         
         
         

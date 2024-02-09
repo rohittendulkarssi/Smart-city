@@ -135,7 +135,7 @@ const Waste_Generated_Trend: React.FunctionComponent<{}> = () => {
 
         <div className="smart-city-content">  
 
-            <div className="technician_chart" style={{ height: 270 }}>   
+            <div className="technician_chart" style={{ height: 245 }}>   
            
            <div  className='chart-top'>
 
@@ -157,7 +157,7 @@ const Waste_Generated_Trend: React.FunctionComponent<{}> = () => {
 
                     <BarChart
                         width={500}
-                        height={200}
+                        height={180}
                         data={selectedData}
                         margin={{
                             top: 2, right: 0, left: 0, bottom: 2,

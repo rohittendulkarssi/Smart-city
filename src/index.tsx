@@ -55,8 +55,11 @@ import TopHeader from './components/top-header'
 import TopRightHeader from './components/top-rht-header'
 import SearchBoxContainer from './components/search_box'
 
+import PowerByWidget from './components/power-by' 
+import PartnershipWidget from './components/partnership' 
 
-import SmartTestTable from './components/test-table'
+
+// import SmartTestTable from './components/test-table'
 
 
 import SemiCircle from './components/semi-circle';
@@ -436,10 +439,10 @@ registerWidget({
         layout: {
             w: 30,
             h: 16,
-            minH: 16,
-            minW: 30,
-             maxH: 16,
-             maxW: 30
+            // minH: 16,
+            // minW: 30,
+            //  maxH: 16,
+            //  maxW: 30
         }
     }
 });
@@ -569,12 +572,9 @@ registerWidget({
 });
 
 
-
-
-
 registerWidget({
-    id: "smart_Test_Table", 
-    widget: SmartTestTable,
+    id: "powerBy_Widget", 
+    widget: PowerByWidget,
     configs: {
         layout: {
             w: 4,
@@ -586,6 +586,38 @@ registerWidget({
         }
     }
 });
+
+registerWidget({
+    id: "partnership_Widget", 
+    widget: PartnershipWidget,
+    configs: {
+        layout: {
+            w: 4,
+            h: 3,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
+
+
+// registerWidget({
+//     id: "smart_Test_Table", 
+//     widget: SmartTestTable,
+//     configs: {
+//         layout: {
+//             w: 4,
+//             h: 3,
+//             // minH: 3,
+//             // minW: 2,
+//             //  maxH: 3,
+//             //  maxW: 2
+//         }
+//     }
+// });
 
 
 
