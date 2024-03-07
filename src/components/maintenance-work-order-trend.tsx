@@ -99,51 +99,57 @@ const Maintenance_WorkOrder_Trend: React.FunctionComponent<{}> = () => {
 
 const summarydata1 = [
     {
-        name: '25 AUG', Aug_duration_meeting: 502, Total_hours_booked: 658, Total_hours_accupied: 362, amt: 365,
+        name: 'Jan', Aug_duration_meeting: 502, Total_hours_booked: 658, Total_hours_accupied: 362, amt: 365,
     },
     {
-        name: '26 AUG', Aug_duration_meeting: 156, Total_hours_booked: 320, Total_hours_accupied: 11, amt: 654,
+        name: 'Feb', Aug_duration_meeting: 156, Total_hours_booked: 320, Total_hours_accupied: 11, amt: 654,
     },
     {
-        name: '27 AUG', Aug_duration_meeting: 235, Total_hours_booked: 124, Total_hours_accupied: 19, amt: 365,
+        name: 'Mar', Aug_duration_meeting: 235, Total_hours_booked: 124, Total_hours_accupied: 19, amt: 365,
     },
     {
-        name: '28 AUG', Aug_duration_meeting: 163, Total_hours_booked: 215, Total_hours_accupied: 236, amt: 654,
+        name: 'Apr', Aug_duration_meeting: 163, Total_hours_booked: 215, Total_hours_accupied: 236, amt: 654,
     },
     {
-        name: '29 AUG', Aug_duration_meeting: 169, Total_hours_booked: 322, Total_hours_accupied: 125, amt: 221,
+        name: 'May', Aug_duration_meeting: 169, Total_hours_booked: 322, Total_hours_accupied: 125, amt: 221,
     },
     {
-        name: '30 AUG', Aug_duration_meeting: 321, Total_hours_booked: 516, Total_hours_accupied: 302, amt: 625,
+        name: 'Jun', Aug_duration_meeting: 321, Total_hours_booked: 516, Total_hours_accupied: 302, amt: 625,
     },
     {
-        name: '31 AUG', Aug_duration_meeting: 312, Total_hours_booked: 421, Total_hours_accupied: 124, amt: 325,
-    } 
+        name: 'Jul', Aug_duration_meeting: 312, Total_hours_booked: 421, Total_hours_accupied: 124, amt: 325,
+    },
+     {
+        name: 'Aug', Aug_duration_meeting: 235, Total_hours_booked: 124, Total_hours_accupied: 19, amt: 365,
+    },
+    // {
+    //     name: 'Sep', Aug_duration_meeting: 163, Total_hours_booked: 215, Total_hours_accupied: 236, amt: 654,
+    // },
+    // {
+    //     name: 'Oct', Aug_duration_meeting: 169, Total_hours_booked: 322, Total_hours_accupied: 125, amt: 221,
+    // },
+    // {
+    //     name: 'Nov', Aug_duration_meeting: 321, Total_hours_booked: 516, Total_hours_accupied: 302, amt: 625,
+    // },
+    // {
+    //     name: 'Dec', Aug_duration_meeting: 163, Total_hours_booked: 215, Total_hours_accupied: 236, amt: 654,
+    // }
 ];
 
 
 const summarydata2 = [ 
 
     {
-        name: '25 AUG', Aug_duration_meeting: 502, Total_hours_booked: 658, Total_hours_accupied: 365, amt: 365,
+        name: 'Week1', Aug_duration_meeting: 502, Total_hours_booked: 658, Total_hours_accupied: 365, amt: 365,
     },
     {
-        name: '26 AUG', Aug_duration_meeting: 250, Total_hours_booked: 320, Total_hours_accupied: 256, amt: 654,
+        name: 'Week2', Aug_duration_meeting: 250, Total_hours_booked: 320, Total_hours_accupied: 256, amt: 654,
     },
     {
-        name: '27 AUG', Aug_duration_meeting: 125, Total_hours_booked: 252, Total_hours_accupied: 165, amt: 654,
+        name: 'Week 3', Aug_duration_meeting: 125, Total_hours_booked: 252, Total_hours_accupied: 165, amt: 654,
     },
     {
-        name: '28 AUG', Aug_duration_meeting: 152, Total_hours_booked: 653, Total_hours_accupied: 156, amt: 654,
-    },
-    {
-        name: '29 AUG', Aug_duration_meeting: 124, Total_hours_booked: 322, Total_hours_accupied: 354, amt: 221,
-    },
-    {
-        name: '30 AUG', Aug_duration_meeting: 254, Total_hours_booked: 745, Total_hours_accupied: 120, amt: 365,
-    },
-    {
-        name: '31 AUG', Aug_duration_meeting: 312, Total_hours_booked: 421, Total_hours_accupied: 124, amt: 754,
+        name: 'Week 4', Aug_duration_meeting: 152, Total_hours_booked: 653, Total_hours_accupied: 156, amt: 654,
     } 
 ];
 
@@ -151,25 +157,25 @@ const summarydata2 = [
 const summarydata3 = [ 
 
     {
-        name: '25 AUG', Aug_duration_meeting: 325, Total_hours_booked: 658, Total_hours_accupied: 362, amt: 365,
+        name: 'Sun', Aug_duration_meeting: 325, Total_hours_booked: 658, Total_hours_accupied: 362, amt: 365,
     },
     {
-        name: '26 AUG', Aug_duration_meeting: 257, Total_hours_booked: 320, Total_hours_accupied: 136, amt: 152,
+        name: 'Mon', Aug_duration_meeting: 257, Total_hours_booked: 320, Total_hours_accupied: 136, amt: 152,
     },
     {
-        name: '27 AUG', Aug_duration_meeting: 124, Total_hours_booked: 580, Total_hours_accupied: 139, amt: 625,
+        name: 'Tue', Aug_duration_meeting: 124, Total_hours_booked: 580, Total_hours_accupied: 139, amt: 625,
     },
     {
-        name: '28 AUG', Aug_duration_meeting: 632, Total_hours_booked: 362, Total_hours_accupied: 165, amt: 652,
+        name: 'Wed', Aug_duration_meeting: 632, Total_hours_booked: 362, Total_hours_accupied: 165, amt: 652,
     },
     {
-        name: '29 AUG', Aug_duration_meeting: 254, Total_hours_booked: 425, Total_hours_accupied: 125, amt: 165,
+        name: 'Thu', Aug_duration_meeting: 254, Total_hours_booked: 425, Total_hours_accupied: 125, amt: 165,
     },
     {
-        name: '30 AUG', Aug_duration_meeting: 125, Total_hours_booked: 516, Total_hours_accupied: 302, amt: 320,
+        name: 'Fri', Aug_duration_meeting: 125, Total_hours_booked: 516, Total_hours_accupied: 302, amt: 320,
     },
     {
-        name: '31 AUG', Aug_duration_meeting: 312, Total_hours_booked: 421, Total_hours_accupied: 124, amt: 852,
+        name: 'Sat', Aug_duration_meeting: 312, Total_hours_booked: 421, Total_hours_accupied: 124, amt: 852,
     } 
 ];
 
@@ -217,7 +223,7 @@ return (
 
 <div className="smart-city-content">  
 
-<div className="technician_chart" style={{ height: 270 }}>   
+<div className="technician_chart">   
 
 <div  className='chart-top'>
 
@@ -234,8 +240,8 @@ return (
     />
 </div>
 
-     <ResponsiveContainer width="100%" height="100%">  
-
+     {/* <ResponsiveContainer width="100%" height="100%">   */}
+     <ResponsiveContainer>  
 
         <BarChart
             width={500}

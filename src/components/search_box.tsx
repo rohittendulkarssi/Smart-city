@@ -43,6 +43,30 @@ useEffect(() =>{
 // };
 
 
+// const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+//   const inputValue = event.target.value.toLowerCase();
+//   setSearchTerm(inputValue);
+
+//   if (inputValue === '') { 
+//     setSearchResults([]);
+//   } else {    
+//     const filteredResults = data.filter((item: { name: string; longitude: number; latitude: number; }) => {
+//       const lowerCaseName = item.name.toLowerCase();
+//       const lowerCaseInput = inputValue.toLowerCase(); 
+      
+//       return (
+//         lowerCaseName.includes(lowerCaseInput) ||
+//         String(item.longitude).includes(inputValue) ||
+//         String(item.latitude).includes(inputValue)
+//       );
+//     });
+
+//     setSearchResults(filteredResults);
+//   }
+// };
+
+
+
 const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
   const inputValue = event.target.value.toLowerCase();
   setSearchTerm(inputValue);
@@ -50,42 +74,32 @@ const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
   if (inputValue === '') { 
     setSearchResults([]);
   } else {    
-    const filteredResults = data.filter((item: { name: string; longitude: number; latitude: number; }) => {
+    const filteredResults = data.filter((item: { name: string; }) => {
       const lowerCaseName = item.name.toLowerCase();
       const lowerCaseInput = inputValue.toLowerCase(); 
       
       return (
-        lowerCaseName.includes(lowerCaseInput) ||
-        String(item.longitude).includes(inputValue) ||
-        String(item.latitude).includes(inputValue)
+        lowerCaseName.includes(lowerCaseInput)  
+        // String(item.longitude).includes(inputValue) ||
+        // String(item.latitude).includes(inputValue)
       );
     });
 
     setSearchResults(filteredResults);
   }
 };
+ 
+ 
 
-
-
-
-
-// const handleResultClick = (result: { name: string }) => {
-//   setSearchTerm(result.name);
-//   setSearchResults([]);
-//   if (uxpContext.eventHandler) { 
-//     uxpContext.eventHandler(EventsEnum.DistrictJump, { name: result.name });   
-//   }
-// };
-
-const handleResultClick = (result: { name: string; longitude: number; latitude: number; }) => {
+const handleResultClick = (result: { name: string;   }) => {
   setSearchTerm(result.name);
   setSearchResults([]);
   
   if (uxpContext.eventHandler) { 
     uxpContext.eventHandler(EventsEnum.DistrictJump, {
       name: result.name,
-      longitude: result.longitude,
-      latitude: result.latitude,
+      // longitude: result.longitude,
+      // latitude: result.latitude,
     });
   }
 };

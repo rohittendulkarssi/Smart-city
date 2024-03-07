@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 // import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
- 
-import { ResponsivePie } from '@nivo/pie';  
+  
 
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
 
@@ -116,168 +115,168 @@ const Waste_Segregation_Metrics: React.FunctionComponent<{}> = (props) => {
          "DepartmentName": "Al Mabuth Dist",
          "TotalTons": "167 Tons" 
      },
-     {
-         "DepartmentName": "Sayed As Shuhada Dist",
-         "TotalTons": "36 Tons" 
-     },
-     {
-         "DepartmentName": "Abu Kabir Dist",
-         "TotalTons": "117 Tons" 
-     },
-     {
-         "DepartmentName": "Al Hafya Dist",
-         "TotalTons": "78 Tons" 
-     },
-     {
-         "DepartmentName": "Adh Dhahirah Dist",
-         "TotalTons": "54 Tons" 
-     },
-     {
-         "DepartmentName": "Al Qaswa Dist",
-         "TotalTons": "105 Tons" 
-     } ,
-     {
-         "DepartmentName": "Umm Khalid Dist",
-         "TotalTons": "148 Tons" 
-     },
-     {
-         "DepartmentName": "Hathm Dist",
-         "TotalTons": "90 Tons" 
-     },
-     {
-         "DepartmentName": "Mudhainib Dist",
-         "TotalTons": "104 Tons" 
-     },
-     {
-         "DepartmentName": "Al Jabirah Dist",
-         "TotalTons": "158 Tons" 
-     },
-     {
-         "DepartmentName": "As Suqya Dist",
-         "TotalTons": "165 Tons" 
-     },
-     {
-         "DepartmentName": "Al Anabis Dist",
-         "TotalTons": "114 Tons" 
-     },
-     {
-         "DepartmentName": "Al Mughaisilah Dist",
-         "TotalTons": "167 Tons" 
-     },
-     {
-         "DepartmentName": "Al Jamiah Dist",
-         "TotalTons": "36 Tons" 
-     },
-     {
-         "DepartmentName": "Ad Duwaikhihlah Dist",
-         "TotalTons": "117 Tons" 
-     },
-     ,
-     {
-         "DepartmentName": "Al Zahra Dist",
-         "TotalTons": "165 Tons" 
-     },
-     {
-         "DepartmentName": "Al Aziziyzh Dist",
-         "TotalTons": "114 Tons" 
-     },
-     {
-         "DepartmentName": "Al Mabuth Dist",
-         "TotalTons": "167 Tons" 
-     },
-     {
-         "DepartmentName": "Sayed As Shuhada Dist",
-         "TotalTons": "36 Tons" 
-     },
-     {
-         "DepartmentName": "Abu Kabir Dist",
-         "TotalTons": "117 Tons" 
-     },
-     {
-         "DepartmentName": "Al Hafya Dist",
-         "TotalTons": "78 Tons" 
-     },
-     {
-         "DepartmentName": "Adh Dhahirah Dist",
-         "TotalTons": "54 Tons" 
-     },
-     {
-         "DepartmentName": "As Sikkah Al Hadid Dist",
-         "TotalTons": "78 Tons" 
-     },
-     ,
-     {
-         "DepartmentName": "Bani Muawiyah Dist",
-         "TotalTons": "104 Tons" 
-     },
-     {
-         "DepartmentName": "Mahzur Dist",
-         "TotalTons": "158 Tons" 
-     },
-     {
-         "DepartmentName": "Al Jamawat Dist",
-         "TotalTons": "21 Tons" 
-     },
-     {
-         "DepartmentName": "Ad Duwaimah Dist",
-         "TotalTons": "60 Tons " 
-     },
-     {
-         "DepartmentName": "As Salam Dist",
-         "TotalTons": "29 Tons" 
-     },
-     {
-         "DepartmentName": "Al Uyun Dist",
-         "TotalTons": "85 Tons" 
-     },
-     {
-         "DepartmentName": "Al Manakhah Dist",
-         "TotalTons": "18 Tons" 
-     },
-     {
-         "DepartmentName": "Bani Dhafar Dist",
-         "TotalTons": "30 Tons" 
-     },
-     {
-         "DepartmentName": "Urwah Dist",
-         "TotalTons": "131 Tons" 
-     },
-     {
-         "DepartmentName": "Al Iskan Dist",
-         "TotalTons": "101 Tons" 
-     },
-     {
-         "DepartmentName": "Al Khatim Dist",
-         "TotalTons": "65 Tons" 
-     },
-     {
-         "DepartmentName": "Al Rawabi Dist",
-         "TotalTons": "27 Tons" 
-     },
-     {
-         "DepartmentName": "Al Aridh Dist",
-         "TotalTons": "58 Tons" 
-     }, 
-     {
-         "DepartmentName": "Al thn Dist",
-         "TotalTons": "54 Tons" 
-     },
-     {
-         "DepartmentName": "King Fahd Dist",
-         "TotalTons": "105 Tons" 
-     },
-     {
-         "DepartmentName": "Bani Khidrah Dist",
-         "TotalTons": "167 Tons" 
-     },
-     {
-         "DepartmentName": "Taiba Dist",
-         "TotalTons": "36 Tons" 
-     },
-     {
-         "DepartmentName": "Al Barakah Dist",
-         "TotalTons": "167 Tons" 
-     },
+    //  {
+    //      "DepartmentName": "Sayed As Shuhada Dist",
+    //      "TotalTons": "36 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Abu Kabir Dist",
+    //      "TotalTons": "117 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Hafya Dist",
+    //      "TotalTons": "78 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Adh Dhahirah Dist",
+    //      "TotalTons": "54 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Qaswa Dist",
+    //      "TotalTons": "105 Tons" 
+    //  } ,
+    //  {
+    //      "DepartmentName": "Umm Khalid Dist",
+    //      "TotalTons": "148 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Hathm Dist",
+    //      "TotalTons": "90 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Mudhainib Dist",
+    //      "TotalTons": "104 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Jabirah Dist",
+    //      "TotalTons": "158 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "As Suqya Dist",
+    //      "TotalTons": "165 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Anabis Dist",
+    //      "TotalTons": "114 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Mughaisilah Dist",
+    //      "TotalTons": "167 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Jamiah Dist",
+    //      "TotalTons": "36 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Ad Duwaikhihlah Dist",
+    //      "TotalTons": "117 Tons" 
+    //  },
+      
+    //  {
+    //      "DepartmentName": "Al Zahra Dist",
+    //      "TotalTons": "165 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Aziziyzh Dist",
+    //      "TotalTons": "114 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Mabuth Dist",
+    //      "TotalTons": "167 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Sayed As Shuhada Dist",
+    //      "TotalTons": "36 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Abu Kabir Dist",
+    //      "TotalTons": "117 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Hafya Dist",
+    //      "TotalTons": "78 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Adh Dhahirah Dist",
+    //      "TotalTons": "54 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "As Sikkah Al Hadid Dist",
+    //      "TotalTons": "78 Tons" 
+    //  },
+    //  ,
+    //  {
+    //      "DepartmentName": "Bani Muawiyah Dist",
+    //      "TotalTons": "104 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Mahzur Dist",
+    //      "TotalTons": "158 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Jamawat Dist",
+    //      "TotalTons": "21 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Ad Duwaimah Dist",
+    //      "TotalTons": "60 Tons " 
+    //  },
+    //  {
+    //      "DepartmentName": "As Salam Dist",
+    //      "TotalTons": "29 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Uyun Dist",
+    //      "TotalTons": "85 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Manakhah Dist",
+    //      "TotalTons": "18 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Bani Dhafar Dist",
+    //      "TotalTons": "30 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Urwah Dist",
+    //      "TotalTons": "131 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Iskan Dist",
+    //      "TotalTons": "101 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Khatim Dist",
+    //      "TotalTons": "65 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Rawabi Dist",
+    //      "TotalTons": "27 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Aridh Dist",
+    //      "TotalTons": "58 Tons" 
+    //  }, 
+    //  {
+    //      "DepartmentName": "Al thn Dist",
+    //      "TotalTons": "54 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "King Fahd Dist",
+    //      "TotalTons": "105 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Bani Khidrah Dist",
+    //      "TotalTons": "167 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Taiba Dist",
+    //      "TotalTons": "36 Tons" 
+    //  },
+    //  {
+    //      "DepartmentName": "Al Barakah Dist",
+    //      "TotalTons": "167 Tons" 
+    //  },
 
  ];
  
@@ -320,7 +319,8 @@ const Waste_Segregation_Metrics: React.FunctionComponent<{}> = (props) => {
 const MyResponsivePie = ({  }) => (
  
 <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-      <ResponsiveContainer width={300} height={250}>
+      {/* <ResponsiveContainer width={300} height={250}> */}
+      <ResponsiveContainer width="100%" height="100%" aspect={4.0 / 2.0}>  
         <PieChart>
           <Pie
             data={data}

@@ -9,6 +9,7 @@ import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapCompon
 const Waste_bin_StatusWidget: React.FunctionComponent<{}> = () => {   
 
     const completionPercentage = 75;   
+    const completionPercentage1 = 25;   
 
     const wasteBinData  = [ 
         {
@@ -50,7 +51,11 @@ const Waste_bin_StatusWidget: React.FunctionComponent<{}> = () => {
                     {/* <Line percent={70} strokeWidth={1.5} strokeColor="#076d49" /> */} 
  
                     <div className="progress-bar-container">
-                        <div className="progress-bar" style={{ width: `${completionPercentage}%`}}></div></div> 
+                        <div className="progress-bar installedLamps" style={{ width: `${completionPercentage}%`}}></div>
+                        <div className="progress-bar working-lamps"  style={{ width: `${completionPercentage1}%`}}></div> 
+                   </div> 
+ 
+                        
    
                     <div className='chart-sec'>
                         <div className='chart-issue'><h3>147</h3><p>Issued</p></div>

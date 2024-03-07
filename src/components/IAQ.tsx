@@ -47,7 +47,7 @@ const IAQ_Widget: React.FunctionComponent<{}> = () => {
       ];
 
       const statusElements = statusData.map((item, index) => ( 
-        <div className='status' key={index}>
+        <div className={`${item.airtype} status`} key={index}>
           <p>{item.airtype}</p>
           <h2>{item.value}</h2>
           <span>{item.reading}</span>

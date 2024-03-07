@@ -299,7 +299,7 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
                       
                       </div> 
 
-                      <div className="smart-city-content">  
+                      <div className="smart-city-content smart-city-content-chart">  
 
                       <div  className='chart-top'>
 
@@ -318,10 +318,10 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
     
                         <div className='status-content'>
         
-                              <ResponsiveContainer width="100%" height={230}>
+                              <ResponsiveContainer>
                                   <LineChart
-                                  width={500}
-                                  height={350}
+                                  // width={500}
+                                  // height={350}
                                   data={water_consumption_data}
                                   margin={{
                                       top: 5,
@@ -335,7 +335,7 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
                                   <XAxis dataKey="name"  tick={{ fill: '#ffffff' }} />
                                   <YAxis  tick={{ fill: '#ffffff' }} />
                                   <Tooltip /> 
-                                  <Line type="monotone" dataKey="consumption" stroke="#2756ff" activeDot={{ r: 8 }} />
+                                  <Line type="monotone" dataKey="consumption" stroke="#ffffff" activeDot={{ r: 8 }} />
                                   <Line type="monotone" dataKey="value" stroke="#ff0" activeDot={{ r: 8 }} />
                                   </LineChart>
                               </ResponsiveContainer>   

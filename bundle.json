@@ -238,6 +238,13 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
+        }, 
+        {
+            "id": "top_IvivaHeader",
+            "name": "Top Iviva Header",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
         },
         {
             "id": "top_Right_Header",
@@ -259,16 +266,57 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        } ,
+        },
         {
             "id": "partnership_Widget",
             "name": "Partnership Widget",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        }  
-        
-        
+        },
+        {
+            "id": "cityNames_Widget",
+            "name": "CityNames Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "modeChange_Widget",
+            "name": "Mode Change Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "building_Summary",
+            "name": "Building Summary Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "floor_Layout",
+            "name": "Building Floor Layout",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "building_SmartBim",
+            "name": "Building Smart Bim",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "building_Occupancy",
+            "name": "Building Occupancy",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }   
+         
         
         
         

@@ -31,7 +31,7 @@ const Waste_CollectionVehicle: React.FunctionComponent<{}> = () => {
                         </div>
                         <div className='status s-consumption-status'>
                             <div className='vahicle-icon s-consumption-icon'></div>
-                            <p>S Consumption</p>
+                            <p>$ Consumption</p>
                             <h2>80,730</h2>
                             <span>Saudi Riyal</span>
                         </div>

@@ -20,7 +20,7 @@ const PowerByWidget: React.FunctionComponent<IMapChangeMode> = (props) => {
                 
 
                 <div className='power-by-cont'> 
-                 <p><sub>Power By</sub></p><div className='raseel_logo'></div> 
+                 <p><sub>Powered By</sub></p><div className='raseel_logo'></div> 
               </div>
               
         </div>

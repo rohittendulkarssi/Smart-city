@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
- 
+import { IContextProvider } from '../uxp';
 import StreetLightStatusChart from './lightStatusChart'; 
 
 import axios from 'axios'; 
 
 interface IWidgetProps { 
     instanceId?: string,
+    uxpContext?: IContextProvider,
 
     ilmAlerts?: {
         "AC Voltage"?: string;
@@ -20,62 +21,41 @@ interface IWidgetProps {
 } 
  
  
-const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = () => {   
+const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (props) => {    
+    
+  const [health, setHealth] = useState<IWidgetProps>({});
 
-    const [lampdata, setLampData] = useState(null);
- 
-    const [health, setHealth] = useState<IWidgetProps>({});
-    const [isLoading, setIsLoading] = useState(true);
+  function getHealthData () {
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+    const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
 
-  async function fetchData() {
-    try {
-      const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
-      const headers = {
-        Authorization: 'APIKEY SC:mda:307d91db4fe4f10b',
-      };
-      const { data } = await axios.get(
-        `https://mda.lucyday.io/Lucy/TataStreetLightAPI/getAlertSummary?hierarchy=${hierarchy}`,
-        { headers }
-      );
-      console.log("Hello", data )
-      setHealth(data);
-    } catch (error) {
-      console.error('Error fetching data from API:', error.message);
-    } finally {
-      setIsLoading(false);
-    }
+      props.uxpContext.executeAction("TataStreetLightAPI","Alert Summary",{hierarchy:hierarchy},{json:true}).then((res: any[])=>{  
+        setHealth(res[0]);
+      }).catch((e: any)=>{
+          // console.log("hi", e);
+      }); 
   }
+  
+  React.useEffect(() =>{
+    getHealthData();
+  }, []) 
 
+  
+
+    let [lampdata,setLampData] = React.useState<any>([]) 
+    function getsetLampData () { 
+       
+        props.uxpContext.executeAction("TataStreetLightAPI","Installed vs Working Lamps (ILM)/Devices (GLM)",{},{json:true}).then((res: any[])=>{  
+          setLampData(res[0]);
+        }).catch((e: any)=>{
+            // console.log("hi", e);
+        }); 
+    }
+    
+    React.useEffect(() =>{
+      getsetLampData();
+    }, []) 
  
-    useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const headers = {
-            headers: {
-              Authorization: 'APIKEY SC:mda:307d91db4fe4f10b',
-              Cookie: '.AspNetCore.Session=NjRkNjU3ZWEtYmM4Yi1lYzNkLWNiY2MtZGM3OWQxYmQ5ODQx',
-            },
-          };
-  
-          const response = await axios.get('https://mda.lucyday.io/Lucy/TataStreetLightAPI/getInstalledVsWorkingLamps', headers);
-  
-          if (response.status === 200) {
-            const apiData = response.data;
-            setLampData(apiData);
-          } else {
-            console.error(`Failed to retrieve data from API. Status code: ${response.status}`);
-          }
-        } catch (error) {
-          console.error('Error fetching data from API:', error.message);
-        }
-      };
-  
-      fetchData();
-    }, []);
   
     const calculatePercentage = (value: number, total: number) => {
       return ((value / total) * 100).toFixed(2);
@@ -120,9 +100,9 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = () =>
       } 
   ];  
 
-  const installedLamps = 75;  
+  // const installedLamps = 75;  
 
-  const workingLamps = 25;  
+  // const workingLamps = 25;  
 
     return ( 
 
@@ -133,26 +113,16 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = () =>
             <div className="smart-city-content">  
 
                 <div className='status-content'>
+ 
 
-                 
-                        {isLoading ? (
-                           streetLightData.map((item) => ( 
-                            <div  key={item.id} className={`status ${item.clname}`}>
-                                {/* <h3>{item.value} <span>{item.unit}</span></h3> */}
-                                <h3> -- </h3>
-                                <p>{item.name}</p>
-                            </div> 
-                        ))
-                        ) : (
-                        <>  
+                          <>  
                             <div className='status Attention'>
                                 <h3>{health?.ilmAlerts?.["Load Fail"] + health?.ilmAlerts?.["Lux Sensor Blocked"] + health?.ilmAlerts?.["Partial Failure"]} <span></span></h3>
                                 <p>Open</p>
                             </div>
 
                             <div className='status Pending'>
-                                <h3>{health?.ilmAlerts?.["Main Fail"]} 
-                                {/* <span>mints</span> */}
+                                <h3>{health?.ilmAlerts?.["Main Fail"]}  
                                 </h3>
                                 <p>TAT</p>
                             </div>
@@ -162,15 +132,8 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = () =>
                                 <p>Closed</p>
                             </div>  
                         </>
-                    )}
-                 
 
-                    {/* {streetLightData.map((item) => ( 
-                        <div  key={item.id} className={`status ${item.clname}`}>
-                            <h3>{item.value} <span>{item.unit}</span></h3>
-                            <p>{item.name}</p>
-                        </div> 
-                    ))} */}
+
 
                 </div>
 
@@ -178,60 +141,34 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = () =>
                 
                 <div className='sub_title_bar'>Installed vs Working lamps</div>  
 
-                    <div className="progress-bar-container">
-                      
-                            
-                    {lampdata ? (
+                    <div className="progress-bar-container"> 
+           
+ 
                       <> 
-                          <div className="progress-bar installedLamps" style={{ width: `${Number(calculatePercentage(Number(lampdata.ilm.installedLamps), Number(lampdata.ilm.installedLamps) + Number(lampdata.ilm.workingLamps)))}%` }}>
+                          <div className="progress-bar installedLamps" style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 75), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25)))}%` }}>
                           </div>   
 
-                          <div className='progress-bar working-lamps' style={{ width: `${Number(calculatePercentage(Number(lampdata.ilm.workingLamps), Number(lampdata.ilm.installedLamps) + Number(lampdata.ilm.workingLamps))) < 10 ? 10 : Number(calculatePercentage(Number(lampdata.ilm.workingLamps), Number(lampdata.ilm.installedLamps) + Number(lampdata.ilm.workingLamps)))}%` }}>
+                          <div className='progress-bar working-lamps' style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))) < 10 ? 10 : Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25)))}%` }}>
                           </div>
 
                       </>
-                    ) : (
-                      <>
-                        <p>Loading data</p> 
-                      </>
-                    )}
-
-
-
 
                 </div>       
  
    
-                    <div className='chart-sec'> 
+                    <div className='chart-sec'>  
 
-                    {lampdata ? (
-                        <>
 
                         <div className='chart-issue'>       
-                            <h3>{lampdata.ilm.installedLamps}</h3>
+                            <h3>{lampdata?.ilm?.installedLamps ?? "N/A"}</h3>
                             <p>Installed lamps</p>
                         </div> 
 
                         <div className='chart-pending'>       
-                            <h3>{lampdata.ilm.workingLamps}</h3>
+                            <h3>{lampdata?.ilm?.workingLamps ?? "N/A"}</h3>
                             <p>Working lamps</p>
-                        </div>  
-        
-                    </>
-                        ) : (
-                          <> 
-                         <p>Loading lamp Data...</p>   
-                          {/* <div style={{width:'100%', display: 'inline-block'}}> 
-                              {maintenance_Permits_Data.map((item) => ( 
-                                <div  key={item.id} className={item.clname}>
-                                    <h3>{item.value}</h3>
-                                    <p>{item.name}</p>
-                                </div> 
-                              ))}
-                          </div>     */}
-                         
-                      </>
-                        )}
+                        </div>   
+                             
                         
                     </div> 
                 </div>   

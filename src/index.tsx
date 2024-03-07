@@ -57,7 +57,14 @@ import SearchBoxContainer from './components/search_box'
 
 import PowerByWidget from './components/power-by' 
 import PartnershipWidget from './components/partnership' 
+import CityNamesWidget from './components/citynames' 
 
+import ModeChangeWidget from './components/mode-change' 
+import BuildingSummary from './components/building-summary'
+import FloorLayout from './components/building-floorLayout' 
+import BuildingSmartBim from './components/building-smart-bim' 
+import BuildingOccupancy from './components/building-floorOccupancy' 
+import TopIvivaHeader from './components/top-header-iviva' 
 
 // import SmartTestTable from './components/test-table'
 
@@ -71,19 +78,20 @@ import SemiCircle from './components/semi-circle';
 //   Mode = 'mode',
 //   MapModeChange = "MapModeChange"
 // }
-
 // export type genericEventHandler = (eventType: EventsEnum, payload: any) =>  void;
 
 
-export enum EventsEnum {  
-    //SunPosition = 'map-mode' //sample payload - { 'time' : '12:15' }
-    Zoom = 'zoom', 
-    HeightMap = 'height-map', 
-    WeatherControl = 'weather',
-    SunPosition = 'solar-time', //sample payload - { 'time' : '12:15' }
-    Navigation = 'navigation',
-    DistrictJump = 'district-jump' 
 
+
+export enum EventsEnum {
+  //SunPosition = 'map-mode' //sample payload - { 'time' : '12:15' }
+  Zoom = 'zoom',
+  HeightMap = 'height-map',
+  WeatherControl = 'weather',
+  SunPosition = 'solar-time',
+  Navigation = 'navigation',
+  DistrictJump = 'district-jump',
+  ChangeAppMode = 'change-app-mode' 
 }
 
 // export interface IPayload {
@@ -500,10 +508,10 @@ registerWidget({
         layout: {
             w: 2,
             h: 3,
-            minH: 3,
-            minW: 2,
-             maxH: 3,
-             maxW: 2
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
         }
     }
 });
@@ -538,6 +546,23 @@ registerWidget({
         }
     }
 });
+
+registerWidget({
+    id: "top_IvivaHeader", 
+    widget: TopIvivaHeader,
+    configs: {
+        layout: {
+            w: 2,
+            h: 3,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
+
 
 registerWidget({
     id: "top_Right_Header", 
@@ -594,6 +619,108 @@ registerWidget({
         layout: {
             w: 4,
             h: 3,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+registerWidget({
+    id: "cityNames_Widget", 
+    widget: CityNamesWidget,
+    configs: {
+        layout: {
+            // w: 4,
+            // h: 3,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
+
+registerWidget({
+    id: "modeChange_Widget", 
+    widget: ModeChangeWidget,
+    configs: {
+        layout: {
+            w: 5,
+            h: 3,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
+
+
+registerWidget({
+    id: "building_Summary", 
+    widget: BuildingSummary,
+    configs: {
+        layout: {
+
+            w: 11,
+            h: 14,
+            // w: 17,
+            // h: 18,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
+
+
+registerWidget({
+    id: "floor_Layout", 
+    widget: FloorLayout,
+    configs: {
+        layout: {
+            w: 12,
+            h: 13,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
+
+
+
+registerWidget({
+    id: "building_SmartBim", 
+    widget: BuildingSmartBim,
+    configs: {
+        layout: {
+            w: 12,
+            h: 13,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+
+
+
+registerWidget({
+    id: "building_Occupancy", 
+    widget: BuildingOccupancy,
+    configs: {
+        layout: {
+            w: 12,
+            h: 13,
             // minH: 3,
             // minW: 2,
             //  maxH: 3,

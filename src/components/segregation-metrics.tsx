@@ -46,7 +46,7 @@ const Segregation_MetricsChart: React.FunctionComponent<{}> = () => {
     const MyResponsivePie = ({  }) => (
          
 
-        <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+   <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
       <ResponsiveContainer width={300} height={250}>
         <PieChart>
           <Pie
@@ -89,13 +89,13 @@ const Segregation_MetricsChart: React.FunctionComponent<{}> = () => {
     
         return ( 
            
-            <WidgetWrapper className="smart-city_box segregation_metrics-box"> 
+            <WidgetWrapper className="smart-city_box segregation_metrics-box waste-segregation_metrics-box"> 
           
     
                 <TitleBar title="Waste Segregation Metrics" icon='https://static.iviva.com/images/Udhayimages/waste-seg-matrix.png'></TitleBar>  
     
                 <div className="smart-city-content">  
-                    <div className="technician_chart" style={{ height: 200 }}>  
+                    <div className="technician_chart">  
                         <MyResponsivePie/>
                     </div>  
                 </div>

@@ -1,7 +1,16 @@
 var path = require('path');
 
+const webpack = require('webpack');
+
 module.exports = {
     mode: "development",
+
+    plugins: [
+        new webpack.ContextReplacementPlugin(
+           /dynamic-context/,
+           false, // or a regular expression to match specific files
+        ),
+     ],
 
 
     // Enable sourcemaps for debugging webpack's output.

@@ -7,33 +7,35 @@ import { DataList, WidgetWrapper, DataTable, MapComponent, TitleBar, ItemListCar
 
       
         const data1 = [
-            { name: '1 Jan', value: 18000 },
-            { name: '2 Jan', value: 50000 },
-            { name: '3 Jan', value: 12035 },
-            { name: '4 Jan', value: 30040 },
-            { name: '5 Jan', value: 65000 },
-            { name: '6 Jan', value: 35035 },
-            { name: '7 Jan', value: 13500 },
+            { name: 'Jan', value: 18000 },
+            { name: 'Feb', value: 50000 },
+            { name: 'Mar', value: 12035 },
+            { name: 'Apr', value: 30040 },
+            { name: 'May', value: 65000 },
+            { name: 'Jun', value: 35035 },
+            { name: 'Jul', value: 13500 },
+            { name: 'Aug', value: 12035 },
+            { name: 'Sep', value: 30040 },
+            { name: 'Oct', value: 35000 },
+            { name: 'Nov', value: 25035 },
+            { name: 'Dev', value: 16500 },
         ];
 
         const data2 = [
-            { name: '1 Jan', value: 32000 },
-            { name: '2 Jan', value: 12000 },
-            { name: '3 Jan', value: 32035 },
-            { name: '4 Jan', value: 30040 },
-            { name: '5 Jan', value: 32000 },
-            { name: '6 Jan', value: 10035 },
-            { name: '7 Jan', value: 37500 },
+            { name: 'Week 1', value: 32000 },
+            { name: 'Week 2', value: 12000 },
+            { name: 'Week 3', value: 32035 },
+            { name: 'Week 4', value: 30040 }, 
         ];
 
         const data3 = [
-            { name: '1 Jan', value: 20000 },
-            { name: '2 Jan', value: 41000 },
-            { name: '3 Jan', value: 35035 },
-            { name: '4 Jan', value: 1040 },
-            { name: '5 Jan', value: 25000 },
-            { name: '6 Jan', value: 30035 },
-            { name: '7 Jan', value: 5000 },
+            { name: 'Sun', value: 20000 },
+            { name: 'Mon', value: 41000 },
+            { name: 'Tue', value: 35035 },
+            { name: 'Wed', value: 1040 },
+            { name: 'Thu', value: 25000 },
+            { name: 'Fri', value: 30035 },
+            { name: 'Sat', value: 5000 },
         ]; 
  
 
@@ -95,12 +97,13 @@ const StreetLightStatusChart: React.FunctionComponent<{}> = () => {
   };
 
   const data = getDataByFilter();  
-const colorArray = ['#056e5e', '#890000', '#dcb500', '#056e5e', '#056e5e', '#056e5e',];  
+ const colorArray = ['#056e5e', '#c70627', '#f3b809', '#056e5e', '#056e5e', '#056e5e',];  
+//const colorArray = ['#056e5e', '#056e5e', '#056e5e', '#056e5e', '#056e5e', '#056e5e',];  
 
 
   return (
     <div className="smart-city-content">
-      <div className="technician_chart" style={{ height: 220 }}>
+      <div className="technician_chart" style={{ height: 200 }}>
        
         <div className="chart-top" style={{marginTop:"10px"}}>
         <div className="sub_title_bar">Total Revenue (Riyal)</div>
@@ -134,7 +137,7 @@ const colorArray = ['#056e5e', '#890000', '#dcb500', '#056e5e', '#056e5e', '#056
         </ResponsiveContainer> */}
 
 
-          <ResponsiveContainer width="100%" height="100%">
+           <ResponsiveContainer width="100%" height="100%">
             <BarChart
               width={700}
               height={400}
@@ -152,7 +155,35 @@ const colorArray = ['#056e5e', '#890000', '#dcb500', '#056e5e', '#056e5e', '#056
               </Bar>
             </BarChart>
  
-          </ResponsiveContainer>
+          </ResponsiveContainer>  
+
+{/* 
+<ResponsiveContainer width="100%" height="100%">
+      <BarChart
+        width={700}
+        height={400}
+        data={data}
+        margin={{ top: 10, right: 10, left: 10, bottom: 5 }}
+      >
+        <defs>
+          {colorArray.map((color, index) => (
+            <linearGradient key={`gradient-${index}`} id={`colorGradient${index}`} x1="3" y1="4" x2="5" y2="1">
+              <stop offset="0%" stopColor={color} />
+              <stop offset="100%" stopColor={colorArray[(index + 1) % colorArray.length]} />
+            </linearGradient>
+          ))}
+        </defs>
+        <CartesianGrid strokeDasharray="0 0" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Bar dataKey="value" barSize={20}>
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={`url(#colorGradient${index % colorArray.length})`} />
+          ))}
+        </Bar>
+      </BarChart>
+    </ResponsiveContainer> */}
 
 
       </div>

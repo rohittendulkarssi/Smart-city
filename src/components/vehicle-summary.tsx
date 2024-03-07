@@ -13,8 +13,12 @@ import {
 } from 'recharts';
 
 import { WidgetWrapper, TitleBar } from 'uxp/components';
+import { IContextProvider } from '../uxp';
 
-interface HealthData {
+interface IWidgetProps { 
+  instanceId?: string,
+  uxpContext?: IContextProvider,
+
   ilmAlerts?: {
     "AC Voltage"?: string;
     "Load Fail"?: string;
@@ -23,59 +27,86 @@ interface HealthData {
     "Partial Failure"?: string;
     "Power Factor"?: string;
   };
-}
+} 
 
-const VehicleSummaryWidget: React.FunctionComponent<{}> = () => {
-  const [health, setHealth] = useState<HealthData>({});
+
+// interface HealthData {
+//   ilmAlerts?: {
+//     "AC Voltage"?: string;
+//     "Load Fail"?: string;
+//     "Lux Sensor Blocked"?: string;
+//     "Main Fail"?: string;
+//     "Partial Failure"?: string;
+//     "Power Factor"?: string;
+//   };
+// }
+
+const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {  
+ // const [health, setHealth] = useState<HealthData>({});
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
-  async function fetchData() {
-    try {
-      const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
-      const headers = {
-        Authorization: 'APIKEY SC:mda:307d91db4fe4f10b',
-      };
+  // async function fetchData() {
+  //   try {
+  //     const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
+  //     const headers = {
+  //       Authorization: 'APIKEY SC:mda:307d91db4fe4f10b',
+  //     };
 
-      const { data } = await axios.get(
-        `https://mda.lucyday.io/Lucy/TataStreetLightAPI/getAlertSummary?hierarchy=${encodeURIComponent(
-          hierarchy
-        )}`,
-        { headers }
-      );
+  //     const { data } = await axios.get(
+  //       `https://mda.lucyday.io/Lucy/TataStreetLightAPI/getAlertSummary?hierarchy=${encodeURIComponent(
+  //         hierarchy
+  //       )}`,
+  //       { headers }
+  //     );
 
-      setHealth(data);
-    } catch (error) {
-      console.error('Error fetching data from API:', error.message);
-      setError('Failed to fetch data. Please try again.');
-    } finally {
-      setIsLoading(false);
-    }
+  //     setHealth(data);
+  //   } catch (error) {
+  //     console.error('Error fetching data from API:', error.message);
+  //     setError('Failed to fetch data. Please try again.');
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // }
+
+  const [health, setHealth] = useState<IWidgetProps>({});
+
+  function getHealthData () {
+
+    const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
+
+      props.uxpContext.executeAction("TataStreetLightAPI","Alert Summary",{hierarchy:hierarchy},{json:true}).then((res: any[])=>{  
+        setHealth(res[0]);
+      }).catch((e: any)=>{
+          // console.log("hi", e);
+      }); 
   }
- 
+  
+  React.useEffect(() =>{
+    getHealthData();
+  }, []) 
+   
   
   const radarChartData = [
-    { vehicle: 'AC Voltage', value: Number(health?.ilmAlerts?.["AC Voltage"]) || 0 },
-    { vehicle: 'Load Fail', value: Number(health?.ilmAlerts?.["Load Fail"]) || 0 },
-    { vehicle: 'Lux Sensor Blocked', value: Number(health?.ilmAlerts?.["Lux Sensor Blocked"]) || 0 },
-    { vehicle: 'Main Fail', value: Number(health?.ilmAlerts?.["Main Fail"]) || 0 },
-    { vehicle: 'Partial Failure', value: Number(health?.ilmAlerts?.["Partial Failure"]) || 0 },
-    { vehicle: 'Power Factor', value: Number(health?.ilmAlerts?.["Power Factor"]) || 0 },
+    { vehicle: 'AC Voltage', value: Number(health?.ilmAlerts?.["AC Voltage"]) || 45 },
+    { vehicle: 'Load Fail', value: Number(health?.ilmAlerts?.["Load Fail"]) || 58 },
+    { vehicle: 'Lux Sensor Blocked', value: Number(health?.ilmAlerts?.["Lux Sensor Blocked"]) || 42 },
+    { vehicle: 'Main Fail', value: Number(health?.ilmAlerts?.["Main Fail"]) || 54 },
+    { vehicle: 'Partial Failure', value: Number(health?.ilmAlerts?.["Partial Failure"]) || 57 },
+    { vehicle: 'Power Factor', value: Number(health?.ilmAlerts?.["Power Factor"]) || 36 },
   ];
 
   return (
     <WidgetWrapper className="smart-city_box vehicle_summary-box">
-      <TitleBar title="Streetlight health summary" icon="https://static.iviva.com/images/Car_widget/Car.svg" />
+      <TitleBar title="Streetlight health summary" icon="https://static.iviva.com/images/Udhayimages/health-data.png" />
 
       <div className="smart-city-content">
-        <div className="technician_chart" style={{ height: 300 }}>
-          
-          {/* {MyResponsiveRadar} */}
-
+        <div className="technician_chart" style={{ height: 300 }}> 
+         
 
           <ResponsiveContainer width="100%" height="100%">
               <RadarChart cx="50%" cy="50%" outerRadius="80%" data={radarChartData}>

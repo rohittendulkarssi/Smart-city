@@ -13,7 +13,7 @@ const CCTVWidget: React.FunctionComponent<IWidgetProps> = () => {
        
          <WidgetWrapper className="smart-city_box cctv-box">  
 
-            <TitleBar title="CCTV"></TitleBar> 
+            <TitleBar title="CCTV" icon='https://static.iviva.com/images/Udhayimages/security-camera.png'></TitleBar> 
 
             <div className="smart-city-content">  
                 <div className="body"></div>
