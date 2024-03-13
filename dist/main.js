@@ -1888,7 +1888,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block .widget-container-
   list-style: none;
   display: inline-flex;
   width: 100%;
-  margin: 0.5em 0;
+  margin: 0.45em 0;
 }
 .smart-city_box.building_summary-box .building-details .building-info-box ul li::before {
   content: "";
@@ -1904,7 +1904,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block .widget-container-
   padding: 0;
   margin: 0;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.5em;
   margin-right: 1em;
   margin-left: 0.5em;
   font-weight: bold;
@@ -1988,7 +1988,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block .widget-container-
 .smart-city_box.building_summary-box .building-details .building-bot {
   display: inline-block;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 0em;
 }
 .smart-city_box.building_summary-box .building-details .building-bot .g_map-link {
   width: auto;
@@ -2079,13 +2079,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block .widget-container-
 .smart-city_box.building_layout-box #ViewsMenu .model-items {
   display: inline-flex;
   width: 100%;
+  display: inline-block;
 }
 .smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item {
   position: relative;
   display: inline-block;
-  margin: 15px;
-  width: 240px;
-  height: 240px;
+  margin: 10px;
+  width: 45%;
+  height: 17em;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5019607843);
   border-radius: 5px;
   background-color: white;
@@ -2094,14 +2095,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block .widget-container-
 }
 .smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .item-header {
   position: relative;
-  height: 110px;
+  height: 100%;
+  width: 97%;
+  display: inline-block;
 }
 .smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .item-header .blue-plate {
   position: absolute;
   left: 3px;
   top: 3px;
-  height: 100px;
-  width: 234px;
+  height: 100%;
+  width: 100%;
   opacity: 0.8;
   background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/searchbg.svg);
   background-repeat: no-repeat;
@@ -2109,7 +2112,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block .widget-container-
 .smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .item-header .header-image {
   position: absolute;
   height: 94px;
-  width: 234px;
+  width: 100%;
   padding-top: 3px;
   padding-left: 3px;
   border: none;
@@ -2146,22 +2149,28 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block .widget-container-
   background-repeat: no-repeat;
   display: none;
 }
-.smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .primary-text {
-  color: #0066ff;
-  font-size: 18px;
-  margin: 0 10px 0 10px;
+.smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .item-body {
+  display: block;
+  position: absolute;
+  bottom: 3.5em;
 }
-.smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .secondary-text {
-  color: #424242;
+.smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .item-body .primary-text {
+  color: #0066ff;
   font-size: 14px;
-  margin: 0 10px 0 10px;
+  margin: 0px 10px 0 10px;
+  font-weight: bold;
+}
+.smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .item-body .secondary-text {
+  color: #424242;
+  font-size: 13px;
+  margin: 5px 10px 0 10px;
   overflow-wrap: break-word;
 }
 .smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .centering-container {
   text-align: center;
   position: absolute;
   width: 100%;
-  bottom: 25px;
+  bottom: 10px;
 }
 .smart-city_box.building_layout-box #ViewsMenu .model-items .menu-item .centering-container .blue-button.enabled {
   color: white;
@@ -2251,7 +2260,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block .widget-container-
 
 #powered-by {
   display: none;
-}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"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","sourcesContent":[" \r\n.main-content-block {\r\n    // width: 100%;\r\n    // display: inline-block; \r\n    // background-image: url(/images/Madina_1.jpeg);\r\n    // background-image: url(https://static.iviva.com/images/Udhayimages/Madina_1.jpeg);\r\n    // background-size: 100% 100%;\r\n    // background-position: center center;\r\n    // background-repeat: no-repeat;\r\n    // position: relative;\r\n    // z-index: 0;\r\n\r\n    \r\n\r\n    .widget-container-block {\r\n        z-index: 1;\r\n        position: relative;\r\n        min-height: 176vh;\r\n        background: #023d2875; \r\n \r\n    }\r\n//For E3D ref//\r\n//For E3D ref//\r\n.react-grid-layout{\r\n    z-index: 1;\r\n}\r\n.react-grid-layout.player{\r\n    z-index: 1;\r\n    position: relative;\r\n    // background : radial-gradient(ellipse at center center, rgb(255 255 255 / 0%) 0%, rgb(0 29 19 / 60%) 45%, rgb(0 0 0 / 84%) 100%);\r\n    // background : radial-gradient(ellipse at center center, rgb(255 255 255 / 0%) 0%, rgb(0 29 19 / 53%) 45%, rgb(0 0 0 / 74%) 100%);\r\n\r\n    // background-size: 100% 100%;\r\n    // background-position: 0px 0px,0px 0px,0px 0px;\r\n    // background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%),radial-gradient(75% 75% at 50% 50%, #0000 65%, #142827EB 85%);\r\n \r\n//     background-size: 100% 100%;\r\n// background-position: 0px 0px,0px 0px,0px 0px;\r\n// background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%);\r\n\r\n\r\n\r\n    padding-top: 1.5em; \r\n\r\n    &::before{  \r\n\r\n        content: \"\";\r\n        left: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 100vh;\r\n        position: absolute;\r\n        z-index: 1; \r\n      \r\n        // background-size: 100% 100%;\r\n        // background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;\r\n        // background-image: linear-gradient(90deg, #0000 71%, #006C5FAB 89%),linear-gradient(270deg, #0000 71%, #006C5FAB 89%),linear-gradient(0deg, #0000 86%, #006C5FC9 100%);\r\n        \r\n\r\n        // background-size: 100% 100%;\r\n        // background-position: 0px 0px,0px 0px,0px 0px;\r\n        // background-image: linear-gradient(90deg, #0000 76%, #006056C9 95%),linear-gradient(270deg, #0000 76%, #006056C9 95%),linear-gradient(0deg, #0000 88%, #0060567D 95%);\r\n\r\n        background-size: 100% 100%;\r\n        background-position: 0px 0px,0px 0px,0px 0px;\r\n       // background-image: linear-gradient(90deg, #0000 76%, #006056AD 89%, #006056C9 96%),linear-gradient(270deg, #0000 76%, #006056AD 89%, #006056C9 96%),linear-gradient(0deg, #0000 88%, #0060567D 95%);\r\n       \r\n        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 70%, rgb(8 55 50 / 91%) 85%, rgb(0 61 54 / 92%) 96%), linear-gradient(270deg, rgba(0, 0, 0, 0) 70%, rgb(8 55 50 / 91%) 85%, rgb(0 61 54 / 92%) 96%), linear-gradient(0deg, rgba(0, 0, 0, 0) 88%, rgba(0, 96, 86, 0.4901960784) 95%);\r\n\r\n        pointer-events: none;\r\n\r\n    } \r\n\r\n    &::after{  \r\n\r\n        content: \"\";\r\n        right: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 100vh;\r\n        position: absolute;\r\n        z-index: 1; \r\n        background-size: 100% 100%;\r\n        background-position: 0px 0px,0px 0px,0px 0px;\r\n       // background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%);\r\n        pointer-events: none;\r\n\r\n    } \r\n}\r\n}\r\n\r\n    .smart-city_box{ \r\n        background: rgb(0 0 0 / 0%); \r\n        box-shadow: none;\r\n        border-radius: 10px;\r\n        z-index: 1;\r\n\r\n        \r\n        \r\n         .uxp-widget-title-bar{ \r\n            background: transparent;\r\n            color: #1f9b7f;\r\n            border-bottom: 1px solid #dedede;\r\n            margin-bottom: 1em;\r\n            padding: 0;\r\n            outline: none;\r\n            min-height: 38px;\r\n            width: 95%;\r\n            position: relative;\r\n\r\n            .title-section { \r\n                font-size: 1em;\r\n                padding-left: 2.5em;\r\n            }\r\n\r\n            &::before{\r\n                content: \"\";\r\n                position: absolute;\r\n                background-color: #dededea1;\r\n                width: 6%;\r\n                height: 3px;\r\n                bottom: -4px;\r\n                left: 0;\r\n                border-radius: 0px 0px 30px 30px;\r\n            }\r\n\r\n            &::after{\r\n                content: \"\";\r\n                position: absolute;\r\n                background-color: #dededea1;\r\n                width: 6px;\r\n                height: 6px;\r\n                bottom: -3px;\r\n                right: -6px;\r\n                border-radius: 50%;\r\n            }\r\n\r\n                .txt{\r\n                    // color: #1f9b7f;  \r\n                    color: #0fd6a9;\r\n                    font-weight: 600;\r\n                     font-size: 1.1em;\r\n                    // font-size: .9vw;\r\n                }\r\n        }\r\n\r\n        .sub_title_bar{\r\n            /* border-bottom: 1px solid #c2e6da; */\r\n            margin-bottom: 0.8em;\r\n            padding: 0;\r\n            min-height: 15px;\r\n            width: 80%;\r\n             font-size: 0.95em;\r\n            // font-size: 0.8vw;\r\n            color: #fff;\r\n            font-weight: 500;\r\n            outline: none;\r\n\r\n            &.district-waste{\r\n                background-image: url(\"https://static.iviva.com/images/Udhayimages/garbage1.png\");\r\n                background-position: left top;\r\n                background-repeat: no-repeat;\r\n                background-size: contain;\r\n                width: 100%;\r\n                padding-left: 20px;\r\n            }\r\n        }\r\n\r\n        .smart-city-content {\r\n           display: inline-block; \r\n            width: 95%;\r\n            margin-top: 1em;   \r\n           \r\n            // overflow-x: hidden!important;\r\n\r\n            // display: block;\r\n            // margin-top: 1em;\r\n            // flex: 1;\r\n            // width: 100%;\r\n            // height: 100%;\r\n        \r\n            /* width */\r\n            &::-webkit-scrollbar {\r\n                width: 5px!important;\r\n            }\r\n        \r\n            /* Track */\r\n            &::-webkit-scrollbar-track {\r\n                background: #aafbe8!important; \r\n            }\r\n        \r\n            /* Handle */\r\n            &::-webkit-scrollbar-thumb {\r\n                \r\n                background: #08ac87!important; \r\n            }\r\n        \r\n            /* Handle on hover */\r\n            &::-webkit-scrollbar-thumb:hover {\r\n                background: #08ac87!important;  \r\n            }\r\n\r\n            .technician_chart{ \r\n                // width: 100%;\r\n                // height: 90%;\r\n\r\n                // width: 100%;\r\n                // height: 90%;\r\n                // margin-top: 1em;\r\n                // display: flex;\r\n\r\n            }\r\n        } \r\n\r\n    &.order_trend-box{\r\n        .smart-city-content{\r\n\r\n            display: block;\r\n            margin-top: 1em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n            \r\n            .technician_chart{ \r\n                .recharts-text{\r\n                    fill:#ededed;\r\n                }\r\n            } \r\n        }\r\n    }\r\n\r\n    &.order_summary-box{ \r\n\r\n        .smart-city-content{\r\n            height: 250px; \r\n            overflow: auto;\r\n\r\n            .data-list-container{\r\n                background-color: transparent;\r\n\r\n                .data-list{\r\n                    background-color: transparent;\r\n                    overflow: hidden;\r\n\r\n                    .data-table{\r\n                        background-color: transparent;\r\n                        tr {\r\n                            background-color: transparent;\r\n\r\n                            th{ \r\n                                background-color: transparent;\r\n                                color: #1dcb8d;\r\n                                text-align: left;\r\n                                padding: 10px 3px;\r\n                                font-size: 10px;\r\n                            }\r\n                            td{\r\n                                .item-card{\r\n                                    background-color: transparent;\r\n                                    color: #ffffff;\r\n                                    min-height: 30px; \r\n\r\n                                   \r\n\r\n                                    .content{\r\n                                        padding: 0;\r\n                                        .sub-title{\r\n                                            font-size: 10px;\r\n                                        }\r\n                                    }\r\n\r\n                                        &::after{\r\n                                            content: \"\";\r\n                                            width: 18px;\r\n                                            height: 18px;\r\n                                            position: absolute;\r\n                                            top: 5px;\r\n                                            background-size: 100% auto;\r\n                                            background-repeat: no-repeat;\r\n                                            left: 0%;\r\n                                        } \r\n\r\n                                        &.attention{ \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');\r\n                                                } \r\n                                        }\r\n                                        &.pending{ \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');\r\n                                                } \r\n                                        }\r\n                                        &.resloved{\r\n                                            \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');\r\n                                                } \r\n                                        } \r\n\r\n                                        &.Green{\r\n                                            .content{\r\n                                                .sub-title{\r\n                                                    background-color: #00b36c; \r\n                                                    padding: 5px 5px;\r\n                                                    border-radius: 1px;\r\n                                                    width: 44px;\r\n                                                    text-align: center;\r\n                                                }\r\n                                            }\r\n                                        }\r\n                                        &.Red{\r\n                                            .content{\r\n                                                .sub-title{\r\n                                                    background-color: #cb0000; \r\n                                                    padding: 5px 5px;\r\n                                                    border-radius: 1px;\r\n                                                    width: 44px;\r\n                                                    text-align: center;\r\n                                                }\r\n                                            }\r\n                                        }\r\n                                }\r\n                            } \r\n                        }\r\n                    }\r\n                }\r\n\r\n                .data-list-footer{\r\n                    background-color: transparent;\r\n\r\n                    .go-up-btn-container{\r\n                        background-color: rgb(5 81 54 / 34%);\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n \r\n    &.cctv-box{ \r\n\r\n        .body{\r\n            height: 250px;  \r\n            width: 100%;\r\n            display: inline-block;\r\n            background-image: url(https://static.iviva.com/images/Udhayimages/waste-footage.jpg);\r\n            // background-size: 100% 100%;\r\n            background-size: auto 100%;\r\n            background-position: center center;\r\n            background-repeat: no-repeat;\r\n        }\r\n    }\r\n\r\n    &.waste-bin-box{ \r\n\r\n        .smart-city-content{\r\n            // display: block;\r\n            // margin-top: 1em;\r\n            // flex: 1;\r\n            // width: 100%;\r\n            // height: 100%;\r\n\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                // padding: 1em 8% 1.3em 8%;\r\n                padding: 0.5em 0% 1em 0%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n\r\n                    h3{\r\n                        font-size: 1.8em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        text-shadow: 0px 0px 1px #000000, 0px 0px 2px #dcdcdc;\r\n\r\n                        span{\r\n                            font-size: 0.5em;\r\n                        }\r\n                    }\r\n                    p{\r\n                        font-size: 0.8em;\r\n                        padding: 0.5em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                        position: relative;\r\n\r\n                        &::after{\r\n                            content: \"\";\r\n                            width: 16px;\r\n                            height: 16px;\r\n                            position: absolute;\r\n                            top: 5px;\r\n                            background-size: 100% auto;\r\n                            background-repeat: no-repeat;\r\n                            right: 16%;\r\n                        }\r\n                    }\r\n\r\n                &.Attention{\r\n                    h3{\r\n                       color: rgb(211, 1, 1);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');\r\n                        }\r\n                    }\r\n                }\r\n                &.Pending{\r\n                    h3{\r\n                        color: rgb(218, 218, 1);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');\r\n                        }\r\n                    }\r\n                }\r\n                &.Resloved{\r\n                    h3{\r\n                        color: rgb(19 232 61);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');\r\n                        }\r\n                    }\r\n                }\r\n                }\r\n            }\r\n\r\n\r\n            .technician_chart{\r\n                margin-top: 0em;\r\n                // height: 90%;\r\n\r\n                .chart-sec{\r\n                    width: 100%;\r\n                    display: flex;\r\n                    margin-top: 0.85em;\r\n\r\n                    .chart-issue{\r\n                       display: inline-block;\r\n                       width: 75%;\r\n                       text-align: center;\r\n                    }\r\n                    .chart-pending{\r\n                        display: inline-block;\r\n                        width: 25%;\r\n                        text-align: center;\r\n                    }\r\n                    h3{\r\n                        font-size: 1.7em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    p{\r\n                        font-size: .85em;\r\n                        padding: 0;\r\n                        margin: 0.3em 0 0 0;\r\n                        color: #fff;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n    &.waste-collection-vehicle{ \r\n\r\n        .smart-city-content{\r\n             margin-top: 0;\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 2% 3em 2%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n\r\n                    .vahicle-icon{\r\n                        display: inline-block;\r\n                        width: 52px;\r\n                        height: 52px;\r\n                        background-position: center center;\r\n                        background-repeat: no-repeat;\r\n                        background-size: 75% auto;\r\n                        margin-bottom: 0.5em;\r\n                        // background-color: #ffffff9c;\r\n                        border-radius: 10px;\r\n                        filter: drop-shadow(0px 0px 2px #fff);\r\n\r\n                        &.co2-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);\r\n                        }\r\n                        &.fuel-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);\r\n                        }\r\n                        &.s-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/money.png);\r\n                        }\r\n                    }\r\n\r\n                    p{\r\n                        font-size: 0.9em;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 1.8em;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n\r\n                       \r\n                    }\r\n                   span{\r\n                        font-size: 0.75em;\r\n                        color: #fff;\r\n                   }\r\n\r\n                }\r\n            } \r\n \r\n        }\r\n    }\r\n\r\n    &.segregation_metrics-box{\r\n        .recharts-legend-wrapper{\r\n            width: 180px !important;\r\n            // right: -145px !important;\r\n           right : -35px !important;\r\n            top: 20px;\r\n            left: auto !important;\r\n\r\n            ul{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin: 0;\r\n                padding: 0;\r\n                li{\r\n                    padding: 0.7em 0;\r\n                    list-style: none;\r\n\r\n                    .data_values{\r\n                        margin-left: 10px;\r\n                    }\r\n                    em{\r\n                        width: 10px;\r\n                        height: 7px;\r\n                        display: inline-block;\r\n                        margin-right: 5px;\r\n                        vertical-align: top;\r\n                        margin-top: 3px;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        &.waste-segregation_metrics-box{\r\n            .recharts-legend-wrapper{\r\n               right: -145px !important;  \r\n            }\r\n        }\r\n    }\r\n\r\n    &.vehicle_summary-box{\r\n        .smart-city-content{\r\n\r\n            display: block;\r\n            margin-top: 0em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n\r\n\r\n            .technician_chart{\r\n                // display: flex;\r\n                // width: 90%; \r\n                // height: 95%;\r\n\r\n                text{color: #fff; fill:#fff!important;} \r\n            }\r\n        }\r\n    }\r\n\r\n    &.energy_consumption-box{ \r\n\r\n        .smart-city-content{\r\n                display: block;\r\n                margin-top: 1em;\r\n                flex: 1;\r\n                width: 100%;\r\n                height: 100%;\r\n\r\n\r\n            .technician_chart{ \r\n                margin-top: 0em; \r\n                height: 90%;\r\n                .recharts-wrapper{\r\n                    fill: transparent; \r\n                    font-size: .88em;\r\n                }\r\n                .recharts-layer, .recharts-cartesian-axis-line{\r\n                    text{ fill:#fff!important;} \r\n                }\r\n                .recharts-cartesian-axis-ticks, .recharts-legend-item-text{\r\n                    fill:#fff!important;\r\n                    color: #fff;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    &.water_summary-box{ \r\n\r\n        .smart-city-content{\r\n             \r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 0% 0em 0%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n                    // background-color: rgba(0, 97, 67, 0.61);\r\n                    background-color: rgba(13, 80, 60, 0.77);\r\n                    border-radius: 10px;\r\n                    margin-right: 3%;\r\n                    padding-bottom: 1em;\r\n\r\n                    .vehicle-icon{\r\n                        display: inline-block;\r\n                        width: 60px;\r\n                        height: 60px;\r\n                        background-position: center center;\r\n                        background-repeat: no-repeat;\r\n                        background-size: 75% auto;\r\n                        margin-bottom: 0.5em;\r\n                        margin-top: 0.8em;\r\n\r\n                        &.co2-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-consumption.png);\r\n                        }\r\n                        &.fuel-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-polution.png);\r\n                        }\r\n                        &.s-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-troubles.png);\r\n                        }\r\n                    }\r\n\r\n                    p{\r\n                        font-size: 0.85em;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 2.2em;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n\r\n                        span{\r\n                            font-size: 0.3em; \r\n                        }\r\n                    }\r\n                   span{\r\n                        font-size: 0.85em;\r\n                        padding-bottom: 1em;\r\n                       \r\n                        &.red{\r\n                            color: #ff0000;\r\n                        }\r\n                        &.green{\r\n                            color: #00e51a;\r\n                        }\r\n                   }\r\n                    &:last-child{\r\n                        margin-right: 0;\r\n                    }\r\n                }\r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.water_consumption-box{\r\n        .smart-city-content{\r\n            display: block;\r\n            margin-top: 1em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 0% 0em 0%;\r\n                color: #ffffff;\r\n                height: 90%;\r\n\r\n                .recharts-surface{\r\n                    fill: #ffffff;\r\n                    color: #ffffff;\r\n                    .recharts-layer{\r\n                        fill: #ffffff;\r\n                        color: #ffffff;\r\n                    } \r\n                } \r\n                 \r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.iaq-box{ \r\n\r\n        .smart-city-content{\r\n             \r\n            .status-content{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin: 0;\r\n                padding: 0;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 30%;\r\n                    text-align: center;\r\n                    // background-color: rgba(0, 97, 67, 0.61);\r\n                    // background-color: rgb(7 34 26 / 77%);\r\n                    border-radius: 2px;\r\n                    padding: 2em;\r\n                    margin: 1em 0em 0em 1em;\r\n                    background-color: rgb(13 80 60 / 77%);\r\n\r\n                   \r\n\r\n                    p{\r\n                        font-size: 1em;\r\n                        // font-size: .8vw;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 2.2em;\r\n                        // font-size: 1.7vw;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n                    }\r\n                   span{\r\n                         font-size: 0.85em;\r\n                        // font-size: .7vw;\r\n                        padding-bottom: 1em;\r\n                        color: #fff; \r\n                        font-weight: bold;\r\n                   }\r\n\r\n                   &.NO2, &.CO {\r\n                        p, h2, span{\r\n                            \r\n                            color: rgb(209, 171, 0);\r\n                        } \r\n                   }\r\n                   &.SO2 {\r\n                    p, h2, span{\r\n                        \r\n                        color: rgb(118, 0, 0);\r\n                    } \r\n               }\r\n\r\n                }\r\n\r\n                .air-quality-status-overall{\r\n                    \r\n                    display: inline-block;\r\n                    width: 100%;\r\n                    text-align: center;\r\n\r\n                    .air-quality-status-box{\r\n                        display: inherit;\r\n                        width: 60%; \r\n                        border-radius: 2px;\r\n                        padding: 2em;\r\n                        margin: 0em 1em 1em 1em;\r\n                        text-align: center;\r\n                        text-transform: uppercase;\r\n                        align-items: center;\r\n                        // background-color: rgb(7 34 26 / 77%);\r\n                        background-color: rgb(13 80 60 / 77%);\r\n    \r\n                        p{\r\n                            font-size: 1em;\r\n                            padding: 0em 0 0 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                        }\r\n                        h5{\r\n                            font-size: 2.3em;\r\n                            padding: 0;\r\n                            margin: 0.4em 0 0.2em 0;\r\n                            color: #fff;\r\n                        }\r\n                    }\r\n\r\n                        .air-progress-bars{\r\n                            display: flex;\r\n                            width: 60%;\r\n                            margin-left: 20%;\r\n                            margin-top: 2em;\r\n                      \r\n\r\n                            .semi-circle-progress-bar {\r\n                                width: 50%;\r\n                                height: 130px;\r\n                                position: relative;\r\n                                display: flex;\r\n                                align-items: center;\r\n                                justify-content: center;\r\n                                flex-direction: column;\r\n\r\n                                svg {\r\n                                    transform: rotate(-90deg);\r\n                                    width: 100%;\r\n                                    height: 100%;\r\n                                }\r\n                                \r\n                                circle {\r\n                                    fill: transparent;\r\n                                    stroke-width: 8;\r\n                                    stroke: #fff;\r\n                                }\r\n                                \r\n                                .progress-bar {\r\n                                    fill: transparent;\r\n                                    stroke-width: 10px;\r\n                                    stroke: rgb(0 97 67);\r\n                                    stroke-dasharray: 64;\r\n                                    stroke-dashoffset: 0;\r\n                                    transition: stroke-dashoffset 0.5s ease;\r\n                                }\r\n                                \r\n                                .percentage {\r\n                                    position: absolute;\r\n                                    top: 40%;\r\n                                    left: 50%;\r\n                                    transform: translate(-50%, -50%);\r\n                                    font-size: 18px;\r\n                                    font-weight: bold;\r\n                                    color: #fff;\r\n                                }\r\n                                .value{\r\n                                    font-size: 13px;\r\n                                    font-weight: normal;\r\n                                    color: #fff;\r\n                                    position: absolute;\r\n                                    top: 58%;\r\n                                    left: 50%;\r\n                                    transform: translate(-50%, -50%);\r\n                                }\r\n                            } \r\n\r\n                        }\r\n                } \r\n                \r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.compare-iaq{\r\n\r\n        .smart-city-content {\r\n\r\n            // display: block;\r\n            // margin-top: 0em;\r\n            // flex: 1;\r\n            // width: 100%;\r\n            // height: 100%;\r\n\r\n\r\n            .status-content {\r\n\r\n                // display: flex;\r\n                // width: 100%; \r\n                // height: 90%;\r\n\r\n                .loaction-status-content{\r\n                    display: inline-block;\r\n                    width: 46%;\r\n                    text-align: center;\r\n        \r\n                   .status { \r\n\r\n                        display: inline-block;\r\n                        width: 28%;\r\n                        text-align: center;\r\n                        // background-color: rgba(0, 97, 67, 0.61);\r\n                        // background-color: rgb(7 34 26 / 77%);\r\n                        background-color: rgb(13 80 60 / 77%);\r\n                        border-radius: 2px;\r\n                        padding: 0.8em;\r\n                        margin: 0.8em 0.8em 0em 0em;\r\n\r\n                        &.yellow-bg{\r\n                           background-color: rgb(209 171 0);\r\n                        }\r\n                        &.red-bg{\r\n                            background-color: rgb(118 0 0);\r\n                        }\r\n                        \r\n                        p{\r\n                            font-size: 0.88em;\r\n                        }\r\n                        span{\r\n                            font-size: 0.75em;\r\n                        }\r\n\r\n                        &:nth-child(4n), &:nth-child(7n){\r\n                            margin-right: 0em;\r\n                        }\r\n        \r\n                        h2 {\r\n                            font-size: 1.3em;\r\n                            padding: 0;\r\n                            margin: 0.2em 0 0.1em 0;\r\n                            color: #fff;\r\n                        } \r\n                       \r\n                    }\r\n                    &.loaction2-status-content { \r\n                            margin-left:0em; \r\n                    } \r\n\r\n                    .uxp-form-group{\r\n                        .uxp-search-box-container{ \r\n\r\n                            .uxp-input-container{\r\n                                .uxp-form-input{\r\n                                    width: 100%;\r\n                                    min-width: 100%;\r\n                                }\r\n                            } \r\n                        } \r\n                    }\r\n                }\r\n\r\n                .versus{\r\n                    display: inline-block;\r\n                    width: 8%;\r\n                    color: #fff;\r\n                    font-size: 1.2em;\r\n                    text-align: center;\r\n                    vertical-align: top;\r\n                    padding-top: 10em;\r\n                }\r\n            } \r\n\r\n            &.smart-city-content-chart{\r\n                display: block;\r\n                margin-top: 0em;\r\n                flex: 1;\r\n                width: 100%;\r\n                height: 100%;\r\n\r\n                .status-content { \r\n                    display: flex;\r\n                    width: 100%; \r\n                    height: 40%;\r\n                }\r\n            }\r\n        }\r\n      \r\n    }\r\n\r\n    .top_tabs{\r\n        float: right;\r\n        width: auto;\r\n\r\n        .uxp-toggle-filter, .toggle-filter{\r\n                background: transparent;\r\n                float: right;\r\n                margin: 0;\r\n                display: inline-flex;\r\n\r\n            .uxp-toggle-option, button{\r\n\r\n                    background: rgb(3, 7, 9);\r\n                    color: #fff;\r\n                    font-size: 1em;\r\n                    text-transform: uppercase;\r\n                    border-radius: 2px;\r\n                    margin: auto 0px;\r\n                    outline: none;\r\n                    border: none;\r\n                    padding: 8px 20px;\r\n                    cursor: pointer;\r\n\r\n                &.selected, &.active{ \r\n\r\n                    background: #18d6b8;\r\n                    box-shadow: 0px 0px 12px 1px #02eec9;\r\n                }\r\n            }\r\n        } \r\n    }\r\n\r\n    &.cctv-overview-box{\r\n        .uxp-widget-title-bar{\r\n            width: 100%;\r\n        }\r\n\r\n        .uxp-toggle-filter{\r\n            background: transparent;\r\n            .uxp-toggle-option{\r\n\r\n                    background: rgb(3, 7, 9);\r\n                    color: #fff;\r\n                    font-size: 1em;\r\n                    text-transform: uppercase;\r\n                    border-radius: 2px;\r\n                    margin: auto 0px;\r\n\r\n                &.selected{\r\n                    // background: rgb(0 180 151);\r\n                    background: #18d6b8;\r\n                    box-shadow: 0px 0px 12px 1px #02eec9;\r\n                }\r\n            }\r\n        }\r\n\r\n        .smart-city-content{\r\n            width: 100%;\r\n            .status-content{\r\n                .cctv-list{\r\n                    display: inline-block;\r\n                    width: 18%;\r\n                    margin-right: 2%;\r\n                    margin-bottom: 2em;\r\n\r\n                    &:nth-child(5n){\r\n                        margin-right: 0;\r\n                    }\r\n                    select{\r\n                        background: transparent;\r\n                        outline: none;\r\n                        border: none;\r\n                        color: #fff;\r\n                        font-size: 1em;\r\n                        margin: 10px 0px;\r\n                        width: 100%;\r\n                        text-transform: uppercase;\r\n                        option {\r\n                            padding: 8px 12px;\r\n                            cursor: pointer;\r\n                            background-color: rgba(0, 97, 67, 0.61);\r\n\r\n                            &:checked, &:hover {\r\n                                background-color: rgba(0, 97, 67, 0.61);\r\n                                color: #fff;\r\n                            }\r\n                            \r\n                        }\r\n                    }\r\n                    .cctv-pict{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        img{\r\n                            // height: 19.5em;\r\n                            height: 26vh;\r\n                            width: 100%;\r\n                            border: 1px solid #012417;\r\n                        }\r\n                    }\r\n\r\n                    .loction{\r\n                        color: #fff;\r\n                        font-size: 0.8em;\r\n                        margin-top: .7em;\r\n                    }\r\n                    .loction-number{\r\n                        color: #fff;\r\n                        font-size: 0.8em;\r\n                        margin-top: .7em;\r\n                    }\r\n                    .loction-status{\r\n                        color: #fff;\r\n                        padding: 4px 0;\r\n                        width: 60px;\r\n                        text-align: center;\r\n                        margin-top: 0.7em;\r\n                        font-size: 0.85em;\r\n\r\n                        &.Red{\r\n                            background: #cb0000;\r\n                        }\r\n                        &.Green{\r\n                            background: #00b36c;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .chart-top{\r\n        display: flex;\r\n        justify-content: flex-end;\r\n        margin-bottom: 0em;\r\n\r\n        .uxp-toggle-filter{\r\n            background: transparent;\r\n            display: inline-flex;\r\n            padding: 0;\r\n\r\n            width: 158px;\r\n\r\n            .uxp-toggle-option{\r\n                color: #00c397;\r\n                box-shadow: none;\r\n                font-weight: bold;\r\n                font-size: 1em;\r\n                padding: 8px 6px;\r\n                border-radius: 0;\r\n\r\n                &.selected{\r\n                    box-shadow: none;\r\n                    background: transparent;\r\n                    color: #ffffff;\r\n                }\r\n            }\r\n        }\r\n        .showcase-input{\r\n            display: flex;\r\n            width: 100%!important;\r\n            padding: 0;\r\n\r\n            .uxp-search-box-container{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 27%;\r\n                min-width: 27%;\r\n\r\n              \r\n\r\n                .uxp-input-container{ \r\n                    width: 70%;\r\n                    min-width: 70%;\r\n\r\n                    .uxp-form-input{ \r\n                        width: 100%;\r\n                        font-size: 9px;\r\n                        min-width: 140%;\r\n                    }\r\n                }\r\n\r\n                &.active{\r\n                    display: grid;\r\n                    \r\n                        .search-box-container{\r\n                            background-color: transparent;\r\n                            box-shadow: none;\r\n                            border-bottom: 1px solid #fff;\r\n                            border-radius: 0;\r\n                            color: #fff;\r\n\r\n                             .uxp-input-container{\r\n\r\n                                .uxp-form-input{\r\n                                    font-size: 10px;\r\n                                    color: #fff;\r\n                                    padding: 10px 3px;\r\n                                }\r\n\r\n                             } \r\n\r\n                             .uxp-search-box-icons{\r\n                                .uxp-icon-button{\r\n                                    .icon-container{\r\n                                        .icon.close{\r\n                                            filter: brightness(0) invert(1);  \r\n                                            top: 2px;\r\n                                            background-size: 27%;\r\n                                            opacity: 0.8;\r\n                                        }\r\n                                    }\r\n                                }\r\n                             }\r\n                        }\r\n                    } \r\n            }\r\n            .uxp-form-select{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 21%;\r\n                min-width: 21%;\r\n\r\n                .uxp-select-placeholder{\r\n                    font-size: 10px;\r\n                    background-color: transparent;\r\n                    box-shadow: none;\r\n                    color: #fff;\r\n                    border-radius: 0;\r\n                    padding: 14px 3px;\r\n\r\n                    &::before{\r\n                        filter: brightness(0) invert(1);\r\n                    }\r\n                }\r\n            }\r\n            .uxp-date-time-picker-container{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 23%;\r\n                min-width: 23%;\r\n                padding: 0;\r\n\r\n                .placeholder{\r\n                    .label{\r\n                        padding: 10px 10px;\r\n                    }\r\n                    .value{\r\n                        padding: 10px 0px;\r\n                        min-width: 80px;\r\n                        width: 80%;\r\n                        font-size: 9px;\r\n                    }\r\n                }\r\n            }\r\n\r\n\r\n            .uxp-search-box-container .search-box-container{\r\n                background: transparent;\r\n                box-shadow: none;\r\n            }\r\n        }\r\n\r\n\r\n\r\n    }\r\n\r\n    .technician_chart{ \r\n        margin-top: 0em; \r\n        .recharts-wrapper{\r\n            fill: transparent; \r\n        }\r\n        .recharts-layer, .recharts-cartesian-axis-line{\r\n            text{ fill:#fff!important;} \r\n        }\r\n        .recharts-cartesian-axis-ticks, .recharts-legend-item-text{\r\n            fill:#fff!important;\r\n            color: #fff;\r\n        }\r\n\r\n        .sub_title_bar{\r\n            width: 90%;\r\n            font-size: 1em;\r\n        }\r\n    }\r\n\r\n    &.empty-box{ \r\n\r\n       .header-content{\r\n            display: inline-flex;\r\n            width: 100%;\r\n            padding: 1em 1em 0em 1em;\r\n\r\n            .logo{ \r\n                display: inline-block;\r\n                 width: 32%;\r\n                // width: 25%;\r\n                background-image: url(\"https://static.iviva.com/images/Udhayimages/MDA_LOGO.png\");\r\n                // background-image: url(\"https://www.iviva.com/wp-content/uploads/2023/07/iviva-logo-1.svg\");\r\n                background-position: center center;\r\n                background-repeat: no-repeat;\r\n                background-size: 90% auto;\r\n                margin-top: 0em;\r\n                height: 7.5em;\r\n            }\r\n            h2{\r\n                display: inline-block;\r\n                width: 65%;\r\n                font-size: 2.5em;\r\n                font-weight: bold;\r\n                color: #ffffff;\r\n                margin-left: 5%;\r\n                padding: 0;\r\n                margin: 1.3em 0 0 0%;\r\n                text-transform: uppercase;\r\n\r\n                // display: inline-block;\r\n                // width: 68%;\r\n                // font-size: 2.3em;\r\n                // font-weight: bold;\r\n                // color: #ffffff;\r\n                // margin-left: 5%;\r\n                // padding: 0;\r\n                // margin: 1.2em 0 0 1%;\r\n                // text-transform: uppercase;\r\n\r\n            }\r\n\r\n            &.iviva-header-content{\r\n                .logo{   \r\n                    width: 22%; \r\n                    // filter: invert(1);\r\n                    // background-image: url(\"https://www.iviva.com/wp-content/uploads/2023/07/iviva-logo-1.svg\");\r\n                   // background-image: url(\"https://static.iviva.com/images/Udhayimages/Lucy_home_new/eutech-logo.svg\");\r\n                    background-image: url(\"https://www.iviva.com/wp-content/uploads/2023/06/logo-text-white-1.svg\"); \r\n                }\r\n                h2{   \r\n                    width: 68%;\r\n                    font-size: 2.3em; \r\n                    margin-left: 5%; \r\n                    margin: 1.2em 0 0 1%; \r\n    \r\n                }\r\n            }\r\n       }\r\n       h4{\r\n            display: inline-block;\r\n            width: 100%;\r\n            font-size: 1.2em;\r\n            color: #ffffff;\r\n            margin: 0em 0 0 1em;\r\n            padding: 0;\r\n            text-transform: uppercase;\r\n            margin-top: 1em;\r\n       }\r\n\r\n    }\r\n\r\n\r\n    &.power-by-box{ \r\n\r\n        .header-content{\r\n             display: inline-flex;\r\n             width: 100%;\r\n             padding: 1em 1em 0em 1em;\r\n\r\n\r\n             .power-by-cont{\r\n                display: flex;\r\n                width: 100%;\r\n                height: 70%;\r\n                p{  \r\n                    width: auto;\r\n                    font-size: 1.5em;\r\n                    font-weight: bold;\r\n                    color: #ffffff;\r\n                    margin-left: 5%;\r\n                    padding: 0;\r\n                    margin: 0;\r\n                    position: relative;\r\n                    height: auto;\r\n                    align-items: end;\r\n                    display: flex;\r\n                    text-transform: uppercase;\r\n\r\n                    sub{\r\n                        font-size: 0.6em;\r\n                    }\r\n                }\r\n                .raseel_logo{ \r\n                    display: inline-block;\r\n                    width: 32%;\r\n                    background-image: url(\"https://static.iviva.com/images/Udhayimages/Raseel/Raseel-Logo.svg\");\r\n                    background-position: center center;\r\n                    background-repeat: no-repeat;\r\n                    background-size: 90% auto;\r\n                    margin-top: 0em;\r\n                    height: 5.5em;\r\n                    margin-left: 1em;\r\n                }\r\n             } \r\n        } \r\n \r\n     }\r\n     \r\n     &.partnership-box{ \r\n\r\n        .header-content{\r\n             display: inline-flex;\r\n             width: 100%;\r\n             padding: 1em 1em 0em 1em; \r\n\r\n             .partnership-cont{\r\n                display: flex;\r\n                width: 100%;\r\n                height: 70%;\r\n                p{  \r\n                    width: auto;\r\n                    font-size: 1.5em;\r\n                    font-weight: bold;\r\n                    color: #ffffff;\r\n                    margin-left: 5%;\r\n                    padding: 0;\r\n                    margin: 0;\r\n                    position: relative;\r\n                    height: auto;\r\n                    align-items: end;\r\n                    display: flex;\r\n\r\n                    sub{\r\n                        font-size: 0.6em;\r\n                    }\r\n                }\r\n                .ssi_logo{ \r\n                    display: inline-block;\r\n                    width: 32%;\r\n                    background-image: url(\"https://static.iviva.com/images/company-logos/ssi-logo.svg\");\r\n                    background-position: center center;\r\n                    background-repeat: no-repeat;\r\n                    background-size: 90% auto;\r\n                    margin-top: 0em;\r\n                    height: 5.5em;\r\n                    margin-left: 1em;\r\n                    filter: brightness(0) invert(1);\r\n                }\r\n             }  \r\n        }  \r\n     }\r\n\r\n    &.top-rht-container-box{\r\n       \r\n        display: inline-block;\r\n\r\n        .header-rht-content{\r\n             \r\n            // width: 75%;\r\n            width: 100%;\r\n            margin-top: 2em;\r\n            float: right;\r\n\r\n                .rgt-head-cont{\r\n                    display: inline-block;\r\n                    width: 25%;\r\n                    text-align: center;\r\n                    font-size: 1.1em;\r\n                    color: #fff;\r\n                    border-left: 2px solid #fff;\r\n                    position: relative;\r\n\r\n                    &.head-timer{\r\n                        border-left: 0px solid transparent;\r\n                    }\r\n                     \r\n                    &.head-weather{ \r\n\r\n                        &::before {\r\n                                    background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n                                    content: \"\";\r\n                                    width: 15px;\r\n                                    height: 15px;\r\n                                    display: block;\r\n                                    background-size: 100% auto;\r\n                                    position: absolute;\r\n                                    top: 0px;\r\n                                    left: 8px;\r\n                                    background-repeat: no-repeat;\r\n                                    background-position: center center;\r\n                                }\r\n                    }\r\n                    &.head-location{\r\n                        font-size: 0.9em;\r\n                        padding-top: 3px;\r\n\r\n                        &::before {\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/pin.png);\r\n                            content: \"\";\r\n                            width: 12px;\r\n                            height: 12px;\r\n                            display: block;\r\n                            background-size: 100% auto;\r\n                            position: absolute;\r\n                            top: 2px;\r\n                            left: 5px;\r\n                            background-repeat: no-repeat;\r\n                            background-position: center center;\r\n                        }\r\n                    }\r\n                }\r\n        }\r\n        .power-by-cont{\r\n            display: inline-block;\r\n            width: 27%;\r\n            vertical-align: bottom;\r\n            padding: 0px 0 0 0;\r\n            margin: 0px 0 0 0;\r\n            position: relative;\r\n            top: 10px;\r\n            text-align: right;\r\n\r\n            p{\r\n                padding: 0;\r\n                margin: 0;\r\n                font-size: 0.75em;\r\n                color: #fff;\r\n                text-align: end;\r\n                position: absolute;\r\n                bottom: 6px;\r\n                right: 75px;\r\n            }\r\n            h1{\r\n                padding: 0;\r\n                margin: 0;\r\n                font-size: 3em;\r\n                color: #fff;\r\n                padding-left: 0;\r\n                padding-right: 0;\r\n\r\n                sub{\r\n                    font-size: 0.3em;\r\n                    bottom: 7px;\r\n                    position: relative;\r\n                }\r\n                 \r\n            }\r\n        }\r\n    }\r\n\r\n}\r\n\r\n.uxp-select-dropdown-container{\r\n    .uxp-select-dropdown{ \r\n      .uxp-select-option {\r\n            padding: 12px 10px 12px 10px;\r\n        }\r\n    }\r\n}\r\n  \r\n  .afterhours_inner_widget {\r\n    display: inline-block;\r\n    width: 100%;\r\n    margin-top: 0px;\r\n    .afterhours_tree {\r\n      display: inline-flex;\r\n      width: 98%; \r\n      height: 100%;\r\n      position: relative;\r\n     \r\n  \r\n      ul {\r\n        margin: 3px 0 0 0;\r\n        padding: 0;\r\n        display: inline-block;\r\n        width: 95%;\r\n        margin-left: 5%;\r\n        column-count: 2;\r\n  \r\n        li {\r\n            display: inline-block;\r\n            padding-left: 10px;\r\n            position: relative;\r\n            width: 100%;\r\n            box-sizing: border-box;\r\n            padding: 1px 0;\r\n           \r\n          &:last-child {\r\n            &::before {\r\n              display: none;\r\n            }\r\n          }\r\n          p {\r\n            font-size: 9px;\r\n            margin: 3px 0;\r\n            position: relative;\r\n            display: inline-block;\r\n            width: 95%;\r\n            color: #fff;\r\n\r\n            &::before {\r\n                content: \"\";\r\n                position: absolute;\r\n                top: 0px;\r\n                left: -20px;\r\n                width: 15px;\r\n                height: 7px;\r\n                text-align: center;\r\n                pointer-events: none;\r\n                border-radius: 2px;\r\n              }\r\n\r\n            span { \r\n                width: 25%;\r\n                font-size: 8px;\r\n                float: right;\r\n            }\r\n          }\r\n\r\n            &:nth-child(n + 1) { p {&::before { background-color: #82d963; }}} \r\n            &:nth-child(n + 2) { p {&::before { background-color: #f5ec00; }}} \r\n            &:nth-child(n + 3) { p {&::before { background-color: #d879e1; }}} \r\n            &:nth-child(n + 4) { p {&::before { background-color: #5ee3f4; }}} \r\n            &:nth-child(n + 5) { p {&::before { background-color: #7cbef6; }}} \r\n            &:nth-child(n + 6) { p {&::before { background-color: #9d7cf6; }}} \r\n            &:nth-child(n + 7) { p {&::before { background-color: #f79598; }}}  \r\n            &:nth-child(n + 8) { p {&::before { background-color: #f6a67c; }}}  \r\n            &:nth-child(n + 9) { p {&::before { background-color: #1057b4; }}} \r\n            &:nth-child(n + 10) { p {&::before { background-color: #0bccb2; }}} \r\n            &:nth-child(n + 11) { p {&::before { background-color: #650bcc; }}}  \r\n            &:nth-child(n + 12) { p {&::before { background-color: #3bcc0b; }}}  \r\n            &:nth-child(n + 13) { p {&::before { background-color: #0bccb2; }}} \r\n            &:nth-child(n + 14) { p {&::before { background-color: #0b42cc; }}} \r\n            &:nth-child(n + 15) { p {&::before { background-color: #cc0b58; }}}  \r\n            &:nth-child(n + 16) { p {&::before { background-color: #e0a3e7; }}}  \r\n            &:nth-child(n + 17) { p {&::before { background-color: #67d7e9; }}} \r\n            &:nth-child(n + 18) { p {&::before { background-color: #bfcc0b; }}} \r\n            &:nth-child(n + 19) { p {&::before { background-color: #0b78cc; }}}  \r\n            &:nth-child(n + 20) { p {&::before { background-color: #cc0b78; }}}  \r\n            &:nth-child(n + 21) { p {&::before { background-color: #f21456; }}} \r\n            &:nth-child(n + 22) { p {&::before { background-color: #650bcc; }}} \r\n            &:nth-child(n + 23) { p {&::before { background-color: #0b78cc; }}}  \r\n            &:nth-child(n + 24) { p {&::before { background-color: #06f51a; }}} \r\n \r\n          }\r\n        }\r\n      }\r\n     \r\n\r\n    .color_value {\r\n      display: inline-block;\r\n      width: 100%; \r\n      ul {\r\n        display: flex;\r\n        margin: 0;\r\n        padding: 0; \r\n        overflow: hidden;\r\n        li {\r\n          display: inline-block;\r\n          height: 3.4vh;\r\n          width: 10vw;\r\n  \r\n          &:nth-child(n + 1) { background-color: #82d963; }\r\n          &:nth-child(n + 2) { background-color: #f5ec00; }\r\n          &:nth-child(n + 3) { background-color: #d879e1; }\r\n          &:nth-child(n + 4) { background-color: #5ee3f4; }\r\n          &:nth-child(n + 5) { background-color: #7cbef6; }\r\n          &:nth-child(n + 6) { background-color: #9d7cf6; }\r\n          &:nth-child(n + 7) { background-color: #f79598; }\r\n          &:nth-child(n + 8) { background-color: #f6a67c; }\r\n          &:nth-child(n + 9) { background-color: #1057b4; }\r\n          &:nth-child(n + 10) { background-color: #0bccb2; }\r\n          &:nth-child(n + 11) { background-color: #650bcc; }\r\n          &:nth-child(n + 12) { background-color: #3bcc0b; }\r\n          &:nth-child(n + 13) { background-color: #0bccb2; }\r\n          &:nth-child(n + 14) { background-color: #0b42cc; }\r\n          &:nth-child(n + 15) { background-color: #cc0b58; }\r\n          &:nth-child(n + 16) { background-color: #e0a3e7; }\r\n          &:nth-child(n + 17) { background-color: #67d7e9; }\r\n          &:nth-child(n + 18) { background-color: #bfcc0b; }\r\n          &:nth-child(n + 19) { background-color: #0b78cc; }\r\n          &:nth-child(n + 20) { background-color: #cc0b78; } \r\n          &:nth-child(n + 21) { background-color: #f21456; }\r\n          &:nth-child(n + 22) { background-color: #650bcc; }\r\n          &:nth-child(n + 23) { background-color: #0b78cc; }\r\n          &:nth-child(n + 24) { background-color: #06f51a; }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  \r\n  .afterhours-arrow {\r\n    display: inline-block;\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n    width: 17px;\r\n    height: 17px;\r\n    background-size: contain;\r\n    background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.445' height='23.445' viewBox='0 0 23.445 23.445'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23424242;opacity:0.333;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M23.445,11.722A11.722,11.722,0,1,1,11.722,0,11.72,11.72,0,0,1,23.445,11.722ZM9.643,6.239v5.483H6.291a.568.568,0,0,0-.4.969l5.431,5.4a.562.562,0,0,0,.8,0l5.431-5.4a.567.567,0,0,0-.4-.969H13.8V6.239a.569.569,0,0,0-.567-.567H10.21A.569.569,0,0,0,9.643,6.239Z' transform='translate(23.445) rotate(90)'/%3E%3C/svg%3E\");\r\n    left: 50%;\r\n    margin-left: -10px;\r\n    cursor: pointer;\r\n    z-index: 11;\r\n    position: relative;\r\n  \r\n    &#topArrowAfterhours {\r\n      transform: rotate(90deg);\r\n      top: -10px;\r\n      margin-bottom: -11px;\r\n    }\r\n    &#downArrowAfterhours {\r\n      transform: rotate(270deg);\r\n    }\r\n  }\r\n    \r\n\r\n\r\n.progress-bar-container {\r\n    width: 100%; \r\n    display: inline-flex;\r\n   // background: linear-gradient(to right,  #005936 1%,#005842 71%,#01af94 100%);  \r\n\r\n    .progress-bar {\r\n        height: 12px; \r\n      //  background: linear-gradient(to right,  #005842 1%,#005842 41%,#01af94 100%);  \r\n\r\n        \r\n\r\n        &.installedLamps{\r\n            // background: linear-gradient(to right,  #005842 1%,#005842 41%,#01af94 100%);  \r\n            background: #005842;\r\n        }\r\n\r\n        &.working-lamps{\r\n            // background: linear-gradient(to right,  #005936 1%,#005842 71%,#01af94 100%);   \r\n            background: #01af94;\r\n        }\r\n      }\r\n  }\r\n  \r\n \r\n\r\n.top-nav-tabs{\r\n   \r\n    // position: absolute;\r\n    position: relative;\r\n    top: 6em;\r\n    left: 50%;\r\n    z-index: 5;\r\n    transform: translateX(-50%);\r\n    width: 100%;\r\n\r\n    ul{\r\n        padding: 0;\r\n        margin: 0;\r\n        display: inline-flex;\r\n        width: 100%;\r\n\r\n        li{\r\n            list-style: none;\r\n            width: 17%;\r\n            display: inline-block;\r\n            text-align: center;\r\n\r\n            a{\r\n                cursor: pointer;\r\n                display: inline-block;\r\n                width: 100%;\r\n\r\n            span{ \r\n                \r\n                width: 20px;\r\n                height: 20px;\r\n                display: inline-block;\r\n                background-position: center center;\r\n                background-repeat: no-repeat;\r\n                background-size: contain;\r\n                position: relative;  \r\n            }\r\n            label{\r\n                color: #fff;\r\n                // font-size: 0.5vw;\r\n                 font-size: 0.8em;\r\n                width: 100%;\r\n                display: inline-block;\r\n                padding: 5px 0 0 0;\r\n                margin: 0;\r\n                text-transform: uppercase;\r\n                font-weight: 600;\r\n                cursor: pointer;\r\n            } \r\n        } \r\n            &.waste{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock.png);\r\n                }\r\n            } \r\n            &.energy{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/energy.png);\r\n                }\r\n            } \r\n            &.streetlight{\r\n                span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/street-light.png); \r\n                }\r\n            }  \r\n            &.cctv{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/security-camera.png);\r\n                }\r\n            } \r\n            &.water{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/waterdrop.png);\r\n                }\r\n            }\r\n            &.pollution{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/factory.png);\r\n                }\r\n            }\r\n            &.fire{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/fire.png);\r\n                }\r\n            }\r\n            &.emission{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/co2.png);\r\n                }\r\n            }\r\n\r\n             &.active{\r\n                label{\r\n                    color: #0fd6a9; \r\n                } \r\n\r\n\r\n                &.waste{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock-active.png);\r\n                    }\r\n                } \r\n                &.energy{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/energy-active.png);\r\n                    }\r\n                } \r\n                &.streetlight{\r\n                    span{\r\n                           background-image: url(https://static.iviva.com/images/Udhayimages/street-light-active.png); \r\n                    }\r\n                }  \r\n                &.cctv{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/security-camera-active.png);\r\n                    }\r\n                } \r\n                &.water{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/drop-active.png);\r\n                    }\r\n                }\r\n                &.pollution{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/factory-active.png);\r\n                    }\r\n                }\r\n                &.fire{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/fire-active.png);\r\n                    }\r\n                } \r\n                &.carbon-emission{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/co2-active.png);\r\n                    }\r\n                } \r\n                \r\n            }\r\n        }\r\n    }\r\n}\r\n  \r\n  \r\n.weather-list{\r\n    display: inline-block;\r\n    position: relative;\r\n    // top: 2.5em;\r\n    // top: 1em;\r\n    // left: 0;\r\n    //   right: 30px !important;\r\n    align-items: end;\r\n    text-align: right;\r\n    right: 5px !important;\r\n\r\n    ul{  \r\n      margin: 0;\r\n      padding: 0;\r\n      display: inline-flex; \r\n      width: auto;\r\n      border-radius: 5px;\r\n\r\n      li{  \r\n\r\n            list-style: none;\r\n            display: inline-block;\r\n            width: 50px;\r\n            height: 38px;\r\n            margin: 3px 3px;\r\n            text-align: center;\r\n\r\n        a{\r\n            cursor: pointer;\r\n            width: 100%;\r\n            display: inline-block;\r\n            height: 100%;\r\n\r\n          img{\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n          }\r\n        } \r\n          \r\n      }\r\n    }\r\n  }\r\n \r\n  \r\n  .slider {   \r\n    width: 2px;\r\n    height: 20vh;\r\n    position: absolute;\r\n    top: 1em;\r\n    right: 0em;\r\n    border-radius: 20px;\r\n    background: linear-gradient(100deg, rgba(0, 0, 0, 0.100) 0%, rgb(255 255 255 / 100%) 35%, rgba(255, 255, 255, 0) 100%);\r\n    transform: rotate(180deg);\r\n    box-shadow: 0px 0px 1px #353535;\r\n\r\n    &::before{\r\n      background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\r\n      content: \"\";\r\n      width: 12px;\r\n      height: 12px;\r\n      display: block;\r\n      background-size: 100% auto;\r\n      position: absolute;\r\n      bottom: -1.8em;\r\n      left: -4px;\r\n      background-repeat: no-repeat;\r\n      background-position: center center;\r\n      transform: rotate(180deg);\r\n    }\r\n    &::after{\r\n      background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n      content: \"\";\r\n      width: 20px;\r\n      height: 20px;\r\n      display: block;\r\n      background-size: 100% auto;\r\n      position: absolute;\r\n      top: -2.5em;\r\n      left: -8px;\r\n      background-repeat: no-repeat;\r\n      background-position: center center;\r\n  }\r\n\r\n    span{\r\n      width: 20px;\r\n      height: 20px;\r\n      display: inline-block;\r\n      background-color: #fff;\r\n      border-radius: 50%;\r\n      cursor: pointer;\r\n      position: absolute;\r\n      left: -9px;\r\n      bottom: 0.7em;\r\n      box-shadow: 0px 0px 3px #ffffff;\r\n      transition: bottom 0.4s ease;\r\n    }\r\n  }\r\n   \r\n  .slider.active {  \r\n    span{\r\n      bottom: 16vh;  \r\n    }\r\n  }\r\n\r\n\r\n  .timer-widget{\r\n    // display: inline-block;\r\n    // width: 100%;\r\n    // position: relative; \r\n\r\n    // width: 100%;\r\n\t// height: 100%;\r\n\t// position: relative;\r\n\t// display: flex;\r\n\t// align-items: center;\r\n\t// justify-content: center;\r\n\t// border: 1px solid red;\r\n\t// padding: 50px 0;\r\n\r\n    width: 100%;\r\n    height: 100%;\r\n    position: relative; \r\n    // border: 1px solid red; \r\n\r\n\r\n    //Sun Controll new design\r\n    // .timer-icons{\r\n    //     display: inline-block;\r\n    //     width: 20px; \r\n    //     ul{\r\n    //         display: inline-block;\r\n    //         margin: 10px 0 0 0;\r\n    //         padding: 0;\r\n    //         height: 100%;\r\n    //         width: 100%;\r\n    //         li{\r\n    //             display: inline-block;\r\n    //             width: 100%;\r\n    //             height: 37px;\r\n    //             img{\r\n    //                 max-width: 80%;\r\n    //                 max-height: 80%;\r\n    //             }\r\n    //         }\r\n    //     }\r\n    // }\r\n\r\n  .timer-slider {\r\n\r\n    // align-items: center;\r\n    // width: 35%;\r\n    // height: 100%;\r\n    // position: relative;\r\n    // display: inline-flex;\r\n\r\n    align-items: center;\r\n    width: 53%;\r\n    height: 100%;\r\n    position: absolute;\r\n    display: inline-flex;\r\n    right: 1px!important;\r\n    \r\n   \r\n\r\n       .timer-range {\r\n            display: inline-block;\r\n            // width: 100%;\r\n            width: auto;\r\n            transform: rotate(90deg);\r\n            background: linear-gradient(100deg, rgba(0, 0, 0, 0.100) 0%, rgb(255 255 255 / 100%) 35%, rgba(255, 255, 255, 0) 100%);\r\n            box-shadow: 0px 0px 1px #353535; \r\n            -webkit-appearance: none;\r\n            appearance: none;\r\n            -moz-appearance: none;\r\n            outline: none; \r\n            height: 2px;\r\n            position: relative;\r\n\r\n            &::before {  \r\n\r\n                background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n                content: \"\";\r\n                width: 40px;\r\n                height: 40px;\r\n                display: block;\r\n                background-size: 100% auto;\r\n                position: absolute;\r\n                top: -18px;\r\n                left: -50px;\r\n                background-repeat: no-repeat;\r\n                background-position: center center;\r\n                \r\n            }\r\n            &::after {   \r\n                \r\n                background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\r\n                content: \"\";\r\n                width: 35px;\r\n                height: 35px;\r\n                display: block;\r\n                background-size: 100% auto;\r\n                position: absolute;\r\n                bottom: -20px;\r\n                right: -45px;\r\n                background-repeat: no-repeat;\r\n                background-position: center center;\r\n                transform: rotate(160deg);\r\n            }\r\n\r\n                &::-webkit-slider-thumb {\r\n                    -webkit-appearance:none;\r\n                    -moz-appearance:none;\r\n                    appearance:none;\r\n                    // background:#023d28;\r\n                    background:#fefefe;\r\n                    width:18px;\r\n                    height:18px;\r\n                    border-radius:50%; \r\n                    cursor:pointer;\r\n                    box-shadow: 0px 0px 3px #9f9f9f;\r\n                } \r\n                \r\n        }  \r\n   \r\n\r\n    .timer-slider {\r\n        // position: relative;\r\n        display: none;\r\n      }\r\n      \r\n      .tooltip {\r\n        position: absolute;\r\n        background-color: #023d28;\r\n        color: #fff;\r\n        padding: 0.5rem;\r\n        border-radius: 4px;\r\n        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\r\n        font-size: 0.9rem;\r\n\r\n        &:before {\r\n            content: '';\r\n            position: absolute;\r\n            border-style: solid;\r\n            border-width: 8px 0 8px 8px;\r\n            border-color: transparent transparent transparent #023d28;\r\n            top: calc(50% - 8px);\r\n            right: -8px;\r\n          }\r\n      }  \r\n        \r\n        .timer-range ~ .tooltip:hover p {\r\n            visibility: visible;\r\n            opacity: 1;\r\n          } \r\n    } \r\n          \r\n  }\r\n\r\n\r\n  .toggle-container {\r\n    display: inline-block;\r\n    // right: 2.1em;\r\n    position: relative;\r\n    align-items: end;\r\n    text-align: right;\r\n        \r\n        \r\n        .toggle-button { \r\n\r\n            position: relative;\r\n            width: 66px;\r\n            height: 32px;\r\n            border: none;\r\n            background-color: #ccc;\r\n            outline: none;\r\n            cursor: pointer;\r\n            border-radius: 15px;\r\n            padding: 0px;\r\n            margin-top: 0em;\r\n            transform: rotate(90deg);\r\n            margin-right: 0px;\r\n\r\n            .slider-toggle {\r\n                position: absolute;\r\n                width: 27px;\r\n                height: 27px;\r\n                border-radius: 50%;\r\n                background-color: #034d3c;\r\n                transition: transform 0.3s ease;\r\n                top: 2px;\r\n                left: 5px;\r\n\r\n                &.on{\r\n                    transform: translateX(30px);\r\n                }\r\n                \r\n                &.off {\r\n                    transform: translateX(0);\r\n                }\r\n            }\r\n        }\r\n  \r\n    .toggle-label{\r\n        color: #ffffff;\r\n        font-size: 1em;\r\n        text-align: center;\r\n        margin: 15px 0 0 0;\r\n        font-weight: 600;\r\n    }\r\n    \r\n   \r\n}\r\n\r\n.ed3-map-controls-widget-wrapper{\r\n    width: 15%;\r\n    align-items: end;\r\n    text-align: right;\r\n    // right: calc(-50% + 60px);\r\n    // top: 1.5em; \r\n\r\n    .ed3-map-zoom-controls-container { \r\n        transform: rotate(90deg);\r\n        align-items: end;\r\n        text-align: right;\r\n        padding: 0;\r\n\r\n        .ed3-map-zoom-controls-button { \r\n            border-radius: 0;\r\n            background-color: #d2d2d24a; \r\n            margin: 0;\r\n\r\n            &:nth-child(3){\r\n                transform: rotate(90deg);\r\n            }\r\n        }\r\n    }\r\n}\r\n \r\n.smart-city_box{\r\n    .uxp-form-select{\r\n        display: inline-block;\r\n        margin-right: 0.5em;\r\n        width: 23%;\r\n        min-width: 23%;\r\n\r\n        .uxp-select-placeholder{\r\n            font-size: 10px;\r\n            background-color: transparent;\r\n            box-shadow: none;\r\n            color: #fff;\r\n            border-radius: 0;\r\n            padding: 14px 3px;\r\n\r\n            &::before{\r\n                filter: brightness(0) invert(1);\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n.uxp-date-time-picker-container{\r\n    font-size: 10px;\r\n        background-color: transparent;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        border-radius: 0;\r\n        padding: 14px 3px;\r\n\r\n        .date-time-placeholder-container{\r\n            .placeholder{\r\n                font-size: 10px;\r\n            }\r\n            .icon-container{\r\n                .icon{\r\n                    filter: brightness(0) invert(1); \r\n                }\r\n            }\r\n        }\r\n} \r\n\r\n&.mode-change-box{\r\n    display: block;\r\n\r\n    .showcase-input{\r\n       width : 100% !important;\r\n\r\n       .uxp-form-select{\r\n        width: 100%;\r\n\r\n        .uxp-select-placeholder{\r\n            //   font-size: 1em;\r\n             font-size: 0.95em;\r\n            //   border: 1px solid #0fd6a9;\r\n              padding: 10px 10px;\r\n            //   background-color: #005842;\r\n            background-color: rgb(0 88 66 / 50%);\r\n            border-radius: 4px;\r\n\r\n            .selected{\r\n                font-size: 1em;\r\n            }\r\n        }\r\n       }\r\n    }\r\n} \r\n\r\n\r\n\r\n&.building_summary-box{\r\n        .building-details{\r\n\r\n            .building-top{\r\n                display: inline-flex;\r\n                width: 100%;\r\n\r\n                .building-pict{\r\n                    // display: inline-block;\r\n                    // width: 30%;\r\n\r\n                    display: inline-block;\r\n                    width: 21em;\r\n                    height: 18em;\r\n                    background-size:cover ;\r\n                    background-repeat: no-repeat;\r\n                    background-position: center center; \r\n                  \r\n\r\n                    img{\r\n                        max-width: 100%;\r\n                        max-height: 100%;\r\n                    }\r\n                }\r\n                .building-header{\r\n                    display: inline-block;\r\n                    width: 70%;\r\n                    vertical-align: top;\r\n\r\n                    .building-title{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        text-align: center;\r\n                        font-size: 3em;\r\n                        color: #fff;\r\n                        font-weight: bold;\r\n                    }\r\n                    .building-nav{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        text-align: center;\r\n                        margin-top: 3em;\r\n                        ul{\r\n                            display: inline-flex;\r\n                            width: 100%;\r\n                            li{\r\n                                display: inline-block;\r\n                                width: 33%;\r\n                                .building-nav-icon{\r\n                                    display: inline-block;\r\n                                    width: 100%;\r\n\r\n                                    img{\r\n                                        max-width:100% ;\r\n                                        max-height:100% ;\r\n                                        box-shadow: 0 0 9px 5px #16c69b;\r\n                                    }\r\n                                }\r\n                                .building-nav-title{\r\n                                    display: inline-block;\r\n                                    width: 100%;\r\n                                    margin-top: 1em;\r\n                                    font-size: 1.05em;\r\n                                    color: #fff;\r\n                                    font-weight: bold;\r\n\r\n                                    a{\r\n                                        color: #fff;\r\n                                        text-decoration: none;\r\n                                    }\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            .building-info-box{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 0em;\r\n                // background: #12967899;\r\n                padding: 0em 1em 0em 1em;\r\n\r\n                ul{\r\n                    margin: 0;\r\n                    padding: 0;\r\n                    li{\r\n                        list-style: none;\r\n                        display: inline-flex;\r\n                        width: 100%;\r\n                        margin: 0.5em 0;\r\n                        \r\n                        &::before{\r\n                            content: \"\";\r\n                            // background-image: url(\"https://static.iviva.com/images/Udhayimages/blk-star.png\");\r\n                            background-repeat: no-repeat;\r\n                            background-position: 0 0;\r\n                            background-size: contain;\r\n                            width: 17px;\r\n                            height: 17px;\r\n                            filter: invert(1);\r\n                        }\r\n\r\n                        label{\r\n                            display: inline-block;\r\n                            padding: 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                            font-size: 1.6em;\r\n                            margin-right: 1em;\r\n                            margin-left: 0.5em;\r\n                            font-weight: bold;\r\n                        }\r\n                       span{\r\n                            display: inline-block;\r\n                            font-size: 1.4em;\r\n                            color: #fff;\r\n                        }\r\n\r\n                        &.building-code{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/building-code.png\"); \r\n                                \r\n                            }\r\n                        }\r\n                        &.building-name{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/building-name.png\"); \r\n                            }\r\n                        }\r\n                        &.street-number{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/street-number.png\"); \r\n                            }\r\n                        }\r\n                        &.street-name{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/street-name.png\"); \r\n                            }\r\n                        }\r\n                        &.city{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/city.png\"); \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            .building-nearby-box{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 1em;\r\n                background: #12967899;\r\n                padding: 1em;\r\n\r\n                ul{\r\n                    margin: 0;\r\n                    padding: 0;\r\n                    li{\r\n                        list-style: none;\r\n                        display: inline-flex;\r\n                        width: 100%;\r\n                        margin: 0.7em 0;\r\n\r\n                        &::before{\r\n                            content: \"\";\r\n                            // background-image: url(\"https://static.iviva.com/images/Udhayimages/blk-star.png\");\r\n                            background-repeat: no-repeat;\r\n                            background-position: 0 0;\r\n                            background-size: contain;\r\n                            width: 17px;\r\n                            height: 17px;\r\n                            filter: invert(1);\r\n                        }\r\n\r\n                        label{\r\n                            display: inline-block;\r\n                            padding: 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                            font-size: 1.6em;\r\n                            margin-right: 1em;\r\n                            margin-left: 0.5em;\r\n                            font-weight: bold;\r\n                        }\r\n                       span{\r\n                            display: inline-block;\r\n                            font-size: 1.4em;\r\n                            color: #fff;\r\n                        }\r\n\r\n\r\n                        &.hospital{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/hospital.png\"); \r\n                            }\r\n                        }\r\n                        &.pharmacy{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/pharmacy.png\"); \r\n                            }\r\n                        }\r\n                        &.police-station{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/police-station.png\"); \r\n                            }\r\n                        }\r\n                        &.mosques{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/mosques.png\"); \r\n                            }\r\n                        }\r\n                        &.restaurants{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/restaurant.png\"); \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n\r\n            .building-bot{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 1em;\r\n\r\n                .g_map-link{\r\n                    width: auto;\r\n                    text-align: center;\r\n                    float: right;\r\n                    background: rgba(18, 150, 120, 0.6);\r\n                    padding: 10px 10px 10px;\r\n                    border-radius: 4px;\r\n                    a{\r\n                        font-size: 1.1em;\r\n                        color: #fff;\r\n                        text-decoration: none;\r\n                    }\r\n                }\r\n            }\r\n            \r\n        }\r\n}\r\n\r\n&.building_layout-box{\r\n    // background-color: #447d6d;\r\n    // box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.12);\r\n    // border-radius: 10px;\r\n\r\n    .smart-city-content{\r\n        display: block;\r\n        margin-top: 0em;\r\n        flex: 1;\r\n        width: 100%;\r\n        height: 100%;\r\n\r\n        .slideshow-container{\r\n            display: flex;\r\n            width: 100%;\r\n            height: 80%;\r\n        }\r\n    }\r\n\r\n    .slideshow-container{\r\n        margin-left: 0em;\r\n        margin-top: 0;\r\n        position: relative;\r\n        background: #fff;\r\n        padding: 10px;\r\n        display: inline-block;\r\n        width: 100%;\r\n        // height: 46vh;\r\n        height: 80%;\r\n\r\n        .myslides1,  .myslides2,  .myslides3,  .myslides4 {\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        img{\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        .slider-btn{\r\n            display: inline;\r\n            position: absolute;\r\n            top: 50%;\r\n            border: 1px solid #11624b;\r\n            padding: 6px 5px;\r\n            font-size: 1.5em;\r\n            color: #11624b;\r\n            background: #07b9878c;\r\n            cursor: pointer;\r\n\r\n            &.slider-btn.prev {\r\n                left: 0;\r\n            }\r\n            &.slider-btn.next {\r\n                right: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    .build-bhk-boxes{\r\n        display: inline-flex;\r\n        width: 80%;\r\n        margin-top: 2em;\r\n        transform: translate(-50%);\r\n        left: 50%;\r\n        position: relative;\r\n\r\n        .bhk-box{\r\n            display: inline-block;\r\n            border: 1px solid #ffffff;\r\n            width: 30%;\r\n            text-align: center;\r\n            padding: 7px 0;\r\n            font-size: 1em;\r\n            color: #ffffff;\r\n\r\n            &.one_bhk{\r\n                \r\n            }\r\n            &.two_bhk{\r\n                margin: 0 5%;\r\n            }\r\n            &.mep{\r\n                 \r\n            }\r\n            \r\n        }\r\n    } \r\n     \r\n}\r\n\r\n\r\n&.building_layout-box{\r\n    // background-color: #447d6d;\r\n    // box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.12);\r\n    // border-radius: 10px;\r\n\r\n    #ViewsMenu{\r\n        display: inline-block;\r\n        width : 100%;\r\n    \r\n    .model-items{\r\n\r\n        display: inline-flex;\r\n        width : 100%;\r\n\r\n        .menu-item {\r\n            position: relative;\r\n            display: inline-block;\r\n            margin: 15px;\r\n            width: 240px;\r\n            height: 240px;\r\n            box-shadow: 5px 5px 5px #00000080;\r\n            border-radius: 5px;\r\n            background-color: white;\r\n            overflow: hidden;\r\n            vertical-align: top;\r\n\r\n            .item-header {\r\n                position: relative;\r\n                height: 110px;\r\n\r\n                .blue-plate {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 3px;\r\n                    height: 100px;\r\n                    width: 234px;\r\n                    opacity: 0.8;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/searchbg.svg);\r\n                    background-repeat: no-repeat;\r\n                }\r\n\r\n                .header-image {\r\n                    position: absolute;\r\n                    height: 94px;\r\n                    width: 234px;\r\n                    padding-top: 3px;\r\n                    padding-left: 3px;\r\n                    border: none;\r\n                    display: none;\r\n                }\r\n\r\n                .header-no-image {\r\n                    position: absolute;\r\n                    height: 50px;\r\n                    width: 230px;\r\n                    top: 20px;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/Viewport_single.svg);\r\n                    background-repeat: no-repeat;\r\n                    background-position: center;\r\n                    opacity: 0.3;\r\n                }\r\n\r\n                .blue-overlay {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 3px;\r\n                    height: 100px;\r\n                    width: 234px;\r\n                    opacity: 0.2;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/searchbg.svg);\r\n                    background-repeat: no-repeat;\r\n                    display: none;\r\n                }\r\n                .blue-overlay-mask {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 79px;\r\n                    height: 35px;\r\n                    width: 234px;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/Mask_bleed.svg);\r\n                    background-repeat: no-repeat;\r\n                    display: none;\r\n                } \r\n\r\n            }\r\n            .primary-text {\r\n                color: #0066ff;\r\n                font-size: 18px;\r\n                margin: 0 10px 0 10px;\r\n            }\r\n            .secondary-text {\r\n                color: #424242;\r\n                font-size: 14px;\r\n                margin: 0 10px 0 10px;\r\n                overflow-wrap: break-word;\r\n            }\r\n            .centering-container {\r\n                text-align: center;\r\n                position: absolute;\r\n                width: 100%;\r\n                bottom: 25px;\r\n\r\n                .blue-button.enabled {\r\n                    color: white;\r\n                    background-color: #0066ff;\r\n                    border-color: white;\r\n                    cursor: pointer;\r\n                    a{\r\n                        color: white;\r\n                        text-decoration: none;\r\n                    }\r\n                }\r\n\r\n                .blue-button {\r\n                    color: #0066ff;\r\n                    background-color: white;\r\n                    font-size: 14px;\r\n                    padding: 5px 20px 5px 20px;\r\n                    border: 1px solid #0066ff;\r\n                    border-radius: 13px;\r\n                    display: inline-block;\r\n                }\r\n            }\r\n        }\r\n    }\r\n    }\r\n}\r\n\r\n\r\n.floor-occupancy-box{\r\n\r\n}\r\n\r\n// .uxp-select-dropdown-container{\r\n//     background: transparent;\r\n//     border: 1px solid;\r\n//     border-radius: 0;\r\n\r\n//     .data-list-container{\r\n//         background: transparent;\r\n        \r\n//         .data-list{\r\n//             background: transparent;\r\n//         }\r\n//     }\r\n// }\r\n}\r\n\r\n\r\n.searchBox-widget{\r\n    display: inline-block;\r\n    width: 100%;\r\n\r\n    .searchbox-container{\r\n        position: relative;\r\n        // top: 1.3em;\r\n        // right: -1em;\r\n        align-items: end;\r\n        text-align: right;\r\n\r\n        .searchbox{\r\n            border: 1px solid #033649;\r\n            padding: 9px 5px;\r\n            border-radius: 5px;\r\n            font-size: 1em;\r\n            // width: 100%;\r\n            width: 90%;\r\n            text-align: left;\r\n            outline: none;\r\n            margin-right: 6%;\r\n            &:focus{\r\n                outline: none;\r\n            }\r\n        }\r\n \r\n        .clear-button{\r\n            position: absolute;\r\n            top: 0.6em;\r\n            right: 0.7em;\r\n            font-size: 1.1em;\r\n            font-weight: bold;\r\n            cursor: pointer;\r\n        }\r\n    }\r\n\r\n   \r\n\r\n    ul.search-list{\r\n        padding: 0;\r\n        margin: 1.5em 0 0 1em;\r\n        color: #fff;\r\n        height: 5em;\r\n        overflow: auto;\r\n        text-align: left;\r\n        width: 90%;\r\n\r\n        li{\r\n            list-style: none; \r\n            margin: 0 0 3px 0;\r\n            padding: 6px 5px;\r\n            width: 100%;\r\n            cursor: pointer; \r\n\r\n            &:hover{ \r\n                background: rgba(17, 8, 8, 0.708);\r\n            }\r\n        }\r\n    }\r\n  }\r\n\r\n  #streamingVideo {\r\n    // top: -1.5em;\r\n    top: 0em;\r\n}\r\n\r\n// .overall-building{\r\n//     width: 100%;\r\n//     display: inline-block;\r\n//     height: 100%;\r\n   \r\n//     .building_layout-box{ \r\n//         width: 40%;\r\n//         display: inline-block;\r\n//     }\r\n//     .building_summary-box{\r\n//         width: 40%; \r\n//         float: right;\r\n//     } \r\n  \r\n// }\r\n\r\n\r\n.smplr-wrapper {\r\n    position: relative;\r\n    width: 100%;\r\n    //max-width: calc(16 / 9 * 75vh);\r\n    aspect-ratio: 16 / 9;\r\n    background-color: #ecf1f5;\r\n  }\r\n  \r\n  .smplr-embed {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\n  #powered-by{display: none;}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"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","sourcesContent":[" \r\n.main-content-block {\r\n    // width: 100%;\r\n    // display: inline-block; \r\n    // background-image: url(/images/Madina_1.jpeg);\r\n    // background-image: url(https://static.iviva.com/images/Udhayimages/Madina_1.jpeg);\r\n    // background-size: 100% 100%;\r\n    // background-position: center center;\r\n    // background-repeat: no-repeat;\r\n    // position: relative;\r\n    // z-index: 0;\r\n\r\n    \r\n\r\n    .widget-container-block {\r\n        z-index: 1;\r\n        position: relative;\r\n        min-height: 176vh;\r\n        background: #023d2875; \r\n \r\n    }\r\n//For E3D ref//\r\n//For E3D ref//\r\n.react-grid-layout{\r\n    z-index: 1;\r\n}\r\n.react-grid-layout.player{\r\n    z-index: 1;\r\n    position: relative;\r\n    // background : radial-gradient(ellipse at center center, rgb(255 255 255 / 0%) 0%, rgb(0 29 19 / 60%) 45%, rgb(0 0 0 / 84%) 100%);\r\n    // background : radial-gradient(ellipse at center center, rgb(255 255 255 / 0%) 0%, rgb(0 29 19 / 53%) 45%, rgb(0 0 0 / 74%) 100%);\r\n\r\n    // background-size: 100% 100%;\r\n    // background-position: 0px 0px,0px 0px,0px 0px;\r\n    // background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%),radial-gradient(75% 75% at 50% 50%, #0000 65%, #142827EB 85%);\r\n \r\n//     background-size: 100% 100%;\r\n// background-position: 0px 0px,0px 0px,0px 0px;\r\n// background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%);\r\n\r\n\r\n\r\n    padding-top: 1.5em; \r\n\r\n    &::before{  \r\n\r\n        content: \"\";\r\n        left: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 100vh;\r\n        position: absolute;\r\n        z-index: 1; \r\n      \r\n        // background-size: 100% 100%;\r\n        // background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;\r\n        // background-image: linear-gradient(90deg, #0000 71%, #006C5FAB 89%),linear-gradient(270deg, #0000 71%, #006C5FAB 89%),linear-gradient(0deg, #0000 86%, #006C5FC9 100%);\r\n        \r\n\r\n        // background-size: 100% 100%;\r\n        // background-position: 0px 0px,0px 0px,0px 0px;\r\n        // background-image: linear-gradient(90deg, #0000 76%, #006056C9 95%),linear-gradient(270deg, #0000 76%, #006056C9 95%),linear-gradient(0deg, #0000 88%, #0060567D 95%);\r\n\r\n        background-size: 100% 100%;\r\n        background-position: 0px 0px,0px 0px,0px 0px;\r\n       // background-image: linear-gradient(90deg, #0000 76%, #006056AD 89%, #006056C9 96%),linear-gradient(270deg, #0000 76%, #006056AD 89%, #006056C9 96%),linear-gradient(0deg, #0000 88%, #0060567D 95%);\r\n       \r\n        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 70%, rgb(8 55 50 / 91%) 85%, rgb(0 61 54 / 92%) 96%), linear-gradient(270deg, rgba(0, 0, 0, 0) 70%, rgb(8 55 50 / 91%) 85%, rgb(0 61 54 / 92%) 96%), linear-gradient(0deg, rgba(0, 0, 0, 0) 88%, rgba(0, 96, 86, 0.4901960784) 95%);\r\n\r\n        pointer-events: none;\r\n\r\n    } \r\n\r\n    &::after{  \r\n\r\n        content: \"\";\r\n        right: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 100vh;\r\n        position: absolute;\r\n        z-index: 1; \r\n        background-size: 100% 100%;\r\n        background-position: 0px 0px,0px 0px,0px 0px;\r\n       // background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%);\r\n        pointer-events: none;\r\n\r\n    } \r\n}\r\n}\r\n\r\n    .smart-city_box{ \r\n        background: rgb(0 0 0 / 0%); \r\n        box-shadow: none;\r\n        border-radius: 10px;\r\n        z-index: 1;\r\n\r\n        \r\n        \r\n         .uxp-widget-title-bar{ \r\n            background: transparent;\r\n            color: #1f9b7f;\r\n            border-bottom: 1px solid #dedede;\r\n            margin-bottom: 1em;\r\n            padding: 0;\r\n            outline: none;\r\n            min-height: 38px;\r\n            width: 95%;\r\n            position: relative;\r\n\r\n            .title-section { \r\n                font-size: 1em;\r\n                padding-left: 2.5em;\r\n            }\r\n\r\n            &::before{\r\n                content: \"\";\r\n                position: absolute;\r\n                background-color: #dededea1;\r\n                width: 6%;\r\n                height: 3px;\r\n                bottom: -4px;\r\n                left: 0;\r\n                border-radius: 0px 0px 30px 30px;\r\n            }\r\n\r\n            &::after{\r\n                content: \"\";\r\n                position: absolute;\r\n                background-color: #dededea1;\r\n                width: 6px;\r\n                height: 6px;\r\n                bottom: -3px;\r\n                right: -6px;\r\n                border-radius: 50%;\r\n            }\r\n\r\n                .txt{\r\n                    // color: #1f9b7f;  \r\n                    color: #0fd6a9;\r\n                    font-weight: 600;\r\n                     font-size: 1.1em;\r\n                    // font-size: .9vw;\r\n                }\r\n        }\r\n\r\n        .sub_title_bar{\r\n            /* border-bottom: 1px solid #c2e6da; */\r\n            margin-bottom: 0.8em;\r\n            padding: 0;\r\n            min-height: 15px;\r\n            width: 80%;\r\n             font-size: 0.95em;\r\n            // font-size: 0.8vw;\r\n            color: #fff;\r\n            font-weight: 500;\r\n            outline: none;\r\n\r\n            &.district-waste{\r\n                background-image: url(\"https://static.iviva.com/images/Udhayimages/garbage1.png\");\r\n                background-position: left top;\r\n                background-repeat: no-repeat;\r\n                background-size: contain;\r\n                width: 100%;\r\n                padding-left: 20px;\r\n            }\r\n        }\r\n\r\n        .smart-city-content {\r\n           display: inline-block; \r\n            width: 95%;\r\n            margin-top: 1em;   \r\n           \r\n            // overflow-x: hidden!important;\r\n\r\n            // display: block;\r\n            // margin-top: 1em;\r\n            // flex: 1;\r\n            // width: 100%;\r\n            // height: 100%;\r\n        \r\n            /* width */\r\n            &::-webkit-scrollbar {\r\n                width: 5px!important;\r\n            }\r\n        \r\n            /* Track */\r\n            &::-webkit-scrollbar-track {\r\n                background: #aafbe8!important; \r\n            }\r\n        \r\n            /* Handle */\r\n            &::-webkit-scrollbar-thumb {\r\n                \r\n                background: #08ac87!important; \r\n            }\r\n        \r\n            /* Handle on hover */\r\n            &::-webkit-scrollbar-thumb:hover {\r\n                background: #08ac87!important;  \r\n            }\r\n\r\n            .technician_chart{ \r\n                // width: 100%;\r\n                // height: 90%;\r\n\r\n                // width: 100%;\r\n                // height: 90%;\r\n                // margin-top: 1em;\r\n                // display: flex;\r\n\r\n            }\r\n        } \r\n\r\n    &.order_trend-box{\r\n        .smart-city-content{\r\n\r\n            display: block;\r\n            margin-top: 1em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n            \r\n            .technician_chart{ \r\n                .recharts-text{\r\n                    fill:#ededed;\r\n                }\r\n            } \r\n        }\r\n    }\r\n\r\n    &.order_summary-box{ \r\n\r\n        .smart-city-content{\r\n            height: 250px; \r\n            overflow: auto;\r\n\r\n            .data-list-container{\r\n                background-color: transparent;\r\n\r\n                .data-list{\r\n                    background-color: transparent;\r\n                    overflow: hidden;\r\n\r\n                    .data-table{\r\n                        background-color: transparent;\r\n                        tr {\r\n                            background-color: transparent;\r\n\r\n                            th{ \r\n                                background-color: transparent;\r\n                                color: #1dcb8d;\r\n                                text-align: left;\r\n                                padding: 10px 3px;\r\n                                font-size: 10px;\r\n                            }\r\n                            td{\r\n                                .item-card{\r\n                                    background-color: transparent;\r\n                                    color: #ffffff;\r\n                                    min-height: 30px; \r\n\r\n                                   \r\n\r\n                                    .content{\r\n                                        padding: 0;\r\n                                        .sub-title{\r\n                                            font-size: 10px;\r\n                                        }\r\n                                    }\r\n\r\n                                        &::after{\r\n                                            content: \"\";\r\n                                            width: 18px;\r\n                                            height: 18px;\r\n                                            position: absolute;\r\n                                            top: 5px;\r\n                                            background-size: 100% auto;\r\n                                            background-repeat: no-repeat;\r\n                                            left: 0%;\r\n                                        } \r\n\r\n                                        &.attention{ \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');\r\n                                                } \r\n                                        }\r\n                                        &.pending{ \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');\r\n                                                } \r\n                                        }\r\n                                        &.resloved{\r\n                                            \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');\r\n                                                } \r\n                                        } \r\n\r\n                                        &.Green{\r\n                                            .content{\r\n                                                .sub-title{\r\n                                                    background-color: #00b36c; \r\n                                                    padding: 5px 5px;\r\n                                                    border-radius: 1px;\r\n                                                    width: 44px;\r\n                                                    text-align: center;\r\n                                                }\r\n                                            }\r\n                                        }\r\n                                        &.Red{\r\n                                            .content{\r\n                                                .sub-title{\r\n                                                    background-color: #cb0000; \r\n                                                    padding: 5px 5px;\r\n                                                    border-radius: 1px;\r\n                                                    width: 44px;\r\n                                                    text-align: center;\r\n                                                }\r\n                                            }\r\n                                        }\r\n                                }\r\n                            } \r\n                        }\r\n                    }\r\n                }\r\n\r\n                .data-list-footer{\r\n                    background-color: transparent;\r\n\r\n                    .go-up-btn-container{\r\n                        background-color: rgb(5 81 54 / 34%);\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n \r\n    &.cctv-box{ \r\n\r\n        .body{\r\n            height: 250px;  \r\n            width: 100%;\r\n            display: inline-block;\r\n            background-image: url(https://static.iviva.com/images/Udhayimages/waste-footage.jpg);\r\n            // background-size: 100% 100%;\r\n            background-size: auto 100%;\r\n            background-position: center center;\r\n            background-repeat: no-repeat;\r\n        }\r\n    }\r\n\r\n    &.waste-bin-box{ \r\n\r\n        .smart-city-content{\r\n            // display: block;\r\n            // margin-top: 1em;\r\n            // flex: 1;\r\n            // width: 100%;\r\n            // height: 100%;\r\n\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                // padding: 1em 8% 1.3em 8%;\r\n                padding: 0.5em 0% 1em 0%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n\r\n                    h3{\r\n                        font-size: 1.8em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        text-shadow: 0px 0px 1px #000000, 0px 0px 2px #dcdcdc;\r\n\r\n                        span{\r\n                            font-size: 0.5em;\r\n                        }\r\n                    }\r\n                    p{\r\n                        font-size: 0.8em;\r\n                        padding: 0.5em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                        position: relative;\r\n\r\n                        &::after{\r\n                            content: \"\";\r\n                            width: 16px;\r\n                            height: 16px;\r\n                            position: absolute;\r\n                            top: 5px;\r\n                            background-size: 100% auto;\r\n                            background-repeat: no-repeat;\r\n                            right: 16%;\r\n                        }\r\n                    }\r\n\r\n                &.Attention{\r\n                    h3{\r\n                       color: rgb(211, 1, 1);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');\r\n                        }\r\n                    }\r\n                }\r\n                &.Pending{\r\n                    h3{\r\n                        color: rgb(218, 218, 1);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');\r\n                        }\r\n                    }\r\n                }\r\n                &.Resloved{\r\n                    h3{\r\n                        color: rgb(19 232 61);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');\r\n                        }\r\n                    }\r\n                }\r\n                }\r\n            }\r\n\r\n\r\n            .technician_chart{\r\n                margin-top: 0em;\r\n                // height: 90%;\r\n\r\n                .chart-sec{\r\n                    width: 100%;\r\n                    display: flex;\r\n                    margin-top: 0.85em;\r\n\r\n                    .chart-issue{\r\n                       display: inline-block;\r\n                       width: 75%;\r\n                       text-align: center;\r\n                    }\r\n                    .chart-pending{\r\n                        display: inline-block;\r\n                        width: 25%;\r\n                        text-align: center;\r\n                    }\r\n                    h3{\r\n                        font-size: 1.7em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    p{\r\n                        font-size: .85em;\r\n                        padding: 0;\r\n                        margin: 0.3em 0 0 0;\r\n                        color: #fff;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n    &.waste-collection-vehicle{ \r\n\r\n        .smart-city-content{\r\n             margin-top: 0;\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 2% 3em 2%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n\r\n                    .vahicle-icon{\r\n                        display: inline-block;\r\n                        width: 52px;\r\n                        height: 52px;\r\n                        background-position: center center;\r\n                        background-repeat: no-repeat;\r\n                        background-size: 75% auto;\r\n                        margin-bottom: 0.5em;\r\n                        // background-color: #ffffff9c;\r\n                        border-radius: 10px;\r\n                        filter: drop-shadow(0px 0px 2px #fff);\r\n\r\n                        &.co2-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);\r\n                        }\r\n                        &.fuel-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);\r\n                        }\r\n                        &.s-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/money.png);\r\n                        }\r\n                    }\r\n\r\n                    p{\r\n                        font-size: 0.9em;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 1.8em;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n\r\n                       \r\n                    }\r\n                   span{\r\n                        font-size: 0.75em;\r\n                        color: #fff;\r\n                   }\r\n\r\n                }\r\n            } \r\n \r\n        }\r\n    }\r\n\r\n    &.segregation_metrics-box{\r\n        .recharts-legend-wrapper{\r\n            width: 180px !important;\r\n            // right: -145px !important;\r\n           right : -35px !important;\r\n            top: 20px;\r\n            left: auto !important;\r\n\r\n            ul{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin: 0;\r\n                padding: 0;\r\n                li{\r\n                    padding: 0.7em 0;\r\n                    list-style: none;\r\n\r\n                    .data_values{\r\n                        margin-left: 10px;\r\n                    }\r\n                    em{\r\n                        width: 10px;\r\n                        height: 7px;\r\n                        display: inline-block;\r\n                        margin-right: 5px;\r\n                        vertical-align: top;\r\n                        margin-top: 3px;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        &.waste-segregation_metrics-box{\r\n            .recharts-legend-wrapper{\r\n               right: -145px !important;  \r\n            }\r\n        }\r\n    }\r\n\r\n    &.vehicle_summary-box{\r\n        .smart-city-content{\r\n\r\n            display: block;\r\n            margin-top: 0em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n\r\n\r\n            .technician_chart{\r\n                // display: flex;\r\n                // width: 90%; \r\n                // height: 95%;\r\n\r\n                text{color: #fff; fill:#fff!important;} \r\n            }\r\n        }\r\n    }\r\n\r\n    &.energy_consumption-box{ \r\n\r\n        .smart-city-content{\r\n                display: block;\r\n                margin-top: 1em;\r\n                flex: 1;\r\n                width: 100%;\r\n                height: 100%;\r\n\r\n\r\n            .technician_chart{ \r\n                margin-top: 0em; \r\n                height: 90%;\r\n                .recharts-wrapper{\r\n                    fill: transparent; \r\n                    font-size: .88em;\r\n                }\r\n                .recharts-layer, .recharts-cartesian-axis-line{\r\n                    text{ fill:#fff!important;} \r\n                }\r\n                .recharts-cartesian-axis-ticks, .recharts-legend-item-text{\r\n                    fill:#fff!important;\r\n                    color: #fff;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    &.water_summary-box{ \r\n\r\n        .smart-city-content{\r\n             \r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 0% 0em 0%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n                    // background-color: rgba(0, 97, 67, 0.61);\r\n                    background-color: rgba(13, 80, 60, 0.77);\r\n                    border-radius: 10px;\r\n                    margin-right: 3%;\r\n                    padding-bottom: 1em;\r\n\r\n                    .vehicle-icon{\r\n                        display: inline-block;\r\n                        width: 60px;\r\n                        height: 60px;\r\n                        background-position: center center;\r\n                        background-repeat: no-repeat;\r\n                        background-size: 75% auto;\r\n                        margin-bottom: 0.5em;\r\n                        margin-top: 0.8em;\r\n\r\n                        &.co2-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-consumption.png);\r\n                        }\r\n                        &.fuel-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-polution.png);\r\n                        }\r\n                        &.s-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-troubles.png);\r\n                        }\r\n                    }\r\n\r\n                    p{\r\n                        font-size: 0.85em;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 2.2em;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n\r\n                        span{\r\n                            font-size: 0.3em; \r\n                        }\r\n                    }\r\n                   span{\r\n                        font-size: 0.85em;\r\n                        padding-bottom: 1em;\r\n                       \r\n                        &.red{\r\n                            color: #ff0000;\r\n                        }\r\n                        &.green{\r\n                            color: #00e51a;\r\n                        }\r\n                   }\r\n                    &:last-child{\r\n                        margin-right: 0;\r\n                    }\r\n                }\r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.water_consumption-box{\r\n        .smart-city-content{\r\n            display: block;\r\n            margin-top: 1em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 0% 0em 0%;\r\n                color: #ffffff;\r\n                height: 90%;\r\n\r\n                .recharts-surface{\r\n                    fill: #ffffff;\r\n                    color: #ffffff;\r\n                    .recharts-layer{\r\n                        fill: #ffffff;\r\n                        color: #ffffff;\r\n                    } \r\n                } \r\n                 \r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.iaq-box{ \r\n\r\n        .smart-city-content{\r\n             \r\n            .status-content{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin: 0;\r\n                padding: 0;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 30%;\r\n                    text-align: center;\r\n                    // background-color: rgba(0, 97, 67, 0.61);\r\n                    // background-color: rgb(7 34 26 / 77%);\r\n                    border-radius: 2px;\r\n                    padding: 2em;\r\n                    margin: 1em 0em 0em 1em;\r\n                    background-color: rgb(13 80 60 / 77%);\r\n\r\n                   \r\n\r\n                    p{\r\n                        font-size: 1em;\r\n                        // font-size: .8vw;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 2.2em;\r\n                        // font-size: 1.7vw;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n                    }\r\n                   span{\r\n                         font-size: 0.85em;\r\n                        // font-size: .7vw;\r\n                        padding-bottom: 1em;\r\n                        color: #fff; \r\n                        font-weight: bold;\r\n                   }\r\n\r\n                   &.NO2, &.CO {\r\n                        p, h2, span{\r\n                            \r\n                            color: rgb(209, 171, 0);\r\n                        } \r\n                   }\r\n                   &.SO2 {\r\n                    p, h2, span{\r\n                        \r\n                        color: rgb(118, 0, 0);\r\n                    } \r\n               }\r\n\r\n                }\r\n\r\n                .air-quality-status-overall{\r\n                    \r\n                    display: inline-block;\r\n                    width: 100%;\r\n                    text-align: center;\r\n\r\n                    .air-quality-status-box{\r\n                        display: inherit;\r\n                        width: 60%; \r\n                        border-radius: 2px;\r\n                        padding: 2em;\r\n                        margin: 0em 1em 1em 1em;\r\n                        text-align: center;\r\n                        text-transform: uppercase;\r\n                        align-items: center;\r\n                        // background-color: rgb(7 34 26 / 77%);\r\n                        background-color: rgb(13 80 60 / 77%);\r\n    \r\n                        p{\r\n                            font-size: 1em;\r\n                            padding: 0em 0 0 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                        }\r\n                        h5{\r\n                            font-size: 2.3em;\r\n                            padding: 0;\r\n                            margin: 0.4em 0 0.2em 0;\r\n                            color: #fff;\r\n                        }\r\n                    }\r\n\r\n                        .air-progress-bars{\r\n                            display: flex;\r\n                            width: 60%;\r\n                            margin-left: 20%;\r\n                            margin-top: 2em;\r\n                      \r\n\r\n                            .semi-circle-progress-bar {\r\n                                width: 50%;\r\n                                height: 130px;\r\n                                position: relative;\r\n                                display: flex;\r\n                                align-items: center;\r\n                                justify-content: center;\r\n                                flex-direction: column;\r\n\r\n                                svg {\r\n                                    transform: rotate(-90deg);\r\n                                    width: 100%;\r\n                                    height: 100%;\r\n                                }\r\n                                \r\n                                circle {\r\n                                    fill: transparent;\r\n                                    stroke-width: 8;\r\n                                    stroke: #fff;\r\n                                }\r\n                                \r\n                                .progress-bar {\r\n                                    fill: transparent;\r\n                                    stroke-width: 10px;\r\n                                    stroke: rgb(0 97 67);\r\n                                    stroke-dasharray: 64;\r\n                                    stroke-dashoffset: 0;\r\n                                    transition: stroke-dashoffset 0.5s ease;\r\n                                }\r\n                                \r\n                                .percentage {\r\n                                    position: absolute;\r\n                                    top: 40%;\r\n                                    left: 50%;\r\n                                    transform: translate(-50%, -50%);\r\n                                    font-size: 18px;\r\n                                    font-weight: bold;\r\n                                    color: #fff;\r\n                                }\r\n                                .value{\r\n                                    font-size: 13px;\r\n                                    font-weight: normal;\r\n                                    color: #fff;\r\n                                    position: absolute;\r\n                                    top: 58%;\r\n                                    left: 50%;\r\n                                    transform: translate(-50%, -50%);\r\n                                }\r\n                            } \r\n\r\n                        }\r\n                } \r\n                \r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.compare-iaq{\r\n\r\n        .smart-city-content {\r\n\r\n            // display: block;\r\n            // margin-top: 0em;\r\n            // flex: 1;\r\n            // width: 100%;\r\n            // height: 100%;\r\n\r\n\r\n            .status-content {\r\n\r\n                // display: flex;\r\n                // width: 100%; \r\n                // height: 90%;\r\n\r\n                .loaction-status-content{\r\n                    display: inline-block;\r\n                    width: 46%;\r\n                    text-align: center;\r\n        \r\n                   .status { \r\n\r\n                        display: inline-block;\r\n                        width: 28%;\r\n                        text-align: center;\r\n                        // background-color: rgba(0, 97, 67, 0.61);\r\n                        // background-color: rgb(7 34 26 / 77%);\r\n                        background-color: rgb(13 80 60 / 77%);\r\n                        border-radius: 2px;\r\n                        padding: 0.8em;\r\n                        margin: 0.8em 0.8em 0em 0em;\r\n\r\n                        &.yellow-bg{\r\n                           background-color: rgb(209 171 0);\r\n                        }\r\n                        &.red-bg{\r\n                            background-color: rgb(118 0 0);\r\n                        }\r\n                        \r\n                        p{\r\n                            font-size: 0.88em;\r\n                        }\r\n                        span{\r\n                            font-size: 0.75em;\r\n                        }\r\n\r\n                        &:nth-child(4n), &:nth-child(7n){\r\n                            margin-right: 0em;\r\n                        }\r\n        \r\n                        h2 {\r\n                            font-size: 1.3em;\r\n                            padding: 0;\r\n                            margin: 0.2em 0 0.1em 0;\r\n                            color: #fff;\r\n                        } \r\n                       \r\n                    }\r\n                    &.loaction2-status-content { \r\n                            margin-left:0em; \r\n                    } \r\n\r\n                    .uxp-form-group{\r\n                        .uxp-search-box-container{ \r\n\r\n                            .uxp-input-container{\r\n                                .uxp-form-input{\r\n                                    width: 100%;\r\n                                    min-width: 100%;\r\n                                }\r\n                            } \r\n                        } \r\n                    }\r\n                }\r\n\r\n                .versus{\r\n                    display: inline-block;\r\n                    width: 8%;\r\n                    color: #fff;\r\n                    font-size: 1.2em;\r\n                    text-align: center;\r\n                    vertical-align: top;\r\n                    padding-top: 10em;\r\n                }\r\n            } \r\n\r\n            &.smart-city-content-chart{\r\n                display: block;\r\n                margin-top: 0em;\r\n                flex: 1;\r\n                width: 100%;\r\n                height: 100%;\r\n\r\n                .status-content { \r\n                    display: flex;\r\n                    width: 100%; \r\n                    height: 40%;\r\n                }\r\n            }\r\n        }\r\n      \r\n    }\r\n\r\n    .top_tabs{\r\n        float: right;\r\n        width: auto;\r\n\r\n        .uxp-toggle-filter, .toggle-filter{\r\n                background: transparent;\r\n                float: right;\r\n                margin: 0;\r\n                display: inline-flex;\r\n\r\n            .uxp-toggle-option, button{\r\n\r\n                    background: rgb(3, 7, 9);\r\n                    color: #fff;\r\n                    font-size: 1em;\r\n                    text-transform: uppercase;\r\n                    border-radius: 2px;\r\n                    margin: auto 0px;\r\n                    outline: none;\r\n                    border: none;\r\n                    padding: 8px 20px;\r\n                    cursor: pointer;\r\n\r\n                &.selected, &.active{ \r\n\r\n                    background: #18d6b8;\r\n                    box-shadow: 0px 0px 12px 1px #02eec9;\r\n                }\r\n            }\r\n        } \r\n    }\r\n\r\n    &.cctv-overview-box{\r\n        .uxp-widget-title-bar{\r\n            width: 100%;\r\n        }\r\n\r\n        .uxp-toggle-filter{\r\n            background: transparent;\r\n            .uxp-toggle-option{\r\n\r\n                    background: rgb(3, 7, 9);\r\n                    color: #fff;\r\n                    font-size: 1em;\r\n                    text-transform: uppercase;\r\n                    border-radius: 2px;\r\n                    margin: auto 0px;\r\n\r\n                &.selected{\r\n                    // background: rgb(0 180 151);\r\n                    background: #18d6b8;\r\n                    box-shadow: 0px 0px 12px 1px #02eec9;\r\n                }\r\n            }\r\n        }\r\n\r\n        .smart-city-content{\r\n            width: 100%;\r\n            .status-content{\r\n                .cctv-list{\r\n                    display: inline-block;\r\n                    width: 18%;\r\n                    margin-right: 2%;\r\n                    margin-bottom: 2em;\r\n\r\n                    &:nth-child(5n){\r\n                        margin-right: 0;\r\n                    }\r\n                    select{\r\n                        background: transparent;\r\n                        outline: none;\r\n                        border: none;\r\n                        color: #fff;\r\n                        font-size: 1em;\r\n                        margin: 10px 0px;\r\n                        width: 100%;\r\n                        text-transform: uppercase;\r\n                        option {\r\n                            padding: 8px 12px;\r\n                            cursor: pointer;\r\n                            background-color: rgba(0, 97, 67, 0.61);\r\n\r\n                            &:checked, &:hover {\r\n                                background-color: rgba(0, 97, 67, 0.61);\r\n                                color: #fff;\r\n                            }\r\n                            \r\n                        }\r\n                    }\r\n                    .cctv-pict{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        img{\r\n                            // height: 19.5em;\r\n                            height: 26vh;\r\n                            width: 100%;\r\n                            border: 1px solid #012417;\r\n                        }\r\n                    }\r\n\r\n                    .loction{\r\n                        color: #fff;\r\n                        font-size: 0.8em;\r\n                        margin-top: .7em;\r\n                    }\r\n                    .loction-number{\r\n                        color: #fff;\r\n                        font-size: 0.8em;\r\n                        margin-top: .7em;\r\n                    }\r\n                    .loction-status{\r\n                        color: #fff;\r\n                        padding: 4px 0;\r\n                        width: 60px;\r\n                        text-align: center;\r\n                        margin-top: 0.7em;\r\n                        font-size: 0.85em;\r\n\r\n                        &.Red{\r\n                            background: #cb0000;\r\n                        }\r\n                        &.Green{\r\n                            background: #00b36c;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .chart-top{\r\n        display: flex;\r\n        justify-content: flex-end;\r\n        margin-bottom: 0em;\r\n\r\n        .uxp-toggle-filter{\r\n            background: transparent;\r\n            display: inline-flex;\r\n            padding: 0;\r\n\r\n            width: 158px;\r\n\r\n            .uxp-toggle-option{\r\n                color: #00c397;\r\n                box-shadow: none;\r\n                font-weight: bold;\r\n                font-size: 1em;\r\n                padding: 8px 6px;\r\n                border-radius: 0;\r\n\r\n                &.selected{\r\n                    box-shadow: none;\r\n                    background: transparent;\r\n                    color: #ffffff;\r\n                }\r\n            }\r\n        }\r\n        .showcase-input{\r\n            display: flex;\r\n            width: 100%!important;\r\n            padding: 0;\r\n\r\n            .uxp-search-box-container{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 27%;\r\n                min-width: 27%;\r\n\r\n              \r\n\r\n                .uxp-input-container{ \r\n                    width: 70%;\r\n                    min-width: 70%;\r\n\r\n                    .uxp-form-input{ \r\n                        width: 100%;\r\n                        font-size: 9px;\r\n                        min-width: 140%;\r\n                    }\r\n                }\r\n\r\n                &.active{\r\n                    display: grid;\r\n                    \r\n                        .search-box-container{\r\n                            background-color: transparent;\r\n                            box-shadow: none;\r\n                            border-bottom: 1px solid #fff;\r\n                            border-radius: 0;\r\n                            color: #fff;\r\n\r\n                             .uxp-input-container{\r\n\r\n                                .uxp-form-input{\r\n                                    font-size: 10px;\r\n                                    color: #fff;\r\n                                    padding: 10px 3px;\r\n                                }\r\n\r\n                             } \r\n\r\n                             .uxp-search-box-icons{\r\n                                .uxp-icon-button{\r\n                                    .icon-container{\r\n                                        .icon.close{\r\n                                            filter: brightness(0) invert(1);  \r\n                                            top: 2px;\r\n                                            background-size: 27%;\r\n                                            opacity: 0.8;\r\n                                        }\r\n                                    }\r\n                                }\r\n                             }\r\n                        }\r\n                    } \r\n            }\r\n            .uxp-form-select{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 21%;\r\n                min-width: 21%;\r\n\r\n                .uxp-select-placeholder{\r\n                    font-size: 10px;\r\n                    background-color: transparent;\r\n                    box-shadow: none;\r\n                    color: #fff;\r\n                    border-radius: 0;\r\n                    padding: 14px 3px;\r\n\r\n                    &::before{\r\n                        filter: brightness(0) invert(1);\r\n                    }\r\n                }\r\n            }\r\n            .uxp-date-time-picker-container{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 23%;\r\n                min-width: 23%;\r\n                padding: 0;\r\n\r\n                .placeholder{\r\n                    .label{\r\n                        padding: 10px 10px;\r\n                    }\r\n                    .value{\r\n                        padding: 10px 0px;\r\n                        min-width: 80px;\r\n                        width: 80%;\r\n                        font-size: 9px;\r\n                    }\r\n                }\r\n            }\r\n\r\n\r\n            .uxp-search-box-container .search-box-container{\r\n                background: transparent;\r\n                box-shadow: none;\r\n            }\r\n        }\r\n\r\n\r\n\r\n    }\r\n\r\n    .technician_chart{ \r\n        margin-top: 0em; \r\n        .recharts-wrapper{\r\n            fill: transparent; \r\n        }\r\n        .recharts-layer, .recharts-cartesian-axis-line{\r\n            text{ fill:#fff!important;} \r\n        }\r\n        .recharts-cartesian-axis-ticks, .recharts-legend-item-text{\r\n            fill:#fff!important;\r\n            color: #fff;\r\n        }\r\n\r\n        .sub_title_bar{\r\n            width: 90%;\r\n            font-size: 1em;\r\n        }\r\n    }\r\n\r\n    &.empty-box{ \r\n\r\n       .header-content{\r\n            display: inline-flex;\r\n            width: 100%;\r\n            padding: 1em 1em 0em 1em;\r\n\r\n            .logo{ \r\n                display: inline-block;\r\n                 width: 32%;\r\n                // width: 25%;\r\n                background-image: url(\"https://static.iviva.com/images/Udhayimages/MDA_LOGO.png\");\r\n                // background-image: url(\"https://www.iviva.com/wp-content/uploads/2023/07/iviva-logo-1.svg\");\r\n                background-position: center center;\r\n                background-repeat: no-repeat;\r\n                background-size: 90% auto;\r\n                margin-top: 0em;\r\n                height: 7.5em;\r\n            }\r\n            h2{\r\n                display: inline-block;\r\n                width: 65%;\r\n                font-size: 2.5em;\r\n                font-weight: bold;\r\n                color: #ffffff;\r\n                margin-left: 5%;\r\n                padding: 0;\r\n                margin: 1.3em 0 0 0%;\r\n                text-transform: uppercase;\r\n\r\n                // display: inline-block;\r\n                // width: 68%;\r\n                // font-size: 2.3em;\r\n                // font-weight: bold;\r\n                // color: #ffffff;\r\n                // margin-left: 5%;\r\n                // padding: 0;\r\n                // margin: 1.2em 0 0 1%;\r\n                // text-transform: uppercase;\r\n\r\n            }\r\n\r\n            &.iviva-header-content{\r\n                .logo{   \r\n                    width: 22%; \r\n                    // filter: invert(1);\r\n                    // background-image: url(\"https://www.iviva.com/wp-content/uploads/2023/07/iviva-logo-1.svg\");\r\n                   // background-image: url(\"https://static.iviva.com/images/Udhayimages/Lucy_home_new/eutech-logo.svg\");\r\n                    background-image: url(\"https://www.iviva.com/wp-content/uploads/2023/06/logo-text-white-1.svg\"); \r\n                }\r\n                h2{   \r\n                    width: 68%;\r\n                    font-size: 2.3em; \r\n                    margin-left: 5%; \r\n                    margin: 1.2em 0 0 1%; \r\n    \r\n                }\r\n            }\r\n       }\r\n       h4{\r\n            display: inline-block;\r\n            width: 100%;\r\n            font-size: 1.2em;\r\n            color: #ffffff;\r\n            margin: 0em 0 0 1em;\r\n            padding: 0;\r\n            text-transform: uppercase;\r\n            margin-top: 1em;\r\n       }\r\n\r\n    }\r\n\r\n\r\n    &.power-by-box{ \r\n\r\n        .header-content{\r\n             display: inline-flex;\r\n             width: 100%;\r\n             padding: 1em 1em 0em 1em;\r\n\r\n\r\n             .power-by-cont{\r\n                display: flex;\r\n                width: 100%;\r\n                height: 70%;\r\n                p{  \r\n                    width: auto;\r\n                    font-size: 1.5em;\r\n                    font-weight: bold;\r\n                    color: #ffffff;\r\n                    margin-left: 5%;\r\n                    padding: 0;\r\n                    margin: 0;\r\n                    position: relative;\r\n                    height: auto;\r\n                    align-items: end;\r\n                    display: flex;\r\n                    text-transform: uppercase;\r\n\r\n                    sub{\r\n                        font-size: 0.6em;\r\n                    }\r\n                }\r\n                .raseel_logo{ \r\n                    display: inline-block;\r\n                    width: 32%;\r\n                    background-image: url(\"https://static.iviva.com/images/Udhayimages/Raseel/Raseel-Logo.svg\");\r\n                    background-position: center center;\r\n                    background-repeat: no-repeat;\r\n                    background-size: 90% auto;\r\n                    margin-top: 0em;\r\n                    height: 5.5em;\r\n                    margin-left: 1em;\r\n                }\r\n             } \r\n        } \r\n \r\n     }\r\n     \r\n     &.partnership-box{ \r\n\r\n        .header-content{\r\n             display: inline-flex;\r\n             width: 100%;\r\n             padding: 1em 1em 0em 1em; \r\n\r\n             .partnership-cont{\r\n                display: flex;\r\n                width: 100%;\r\n                height: 70%;\r\n                p{  \r\n                    width: auto;\r\n                    font-size: 1.5em;\r\n                    font-weight: bold;\r\n                    color: #ffffff;\r\n                    margin-left: 5%;\r\n                    padding: 0;\r\n                    margin: 0;\r\n                    position: relative;\r\n                    height: auto;\r\n                    align-items: end;\r\n                    display: flex;\r\n\r\n                    sub{\r\n                        font-size: 0.6em;\r\n                    }\r\n                }\r\n                .ssi_logo{ \r\n                    display: inline-block;\r\n                    width: 32%;\r\n                    background-image: url(\"https://static.iviva.com/images/company-logos/ssi-logo.svg\");\r\n                    background-position: center center;\r\n                    background-repeat: no-repeat;\r\n                    background-size: 90% auto;\r\n                    margin-top: 0em;\r\n                    height: 5.5em;\r\n                    margin-left: 1em;\r\n                    filter: brightness(0) invert(1);\r\n                }\r\n             }  \r\n        }  \r\n     }\r\n\r\n    &.top-rht-container-box{\r\n       \r\n        display: inline-block;\r\n\r\n        .header-rht-content{\r\n             \r\n            // width: 75%;\r\n            width: 100%;\r\n            margin-top: 2em;\r\n            float: right;\r\n\r\n                .rgt-head-cont{\r\n                    display: inline-block;\r\n                    width: 25%;\r\n                    text-align: center;\r\n                    font-size: 1.1em;\r\n                    color: #fff;\r\n                    border-left: 2px solid #fff;\r\n                    position: relative;\r\n\r\n                    &.head-timer{\r\n                        border-left: 0px solid transparent;\r\n                    }\r\n                     \r\n                    &.head-weather{ \r\n\r\n                        &::before {\r\n                                    background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n                                    content: \"\";\r\n                                    width: 15px;\r\n                                    height: 15px;\r\n                                    display: block;\r\n                                    background-size: 100% auto;\r\n                                    position: absolute;\r\n                                    top: 0px;\r\n                                    left: 8px;\r\n                                    background-repeat: no-repeat;\r\n                                    background-position: center center;\r\n                                }\r\n                    }\r\n                    &.head-location{\r\n                        font-size: 0.9em;\r\n                        padding-top: 3px;\r\n\r\n                        &::before {\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/pin.png);\r\n                            content: \"\";\r\n                            width: 12px;\r\n                            height: 12px;\r\n                            display: block;\r\n                            background-size: 100% auto;\r\n                            position: absolute;\r\n                            top: 2px;\r\n                            left: 5px;\r\n                            background-repeat: no-repeat;\r\n                            background-position: center center;\r\n                        }\r\n                    }\r\n                }\r\n        }\r\n        .power-by-cont{\r\n            display: inline-block;\r\n            width: 27%;\r\n            vertical-align: bottom;\r\n            padding: 0px 0 0 0;\r\n            margin: 0px 0 0 0;\r\n            position: relative;\r\n            top: 10px;\r\n            text-align: right;\r\n\r\n            p{\r\n                padding: 0;\r\n                margin: 0;\r\n                font-size: 0.75em;\r\n                color: #fff;\r\n                text-align: end;\r\n                position: absolute;\r\n                bottom: 6px;\r\n                right: 75px;\r\n            }\r\n            h1{\r\n                padding: 0;\r\n                margin: 0;\r\n                font-size: 3em;\r\n                color: #fff;\r\n                padding-left: 0;\r\n                padding-right: 0;\r\n\r\n                sub{\r\n                    font-size: 0.3em;\r\n                    bottom: 7px;\r\n                    position: relative;\r\n                }\r\n                 \r\n            }\r\n        }\r\n    }\r\n\r\n}\r\n\r\n.uxp-select-dropdown-container{\r\n    .uxp-select-dropdown{ \r\n      .uxp-select-option {\r\n            padding: 12px 10px 12px 10px;\r\n        }\r\n    }\r\n}\r\n  \r\n  .afterhours_inner_widget {\r\n    display: inline-block;\r\n    width: 100%;\r\n    margin-top: 0px;\r\n    .afterhours_tree {\r\n      display: inline-flex;\r\n      width: 98%; \r\n      height: 100%;\r\n      position: relative;\r\n     \r\n  \r\n      ul {\r\n        margin: 3px 0 0 0;\r\n        padding: 0;\r\n        display: inline-block;\r\n        width: 95%;\r\n        margin-left: 5%;\r\n        column-count: 2;\r\n  \r\n        li {\r\n            display: inline-block;\r\n            padding-left: 10px;\r\n            position: relative;\r\n            width: 100%;\r\n            box-sizing: border-box;\r\n            padding: 1px 0;\r\n           \r\n          &:last-child {\r\n            &::before {\r\n              display: none;\r\n            }\r\n          }\r\n          p {\r\n            font-size: 9px;\r\n            margin: 3px 0;\r\n            position: relative;\r\n            display: inline-block;\r\n            width: 95%;\r\n            color: #fff;\r\n\r\n            &::before {\r\n                content: \"\";\r\n                position: absolute;\r\n                top: 0px;\r\n                left: -20px;\r\n                width: 15px;\r\n                height: 7px;\r\n                text-align: center;\r\n                pointer-events: none;\r\n                border-radius: 2px;\r\n              }\r\n\r\n            span { \r\n                width: 25%;\r\n                font-size: 8px;\r\n                float: right;\r\n            }\r\n          }\r\n\r\n            &:nth-child(n + 1) { p {&::before { background-color: #82d963; }}} \r\n            &:nth-child(n + 2) { p {&::before { background-color: #f5ec00; }}} \r\n            &:nth-child(n + 3) { p {&::before { background-color: #d879e1; }}} \r\n            &:nth-child(n + 4) { p {&::before { background-color: #5ee3f4; }}} \r\n            &:nth-child(n + 5) { p {&::before { background-color: #7cbef6; }}} \r\n            &:nth-child(n + 6) { p {&::before { background-color: #9d7cf6; }}} \r\n            &:nth-child(n + 7) { p {&::before { background-color: #f79598; }}}  \r\n            &:nth-child(n + 8) { p {&::before { background-color: #f6a67c; }}}  \r\n            &:nth-child(n + 9) { p {&::before { background-color: #1057b4; }}} \r\n            &:nth-child(n + 10) { p {&::before { background-color: #0bccb2; }}} \r\n            &:nth-child(n + 11) { p {&::before { background-color: #650bcc; }}}  \r\n            &:nth-child(n + 12) { p {&::before { background-color: #3bcc0b; }}}  \r\n            &:nth-child(n + 13) { p {&::before { background-color: #0bccb2; }}} \r\n            &:nth-child(n + 14) { p {&::before { background-color: #0b42cc; }}} \r\n            &:nth-child(n + 15) { p {&::before { background-color: #cc0b58; }}}  \r\n            &:nth-child(n + 16) { p {&::before { background-color: #e0a3e7; }}}  \r\n            &:nth-child(n + 17) { p {&::before { background-color: #67d7e9; }}} \r\n            &:nth-child(n + 18) { p {&::before { background-color: #bfcc0b; }}} \r\n            &:nth-child(n + 19) { p {&::before { background-color: #0b78cc; }}}  \r\n            &:nth-child(n + 20) { p {&::before { background-color: #cc0b78; }}}  \r\n            &:nth-child(n + 21) { p {&::before { background-color: #f21456; }}} \r\n            &:nth-child(n + 22) { p {&::before { background-color: #650bcc; }}} \r\n            &:nth-child(n + 23) { p {&::before { background-color: #0b78cc; }}}  \r\n            &:nth-child(n + 24) { p {&::before { background-color: #06f51a; }}} \r\n \r\n          }\r\n        }\r\n      }\r\n     \r\n\r\n    .color_value {\r\n      display: inline-block;\r\n      width: 100%; \r\n      ul {\r\n        display: flex;\r\n        margin: 0;\r\n        padding: 0; \r\n        overflow: hidden;\r\n        li {\r\n          display: inline-block;\r\n          height: 3.4vh;\r\n          width: 10vw;\r\n  \r\n          &:nth-child(n + 1) { background-color: #82d963; }\r\n          &:nth-child(n + 2) { background-color: #f5ec00; }\r\n          &:nth-child(n + 3) { background-color: #d879e1; }\r\n          &:nth-child(n + 4) { background-color: #5ee3f4; }\r\n          &:nth-child(n + 5) { background-color: #7cbef6; }\r\n          &:nth-child(n + 6) { background-color: #9d7cf6; }\r\n          &:nth-child(n + 7) { background-color: #f79598; }\r\n          &:nth-child(n + 8) { background-color: #f6a67c; }\r\n          &:nth-child(n + 9) { background-color: #1057b4; }\r\n          &:nth-child(n + 10) { background-color: #0bccb2; }\r\n          &:nth-child(n + 11) { background-color: #650bcc; }\r\n          &:nth-child(n + 12) { background-color: #3bcc0b; }\r\n          &:nth-child(n + 13) { background-color: #0bccb2; }\r\n          &:nth-child(n + 14) { background-color: #0b42cc; }\r\n          &:nth-child(n + 15) { background-color: #cc0b58; }\r\n          &:nth-child(n + 16) { background-color: #e0a3e7; }\r\n          &:nth-child(n + 17) { background-color: #67d7e9; }\r\n          &:nth-child(n + 18) { background-color: #bfcc0b; }\r\n          &:nth-child(n + 19) { background-color: #0b78cc; }\r\n          &:nth-child(n + 20) { background-color: #cc0b78; } \r\n          &:nth-child(n + 21) { background-color: #f21456; }\r\n          &:nth-child(n + 22) { background-color: #650bcc; }\r\n          &:nth-child(n + 23) { background-color: #0b78cc; }\r\n          &:nth-child(n + 24) { background-color: #06f51a; }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  \r\n  .afterhours-arrow {\r\n    display: inline-block;\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n    width: 17px;\r\n    height: 17px;\r\n    background-size: contain;\r\n    background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.445' height='23.445' viewBox='0 0 23.445 23.445'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23424242;opacity:0.333;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M23.445,11.722A11.722,11.722,0,1,1,11.722,0,11.72,11.72,0,0,1,23.445,11.722ZM9.643,6.239v5.483H6.291a.568.568,0,0,0-.4.969l5.431,5.4a.562.562,0,0,0,.8,0l5.431-5.4a.567.567,0,0,0-.4-.969H13.8V6.239a.569.569,0,0,0-.567-.567H10.21A.569.569,0,0,0,9.643,6.239Z' transform='translate(23.445) rotate(90)'/%3E%3C/svg%3E\");\r\n    left: 50%;\r\n    margin-left: -10px;\r\n    cursor: pointer;\r\n    z-index: 11;\r\n    position: relative;\r\n  \r\n    &#topArrowAfterhours {\r\n      transform: rotate(90deg);\r\n      top: -10px;\r\n      margin-bottom: -11px;\r\n    }\r\n    &#downArrowAfterhours {\r\n      transform: rotate(270deg);\r\n    }\r\n  }\r\n    \r\n\r\n\r\n.progress-bar-container {\r\n    width: 100%; \r\n    display: inline-flex;\r\n   // background: linear-gradient(to right,  #005936 1%,#005842 71%,#01af94 100%);  \r\n\r\n    .progress-bar {\r\n        height: 12px; \r\n      //  background: linear-gradient(to right,  #005842 1%,#005842 41%,#01af94 100%);  \r\n\r\n        \r\n\r\n        &.installedLamps{\r\n            // background: linear-gradient(to right,  #005842 1%,#005842 41%,#01af94 100%);  \r\n            background: #005842;\r\n        }\r\n\r\n        &.working-lamps{\r\n            // background: linear-gradient(to right,  #005936 1%,#005842 71%,#01af94 100%);   \r\n            background: #01af94;\r\n        }\r\n      }\r\n  }\r\n  \r\n \r\n\r\n.top-nav-tabs{\r\n   \r\n    // position: absolute;\r\n    position: relative;\r\n    top: 6em;\r\n    left: 50%;\r\n    z-index: 5;\r\n    transform: translateX(-50%);\r\n    width: 100%;\r\n\r\n    ul{\r\n        padding: 0;\r\n        margin: 0;\r\n        display: inline-flex;\r\n        width: 100%;\r\n\r\n        li{\r\n            list-style: none;\r\n            width: 17%;\r\n            display: inline-block;\r\n            text-align: center;\r\n\r\n            a{\r\n                cursor: pointer;\r\n                display: inline-block;\r\n                width: 100%;\r\n\r\n            span{ \r\n                \r\n                width: 20px;\r\n                height: 20px;\r\n                display: inline-block;\r\n                background-position: center center;\r\n                background-repeat: no-repeat;\r\n                background-size: contain;\r\n                position: relative;  \r\n            }\r\n            label{\r\n                color: #fff;\r\n                // font-size: 0.5vw;\r\n                 font-size: 0.8em;\r\n                width: 100%;\r\n                display: inline-block;\r\n                padding: 5px 0 0 0;\r\n                margin: 0;\r\n                text-transform: uppercase;\r\n                font-weight: 600;\r\n                cursor: pointer;\r\n            } \r\n        } \r\n            &.waste{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock.png);\r\n                }\r\n            } \r\n            &.energy{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/energy.png);\r\n                }\r\n            } \r\n            &.streetlight{\r\n                span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/street-light.png); \r\n                }\r\n            }  \r\n            &.cctv{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/security-camera.png);\r\n                }\r\n            } \r\n            &.water{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/waterdrop.png);\r\n                }\r\n            }\r\n            &.pollution{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/factory.png);\r\n                }\r\n            }\r\n            &.fire{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/fire.png);\r\n                }\r\n            }\r\n            &.emission{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/co2.png);\r\n                }\r\n            }\r\n\r\n             &.active{\r\n                label{\r\n                    color: #0fd6a9; \r\n                } \r\n\r\n\r\n                &.waste{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock-active.png);\r\n                    }\r\n                } \r\n                &.energy{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/energy-active.png);\r\n                    }\r\n                } \r\n                &.streetlight{\r\n                    span{\r\n                           background-image: url(https://static.iviva.com/images/Udhayimages/street-light-active.png); \r\n                    }\r\n                }  \r\n                &.cctv{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/security-camera-active.png);\r\n                    }\r\n                } \r\n                &.water{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/drop-active.png);\r\n                    }\r\n                }\r\n                &.pollution{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/factory-active.png);\r\n                    }\r\n                }\r\n                &.fire{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/fire-active.png);\r\n                    }\r\n                } \r\n                &.carbon-emission{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/co2-active.png);\r\n                    }\r\n                } \r\n                \r\n            }\r\n        }\r\n    }\r\n}\r\n  \r\n  \r\n.weather-list{\r\n    display: inline-block;\r\n    position: relative;\r\n    // top: 2.5em;\r\n    // top: 1em;\r\n    // left: 0;\r\n    //   right: 30px !important;\r\n    align-items: end;\r\n    text-align: right;\r\n    right: 5px !important;\r\n\r\n    ul{  \r\n      margin: 0;\r\n      padding: 0;\r\n      display: inline-flex; \r\n      width: auto;\r\n      border-radius: 5px;\r\n\r\n      li{  \r\n\r\n            list-style: none;\r\n            display: inline-block;\r\n            width: 50px;\r\n            height: 38px;\r\n            margin: 3px 3px;\r\n            text-align: center;\r\n\r\n        a{\r\n            cursor: pointer;\r\n            width: 100%;\r\n            display: inline-block;\r\n            height: 100%;\r\n\r\n          img{\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n          }\r\n        } \r\n          \r\n      }\r\n    }\r\n  }\r\n \r\n  \r\n  .slider {   \r\n    width: 2px;\r\n    height: 20vh;\r\n    position: absolute;\r\n    top: 1em;\r\n    right: 0em;\r\n    border-radius: 20px;\r\n    background: linear-gradient(100deg, rgba(0, 0, 0, 0.100) 0%, rgb(255 255 255 / 100%) 35%, rgba(255, 255, 255, 0) 100%);\r\n    transform: rotate(180deg);\r\n    box-shadow: 0px 0px 1px #353535;\r\n\r\n    &::before{\r\n      background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\r\n      content: \"\";\r\n      width: 12px;\r\n      height: 12px;\r\n      display: block;\r\n      background-size: 100% auto;\r\n      position: absolute;\r\n      bottom: -1.8em;\r\n      left: -4px;\r\n      background-repeat: no-repeat;\r\n      background-position: center center;\r\n      transform: rotate(180deg);\r\n    }\r\n    &::after{\r\n      background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n      content: \"\";\r\n      width: 20px;\r\n      height: 20px;\r\n      display: block;\r\n      background-size: 100% auto;\r\n      position: absolute;\r\n      top: -2.5em;\r\n      left: -8px;\r\n      background-repeat: no-repeat;\r\n      background-position: center center;\r\n  }\r\n\r\n    span{\r\n      width: 20px;\r\n      height: 20px;\r\n      display: inline-block;\r\n      background-color: #fff;\r\n      border-radius: 50%;\r\n      cursor: pointer;\r\n      position: absolute;\r\n      left: -9px;\r\n      bottom: 0.7em;\r\n      box-shadow: 0px 0px 3px #ffffff;\r\n      transition: bottom 0.4s ease;\r\n    }\r\n  }\r\n   \r\n  .slider.active {  \r\n    span{\r\n      bottom: 16vh;  \r\n    }\r\n  }\r\n\r\n\r\n  .timer-widget{\r\n    // display: inline-block;\r\n    // width: 100%;\r\n    // position: relative; \r\n\r\n    // width: 100%;\r\n\t// height: 100%;\r\n\t// position: relative;\r\n\t// display: flex;\r\n\t// align-items: center;\r\n\t// justify-content: center;\r\n\t// border: 1px solid red;\r\n\t// padding: 50px 0;\r\n\r\n    width: 100%;\r\n    height: 100%;\r\n    position: relative; \r\n    // border: 1px solid red; \r\n\r\n\r\n    //Sun Controll new design\r\n    // .timer-icons{\r\n    //     display: inline-block;\r\n    //     width: 20px; \r\n    //     ul{\r\n    //         display: inline-block;\r\n    //         margin: 10px 0 0 0;\r\n    //         padding: 0;\r\n    //         height: 100%;\r\n    //         width: 100%;\r\n    //         li{\r\n    //             display: inline-block;\r\n    //             width: 100%;\r\n    //             height: 37px;\r\n    //             img{\r\n    //                 max-width: 80%;\r\n    //                 max-height: 80%;\r\n    //             }\r\n    //         }\r\n    //     }\r\n    // }\r\n\r\n  .timer-slider {\r\n\r\n    // align-items: center;\r\n    // width: 35%;\r\n    // height: 100%;\r\n    // position: relative;\r\n    // display: inline-flex;\r\n\r\n    align-items: center;\r\n    width: 53%;\r\n    height: 100%;\r\n    position: absolute;\r\n    display: inline-flex;\r\n    right: 1px!important;\r\n    \r\n   \r\n\r\n       .timer-range {\r\n            display: inline-block;\r\n            // width: 100%;\r\n            width: auto;\r\n            transform: rotate(90deg);\r\n            background: linear-gradient(100deg, rgba(0, 0, 0, 0.100) 0%, rgb(255 255 255 / 100%) 35%, rgba(255, 255, 255, 0) 100%);\r\n            box-shadow: 0px 0px 1px #353535; \r\n            -webkit-appearance: none;\r\n            appearance: none;\r\n            -moz-appearance: none;\r\n            outline: none; \r\n            height: 2px;\r\n            position: relative;\r\n\r\n            &::before {  \r\n\r\n                background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n                content: \"\";\r\n                width: 40px;\r\n                height: 40px;\r\n                display: block;\r\n                background-size: 100% auto;\r\n                position: absolute;\r\n                top: -18px;\r\n                left: -50px;\r\n                background-repeat: no-repeat;\r\n                background-position: center center;\r\n                \r\n            }\r\n            &::after {   \r\n                \r\n                background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\r\n                content: \"\";\r\n                width: 35px;\r\n                height: 35px;\r\n                display: block;\r\n                background-size: 100% auto;\r\n                position: absolute;\r\n                bottom: -20px;\r\n                right: -45px;\r\n                background-repeat: no-repeat;\r\n                background-position: center center;\r\n                transform: rotate(160deg);\r\n            }\r\n\r\n                &::-webkit-slider-thumb {\r\n                    -webkit-appearance:none;\r\n                    -moz-appearance:none;\r\n                    appearance:none;\r\n                    // background:#023d28;\r\n                    background:#fefefe;\r\n                    width:18px;\r\n                    height:18px;\r\n                    border-radius:50%; \r\n                    cursor:pointer;\r\n                    box-shadow: 0px 0px 3px #9f9f9f;\r\n                } \r\n                \r\n        }  \r\n   \r\n\r\n    .timer-slider {\r\n        // position: relative;\r\n        display: none;\r\n      }\r\n      \r\n      .tooltip {\r\n        position: absolute;\r\n        background-color: #023d28;\r\n        color: #fff;\r\n        padding: 0.5rem;\r\n        border-radius: 4px;\r\n        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\r\n        font-size: 0.9rem;\r\n\r\n        &:before {\r\n            content: '';\r\n            position: absolute;\r\n            border-style: solid;\r\n            border-width: 8px 0 8px 8px;\r\n            border-color: transparent transparent transparent #023d28;\r\n            top: calc(50% - 8px);\r\n            right: -8px;\r\n          }\r\n      }  \r\n        \r\n        .timer-range ~ .tooltip:hover p {\r\n            visibility: visible;\r\n            opacity: 1;\r\n          } \r\n    } \r\n          \r\n  }\r\n\r\n\r\n  .toggle-container {\r\n    display: inline-block;\r\n    // right: 2.1em;\r\n    position: relative;\r\n    align-items: end;\r\n    text-align: right;\r\n        \r\n        \r\n        .toggle-button { \r\n\r\n            position: relative;\r\n            width: 66px;\r\n            height: 32px;\r\n            border: none;\r\n            background-color: #ccc;\r\n            outline: none;\r\n            cursor: pointer;\r\n            border-radius: 15px;\r\n            padding: 0px;\r\n            margin-top: 0em;\r\n            transform: rotate(90deg);\r\n            margin-right: 0px;\r\n\r\n            .slider-toggle {\r\n                position: absolute;\r\n                width: 27px;\r\n                height: 27px;\r\n                border-radius: 50%;\r\n                background-color: #034d3c;\r\n                transition: transform 0.3s ease;\r\n                top: 2px;\r\n                left: 5px;\r\n\r\n                &.on{\r\n                    transform: translateX(30px);\r\n                }\r\n                \r\n                &.off {\r\n                    transform: translateX(0);\r\n                }\r\n            }\r\n        }\r\n  \r\n    .toggle-label{\r\n        color: #ffffff;\r\n        font-size: 1em;\r\n        text-align: center;\r\n        margin: 15px 0 0 0;\r\n        font-weight: 600;\r\n    }\r\n    \r\n   \r\n}\r\n\r\n.ed3-map-controls-widget-wrapper{\r\n    width: 15%;\r\n    align-items: end;\r\n    text-align: right;\r\n    // right: calc(-50% + 60px);\r\n    // top: 1.5em; \r\n\r\n    .ed3-map-zoom-controls-container { \r\n        transform: rotate(90deg);\r\n        align-items: end;\r\n        text-align: right;\r\n        padding: 0;\r\n\r\n        .ed3-map-zoom-controls-button { \r\n            border-radius: 0;\r\n            background-color: #d2d2d24a; \r\n            margin: 0;\r\n\r\n            &:nth-child(3){\r\n                transform: rotate(90deg);\r\n            }\r\n        }\r\n    }\r\n}\r\n \r\n.smart-city_box{\r\n    .uxp-form-select{\r\n        display: inline-block;\r\n        margin-right: 0.5em;\r\n        width: 23%;\r\n        min-width: 23%;\r\n\r\n        .uxp-select-placeholder{\r\n            font-size: 10px;\r\n            background-color: transparent;\r\n            box-shadow: none;\r\n            color: #fff;\r\n            border-radius: 0;\r\n            padding: 14px 3px;\r\n\r\n            &::before{\r\n                filter: brightness(0) invert(1);\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n.uxp-date-time-picker-container{\r\n    font-size: 10px;\r\n        background-color: transparent;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        border-radius: 0;\r\n        padding: 14px 3px;\r\n\r\n        .date-time-placeholder-container{\r\n            .placeholder{\r\n                font-size: 10px;\r\n            }\r\n            .icon-container{\r\n                .icon{\r\n                    filter: brightness(0) invert(1); \r\n                }\r\n            }\r\n        }\r\n} \r\n\r\n&.mode-change-box{\r\n    display: block;\r\n\r\n    .showcase-input{\r\n       width : 100% !important;\r\n\r\n       .uxp-form-select{\r\n        width: 100%;\r\n\r\n        .uxp-select-placeholder{\r\n            //   font-size: 1em;\r\n             font-size: 0.95em;\r\n            //   border: 1px solid #0fd6a9;\r\n              padding: 10px 10px;\r\n            //   background-color: #005842;\r\n            background-color: rgb(0 88 66 / 50%);\r\n            border-radius: 4px;\r\n\r\n            .selected{\r\n                font-size: 1em;\r\n            }\r\n        }\r\n       }\r\n    }\r\n} \r\n\r\n\r\n\r\n&.building_summary-box{\r\n        .building-details{\r\n\r\n            .building-top{\r\n                display: inline-flex;\r\n                width: 100%;\r\n\r\n                .building-pict{\r\n                    // display: inline-block;\r\n                    // width: 30%;\r\n\r\n                    display: inline-block;\r\n                    width: 21em;\r\n                    height: 18em;\r\n                    background-size:cover ;\r\n                    background-repeat: no-repeat;\r\n                    background-position: center center; \r\n                  \r\n\r\n                    img{\r\n                        max-width: 100%;\r\n                        max-height: 100%;\r\n                    }\r\n                }\r\n                .building-header{\r\n                    display: inline-block;\r\n                    width: 70%;\r\n                    vertical-align: top;\r\n\r\n                    .building-title{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        text-align: center;\r\n                        font-size: 3em;\r\n                        color: #fff;\r\n                        font-weight: bold;\r\n                    }\r\n                    .building-nav{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        text-align: center;\r\n                        margin-top: 3em;\r\n                        ul{\r\n                            display: inline-flex;\r\n                            width: 100%;\r\n                            li{\r\n                                display: inline-block;\r\n                                width: 33%;\r\n                                .building-nav-icon{\r\n                                    display: inline-block;\r\n                                    width: 100%;\r\n\r\n                                    img{\r\n                                        max-width:100% ;\r\n                                        max-height:100% ;\r\n                                        box-shadow: 0 0 9px 5px #16c69b;\r\n                                    }\r\n                                }\r\n                                .building-nav-title{\r\n                                    display: inline-block;\r\n                                    width: 100%;\r\n                                    margin-top: 1em;\r\n                                    font-size: 1.05em;\r\n                                    color: #fff;\r\n                                    font-weight: bold;\r\n\r\n                                    a{\r\n                                        color: #fff;\r\n                                        text-decoration: none;\r\n                                    }\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            .building-info-box{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 0em;\r\n                // background: #12967899;\r\n                padding: 0em 1em 0em 1em;\r\n\r\n                ul{\r\n                    margin: 0;\r\n                    padding: 0;\r\n                    li{\r\n                        list-style: none;\r\n                        display: inline-flex;\r\n                        width: 100%;\r\n                        margin: 0.45em 0;\r\n                        \r\n                        &::before{\r\n                            content: \"\";\r\n                            // background-image: url(\"https://static.iviva.com/images/Udhayimages/blk-star.png\");\r\n                            background-repeat: no-repeat;\r\n                            background-position: 0 0;\r\n                            background-size: contain;\r\n                            width: 17px;\r\n                            height: 17px;\r\n                            filter: invert(1);\r\n                        }\r\n\r\n                        label{\r\n                            display: inline-block;\r\n                            padding: 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                            font-size: 1.5em;\r\n                            margin-right: 1em;\r\n                            margin-left: 0.5em;\r\n                            font-weight: bold;\r\n                        }\r\n                       span{\r\n                            display: inline-block;\r\n                            font-size: 1.4em;\r\n                            color: #fff;\r\n                        }\r\n\r\n                        &.building-code{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/building-code.png\"); \r\n                                \r\n                            }\r\n                        }\r\n                        &.building-name{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/building-name.png\"); \r\n                            }\r\n                        }\r\n                        &.street-number{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/street-number.png\"); \r\n                            }\r\n                        }\r\n                        &.street-name{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/street-name.png\"); \r\n                            }\r\n                        }\r\n                        &.city{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/city.png\"); \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            .building-nearby-box{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 1em;\r\n                background: #12967899;\r\n                padding: 1em;\r\n\r\n                ul{\r\n                    margin: 0;\r\n                    padding: 0;\r\n                    li{\r\n                        list-style: none;\r\n                        display: inline-flex;\r\n                        width: 100%;\r\n                        margin: 0.7em 0;\r\n\r\n                        &::before{\r\n                            content: \"\";\r\n                            // background-image: url(\"https://static.iviva.com/images/Udhayimages/blk-star.png\");\r\n                            background-repeat: no-repeat;\r\n                            background-position: 0 0;\r\n                            background-size: contain;\r\n                            width: 17px;\r\n                            height: 17px;\r\n                            filter: invert(1);\r\n                        }\r\n\r\n                        label{\r\n                            display: inline-block;\r\n                            padding: 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                            font-size: 1.6em;\r\n                            margin-right: 1em;\r\n                            margin-left: 0.5em;\r\n                            font-weight: bold;\r\n                        }\r\n                       span{\r\n                            display: inline-block;\r\n                            font-size: 1.4em;\r\n                            color: #fff;\r\n                        }\r\n\r\n\r\n                        &.hospital{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/hospital.png\"); \r\n                            }\r\n                        }\r\n                        &.pharmacy{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/pharmacy.png\"); \r\n                            }\r\n                        }\r\n                        &.police-station{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/police-station.png\"); \r\n                            }\r\n                        }\r\n                        &.mosques{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/mosques.png\"); \r\n                            }\r\n                        }\r\n                        &.restaurants{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/restaurant.png\"); \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n\r\n            .building-bot{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 0em;\r\n\r\n                .g_map-link{\r\n                    width: auto;\r\n                    text-align: center;\r\n                    float: right;\r\n                    background: rgba(18, 150, 120, 0.6);\r\n                    padding: 10px 10px 10px;\r\n                    border-radius: 4px;\r\n                    a{\r\n                        font-size: 1.1em;\r\n                        color: #fff;\r\n                        text-decoration: none;\r\n                    }\r\n                }\r\n            }\r\n            \r\n        }\r\n}\r\n\r\n&.building_layout-box{\r\n    // background-color: #447d6d;\r\n    // box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.12);\r\n    // border-radius: 10px;\r\n\r\n    .smart-city-content{\r\n        display: block;\r\n        margin-top: 0em;\r\n        flex: 1;\r\n        width: 100%;\r\n        height: 100%;\r\n\r\n        .slideshow-container{\r\n            display: flex;\r\n            width: 100%;\r\n            height: 80%;\r\n        }\r\n    }\r\n\r\n    .slideshow-container{\r\n        margin-left: 0em;\r\n        margin-top: 0;\r\n        position: relative;\r\n        background: #fff;\r\n        padding: 10px;\r\n        display: inline-block;\r\n        width: 100%;\r\n        // height: 46vh;\r\n        height: 80%;\r\n\r\n        .myslides1,  .myslides2,  .myslides3,  .myslides4 {\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        img{\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        .slider-btn{\r\n            display: inline;\r\n            position: absolute;\r\n            top: 50%;\r\n            border: 1px solid #11624b;\r\n            padding: 6px 5px;\r\n            font-size: 1.5em;\r\n            color: #11624b;\r\n            background: #07b9878c;\r\n            cursor: pointer;\r\n\r\n            &.slider-btn.prev {\r\n                left: 0;\r\n            }\r\n            &.slider-btn.next {\r\n                right: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    .build-bhk-boxes{\r\n        display: inline-flex;\r\n        width: 80%;\r\n        margin-top: 2em;\r\n        transform: translate(-50%);\r\n        left: 50%;\r\n        position: relative;\r\n\r\n        .bhk-box{\r\n            display: inline-block;\r\n            border: 1px solid #ffffff;\r\n            width: 30%;\r\n            text-align: center;\r\n            padding: 7px 0;\r\n            font-size: 1em;\r\n            color: #ffffff;\r\n\r\n            &.one_bhk{\r\n                \r\n            }\r\n            &.two_bhk{\r\n                margin: 0 5%;\r\n            }\r\n            &.mep{\r\n                 \r\n            }\r\n            \r\n        }\r\n    } \r\n     \r\n}\r\n\r\n\r\n&.building_layout-box{\r\n    // background-color: #447d6d;\r\n    // box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.12);\r\n    // border-radius: 10px;\r\n\r\n    #ViewsMenu{\r\n        display: inline-block;\r\n        width : 100%;\r\n\r\n       \r\n    \r\n    .model-items{\r\n\r\n        // display: inline-flex;\r\n        // width : 100%;\r\n\r\n        display: inline-flex;\r\n        width: 100%;\r\n        display: inline-block;\r\n\r\n        .menu-item {\r\n            position: relative;\r\n            display: inline-block;\r\n            margin: 10px;\r\n            // width: 240px;\r\n            // height: 240px;\r\n            width: 45%;\r\n            height: 17em;\r\n            box-shadow: 5px 5px 5px #00000080;\r\n            border-radius: 5px;\r\n            background-color: white;\r\n            overflow: hidden;\r\n            vertical-align: top;\r\n\r\n            .item-header { \r\n                // height: 110px; \r\n                position: relative;\r\n                // height: 80px;\r\n                height: 100%;;\r\n                width: 97%;\r\n                display: inline-block;\r\n\r\n                .blue-plate {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 3px;\r\n                    height: 100%;\r\n                    // width: 234px;\r\n                    width: 100%;\r\n                    opacity: 0.8;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/searchbg.svg);\r\n                    background-repeat: no-repeat;\r\n                }\r\n\r\n                .header-image {\r\n                    position: absolute;\r\n                    height: 94px;\r\n                    // width: 234px;\r\n                    width: 100%;\r\n                    padding-top: 3px;\r\n                    padding-left: 3px;\r\n                    border: none;\r\n                    display: none;\r\n                }\r\n\r\n                .header-no-image {\r\n                    position: absolute;\r\n                    height: 50px;\r\n                    width: 230px;\r\n                    top: 20px;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/Viewport_single.svg);\r\n                    background-repeat: no-repeat;\r\n                    background-position: center;\r\n                    opacity: 0.3;\r\n                }\r\n\r\n                .blue-overlay {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 3px;\r\n                    height: 100px;\r\n                    width: 234px;\r\n                    opacity: 0.2;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/searchbg.svg);\r\n                    background-repeat: no-repeat;\r\n                    display: none;\r\n                }\r\n                .blue-overlay-mask {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 79px;\r\n                    height: 35px;\r\n                    width: 234px;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/Mask_bleed.svg);\r\n                    background-repeat: no-repeat;\r\n                    display: none;\r\n                } \r\n\r\n            }\r\n            .item-body{\r\n                display: block;\r\n                position: absolute;\r\n                bottom: 3.5em;\r\n\r\n                .primary-text {\r\n                    color: #0066ff;\r\n                    font-size: 14px;\r\n                    margin: 0px 10px 0 10px;\r\n                    font-weight: bold;\r\n                }\r\n                .secondary-text {\r\n                    color: #424242;\r\n                    font-size: 13px;\r\n                    margin: 5px 10px 0 10px;\r\n                    overflow-wrap: break-word;\r\n                }\r\n            }\r\n          \r\n            .centering-container {\r\n                text-align: center;\r\n                position: absolute;\r\n                width: 100%;\r\n                bottom: 10px;\r\n\r\n                .blue-button.enabled {\r\n                    color: white;\r\n                    background-color: #0066ff;\r\n                    border-color: white;\r\n                    cursor: pointer;\r\n                    a{\r\n                        color: white;\r\n                        text-decoration: none;\r\n                    }\r\n                }\r\n\r\n                .blue-button {\r\n                    color: #0066ff;\r\n                    background-color: white;\r\n                    font-size: 14px;\r\n                    padding: 5px 20px 5px 20px;\r\n                    border: 1px solid #0066ff;\r\n                    border-radius: 13px;\r\n                    display: inline-block;\r\n                }\r\n            }\r\n        }\r\n    }\r\n    }\r\n}\r\n\r\n\r\n.floor-occupancy-box{\r\n\r\n}\r\n\r\n// .uxp-select-dropdown-container{\r\n//     background: transparent;\r\n//     border: 1px solid;\r\n//     border-radius: 0;\r\n\r\n//     .data-list-container{\r\n//         background: transparent;\r\n        \r\n//         .data-list{\r\n//             background: transparent;\r\n//         }\r\n//     }\r\n// }\r\n}\r\n\r\n\r\n.searchBox-widget{\r\n    display: inline-block;\r\n    width: 100%;\r\n\r\n    .searchbox-container{\r\n        position: relative;\r\n        // top: 1.3em;\r\n        // right: -1em;\r\n        align-items: end;\r\n        text-align: right;\r\n\r\n        .searchbox{\r\n            border: 1px solid #033649;\r\n            padding: 9px 5px;\r\n            border-radius: 5px;\r\n            font-size: 1em;\r\n            // width: 100%;\r\n            width: 90%;\r\n            text-align: left;\r\n            outline: none;\r\n            margin-right: 6%;\r\n            &:focus{\r\n                outline: none;\r\n            }\r\n        }\r\n \r\n        .clear-button{\r\n            position: absolute;\r\n            top: 0.6em;\r\n            right: 0.7em;\r\n            font-size: 1.1em;\r\n            font-weight: bold;\r\n            cursor: pointer;\r\n        }\r\n    }\r\n\r\n   \r\n\r\n    ul.search-list{\r\n        padding: 0;\r\n        margin: 1.5em 0 0 1em;\r\n        color: #fff;\r\n        height: 5em;\r\n        overflow: auto;\r\n        text-align: left;\r\n        width: 90%;\r\n\r\n        li{\r\n            list-style: none; \r\n            margin: 0 0 3px 0;\r\n            padding: 6px 5px;\r\n            width: 100%;\r\n            cursor: pointer; \r\n\r\n            &:hover{ \r\n                background: rgba(17, 8, 8, 0.708);\r\n            }\r\n        }\r\n    }\r\n  }\r\n\r\n  #streamingVideo {\r\n    // top: -1.5em;\r\n    top: 0em;\r\n}\r\n\r\n// .overall-building{\r\n//     width: 100%;\r\n//     display: inline-block;\r\n//     height: 100%;\r\n   \r\n//     .building_layout-box{ \r\n//         width: 40%;\r\n//         display: inline-block;\r\n//     }\r\n//     .building_summary-box{\r\n//         width: 40%; \r\n//         float: right;\r\n//     } \r\n  \r\n// }\r\n\r\n\r\n.smplr-wrapper {\r\n    position: relative;\r\n    width: 100%;\r\n    //max-width: calc(16 / 9 * 75vh);\r\n    aspect-ratio: 16 / 9;\r\n    background-color: #ecf1f5;\r\n  }\r\n  \r\n  .smplr-embed {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\n  #powered-by{display: none;}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -4032,8 +4041,9 @@ const BuildingSmartBim = () => {
                             react_1.default.createElement("div", { className: "header-no-image" }),
                             react_1.default.createElement("div", { className: "blue-overlay" }),
                             react_1.default.createElement("div", { className: "blue-overlay-mask" })),
-                        react_1.default.createElement("div", { className: "primary-text" }, "435 Bourke St"),
-                        react_1.default.createElement("div", { className: "secondary-text" }, "Singapore"),
+                        react_1.default.createElement("div", { className: "item-body" },
+                            react_1.default.createElement("div", { className: "primary-text" }, "435 Bourke St"),
+                            react_1.default.createElement("div", { className: "secondary-text" }, "Singapore")),
                         react_1.default.createElement("div", { className: "centering-container" },
                             react_1.default.createElement("div", { className: "blue-button enabled" },
                                 react_1.default.createElement("a", { href: 'https://demo.iviva.cloud/Apps/SmartBIM/home', target: '_blank' }, "VIEW")))),
@@ -4044,21 +4054,9 @@ const BuildingSmartBim = () => {
                             react_1.default.createElement("div", { className: "header-no-image" }),
                             react_1.default.createElement("div", { className: "blue-overlay" }),
                             react_1.default.createElement("div", { className: "blue-overlay-mask" })),
-                        react_1.default.createElement("div", { className: "primary-text" }, "435 Bourke St Building view"),
-                        react_1.default.createElement("div", { className: "secondary-text" }, "435 Bourke St Building view"),
-                        react_1.default.createElement("div", { className: "centering-container" },
-                            react_1.default.createElement("div", { className: "blue-button enabled" },
-                                react_1.default.createElement("a", { href: 'https://demo.iviva.cloud/Apps/SmartBIM/home', target: '_blank' }, "VIEW"))))),
-                react_1.default.createElement("div", { className: 'model-items' },
-                    react_1.default.createElement("div", { className: "menu-item image" },
-                        react_1.default.createElement("div", { className: "item-header" },
-                            react_1.default.createElement("div", { className: "blue-plate" }),
-                            react_1.default.createElement("img", { className: "header-image", src: "https://demo.iviva.cloud/AccountResources/OI/14e92953-5143-4bd6-a5d3-b61c414af193-a.png" }),
-                            react_1.default.createElement("div", { className: "header-no-image" }),
-                            react_1.default.createElement("div", { className: "blue-overlay" }),
-                            react_1.default.createElement("div", { className: "blue-overlay-mask" })),
-                        react_1.default.createElement("div", { className: "primary-text" }, "435 Bourke St Floor 5"),
-                        react_1.default.createElement("div", { className: "secondary-text" }, "435 Bourke St Floor 5"),
+                        react_1.default.createElement("div", { className: "item-body" },
+                            react_1.default.createElement("div", { className: "primary-text" }, "435 Bourke St Building view"),
+                            react_1.default.createElement("div", { className: "secondary-text" }, "435 Bourke St Building view")),
                         react_1.default.createElement("div", { className: "centering-container" },
                             react_1.default.createElement("div", { className: "blue-button enabled" },
                                 react_1.default.createElement("a", { href: 'https://demo.iviva.cloud/Apps/SmartBIM/home', target: '_blank' }, "VIEW")))),
@@ -4069,8 +4067,22 @@ const BuildingSmartBim = () => {
                             react_1.default.createElement("div", { className: "header-no-image" }),
                             react_1.default.createElement("div", { className: "blue-overlay" }),
                             react_1.default.createElement("div", { className: "blue-overlay-mask" })),
-                        react_1.default.createElement("div", { className: "primary-text" }, "435 Bourke St GF"),
-                        react_1.default.createElement("div", { className: "secondary-text" }, "435 Bourke St GF"),
+                        react_1.default.createElement("div", { className: "item-body" },
+                            react_1.default.createElement("div", { className: "primary-text" }, "435 Bourke St Floor 5"),
+                            react_1.default.createElement("div", { className: "secondary-text" }, "435 Bourke St Floor 5")),
+                        react_1.default.createElement("div", { className: "centering-container" },
+                            react_1.default.createElement("div", { className: "blue-button enabled" },
+                                react_1.default.createElement("a", { href: 'https://demo.iviva.cloud/Apps/SmartBIM/home', target: '_blank' }, "VIEW")))),
+                    react_1.default.createElement("div", { className: "menu-item image" },
+                        react_1.default.createElement("div", { className: "item-header" },
+                            react_1.default.createElement("div", { className: "blue-plate" }),
+                            react_1.default.createElement("img", { className: "header-image", src: "https://demo.iviva.cloud/AccountResources/OI/14e92953-5143-4bd6-a5d3-b61c414af193-a.png" }),
+                            react_1.default.createElement("div", { className: "header-no-image" }),
+                            react_1.default.createElement("div", { className: "blue-overlay" }),
+                            react_1.default.createElement("div", { className: "blue-overlay-mask" })),
+                        react_1.default.createElement("div", { className: "item-body" },
+                            react_1.default.createElement("div", { className: "primary-text" }, "435 Bourke St GF"),
+                            react_1.default.createElement("div", { className: "secondary-text" }, "435 Bourke St GF")),
                         react_1.default.createElement("div", { className: "centering-container" },
                             react_1.default.createElement("div", { className: "blue-button enabled" },
                                 react_1.default.createElement("a", { href: 'https://demo.iviva.cloud/Apps/SmartBIM/home', target: '_blank' }, "VIEW")))))))));
@@ -4111,54 +4123,51 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/dist/browser/axios.cjs"));
 const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
-const BuildingSummary = (props, { page, selectedAsset }) => {
-    var _a, _b, _c, _d, _e, _f, _g;
+const BuildingSummary = (_a) => {
+    var _b, _c, _d, _e, _f, _g, _h;
+    var { page, selectedAsset } = _a, props = __rest(_a, ["page", "selectedAsset"]);
     const [building_Summary, setBuilding_Summary] = (0, react_1.useState)(null);
-    const [isbuilding_SummaryLoading, setIsBuilding_SummaryLoading] = (0, react_1.useState)(false);
-    console.log("Here Selected Asset", selectedAsset);
-    (0, react_1.useEffect)(() => {
-        fetchData();
-    }, [selectedAsset]);
-    function fetchData() {
-        return __awaiter(this, void 0, void 0, function* () {
-            setIsBuilding_SummaryLoading(true);
-            try {
-                const lat = selectedAsset === null || selectedAsset === void 0 ? void 0 : selectedAsset.long;
-                const long = selectedAsset === null || selectedAsset === void 0 ? void 0 : selectedAsset.lat;
-                console.log("We are making API Call", lat, long);
-                const headers = {
-                    Authorization: 'APIKEY SC:mda:307d91db4fe4f10b',
-                    Cookie: '.AspNetCore.Session=Mzc3MWU0NTktNzkxNC02YWMxLTYyZTUtZTdjYjE2MWQwNDZk',
-                };
-                const { data } = yield axios_1.default.get(`https://mda.lucyday.io/Lucy/DigitalTwin/getBuildingInfo?lat=${lat}&long=${long}`, { headers });
-                console.log("Response from the API is", data);
-                //setBuilding_Summary(data);
-                setBuilding_Summary(data['Building Details']);
-                setIsBuilding_SummaryLoading(false);
-            }
-            catch (error) {
-                console.error('Error fetching data from API:', error.message);
-                setIsBuilding_SummaryLoading(false);
-            }
-        });
+    const lat = selectedAsset === null || selectedAsset === void 0 ? void 0 : selectedAsset.long;
+    const long = selectedAsset === null || selectedAsset === void 0 ? void 0 : selectedAsset.lat;
+    // const long = 39.611305236816406;
+    // const  lat = 24.465124130249023; 
+    console.log('Details are', { selectedAsset, lat, long });
+    function getBuildingSummaryData() {
+        console.log("getBulingInfo");
+        // props.uxpContext.executeAction("DigitalTwin","GetBuildingInfo",{lat:lat, long:long},{json:true}).then((res: any[])=>{  
+        //   console.log("Response From API is", res, typeof res);
+        //   setBuilding_Summary(res[0]);
+        // }).catch((e: any)=>{
+        // });  
+        if (!lat && !long) {
+            console.log("Lat or long is undefined.");
+        }
+        else {
+            props.uxpContext.executeAction("DigitalTwin", "GetBuildingInfo", { lat: lat, long: long }, { json: true }).then((res) => {
+                console.log("Response From API is", res, typeof res);
+                setBuilding_Summary(res[0]);
+            }).catch((e) => {
+                // console.log("hi", e);
+            });
+        }
     }
-    console.log(building_Summary);
+    react_1.default.useEffect(() => {
+        getBuildingSummaryData();
+    }, [lat, long]);
     var building_nav_data = [
         {
             "id": "1",
@@ -4195,10 +4204,10 @@ const BuildingSummary = (props, { page, selectedAsset }) => {
             react_1.default.createElement("div", { className: 'building-details' },
                 react_1.default.createElement("div", { className: 'building-top' },
                     react_1.default.createElement("div", { className: "building-pict", style: {
-                            backgroundImage: `url(${((_a = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _a === void 0 ? void 0 : _a.buildingImage) || 'https://static.iviva.com/images/Udhayimages/al-masid-building.png'})`,
+                            backgroundImage: `url(${((_b = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _b === void 0 ? void 0 : _b.buildingImage) || 'https://static.iviva.com/images/Udhayimages/al-masid-building.png'})`,
                         } }),
                     react_1.default.createElement("div", { className: 'building-header' },
-                        react_1.default.createElement("div", { className: 'building-title' }, ((_b = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _b === void 0 ? void 0 : _b.buildingName) || ""),
+                        react_1.default.createElement("div", { className: 'building-title' }, ((_c = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _c === void 0 ? void 0 : _c.buildingName) || ""),
                         react_1.default.createElement("div", { className: 'building-nav' },
                             react_1.default.createElement("ul", null, building_nav_data.map((item) => (react_1.default.createElement("li", { key: item.id },
                                 react_1.default.createElement("a", { target: "_blank", href: item.btn_url },
@@ -4211,23 +4220,23 @@ const BuildingSummary = (props, { page, selectedAsset }) => {
                             react_1.default.createElement("label", null, "Building Code : "),
                             react_1.default.createElement("span", null,
                                 " ",
-                                ((_c = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _c === void 0 ? void 0 : _c.buildingCode) || 'N/A')),
+                                ((_d = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _d === void 0 ? void 0 : _d.buildingCode) || 'N/A')),
                         react_1.default.createElement("li", { className: 'building-name' },
                             react_1.default.createElement("label", null, "Building Name : "),
                             react_1.default.createElement("span", null,
                                 " ",
-                                ((_d = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _d === void 0 ? void 0 : _d.buildingName) || 'N/A')),
+                                ((_e = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _e === void 0 ? void 0 : _e.buildingName) || 'N/A')),
                         react_1.default.createElement("li", { className: 'street-number' },
                             react_1.default.createElement("label", null, "Street Number : "),
                             react_1.default.createElement("span", null,
                                 " ",
-                                ((_e = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _e === void 0 ? void 0 : _e.streetNumber) || 'N/A')),
+                                ((_f = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _f === void 0 ? void 0 : _f.streetNumber) || 'N/A')),
                         react_1.default.createElement("li", { className: 'street-name' },
                             react_1.default.createElement("label", null, "Street Name : "),
-                            react_1.default.createElement("span", null, ((_f = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _f === void 0 ? void 0 : _f.streetName) || 'N/A')),
+                            react_1.default.createElement("span", null, ((_g = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _g === void 0 ? void 0 : _g.streetName) || 'N/A')),
                         react_1.default.createElement("li", { className: 'city' },
                             react_1.default.createElement("label", null, "City : "),
-                            react_1.default.createElement("span", null, ((_g = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _g === void 0 ? void 0 : _g.city) || 'N/A')))),
+                            react_1.default.createElement("span", null, ((_h = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _h === void 0 ? void 0 : _h.city) || 'N/A')))),
                 react_1.default.createElement("div", { className: 'building-nearby-box', style: { display: "none" } }, building_nearbydata.map((item) => (react_1.default.createElement("ul", null,
                     react_1.default.createElement("li", { key: item.id, className: 'hospital' },
                         react_1.default.createElement("label", null, "Hospital Nearby : "),
@@ -4249,128 +4258,6 @@ const BuildingSummary = (props, { page, selectedAsset }) => {
                         react_1.default.createElement("a", { href: building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.url, target: "_blank" }, "More : Gmap Link")))))));
 };
 exports["default"] = BuildingSummary;
-// import axios from 'axios';
-// import React, { useState, useEffect } from 'react';
-// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-// import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
-// import { IContextProvider } from '../uxp';
-// interface IBuildingSummary {
-//    uxpContext: IContextProvider; 
-//    page: string;
-//    selectedAsset: ISelectedAsset;
-// // districtName: string 
-// }
-// interface ISelectedAsset {
-//  objectType: any;
-//   id: string;
-//   lat?: number;
-//   long?: number; 
-// }
-//   // const BuildingSummary: React.FunctionComponent<IBuildingSummary> = (props,{page,selectedAsset}) => {  
-//   const BuildingSummary: React.FunctionComponent<IBuildingSummary> = ({page,selectedAsset, ...props}) => { 
-//   const [building_Summary, setBuilding_Summary] = useState(null);     
-//         //  const long =selectedAsset?.lat;
-//         // const  lat =  selectedAsset?.long;   
-//         const long = 39.611305236816406;
-//         const  lat = 24.465124130249023; 
-//         console.log('Details are',{selectedAsset,lat,long});
-//   function getBuildingSummaryData () {
-//     console.log("getBulingInfo")
-//       props.uxpContext.executeAction("DigitalTwin","GetBuildingInfo",{lat:lat, long:long},{json:true}).then((res: any[])=>{  
-//         console.log("Response From API is", res, typeof res);
-//         setBuilding_Summary(res[0]);
-//       }).catch((e: any)=>{
-//           // console.log("hi", e);
-//       }); 
-//   }
-//   React.useEffect(() =>{
-//     getBuildingSummaryData();
-//   }, []) 
-// var building_nav_data = [ 
-//     {
-//         "id": "1", 
-//         "Building_icon": 'https://static.iviva.com/images/Udhayimages/incident-icon.png',
-//         "Building_Title": "Report Incident",  
-//         "btn_url": "http://150.230.244.155/Apps/UXP/dashboards/IM20220324028"
-//     },
-//     {
-//         "id": "1", 
-//         "Building_icon": 'https://static.iviva.com/images/Udhayimages/facility-management.png',
-//         "Building_Title": "Facility Issue",  
-//         "btn_url": ""
-//     }, 
-//     {
-//         "id": "1", 
-//         "Building_icon": 'https://static.iviva.com/images/Udhayimages/agenda.png',
-//         "Building_Title": "Leasing Info",  
-//          "btn_url": ""
-//     }
-// ]; 
-//   var building_nearbydata = [ 
-//     {
-//         "id": "1", 
-//         "Hospital_Nearby": 'Al Zahra Hospital and 3 others',
-//         "Pharmacy_Nearby": "Al Nahdi Pharmacy and 2 others", 
-//         "Police_Station_Nearby":"Madina District Police and 2 others", 
-//         'Mosques_Nearby': "Al Masjid An Nabawi and 4 others", 
-//         "Restaurants_Nearby" : "Zaitoon Restaurants and 6 others" 
-//     } 
-// ]; 
-//       return (  
-//          <WidgetWrapper className="smart-city_box building_summary-box">  
-//           <TitleBar title="Building Summary" icon='https://static.iviva.com/images/Udhayimages/mda-building-images/layout.png'></TitleBar>   
-//           <div className="smart-city-content"  style={{height:'350px'}}>
-//                 <div className='building-details'>
-//                    <div className='building-top'> 
-//                             <div className="building-pict"
-//                               style={{
-//                                 backgroundImage: `url(${building_Summary?.header?.buildingImage || 'https://static.iviva.com/images/Udhayimages/al-masid-building.png'})`,
-//                               }} />   
-//                         <div className='building-header'>
-//                             <div className='building-title'>{building_Summary?.header?.buildingName || "" }</div>
-//                             <div className='building-nav'>
-//                             <ul>
-//                             {building_nav_data.map((item) => (
-//                                 <li key={item.id}>
-//                                     <a target="_blank" href={item.btn_url}>
-//                                       <div className='building-nav-icon'><img src={item.Building_icon}/></div>
-//                                       <div className='building-nav-title'>{item.Building_Title}</div>
-//                                     </a> 
-//                                 </li> 
-//                             ))} 
-//                       </ul>
-//                             </div>
-//                         </div>
-//                    </div>
-//                     <div className='building-info-box'> 
-//                              <ul>
-//                                 <li className='building-code'><label>Building Code : </label><span> {building_Summary?.body?.buildingCode || 'N/A'}</span></li>
-//                                 <li className='building-name'><label>Building Name : </label><span> {building_Summary?.body?.buildingName || 'N/A'}</span></li>
-//                                 <li className='street-number'><label>Street Number : </label><span> {building_Summary?.body?.streetNumber || 'N/A'}</span></li>
-//                                 <li className='street-name'><label>Street Name : </label><span>{building_Summary?.body?.streetName || 'N/A'}</span></li>
-//                                 <li className='city'><label>City : </label><span>{building_Summary?.body?.city || 'N/A'}</span></li>
-//                             </ul>  
-//                     </div>
-//                     <div className='building-nearby-box' style={{display:"none"}}>
-//                          {building_nearbydata.map((item) => (
-//                              <ul>
-//                                  <li key={item.id} className='hospital'><label>Hospital Nearby : </label><span>{item.Hospital_Nearby}</span></li>
-//                                  <li className='pharmacy'><label>Pharmacy Nearby : </label><span>{item.Pharmacy_Nearby}</span></li>
-//                                  <li className='police-station'><label>Police Station Nearby : </label><span>{item.Police_Station_Nearby}</span></li>
-//                                  <li className='mosques'><label>Mosques Nearby : </label><span>{item.Mosques_Nearby}</span></li>
-//                                  <li className='restaurants'><label>Restaurants Nearby : </label><span>{item.Restaurants_Nearby}</span></li>
-//                              </ul>
-//                          ))} 
-//                  </div>
-//                  <div className='building-bot'> 
-//                          <div className='g_map-link' ><a href={building_Summary?.url} target="_blank">More : Gmap Link</a></div>
-//                  </div>
-//                 </div>
-//           </div>  
-//           </WidgetWrapper>    
-//       )
-//   };
-// export default BuildingSummary;
 
 
 /***/ }),
@@ -6825,6 +6712,8 @@ exports["default"] = EmergencyWorkOrderSummary;
 
 "use strict";
 
+// import React, { useState, useEffect } from 'react';
+// import { DataList, WidgetWrapper, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -6858,10 +6747,404 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+// import { AreaChart, Area, ResponsiveContainer,  LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ComposedChart,  } from 'recharts';
+// import { IContextProvider } from '../uxp';
+// interface EnergyConsumptionData {
+//   "Power Consumption": { month: string; value: number }[] | { Week: string; value: number }[] | { day: string; value: number }[];
+//   "Burning Hours": { month: string; value: number }[] | { Week: string; value: number }[] | { day: string; value: number }[];
+// }
+// interface FilterToDataMap {
+//   [key: string]: { name: any; powerConsumption: number; burningHours: number }[];
+// }
+// interface PowerConsumptionEntry {
+//   month?: string;
+//   Week?: string;
+//   Day?: string;
+//   value: number;
+// }
+// interface IWidgetProps {
+//   instanceId?: string;
+//   uxpContext?: IContextProvider;
+// }
+// const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => {
+//     //Month Data// 
+//   const energyConsumptionData1 = {
+//     "Power Consumption": [
+//       { "month": "Jan", "value": 250.62 },
+//       { "month": "Feb", "value": 374.86 },
+//       { "month": "Mar", "value": 254 },
+//       { "month": "Apr", "value": 365.74 },
+//       { "month": "May", "value": 347.08 },
+//       { "month": "June", "value": 356.14 },
+//       { "month": "July", "value": 256.25 },
+//       { "month": "Aug", "value": 346.980000000000004 },
+//       { "month": "Sep", "value": 454.74 },
+//       { "month": "Oct", "value": 547.08 },
+//       { "month": "Nov", "value": 356.14 },
+//       { "month": "Dec", "value": 456.25 }
+//     ],
+//     "Burning Hours": [
+//       { "month": "Jan", "value": 118.62 },
+//       { "month": "Feb", "value": 146.86 },
+//       { "month": "Mar", "value": 154 },
+//       { "month": "Apr", "value": 154.74 },
+//       { "month": "May", "value": 147.08 },
+//       { "month": "June", "value": 156.14 },
+//       { "month": "July", "value": 156.25 },
+//       { "month": "Aug", "value": 132 },
+//       { "month": "Sep", "value": 154.74 },
+//       { "month": "Oct", "value": 147.08 },
+//       { "month": "Nov", "value": 126.14 },
+//       { "month": "Dec", "value": 156.25 }
+//     ]
+//   };
+//   // Week Data
+//   const energyConsumptionData2 = {
+//     "Power Consumption": [
+//       { "Week": "Week 1", "value": 98.62 },
+//       { "Week": "Week 2", "value": 46.86 },
+//       { "Week": "Week 3", "value": 76.984 },
+//       { "Week": "Week 4", "value": 85.74 }
+//     ],
+//     "Burning Hours": [
+//       { "Week": "Week 1", "value": 132.64 },
+//       { "Week": "Week 2", "value": 187.36 },
+//       { "Week": "Week 3", "value": 271.57 },
+//       { "Week": "Week 4", "value": 325.84000000000003 }
+//     ]
+//   };
+//   // Day Data 
+//   const [energyConsumptionData, setEnergyConsumptionData] = React.useState<EnergyConsumptionData>({
+//     "Power Consumption": [],
+//     "Burning Hours": [],
+//   });
+// // Use state for dynamic hierarchy, startDate, and endDate
+// const [hierarchy, setHierarchy] = useState<string>('');
+// const [startDate, setStartDate] = useState<string>('');
+// const [endDate, setEndDate] = useState<string>('');
+// function getEnergyConsumptionData() {
+//   console.log("Fetching data with:", hierarchy, startDate, endDate);
+//   props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncData", { hierarchy, startDate, endDate }, { json: true }).then((res: any[]) => {
+//     console.log("Response From API is", res, typeof res);
+//     setEnergyConsumptionData(res[0]);
+//   }).catch((e: any) => {
+//     console.error("Error fetching data:", e);
+//   });
+// }
+// React.useEffect(() => {
+//   getEnergyConsumptionData();
+// }, [hierarchy, startDate, endDate]);   
+//    const [toggleFilterValue, setToggleFilterValue] = useState("day");
+//    const handleFilterChange = (value: React.SetStateAction<string>) => {
+//     console.log("Selected Filter Value:", value);
+//     setToggleFilterValue(value);
+//   };
+//   const transformData = (rawData: EnergyConsumptionData, filterType: string) => {
+//     const powerConsumptionData = rawData["Power Consumption"] as PowerConsumptionEntry[];
+//     const burningHoursData = rawData["Burning Hours"] as PowerConsumptionEntry[];
+//     if (!powerConsumptionData || !burningHoursData || powerConsumptionData.length !== burningHoursData.length) {
+//       return [];
+//     }
+//     const transformedData = powerConsumptionData.map((entry, index) => {
+//       const { month, Week, Day, value } = entry;
+//       const burningHoursValue = burningHoursData[index].value;
+//       return {
+//         name: filterType === 'day' ? Day : month || Week,
+//         powerConsumption: value || 0,  
+//         burningHours: burningHoursValue || 0,  
+//       };
+//     });
+//     return transformedData;
+//   };
+//   const transformedData1 = transformData(energyConsumptionData1, 'month');
+//   const transformedData2 = transformData(energyConsumptionData2, 'week');
+//   const transformedData3 = transformData(energyConsumptionData, 'day');
+//   const filterToDataMap: FilterToDataMap = {
+//     month: transformedData1,
+//     week: transformedData2,
+//     day: transformedData3,
+//   };
+//   const selectedData = filterToDataMap[toggleFilterValue] || transformedData1;
+//     return (
+//       <WidgetWrapper className="smart-city_box energy_consumption-box">
+//         <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Streetlight Energy Consumption"> </TitleBar>
+//         <div className="smart-city-content">
+//           <div className="technician_chart">
+//             <div className='chart-top'>
+//               <div className="sub_title_bar">Total kWh</div>
+//               <ToggleFilter
+//                 options={[
+//                   { label: "7D", value: "day" },
+//                   { label: "1M", value: "week" },
+//                   { label: "1Y", value: "month" },
+//                 ]}
+//                 value={toggleFilterValue}
+//                 onChange={handleFilterChange}
+//               />
+//             </div>
+//             <ResponsiveContainer>
+//             <AreaChart
+//               data={selectedData}
+//               margin={{
+//                 top: 10,
+//                 right: 0,
+//                 left: 0,
+//                 bottom: 30,
+//               }}
+//             >
+//               <CartesianGrid strokeDasharray="3 3" />
+//               <XAxis dataKey="name" />
+//               <YAxis yAxisId="left" />
+//               <YAxis yAxisId="right" orientation="right" />
+//               <Tooltip />
+//               <Legend />
+//                   <Area
+//                     type="monotone"
+//                     dataKey="powerConsumption" 
+//                     name="Power Consumption"
+//                     stackId="1"
+//                     stroke="#001912"
+//                     fill="url(#gradient1)"
+//                     yAxisId="left"
+//                   />
+//                   <Area
+//                     type="monotone"
+//                     dataKey="burningHours" 
+//                     name="Burning Hours"
+//                     stackId="1"
+//                     stroke="#79dccc"
+//                     fill="url(#gradient2)"
+//                     yAxisId="left"
+//                   />
+//               <Area
+//                 type="monotone"
+//                 dataKey="hours"
+//                 stackId="0"
+//                 fill="url(#gradient3)"
+//                 yAxisId="right"
+//                 style={{ display: "none" }}
+//                 legendType="none"
+//               />
+//               <defs>
+//                 <linearGradient id="gradient1" x1="0" y1="0" x2="0" y2="1">
+//                   <stop offset="5%" stopColor="#065168" stopOpacity={0.8} />
+//                   <stop offset="95%" stopColor="#065168" stopOpacity={0.7} />
+//                 </linearGradient>
+//                 <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
+//                   <stop offset="5%" stopColor="#008b74" stopOpacity={0.8} />
+//                   <stop offset="95%" stopColor="#79dccc" stopOpacity={0.7} />
+//                 </linearGradient>
+//               </defs>
+//             </AreaChart>
+//             </ResponsiveContainer>
+//           </div>
+//         </div>
+//       </WidgetWrapper>
+//     );
+//   };
+//   export default EnergyConsumption;
+// import React, { useState, useEffect } from 'react';
+// import { DataList, WidgetWrapper, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
+// import { AreaChart, Area, ResponsiveContainer,  LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ComposedChart,  } from 'recharts';
+// import { IContextProvider } from '../uxp';
+// interface EnergyConsumptionData {
+//   "Power Consumption": { month: string; value: number }[] | { Week: string; value: number }[] | { day: string; value: number }[];
+//   "Burning Hours": { month: string; value: number }[] | { Week: string; value: number }[] | { day: string; value: number }[];
+// }
+// interface FilterToDataMap {
+//   [key: string]: { name: any; powerConsumption: number; burningHours: number }[];
+// }
+// interface PowerConsumptionEntry {
+//   month?: string;
+//   Week?: string;
+//   Day?: string;   
+//   value: number;
+// }
+// interface IWidgetProps { 
+//   instanceId?: string,
+//   uxpContext?: IContextProvider, 
+// }
+//   const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => { 
+//     //Month Data// 
+//   const energyConsumptionData1 = {
+//     "Power Consumption": [
+//       { "month": "Jan", "value": 250.62 },
+//       { "month": "Feb", "value": 374.86 },
+//       { "month": "Mar", "value": 254 },
+//       { "month": "Apr", "value": 365.74 },
+//       { "month": "May", "value": 347.08 },
+//       { "month": "June", "value": 356.14 },
+//       { "month": "July", "value": 256.25 },
+//       { "month": "Aug", "value": 346.980000000000004 },
+//       { "month": "Sep", "value": 454.74 },
+//       { "month": "Oct", "value": 547.08 },
+//       { "month": "Nov", "value": 356.14 },
+//       { "month": "Dec", "value": 456.25 }
+//     ],
+//     "Burning Hours": [
+//       { "month": "Jan", "value": 118.62 },
+//       { "month": "Feb", "value": 146.86 },
+//       { "month": "Mar", "value": 154 },
+//       { "month": "Apr", "value": 154.74 },
+//       { "month": "May", "value": 147.08 },
+//       { "month": "June", "value": 156.14 },
+//       { "month": "July", "value": 156.25 },
+//       { "month": "Aug", "value": 132 },
+//       { "month": "Sep", "value": 154.74 },
+//       { "month": "Oct", "value": 147.08 },
+//       { "month": "Nov", "value": 126.14 },
+//       { "month": "Dec", "value": 156.25 }
+//     ]
+//   };
+//   // Week Data
+//   const energyConsumptionData2 = {
+//     "Power Consumption": [
+//       { "Week": "Week 1", "value": 98.62 },
+//       { "Week": "Week 2", "value": 46.86 },
+//       { "Week": "Week 3", "value": 76.984 },
+//       { "Week": "Week 4", "value": 85.74 }
+//     ],
+//     "Burning Hours": [
+//       { "Week": "Week 1", "value": 132.64 },
+//       { "Week": "Week 2", "value": 187.36 },
+//       { "Week": "Week 3", "value": 271.57 },
+//       { "Week": "Week 4", "value": 325.84000000000003 }
+//     ]
+//   };
+//   // Day Data 
+//   const [energyConsumptionData, setEnergyConsumptionData] = React.useState<EnergyConsumptionData>({
+//     "Power Consumption": [],
+//     "Burning Hours": [],
+//   });
+//   const hierarchy =  '' ;
+//   const startDate = '';
+//   const endDate = '';
+//   function getEnergyConsumptionData() {
+//     console.log("Fetching data with:", hierarchy, startDate, endDate);
+//     props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncData", { hierarchy, startDate, endDate }, { json: true }).then((res: any[]) => {
+//       console.log("Response From API is", res, typeof res);
+//       setEnergyConsumptionData(res[0]);
+//     }).catch((e: any) => {
+//       console.error("Error fetching data:", e);
+//     });
+//   }
+//   React.useEffect(() => {
+//     getEnergyConsumptionData();
+//   }, []);
+//    const [toggleFilterValue, setToggleFilterValue] = useState("day");
+//    const handleFilterChange = (value: React.SetStateAction<string>) => {
+//     console.log("Selected Filter Value:", value);
+//     setToggleFilterValue(value);
+//   };
+//   const transformData = (rawData: EnergyConsumptionData, filterType: string) => {
+//     const powerConsumptionData = rawData["Power Consumption"] as PowerConsumptionEntry[];
+//     const burningHoursData = rawData["Burning Hours"] as PowerConsumptionEntry[];
+//     if (!powerConsumptionData || !burningHoursData || powerConsumptionData.length !== burningHoursData.length) {
+//       return [];
+//     }
+//     const transformedData = powerConsumptionData.map((entry, index) => {
+//       const { month, Week, Day, value } = entry;
+//       const burningHoursValue = burningHoursData[index].value;
+//       return {
+//         name: filterType === 'day' ? Day : month || Week,
+//         powerConsumption: value || 0,  
+//         burningHours: burningHoursValue || 0,  
+//       };
+//     });
+//     return transformedData;
+//   };
+//   const transformedData1 = transformData(energyConsumptionData1, 'month');
+//   const transformedData2 = transformData(energyConsumptionData2, 'week');
+//   const transformedData3 = transformData(energyConsumptionData, 'day');
+//   const filterToDataMap: FilterToDataMap = {
+//     month: transformedData1,
+//     week: transformedData2,
+//     day: transformedData3,
+//   };
+//   const selectedData = filterToDataMap[toggleFilterValue] || transformedData1;
+//     return (
+//       <WidgetWrapper className="smart-city_box energy_consumption-box">
+//         <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Streetlight Energy Consumption"> </TitleBar>
+//         <div className="smart-city-content">
+//           <div className="technician_chart">
+//             <div className='chart-top'>
+//               <div className="sub_title_bar">Total kWh</div>
+//               <ToggleFilter
+//                 options={[
+//                   { label: "7D", value: "day" },
+//                   { label: "1M", value: "week" },
+//                   { label: "1Y", value: "month" },
+//                 ]}
+//                 value={toggleFilterValue}
+//                 onChange={handleFilterChange}
+//               />
+//             </div>
+//             <ResponsiveContainer>
+//             <AreaChart
+//               data={selectedData}
+//               margin={{
+//                 top: 10,
+//                 right: 0,
+//                 left: 0,
+//                 bottom: 30,
+//               }}
+//             >
+//               <CartesianGrid strokeDasharray="3 3" />
+//               <XAxis dataKey="name" />
+//               <YAxis yAxisId="left" />
+//               <YAxis yAxisId="right" orientation="right" />
+//               <Tooltip />
+//               <Legend />
+//                   <Area
+//                     type="monotone"
+//                     dataKey="powerConsumption" 
+//                     name="Power Consumption"
+//                     stackId="1"
+//                     stroke="#001912"
+//                     fill="url(#gradient1)"
+//                     yAxisId="left"
+//                   />
+//                   <Area
+//                     type="monotone"
+//                     dataKey="burningHours" 
+//                     name="Burning Hours"
+//                     stackId="1"
+//                     stroke="#79dccc"
+//                     fill="url(#gradient2)"
+//                     yAxisId="left"
+//                   />
+//               <Area
+//                 type="monotone"
+//                 dataKey="hours"
+//                 stackId="0"
+//                 fill="url(#gradient3)"
+//                 yAxisId="right"
+//                 style={{ display: "none" }}
+//                 legendType="none"
+//               />
+//               <defs>
+//                 <linearGradient id="gradient1" x1="0" y1="0" x2="0" y2="1">
+//                   <stop offset="5%" stopColor="#065168" stopOpacity={0.8} />
+//                   <stop offset="95%" stopColor="#065168" stopOpacity={0.7} />
+//                 </linearGradient>
+//                 <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
+//                   <stop offset="5%" stopColor="#008b74" stopOpacity={0.8} />
+//                   <stop offset="95%" stopColor="#79dccc" stopOpacity={0.7} />
+//                 </linearGradient>
+//               </defs>
+//             </AreaChart>
+//             </ResponsiveContainer>
+//           </div>
+//         </div>
+//       </WidgetWrapper>
+//     );
+//   };
+//   export default EnergyConsumption;
 const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
 const recharts_1 = __webpack_require__(/*! recharts */ "recharts");
 const EnergyConsumption = (props) => {
+    // const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
     //Month Data// 
     const energyConsumptionData1 = {
         "Power Consumption": [
@@ -12434,7 +12717,7 @@ const TopNavBar = () => {
     widget: building_summary_1.default,
     configs: {
         layout: {
-            w: 30,
+            w: 11,
             h: 14,
             // w: 17,
             // h: 18,
@@ -12803,3275 +13086,6 @@ module.exports = UXPComponents;
 
 /***/ }),
 
-/***/ "./node_modules/axios/dist/browser/axios.cjs":
-/*!***************************************************!*\
-  !*** ./node_modules/axios/dist/browser/axios.cjs ***!
-  \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-// Axios v1.6.7 Copyright (c) 2024 Matt Zabriskie and contributors
-
-
-function bind(fn, thisArg) {
-  return function wrap() {
-    return fn.apply(thisArg, arguments);
-  };
-}
-
-// utils is a library of generic helper functions non-specific to axios
-
-const {toString} = Object.prototype;
-const {getPrototypeOf} = Object;
-
-const kindOf = (cache => thing => {
-    const str = toString.call(thing);
-    return cache[str] || (cache[str] = str.slice(8, -1).toLowerCase());
-})(Object.create(null));
-
-const kindOfTest = (type) => {
-  type = type.toLowerCase();
-  return (thing) => kindOf(thing) === type
-};
-
-const typeOfTest = type => thing => typeof thing === type;
-
-/**
- * Determine if a value is an Array
- *
- * @param {Object} val The value to test
- *
- * @returns {boolean} True if value is an Array, otherwise false
- */
-const {isArray} = Array;
-
-/**
- * Determine if a value is undefined
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if the value is undefined, otherwise false
- */
-const isUndefined = typeOfTest('undefined');
-
-/**
- * Determine if a value is a Buffer
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a Buffer, otherwise false
- */
-function isBuffer(val) {
-  return val !== null && !isUndefined(val) && val.constructor !== null && !isUndefined(val.constructor)
-    && isFunction(val.constructor.isBuffer) && val.constructor.isBuffer(val);
-}
-
-/**
- * Determine if a value is an ArrayBuffer
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is an ArrayBuffer, otherwise false
- */
-const isArrayBuffer = kindOfTest('ArrayBuffer');
-
-
-/**
- * Determine if a value is a view on an ArrayBuffer
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
- */
-function isArrayBufferView(val) {
-  let result;
-  if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
-    result = ArrayBuffer.isView(val);
-  } else {
-    result = (val) && (val.buffer) && (isArrayBuffer(val.buffer));
-  }
-  return result;
-}
-
-/**
- * Determine if a value is a String
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a String, otherwise false
- */
-const isString = typeOfTest('string');
-
-/**
- * Determine if a value is a Function
- *
- * @param {*} val The value to test
- * @returns {boolean} True if value is a Function, otherwise false
- */
-const isFunction = typeOfTest('function');
-
-/**
- * Determine if a value is a Number
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a Number, otherwise false
- */
-const isNumber = typeOfTest('number');
-
-/**
- * Determine if a value is an Object
- *
- * @param {*} thing The value to test
- *
- * @returns {boolean} True if value is an Object, otherwise false
- */
-const isObject = (thing) => thing !== null && typeof thing === 'object';
-
-/**
- * Determine if a value is a Boolean
- *
- * @param {*} thing The value to test
- * @returns {boolean} True if value is a Boolean, otherwise false
- */
-const isBoolean = thing => thing === true || thing === false;
-
-/**
- * Determine if a value is a plain Object
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a plain Object, otherwise false
- */
-const isPlainObject = (val) => {
-  if (kindOf(val) !== 'object') {
-    return false;
-  }
-
-  const prototype = getPrototypeOf(val);
-  return (prototype === null || prototype === Object.prototype || Object.getPrototypeOf(prototype) === null) && !(Symbol.toStringTag in val) && !(Symbol.iterator in val);
-};
-
-/**
- * Determine if a value is a Date
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a Date, otherwise false
- */
-const isDate = kindOfTest('Date');
-
-/**
- * Determine if a value is a File
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a File, otherwise false
- */
-const isFile = kindOfTest('File');
-
-/**
- * Determine if a value is a Blob
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a Blob, otherwise false
- */
-const isBlob = kindOfTest('Blob');
-
-/**
- * Determine if a value is a FileList
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a File, otherwise false
- */
-const isFileList = kindOfTest('FileList');
-
-/**
- * Determine if a value is a Stream
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a Stream, otherwise false
- */
-const isStream = (val) => isObject(val) && isFunction(val.pipe);
-
-/**
- * Determine if a value is a FormData
- *
- * @param {*} thing The value to test
- *
- * @returns {boolean} True if value is an FormData, otherwise false
- */
-const isFormData = (thing) => {
-  let kind;
-  return thing && (
-    (typeof FormData === 'function' && thing instanceof FormData) || (
-      isFunction(thing.append) && (
-        (kind = kindOf(thing)) === 'formdata' ||
-        // detect form-data instance
-        (kind === 'object' && isFunction(thing.toString) && thing.toString() === '[object FormData]')
-      )
-    )
-  )
-};
-
-/**
- * Determine if a value is a URLSearchParams object
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a URLSearchParams object, otherwise false
- */
-const isURLSearchParams = kindOfTest('URLSearchParams');
-
-/**
- * Trim excess whitespace off the beginning and end of a string
- *
- * @param {String} str The String to trim
- *
- * @returns {String} The String freed of excess whitespace
- */
-const trim = (str) => str.trim ?
-  str.trim() : str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
-
-/**
- * Iterate over an Array or an Object invoking a function for each item.
- *
- * If `obj` is an Array callback will be called passing
- * the value, index, and complete array for each item.
- *
- * If 'obj' is an Object callback will be called passing
- * the value, key, and complete object for each property.
- *
- * @param {Object|Array} obj The object to iterate
- * @param {Function} fn The callback to invoke for each item
- *
- * @param {Boolean} [allOwnKeys = false]
- * @returns {any}
- */
-function forEach(obj, fn, {allOwnKeys = false} = {}) {
-  // Don't bother if no value provided
-  if (obj === null || typeof obj === 'undefined') {
-    return;
-  }
-
-  let i;
-  let l;
-
-  // Force an array if not already something iterable
-  if (typeof obj !== 'object') {
-    /*eslint no-param-reassign:0*/
-    obj = [obj];
-  }
-
-  if (isArray(obj)) {
-    // Iterate over array values
-    for (i = 0, l = obj.length; i < l; i++) {
-      fn.call(null, obj[i], i, obj);
-    }
-  } else {
-    // Iterate over object keys
-    const keys = allOwnKeys ? Object.getOwnPropertyNames(obj) : Object.keys(obj);
-    const len = keys.length;
-    let key;
-
-    for (i = 0; i < len; i++) {
-      key = keys[i];
-      fn.call(null, obj[key], key, obj);
-    }
-  }
-}
-
-function findKey(obj, key) {
-  key = key.toLowerCase();
-  const keys = Object.keys(obj);
-  let i = keys.length;
-  let _key;
-  while (i-- > 0) {
-    _key = keys[i];
-    if (key === _key.toLowerCase()) {
-      return _key;
-    }
-  }
-  return null;
-}
-
-const _global = (() => {
-  /*eslint no-undef:0*/
-  if (typeof globalThis !== "undefined") return globalThis;
-  return typeof self !== "undefined" ? self : (typeof window !== 'undefined' ? window : __webpack_require__.g)
-})();
-
-const isContextDefined = (context) => !isUndefined(context) && context !== _global;
-
-/**
- * Accepts varargs expecting each argument to be an object, then
- * immutably merges the properties of each object and returns result.
- *
- * When multiple objects contain the same key the later object in
- * the arguments list will take precedence.
- *
- * Example:
- *
- * ```js
- * var result = merge({foo: 123}, {foo: 456});
- * console.log(result.foo); // outputs 456
- * ```
- *
- * @param {Object} obj1 Object to merge
- *
- * @returns {Object} Result of all merge properties
- */
-function merge(/* obj1, obj2, obj3, ... */) {
-  const {caseless} = isContextDefined(this) && this || {};
-  const result = {};
-  const assignValue = (val, key) => {
-    const targetKey = caseless && findKey(result, key) || key;
-    if (isPlainObject(result[targetKey]) && isPlainObject(val)) {
-      result[targetKey] = merge(result[targetKey], val);
-    } else if (isPlainObject(val)) {
-      result[targetKey] = merge({}, val);
-    } else if (isArray(val)) {
-      result[targetKey] = val.slice();
-    } else {
-      result[targetKey] = val;
-    }
-  };
-
-  for (let i = 0, l = arguments.length; i < l; i++) {
-    arguments[i] && forEach(arguments[i], assignValue);
-  }
-  return result;
-}
-
-/**
- * Extends object a by mutably adding to it the properties of object b.
- *
- * @param {Object} a The object to be extended
- * @param {Object} b The object to copy properties from
- * @param {Object} thisArg The object to bind function to
- *
- * @param {Boolean} [allOwnKeys]
- * @returns {Object} The resulting value of object a
- */
-const extend = (a, b, thisArg, {allOwnKeys}= {}) => {
-  forEach(b, (val, key) => {
-    if (thisArg && isFunction(val)) {
-      a[key] = bind(val, thisArg);
-    } else {
-      a[key] = val;
-    }
-  }, {allOwnKeys});
-  return a;
-};
-
-/**
- * Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
- *
- * @param {string} content with BOM
- *
- * @returns {string} content value without BOM
- */
-const stripBOM = (content) => {
-  if (content.charCodeAt(0) === 0xFEFF) {
-    content = content.slice(1);
-  }
-  return content;
-};
-
-/**
- * Inherit the prototype methods from one constructor into another
- * @param {function} constructor
- * @param {function} superConstructor
- * @param {object} [props]
- * @param {object} [descriptors]
- *
- * @returns {void}
- */
-const inherits = (constructor, superConstructor, props, descriptors) => {
-  constructor.prototype = Object.create(superConstructor.prototype, descriptors);
-  constructor.prototype.constructor = constructor;
-  Object.defineProperty(constructor, 'super', {
-    value: superConstructor.prototype
-  });
-  props && Object.assign(constructor.prototype, props);
-};
-
-/**
- * Resolve object with deep prototype chain to a flat object
- * @param {Object} sourceObj source object
- * @param {Object} [destObj]
- * @param {Function|Boolean} [filter]
- * @param {Function} [propFilter]
- *
- * @returns {Object}
- */
-const toFlatObject = (sourceObj, destObj, filter, propFilter) => {
-  let props;
-  let i;
-  let prop;
-  const merged = {};
-
-  destObj = destObj || {};
-  // eslint-disable-next-line no-eq-null,eqeqeq
-  if (sourceObj == null) return destObj;
-
-  do {
-    props = Object.getOwnPropertyNames(sourceObj);
-    i = props.length;
-    while (i-- > 0) {
-      prop = props[i];
-      if ((!propFilter || propFilter(prop, sourceObj, destObj)) && !merged[prop]) {
-        destObj[prop] = sourceObj[prop];
-        merged[prop] = true;
-      }
-    }
-    sourceObj = filter !== false && getPrototypeOf(sourceObj);
-  } while (sourceObj && (!filter || filter(sourceObj, destObj)) && sourceObj !== Object.prototype);
-
-  return destObj;
-};
-
-/**
- * Determines whether a string ends with the characters of a specified string
- *
- * @param {String} str
- * @param {String} searchString
- * @param {Number} [position= 0]
- *
- * @returns {boolean}
- */
-const endsWith = (str, searchString, position) => {
-  str = String(str);
-  if (position === undefined || position > str.length) {
-    position = str.length;
-  }
-  position -= searchString.length;
-  const lastIndex = str.indexOf(searchString, position);
-  return lastIndex !== -1 && lastIndex === position;
-};
-
-
-/**
- * Returns new array from array like object or null if failed
- *
- * @param {*} [thing]
- *
- * @returns {?Array}
- */
-const toArray = (thing) => {
-  if (!thing) return null;
-  if (isArray(thing)) return thing;
-  let i = thing.length;
-  if (!isNumber(i)) return null;
-  const arr = new Array(i);
-  while (i-- > 0) {
-    arr[i] = thing[i];
-  }
-  return arr;
-};
-
-/**
- * Checking if the Uint8Array exists and if it does, it returns a function that checks if the
- * thing passed in is an instance of Uint8Array
- *
- * @param {TypedArray}
- *
- * @returns {Array}
- */
-// eslint-disable-next-line func-names
-const isTypedArray = (TypedArray => {
-  // eslint-disable-next-line func-names
-  return thing => {
-    return TypedArray && thing instanceof TypedArray;
-  };
-})(typeof Uint8Array !== 'undefined' && getPrototypeOf(Uint8Array));
-
-/**
- * For each entry in the object, call the function with the key and value.
- *
- * @param {Object<any, any>} obj - The object to iterate over.
- * @param {Function} fn - The function to call for each entry.
- *
- * @returns {void}
- */
-const forEachEntry = (obj, fn) => {
-  const generator = obj && obj[Symbol.iterator];
-
-  const iterator = generator.call(obj);
-
-  let result;
-
-  while ((result = iterator.next()) && !result.done) {
-    const pair = result.value;
-    fn.call(obj, pair[0], pair[1]);
-  }
-};
-
-/**
- * It takes a regular expression and a string, and returns an array of all the matches
- *
- * @param {string} regExp - The regular expression to match against.
- * @param {string} str - The string to search.
- *
- * @returns {Array<boolean>}
- */
-const matchAll = (regExp, str) => {
-  let matches;
-  const arr = [];
-
-  while ((matches = regExp.exec(str)) !== null) {
-    arr.push(matches);
-  }
-
-  return arr;
-};
-
-/* Checking if the kindOfTest function returns true when passed an HTMLFormElement. */
-const isHTMLForm = kindOfTest('HTMLFormElement');
-
-const toCamelCase = str => {
-  return str.toLowerCase().replace(/[-_\s]([a-z\d])(\w*)/g,
-    function replacer(m, p1, p2) {
-      return p1.toUpperCase() + p2;
-    }
-  );
-};
-
-/* Creating a function that will check if an object has a property. */
-const hasOwnProperty = (({hasOwnProperty}) => (obj, prop) => hasOwnProperty.call(obj, prop))(Object.prototype);
-
-/**
- * Determine if a value is a RegExp object
- *
- * @param {*} val The value to test
- *
- * @returns {boolean} True if value is a RegExp object, otherwise false
- */
-const isRegExp = kindOfTest('RegExp');
-
-const reduceDescriptors = (obj, reducer) => {
-  const descriptors = Object.getOwnPropertyDescriptors(obj);
-  const reducedDescriptors = {};
-
-  forEach(descriptors, (descriptor, name) => {
-    let ret;
-    if ((ret = reducer(descriptor, name, obj)) !== false) {
-      reducedDescriptors[name] = ret || descriptor;
-    }
-  });
-
-  Object.defineProperties(obj, reducedDescriptors);
-};
-
-/**
- * Makes all methods read-only
- * @param {Object} obj
- */
-
-const freezeMethods = (obj) => {
-  reduceDescriptors(obj, (descriptor, name) => {
-    // skip restricted props in strict mode
-    if (isFunction(obj) && ['arguments', 'caller', 'callee'].indexOf(name) !== -1) {
-      return false;
-    }
-
-    const value = obj[name];
-
-    if (!isFunction(value)) return;
-
-    descriptor.enumerable = false;
-
-    if ('writable' in descriptor) {
-      descriptor.writable = false;
-      return;
-    }
-
-    if (!descriptor.set) {
-      descriptor.set = () => {
-        throw Error('Can not rewrite read-only method \'' + name + '\'');
-      };
-    }
-  });
-};
-
-const toObjectSet = (arrayOrString, delimiter) => {
-  const obj = {};
-
-  const define = (arr) => {
-    arr.forEach(value => {
-      obj[value] = true;
-    });
-  };
-
-  isArray(arrayOrString) ? define(arrayOrString) : define(String(arrayOrString).split(delimiter));
-
-  return obj;
-};
-
-const noop = () => {};
-
-const toFiniteNumber = (value, defaultValue) => {
-  value = +value;
-  return Number.isFinite(value) ? value : defaultValue;
-};
-
-const ALPHA = 'abcdefghijklmnopqrstuvwxyz';
-
-const DIGIT = '0123456789';
-
-const ALPHABET = {
-  DIGIT,
-  ALPHA,
-  ALPHA_DIGIT: ALPHA + ALPHA.toUpperCase() + DIGIT
-};
-
-const generateString = (size = 16, alphabet = ALPHABET.ALPHA_DIGIT) => {
-  let str = '';
-  const {length} = alphabet;
-  while (size--) {
-    str += alphabet[Math.random() * length|0];
-  }
-
-  return str;
-};
-
-/**
- * If the thing is a FormData object, return true, otherwise return false.
- *
- * @param {unknown} thing - The thing to check.
- *
- * @returns {boolean}
- */
-function isSpecCompliantForm(thing) {
-  return !!(thing && isFunction(thing.append) && thing[Symbol.toStringTag] === 'FormData' && thing[Symbol.iterator]);
-}
-
-const toJSONObject = (obj) => {
-  const stack = new Array(10);
-
-  const visit = (source, i) => {
-
-    if (isObject(source)) {
-      if (stack.indexOf(source) >= 0) {
-        return;
-      }
-
-      if(!('toJSON' in source)) {
-        stack[i] = source;
-        const target = isArray(source) ? [] : {};
-
-        forEach(source, (value, key) => {
-          const reducedValue = visit(value, i + 1);
-          !isUndefined(reducedValue) && (target[key] = reducedValue);
-        });
-
-        stack[i] = undefined;
-
-        return target;
-      }
-    }
-
-    return source;
-  };
-
-  return visit(obj, 0);
-};
-
-const isAsyncFn = kindOfTest('AsyncFunction');
-
-const isThenable = (thing) =>
-  thing && (isObject(thing) || isFunction(thing)) && isFunction(thing.then) && isFunction(thing.catch);
-
-var utils$1 = {
-  isArray,
-  isArrayBuffer,
-  isBuffer,
-  isFormData,
-  isArrayBufferView,
-  isString,
-  isNumber,
-  isBoolean,
-  isObject,
-  isPlainObject,
-  isUndefined,
-  isDate,
-  isFile,
-  isBlob,
-  isRegExp,
-  isFunction,
-  isStream,
-  isURLSearchParams,
-  isTypedArray,
-  isFileList,
-  forEach,
-  merge,
-  extend,
-  trim,
-  stripBOM,
-  inherits,
-  toFlatObject,
-  kindOf,
-  kindOfTest,
-  endsWith,
-  toArray,
-  forEachEntry,
-  matchAll,
-  isHTMLForm,
-  hasOwnProperty,
-  hasOwnProp: hasOwnProperty, // an alias to avoid ESLint no-prototype-builtins detection
-  reduceDescriptors,
-  freezeMethods,
-  toObjectSet,
-  toCamelCase,
-  noop,
-  toFiniteNumber,
-  findKey,
-  global: _global,
-  isContextDefined,
-  ALPHABET,
-  generateString,
-  isSpecCompliantForm,
-  toJSONObject,
-  isAsyncFn,
-  isThenable
-};
-
-/**
- * Create an Error with the specified message, config, error code, request and response.
- *
- * @param {string} message The error message.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [config] The config.
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- *
- * @returns {Error} The created error.
- */
-function AxiosError(message, code, config, request, response) {
-  Error.call(this);
-
-  if (Error.captureStackTrace) {
-    Error.captureStackTrace(this, this.constructor);
-  } else {
-    this.stack = (new Error()).stack;
-  }
-
-  this.message = message;
-  this.name = 'AxiosError';
-  code && (this.code = code);
-  config && (this.config = config);
-  request && (this.request = request);
-  response && (this.response = response);
-}
-
-utils$1.inherits(AxiosError, Error, {
-  toJSON: function toJSON() {
-    return {
-      // Standard
-      message: this.message,
-      name: this.name,
-      // Microsoft
-      description: this.description,
-      number: this.number,
-      // Mozilla
-      fileName: this.fileName,
-      lineNumber: this.lineNumber,
-      columnNumber: this.columnNumber,
-      stack: this.stack,
-      // Axios
-      config: utils$1.toJSONObject(this.config),
-      code: this.code,
-      status: this.response && this.response.status ? this.response.status : null
-    };
-  }
-});
-
-const prototype$1 = AxiosError.prototype;
-const descriptors = {};
-
-[
-  'ERR_BAD_OPTION_VALUE',
-  'ERR_BAD_OPTION',
-  'ECONNABORTED',
-  'ETIMEDOUT',
-  'ERR_NETWORK',
-  'ERR_FR_TOO_MANY_REDIRECTS',
-  'ERR_DEPRECATED',
-  'ERR_BAD_RESPONSE',
-  'ERR_BAD_REQUEST',
-  'ERR_CANCELED',
-  'ERR_NOT_SUPPORT',
-  'ERR_INVALID_URL'
-// eslint-disable-next-line func-names
-].forEach(code => {
-  descriptors[code] = {value: code};
-});
-
-Object.defineProperties(AxiosError, descriptors);
-Object.defineProperty(prototype$1, 'isAxiosError', {value: true});
-
-// eslint-disable-next-line func-names
-AxiosError.from = (error, code, config, request, response, customProps) => {
-  const axiosError = Object.create(prototype$1);
-
-  utils$1.toFlatObject(error, axiosError, function filter(obj) {
-    return obj !== Error.prototype;
-  }, prop => {
-    return prop !== 'isAxiosError';
-  });
-
-  AxiosError.call(axiosError, error.message, code, config, request, response);
-
-  axiosError.cause = error;
-
-  axiosError.name = error.name;
-
-  customProps && Object.assign(axiosError, customProps);
-
-  return axiosError;
-};
-
-// eslint-disable-next-line strict
-var httpAdapter = null;
-
-/**
- * Determines if the given thing is a array or js object.
- *
- * @param {string} thing - The object or array to be visited.
- *
- * @returns {boolean}
- */
-function isVisitable(thing) {
-  return utils$1.isPlainObject(thing) || utils$1.isArray(thing);
-}
-
-/**
- * It removes the brackets from the end of a string
- *
- * @param {string} key - The key of the parameter.
- *
- * @returns {string} the key without the brackets.
- */
-function removeBrackets(key) {
-  return utils$1.endsWith(key, '[]') ? key.slice(0, -2) : key;
-}
-
-/**
- * It takes a path, a key, and a boolean, and returns a string
- *
- * @param {string} path - The path to the current key.
- * @param {string} key - The key of the current object being iterated over.
- * @param {string} dots - If true, the key will be rendered with dots instead of brackets.
- *
- * @returns {string} The path to the current key.
- */
-function renderKey(path, key, dots) {
-  if (!path) return key;
-  return path.concat(key).map(function each(token, i) {
-    // eslint-disable-next-line no-param-reassign
-    token = removeBrackets(token);
-    return !dots && i ? '[' + token + ']' : token;
-  }).join(dots ? '.' : '');
-}
-
-/**
- * If the array is an array and none of its elements are visitable, then it's a flat array.
- *
- * @param {Array<any>} arr - The array to check
- *
- * @returns {boolean}
- */
-function isFlatArray(arr) {
-  return utils$1.isArray(arr) && !arr.some(isVisitable);
-}
-
-const predicates = utils$1.toFlatObject(utils$1, {}, null, function filter(prop) {
-  return /^is[A-Z]/.test(prop);
-});
-
-/**
- * Convert a data object to FormData
- *
- * @param {Object} obj
- * @param {?Object} [formData]
- * @param {?Object} [options]
- * @param {Function} [options.visitor]
- * @param {Boolean} [options.metaTokens = true]
- * @param {Boolean} [options.dots = false]
- * @param {?Boolean} [options.indexes = false]
- *
- * @returns {Object}
- **/
-
-/**
- * It converts an object into a FormData object
- *
- * @param {Object<any, any>} obj - The object to convert to form data.
- * @param {string} formData - The FormData object to append to.
- * @param {Object<string, any>} options
- *
- * @returns
- */
-function toFormData(obj, formData, options) {
-  if (!utils$1.isObject(obj)) {
-    throw new TypeError('target must be an object');
-  }
-
-  // eslint-disable-next-line no-param-reassign
-  formData = formData || new (FormData)();
-
-  // eslint-disable-next-line no-param-reassign
-  options = utils$1.toFlatObject(options, {
-    metaTokens: true,
-    dots: false,
-    indexes: false
-  }, false, function defined(option, source) {
-    // eslint-disable-next-line no-eq-null,eqeqeq
-    return !utils$1.isUndefined(source[option]);
-  });
-
-  const metaTokens = options.metaTokens;
-  // eslint-disable-next-line no-use-before-define
-  const visitor = options.visitor || defaultVisitor;
-  const dots = options.dots;
-  const indexes = options.indexes;
-  const _Blob = options.Blob || typeof Blob !== 'undefined' && Blob;
-  const useBlob = _Blob && utils$1.isSpecCompliantForm(formData);
-
-  if (!utils$1.isFunction(visitor)) {
-    throw new TypeError('visitor must be a function');
-  }
-
-  function convertValue(value) {
-    if (value === null) return '';
-
-    if (utils$1.isDate(value)) {
-      return value.toISOString();
-    }
-
-    if (!useBlob && utils$1.isBlob(value)) {
-      throw new AxiosError('Blob is not supported. Use a Buffer instead.');
-    }
-
-    if (utils$1.isArrayBuffer(value) || utils$1.isTypedArray(value)) {
-      return useBlob && typeof Blob === 'function' ? new Blob([value]) : Buffer.from(value);
-    }
-
-    return value;
-  }
-
-  /**
-   * Default visitor.
-   *
-   * @param {*} value
-   * @param {String|Number} key
-   * @param {Array<String|Number>} path
-   * @this {FormData}
-   *
-   * @returns {boolean} return true to visit the each prop of the value recursively
-   */
-  function defaultVisitor(value, key, path) {
-    let arr = value;
-
-    if (value && !path && typeof value === 'object') {
-      if (utils$1.endsWith(key, '{}')) {
-        // eslint-disable-next-line no-param-reassign
-        key = metaTokens ? key : key.slice(0, -2);
-        // eslint-disable-next-line no-param-reassign
-        value = JSON.stringify(value);
-      } else if (
-        (utils$1.isArray(value) && isFlatArray(value)) ||
-        ((utils$1.isFileList(value) || utils$1.endsWith(key, '[]')) && (arr = utils$1.toArray(value))
-        )) {
-        // eslint-disable-next-line no-param-reassign
-        key = removeBrackets(key);
-
-        arr.forEach(function each(el, index) {
-          !(utils$1.isUndefined(el) || el === null) && formData.append(
-            // eslint-disable-next-line no-nested-ternary
-            indexes === true ? renderKey([key], index, dots) : (indexes === null ? key : key + '[]'),
-            convertValue(el)
-          );
-        });
-        return false;
-      }
-    }
-
-    if (isVisitable(value)) {
-      return true;
-    }
-
-    formData.append(renderKey(path, key, dots), convertValue(value));
-
-    return false;
-  }
-
-  const stack = [];
-
-  const exposedHelpers = Object.assign(predicates, {
-    defaultVisitor,
-    convertValue,
-    isVisitable
-  });
-
-  function build(value, path) {
-    if (utils$1.isUndefined(value)) return;
-
-    if (stack.indexOf(value) !== -1) {
-      throw Error('Circular reference detected in ' + path.join('.'));
-    }
-
-    stack.push(value);
-
-    utils$1.forEach(value, function each(el, key) {
-      const result = !(utils$1.isUndefined(el) || el === null) && visitor.call(
-        formData, el, utils$1.isString(key) ? key.trim() : key, path, exposedHelpers
-      );
-
-      if (result === true) {
-        build(el, path ? path.concat(key) : [key]);
-      }
-    });
-
-    stack.pop();
-  }
-
-  if (!utils$1.isObject(obj)) {
-    throw new TypeError('data must be an object');
-  }
-
-  build(obj);
-
-  return formData;
-}
-
-/**
- * It encodes a string by replacing all characters that are not in the unreserved set with
- * their percent-encoded equivalents
- *
- * @param {string} str - The string to encode.
- *
- * @returns {string} The encoded string.
- */
-function encode$1(str) {
-  const charMap = {
-    '!': '%21',
-    "'": '%27',
-    '(': '%28',
-    ')': '%29',
-    '~': '%7E',
-    '%20': '+',
-    '%00': '\x00'
-  };
-  return encodeURIComponent(str).replace(/[!'()~]|%20|%00/g, function replacer(match) {
-    return charMap[match];
-  });
-}
-
-/**
- * It takes a params object and converts it to a FormData object
- *
- * @param {Object<string, any>} params - The parameters to be converted to a FormData object.
- * @param {Object<string, any>} options - The options object passed to the Axios constructor.
- *
- * @returns {void}
- */
-function AxiosURLSearchParams(params, options) {
-  this._pairs = [];
-
-  params && toFormData(params, this, options);
-}
-
-const prototype = AxiosURLSearchParams.prototype;
-
-prototype.append = function append(name, value) {
-  this._pairs.push([name, value]);
-};
-
-prototype.toString = function toString(encoder) {
-  const _encode = encoder ? function(value) {
-    return encoder.call(this, value, encode$1);
-  } : encode$1;
-
-  return this._pairs.map(function each(pair) {
-    return _encode(pair[0]) + '=' + _encode(pair[1]);
-  }, '').join('&');
-};
-
-/**
- * It replaces all instances of the characters `:`, `$`, `,`, `+`, `[`, and `]` with their
- * URI encoded counterparts
- *
- * @param {string} val The value to be encoded.
- *
- * @returns {string} The encoded value.
- */
-function encode(val) {
-  return encodeURIComponent(val).
-    replace(/%3A/gi, ':').
-    replace(/%24/g, '$').
-    replace(/%2C/gi, ',').
-    replace(/%20/g, '+').
-    replace(/%5B/gi, '[').
-    replace(/%5D/gi, ']');
-}
-
-/**
- * Build a URL by appending params to the end
- *
- * @param {string} url The base of the url (e.g., http://www.google.com)
- * @param {object} [params] The params to be appended
- * @param {?object} options
- *
- * @returns {string} The formatted url
- */
-function buildURL(url, params, options) {
-  /*eslint no-param-reassign:0*/
-  if (!params) {
-    return url;
-  }
-  
-  const _encode = options && options.encode || encode;
-
-  const serializeFn = options && options.serialize;
-
-  let serializedParams;
-
-  if (serializeFn) {
-    serializedParams = serializeFn(params, options);
-  } else {
-    serializedParams = utils$1.isURLSearchParams(params) ?
-      params.toString() :
-      new AxiosURLSearchParams(params, options).toString(_encode);
-  }
-
-  if (serializedParams) {
-    const hashmarkIndex = url.indexOf("#");
-
-    if (hashmarkIndex !== -1) {
-      url = url.slice(0, hashmarkIndex);
-    }
-    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
-  }
-
-  return url;
-}
-
-class InterceptorManager {
-  constructor() {
-    this.handlers = [];
-  }
-
-  /**
-   * Add a new interceptor to the stack
-   *
-   * @param {Function} fulfilled The function to handle `then` for a `Promise`
-   * @param {Function} rejected The function to handle `reject` for a `Promise`
-   *
-   * @return {Number} An ID used to remove interceptor later
-   */
-  use(fulfilled, rejected, options) {
-    this.handlers.push({
-      fulfilled,
-      rejected,
-      synchronous: options ? options.synchronous : false,
-      runWhen: options ? options.runWhen : null
-    });
-    return this.handlers.length - 1;
-  }
-
-  /**
-   * Remove an interceptor from the stack
-   *
-   * @param {Number} id The ID that was returned by `use`
-   *
-   * @returns {Boolean} `true` if the interceptor was removed, `false` otherwise
-   */
-  eject(id) {
-    if (this.handlers[id]) {
-      this.handlers[id] = null;
-    }
-  }
-
-  /**
-   * Clear all interceptors from the stack
-   *
-   * @returns {void}
-   */
-  clear() {
-    if (this.handlers) {
-      this.handlers = [];
-    }
-  }
-
-  /**
-   * Iterate over all the registered interceptors
-   *
-   * This method is particularly useful for skipping over any
-   * interceptors that may have become `null` calling `eject`.
-   *
-   * @param {Function} fn The function to call for each interceptor
-   *
-   * @returns {void}
-   */
-  forEach(fn) {
-    utils$1.forEach(this.handlers, function forEachHandler(h) {
-      if (h !== null) {
-        fn(h);
-      }
-    });
-  }
-}
-
-var InterceptorManager$1 = InterceptorManager;
-
-var transitionalDefaults = {
-  silentJSONParsing: true,
-  forcedJSONParsing: true,
-  clarifyTimeoutError: false
-};
-
-var URLSearchParams$1 = typeof URLSearchParams !== 'undefined' ? URLSearchParams : AxiosURLSearchParams;
-
-var FormData$1 = typeof FormData !== 'undefined' ? FormData : null;
-
-var Blob$1 = typeof Blob !== 'undefined' ? Blob : null;
-
-var platform$1 = {
-  isBrowser: true,
-  classes: {
-    URLSearchParams: URLSearchParams$1,
-    FormData: FormData$1,
-    Blob: Blob$1
-  },
-  protocols: ['http', 'https', 'file', 'blob', 'url', 'data']
-};
-
-const hasBrowserEnv = typeof window !== 'undefined' && typeof document !== 'undefined';
-
-/**
- * Determine if we're running in a standard browser environment
- *
- * This allows axios to run in a web worker, and react-native.
- * Both environments support XMLHttpRequest, but not fully standard globals.
- *
- * web workers:
- *  typeof window -> undefined
- *  typeof document -> undefined
- *
- * react-native:
- *  navigator.product -> 'ReactNative'
- * nativescript
- *  navigator.product -> 'NativeScript' or 'NS'
- *
- * @returns {boolean}
- */
-const hasStandardBrowserEnv = (
-  (product) => {
-    return hasBrowserEnv && ['ReactNative', 'NativeScript', 'NS'].indexOf(product) < 0
-  })(typeof navigator !== 'undefined' && navigator.product);
-
-/**
- * Determine if we're running in a standard browser webWorker environment
- *
- * Although the `isStandardBrowserEnv` method indicates that
- * `allows axios to run in a web worker`, the WebWorker will still be
- * filtered out due to its judgment standard
- * `typeof window !== 'undefined' && typeof document !== 'undefined'`.
- * This leads to a problem when axios post `FormData` in webWorker
- */
-const hasStandardBrowserWebWorkerEnv = (() => {
-  return (
-    typeof WorkerGlobalScope !== 'undefined' &&
-    // eslint-disable-next-line no-undef
-    self instanceof WorkerGlobalScope &&
-    typeof self.importScripts === 'function'
-  );
-})();
-
-var utils = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  hasBrowserEnv: hasBrowserEnv,
-  hasStandardBrowserWebWorkerEnv: hasStandardBrowserWebWorkerEnv,
-  hasStandardBrowserEnv: hasStandardBrowserEnv
-});
-
-var platform = {
-  ...utils,
-  ...platform$1
-};
-
-function toURLEncodedForm(data, options) {
-  return toFormData(data, new platform.classes.URLSearchParams(), Object.assign({
-    visitor: function(value, key, path, helpers) {
-      if (platform.isNode && utils$1.isBuffer(value)) {
-        this.append(key, value.toString('base64'));
-        return false;
-      }
-
-      return helpers.defaultVisitor.apply(this, arguments);
-    }
-  }, options));
-}
-
-/**
- * It takes a string like `foo[x][y][z]` and returns an array like `['foo', 'x', 'y', 'z']
- *
- * @param {string} name - The name of the property to get.
- *
- * @returns An array of strings.
- */
-function parsePropPath(name) {
-  // foo[x][y][z]
-  // foo.x.y.z
-  // foo-x-y-z
-  // foo x y z
-  return utils$1.matchAll(/\w+|\[(\w*)]/g, name).map(match => {
-    return match[0] === '[]' ? '' : match[1] || match[0];
-  });
-}
-
-/**
- * Convert an array to an object.
- *
- * @param {Array<any>} arr - The array to convert to an object.
- *
- * @returns An object with the same keys and values as the array.
- */
-function arrayToObject(arr) {
-  const obj = {};
-  const keys = Object.keys(arr);
-  let i;
-  const len = keys.length;
-  let key;
-  for (i = 0; i < len; i++) {
-    key = keys[i];
-    obj[key] = arr[key];
-  }
-  return obj;
-}
-
-/**
- * It takes a FormData object and returns a JavaScript object
- *
- * @param {string} formData The FormData object to convert to JSON.
- *
- * @returns {Object<string, any> | null} The converted object.
- */
-function formDataToJSON(formData) {
-  function buildPath(path, value, target, index) {
-    let name = path[index++];
-
-    if (name === '__proto__') return true;
-
-    const isNumericKey = Number.isFinite(+name);
-    const isLast = index >= path.length;
-    name = !name && utils$1.isArray(target) ? target.length : name;
-
-    if (isLast) {
-      if (utils$1.hasOwnProp(target, name)) {
-        target[name] = [target[name], value];
-      } else {
-        target[name] = value;
-      }
-
-      return !isNumericKey;
-    }
-
-    if (!target[name] || !utils$1.isObject(target[name])) {
-      target[name] = [];
-    }
-
-    const result = buildPath(path, value, target[name], index);
-
-    if (result && utils$1.isArray(target[name])) {
-      target[name] = arrayToObject(target[name]);
-    }
-
-    return !isNumericKey;
-  }
-
-  if (utils$1.isFormData(formData) && utils$1.isFunction(formData.entries)) {
-    const obj = {};
-
-    utils$1.forEachEntry(formData, (name, value) => {
-      buildPath(parsePropPath(name), value, obj, 0);
-    });
-
-    return obj;
-  }
-
-  return null;
-}
-
-/**
- * It takes a string, tries to parse it, and if it fails, it returns the stringified version
- * of the input
- *
- * @param {any} rawValue - The value to be stringified.
- * @param {Function} parser - A function that parses a string into a JavaScript object.
- * @param {Function} encoder - A function that takes a value and returns a string.
- *
- * @returns {string} A stringified version of the rawValue.
- */
-function stringifySafely(rawValue, parser, encoder) {
-  if (utils$1.isString(rawValue)) {
-    try {
-      (parser || JSON.parse)(rawValue);
-      return utils$1.trim(rawValue);
-    } catch (e) {
-      if (e.name !== 'SyntaxError') {
-        throw e;
-      }
-    }
-  }
-
-  return (encoder || JSON.stringify)(rawValue);
-}
-
-const defaults = {
-
-  transitional: transitionalDefaults,
-
-  adapter: ['xhr', 'http'],
-
-  transformRequest: [function transformRequest(data, headers) {
-    const contentType = headers.getContentType() || '';
-    const hasJSONContentType = contentType.indexOf('application/json') > -1;
-    const isObjectPayload = utils$1.isObject(data);
-
-    if (isObjectPayload && utils$1.isHTMLForm(data)) {
-      data = new FormData(data);
-    }
-
-    const isFormData = utils$1.isFormData(data);
-
-    if (isFormData) {
-      return hasJSONContentType ? JSON.stringify(formDataToJSON(data)) : data;
-    }
-
-    if (utils$1.isArrayBuffer(data) ||
-      utils$1.isBuffer(data) ||
-      utils$1.isStream(data) ||
-      utils$1.isFile(data) ||
-      utils$1.isBlob(data)
-    ) {
-      return data;
-    }
-    if (utils$1.isArrayBufferView(data)) {
-      return data.buffer;
-    }
-    if (utils$1.isURLSearchParams(data)) {
-      headers.setContentType('application/x-www-form-urlencoded;charset=utf-8', false);
-      return data.toString();
-    }
-
-    let isFileList;
-
-    if (isObjectPayload) {
-      if (contentType.indexOf('application/x-www-form-urlencoded') > -1) {
-        return toURLEncodedForm(data, this.formSerializer).toString();
-      }
-
-      if ((isFileList = utils$1.isFileList(data)) || contentType.indexOf('multipart/form-data') > -1) {
-        const _FormData = this.env && this.env.FormData;
-
-        return toFormData(
-          isFileList ? {'files[]': data} : data,
-          _FormData && new _FormData(),
-          this.formSerializer
-        );
-      }
-    }
-
-    if (isObjectPayload || hasJSONContentType ) {
-      headers.setContentType('application/json', false);
-      return stringifySafely(data);
-    }
-
-    return data;
-  }],
-
-  transformResponse: [function transformResponse(data) {
-    const transitional = this.transitional || defaults.transitional;
-    const forcedJSONParsing = transitional && transitional.forcedJSONParsing;
-    const JSONRequested = this.responseType === 'json';
-
-    if (data && utils$1.isString(data) && ((forcedJSONParsing && !this.responseType) || JSONRequested)) {
-      const silentJSONParsing = transitional && transitional.silentJSONParsing;
-      const strictJSONParsing = !silentJSONParsing && JSONRequested;
-
-      try {
-        return JSON.parse(data);
-      } catch (e) {
-        if (strictJSONParsing) {
-          if (e.name === 'SyntaxError') {
-            throw AxiosError.from(e, AxiosError.ERR_BAD_RESPONSE, this, null, this.response);
-          }
-          throw e;
-        }
-      }
-    }
-
-    return data;
-  }],
-
-  /**
-   * A timeout in milliseconds to abort a request. If set to 0 (default) a
-   * timeout is not created.
-   */
-  timeout: 0,
-
-  xsrfCookieName: 'XSRF-TOKEN',
-  xsrfHeaderName: 'X-XSRF-TOKEN',
-
-  maxContentLength: -1,
-  maxBodyLength: -1,
-
-  env: {
-    FormData: platform.classes.FormData,
-    Blob: platform.classes.Blob
-  },
-
-  validateStatus: function validateStatus(status) {
-    return status >= 200 && status < 300;
-  },
-
-  headers: {
-    common: {
-      'Accept': 'application/json, text/plain, */*',
-      'Content-Type': undefined
-    }
-  }
-};
-
-utils$1.forEach(['delete', 'get', 'head', 'post', 'put', 'patch'], (method) => {
-  defaults.headers[method] = {};
-});
-
-var defaults$1 = defaults;
-
-// RawAxiosHeaders whose duplicates are ignored by node
-// c.f. https://nodejs.org/api/http.html#http_message_headers
-const ignoreDuplicateOf = utils$1.toObjectSet([
-  'age', 'authorization', 'content-length', 'content-type', 'etag',
-  'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
-  'last-modified', 'location', 'max-forwards', 'proxy-authorization',
-  'referer', 'retry-after', 'user-agent'
-]);
-
-/**
- * Parse headers into an object
- *
- * ```
- * Date: Wed, 27 Aug 2014 08:58:49 GMT
- * Content-Type: application/json
- * Connection: keep-alive
- * Transfer-Encoding: chunked
- * ```
- *
- * @param {String} rawHeaders Headers needing to be parsed
- *
- * @returns {Object} Headers parsed into an object
- */
-var parseHeaders = rawHeaders => {
-  const parsed = {};
-  let key;
-  let val;
-  let i;
-
-  rawHeaders && rawHeaders.split('\n').forEach(function parser(line) {
-    i = line.indexOf(':');
-    key = line.substring(0, i).trim().toLowerCase();
-    val = line.substring(i + 1).trim();
-
-    if (!key || (parsed[key] && ignoreDuplicateOf[key])) {
-      return;
-    }
-
-    if (key === 'set-cookie') {
-      if (parsed[key]) {
-        parsed[key].push(val);
-      } else {
-        parsed[key] = [val];
-      }
-    } else {
-      parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
-    }
-  });
-
-  return parsed;
-};
-
-const $internals = Symbol('internals');
-
-function normalizeHeader(header) {
-  return header && String(header).trim().toLowerCase();
-}
-
-function normalizeValue(value) {
-  if (value === false || value == null) {
-    return value;
-  }
-
-  return utils$1.isArray(value) ? value.map(normalizeValue) : String(value);
-}
-
-function parseTokens(str) {
-  const tokens = Object.create(null);
-  const tokensRE = /([^\s,;=]+)\s*(?:=\s*([^,;]+))?/g;
-  let match;
-
-  while ((match = tokensRE.exec(str))) {
-    tokens[match[1]] = match[2];
-  }
-
-  return tokens;
-}
-
-const isValidHeaderName = (str) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(str.trim());
-
-function matchHeaderValue(context, value, header, filter, isHeaderNameFilter) {
-  if (utils$1.isFunction(filter)) {
-    return filter.call(this, value, header);
-  }
-
-  if (isHeaderNameFilter) {
-    value = header;
-  }
-
-  if (!utils$1.isString(value)) return;
-
-  if (utils$1.isString(filter)) {
-    return value.indexOf(filter) !== -1;
-  }
-
-  if (utils$1.isRegExp(filter)) {
-    return filter.test(value);
-  }
-}
-
-function formatHeader(header) {
-  return header.trim()
-    .toLowerCase().replace(/([a-z\d])(\w*)/g, (w, char, str) => {
-      return char.toUpperCase() + str;
-    });
-}
-
-function buildAccessors(obj, header) {
-  const accessorName = utils$1.toCamelCase(' ' + header);
-
-  ['get', 'set', 'has'].forEach(methodName => {
-    Object.defineProperty(obj, methodName + accessorName, {
-      value: function(arg1, arg2, arg3) {
-        return this[methodName].call(this, header, arg1, arg2, arg3);
-      },
-      configurable: true
-    });
-  });
-}
-
-class AxiosHeaders {
-  constructor(headers) {
-    headers && this.set(headers);
-  }
-
-  set(header, valueOrRewrite, rewrite) {
-    const self = this;
-
-    function setHeader(_value, _header, _rewrite) {
-      const lHeader = normalizeHeader(_header);
-
-      if (!lHeader) {
-        throw new Error('header name must be a non-empty string');
-      }
-
-      const key = utils$1.findKey(self, lHeader);
-
-      if(!key || self[key] === undefined || _rewrite === true || (_rewrite === undefined && self[key] !== false)) {
-        self[key || _header] = normalizeValue(_value);
-      }
-    }
-
-    const setHeaders = (headers, _rewrite) =>
-      utils$1.forEach(headers, (_value, _header) => setHeader(_value, _header, _rewrite));
-
-    if (utils$1.isPlainObject(header) || header instanceof this.constructor) {
-      setHeaders(header, valueOrRewrite);
-    } else if(utils$1.isString(header) && (header = header.trim()) && !isValidHeaderName(header)) {
-      setHeaders(parseHeaders(header), valueOrRewrite);
-    } else {
-      header != null && setHeader(valueOrRewrite, header, rewrite);
-    }
-
-    return this;
-  }
-
-  get(header, parser) {
-    header = normalizeHeader(header);
-
-    if (header) {
-      const key = utils$1.findKey(this, header);
-
-      if (key) {
-        const value = this[key];
-
-        if (!parser) {
-          return value;
-        }
-
-        if (parser === true) {
-          return parseTokens(value);
-        }
-
-        if (utils$1.isFunction(parser)) {
-          return parser.call(this, value, key);
-        }
-
-        if (utils$1.isRegExp(parser)) {
-          return parser.exec(value);
-        }
-
-        throw new TypeError('parser must be boolean|regexp|function');
-      }
-    }
-  }
-
-  has(header, matcher) {
-    header = normalizeHeader(header);
-
-    if (header) {
-      const key = utils$1.findKey(this, header);
-
-      return !!(key && this[key] !== undefined && (!matcher || matchHeaderValue(this, this[key], key, matcher)));
-    }
-
-    return false;
-  }
-
-  delete(header, matcher) {
-    const self = this;
-    let deleted = false;
-
-    function deleteHeader(_header) {
-      _header = normalizeHeader(_header);
-
-      if (_header) {
-        const key = utils$1.findKey(self, _header);
-
-        if (key && (!matcher || matchHeaderValue(self, self[key], key, matcher))) {
-          delete self[key];
-
-          deleted = true;
-        }
-      }
-    }
-
-    if (utils$1.isArray(header)) {
-      header.forEach(deleteHeader);
-    } else {
-      deleteHeader(header);
-    }
-
-    return deleted;
-  }
-
-  clear(matcher) {
-    const keys = Object.keys(this);
-    let i = keys.length;
-    let deleted = false;
-
-    while (i--) {
-      const key = keys[i];
-      if(!matcher || matchHeaderValue(this, this[key], key, matcher, true)) {
-        delete this[key];
-        deleted = true;
-      }
-    }
-
-    return deleted;
-  }
-
-  normalize(format) {
-    const self = this;
-    const headers = {};
-
-    utils$1.forEach(this, (value, header) => {
-      const key = utils$1.findKey(headers, header);
-
-      if (key) {
-        self[key] = normalizeValue(value);
-        delete self[header];
-        return;
-      }
-
-      const normalized = format ? formatHeader(header) : String(header).trim();
-
-      if (normalized !== header) {
-        delete self[header];
-      }
-
-      self[normalized] = normalizeValue(value);
-
-      headers[normalized] = true;
-    });
-
-    return this;
-  }
-
-  concat(...targets) {
-    return this.constructor.concat(this, ...targets);
-  }
-
-  toJSON(asStrings) {
-    const obj = Object.create(null);
-
-    utils$1.forEach(this, (value, header) => {
-      value != null && value !== false && (obj[header] = asStrings && utils$1.isArray(value) ? value.join(', ') : value);
-    });
-
-    return obj;
-  }
-
-  [Symbol.iterator]() {
-    return Object.entries(this.toJSON())[Symbol.iterator]();
-  }
-
-  toString() {
-    return Object.entries(this.toJSON()).map(([header, value]) => header + ': ' + value).join('\n');
-  }
-
-  get [Symbol.toStringTag]() {
-    return 'AxiosHeaders';
-  }
-
-  static from(thing) {
-    return thing instanceof this ? thing : new this(thing);
-  }
-
-  static concat(first, ...targets) {
-    const computed = new this(first);
-
-    targets.forEach((target) => computed.set(target));
-
-    return computed;
-  }
-
-  static accessor(header) {
-    const internals = this[$internals] = (this[$internals] = {
-      accessors: {}
-    });
-
-    const accessors = internals.accessors;
-    const prototype = this.prototype;
-
-    function defineAccessor(_header) {
-      const lHeader = normalizeHeader(_header);
-
-      if (!accessors[lHeader]) {
-        buildAccessors(prototype, _header);
-        accessors[lHeader] = true;
-      }
-    }
-
-    utils$1.isArray(header) ? header.forEach(defineAccessor) : defineAccessor(header);
-
-    return this;
-  }
-}
-
-AxiosHeaders.accessor(['Content-Type', 'Content-Length', 'Accept', 'Accept-Encoding', 'User-Agent', 'Authorization']);
-
-// reserved names hotfix
-utils$1.reduceDescriptors(AxiosHeaders.prototype, ({value}, key) => {
-  let mapped = key[0].toUpperCase() + key.slice(1); // map `set` => `Set`
-  return {
-    get: () => value,
-    set(headerValue) {
-      this[mapped] = headerValue;
-    }
-  }
-});
-
-utils$1.freezeMethods(AxiosHeaders);
-
-var AxiosHeaders$1 = AxiosHeaders;
-
-/**
- * Transform the data for a request or a response
- *
- * @param {Array|Function} fns A single function or Array of functions
- * @param {?Object} response The response object
- *
- * @returns {*} The resulting transformed data
- */
-function transformData(fns, response) {
-  const config = this || defaults$1;
-  const context = response || config;
-  const headers = AxiosHeaders$1.from(context.headers);
-  let data = context.data;
-
-  utils$1.forEach(fns, function transform(fn) {
-    data = fn.call(config, data, headers.normalize(), response ? response.status : undefined);
-  });
-
-  headers.normalize();
-
-  return data;
-}
-
-function isCancel(value) {
-  return !!(value && value.__CANCEL__);
-}
-
-/**
- * A `CanceledError` is an object that is thrown when an operation is canceled.
- *
- * @param {string=} message The message.
- * @param {Object=} config The config.
- * @param {Object=} request The request.
- *
- * @returns {CanceledError} The created error.
- */
-function CanceledError(message, config, request) {
-  // eslint-disable-next-line no-eq-null,eqeqeq
-  AxiosError.call(this, message == null ? 'canceled' : message, AxiosError.ERR_CANCELED, config, request);
-  this.name = 'CanceledError';
-}
-
-utils$1.inherits(CanceledError, AxiosError, {
-  __CANCEL__: true
-});
-
-/**
- * Resolve or reject a Promise based on response status.
- *
- * @param {Function} resolve A function that resolves the promise.
- * @param {Function} reject A function that rejects the promise.
- * @param {object} response The response.
- *
- * @returns {object} The response.
- */
-function settle(resolve, reject, response) {
-  const validateStatus = response.config.validateStatus;
-  if (!response.status || !validateStatus || validateStatus(response.status)) {
-    resolve(response);
-  } else {
-    reject(new AxiosError(
-      'Request failed with status code ' + response.status,
-      [AxiosError.ERR_BAD_REQUEST, AxiosError.ERR_BAD_RESPONSE][Math.floor(response.status / 100) - 4],
-      response.config,
-      response.request,
-      response
-    ));
-  }
-}
-
-var cookies = platform.hasStandardBrowserEnv ?
-
-  // Standard browser envs support document.cookie
-  {
-    write(name, value, expires, path, domain, secure) {
-      const cookie = [name + '=' + encodeURIComponent(value)];
-
-      utils$1.isNumber(expires) && cookie.push('expires=' + new Date(expires).toGMTString());
-
-      utils$1.isString(path) && cookie.push('path=' + path);
-
-      utils$1.isString(domain) && cookie.push('domain=' + domain);
-
-      secure === true && cookie.push('secure');
-
-      document.cookie = cookie.join('; ');
-    },
-
-    read(name) {
-      const match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
-      return (match ? decodeURIComponent(match[3]) : null);
-    },
-
-    remove(name) {
-      this.write(name, '', Date.now() - 86400000);
-    }
-  }
-
-  :
-
-  // Non-standard browser env (web workers, react-native) lack needed support.
-  {
-    write() {},
-    read() {
-      return null;
-    },
-    remove() {}
-  };
-
-/**
- * Determines whether the specified URL is absolute
- *
- * @param {string} url The URL to test
- *
- * @returns {boolean} True if the specified URL is absolute, otherwise false
- */
-function isAbsoluteURL(url) {
-  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
-  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
-  // by any combination of letters, digits, plus, period, or hyphen.
-  return /^([a-z][a-z\d+\-.]*:)?\/\//i.test(url);
-}
-
-/**
- * Creates a new URL by combining the specified URLs
- *
- * @param {string} baseURL The base URL
- * @param {string} relativeURL The relative URL
- *
- * @returns {string} The combined URL
- */
-function combineURLs(baseURL, relativeURL) {
-  return relativeURL
-    ? baseURL.replace(/\/?\/$/, '') + '/' + relativeURL.replace(/^\/+/, '')
-    : baseURL;
-}
-
-/**
- * Creates a new URL by combining the baseURL with the requestedURL,
- * only when the requestedURL is not already an absolute URL.
- * If the requestURL is absolute, this function returns the requestedURL untouched.
- *
- * @param {string} baseURL The base URL
- * @param {string} requestedURL Absolute or relative URL to combine
- *
- * @returns {string} The combined full path
- */
-function buildFullPath(baseURL, requestedURL) {
-  if (baseURL && !isAbsoluteURL(requestedURL)) {
-    return combineURLs(baseURL, requestedURL);
-  }
-  return requestedURL;
-}
-
-var isURLSameOrigin = platform.hasStandardBrowserEnv ?
-
-// Standard browser envs have full support of the APIs needed to test
-// whether the request URL is of the same origin as current location.
-  (function standardBrowserEnv() {
-    const msie = /(msie|trident)/i.test(navigator.userAgent);
-    const urlParsingNode = document.createElement('a');
-    let originURL;
-
-    /**
-    * Parse a URL to discover its components
-    *
-    * @param {String} url The URL to be parsed
-    * @returns {Object}
-    */
-    function resolveURL(url) {
-      let href = url;
-
-      if (msie) {
-        // IE needs attribute set twice to normalize properties
-        urlParsingNode.setAttribute('href', href);
-        href = urlParsingNode.href;
-      }
-
-      urlParsingNode.setAttribute('href', href);
-
-      // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
-      return {
-        href: urlParsingNode.href,
-        protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
-        host: urlParsingNode.host,
-        search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
-        hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
-        hostname: urlParsingNode.hostname,
-        port: urlParsingNode.port,
-        pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
-          urlParsingNode.pathname :
-          '/' + urlParsingNode.pathname
-      };
-    }
-
-    originURL = resolveURL(window.location.href);
-
-    /**
-    * Determine if a URL shares the same origin as the current location
-    *
-    * @param {String} requestURL The URL to test
-    * @returns {boolean} True if URL shares the same origin, otherwise false
-    */
-    return function isURLSameOrigin(requestURL) {
-      const parsed = (utils$1.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
-      return (parsed.protocol === originURL.protocol &&
-          parsed.host === originURL.host);
-    };
-  })() :
-
-  // Non standard browser envs (web workers, react-native) lack needed support.
-  (function nonStandardBrowserEnv() {
-    return function isURLSameOrigin() {
-      return true;
-    };
-  })();
-
-function parseProtocol(url) {
-  const match = /^([-+\w]{1,25})(:?\/\/|:)/.exec(url);
-  return match && match[1] || '';
-}
-
-/**
- * Calculate data maxRate
- * @param {Number} [samplesCount= 10]
- * @param {Number} [min= 1000]
- * @returns {Function}
- */
-function speedometer(samplesCount, min) {
-  samplesCount = samplesCount || 10;
-  const bytes = new Array(samplesCount);
-  const timestamps = new Array(samplesCount);
-  let head = 0;
-  let tail = 0;
-  let firstSampleTS;
-
-  min = min !== undefined ? min : 1000;
-
-  return function push(chunkLength) {
-    const now = Date.now();
-
-    const startedAt = timestamps[tail];
-
-    if (!firstSampleTS) {
-      firstSampleTS = now;
-    }
-
-    bytes[head] = chunkLength;
-    timestamps[head] = now;
-
-    let i = tail;
-    let bytesCount = 0;
-
-    while (i !== head) {
-      bytesCount += bytes[i++];
-      i = i % samplesCount;
-    }
-
-    head = (head + 1) % samplesCount;
-
-    if (head === tail) {
-      tail = (tail + 1) % samplesCount;
-    }
-
-    if (now - firstSampleTS < min) {
-      return;
-    }
-
-    const passed = startedAt && now - startedAt;
-
-    return passed ? Math.round(bytesCount * 1000 / passed) : undefined;
-  };
-}
-
-function progressEventReducer(listener, isDownloadStream) {
-  let bytesNotified = 0;
-  const _speedometer = speedometer(50, 250);
-
-  return e => {
-    const loaded = e.loaded;
-    const total = e.lengthComputable ? e.total : undefined;
-    const progressBytes = loaded - bytesNotified;
-    const rate = _speedometer(progressBytes);
-    const inRange = loaded <= total;
-
-    bytesNotified = loaded;
-
-    const data = {
-      loaded,
-      total,
-      progress: total ? (loaded / total) : undefined,
-      bytes: progressBytes,
-      rate: rate ? rate : undefined,
-      estimated: rate && total && inRange ? (total - loaded) / rate : undefined,
-      event: e
-    };
-
-    data[isDownloadStream ? 'download' : 'upload'] = true;
-
-    listener(data);
-  };
-}
-
-const isXHRAdapterSupported = typeof XMLHttpRequest !== 'undefined';
-
-var xhrAdapter = isXHRAdapterSupported && function (config) {
-  return new Promise(function dispatchXhrRequest(resolve, reject) {
-    let requestData = config.data;
-    const requestHeaders = AxiosHeaders$1.from(config.headers).normalize();
-    let {responseType, withXSRFToken} = config;
-    let onCanceled;
-    function done() {
-      if (config.cancelToken) {
-        config.cancelToken.unsubscribe(onCanceled);
-      }
-
-      if (config.signal) {
-        config.signal.removeEventListener('abort', onCanceled);
-      }
-    }
-
-    let contentType;
-
-    if (utils$1.isFormData(requestData)) {
-      if (platform.hasStandardBrowserEnv || platform.hasStandardBrowserWebWorkerEnv) {
-        requestHeaders.setContentType(false); // Let the browser set it
-      } else if ((contentType = requestHeaders.getContentType()) !== false) {
-        // fix semicolon duplication issue for ReactNative FormData implementation
-        const [type, ...tokens] = contentType ? contentType.split(';').map(token => token.trim()).filter(Boolean) : [];
-        requestHeaders.setContentType([type || 'multipart/form-data', ...tokens].join('; '));
-      }
-    }
-
-    let request = new XMLHttpRequest();
-
-    // HTTP basic authentication
-    if (config.auth) {
-      const username = config.auth.username || '';
-      const password = config.auth.password ? unescape(encodeURIComponent(config.auth.password)) : '';
-      requestHeaders.set('Authorization', 'Basic ' + btoa(username + ':' + password));
-    }
-
-    const fullPath = buildFullPath(config.baseURL, config.url);
-
-    request.open(config.method.toUpperCase(), buildURL(fullPath, config.params, config.paramsSerializer), true);
-
-    // Set the request timeout in MS
-    request.timeout = config.timeout;
-
-    function onloadend() {
-      if (!request) {
-        return;
-      }
-      // Prepare the response
-      const responseHeaders = AxiosHeaders$1.from(
-        'getAllResponseHeaders' in request && request.getAllResponseHeaders()
-      );
-      const responseData = !responseType || responseType === 'text' || responseType === 'json' ?
-        request.responseText : request.response;
-      const response = {
-        data: responseData,
-        status: request.status,
-        statusText: request.statusText,
-        headers: responseHeaders,
-        config,
-        request
-      };
-
-      settle(function _resolve(value) {
-        resolve(value);
-        done();
-      }, function _reject(err) {
-        reject(err);
-        done();
-      }, response);
-
-      // Clean up request
-      request = null;
-    }
-
-    if ('onloadend' in request) {
-      // Use onloadend if available
-      request.onloadend = onloadend;
-    } else {
-      // Listen for ready state to emulate onloadend
-      request.onreadystatechange = function handleLoad() {
-        if (!request || request.readyState !== 4) {
-          return;
-        }
-
-        // The request errored out and we didn't get a response, this will be
-        // handled by onerror instead
-        // With one exception: request that using file: protocol, most browsers
-        // will return status as 0 even though it's a successful request
-        if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf('file:') === 0)) {
-          return;
-        }
-        // readystate handler is calling before onerror or ontimeout handlers,
-        // so we should call onloadend on the next 'tick'
-        setTimeout(onloadend);
-      };
-    }
-
-    // Handle browser request cancellation (as opposed to a manual cancellation)
-    request.onabort = function handleAbort() {
-      if (!request) {
-        return;
-      }
-
-      reject(new AxiosError('Request aborted', AxiosError.ECONNABORTED, config, request));
-
-      // Clean up request
-      request = null;
-    };
-
-    // Handle low level network errors
-    request.onerror = function handleError() {
-      // Real errors are hidden from us by the browser
-      // onerror should only fire if it's a network error
-      reject(new AxiosError('Network Error', AxiosError.ERR_NETWORK, config, request));
-
-      // Clean up request
-      request = null;
-    };
-
-    // Handle timeout
-    request.ontimeout = function handleTimeout() {
-      let timeoutErrorMessage = config.timeout ? 'timeout of ' + config.timeout + 'ms exceeded' : 'timeout exceeded';
-      const transitional = config.transitional || transitionalDefaults;
-      if (config.timeoutErrorMessage) {
-        timeoutErrorMessage = config.timeoutErrorMessage;
-      }
-      reject(new AxiosError(
-        timeoutErrorMessage,
-        transitional.clarifyTimeoutError ? AxiosError.ETIMEDOUT : AxiosError.ECONNABORTED,
-        config,
-        request));
-
-      // Clean up request
-      request = null;
-    };
-
-    // Add xsrf header
-    // This is only done if running in a standard browser environment.
-    // Specifically not if we're in a web worker, or react-native.
-    if(platform.hasStandardBrowserEnv) {
-      withXSRFToken && utils$1.isFunction(withXSRFToken) && (withXSRFToken = withXSRFToken(config));
-
-      if (withXSRFToken || (withXSRFToken !== false && isURLSameOrigin(fullPath))) {
-        // Add xsrf header
-        const xsrfValue = config.xsrfHeaderName && config.xsrfCookieName && cookies.read(config.xsrfCookieName);
-
-        if (xsrfValue) {
-          requestHeaders.set(config.xsrfHeaderName, xsrfValue);
-        }
-      }
-    }
-
-    // Remove Content-Type if data is undefined
-    requestData === undefined && requestHeaders.setContentType(null);
-
-    // Add headers to the request
-    if ('setRequestHeader' in request) {
-      utils$1.forEach(requestHeaders.toJSON(), function setRequestHeader(val, key) {
-        request.setRequestHeader(key, val);
-      });
-    }
-
-    // Add withCredentials to request if needed
-    if (!utils$1.isUndefined(config.withCredentials)) {
-      request.withCredentials = !!config.withCredentials;
-    }
-
-    // Add responseType to request if needed
-    if (responseType && responseType !== 'json') {
-      request.responseType = config.responseType;
-    }
-
-    // Handle progress if needed
-    if (typeof config.onDownloadProgress === 'function') {
-      request.addEventListener('progress', progressEventReducer(config.onDownloadProgress, true));
-    }
-
-    // Not all browsers support upload events
-    if (typeof config.onUploadProgress === 'function' && request.upload) {
-      request.upload.addEventListener('progress', progressEventReducer(config.onUploadProgress));
-    }
-
-    if (config.cancelToken || config.signal) {
-      // Handle cancellation
-      // eslint-disable-next-line func-names
-      onCanceled = cancel => {
-        if (!request) {
-          return;
-        }
-        reject(!cancel || cancel.type ? new CanceledError(null, config, request) : cancel);
-        request.abort();
-        request = null;
-      };
-
-      config.cancelToken && config.cancelToken.subscribe(onCanceled);
-      if (config.signal) {
-        config.signal.aborted ? onCanceled() : config.signal.addEventListener('abort', onCanceled);
-      }
-    }
-
-    const protocol = parseProtocol(fullPath);
-
-    if (protocol && platform.protocols.indexOf(protocol) === -1) {
-      reject(new AxiosError('Unsupported protocol ' + protocol + ':', AxiosError.ERR_BAD_REQUEST, config));
-      return;
-    }
-
-
-    // Send the request
-    request.send(requestData || null);
-  });
-};
-
-const knownAdapters = {
-  http: httpAdapter,
-  xhr: xhrAdapter
-};
-
-utils$1.forEach(knownAdapters, (fn, value) => {
-  if (fn) {
-    try {
-      Object.defineProperty(fn, 'name', {value});
-    } catch (e) {
-      // eslint-disable-next-line no-empty
-    }
-    Object.defineProperty(fn, 'adapterName', {value});
-  }
-});
-
-const renderReason = (reason) => `- ${reason}`;
-
-const isResolvedHandle = (adapter) => utils$1.isFunction(adapter) || adapter === null || adapter === false;
-
-var adapters = {
-  getAdapter: (adapters) => {
-    adapters = utils$1.isArray(adapters) ? adapters : [adapters];
-
-    const {length} = adapters;
-    let nameOrAdapter;
-    let adapter;
-
-    const rejectedReasons = {};
-
-    for (let i = 0; i < length; i++) {
-      nameOrAdapter = adapters[i];
-      let id;
-
-      adapter = nameOrAdapter;
-
-      if (!isResolvedHandle(nameOrAdapter)) {
-        adapter = knownAdapters[(id = String(nameOrAdapter)).toLowerCase()];
-
-        if (adapter === undefined) {
-          throw new AxiosError(`Unknown adapter '${id}'`);
-        }
-      }
-
-      if (adapter) {
-        break;
-      }
-
-      rejectedReasons[id || '#' + i] = adapter;
-    }
-
-    if (!adapter) {
-
-      const reasons = Object.entries(rejectedReasons)
-        .map(([id, state]) => `adapter ${id} ` +
-          (state === false ? 'is not supported by the environment' : 'is not available in the build')
-        );
-
-      let s = length ?
-        (reasons.length > 1 ? 'since :\n' + reasons.map(renderReason).join('\n') : ' ' + renderReason(reasons[0])) :
-        'as no adapter specified';
-
-      throw new AxiosError(
-        `There is no suitable adapter to dispatch the request ` + s,
-        'ERR_NOT_SUPPORT'
-      );
-    }
-
-    return adapter;
-  },
-  adapters: knownAdapters
-};
-
-/**
- * Throws a `CanceledError` if cancellation has been requested.
- *
- * @param {Object} config The config that is to be used for the request
- *
- * @returns {void}
- */
-function throwIfCancellationRequested(config) {
-  if (config.cancelToken) {
-    config.cancelToken.throwIfRequested();
-  }
-
-  if (config.signal && config.signal.aborted) {
-    throw new CanceledError(null, config);
-  }
-}
-
-/**
- * Dispatch a request to the server using the configured adapter.
- *
- * @param {object} config The config that is to be used for the request
- *
- * @returns {Promise} The Promise to be fulfilled
- */
-function dispatchRequest(config) {
-  throwIfCancellationRequested(config);
-
-  config.headers = AxiosHeaders$1.from(config.headers);
-
-  // Transform request data
-  config.data = transformData.call(
-    config,
-    config.transformRequest
-  );
-
-  if (['post', 'put', 'patch'].indexOf(config.method) !== -1) {
-    config.headers.setContentType('application/x-www-form-urlencoded', false);
-  }
-
-  const adapter = adapters.getAdapter(config.adapter || defaults$1.adapter);
-
-  return adapter(config).then(function onAdapterResolution(response) {
-    throwIfCancellationRequested(config);
-
-    // Transform response data
-    response.data = transformData.call(
-      config,
-      config.transformResponse,
-      response
-    );
-
-    response.headers = AxiosHeaders$1.from(response.headers);
-
-    return response;
-  }, function onAdapterRejection(reason) {
-    if (!isCancel(reason)) {
-      throwIfCancellationRequested(config);
-
-      // Transform response data
-      if (reason && reason.response) {
-        reason.response.data = transformData.call(
-          config,
-          config.transformResponse,
-          reason.response
-        );
-        reason.response.headers = AxiosHeaders$1.from(reason.response.headers);
-      }
-    }
-
-    return Promise.reject(reason);
-  });
-}
-
-const headersToObject = (thing) => thing instanceof AxiosHeaders$1 ? thing.toJSON() : thing;
-
-/**
- * Config-specific merge-function which creates a new config-object
- * by merging two configuration objects together.
- *
- * @param {Object} config1
- * @param {Object} config2
- *
- * @returns {Object} New object resulting from merging config2 to config1
- */
-function mergeConfig(config1, config2) {
-  // eslint-disable-next-line no-param-reassign
-  config2 = config2 || {};
-  const config = {};
-
-  function getMergedValue(target, source, caseless) {
-    if (utils$1.isPlainObject(target) && utils$1.isPlainObject(source)) {
-      return utils$1.merge.call({caseless}, target, source);
-    } else if (utils$1.isPlainObject(source)) {
-      return utils$1.merge({}, source);
-    } else if (utils$1.isArray(source)) {
-      return source.slice();
-    }
-    return source;
-  }
-
-  // eslint-disable-next-line consistent-return
-  function mergeDeepProperties(a, b, caseless) {
-    if (!utils$1.isUndefined(b)) {
-      return getMergedValue(a, b, caseless);
-    } else if (!utils$1.isUndefined(a)) {
-      return getMergedValue(undefined, a, caseless);
-    }
-  }
-
-  // eslint-disable-next-line consistent-return
-  function valueFromConfig2(a, b) {
-    if (!utils$1.isUndefined(b)) {
-      return getMergedValue(undefined, b);
-    }
-  }
-
-  // eslint-disable-next-line consistent-return
-  function defaultToConfig2(a, b) {
-    if (!utils$1.isUndefined(b)) {
-      return getMergedValue(undefined, b);
-    } else if (!utils$1.isUndefined(a)) {
-      return getMergedValue(undefined, a);
-    }
-  }
-
-  // eslint-disable-next-line consistent-return
-  function mergeDirectKeys(a, b, prop) {
-    if (prop in config2) {
-      return getMergedValue(a, b);
-    } else if (prop in config1) {
-      return getMergedValue(undefined, a);
-    }
-  }
-
-  const mergeMap = {
-    url: valueFromConfig2,
-    method: valueFromConfig2,
-    data: valueFromConfig2,
-    baseURL: defaultToConfig2,
-    transformRequest: defaultToConfig2,
-    transformResponse: defaultToConfig2,
-    paramsSerializer: defaultToConfig2,
-    timeout: defaultToConfig2,
-    timeoutMessage: defaultToConfig2,
-    withCredentials: defaultToConfig2,
-    withXSRFToken: defaultToConfig2,
-    adapter: defaultToConfig2,
-    responseType: defaultToConfig2,
-    xsrfCookieName: defaultToConfig2,
-    xsrfHeaderName: defaultToConfig2,
-    onUploadProgress: defaultToConfig2,
-    onDownloadProgress: defaultToConfig2,
-    decompress: defaultToConfig2,
-    maxContentLength: defaultToConfig2,
-    maxBodyLength: defaultToConfig2,
-    beforeRedirect: defaultToConfig2,
-    transport: defaultToConfig2,
-    httpAgent: defaultToConfig2,
-    httpsAgent: defaultToConfig2,
-    cancelToken: defaultToConfig2,
-    socketPath: defaultToConfig2,
-    responseEncoding: defaultToConfig2,
-    validateStatus: mergeDirectKeys,
-    headers: (a, b) => mergeDeepProperties(headersToObject(a), headersToObject(b), true)
-  };
-
-  utils$1.forEach(Object.keys(Object.assign({}, config1, config2)), function computeConfigValue(prop) {
-    const merge = mergeMap[prop] || mergeDeepProperties;
-    const configValue = merge(config1[prop], config2[prop], prop);
-    (utils$1.isUndefined(configValue) && merge !== mergeDirectKeys) || (config[prop] = configValue);
-  });
-
-  return config;
-}
-
-const VERSION = "1.6.7";
-
-const validators$1 = {};
-
-// eslint-disable-next-line func-names
-['object', 'boolean', 'number', 'function', 'string', 'symbol'].forEach((type, i) => {
-  validators$1[type] = function validator(thing) {
-    return typeof thing === type || 'a' + (i < 1 ? 'n ' : ' ') + type;
-  };
-});
-
-const deprecatedWarnings = {};
-
-/**
- * Transitional option validator
- *
- * @param {function|boolean?} validator - set to false if the transitional option has been removed
- * @param {string?} version - deprecated version / removed since version
- * @param {string?} message - some message with additional info
- *
- * @returns {function}
- */
-validators$1.transitional = function transitional(validator, version, message) {
-  function formatMessage(opt, desc) {
-    return '[Axios v' + VERSION + '] Transitional option \'' + opt + '\'' + desc + (message ? '. ' + message : '');
-  }
-
-  // eslint-disable-next-line func-names
-  return (value, opt, opts) => {
-    if (validator === false) {
-      throw new AxiosError(
-        formatMessage(opt, ' has been removed' + (version ? ' in ' + version : '')),
-        AxiosError.ERR_DEPRECATED
-      );
-    }
-
-    if (version && !deprecatedWarnings[opt]) {
-      deprecatedWarnings[opt] = true;
-      // eslint-disable-next-line no-console
-      console.warn(
-        formatMessage(
-          opt,
-          ' has been deprecated since v' + version + ' and will be removed in the near future'
-        )
-      );
-    }
-
-    return validator ? validator(value, opt, opts) : true;
-  };
-};
-
-/**
- * Assert object's properties type
- *
- * @param {object} options
- * @param {object} schema
- * @param {boolean?} allowUnknown
- *
- * @returns {object}
- */
-
-function assertOptions(options, schema, allowUnknown) {
-  if (typeof options !== 'object') {
-    throw new AxiosError('options must be an object', AxiosError.ERR_BAD_OPTION_VALUE);
-  }
-  const keys = Object.keys(options);
-  let i = keys.length;
-  while (i-- > 0) {
-    const opt = keys[i];
-    const validator = schema[opt];
-    if (validator) {
-      const value = options[opt];
-      const result = value === undefined || validator(value, opt, options);
-      if (result !== true) {
-        throw new AxiosError('option ' + opt + ' must be ' + result, AxiosError.ERR_BAD_OPTION_VALUE);
-      }
-      continue;
-    }
-    if (allowUnknown !== true) {
-      throw new AxiosError('Unknown option ' + opt, AxiosError.ERR_BAD_OPTION);
-    }
-  }
-}
-
-var validator = {
-  assertOptions,
-  validators: validators$1
-};
-
-const validators = validator.validators;
-
-/**
- * Create a new instance of Axios
- *
- * @param {Object} instanceConfig The default config for the instance
- *
- * @return {Axios} A new instance of Axios
- */
-class Axios {
-  constructor(instanceConfig) {
-    this.defaults = instanceConfig;
-    this.interceptors = {
-      request: new InterceptorManager$1(),
-      response: new InterceptorManager$1()
-    };
-  }
-
-  /**
-   * Dispatch a request
-   *
-   * @param {String|Object} configOrUrl The config specific for this request (merged with this.defaults)
-   * @param {?Object} config
-   *
-   * @returns {Promise} The Promise to be fulfilled
-   */
-  async request(configOrUrl, config) {
-    try {
-      return await this._request(configOrUrl, config);
-    } catch (err) {
-      if (err instanceof Error) {
-        let dummy;
-
-        Error.captureStackTrace ? Error.captureStackTrace(dummy = {}) : (dummy = new Error());
-
-        // slice off the Error: ... line
-        const stack = dummy.stack ? dummy.stack.replace(/^.+\n/, '') : '';
-
-        if (!err.stack) {
-          err.stack = stack;
-          // match without the 2 top stack lines
-        } else if (stack && !String(err.stack).endsWith(stack.replace(/^.+\n.+\n/, ''))) {
-          err.stack += '\n' + stack;
-        }
-      }
-
-      throw err;
-    }
-  }
-
-  _request(configOrUrl, config) {
-    /*eslint no-param-reassign:0*/
-    // Allow for axios('example/url'[, config]) a la fetch API
-    if (typeof configOrUrl === 'string') {
-      config = config || {};
-      config.url = configOrUrl;
-    } else {
-      config = configOrUrl || {};
-    }
-
-    config = mergeConfig(this.defaults, config);
-
-    const {transitional, paramsSerializer, headers} = config;
-
-    if (transitional !== undefined) {
-      validator.assertOptions(transitional, {
-        silentJSONParsing: validators.transitional(validators.boolean),
-        forcedJSONParsing: validators.transitional(validators.boolean),
-        clarifyTimeoutError: validators.transitional(validators.boolean)
-      }, false);
-    }
-
-    if (paramsSerializer != null) {
-      if (utils$1.isFunction(paramsSerializer)) {
-        config.paramsSerializer = {
-          serialize: paramsSerializer
-        };
-      } else {
-        validator.assertOptions(paramsSerializer, {
-          encode: validators.function,
-          serialize: validators.function
-        }, true);
-      }
-    }
-
-    // Set config.method
-    config.method = (config.method || this.defaults.method || 'get').toLowerCase();
-
-    // Flatten headers
-    let contextHeaders = headers && utils$1.merge(
-      headers.common,
-      headers[config.method]
-    );
-
-    headers && utils$1.forEach(
-      ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
-      (method) => {
-        delete headers[method];
-      }
-    );
-
-    config.headers = AxiosHeaders$1.concat(contextHeaders, headers);
-
-    // filter out skipped interceptors
-    const requestInterceptorChain = [];
-    let synchronousRequestInterceptors = true;
-    this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
-      if (typeof interceptor.runWhen === 'function' && interceptor.runWhen(config) === false) {
-        return;
-      }
-
-      synchronousRequestInterceptors = synchronousRequestInterceptors && interceptor.synchronous;
-
-      requestInterceptorChain.unshift(interceptor.fulfilled, interceptor.rejected);
-    });
-
-    const responseInterceptorChain = [];
-    this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
-      responseInterceptorChain.push(interceptor.fulfilled, interceptor.rejected);
-    });
-
-    let promise;
-    let i = 0;
-    let len;
-
-    if (!synchronousRequestInterceptors) {
-      const chain = [dispatchRequest.bind(this), undefined];
-      chain.unshift.apply(chain, requestInterceptorChain);
-      chain.push.apply(chain, responseInterceptorChain);
-      len = chain.length;
-
-      promise = Promise.resolve(config);
-
-      while (i < len) {
-        promise = promise.then(chain[i++], chain[i++]);
-      }
-
-      return promise;
-    }
-
-    len = requestInterceptorChain.length;
-
-    let newConfig = config;
-
-    i = 0;
-
-    while (i < len) {
-      const onFulfilled = requestInterceptorChain[i++];
-      const onRejected = requestInterceptorChain[i++];
-      try {
-        newConfig = onFulfilled(newConfig);
-      } catch (error) {
-        onRejected.call(this, error);
-        break;
-      }
-    }
-
-    try {
-      promise = dispatchRequest.call(this, newConfig);
-    } catch (error) {
-      return Promise.reject(error);
-    }
-
-    i = 0;
-    len = responseInterceptorChain.length;
-
-    while (i < len) {
-      promise = promise.then(responseInterceptorChain[i++], responseInterceptorChain[i++]);
-    }
-
-    return promise;
-  }
-
-  getUri(config) {
-    config = mergeConfig(this.defaults, config);
-    const fullPath = buildFullPath(config.baseURL, config.url);
-    return buildURL(fullPath, config.params, config.paramsSerializer);
-  }
-}
-
-// Provide aliases for supported request methods
-utils$1.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
-  /*eslint func-names:0*/
-  Axios.prototype[method] = function(url, config) {
-    return this.request(mergeConfig(config || {}, {
-      method,
-      url,
-      data: (config || {}).data
-    }));
-  };
-});
-
-utils$1.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-  /*eslint func-names:0*/
-
-  function generateHTTPMethod(isForm) {
-    return function httpMethod(url, data, config) {
-      return this.request(mergeConfig(config || {}, {
-        method,
-        headers: isForm ? {
-          'Content-Type': 'multipart/form-data'
-        } : {},
-        url,
-        data
-      }));
-    };
-  }
-
-  Axios.prototype[method] = generateHTTPMethod();
-
-  Axios.prototype[method + 'Form'] = generateHTTPMethod(true);
-});
-
-var Axios$1 = Axios;
-
-/**
- * A `CancelToken` is an object that can be used to request cancellation of an operation.
- *
- * @param {Function} executor The executor function.
- *
- * @returns {CancelToken}
- */
-class CancelToken {
-  constructor(executor) {
-    if (typeof executor !== 'function') {
-      throw new TypeError('executor must be a function.');
-    }
-
-    let resolvePromise;
-
-    this.promise = new Promise(function promiseExecutor(resolve) {
-      resolvePromise = resolve;
-    });
-
-    const token = this;
-
-    // eslint-disable-next-line func-names
-    this.promise.then(cancel => {
-      if (!token._listeners) return;
-
-      let i = token._listeners.length;
-
-      while (i-- > 0) {
-        token._listeners[i](cancel);
-      }
-      token._listeners = null;
-    });
-
-    // eslint-disable-next-line func-names
-    this.promise.then = onfulfilled => {
-      let _resolve;
-      // eslint-disable-next-line func-names
-      const promise = new Promise(resolve => {
-        token.subscribe(resolve);
-        _resolve = resolve;
-      }).then(onfulfilled);
-
-      promise.cancel = function reject() {
-        token.unsubscribe(_resolve);
-      };
-
-      return promise;
-    };
-
-    executor(function cancel(message, config, request) {
-      if (token.reason) {
-        // Cancellation has already been requested
-        return;
-      }
-
-      token.reason = new CanceledError(message, config, request);
-      resolvePromise(token.reason);
-    });
-  }
-
-  /**
-   * Throws a `CanceledError` if cancellation has been requested.
-   */
-  throwIfRequested() {
-    if (this.reason) {
-      throw this.reason;
-    }
-  }
-
-  /**
-   * Subscribe to the cancel signal
-   */
-
-  subscribe(listener) {
-    if (this.reason) {
-      listener(this.reason);
-      return;
-    }
-
-    if (this._listeners) {
-      this._listeners.push(listener);
-    } else {
-      this._listeners = [listener];
-    }
-  }
-
-  /**
-   * Unsubscribe from the cancel signal
-   */
-
-  unsubscribe(listener) {
-    if (!this._listeners) {
-      return;
-    }
-    const index = this._listeners.indexOf(listener);
-    if (index !== -1) {
-      this._listeners.splice(index, 1);
-    }
-  }
-
-  /**
-   * Returns an object that contains a new `CancelToken` and a function that, when called,
-   * cancels the `CancelToken`.
-   */
-  static source() {
-    let cancel;
-    const token = new CancelToken(function executor(c) {
-      cancel = c;
-    });
-    return {
-      token,
-      cancel
-    };
-  }
-}
-
-var CancelToken$1 = CancelToken;
-
-/**
- * Syntactic sugar for invoking a function and expanding an array for arguments.
- *
- * Common use case would be to use `Function.prototype.apply`.
- *
- *  ```js
- *  function f(x, y, z) {}
- *  var args = [1, 2, 3];
- *  f.apply(null, args);
- *  ```
- *
- * With `spread` this example can be re-written.
- *
- *  ```js
- *  spread(function(x, y, z) {})([1, 2, 3]);
- *  ```
- *
- * @param {Function} callback
- *
- * @returns {Function}
- */
-function spread(callback) {
-  return function wrap(arr) {
-    return callback.apply(null, arr);
-  };
-}
-
-/**
- * Determines whether the payload is an error thrown by Axios
- *
- * @param {*} payload The value to test
- *
- * @returns {boolean} True if the payload is an error thrown by Axios, otherwise false
- */
-function isAxiosError(payload) {
-  return utils$1.isObject(payload) && (payload.isAxiosError === true);
-}
-
-const HttpStatusCode = {
-  Continue: 100,
-  SwitchingProtocols: 101,
-  Processing: 102,
-  EarlyHints: 103,
-  Ok: 200,
-  Created: 201,
-  Accepted: 202,
-  NonAuthoritativeInformation: 203,
-  NoContent: 204,
-  ResetContent: 205,
-  PartialContent: 206,
-  MultiStatus: 207,
-  AlreadyReported: 208,
-  ImUsed: 226,
-  MultipleChoices: 300,
-  MovedPermanently: 301,
-  Found: 302,
-  SeeOther: 303,
-  NotModified: 304,
-  UseProxy: 305,
-  Unused: 306,
-  TemporaryRedirect: 307,
-  PermanentRedirect: 308,
-  BadRequest: 400,
-  Unauthorized: 401,
-  PaymentRequired: 402,
-  Forbidden: 403,
-  NotFound: 404,
-  MethodNotAllowed: 405,
-  NotAcceptable: 406,
-  ProxyAuthenticationRequired: 407,
-  RequestTimeout: 408,
-  Conflict: 409,
-  Gone: 410,
-  LengthRequired: 411,
-  PreconditionFailed: 412,
-  PayloadTooLarge: 413,
-  UriTooLong: 414,
-  UnsupportedMediaType: 415,
-  RangeNotSatisfiable: 416,
-  ExpectationFailed: 417,
-  ImATeapot: 418,
-  MisdirectedRequest: 421,
-  UnprocessableEntity: 422,
-  Locked: 423,
-  FailedDependency: 424,
-  TooEarly: 425,
-  UpgradeRequired: 426,
-  PreconditionRequired: 428,
-  TooManyRequests: 429,
-  RequestHeaderFieldsTooLarge: 431,
-  UnavailableForLegalReasons: 451,
-  InternalServerError: 500,
-  NotImplemented: 501,
-  BadGateway: 502,
-  ServiceUnavailable: 503,
-  GatewayTimeout: 504,
-  HttpVersionNotSupported: 505,
-  VariantAlsoNegotiates: 506,
-  InsufficientStorage: 507,
-  LoopDetected: 508,
-  NotExtended: 510,
-  NetworkAuthenticationRequired: 511,
-};
-
-Object.entries(HttpStatusCode).forEach(([key, value]) => {
-  HttpStatusCode[value] = key;
-});
-
-var HttpStatusCode$1 = HttpStatusCode;
-
-/**
- * Create an instance of Axios
- *
- * @param {Object} defaultConfig The default config for the instance
- *
- * @returns {Axios} A new instance of Axios
- */
-function createInstance(defaultConfig) {
-  const context = new Axios$1(defaultConfig);
-  const instance = bind(Axios$1.prototype.request, context);
-
-  // Copy axios.prototype to instance
-  utils$1.extend(instance, Axios$1.prototype, context, {allOwnKeys: true});
-
-  // Copy context to instance
-  utils$1.extend(instance, context, null, {allOwnKeys: true});
-
-  // Factory for creating new instances
-  instance.create = function create(instanceConfig) {
-    return createInstance(mergeConfig(defaultConfig, instanceConfig));
-  };
-
-  return instance;
-}
-
-// Create the default instance to be exported
-const axios = createInstance(defaults$1);
-
-// Expose Axios class to allow class inheritance
-axios.Axios = Axios$1;
-
-// Expose Cancel & CancelToken
-axios.CanceledError = CanceledError;
-axios.CancelToken = CancelToken$1;
-axios.isCancel = isCancel;
-axios.VERSION = VERSION;
-axios.toFormData = toFormData;
-
-// Expose AxiosError class
-axios.AxiosError = AxiosError;
-
-// alias for CanceledError for backward compatibility
-axios.Cancel = axios.CanceledError;
-
-// Expose all/spread
-axios.all = function all(promises) {
-  return Promise.all(promises);
-};
-
-axios.spread = spread;
-
-// Expose isAxiosError
-axios.isAxiosError = isAxiosError;
-
-// Expose mergeConfig
-axios.mergeConfig = mergeConfig;
-
-axios.AxiosHeaders = AxiosHeaders$1;
-
-axios.formToJSON = thing => formDataToJSON(utils$1.isHTMLForm(thing) ? new FormData(thing) : thing);
-
-axios.getAdapter = adapters.getAdapter;
-
-axios.HttpStatusCode = HttpStatusCode$1;
-
-axios.default = axios;
-
-module.exports = axios;
-//# sourceMappingURL=axios.cjs.map
-
-
-/***/ }),
-
 /***/ "./bundle.json":
 /*!*********************!*\
   !*** ./bundle.json ***!
@@ -16135,18 +13149,6 @@ module.exports = JSON.parse('{"id":"e6a7f72a-85de-4259-ed4e-7412d22635d9","autho
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

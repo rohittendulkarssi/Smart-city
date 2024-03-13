@@ -1,4 +1,4 @@
-  
+    
 // import React, { useState, useEffect } from 'react';
 // import { DataList, WidgetWrapper, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
  
@@ -11,23 +11,24 @@
 //   "Power Consumption": { month: string; value: number }[] | { Week: string; value: number }[] | { day: string; value: number }[];
 //   "Burning Hours": { month: string; value: number }[] | { Week: string; value: number }[] | { day: string; value: number }[];
 // }
+
 // interface FilterToDataMap {
 //   [key: string]: { name: any; powerConsumption: number; burningHours: number }[];
 // }
+
 // interface PowerConsumptionEntry {
 //   month?: string;
 //   Week?: string;
-//   Day?: string;   
+//   Day?: string;
 //   value: number;
 // }
 
-// interface IWidgetProps { 
-//   instanceId?: string,
-//   uxpContext?: IContextProvider, 
+// interface IWidgetProps {
+//   instanceId?: string;
+//   uxpContext?: IContextProvider;
 // }
- 
-//   const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => {
-// // const EnergyConsumption : React.FunctionComponent<{}> = (props) => {
+
+// const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => {
  
 //     //Month Data// 
 //   const energyConsumptionData1 = {
@@ -85,26 +86,24 @@
 //     "Burning Hours": [],
 //   });
  
+// // Use state for dynamic hierarchy, startDate, and endDate
+// const [hierarchy, setHierarchy] = useState<string>('');
+// const [startDate, setStartDate] = useState<string>('');
+// const [endDate, setEndDate] = useState<string>('');
 
-//     const hierarchy = 'المدينة المنورة';
-//     const startDate = '10-02-2024';
-//     const endDate = '25-02-2024';
-   
-  
-//   function getEnergyConsumptionData () { 
- 
-//       props.uxpContext.executeAction("TataStreetLightAPI","GetSyncData",{ hierarchy: hierarchy, startDate: startDate, endDate: endDate,},{json:true}).then((res: any[])=>{  
-//         console.log("Response From API is", res, typeof res);
-//         setEnergyConsumptionData(res[0]);
-//       }).catch((e: any)=>{
-//           // console.log("hi", e);
-//       }); 
-//   }
-  
-//   React.useEffect(() =>{
-//     getEnergyConsumptionData();
-//   }, []) 
+// function getEnergyConsumptionData() {
+//   console.log("Fetching data with:", hierarchy, startDate, endDate);
+//   props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncData", { hierarchy, startDate, endDate }, { json: true }).then((res: any[]) => {
+//     console.log("Response From API is", res, typeof res);
+//     setEnergyConsumptionData(res[0]);
+//   }).catch((e: any) => {
+//     console.error("Error fetching data:", e);
+//   });
+// }
 
+// React.useEffect(() => {
+//   getEnergyConsumptionData();
+// }, [hierarchy, startDate, endDate]);   
   
   
       
@@ -237,6 +236,259 @@
 //   export default EnergyConsumption;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import { DataList, WidgetWrapper, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
+ 
+// import { AreaChart, Area, ResponsiveContainer,  LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ComposedChart,  } from 'recharts';
+ 
+   
+// import { IContextProvider } from '../uxp';
+
+// interface EnergyConsumptionData {
+//   "Power Consumption": { month: string; value: number }[] | { Week: string; value: number }[] | { day: string; value: number }[];
+//   "Burning Hours": { month: string; value: number }[] | { Week: string; value: number }[] | { day: string; value: number }[];
+// }
+// interface FilterToDataMap {
+//   [key: string]: { name: any; powerConsumption: number; burningHours: number }[];
+// }
+// interface PowerConsumptionEntry {
+//   month?: string;
+//   Week?: string;
+//   Day?: string;   
+//   value: number;
+// }
+
+// interface IWidgetProps { 
+//   instanceId?: string,
+//   uxpContext?: IContextProvider, 
+// }
+ 
+//   const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => { 
+ 
+//     //Month Data// 
+//   const energyConsumptionData1 = {
+//     "Power Consumption": [
+//       { "month": "Jan", "value": 250.62 },
+//       { "month": "Feb", "value": 374.86 },
+//       { "month": "Mar", "value": 254 },
+//       { "month": "Apr", "value": 365.74 },
+//       { "month": "May", "value": 347.08 },
+//       { "month": "June", "value": 356.14 },
+//       { "month": "July", "value": 256.25 },
+//       { "month": "Aug", "value": 346.980000000000004 },
+//       { "month": "Sep", "value": 454.74 },
+//       { "month": "Oct", "value": 547.08 },
+//       { "month": "Nov", "value": 356.14 },
+//       { "month": "Dec", "value": 456.25 }
+//     ],
+//     "Burning Hours": [
+//       { "month": "Jan", "value": 118.62 },
+//       { "month": "Feb", "value": 146.86 },
+//       { "month": "Mar", "value": 154 },
+//       { "month": "Apr", "value": 154.74 },
+//       { "month": "May", "value": 147.08 },
+//       { "month": "June", "value": 156.14 },
+//       { "month": "July", "value": 156.25 },
+//       { "month": "Aug", "value": 132 },
+//       { "month": "Sep", "value": 154.74 },
+//       { "month": "Oct", "value": 147.08 },
+//       { "month": "Nov", "value": 126.14 },
+//       { "month": "Dec", "value": 156.25 }
+//     ]
+//   };
+
+//   // Week Data
+//   const energyConsumptionData2 = {
+//     "Power Consumption": [
+//       { "Week": "Week 1", "value": 98.62 },
+//       { "Week": "Week 2", "value": 46.86 },
+//       { "Week": "Week 3", "value": 76.984 },
+//       { "Week": "Week 4", "value": 85.74 }
+//     ],
+//     "Burning Hours": [
+//       { "Week": "Week 1", "value": 132.64 },
+//       { "Week": "Week 2", "value": 187.36 },
+//       { "Week": "Week 3", "value": 271.57 },
+//       { "Week": "Week 4", "value": 325.84000000000003 }
+//     ]
+//   };
+ 
+    
+//   // Day Data 
+
+//   const [energyConsumptionData, setEnergyConsumptionData] = React.useState<EnergyConsumptionData>({
+//     "Power Consumption": [],
+//     "Burning Hours": [],
+//   });
+ 
+ 
+
+//   const hierarchy =  '' ;
+//   const startDate = '';
+//   const endDate = '';
+
+//   function getEnergyConsumptionData() {
+//     console.log("Fetching data with:", hierarchy, startDate, endDate);
+//     props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncData", { hierarchy, startDate, endDate }, { json: true }).then((res: any[]) => {
+//       console.log("Response From API is", res, typeof res);
+//       setEnergyConsumptionData(res[0]);
+//     }).catch((e: any) => {
+//       console.error("Error fetching data:", e);
+//     });
+//   }
+  
+
+//   React.useEffect(() => {
+//     getEnergyConsumptionData();
+//   }, []);
+  
+  
+      
+//    const [toggleFilterValue, setToggleFilterValue] = useState("day");
+
+//    const handleFilterChange = (value: React.SetStateAction<string>) => {
+//     console.log("Selected Filter Value:", value);
+//     setToggleFilterValue(value);
+//   };
+
+//   const transformData = (rawData: EnergyConsumptionData, filterType: string) => {
+//     const powerConsumptionData = rawData["Power Consumption"] as PowerConsumptionEntry[];
+//     const burningHoursData = rawData["Burning Hours"] as PowerConsumptionEntry[];
+  
+ 
+//     if (!powerConsumptionData || !burningHoursData || powerConsumptionData.length !== burningHoursData.length) {
+//       return [];
+//     }
+  
+//     const transformedData = powerConsumptionData.map((entry, index) => {
+//       const { month, Week, Day, value } = entry;
+//       const burningHoursValue = burningHoursData[index].value;
+  
+//       return {
+//         name: filterType === 'day' ? Day : month || Week,
+//         powerConsumption: value || 0,  
+//         burningHours: burningHoursValue || 0,  
+//       };
+//     });
+  
+//     return transformedData;
+//   };
+  
+  
+//   const transformedData1 = transformData(energyConsumptionData1, 'month');
+//   const transformedData2 = transformData(energyConsumptionData2, 'week');
+//   const transformedData3 = transformData(energyConsumptionData, 'day');
+  
+//   const filterToDataMap: FilterToDataMap = {
+//     month: transformedData1,
+//     week: transformedData2,
+//     day: transformedData3,
+//   };
+  
+//   const selectedData = filterToDataMap[toggleFilterValue] || transformedData1;
+  
+//     return (
+//       <WidgetWrapper className="smart-city_box energy_consumption-box">
+//         <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Streetlight Energy Consumption"> </TitleBar>
+//         <div className="smart-city-content">
+//           <div className="technician_chart">
+//             <div className='chart-top'>
+//               <div className="sub_title_bar">Total kWh</div>
+//               <ToggleFilter
+//                 options={[
+//                   { label: "7D", value: "day" },
+//                   { label: "1M", value: "week" },
+//                   { label: "1Y", value: "month" },
+//                 ]}
+//                 value={toggleFilterValue}
+//                 onChange={handleFilterChange}
+//               />
+//             </div>
+//             <ResponsiveContainer>
+             
+//             <AreaChart
+//               data={selectedData}
+//               margin={{
+//                 top: 10,
+//                 right: 0,
+//                 left: 0,
+//                 bottom: 30,
+//               }}
+//             >
+//               <CartesianGrid strokeDasharray="3 3" />
+//               <XAxis dataKey="name" />
+//               <YAxis yAxisId="left" />
+//               <YAxis yAxisId="right" orientation="right" />
+//               <Tooltip />
+//               <Legend />
+
+//                   <Area
+//                     type="monotone"
+//                     dataKey="powerConsumption" 
+//                     name="Power Consumption"
+//                     stackId="1"
+//                     stroke="#001912"
+//                     fill="url(#gradient1)"
+//                     yAxisId="left"
+//                   />
+//                   <Area
+//                     type="monotone"
+//                     dataKey="burningHours" 
+//                     name="Burning Hours"
+//                     stackId="1"
+//                     stroke="#79dccc"
+//                     fill="url(#gradient2)"
+//                     yAxisId="left"
+//                   />
+//               <Area
+//                 type="monotone"
+//                 dataKey="hours"
+//                 stackId="0"
+//                 fill="url(#gradient3)"
+//                 yAxisId="right"
+//                 style={{ display: "none" }}
+//                 legendType="none"
+//               />
+//               <defs>
+//                 <linearGradient id="gradient1" x1="0" y1="0" x2="0" y2="1">
+//                   <stop offset="5%" stopColor="#065168" stopOpacity={0.8} />
+//                   <stop offset="95%" stopColor="#065168" stopOpacity={0.7} />
+//                 </linearGradient>
+//                 <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
+//                   <stop offset="5%" stopColor="#008b74" stopOpacity={0.8} />
+//                   <stop offset="95%" stopColor="#79dccc" stopOpacity={0.7} />
+//                 </linearGradient>
+//               </defs>
+//             </AreaChart>
+
+
+
+//             </ResponsiveContainer>
+//           </div>
+//         </div>
+//       </WidgetWrapper>
+//     );
+//   };
+  
+//   export default EnergyConsumption;
+
+
+
+
+
+  
 
 
 
@@ -490,6 +742,13 @@ interface IWidgetProps {
   };
   
   export default EnergyConsumption;
+
+
+
+
+
+
+
 
 
  
