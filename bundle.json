@@ -315,8 +315,15 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
+        },
+        {
+            "id": "incident_Management",
+            "name": "Incident Management",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
         }   
-         
+        
         
         
         

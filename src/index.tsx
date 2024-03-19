@@ -65,6 +65,8 @@ import FloorLayout from './components/building-floorLayout'
 import BuildingSmartBim from './components/building-smart-bim' 
 import BuildingOccupancy from './components/building-floorOccupancy' 
 import TopIvivaHeader from './components/top-header-iviva' 
+import IncidentManagement from './components/incident-managment' 
+
 
 // import SmartTestTable from './components/test-table'
 
@@ -729,6 +731,39 @@ registerWidget({
     }
 });
 
+
+
+// registerWidget({
+//     id: "incident_Management", 
+//     widget: IncidentManagement,
+//     configs: {
+//         layout: {
+//             w: 19,
+//             h: 10,
+//             minH: 10,
+//             minW: 19
+//         },
+//         props: [
+//             //{ name: "IncidentDateTime", label: "Incident DateTime", type: "string" }
+//             { name: "locationkey", label: "LocationKey", type: "text" }
+//         ]
+//     }
+// });
+
+registerWidget({
+    id: "incident_Management", 
+    widget: IncidentManagement,
+    configs: {
+        layout: {
+            w: 15,
+            h: 13,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
 
 
 // registerWidget({

@@ -2851,22 +2851,7 @@
     // top: -1.5em;
     top: 0em;
 }
-
-// .overall-building{
-//     width: 100%;
-//     display: inline-block;
-//     height: 100%;
-   
-//     .building_layout-box{ 
-//         width: 40%;
-//         display: inline-block;
-//     }
-//     .building_summary-box{
-//         width: 40%; 
-//         float: right;
-//     } 
-  
-// }
+ 
 
 
 .smplr-wrapper {
@@ -2883,3 +2868,7 @@
     height: 100%;
   }
   #powered-by{display: none;}
+
+  body.loginScreen,  body.thumbnailsScreen{
+    display: block!important;
+  }

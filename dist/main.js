@@ -4088,6 +4088,42 @@ const BuildingSmartBim = () => {
                                 react_1.default.createElement("a", { href: 'https://demo.iviva.cloud/Apps/SmartBIM/home', target: '_blank' }, "VIEW")))))))));
 };
 exports["default"] = BuildingSmartBim;
+// import React from 'react';
+// import { WidgetWrapper, TitleBar } from "uxp/components";
+// interface IframeWidgetProps {
+//   src: string;
+//   title: string;
+//   width: string;
+//   height: string;
+// }
+// const IframeWidget: React.FC<IframeWidgetProps> = ({ src, title, width, height }) => {
+//   return (
+//     <iframe
+//       src={src}
+//       title={title}
+//       width={width}
+//       height={height}
+//       frameBorder="0"
+//       allowFullScreen
+//     />
+//   );
+// };
+// const BuildingSmartBim: React.FC = () => {
+//   return (
+//     <WidgetWrapper className="smart-city_box building_layout-box">
+//       <TitleBar title="Smart Bim" icon='https://static.iviva.com/images/Udhayimages/mda-building-images/bim.png'></TitleBar>  
+//       <div className="smart-city-content">  
+//         <IframeWidget
+//           src="https://www.iviva.com/"
+//           title="Let us show you what we can do for you"
+//           width="100%"
+//           height="100%"
+//         />
+//       </div>
+//     </WidgetWrapper>
+//   );
+// };
+// export default BuildingSmartBim;
 
 
 /***/ }),
@@ -4135,31 +4171,33 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+// import axios from 'axios';
 const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
+// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
 const BuildingSummary = (_a) => {
-    var _b, _c, _d, _e, _f, _g, _h;
+    var _b, _c, _d, _e, _f, _g, _h, _j;
     var { page, selectedAsset } = _a, props = __rest(_a, ["page", "selectedAsset"]);
     const [building_Summary, setBuilding_Summary] = (0, react_1.useState)(null);
     const lat = selectedAsset === null || selectedAsset === void 0 ? void 0 : selectedAsset.long;
     const long = selectedAsset === null || selectedAsset === void 0 ? void 0 : selectedAsset.lat;
-    // const long = 39.611305236816406;
-    // const  lat = 24.465124130249023; 
-    console.log('Details are', { selectedAsset, lat, long });
+    // const long = 39.6103515625;
+    // const lat = 24.47159767150879;
+    console.log('Selected Asset are', selectedAsset);
+    console.log('latitude are', lat);
+    console.log('Longitude are', long);
+    // console.log('Details are',{selectedAsset,lat,long});
     function getBuildingSummaryData() {
         console.log("getBulingInfo");
-        // props.uxpContext.executeAction("DigitalTwin","GetBuildingInfo",{lat:lat, long:long},{json:true}).then((res: any[])=>{  
-        //   console.log("Response From API is", res, typeof res);
-        //   setBuilding_Summary(res[0]);
-        // }).catch((e: any)=>{
-        // });  
         if (!lat && !long) {
             console.log("Lat or long is undefined.");
         }
         else {
-            props.uxpContext.executeAction("DigitalTwin", "GetBuildingInfo", { lat: lat, long: long }, { json: true }).then((res) => {
+            console.log("WE are calling building info API");
+            props.uxpContext.executeAction("DigitalTwin", "GetBuildingInfo", { lat: lat, long: long }, { json: true })
+                .then((res) => {
                 console.log("Response From API is", res, typeof res);
-                setBuilding_Summary(res[0]);
+                setBuilding_Summary(res["Building Details"]);
             }).catch((e) => {
                 // console.log("hi", e);
             });
@@ -4168,91 +4206,58 @@ const BuildingSummary = (_a) => {
     react_1.default.useEffect(() => {
         getBuildingSummaryData();
     }, [lat, long]);
-    var building_nav_data = [
-        {
-            "id": "1",
-            "Building_icon": 'https://static.iviva.com/images/Udhayimages/incident-icon.png',
-            "Building_Title": "Report Incident",
-            "btn_url": "http://150.230.244.155/Apps/UXP/dashboards/IM20220324028"
-        },
-        {
-            "id": "1",
-            "Building_icon": 'https://static.iviva.com/images/Udhayimages/facility-management.png',
-            "Building_Title": "Facility Issue",
-            "btn_url": ""
-        },
-        {
-            "id": "1",
-            "Building_icon": 'https://static.iviva.com/images/Udhayimages/agenda.png',
-            "Building_Title": "Leasing Info",
-            "btn_url": ""
-        }
-    ];
-    var building_nearbydata = [
-        {
-            "id": "1",
-            "Hospital_Nearby": 'Al Zahra Hospital and 3 others',
-            "Pharmacy_Nearby": "Al Nahdi Pharmacy and 2 others",
-            "Police_Station_Nearby": "Madina District Police and 2 others",
-            'Mosques_Nearby': "Al Masjid An Nabawi and 4 others",
-            "Restaurants_Nearby": "Zaitoon Restaurants and 6 others"
-        }
-    ];
+    console.log('Image', (_b = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _b === void 0 ? void 0 : _b.buildingImage);
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box building_summary-box" },
         react_1.default.createElement(components_1.TitleBar, { title: "Building Summary", icon: 'https://static.iviva.com/images/Udhayimages/mda-building-images/layout.png' }),
         react_1.default.createElement("div", { className: "smart-city-content", style: { height: '350px' } },
             react_1.default.createElement("div", { className: 'building-details' },
                 react_1.default.createElement("div", { className: 'building-top' },
                     react_1.default.createElement("div", { className: "building-pict", style: {
-                            backgroundImage: `url(${((_b = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _b === void 0 ? void 0 : _b.buildingImage) || 'https://static.iviva.com/images/Udhayimages/al-masid-building.png'})`,
+                            backgroundImage: `url(${((_c = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _c === void 0 ? void 0 : _c.buildingImage) || 'https://static.iviva.com/images/Udhayimages/buildings-summary-pict.png'})`,
+                            // backgroundImage: `url("https://static.iviva.com/images/Udhayimages/buildings-summary-pict.png")`
                         } }),
                     react_1.default.createElement("div", { className: 'building-header' },
-                        react_1.default.createElement("div", { className: 'building-title' }, ((_c = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _c === void 0 ? void 0 : _c.buildingName) || ""),
+                        react_1.default.createElement("div", { className: 'building-title' }, ((_d = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _d === void 0 ? void 0 : _d.buildingName) || ""),
                         react_1.default.createElement("div", { className: 'building-nav' },
-                            react_1.default.createElement("ul", null, building_nav_data.map((item) => (react_1.default.createElement("li", { key: item.id },
-                                react_1.default.createElement("a", { target: "_blank", href: item.btn_url },
-                                    react_1.default.createElement("div", { className: 'building-nav-icon' },
-                                        react_1.default.createElement("img", { src: item.Building_icon })),
-                                    react_1.default.createElement("div", { className: 'building-nav-title' }, item.Building_Title))))))))),
+                            react_1.default.createElement("ul", null,
+                                react_1.default.createElement("li", null,
+                                    react_1.default.createElement("a", { target: "_blank", href: 'http://150.230.244.155/Apps/UXP/dashboards/IM20220324028' },
+                                        react_1.default.createElement("div", { className: 'building-nav-icon' },
+                                            react_1.default.createElement("img", { src: "https://static.iviva.com/images/Udhayimages/incident-icon.png" })),
+                                        react_1.default.createElement("div", { className: 'building-nav-title' }, "Report Incident"))),
+                                react_1.default.createElement("li", null,
+                                    react_1.default.createElement("a", { target: "_blank", href: '#' },
+                                        react_1.default.createElement("div", { className: 'building-nav-icon' },
+                                            react_1.default.createElement("img", { src: "https://static.iviva.com/images/Udhayimages/facility-management.png" })),
+                                        react_1.default.createElement("div", { className: 'building-nav-title' }, "Facility Issue"))),
+                                react_1.default.createElement("li", null,
+                                    react_1.default.createElement("a", { target: "_blank", href: 'http://150.230.244.155/Apps/UXP/dashboards/IM20220324028' },
+                                        react_1.default.createElement("div", { className: 'building-nav-icon' },
+                                            react_1.default.createElement("img", { src: "https://static.iviva.com/images/Udhayimages/agenda.png" })),
+                                        react_1.default.createElement("div", { className: 'building-nav-title' }, "Report Incident"))))))),
                 react_1.default.createElement("div", { className: 'building-info-box' },
                     react_1.default.createElement("ul", null,
                         react_1.default.createElement("li", { className: 'building-code' },
                             react_1.default.createElement("label", null, "Building Code : "),
                             react_1.default.createElement("span", null,
                                 " ",
-                                ((_d = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _d === void 0 ? void 0 : _d.buildingCode) || 'N/A')),
+                                ((_e = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _e === void 0 ? void 0 : _e.buildingCode) || 'N/A')),
                         react_1.default.createElement("li", { className: 'building-name' },
                             react_1.default.createElement("label", null, "Building Name : "),
                             react_1.default.createElement("span", null,
                                 " ",
-                                ((_e = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _e === void 0 ? void 0 : _e.buildingName) || 'N/A')),
+                                ((_f = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _f === void 0 ? void 0 : _f.buildingName) || 'N/A')),
                         react_1.default.createElement("li", { className: 'street-number' },
                             react_1.default.createElement("label", null, "Street Number : "),
                             react_1.default.createElement("span", null,
                                 " ",
-                                ((_f = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _f === void 0 ? void 0 : _f.streetNumber) || 'N/A')),
+                                ((_g = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _g === void 0 ? void 0 : _g.streetNumber) || 'N/A')),
                         react_1.default.createElement("li", { className: 'street-name' },
                             react_1.default.createElement("label", null, "Street Name : "),
-                            react_1.default.createElement("span", null, ((_g = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _g === void 0 ? void 0 : _g.streetName) || 'N/A')),
+                            react_1.default.createElement("span", null, ((_h = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _h === void 0 ? void 0 : _h.streetName) || 'N/A')),
                         react_1.default.createElement("li", { className: 'city' },
                             react_1.default.createElement("label", null, "City : "),
-                            react_1.default.createElement("span", null, ((_h = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _h === void 0 ? void 0 : _h.city) || 'N/A')))),
-                react_1.default.createElement("div", { className: 'building-nearby-box', style: { display: "none" } }, building_nearbydata.map((item) => (react_1.default.createElement("ul", null,
-                    react_1.default.createElement("li", { key: item.id, className: 'hospital' },
-                        react_1.default.createElement("label", null, "Hospital Nearby : "),
-                        react_1.default.createElement("span", null, item.Hospital_Nearby)),
-                    react_1.default.createElement("li", { className: 'pharmacy' },
-                        react_1.default.createElement("label", null, "Pharmacy Nearby : "),
-                        react_1.default.createElement("span", null, item.Pharmacy_Nearby)),
-                    react_1.default.createElement("li", { className: 'police-station' },
-                        react_1.default.createElement("label", null, "Police Station Nearby : "),
-                        react_1.default.createElement("span", null, item.Police_Station_Nearby)),
-                    react_1.default.createElement("li", { className: 'mosques' },
-                        react_1.default.createElement("label", null, "Mosques Nearby : "),
-                        react_1.default.createElement("span", null, item.Mosques_Nearby)),
-                    react_1.default.createElement("li", { className: 'restaurants' },
-                        react_1.default.createElement("label", null, "Restaurants Nearby : "),
-                        react_1.default.createElement("span", null, item.Restaurants_Nearby)))))),
+                            react_1.default.createElement("span", null, ((_j = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _j === void 0 ? void 0 : _j.city) || 'N/A')))),
                 react_1.default.createElement("div", { className: 'building-bot' },
                     react_1.default.createElement("div", { className: 'g_map-link' },
                         react_1.default.createElement("a", { href: building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.url, target: "_blank" }, "More : Gmap Link")))))));
@@ -8975,6 +8980,83 @@ exports["default"] = HeightMap;
 
 /***/ }),
 
+/***/ "./src/components/incident-managment.tsx":
+/*!***********************************************!*\
+  !*** ./src/components/incident-managment.tsx ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
+const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
+const IframeWidget = ({ src, title, width, height }) => {
+    return (react_1.default.createElement("iframe", { src: src, title: title, width: width, height: height, allowFullScreen: true }));
+};
+const IncidentManagement = (props) => {
+    return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box building_layout-box" },
+        react_1.default.createElement(components_1.TitleBar, { title: "Incident Management", icon: 'https://static.iviva.com/images/Udhayimages/mda-building-images/bim.png' }),
+        react_1.default.createElement("div", { className: "smart-city-content" },
+            react_1.default.createElement(IframeWidget, { src: "https://mos.raseel.city:8082/index.html", title: "Example Website", width: "100%", height: "100%" }))));
+};
+exports["default"] = IncidentManagement;
+// import React from 'react';
+// import { WidgetWrapper, TitleBar } from "uxp/components";
+// interface IframeWidgetProps {
+//   src?: string; // URL source
+//   srcDoc?: string; // Static content
+//   title: string;
+//   width: string;
+//   height: string;
+// }
+// const IframeWidget: React.FC<IframeWidgetProps> = ({ src, srcDoc, title, width, height }) => {
+//   return (
+//     <iframe
+//       src={src}
+//       srcDoc={srcDoc}
+//       title={title}
+//       width={width}
+//       height={height} 
+//       allowFullScreen
+//     />
+//   );
+// };
+// const IncidentManagement: React.FunctionComponent = () => {   
+//   // Define your static content
+//   const staticContent = `
+//     <html>
+//       <head>
+//         <title>Static Content</title>
+//       </head>
+//       <body>
+//         <h1>This is static content inside the iframe</h1>
+//       </body>
+//     </html>
+//   `;
+//   return (
+//     <WidgetWrapper className="smart-city_box building_layout-box">
+//       <TitleBar title="Incident Management" icon='https://static.iviva.com/images/Udhayimages/mda-building-images/bim.png'></TitleBar>  
+//       <div className="smart-city-content">  
+//         {/* Use either src or srcDoc based on your requirement */}
+//         <IframeWidget
+//           srcDoc={staticContent} // Pass the static content to srcDoc
+//           title="Static Content"
+//           width="100%"
+//           height="100%"
+//         />
+//       </div>
+//     </WidgetWrapper>
+//   );
+// };
+// export default IncidentManagement;
+
+
+/***/ }),
+
 /***/ "./src/components/lightStatusChart.tsx":
 /*!*********************************************!*\
   !*** ./src/components/lightStatusChart.tsx ***!
@@ -9885,6 +9967,11 @@ exports["default"] = Segregation_MetricsChart;
 
 "use strict";
 
+// import React, { useState, useEffect } from 'react';
+// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+// import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
+// import { IContextProvider } from '../uxp';
+// import StreetLightStatusChart from './lightStatusChart'; 
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -9912,6 +9999,106 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+// import axios from 'axios'; 
+// interface IWidgetProps { 
+//     instanceId?: string,
+//     uxpContext?: IContextProvider,
+//     ilmAlerts?: {
+//         "AC Voltage"?: string;
+//         "Load Fail"?: string;
+//         "Lux Sensor Blocked"?: string;
+//         "Main Fail"?: string;
+//         "Partial Failure"?: string;
+//         "Power Factor"?: string; 
+//       };
+// } 
+// const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (props) => {    
+//   const [health, setHealth] = useState<IWidgetProps>({});
+//   const [lastUpdatedHealth, setLastUpdatedHealth] = useState<IWidgetProps | null>(null);
+//   function getHealthData () {
+//     const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
+//     props.uxpContext.executeAction("TataStreetLightAPI","Alert Summary",{hierarchy:hierarchy},{json:true})
+//       .then((res: any[]) => {  
+//         setHealth(res[0]);
+//         setLastUpdatedHealth(res[0]); // Update last updated health data
+//       })
+//       .catch((e: any) => {
+//         console.error("Failed to fetch health data:", e);
+//       }); 
+//   }
+//   React.useEffect(() => {
+//     getHealthData();
+//   }, []) 
+//   let [lampdata, setLampData] = React.useState<any>([]) 
+//   function getsetLampData() { 
+//     props.uxpContext.executeAction("TataStreetLightAPI","Installed vs Working Lamps (ILM)/Devices (GLM)",{},{json:true})
+//       .then((res: any[]) => {  
+//         setLampData(res[0]);
+//       })
+//       .catch((e: any) => {
+//         console.error("Failed to fetch lamp data:", e);
+//       }); 
+//   }
+//   React.useEffect(() => {
+//     getsetLampData();
+//   }, []) 
+//   const calculatePercentage = (value: number, total: number) => {
+//     return ((value / total) * 100).toFixed(2);
+//   };     
+//   return ( 
+//     <WidgetWrapper className="smart-city_box waste-bin-box">  
+//       <TitleBar title="Street Light Alerts" icon='https://static.iviva.com/images/Udhayimages/traffic-light.png'></TitleBar> 
+//       <div className="smart-city-content">  
+//         <div className='status-content'>
+//           <>  
+//             <div className='status Attention'>
+//               <h3>{health?.ilmAlerts?.["Load Fail"] + health?.ilmAlerts?.["Lux Sensor Blocked"] + health?.ilmAlerts?.["Partial Failure"]} <span></span></h3>
+//               <p>Open</p>
+//             </div>
+//             <div className='status Pending'>
+//               <h3>{health?.ilmAlerts?.["Main Fail"]}  
+//               </h3>
+//               <p>TAT</p>
+//             </div>
+//             <div className='status Resloved'>
+//               <h3>{health?.ilmAlerts?.["Power Factor"] + health?.ilmAlerts?.["AC Voltage"]} <span></span></h3>  
+//               <p>Closed</p>
+//             </div>  
+//           </>
+//         </div>
+//         <div className="technician_chart">  
+//           <div className='sub_title_bar'>Installed vs Working lamps</div>  
+//           <div className="progress-bar-container"> 
+//             <> 
+//               <div className="progress-bar installedLamps" style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 85), Number(lampdata?.ilm?.installedLamps ?? 85) + Number(lampdata?.ilm?.workingLamps ?? 15)))}%` }}>
+//               </div>   
+//               <div className='progress-bar working-lamps' style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 15), Number(lampdata?.ilm?.installedLamps ?? 85) + Number(lampdata?.ilm?.workingLamps ?? 15))) < 10 ? 10 : Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 15), Number(lampdata?.ilm?.installedLamps ?? 85) + Number(lampdata?.ilm?.workingLamps ?? 15)))}%` }}>
+//               </div>
+//             </>
+//           </div>       
+//           <div className='chart-sec'>  
+//             <div className='chart-issue'>       
+//               <h3>{lampdata?.ilm?.installedLamps ?? "N/A"}</h3>
+//               <p>Installed lamps</p>
+//             </div> 
+//             <div className='chart-pending'>       
+//               <h3>{lampdata?.ilm?.workingLamps ?? "N/A"}</h3>
+//               <p>Working lamps</p>
+//             </div>                          
+//           </div> 
+//         </div>   
+//         <div className="smart-city-content">  
+//           <StreetLightStatusChart />  
+//         </div>
+//       </div>
+//       {/* Last updated timestamp */}
+//       {lastUpdatedHealth && (
+//         <div>Last Updated: {new Date().toLocaleString()}</div>
+//       )}
+//     </WidgetWrapper> 
+//   )
+// }; 
+// export default Street_Light__Status_Widget;
 const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
 const lightStatusChart_1 = __importDefault(__webpack_require__(/*! ./lightStatusChart */ "./src/components/lightStatusChart.tsx"));
@@ -9920,8 +10107,11 @@ const Street_Light__Status_Widget = (props) => {
     const [health, setHealth] = (0, react_1.useState)({});
     function getHealthData() {
         const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
-        props.uxpContext.executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true }).then((res) => {
+        props.uxpContext.executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true })
+            .then((res) => {
+            // console.log("Response From API for Alert Summary is", res, typeof res);
             setHealth(res[0]);
+            // setBuilding_Summary(res["Building Details"]);
         }).catch((e) => {
             // console.log("hi", e);
         });
@@ -9932,7 +10122,9 @@ const Street_Light__Status_Widget = (props) => {
     let [lampdata, setLampData] = react_1.default.useState([]);
     function getsetLampData() {
         props.uxpContext.executeAction("TataStreetLightAPI", "Installed vs Working Lamps (ILM)/Devices (GLM)", {}, { json: true }).then((res) => {
+            console.log("Response From Installed vs Working Lamps", res, typeof res);
             setLampData(res[0]);
+            //   setBuilding_Summary(res["Building Details"]);
         }).catch((e) => {
             // console.log("hi", e);
         });
@@ -12205,6 +12397,7 @@ const building_floorLayout_1 = __importDefault(__webpack_require__(/*! ./compone
 const building_smart_bim_1 = __importDefault(__webpack_require__(/*! ./components/building-smart-bim */ "./src/components/building-smart-bim.tsx"));
 const building_floorOccupancy_1 = __importDefault(__webpack_require__(/*! ./components/building-floorOccupancy */ "./src/components/building-floorOccupancy.tsx"));
 const top_header_iviva_1 = __importDefault(__webpack_require__(/*! ./components/top-header-iviva */ "./src/components/top-header-iviva.tsx"));
+const incident_managment_1 = __importDefault(__webpack_require__(/*! ./components/incident-managment */ "./src/components/incident-managment.tsx"));
 // export enum EventsEnum {
 //   Mode = 'mode',
 //   MapModeChange = "MapModeChange"
@@ -12770,6 +12963,20 @@ const TopNavBar = () => {
         }
     }
 });
+(0, uxp_1.registerWidget)({
+    id: "incident_Management",
+    widget: incident_managment_1.default,
+    configs: {
+        layout: {
+            w: 15,
+            h: 13,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
 // registerWidget({
 //     id: "smart_Test_Table", 
 //     widget: SmartTestTable,
@@ -13093,7 +13300,7 @@ module.exports = UXPComponents;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"id":"e6a7f72a-85de-4259-ed4e-7412d22635d9","author":"eutech","widgets":[{"id":"topNavTabs","name":"Top Nav Tabs","description":" ","icon":"","tags":[]},{"id":"weatherIcons","name":"Weather Icons","description":" ","icon":"","tags":[]},{"id":"sunController","name":"Sun Controller","description":" ","icon":"","tags":[]},{"id":"cesiumOSMMap","name":"Cesium OSM Map","description":"Order Trend widget","icon":"","tags":[]},{"id":"maintenance_WorkOrder_Trend","name":"Maintenance Work Order Trend","description":"Order Trend widget","icon":"","tags":[]},{"id":"Order_Summary","name":"Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"segregation_Metrics_Chart","name":"Segregation Metrics Chart","description":"A sample widget","icon":"","tags":[]},{"id":"cctvWidget","name":"CCTV Widget","description":"A sample widget","icon":"","tags":[]},{"id":"wasteBinStatus","name":"Waste Bin Status","description":"A sample widget","icon":"","tags":[]},{"id":"waste_Collection_Vehicle","name":"Waste Collection Vehicle","description":"A sample widget","icon":"","tags":[]},{"id":"waste_segregation_Metrics","name":"Waste Segregation Metrics","description":"A sample widget","icon":"","tags":[]},{"id":"vehicleSummaryWidget","name":"Vehicle Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"energyConsumption","name":"Energy Consumption Widget","description":"A sample widget","icon":"","tags":[]},{"id":"streetLightStatusWidget","name":"Street Ligh Status Widget","description":"A sample widget","icon":"","tags":[]},{"id":"waterSummary","name":"Water Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"water_consumption","name":"Water Consumption Widget","description":"A sample widget","icon":"","tags":[]},{"id":"mapComponent","name":"Map Component","description":"A sample widget","icon":"","tags":[]},{"id":"streetLightWorkOrder","name":"Street Light Work Order","description":"A sample widget","icon":"","tags":[]},{"id":"waste-Generated-Trend","name":"Waste Generated Trend","description":"A sample widget","icon":"","tags":[]},{"id":"maintenance-Work-Order-Summary","name":"Maintenance Work Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"water_Leakage_Work_Order","name":"Water Leakage Work Order","description":"A sample widget","icon":"","tags":[]},{"id":"alert-Work-Order-Summary","name":"Alert WOrk Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"counts_Widget","name":"Counts","description":"A sample widget","icon":"","tags":[]},{"id":"alertTrends","name":"Alert Trends","description":"A sample widget","icon":"","tags":[]},{"id":"emergencyWorkOrderSummary","name":"Emergency Work Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"traffic_Control","name":"Traffic Control","description":"A sample widget","icon":"","tags":[]},{"id":"iaq_Summary","name":"IAQ Summary","description":"A sample widget","icon":"","tags":[]},{"id":"iaq_Widget","name":"IAQ","description":"A sample widget","icon":"","tags":[]},{"id":"comapre-IAQ","name":"Comapre IAQ","description":"A sample widget","icon":"","tags":[]},{"id":"cctvoverviewWidget","name":"CCTV Overview Widget","description":"A sample widget","icon":"","tags":[]},{"id":"heightMap","name":"Height Map","description":"A sample widget","icon":"","tags":[]},{"id":"districtToggle","name":"District Toggle","description":"A sample widget","icon":"","tags":[]},{"id":"top_Header","name":"Top Header","description":"A sample widget","icon":"","tags":[]},{"id":"top_IvivaHeader","name":"Top Iviva Header","description":"A sample widget","icon":"","tags":[]},{"id":"top_Right_Header","name":"Top Right Header","description":"A sample widget","icon":"","tags":[]},{"id":"searchBox_Container","name":"SearchBox Container","description":"A sample widget","icon":"","tags":[]},{"id":"powerBy_Widget","name":"PowerBy Widget","description":"A sample widget","icon":"","tags":[]},{"id":"partnership_Widget","name":"Partnership Widget","description":"A sample widget","icon":"","tags":[]},{"id":"cityNames_Widget","name":"CityNames Widget","description":"A sample widget","icon":"","tags":[]},{"id":"modeChange_Widget","name":"Mode Change Widget","description":"A sample widget","icon":"","tags":[]},{"id":"building_Summary","name":"Building Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"floor_Layout","name":"Building Floor Layout","description":"A sample widget","icon":"","tags":[]},{"id":"building_SmartBim","name":"Building Smart Bim","description":"A sample widget","icon":"","tags":[]},{"id":"building_Occupancy","name":"Building Occupancy","description":"A sample widget","icon":"","tags":[]}],"sidebarLinks":[],"uis":[],"menuItems":[]}');
+module.exports = JSON.parse('{"id":"e6a7f72a-85de-4259-ed4e-7412d22635d9","author":"eutech","widgets":[{"id":"topNavTabs","name":"Top Nav Tabs","description":" ","icon":"","tags":[]},{"id":"weatherIcons","name":"Weather Icons","description":" ","icon":"","tags":[]},{"id":"sunController","name":"Sun Controller","description":" ","icon":"","tags":[]},{"id":"cesiumOSMMap","name":"Cesium OSM Map","description":"Order Trend widget","icon":"","tags":[]},{"id":"maintenance_WorkOrder_Trend","name":"Maintenance Work Order Trend","description":"Order Trend widget","icon":"","tags":[]},{"id":"Order_Summary","name":"Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"segregation_Metrics_Chart","name":"Segregation Metrics Chart","description":"A sample widget","icon":"","tags":[]},{"id":"cctvWidget","name":"CCTV Widget","description":"A sample widget","icon":"","tags":[]},{"id":"wasteBinStatus","name":"Waste Bin Status","description":"A sample widget","icon":"","tags":[]},{"id":"waste_Collection_Vehicle","name":"Waste Collection Vehicle","description":"A sample widget","icon":"","tags":[]},{"id":"waste_segregation_Metrics","name":"Waste Segregation Metrics","description":"A sample widget","icon":"","tags":[]},{"id":"vehicleSummaryWidget","name":"Vehicle Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"energyConsumption","name":"Energy Consumption Widget","description":"A sample widget","icon":"","tags":[]},{"id":"streetLightStatusWidget","name":"Street Ligh Status Widget","description":"A sample widget","icon":"","tags":[]},{"id":"waterSummary","name":"Water Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"water_consumption","name":"Water Consumption Widget","description":"A sample widget","icon":"","tags":[]},{"id":"mapComponent","name":"Map Component","description":"A sample widget","icon":"","tags":[]},{"id":"streetLightWorkOrder","name":"Street Light Work Order","description":"A sample widget","icon":"","tags":[]},{"id":"waste-Generated-Trend","name":"Waste Generated Trend","description":"A sample widget","icon":"","tags":[]},{"id":"maintenance-Work-Order-Summary","name":"Maintenance Work Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"water_Leakage_Work_Order","name":"Water Leakage Work Order","description":"A sample widget","icon":"","tags":[]},{"id":"alert-Work-Order-Summary","name":"Alert WOrk Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"counts_Widget","name":"Counts","description":"A sample widget","icon":"","tags":[]},{"id":"alertTrends","name":"Alert Trends","description":"A sample widget","icon":"","tags":[]},{"id":"emergencyWorkOrderSummary","name":"Emergency Work Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"traffic_Control","name":"Traffic Control","description":"A sample widget","icon":"","tags":[]},{"id":"iaq_Summary","name":"IAQ Summary","description":"A sample widget","icon":"","tags":[]},{"id":"iaq_Widget","name":"IAQ","description":"A sample widget","icon":"","tags":[]},{"id":"comapre-IAQ","name":"Comapre IAQ","description":"A sample widget","icon":"","tags":[]},{"id":"cctvoverviewWidget","name":"CCTV Overview Widget","description":"A sample widget","icon":"","tags":[]},{"id":"heightMap","name":"Height Map","description":"A sample widget","icon":"","tags":[]},{"id":"districtToggle","name":"District Toggle","description":"A sample widget","icon":"","tags":[]},{"id":"top_Header","name":"Top Header","description":"A sample widget","icon":"","tags":[]},{"id":"top_IvivaHeader","name":"Top Iviva Header","description":"A sample widget","icon":"","tags":[]},{"id":"top_Right_Header","name":"Top Right Header","description":"A sample widget","icon":"","tags":[]},{"id":"searchBox_Container","name":"SearchBox Container","description":"A sample widget","icon":"","tags":[]},{"id":"powerBy_Widget","name":"PowerBy Widget","description":"A sample widget","icon":"","tags":[]},{"id":"partnership_Widget","name":"Partnership Widget","description":"A sample widget","icon":"","tags":[]},{"id":"cityNames_Widget","name":"CityNames Widget","description":"A sample widget","icon":"","tags":[]},{"id":"modeChange_Widget","name":"Mode Change Widget","description":"A sample widget","icon":"","tags":[]},{"id":"building_Summary","name":"Building Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"floor_Layout","name":"Building Floor Layout","description":"A sample widget","icon":"","tags":[]},{"id":"building_SmartBim","name":"Building Smart Bim","description":"A sample widget","icon":"","tags":[]},{"id":"building_Occupancy","name":"Building Occupancy","description":"A sample widget","icon":"","tags":[]},{"id":"incident_Management","name":"Incident Management","description":"A sample widget","icon":"","tags":[]}],"sidebarLinks":[],"uis":[],"menuItems":[]}');
 
 /***/ })
 
