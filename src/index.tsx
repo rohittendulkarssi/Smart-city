@@ -66,6 +66,11 @@ import BuildingSmartBim from './components/building-smart-bim'
 import BuildingOccupancy from './components/building-floorOccupancy' 
 import TopIvivaHeader from './components/top-header-iviva' 
 import IncidentManagement from './components/incident-managment' 
+import IOT_Filter from './components/iot_filter' 
+import Pole_Details from './components/pole_details' 
+import Madinah_Facts from './components/madinah_Facts' 
+
+
 
 
 // import SmartTestTable from './components/test-table'
@@ -93,7 +98,8 @@ export enum EventsEnum {
   SunPosition = 'solar-time',
   Navigation = 'navigation',
   DistrictJump = 'district-jump',
-  ChangeAppMode = 'change-app-mode' 
+  ChangeAppMode = 'change-app-mode',
+  SummaryGroupFilter = 'summary-group-filter', 
 }
 
 // export interface IPayload {
@@ -276,8 +282,8 @@ registerWidget({
     widget: VehicleSummaryWidget,
     configs: {
         layout: {
-            w: 10,
-            h: 10,
+            w: 15,
+            h: 11,
             // minH: 12,
             // minW: 12
         }
@@ -731,32 +737,62 @@ registerWidget({
     }
 });
 
-
-
-// registerWidget({
-//     id: "incident_Management", 
-//     widget: IncidentManagement,
-//     configs: {
-//         layout: {
-//             w: 19,
-//             h: 10,
-//             minH: 10,
-//             minW: 19
-//         },
-//         props: [
-//             //{ name: "IncidentDateTime", label: "Incident DateTime", type: "string" }
-//             { name: "locationkey", label: "LocationKey", type: "text" }
-//         ]
-//     }
-// });
-
+ 
 registerWidget({
     id: "incident_Management", 
     widget: IncidentManagement,
     configs: {
         layout: {
+            w: 30,
+            h: 18,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
+
+
+registerWidget({
+    id: "iOT_Filter", 
+    widget: IOT_Filter,
+    configs: {
+        layout: {
+            w: 12,
+            h: 8,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
+
+registerWidget({
+    id: "madinah_Facts", 
+    widget: Madinah_Facts,
+    configs: {
+        layout: {
+            w: 12,
+            h: 8,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
+
+
+ 
+registerWidget({
+    id: "pole_Details", 
+    widget: Pole_Details,
+    configs: {
+        layout: {
             w: 15,
-            h: 13,
+            h: 15,
             // minH: 3,
             // minW: 2,
             //  maxH: 3,

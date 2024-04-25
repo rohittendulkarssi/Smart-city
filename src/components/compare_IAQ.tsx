@@ -331,7 +331,7 @@ const Comapre_IAQ: React.FunctionComponent<{}> = () => {
                                   }}
                                   
                                   >
-                                  <CartesianGrid strokeDasharray="0 0" />
+                                  <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
                                   <XAxis dataKey="name"  tick={{ fill: '#ffffff' }} />
                                   <YAxis  tick={{ fill: '#ffffff' }} />
                                   <Tooltip /> 

@@ -8,11 +8,8 @@ interface IMapChangeMode {
 }
 
 const WeatherIcons: React.FC<IMapChangeMode> = ({ uxpContext }) => {
-  const weatherIcons = [
-    //'snowflake', 
-    'rainy', 
-    //'thunder',
-    //'cloudy-day',
+  const weatherIcons = [ 
+    'rainy',  
     'cloud',
     'sun'
   ];

@@ -1,143 +1,15 @@
-// import React, { useState, useEffect } from 'react';
-// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-// import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
-// import { IContextProvider } from '../uxp';
-// import StreetLightStatusChart from './lightStatusChart'; 
-
-// import axios from 'axios'; 
-
-// interface IWidgetProps { 
-//     instanceId?: string,
-//     uxpContext?: IContextProvider,
-
-//     ilmAlerts?: {
-//         "AC Voltage"?: string;
-//         "Load Fail"?: string;
-//         "Lux Sensor Blocked"?: string;
-//         "Main Fail"?: string;
-//         "Partial Failure"?: string;
-//         "Power Factor"?: string; 
-//       };
-// } 
-
-// const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (props) => {    
-  
-//   const [health, setHealth] = useState<IWidgetProps>({});
-//   const [lastUpdatedHealth, setLastUpdatedHealth] = useState<IWidgetProps | null>(null);
-
-//   function getHealthData () {
-//     const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
-
-//     props.uxpContext.executeAction("TataStreetLightAPI","Alert Summary",{hierarchy:hierarchy},{json:true})
-//       .then((res: any[]) => {  
-//         setHealth(res[0]);
-//         setLastUpdatedHealth(res[0]); // Update last updated health data
-//       })
-//       .catch((e: any) => {
-//         console.error("Failed to fetch health data:", e);
-//       }); 
-//   }
-  
-//   React.useEffect(() => {
-//     getHealthData();
-//   }, []) 
-
-//   let [lampdata, setLampData] = React.useState<any>([]) 
-
-//   function getsetLampData() { 
-//     props.uxpContext.executeAction("TataStreetLightAPI","Installed vs Working Lamps (ILM)/Devices (GLM)",{},{json:true})
-//       .then((res: any[]) => {  
-//         setLampData(res[0]);
-//       })
-//       .catch((e: any) => {
-//         console.error("Failed to fetch lamp data:", e);
-//       }); 
-//   }
-  
-//   React.useEffect(() => {
-//     getsetLampData();
-//   }, []) 
-
-//   const calculatePercentage = (value: number, total: number) => {
-//     return ((value / total) * 100).toFixed(2);
-//   };     
-
-//   return ( 
-//     <WidgetWrapper className="smart-city_box waste-bin-box">  
-//       <TitleBar title="Street Light Alerts" icon='https://static.iviva.com/images/Udhayimages/traffic-light.png'></TitleBar> 
-//       <div className="smart-city-content">  
-//         <div className='status-content'>
-//           <>  
-//             <div className='status Attention'>
-//               <h3>{health?.ilmAlerts?.["Load Fail"] + health?.ilmAlerts?.["Lux Sensor Blocked"] + health?.ilmAlerts?.["Partial Failure"]} <span></span></h3>
-//               <p>Open</p>
-//             </div>
-
-//             <div className='status Pending'>
-//               <h3>{health?.ilmAlerts?.["Main Fail"]}  
-//               </h3>
-//               <p>TAT</p>
-//             </div>
-
-//             <div className='status Resloved'>
-//               <h3>{health?.ilmAlerts?.["Power Factor"] + health?.ilmAlerts?.["AC Voltage"]} <span></span></h3>  
-//               <p>Closed</p>
-//             </div>  
-//           </>
-//         </div>
-
-//         <div className="technician_chart">  
-//           <div className='sub_title_bar'>Installed vs Working lamps</div>  
-
-//           <div className="progress-bar-container"> 
-//             <> 
-//               <div className="progress-bar installedLamps" style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 85), Number(lampdata?.ilm?.installedLamps ?? 85) + Number(lampdata?.ilm?.workingLamps ?? 15)))}%` }}>
-//               </div>   
-
-//               <div className='progress-bar working-lamps' style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 15), Number(lampdata?.ilm?.installedLamps ?? 85) + Number(lampdata?.ilm?.workingLamps ?? 15))) < 10 ? 10 : Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 15), Number(lampdata?.ilm?.installedLamps ?? 85) + Number(lampdata?.ilm?.workingLamps ?? 15)))}%` }}>
-//               </div>
-//             </>
-//           </div>       
-
-//           <div className='chart-sec'>  
-//             <div className='chart-issue'>       
-//               <h3>{lampdata?.ilm?.installedLamps ?? "N/A"}</h3>
-//               <p>Installed lamps</p>
-//             </div> 
-
-//             <div className='chart-pending'>       
-//               <h3>{lampdata?.ilm?.workingLamps ?? "N/A"}</h3>
-//               <p>Working lamps</p>
-//             </div>                          
-//           </div> 
-//         </div>   
-
-//         <div className="smart-city-content">  
-//           <StreetLightStatusChart />  
-//         </div>
-//       </div>
-
-//       {/* Last updated timestamp */}
-//       {lastUpdatedHealth && (
-//         <div>Last Updated: {new Date().toLocaleString()}</div>
-//       )}
-
-//     </WidgetWrapper> 
-//   )
-// }; 
-
-// export default Street_Light__Status_Widget;
-
-
-
 
 import React, { useState, useEffect } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
+import {
+  WidgetWrapper,
+  TitleBar, ToggleFilter
+} from "uxp/components";
+import { AreaChart, Area, BarChart, Bar, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { IContextProvider } from '../uxp';
 import StreetLightStatusChart from './lightStatusChart'; 
 
-import axios from 'axios'; 
+
+  // import EnergyConsumption from './energy_consumption';
 
 interface IWidgetProps { 
     instanceId?: string,
@@ -153,43 +25,51 @@ interface IWidgetProps {
       };
 } 
  
+
+interface EnergyConsumptionData {
+  "Expenditure"?: {
+    [key: string]: { [key: string]: number }[]
+  };
+}
  
 const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (props) => {    
     
-  const [health, setHealth] = useState<IWidgetProps>({});
-
-  function getHealthData () {
-
-    const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
-
-      props.uxpContext.executeAction("TataStreetLightAPI","Alert Summary",{hierarchy:hierarchy},{json:true})
-      .then((res: any[])=>{   
-       // console.log("Response From API for Alert Summary is", res, typeof res);
-        setHealth(res[0]);
-        // setBuilding_Summary(res["Building Details"]);
-
-      }).catch((e: any)=>{
-          // console.log("hi", e);
-      }); 
-  }
+    const [health, setHealth] = useState(null); 
+    const [lampdata,setLampData] = useState(null);
+    const [loading, setLoading] = useState(true); // Initialize loading state
+    
+    const hierarchy = 'منطقة المدينة';   
   
-  React.useEffect(() =>{
-    getHealthData();
-  }, []) 
+    function getHealthData() { 
+      props.uxpContext
+        .executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true })
+        .then((res: any) => {
+          console.log("Response From API is", res, typeof res);
+          setHealth(res);
+          setLoading(false);  
+        })
+        .catch((e: any) => {
+          console.error("Error fetching health data:", e);
+          setLoading(false);  
+        });
+    } 
+    
+    React.useEffect(() => {
+      getHealthData();
+    }, []); 
 
-  
 
-    let [lampdata,setLampData] = React.useState<any>([]) 
-    function getsetLampData () { 
-       
-        props.uxpContext.executeAction("TataStreetLightAPI","Installed vs Working Lamps (ILM)/Devices (GLM)",{},{json:true}).then((res: any[])=>{  
-         
-           console.log("Response From Installed vs Working Lamps", res, typeof res);
-           setLampData(res[0]);
-        //   setBuilding_Summary(res["Building Details"]);
-        }).catch((e: any)=>{
-            // console.log("hi", e);
-        }); 
+    function getsetLampData () {   
+        props.uxpContext.executeAction("TataStreetLightAPI", "Installed vs Working Lamps (ILM)/Devices (GLM)", {}, { json: true })
+        .then((res: any) => {
+          console.log("Response From lampdata API is", res, typeof res);
+          setLampData(res);
+          setLoading(false);  
+        })
+        .catch((e: any) => {
+          console.error("Error fetching health data:", e);
+          setLoading(false);  
+        });
     }
     
     React.useEffect(() =>{
@@ -199,105 +79,212 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (prop
   
     const calculatePercentage = (value: number, total: number) => {
       return ((value / total) * 100).toFixed(2);
-    };     
+    };    
+    
+     
 
-    const streetLightData  = [ 
-        {
-            id: '1',
-            name: 'Open', 
-            clname: 'Attention', 
-            unit : '',
-            value: 135 
-        },
-        {
-            id: '2',
-            name: 'TAT', 
-            clname: 'Pending', 
-            unit : 'mints',
-            value: 56 
-        },
-        {
-            id: '3',
-            name: 'Closed', 
-            clname: 'Resloved', 
-            unit : '',
-            value: 245 
-        }
-    ];  
+
+    const [energyConsumptionData, setEnergyConsumptionData] = React.useState<EnergyConsumptionData>({});
+    const [toggleFilterValue, setToggleFilterValue] = useState<"day" | "week" | "month">("day");
+    const [filter, setFilter] = useState<'Day' | 'Week' | 'Month'>('Day');
+   
+    const currentDate = new Date();
+    currentDate.setDate(0);  
+
+    const startDate = currentDate.toISOString();  
+    const endDate = new Date().toISOString(); 
+    // const hierarchy = 'منطقة المدينة';
+    const start = startDate;
+    const end = endDate;   
+  
+    const handleFilterChange = (value: "day" | "week" | "month") => {
+      console.log("Selected Filter Value:", value);
+      setToggleFilterValue(value);
+      if (value === 'day') {
+        setFilter('Day');
+      } else if (value === 'week') {
+        setFilter('Week');
+      } else if (value === 'month') { 
+        setFilter('Month'); 
+      }
+    };    
  
-    const maintenance_Permits_Data  = [ 
-      {
-          id: '1',
-          name: 'Installed lamps', 
-          clname: 'chart-issue', 
-          value: 234 
-      },
-      {
-          id: '2',
-          name: 'Working lamps', 
-          clname: 'chart-pending', 
-          value: 13 
-      } 
-  ];  
 
-  // const installedLamps = 75;  
+  console.log("for Check context", props.uxpContext);
 
-  // const workingLamps = 25;  
+  // const fetchData = () => {  
+  //        let newStart = start;
+  //       let newEnd = end;    
+  //       if (filter === 'Month') {
+  //         newStart = new Date('2024-02-03T00:00:00').toISOString(); 
+  //         newEnd = new Date().toISOString(); 
+  //       }
+
+    //   props.uxpContext.executeAction("TataStreetLightAPI", "GetExpenditure", { hierarchy, start: start, end: end, filter }, { json: true })
+    //       .then((res: any) => { 
+    //             console.log("Response From GetExpenditure API is", res, typeof res);
+    //             setEnergyConsumptionData(res);
+    //         })
+    //         .catch((e: any) => {
+    //             console.error("Error fetching data:", e);
+    //         });
+    // };
+
+    const fetchData = async () => {
+      let newStart = start;
+      let newEnd = end;
+  
+      if (filter === 'Month') {
+          newStart = new Date('2024-02-03T00:00:00').toISOString();
+          newEnd = new Date().toISOString();
+      }
+  
+      try {
+          const res = await props.uxpContext.executeAction("TataStreetLightAPI", "GetExpenditure", { hierarchy, start: newStart, end: newEnd, filter }, { json: true });
+          console.log("Response From  Expenditure API is", res, typeof res);
+          setEnergyConsumptionData(res);
+      } catch (e) {
+          console.error("Error fetching data:", e);
+      }
+  };
+
+React.useEffect(() => {
+  fetchData();
+}, [hierarchy, start, end, filter]); 
+  
+    
+ const transformData = (rawData: EnergyConsumptionData, filterType: "day" | "week" | "month") => {
+  let filteredData: { name: string; powerConsumption: number }[] = [];
+
+
+  const expenditureData: (any[] | { [key: string]: { [key: string]: number; }[]; }) = rawData["Expenditure"] || [];
+ 
+if (filterType === "day") {   
+  const daysInWeekFull: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const daysInWeekAbbr: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; 
+
+
+  filteredData = daysInWeekAbbr.map((abbr, index) => {
+      const fullDayName = daysInWeekFull[index]; 
+
+      const currentDate = new Date();  
+      currentDate.setDate(currentDate.getDate() + index - 1);    
+      const day = currentDate.getDate();
+      const month = currentDate.toLocaleString('default', { month: 'short' });
+      // const year = currentDate.getFullYear(); 
+      const year = currentDate.toLocaleString('default', { year: '2-digit' });  
+      const dateString = `${day}/${month}/${year}`; 
+
+      const powerEntry = (expenditureData as any[]).find((entry: { day: string; }) => entry.day === fullDayName);  
+      const fullDateString = currentDate.toLocaleDateString();  
+
+      return {
+           name: abbr, 
+          fullDate: fullDateString, 
+          powerConsumption: powerEntry ? powerEntry.value : 0, 
+      };
+  });  
+    
+  }
+
+  else if (filterType === "week") {   
+      const WeekNamesFull: string[] = ["Week1", "Week2", "Week3", "Week4"];  
+            
+      filteredData = WeekNamesFull.map(weekName => {  
+          const powerEntry = (expenditureData as any[]).find((entry: { week: string; }) => entry.week === weekName); 
+          const powerValue = powerEntry ? powerEntry.value : 0; 
+
+          return {
+              name: weekName,
+              powerConsumption: powerValue, 
+          };
+      }); 
+  } 
+
+  else if (filterType === "month") {   
+
+      const startDate = new Date('2024-02-01T00:00:00').toISOString(); 
+      const monthNamesFull: string[] = [ "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
+      const monthNamesabbr: string[] = [ "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+          filteredData = monthNamesabbr.map((abbr, index) => {
+          const fullMonthName = monthNamesFull[index];
+
+          const powerEntry = (expenditureData as any[]).find((entry: { month: string; }) => entry.month === fullMonthName);
+           
+          const powerValue = powerEntry ? powerEntry.value : 0; 
+
+          return {
+              name: abbr,
+              powerConsumption: powerValue 
+          };
+      }); 
+  }  
+  return filteredData;
+}; 
+
+   
+  const transformedData1 = transformData(energyConsumptionData, 'month');
+  const transformedData2 = transformData(energyConsumptionData, 'week'); 
+  const transformedData3 = transformData(energyConsumptionData, 'day');
+  
+  const filterToDataMap: { [key: string]: any[] } = {
+    month: transformedData1,
+    week: transformedData2,  
+    day: transformedData3,
+  };
+  
+  const selectedData = filterToDataMap[toggleFilterValue] || transformedData1; 
+ 
+  const transformedChartData = selectedData.map((item) => ({
+    ...item,
+    powerConsumption: item.powerConsumption / 1000,  
+  }));
+
+
+  const colorArray = ['#005745'];
+
 
     return ( 
-
-         <WidgetWrapper className="smart-city_box waste-bin-box">  
-
-            <TitleBar title="Street Light Alerts" icon='https://static.iviva.com/images/Udhayimages/traffic-light.png'></TitleBar> 
-
+         <WidgetWrapper className="smart-city_box waste-bin-box">   
+            <TitleBar title="Street Light Alerts" icon='https://static.iviva.com/images/Udhayimages/streetlight-alert.png'></TitleBar>
+           
             <div className="smart-city-content">  
+                  {loading ? (  
+                  <div>Loading...</div>
+                ) : (
+                  <div className='status-content'>  
+                      <div className='status Attention'>
+                              <h3>{health?.ilmAlerts?.["Main Fail"] + health?.ilmAlerts?.["Lamp Flickering"]} <span></span></h3> 
+                          <p>High</p>
+                      </div>
 
-                <div className='status-content'>
- 
+                      <div className='status Pending'>
+                      <h3>{health?.ilmAlerts?.["Load Fail"] + health?.ilmAlerts?.["Lux Sensor Blocked"] + health?.ilmAlerts?.["Partial Failure"]} <span></span></h3>
+                          <p>Medium</p>
+                      </div>
 
-                          <>  
-                            <div className='status Attention'>
-                                <h3>{health?.ilmAlerts?.["Load Fail"] + health?.ilmAlerts?.["Lux Sensor Blocked"] + health?.ilmAlerts?.["Partial Failure"]} <span></span></h3>
-                                <p>Open</p>
-                            </div>
-
-                            <div className='status Pending'>
-                                <h3>{health?.ilmAlerts?.["Main Fail"]}  
-                                </h3>
-                                <p>TAT</p>
-                            </div>
-
-                            <div className='status Resloved'>
-                            <h3>{health?.ilmAlerts?.["Power Factor"] + health?.ilmAlerts?.["AC Voltage"]} <span></span></h3>  
-                                <p>Closed</p>
-                            </div>  
-                        </>
-
-
-
-                </div>
+                      <div className='status Resloved'>
+                      <h3>{health?.ilmAlerts?.["Power Factor"] + health?.ilmAlerts?.["AC Voltage"]} <span></span></h3>  
+                          <p>Low</p>
+                      </div>    
+                  </div>
+                )}  
 
                 <div className="technician_chart">  
                 
-                <div className='sub_title_bar'>Installed vs Working lamps</div>  
+                <div className='sub_title_bar'>Installed vs Working lamps</div>   
 
-                    <div className="progress-bar-container"> 
-           
+                    <div className="progress-bar-container">   
+                        <>   
+                          <div className="progress-bar installedLamps" style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 75), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))) < 10 ? 10 : Math.max(10, Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 75), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))))}%` }}></div>
  
-                      <> 
-                          <div className="progress-bar installedLamps" style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 75), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25)))}%` }}>
-                          </div>   
+                          <div className='progress-bar working-lamps' style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))) < 10 ? 10 : Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25)))}%` }}></div> 
 
-                          <div className='progress-bar working-lamps' style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))) < 10 ? 10 : Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25)))}%` }}>
-                          </div>
-
-                      </>
-
-                </div>       
- 
+                        </>    
+                    </div> 
    
-                    <div className='chart-sec'>  
-
+                    <div className='chart-sec'>   
 
                         <div className='chart-issue'>       
                             <h3>{lampdata?.ilm?.installedLamps ?? "N/A"}</h3>
@@ -307,21 +294,280 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (prop
                         <div className='chart-pending'>       
                             <h3>{lampdata?.ilm?.workingLamps ?? "N/A"}</h3>
                             <p>Working lamps</p>
-                        </div>   
-                             
+                        </div>    
                         
                     </div> 
-                </div>   
+                </div>     
 
-                <div className="smart-city-content">  
-                    <StreetLightStatusChart />  
+                <div className="smart-city-content" style={{height:'400px', width:"100%"}}>  
+                       
+                       
+                        
+                <WidgetWrapper className="smart-city_box energy_consumption-box  expenditure-box">
+                  <TitleBar  icon='https://static.iviva.com/images/Udhayimages/expenditure.png' title="Energy Consumption Expenditure"> </TitleBar>
+                  <div className="smart-city-content">
+                    <div className="technician_chart">
+                      <div className='chart-top'> 
+                        <ToggleFilter
+                          options={[
+                            { label: "7D", value: "day" },
+                            { label: "1M", value: "week" },
+                            { label: "1Y", value: "month" },
+                          ]}
+                          value={toggleFilterValue}
+                          onChange={handleFilterChange}
+                        /> 
+                      </div>
+
+                      <div className='chart-top' style={{marginTop:"0.5em"}}>
+                        <div className="sub_title_bar">Total SAR</div>  
+                      </div>
+                      
+                       <ResponsiveContainer> 
+
+                          <BarChart
+                            data={transformedChartData}  
+                            margin={{
+                                top: 10,
+                                right: 0,
+                                left: 0,
+                                bottom: 30,
+                            }}
+                        > 
+                            <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
+                            <XAxis dataKey="name" />    
+                            <YAxis />
+                            {/* <Tooltip formatter={(value: any) => `${value} SAR`} /> */}
+                            <Tooltip formatter={(value: any) => `${value}`} />
+                            <Legend />  
+
+
+                          {colorArray.map((color, index) => (
+                            <Bar  barSize={20}
+                            dataKey="powerConsumption"
+                            name="Expenditure"
+                            fill={`url(#color${index})`}
+                          />
+                        ))}
+                          <defs>
+                          {colorArray.map((color, index) => (
+                              <linearGradient key={`gradient-${index}`} id={`color${index}`} x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="15%" stopColor={'#009b79'} />
+                              <stop offset="85%" stopColor={'#005745'} stopOpacity={0.9} />
+                              </linearGradient>
+                          ))}
+                        </defs>
+
+                        </BarChart>
+
+                      </ResponsiveContainer>  
+
+
+{/* 
+     <ResponsiveContainer width="100%" height="100%">
+           <BarChart
+             width={700}
+              height={400}
+              data={transformedChartData}
+              margin={{ top: 10, right: 10, left: 10, bottom: 5 }}
+            >
+              <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
+
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip /> 
+              {colorArray.map((color, index) => (
+                <Bar  barSize={20}
+                  key={`bar-${index}`}
+                  dataKey="value"
+                 fill={`url(#color${index})`}
+               />
+             ))}
+              <defs>
+               {colorArray.map((color, index) => (
+                  <linearGradient key={`gradient-${index}`} id={`color${index}`} x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="15%" stopColor={'#009b79'} />
+                   <stop offset="85%" stopColor={'#005745'} stopOpacity={0.9} />
+                  </linearGradient>
+               ))}
+            </defs>
+          </BarChart>
+        </ResponsiveContainer>  */}
+
+
+
+                    </div>
+                  </div>
+                </WidgetWrapper>
+
+
+ 
                 </div>
             </div>
 
         </WidgetWrapper> 
     )
-}; 
-
-  
+};  
 
 export default Street_Light__Status_Widget;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import {
+//   WidgetWrapper,
+//   TitleBar,
+// } from "uxp/components";
+// import { IContextProvider } from '../uxp';
+// import StreetLightStatusChart from './lightStatusChart'; 
+
+
+//   import EnergyConsumption from './energy_consumption';
+
+// interface IWidgetProps { 
+//     instanceId?: string,
+//     uxpContext?: IContextProvider,
+
+//     ilmAlerts?: {
+//         "AC Voltage"?: string;
+//         "Load Fail"?: string;
+//         "Lux Sensor Blocked"?: string;
+//         "Main Fail"?: string;
+//         "Partial Failure"?: string;
+//         "Power Factor"?: string; 
+//       };
+// } 
+ 
+ 
+// const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (props) => {    
+    
+//     const [health, setHealth] = useState(null); 
+//     const [lampdata,setLampData] = useState(null);
+//     const [loading, setLoading] = useState(true); // Initialize loading state
+    
+//     const hierarchy = 'منطقة المدينة';   
+  
+//     function getHealthData() { 
+//       props.uxpContext
+//         .executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true })
+//         .then((res: any) => {
+//           console.log("Response From API is", res, typeof res);
+//           setHealth(res);
+//           setLoading(false); // Set loading to false when data is fetched
+//         })
+//         .catch((e: any) => {
+//           console.error("Error fetching health data:", e);
+//           setLoading(false); // Set loading to false in case of error
+//         });
+//     } 
+    
+//     React.useEffect(() => {
+//       getHealthData();
+//     }, []); 
+
+
+//     function getsetLampData () {   
+//         props.uxpContext.executeAction("TataStreetLightAPI", "Installed vs Working Lamps (ILM)/Devices (GLM)", {}, { json: true })
+//         .then((res: any) => {
+//           console.log("Response From lampdata API is", res, typeof res);
+//           setLampData(res);
+//           setLoading(false);  
+//         })
+//         .catch((e: any) => {
+//           console.error("Error fetching health data:", e);
+//           setLoading(false);  
+//         });
+//     }
+    
+//     React.useEffect(() =>{
+//       getsetLampData();
+//     }, []) 
+ 
+  
+//     const calculatePercentage = (value: number, total: number) => {
+//       return ((value / total) * 100).toFixed(2);
+//     };     
+
+//     return ( 
+//          <WidgetWrapper className="smart-city_box waste-bin-box">   
+//             <TitleBar title="Street Light Alerts" icon='https://static.iviva.com/images/Udhayimages/streetlight-alert.png'></TitleBar>
+           
+//             <div className="smart-city-content">  
+//                   {loading ? (  
+//                   <div>Loading...</div>
+//                 ) : (
+//                   <div className='status-content'>  
+//                       <div className='status Attention'>
+//                               <h3>{health?.ilmAlerts?.["Main Fail"] + health?.ilmAlerts?.["Lamp Flickering"]} <span></span></h3> 
+//                           <p>High</p>
+//                       </div>
+
+//                       <div className='status Pending'>
+//                       <h3>{health?.ilmAlerts?.["Load Fail"] + health?.ilmAlerts?.["Lux Sensor Blocked"] + health?.ilmAlerts?.["Partial Failure"]} <span></span></h3>
+//                           <p>Medium</p>
+//                       </div>
+
+//                       <div className='status Resloved'>
+//                       <h3>{health?.ilmAlerts?.["Power Factor"] + health?.ilmAlerts?.["AC Voltage"]} <span></span></h3>  
+//                           <p>Low</p>
+//                       </div>    
+//                   </div>
+//                 )}  
+
+//                 <div className="technician_chart">  
+                
+//                 <div className='sub_title_bar'>Installed vs Working lamps</div>   
+
+//                     <div className="progress-bar-container">   
+//                         <>   
+//                           <div className="progress-bar installedLamps" style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 75), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))) < 10 ? 10 : Math.max(10, Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 75), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))))}%` }}></div>
+ 
+//                           <div className='progress-bar working-lamps' style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))) < 10 ? 10 : Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25)))}%` }}></div> 
+
+//                         </>    
+//                     </div> 
+   
+//                     <div className='chart-sec'>   
+
+//                         <div className='chart-issue'>       
+//                             <h3>{lampdata?.ilm?.installedLamps ?? "N/A"}</h3>
+//                             <p>Installed lamps</p>
+//                         </div> 
+
+//                         <div className='chart-pending'>       
+//                             <h3>{lampdata?.ilm?.workingLamps ?? "N/A"}</h3>
+//                             <p>Working lamps</p>
+//                         </div>    
+                        
+//                     </div> 
+//                 </div>     
+
+//                 <div className="smart-city-content" style={{height:'400px'}}>  
+//                         <StreetLightStatusChart />   
+ 
+//                 </div>
+//             </div>
+
+//         </WidgetWrapper> 
+//     )
+// };  
+
+// export default Street_Light__Status_Widget;
+
+
+
+

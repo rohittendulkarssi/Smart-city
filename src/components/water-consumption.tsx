@@ -172,32 +172,8 @@ const Water_ConsumptionWidget: React.FunctionComponent<{}> = () => {
                             />
                   </div>
     
-                    <div className='status-content'>
-    
-                     {/* <ResponsiveContainer width="100%" height={270}>
-                        <LineChart
-                        width={500}
-                        height={350}
-                        data={water_consumption_data}
-                        margin={{
-                            top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 5,
-                        }}
-                        
-                        >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name"  tick={{ fill: '#ffffff' }} />
-                        <YAxis  tick={{ fill: '#ffffff' }} />
-                        <Tooltip />
-                        <Legend />
-                        <Line type="monotone" dataKey="consumption" stroke="#ffffff" activeDot={{ r: 8 }} />
-                        
-                        </LineChart>
-
-                        
-                    </ResponsiveContainer>    */}
+                    <div className='status-content'> 
+                     
 
 <ResponsiveContainer>
     <AreaChart
@@ -211,7 +187,7 @@ const Water_ConsumptionWidget: React.FunctionComponent<{}> = () => {
         bottom: 5,
       }}
     >
-      <CartesianGrid strokeDasharray="3 3" />
+      <CartesianGrid stroke="#0b3e35cf" strokeDasharray="1 1" />
       <XAxis dataKey="name" tick={{ fill: '#ffffff' }} />
       <YAxis tick={{ fill: '#ffffff' }} />
       <Tooltip />

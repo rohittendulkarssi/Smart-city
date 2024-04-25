@@ -1,23 +1,19 @@
- 
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import {
   ResponsiveContainer,
-  RadarChart,
-  PolarGrid,
-  PolarAngleAxis,
-  PolarRadiusAxis,
-  Radar,
-  Tooltip,
-  LabelList,
+  PieChart,
+  Pie,
+  Cell,
+  Legend,
+  Label,
 } from 'recharts';
 
 import { WidgetWrapper, TitleBar } from 'uxp/components';
 import { IContextProvider } from '../uxp';
 
-interface IWidgetProps { 
-  instanceId?: string,
-  uxpContext?: IContextProvider,
+interface IWidgetProps {
+  instanceId?: string;
+  uxpContext?: IContextProvider;
 
   ilmAlerts?: {
     "AC Voltage"?: string;
@@ -27,10 +23,171 @@ interface IWidgetProps {
     "Partial Failure"?: string;
     "Power Factor"?: string;
   };
-} 
+}
+
+const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {
+  const [loading, setLoading] = useState(true);
+  const [health, setHealth] = useState({
+    ilmAlerts: {
+      "AC Voltage": 0,
+      "Load Fail": 0,
+      "Lux Sensor Blocked": 0,
+      "Main Fail": 0,
+      "Partial Failure": 0,
+      "Power Factor": 0,
+      "Lamp Flickering": 0
+    }
+  });
+
+  const [activeIndex, setActiveIndex] = useState(-1);
+  const [isHovering, setIsHovering] = useState(false);
+
+  const hierarchy = 'منطقة المدينة';
+
+  function getHealthData() {
+    props.uxpContext
+      .executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true })
+      .then((res: any) => {
+        console.log("Response From API is", res, typeof res);
+        setHealth(res);
+        setLoading(false);
+      })
+      .catch((e: any) => {
+        console.error("Error fetching health data:", e);
+        setLoading(false);
+      });
+  }
+
+  useEffect(() => {
+    getHealthData();
+  }, []);
+
+  const pieChartData = [
+    { name: 'AC Voltage', value: Number(health?.ilmAlerts?.["AC Voltage"]) || 45 },
+    { name: 'Load Fail', value: Number(health?.ilmAlerts?.["Load Fail"]) || 58 },
+    { name: 'Lux Sensor Blocked', value: Number(health?.ilmAlerts?.["Lux Sensor Blocked"]) || 42 },
+    { name: 'Main Fail', value: Number(health?.ilmAlerts?.["Main Fail"]) || 54 },
+    { name: 'Partial Failure', value: Number(health?.ilmAlerts?.["Partial Failure"]) || 57 },
+    { name: 'Power Factor', value: Number(health?.ilmAlerts?.["Power Factor"]) || 36 },
+    { name: 'Lamp Flickering', value: Number(health?.ilmAlerts?.["Lamp Flickering"]) || 87 }
+  ];
+
+  const COLORS = ["rgb(99 245 227)", "rgb(25 190 92)", "", "rgb(106 186 53)", "rgb(179 238 142)", "rgb(25 157 142)"];
+
+  const totalValue = pieChartData.reduce((acc, entry) => acc + entry.value, 0);
+
+  const handleMouseEnter = (index: number) => {
+    setActiveIndex(index);
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveIndex(-1);
+    setIsHovering(false);
+  };
+
+  const renderCustomActiveShape = (props: { cx: any; cy: any; innerRadius: any; outerRadius: any; startAngle: any; endAngle: any; fill: any; }) => {
+    const { cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill } = props;
+  
+    return (
+      <g>
+        <path
+          d={`
+            M${cx},${cy - outerRadius}
+            A${outerRadius},${outerRadius},0,1,1,${cx - 0.01},${cy - outerRadius}
+            L${cx - 0.01},${cy - innerRadius}
+            A${innerRadius},${innerRadius},0,1,0,${cx},${cy - innerRadius}
+            Z
+          `}
+          fill={fill} // Change the fill color for the active shape
+          stroke="red" // Add a stroke to the active shape for highlighting
+          strokeWidth={2} // Adjust the stroke width as needed
+        />
+      </g>
+    );
+  };
+
+  return (
+    <WidgetWrapper className="smart-city_box vehicle_summary-box">
+      <TitleBar title="Streetlight health summary" icon="https://static.iviva.com/images/Udhayimages/health-data.png" />
+
+      <div className="smart-city-content">
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <div className="technician_chart" style={{ height: 300 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie
+                  data={pieChartData}
+                  dataKey="value"
+                  nameKey="name"
+                  innerRadius={50} // Adjust innerRadius to create a donut chart effect
+                  outerRadius={100}
+                  fill="#8884d8"
+                  label
+                  activeShape={renderCustomActiveShape}
+                >
+                  {pieChartData.map((entry, index) => (
+                    <Cell
+                      key={`cell-${index}`}
+                      fill={COLORS[index % COLORS.length]}
+                      onMouseEnter={() => handleMouseEnter(index)}
+                      onMouseLeave={handleMouseLeave}
+                    />
+                  ))}
+                  <Label value={totalValue} position="center" />
+                </Pie>
+                <Legend />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        )}
+      </div>
+    </WidgetWrapper>
+  );
+};
+
+export default VehicleSummaryWidget;
 
 
-// interface HealthData {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import {
+//   ResponsiveContainer,
+//   PieChart,
+//   Pie,
+//   Cell,
+//   Legend,
+//   Label,
+// } from 'recharts';
+
+// import { WidgetWrapper, TitleBar } from 'uxp/components';
+// import { IContextProvider } from '../uxp';
+
+// interface IWidgetProps {
+//   instanceId?: string;
+//   uxpContext?: IContextProvider;
+
 //   ilmAlerts?: {
 //     "AC Voltage"?: string;
 //     "Load Fail"?: string;
@@ -41,93 +198,480 @@ interface IWidgetProps {
 //   };
 // }
 
-const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {  
- // const [health, setHealth] = useState<HealthData>({});
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+// const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {
+//   const [loading, setLoading] = useState(true);
+//   const [health, setHealth] = useState({
+//     ilmAlerts: {
+//       "AC Voltage": 0,
+//       "Load Fail": 0,
+//       "Lux Sensor Blocked": 0,
+//       "Main Fail": 0,
+//       "Partial Failure": 0,
+//       "Power Factor": 0,
+//       "Lamp Flickering": 0
+//     }
+//   });
 
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+//   const hierarchy = 'منطقة المدينة';
 
-  // async function fetchData() {
-  //   try {
-  //     const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
-  //     const headers = {
-  //       Authorization: 'APIKEY SC:mda:307d91db4fe4f10b',
-  //     };
+//   function getHealthData() {
+//     props.uxpContext
+//       .executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true })
+//       .then((res: any) => {
+//         console.log("Response From API is", res, typeof res);
+//         setHealth(res);
+//         setLoading(false);
+//       })
+//       .catch((e: any) => {
+//         console.error("Error fetching health data:", e);
+//         setLoading(false);
+//       });
+//   }
 
-  //     const { data } = await axios.get(
-  //       `https://mda.lucyday.io/Lucy/TataStreetLightAPI/getAlertSummary?hierarchy=${encodeURIComponent(
-  //         hierarchy
-  //       )}`,
-  //       { headers }
-  //     );
+//   useEffect(() => {
+//     getHealthData();
+//   }, []);
 
-  //     setHealth(data);
-  //   } catch (error) {
-  //     console.error('Error fetching data from API:', error.message);
-  //     setError('Failed to fetch data. Please try again.');
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-  // }
+//   const pieChartData = [
+//     { name: 'AC Voltage', value: Number(health?.ilmAlerts?.["AC Voltage"]) || 45 },
+//     { name: 'Load Fail', value: Number(health?.ilmAlerts?.["Load Fail"]) || 58 },
+//     { name: 'Lux Sensor Blocked', value: Number(health?.ilmAlerts?.["Lux Sensor Blocked"]) || 42 },
+//     { name: 'Main Fail', value: Number(health?.ilmAlerts?.["Main Fail"]) || 54 },
+//     { name: 'Partial Failure', value: Number(health?.ilmAlerts?.["Partial Failure"]) || 57 },
+//     { name: 'Power Factor', value: Number(health?.ilmAlerts?.["Power Factor"]) || 36 },
+//     { name: 'Lamp Flickering', value: Number(health?.ilmAlerts?.["Lamp Flickering"]) || 87 }
+//   ];
 
-  const [health, setHealth] = useState<IWidgetProps>({});
+//   const COLORS = ["rgb(99 245 227)", "rgb(25 190 92)", "", "rgb(106 186 53)", "rgb(179 238 142)", "rgb(25 157 142)"];
 
-  function getHealthData () {
+//   const totalValue = pieChartData.reduce((acc, entry) => acc + entry.value, 0);
 
-    const hierarchy = 'منطقة المدينة,المدينة,الطرق الرئيسية,السيح';
-
-      props.uxpContext.executeAction("TataStreetLightAPI","Alert Summary",{hierarchy:hierarchy},{json:true}).then((res: any[])=>{  
-        setHealth(res[0]);
-      }).catch((e: any)=>{
-          // console.log("hi", e);
-      }); 
-  }
+//   const renderCustomActiveShape = (props: { cx: any; cy: any; innerRadius: any; outerRadius: any; startAngle: any; endAngle: any; fill: any; }) => {
+//     const { cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill } = props;
   
-  React.useEffect(() =>{
-    getHealthData();
-  }, []) 
-   
+//     return (
+//       <g>
+//         <path
+//           d={`
+//             M${cx},${cy - outerRadius}
+//             A${outerRadius},${outerRadius},0,1,1,${cx - 0.01},${cy - outerRadius}
+//             L${cx - 0.01},${cy - innerRadius}
+//             A${innerRadius},${innerRadius},0,1,0,${cx},${cy - innerRadius}
+//             Z
+//           `}
+//           fill={fill} // Change the fill color for the active shape
+//           stroke="red" // Add a stroke to the active shape for highlighting
+//           strokeWidth={2} // Adjust the stroke width as needed
+//         />
+//       </g>
+//     );
+//   };
+
+//   return (
+//     <WidgetWrapper className="smart-city_box vehicle_summary-box">
+//       <TitleBar title="Streetlight health summary" icon="https://static.iviva.com/images/Udhayimages/health-data.png" />
+
+//       <div className="smart-city-content">
+//         {loading ? (
+//           <div>Loading...</div>
+//         ) : (
+//           <div className="technician_chart" style={{ height: 300 }}>
+//             <ResponsiveContainer width="100%" height="100%">
+//               <PieChart>
+//                 <Pie
+//                   data={pieChartData}
+//                   dataKey="value"
+//                   nameKey="name"
+//                   innerRadius={50} // Adjust innerRadius to create a donut chart effect
+//                   outerRadius={100}
+//                   fill="#8884d8"
+//                   label
+//                  activeShape={renderCustomActiveShape}
+//                 >
+//                   {pieChartData.map((entry, index) => (
+//                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+//                   ))}
+//                   <Label value={totalValue} position="center" />
+//                 </Pie>
+//                 <Legend />
+                
+//               </PieChart>
+//             </ResponsiveContainer>
+//           </div>
+//         )}
+//       </div>
+//     </WidgetWrapper>
+//   );
+// };
+
+// export default VehicleSummaryWidget;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import {
+//   ResponsiveContainer,
+//   PieChart,
+//   Pie,
+//   Cell,
+//   Legend,
+// } from 'recharts';
+
+// import { WidgetWrapper, TitleBar } from 'uxp/components';
+// import { IContextProvider } from '../uxp';
+ 
+
+// interface IWidgetProps { 
+//   instanceId?: string,
+//   uxpContext?: IContextProvider,
+
+//   ilmAlerts?: {
+//     "AC Voltage"?: string;
+//     "Load Fail"?: string;
+//     "Lux Sensor Blocked"?: string;
+//     "Main Fail"?: string;
+//     "Partial Failure"?: string;
+//     "Power Factor"?: string;
+//   };
+// }  
+
+// const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {   
+
+//   const [loading, setLoading] = useState(true);
+//   const [health, setHealth] = useState({
+//     ilmAlerts: {
+//       "AC Voltage": 0,
+//       "Load Fail": 0,
+//       "Lux Sensor Blocked": 0,
+//       "Main Fail": 0,
+//       "Partial Failure": 0,
+//       "Power Factor": 0,
+//       "Lamp Flickering": 0
+//     }
+//   }); 
+ 
+//   const hierarchy = 'منطقة المدينة';  
+
+//   function getHealthData() { 
+//     props.uxpContext
+//       .executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true })
+//       .then((res: any) => {
+//         console.log("Response From API is", res, typeof res);
+//         setHealth(res);
+//         setLoading(false);  
+//       })
+//       .catch((e: any) => {
+//         console.error("Error fetching health data:", e);
+//         setLoading(false);  
+//       });
+//   } 
   
-  const radarChartData = [
-    { vehicle: 'AC Voltage', value: Number(health?.ilmAlerts?.["AC Voltage"]) || 45 },
-    { vehicle: 'Load Fail', value: Number(health?.ilmAlerts?.["Load Fail"]) || 58 },
-    { vehicle: 'Lux Sensor Blocked', value: Number(health?.ilmAlerts?.["Lux Sensor Blocked"]) || 42 },
-    { vehicle: 'Main Fail', value: Number(health?.ilmAlerts?.["Main Fail"]) || 54 },
-    { vehicle: 'Partial Failure', value: Number(health?.ilmAlerts?.["Partial Failure"]) || 57 },
-    { vehicle: 'Power Factor', value: Number(health?.ilmAlerts?.["Power Factor"]) || 36 },
-  ];
+//   useEffect(() => {
+//     getHealthData();
+//   }, []); 
+  
+//   const pieChartData = [
+//     { name: 'AC Voltage', value: Number(health?.ilmAlerts?.["AC Voltage"]) || 45 },
+//     { name: 'Load Fail', value: Number(health?.ilmAlerts?.["Load Fail"]) || 58 },
+//     { name: 'Lux Sensor Blocked', value: Number(health?.ilmAlerts?.["Lux Sensor Blocked"]) || 42 },
+//     { name: 'Main Fail', value: Number(health?.ilmAlerts?.["Main Fail"]) || 54 },
+//     { name: 'Partial Failure', value: Number(health?.ilmAlerts?.["Partial Failure"]) || 57 },
+//     { name: 'Power Factor', value: Number(health?.ilmAlerts?.["Power Factor"]) || 36 },
+//     { name: 'Lamp Flickering', value: Number(health?.ilmAlerts?.["Lamp Flickering"]) || 87 } 
+//   ];
 
-  return (
-    <WidgetWrapper className="smart-city_box vehicle_summary-box">
-      <TitleBar title="Streetlight health summary" icon="https://static.iviva.com/images/Udhayimages/health-data.png" />
+//   // const COLORS = ['#FF5733', '#FFC300', '#C70039', '#900C3F', '#581845', '#1B4F72', '#154360'];
 
-      <div className="smart-city-content">
-        <div className="technician_chart" style={{ height: 300 }}> 
-         
+//   const COLORS = ["rgb(99 245 227)", "rgb(25 190 92)", "", "rgb(106 186 53)", "rgb(179 238 142)", "rgb(25 157 142)"]
 
-          <ResponsiveContainer width="100%" height="100%">
-              <RadarChart cx="50%" cy="50%" outerRadius="80%" data={radarChartData}>
-                <PolarGrid />
-                <PolarAngleAxis dataKey="vehicle" />
-                <PolarRadiusAxis />
-                <Radar name="Value" dataKey="value" stroke="#005936" fill="#00a68a" fillOpacity={0.6}>
-                  <LabelList dataKey="value" position="top" />
-                </Radar>
-                <Tooltip />
-              </RadarChart>
-            </ResponsiveContainer>  
+ 
+//   return (
+//     <WidgetWrapper className="smart-city_box vehicle_summary-box">
+//       <TitleBar title="Streetlight health summary" icon="https://static.iviva.com/images/Udhayimages/health-data.png" />
 
-        </div>
-       
-      </div>
-    </WidgetWrapper>
-  );
-};
+//       <div className="smart-city-content">
+//         {loading ? (
+//           <div>Loading...</div>
+//         ) : (
+//           <div className="technician_chart" style={{ height: 300 }}>  
+//            <ResponsiveContainer width="100%" height="100%">
+//               <PieChart>
+//                 <Pie
+//                   data={pieChartData}
+//                   dataKey="value"
+//                   nameKey="name"
+//                   innerRadius={50}
+//                   outerRadius={80}
+//                   fill="#8884d8"
+//                   label
+//                 >
+//                   {pieChartData.map((entry, index) => (
+//                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+//                   ))}
+//                 </Pie>
+//                 <Legend/>
+//               </PieChart>
+//             </ResponsiveContainer>    
+            
+//           </div>
+//         )}
+//       </div>
+//     </WidgetWrapper>
+//   );
+// };
 
-export default VehicleSummaryWidget;
+// export default VehicleSummaryWidget;
+
+
+
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import {
+//   ResponsiveContainer,
+//   PieChart,
+//   Pie,
+//   Cell,
+//   Legend,
+// } from 'recharts';
+
+// import { WidgetWrapper, TitleBar } from 'uxp/components';
+// import { IContextProvider } from '../uxp';
+
+// interface IWidgetProps { 
+//   instanceId?: string,
+//   uxpContext?: IContextProvider,
+
+//   ilmAlerts?: {
+//     "AC Voltage"?: string;
+//     "Load Fail"?: string;
+//     "Lux Sensor Blocked"?: string;
+//     "Main Fail"?: string;
+//     "Partial Failure"?: string;
+//     "Power Factor"?: string;
+//   };
+// }  
+
+// const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {   
+
+//   const [loading, setLoading] = useState(true);
+//   const [health, setHealth] = useState({
+//     ilmAlerts: {
+//       "AC Voltage": 0,
+//       "Load Fail": 0,
+//       "Lux Sensor Blocked": 0,
+//       "Main Fail": 0,
+//       "Partial Failure": 0,
+//       "Power Factor": 0,
+//       "Lamp Flickering": 0
+//     }
+//   }); 
+ 
+//   const hierarchy = 'منطقة المدينة';  
+
+//   function getHealthData() { 
+//     props.uxpContext
+//       .executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true })
+//       .then((res: any) => {
+//         console.log("Response From API is", res, typeof res);
+//         setHealth(res);
+//         setLoading(false);  
+//       })
+//       .catch((e: any) => {
+//         console.error("Error fetching health data:", e);
+//         setLoading(false);  
+//       });
+//   } 
+  
+//   useEffect(() => {
+//     getHealthData();
+//   }, []); 
+  
+//   const pieChartData = [
+//     { name: 'AC Voltage', value: Number(health?.ilmAlerts?.["AC Voltage"]) || 45 },
+//     { name: 'Load Fail', value: Number(health?.ilmAlerts?.["Load Fail"]) || 58 },
+//     { name: 'Lux Sensor Blocked', value: Number(health?.ilmAlerts?.["Lux Sensor Blocked"]) || 42 },
+//     { name: 'Main Fail', value: Number(health?.ilmAlerts?.["Main Fail"]) || 54 },
+//     { name: 'Partial Failure', value: Number(health?.ilmAlerts?.["Partial Failure"]) || 57 },
+//     { name: 'Power Factor', value: Number(health?.ilmAlerts?.["Power Factor"]) || 36 },
+//     { name: 'Lamp Flickering', value: Number(health?.ilmAlerts?.["Lamp Flickering"]) || 87 } 
+//   ];
+
+//   const COLORS = ['#FF5733', '#FFC300', '#C70039', '#900C3F', '#581845', '#1B4F72', '#154360'];
+
+//   return (
+//     <WidgetWrapper className="smart-city_box vehicle_summary-box">
+//       <TitleBar title="Streetlight health summary" icon="https://static.iviva.com/images/Udhayimages/health-data.png" />
+
+//       <div className="smart-city-content">
+//         {loading ? (
+//           <div>Loading...</div>
+//         ) : (
+//           <div className="technician_chart" style={{ height: 300 }}>  
+//             <ResponsiveContainer width="100%" height="100%">
+//               <PieChart>
+//                 <Pie
+//                   data={pieChartData}
+//                   dataKey="value"
+//                   nameKey="name"
+//                   innerRadius={50}
+//                   outerRadius={80}
+//                   fill="#8884d8"
+//                   label
+//                 >
+//                   {pieChartData.map((entry, index) => (
+//                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+//                   ))}
+//                 </Pie>
+//                 <Legend/>
+//               </PieChart>
+//             </ResponsiveContainer>  
+//           </div>
+//         )}
+//       </div>
+//     </WidgetWrapper>
+//   );
+// };
+
+// export default VehicleSummaryWidget;
+
+
+
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import {
+//   ResponsiveContainer,
+//   RadarChart,
+//   PolarGrid,
+//   PolarAngleAxis,
+//   PolarRadiusAxis,
+//   Radar,
+//   Tooltip,
+//   LabelList,
+//   PieChart,
+//   Pie
+// } from 'recharts';
+
+// import { WidgetWrapper, TitleBar } from 'uxp/components';
+// import { IContextProvider } from '../uxp';
+
+// interface IWidgetProps { 
+//   instanceId?: string,
+//   uxpContext?: IContextProvider,
+
+//   ilmAlerts?: {
+//     "AC Voltage"?: string;
+//     "Load Fail"?: string;
+//     "Lux Sensor Blocked"?: string;
+//     "Main Fail"?: string;
+//     "Partial Failure"?: string;
+//     "Power Factor"?: string;
+//   };
+// }  
+
+// const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {   
+
+//   const [loading, setLoading] = useState(true);
+//   const [health, setHealth] = useState({
+//     ilmAlerts: {
+//       "AC Voltage": 0,
+//       "Load Fail": 0,
+//       "Lux Sensor Blocked": 0,
+//       "Main Fail": 0,
+//       "Partial Failure": 0,
+//       "Power Factor": 0,
+//       "Lamp Flickering": 0
+//     }
+//   }); 
+ 
+//   const hierarchy = 'منطقة المدينة';  
+
+//   function getHealthData() { 
+//     props.uxpContext
+//       .executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true })
+//       .then((res: any) => {
+//         console.log("Response From API is", res, typeof res);
+//         setHealth(res);
+//         setLoading(false);  
+//       })
+//       .catch((e: any) => {
+//         console.error("Error fetching health data:", e);
+//         setLoading(false);  
+//       });
+//   } 
+  
+//   useEffect(() => {
+//     getHealthData();
+//   }, []); 
+  
+//   const radarChartData = [
+//     { vehicle: 'AC Voltage', value: Number(health?.ilmAlerts?.["AC Voltage"]) || 45 },
+//     { vehicle: 'Load Fail', value: Number(health?.ilmAlerts?.["Load Fail"]) || 58 },
+//     { vehicle: 'Lux Sensor Blocked', value: Number(health?.ilmAlerts?.["Lux Sensor Blocked"]) || 42 },
+//     { vehicle: 'Main Fail', value: Number(health?.ilmAlerts?.["Main Fail"]) || 54 },
+//     { vehicle: 'Partial Failure', value: Number(health?.ilmAlerts?.["Partial Failure"]) || 57 },
+//     { vehicle: 'Power Factor', value: Number(health?.ilmAlerts?.["Power Factor"]) || 36 },
+//     { vehicle: 'Lamp Flickering', value: Number(health?.ilmAlerts?.["Lamp Flickering"]) || 87 } 
+//   ];
+
+//   return (
+//     <WidgetWrapper className="smart-city_box vehicle_summary-box">
+//       <TitleBar title="Streetlight health summary" icon="https://static.iviva.com/images/Udhayimages/health-data.png" />
+
+//       <div className="smart-city-content">
+//         {loading ? (
+//           <div>Loading...</div>
+//         ) : (
+//           <div className="technician_chart" style={{ height: 300 }}>  
+//             <ResponsiveContainer width="100%" height="100%">
+//                <RadarChart cx="50%" cy="50%" outerRadius="80%" data={radarChartData}>
+//                   <PolarGrid />
+//                   <PolarAngleAxis dataKey="vehicle" />
+//                   <PolarRadiusAxis />
+//                   <Radar name="Value" dataKey="value" stroke="#005936" fill="#00a68a" fillOpacity={0.6}>
+//                     <LabelList dataKey="value" position="top" />
+//                   </Radar>
+//                   <Tooltip />
+//                 </RadarChart>   
+
+//               </ResponsiveContainer>  
+//           </div>
+//         )}
+//       </div>
+//     </WidgetWrapper>
+//   );
+// };
+
+// export default VehicleSummaryWidget;
+
+
 
 
  

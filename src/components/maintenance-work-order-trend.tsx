@@ -7,96 +7,7 @@ import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapCompon
 import OrderSummary from './order-summary'; 
 
 const Maintenance_WorkOrder_Trend: React.FunctionComponent<{}> = () => {  
-
  
-
-// const summarydata1 = [
-//     {
-//         name: 'Room 1', Aug_duration_meeting: 8, Total_hours_booked: 16, Total_hours_accupied: 17, amt: 25,
-//     },
-//     {
-//         name: 'Room 2', Aug_duration_meeting: 19, Total_hours_booked: 20, Total_hours_accupied: 11, amt: 25,
-//     },
-//     {
-//         name: 'Room 3', Aug_duration_meeting: 7, Total_hours_booked: 11, Total_hours_accupied: 19, amt: 25,
-//     },
-//     {
-//         name: 'Room 4', Aug_duration_meeting: 10, Total_hours_booked: 5, Total_hours_accupied: 10, amt: 25,
-//     },
-//     {
-//         name: 'Room 5', Aug_duration_meeting: 18, Total_hours_booked: 22, Total_hours_accupied: 20, amt: 25,
-//     },
-//     {
-//         name: 'Room 6', Aug_duration_meeting: 21, Total_hours_booked: 16, Total_hours_accupied: 11, amt: 25,
-//     },
-//     {
-//         name: 'Room 7', Aug_duration_meeting: 12, Total_hours_booked: 21, Total_hours_accupied: 19, amt: 25,
-//     },
-//     {
-//         name: 'Room 8', Aug_duration_meeting: 7, Total_hours_booked: 15, Total_hours_accupied: 12, amt: 25,
-//     } 
-// ];
-
-
-// const summarydata2 = [
-//     {
-//         name: 'Room 1', Aug_duration_meeting: 18, Total_hours_booked: 10, Total_hours_accupied: 17, amt: 25,
-//     },
-//     {
-//         name: 'Room 2', Aug_duration_meeting: 19, Total_hours_booked: 20, Total_hours_accupied: 11, amt: 25,
-//     },
-//     {
-//         name: 'Room 3', Aug_duration_meeting: 7, Total_hours_booked: 11, Total_hours_accupied: 12, amt: 25,
-//     },
-//     {
-//         name: 'Room 4', Aug_duration_meeting: 20, Total_hours_booked: 15, Total_hours_accupied: 10, amt: 25,
-//     },
-//     {
-//         name: 'Room 5', Aug_duration_meeting: 16, Total_hours_booked: 22, Total_hours_accupied: 20, amt: 25,
-//     },
-//     {
-//         name: 'Room 6', Aug_duration_meeting: 21, Total_hours_booked: 16, Total_hours_accupied: 11, amt: 25,
-//     },
-//     {
-//         name: 'Room 7', Aug_duration_meeting: 12, Total_hours_booked: 21, Total_hours_accupied: 19, amt: 25,
-//     },
-//     {
-//         name: 'Room 8', Aug_duration_meeting: 10, Total_hours_booked: 15, Total_hours_accupied: 12, amt: 25,
-//     } 
-// ];
-
-
-// const summarydata3 = [
-//     {
-//         name: 'Room 1', Aug_duration_meeting: 15, Total_hours_booked: 16, Total_hours_accupied: 17, amt: 25,
-//     },
-//     {
-//         name: 'Room 2', Aug_duration_meeting: 20, Total_hours_booked: 20, Total_hours_accupied: 11, amt: 25,
-//     },
-//     {
-//         name: 'Room 3', Aug_duration_meeting: 8, Total_hours_booked: 11, Total_hours_accupied: 19, amt: 25,
-//     },
-//     {
-//         name: 'Room 4', Aug_duration_meeting: 10, Total_hours_booked: 5, Total_hours_accupied: 10, amt: 25,
-//     },
-//     {
-//         name: 'Room 5', Aug_duration_meeting: 24, Total_hours_booked: 22, Total_hours_accupied: 20, amt: 25,
-//     },
-//     {
-//         name: 'Room 6', Aug_duration_meeting: 18, Total_hours_booked: 16, Total_hours_accupied: 11, amt: 25,
-//     },
-//     {
-//         name: 'Room 7', Aug_duration_meeting: 10, Total_hours_booked: 21, Total_hours_accupied: 19, amt: 25,
-//     },
-//     {
-//         name: 'Room 8', Aug_duration_meeting: 17, Total_hours_booked: 15, Total_hours_accupied: 15, amt: 25,
-//     } 
-// ];
-
-
-
-
-
 const summarydata1 = [
     {
         name: 'Jan', Aug_duration_meeting: 502, Total_hours_booked: 658, Total_hours_accupied: 362, amt: 365,
@@ -121,19 +32,7 @@ const summarydata1 = [
     },
      {
         name: 'Aug', Aug_duration_meeting: 235, Total_hours_booked: 124, Total_hours_accupied: 19, amt: 365,
-    },
-    // {
-    //     name: 'Sep', Aug_duration_meeting: 163, Total_hours_booked: 215, Total_hours_accupied: 236, amt: 654,
-    // },
-    // {
-    //     name: 'Oct', Aug_duration_meeting: 169, Total_hours_booked: 322, Total_hours_accupied: 125, amt: 221,
-    // },
-    // {
-    //     name: 'Nov', Aug_duration_meeting: 321, Total_hours_booked: 516, Total_hours_accupied: 302, amt: 625,
-    // },
-    // {
-    //     name: 'Dec', Aug_duration_meeting: 163, Total_hours_booked: 215, Total_hours_accupied: 236, amt: 654,
-    // }
+    } 
 ];
 
 
@@ -250,7 +149,7 @@ return (
             margin={{
                 top: 2, right: 0, left: 0, bottom: 2,
             }}>
-            <CartesianGrid strokeDasharray="0 0" />
+            <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
             <XAxis dataKey="name" />
             <YAxis orientation="left" />
             <Tooltip />

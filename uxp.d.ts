@@ -2767,6 +2767,9 @@ declare module "uxp/components" {
          * show hide end of content message
          */
         showEndOfContent?: boolean
+
+        hideClearButton?: boolean
+        hideDoneButton?: boolean
     
     }
     /**

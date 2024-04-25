@@ -322,7 +322,31 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        }   
+        },
+        {
+            "id": "iOT_Filter",
+            "name": "IOT Filter",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }, 
+        {
+            "id": "madinah_Facts",
+            "name": "Madinah Facts",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        
+        {
+            "id": "pole_Details",
+            "name": "Pole Details",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }     
+
+        
         
         
         

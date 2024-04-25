@@ -177,7 +177,8 @@ const IAQ_Summary: React.FunctionComponent<{}> = () => {
                                 left: 20,
                                 bottom: 5,
                             }}>
-                            <CartesianGrid strokeDasharray="0 0" />
+                            {/* <CartesianGrid strokeDasharray="0 0" /> */}
+                            <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
                             <XAxis dataKey="name"  tick={{ fill: '#ffffff' }} />
                             <YAxis  tick={{ fill: '#ffffff' }} />
                             <Tooltip />
