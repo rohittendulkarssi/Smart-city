@@ -518,7 +518,7 @@ if (filterType === "day") {
                     bottom: 30,
                 }}
             > 
-                <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
+                 <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
                 <XAxis dataKey="name" />    
                 <YAxis />
                 <Tooltip formatter={(value: any) => `${value} MWh`} />

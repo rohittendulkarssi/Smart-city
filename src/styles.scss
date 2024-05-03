@@ -17,7 +17,7 @@
         position: relative;
         min-height: 176vh;
         background: rgb(20 65 49 / 82%);
-        padding-left: 10px;
+        // padding-left: 10px;
  
     }
 //For E3D ref//
@@ -231,6 +231,23 @@
                             font-size: 0.88em;
                             text-align: left;
                             align-items: start;
+
+
+                            a{
+
+                               &.cwo_key{
+                                    background-image: url("https://static.iviva.com/images/Udhayimages/new-tab.png");
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: auto 100%;
+                                    width: 12px;
+                                    height: 12px;
+                                    display: inline-block;
+                                }
+                                color: #ffffff;
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -1273,18 +1290,27 @@
             display: inline-flex;
             width: 100%;
             padding: 1em 1em 0em 1em;
+            position: relative;
 
             .logo{ 
+                // display: inline-block;
+                //  width: 32%; 
+                // background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO.png"); 
+                // background-position: center center;
+                // background-repeat: no-repeat;
+                // background-size: 100% auto;
+                // margin-top: 0em;
+                // height: 8em;
+
                 display: inline-block;
-                 width: 32%;
-                // width: 25%;
-                background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO.png");
-                // background-image: url("https://www.iviva.com/wp-content/uploads/2023/07/iviva-logo-1.svg");
+                width: 33%;
+                // background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO.png");
+                background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO_white.png");
                 background-position: center center;
                 background-repeat: no-repeat;
-                background-size: 90% auto;
+                background-size: 95% auto;
                 margin-top: 0em;
-                height: 7.5em;
+                height: 9em;
             }
             h2{
                 display: inline-block;
@@ -1295,6 +1321,18 @@
                 margin-left: 5%;
                 padding: 0;
                 margin: 1.3em 0 0 0%;
+                text-transform: uppercase; 
+
+            }
+            h3{
+                display: inline-block;
+                width: 65%;
+                font-size: 2.1em;
+                font-weight: bold;
+                color: #ffffff;
+                margin-left: 5%;
+                padding: 0;
+                margin: 1.4em 0 0 0%;
                 text-transform: uppercase; 
 
             }
@@ -2273,7 +2311,7 @@
                         display: inline-block;
                         width: 100%;
                         text-align: center;
-                        font-size: 3em;
+                        font-size: 2.75em;
                         color: #fff;
                         font-weight: bold;
                     }
@@ -2348,15 +2386,19 @@
                             padding: 0;
                             margin: 0;
                             color: #fff;
-                            font-size: 1.5em;
+                            font-size: 1.4em;
                             margin-right: 1em;
                             margin-left: 0.5em;
                             font-weight: bold;
+                            width: 45%;
                         }
                        span{
                             display: inline-block;
-                            font-size: 1.4em;
+                            font-size: 1.3em;
                             color: #fff;
+
+                            width: 55%;
+                            text-align: left;
                         }
 
                         &.building-code{
@@ -2906,7 +2948,17 @@
         }
     }
 } 
-
+&.refresh-btn-box{
+   .refresh-btn{
+        display: inline-block;
+        width: 100%;
+        display: inline-block;
+        width: 100%;
+        background: rgb(6 68 46);
+        color: #fff;
+        box-shadow: 0px 0px 2px #00000094;
+   }
+} 
 
   #streamingVideo { 
     top: 0em;

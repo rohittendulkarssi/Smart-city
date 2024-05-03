@@ -187,7 +187,7 @@ const Water_ConsumptionWidget: React.FunctionComponent<{}> = () => {
         bottom: 5,
       }}
     >
-      <CartesianGrid stroke="#0b3e35cf" strokeDasharray="1 1" />
+       <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
       <XAxis dataKey="name" tick={{ fill: '#ffffff' }} />
       <YAxis tick={{ fill: '#ffffff' }} />
       <Tooltip />

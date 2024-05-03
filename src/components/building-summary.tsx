@@ -25,11 +25,11 @@ const BuildingSummary: React.FunctionComponent<IBuildingSummary> = ({ page, sele
 
   const [building_Summary, setBuilding_Summary] = useState(null);
 
-   const lat = selectedAsset?.long;
-   const long = selectedAsset?.lat;
+  //  const lat = selectedAsset?.long;
+  //  const long = selectedAsset?.lat;
 
-  // const long = 39.6103515625;
-  // const lat = 24.47159767150879;
+  const long = 39.6131591796875;
+  const lat = 24.4643611907959;
 
   console.log('Selected Asset are', selectedAsset);
   console.log('latitude are', lat);
@@ -37,10 +37,8 @@ const BuildingSummary: React.FunctionComponent<IBuildingSummary> = ({ page, sele
 
   // console.log('Details are',{selectedAsset,lat,long});
 
-  function getBuildingSummaryData() {
-
-    console.log("getBulingInfo")
-
+  function getBuildingSummaryData() { 
+    console.log("getBulingInfo") 
     if (!lat && !long) {
       console.log("Lat or long is undefined.");
     } else {
@@ -52,15 +50,16 @@ const BuildingSummary: React.FunctionComponent<IBuildingSummary> = ({ page, sele
         }).catch((e: any) => {
           // console.log("hi", e);
         });
-    }
-
+    } 
   }
+ 
+
 
   React.useEffect(() => {
     getBuildingSummaryData();
   }, [lat, long])
 
-  console.log('Image', building_Summary?.header?.buildingImage)
+  console.log('buildingCode Body', building_Summary?.body|| "N/A")
 
   return (
 
@@ -81,27 +80,26 @@ const BuildingSummary: React.FunctionComponent<IBuildingSummary> = ({ page, sele
 
 
             <div className='building-header'>
-              <div className='building-title'>{building_Summary?.header?.buildingName || ""}</div>
+              <div className='building-title'>{building_Summary?.header?.buildingName   ==="null"? "N/A" : building_Summary?.header?.buildingName }</div>
               <div className='building-nav'>
-                <ul>
-
-
+                <ul> 
+                 
                   <li>
-                    <a target="_blank" href='http://150.230.244.155/Apps/UXP/dashboards/IM20220324028'>
+                    <a target="_blank" href='https://ccc-demo.raseel.city/Apps/IncidentManagement/dashboard'>
                       <div className='building-nav-icon'><img src="https://static.iviva.com/images/Udhayimages/incident-icon.png" /></div>
                       <div className='building-nav-title'>Report Incident</div>
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" href='#'>
+                    <a target="_blank" href='https://ccc-demo.raseel.city/Apps/ivivaFacility/wsp-workorders'>
                       <div className='building-nav-icon'><img src="https://static.iviva.com/images/Udhayimages/facility-management.png" /></div>
                       <div className='building-nav-title'>Facility Issue</div>
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" href='http://150.230.244.155/Apps/UXP/dashboards/IM20220324028'>
+                    <a target="_blank" href='https://ccc-demo.raseel.city/Apps/ContractManagement/dashboard'>
                       <div className='building-nav-icon'><img src="https://static.iviva.com/images/Udhayimages/agenda.png" /></div>
-                      <div className='building-nav-title'>Report Incident</div>
+                      <div className='building-nav-title'>Leasing info</div>
                     </a>
                   </li>
                 </ul>
@@ -112,11 +110,11 @@ const BuildingSummary: React.FunctionComponent<IBuildingSummary> = ({ page, sele
           <div className='building-info-box'>
 
             <ul>
-              <li className='building-code'><label>Building Code : </label><span> {building_Summary?.body?.buildingCode || 'N/A'}</span></li>
-              <li className='building-name'><label>Building Name : </label><span> {building_Summary?.body?.buildingName || 'N/A'}</span></li>
-              <li className='street-number'><label>Street Number : </label><span> {building_Summary?.body?.streetNumber || 'N/A'}</span></li>
-              <li className='street-name'><label>Street Name : </label><span>{building_Summary?.body?.streetName || 'N/A'}</span></li>
-              <li className='city'><label>City : </label><span>{building_Summary?.body?.city || 'N/A'}</span></li>
+              <li className='building-code'><label>Building Code : </label><span> {building_Summary?.body?.buildingCode ==="null"? "N/A" : building_Summary?.body?.buildingCode }</span></li>
+              <li className='building-name'><label>Building Name : </label><span> {building_Summary?.body?.buildingName ==="null"? "N/A" : building_Summary?.body?.buildingName}</span></li>
+              <li className='street-number'><label>Street Number : </label><span> {building_Summary?.body?.streetNumber ==="null"? "N/A" : building_Summary?.body?.streetNumber}</span></li>
+              <li className='street-name'><label>Street Name : </label><span>{building_Summary?.body?.streetName  ==="null"? "N/A" : building_Summary?.body?.streetName}</span></li>
+              <li className='city'><label>City : </label><span>{building_Summary?.body?.city  ==="null"? "N/A" : building_Summary?.body?.city}</span></li>
             </ul>
 
 
