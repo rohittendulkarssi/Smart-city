@@ -336,15 +336,21 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        },
-        
+        }, 
         {
             "id": "pole_Details",
             "name": "Pole Details",
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        }     
+        },
+        {
+            "id": "refresh_Btn",
+            "name": "Refresh Btn",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }       
 
         
         

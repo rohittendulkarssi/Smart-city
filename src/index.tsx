@@ -49,8 +49,7 @@ import CCTVOverviewWidget from './components/CCTV-overview'
 import TopNavTabs from './components/top-section'
 import WeatherIcons from './components/WeatherIcons'
 import SunController from './components/SunController'
-import HeightMap from './components/heightMap'
-// import DistrictToggle from './components/district-toggle'
+import HeightMap from './components/heightMap' 
 import TopHeader from './components/top-header'
 import TopRightHeader from './components/top-rht-header'
 import SearchBoxContainer from './components/search_box'
@@ -69,7 +68,7 @@ import IncidentManagement from './components/incident-managment'
 import IOT_Filter from './components/iot_filter' 
 import Pole_Details from './components/pole_details' 
 import Madinah_Facts from './components/madinah_Facts' 
-
+import Refresh_Btn from './components/refresh'
 
 
 
@@ -100,6 +99,7 @@ export enum EventsEnum {
   DistrictJump = 'district-jump',
   ChangeAppMode = 'change-app-mode',
   SummaryGroupFilter = 'summary-group-filter', 
+  UpdateIOTAssetData = 'update-iot-asset-data', 
 }
 
 // export interface IPayload {
@@ -673,7 +673,7 @@ registerWidget({
     configs: {
         layout: {
 
-            w: 11,
+            w: 12,
             h: 14,
             // w: 17,
             // h: 18,
@@ -759,8 +759,8 @@ registerWidget({
     widget: IOT_Filter,
     configs: {
         layout: {
-            w: 12,
-            h: 8,
+            w: 11,
+            h: 5,
             // minH: 3,
             // minW: 2,
             //  maxH: 3,
@@ -800,6 +800,24 @@ registerWidget({
         } 
     }
 });
+
+
+registerWidget({
+    id: "refresh_Btn", 
+    widget: Refresh_Btn,
+    configs: {
+        layout: {
+            w: 3,
+            h: 2,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
+
+
 
 
 // registerWidget({

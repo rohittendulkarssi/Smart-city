@@ -62,7 +62,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   position: relative;
   min-height: 176vh;
   background: rgba(20, 65, 49, 0.82);
-  padding-left: 10px;
 }
 .main-content-block .react-grid-layout {
   z-index: 1;
@@ -70,8 +69,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
 .main-content-block .react-grid-layout.player {
   z-index: 1;
   position: relative;
-  padding-top: 1.5em;
-  padding-left: 1em;
+  padding-top: 0em;
+  padding-left: 0em;
 }
 .main-content-block .react-grid-layout.player::before {
   content: "";
@@ -104,6 +103,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   box-shadow: none;
   border-radius: 10px;
   z-index: 1;
+}
+.smart-city_box.lft-widget-box {
+  margin-left: 1em;
 }
 .smart-city_box .uxp-widget-title-bar {
   background: transparent;
@@ -223,6 +225,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   font-size: 0.88em;
   text-align: left;
   align-items: start;
+}
+.smart-city_box.order_summary-box .smart-city-content .work_order-content table tr td a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.smart-city_box.order_summary-box .smart-city-content .work_order-content table tr td a.cwo_key {
+  background-image: url("https://static.iviva.com/images/Udhayimages/new-tab.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
 }
 .smart-city_box.order_summary-box .smart-city-content .data-list-container {
   background-color: transparent;
@@ -1009,16 +1025,17 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   display: inline-flex;
   width: 100%;
   padding: 1em 1em 0em 1em;
+  position: relative;
 }
 .smart-city_box.empty-box .header-content .logo {
   display: inline-block;
-  width: 32%;
-  background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO.png");
+  width: 33%;
+  background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO_white.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 90% auto;
+  background-size: 95% auto;
   margin-top: 0em;
-  height: 7.5em;
+  height: 9em;
 }
 .smart-city_box.empty-box .header-content h2 {
   display: inline-block;
@@ -1029,6 +1046,17 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   margin-left: 5%;
   padding: 0;
   margin: 1.3em 0 0 0%;
+  text-transform: uppercase;
+}
+.smart-city_box.empty-box .header-content h3 {
+  display: inline-block;
+  width: 65%;
+  font-size: 2.1em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 5%;
+  padding: 0;
+  margin: 1.4em 0 0 0%;
   text-transform: uppercase;
 }
 .smart-city_box.empty-box .header-content.iviva-header-content .logo {
@@ -1668,7 +1696,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   height: 100%;
   position: absolute;
   display: inline-flex;
-  right: 1px !important;
+  right: -55px !important;
 }
 .timer-widget .timer-slider .timer-range {
   display: inline-block;
@@ -1888,7 +1916,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   display: inline-block;
   width: 100%;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.75em;
   color: #fff;
   font-weight: bold;
 }
@@ -1957,15 +1985,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   padding: 0;
   margin: 0;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin-right: 1em;
   margin-left: 0.5em;
   font-weight: bold;
+  width: 45%;
 }
 .smart-city_box.building_summary-box .building-details .building-info-box ul li span {
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 1.3em;
   color: #fff;
+  width: 55%;
+  text-align: left;
 }
 .smart-city_box.building_summary-box .building-details .building-info-box ul li.building-code::before {
   background-image: url("https://static.iviva.com/images/Udhayimages/mda-building-images/building-code.png");
@@ -2392,6 +2423,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   padding: 0;
   margin: 0;
 }
+.smart-city_box.refresh-btn-box .refresh-btn {
+  display: inline-block;
+  width: 100%;
+  display: inline-block;
+  width: 100%;
+  background: rgb(6, 68, 46);
+  color: #fff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5803921569);
+}
 .smart-city_box #streamingVideo {
   top: 0em;
 }
@@ -2566,16 +2606,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
   position: relative;
   align-items: end;
   text-align: right;
+  background: #fff;
+  border: 1px solid #033649;
+  border-radius: 5px;
+  padding: 1px 0;
 }
 .searchBox-widget .searchbox-container .searchbox {
-  border: 1px solid #033649;
   padding: 9px 5px;
   border-radius: 5px;
   font-size: 1em;
-  width: 90%;
+  width: 91%;
   text-align: left;
   outline: none;
   margin-right: 6%;
+  border: 1px solid transparent;
 }
 .searchBox-widget .searchbox-container .searchbox:focus {
   outline: none;
@@ -2634,7 +2678,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.main-content-block {
 
 .uxp-select-dropdown-container .uxp-select-dropdown-footer > .uxp-button {
   display: none;
-}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"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","sourcesContent":[" \r\n.main-content-block {\r\n    // width: 100%;\r\n    // display: inline-block; \r\n    // background-image: url(/images/Madina_1.jpeg);\r\n    // background-image: url(https://static.iviva.com/images/Udhayimages/Madina_1.jpeg);\r\n    // background-size: 100% 100%;\r\n    // background-position: center center;\r\n    // background-repeat: no-repeat;\r\n    // position: relative;\r\n      z-index: 0;\r\n\r\n    \r\n\r\n    .widget-container-block {\r\n        z-index: 1;\r\n        position: relative;\r\n        min-height: 176vh;\r\n        background: rgb(20 65 49 / 82%);\r\n        padding-left: 10px;\r\n \r\n    }\r\n//For E3D ref//\r\n//For E3D ref//\r\n.react-grid-layout{\r\n    z-index: 1;\r\n}\r\n.react-grid-layout.player{\r\n    z-index: 1;\r\n    position: relative; \r\n// background-size: 100% 100%;\r\n// background-position: 0px 0px,0px 0px,0px 0px;\r\n// background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%);\r\n \r\n\r\n    padding-top: 1.5em; \r\n    padding-left: 1em; \r\n\r\n    &::before{  \r\n\r\n        content: \"\";\r\n        left: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 100vh;\r\n        position: absolute;\r\n        z-index: 1;  \r\n\r\n        // background-size: 100% 100%;\r\n        // background-position: 0px 0px,0px 0px,0px 0px;\r\n        // background-image: linear-gradient(90deg, #0000 76%, #006056C9 95%),linear-gradient(270deg, #0000 76%, #006056C9 95%),linear-gradient(0deg, #0000 88%, #0060567D 95%);\r\n\r\n        background-size: 100% 100%;\r\n        background-position: 0px 0px,0px 0px,0px 0px;\r\n       // background-image: linear-gradient(90deg, #0000 76%, #006056AD 89%, #006056C9 96%),linear-gradient(270deg, #0000 76%, #006056AD 89%, #006056C9 96%),linear-gradient(0deg, #0000 88%, #0060567D 95%);\r\n       \r\n        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 70%, rgb(8 55 50 / 91%) 85%, rgb(0 61 54 / 92%) 96%), linear-gradient(270deg, rgba(0, 0, 0, 0) 70%, rgb(8 55 50 / 91%) 85%, rgb(0 61 54 / 92%) 96%), linear-gradient(0deg, rgba(0, 0, 0, 0) 88%, rgba(0, 96, 86, 0.4901960784) 95%);\r\n\r\n        pointer-events: none;\r\n\r\n    } \r\n\r\n    &::after{   \r\n        content: \"\";\r\n        right: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 100vh;\r\n        position: absolute;\r\n        z-index: 1; \r\n        background-size: 100% 100%;\r\n        background-position: 0px 0px,0px 0px,0px 0px;\r\n       // background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%);\r\n        pointer-events: none;\r\n\r\n    } \r\n}\r\n}\r\n\r\n    .smart-city_box{ \r\n        background: rgb(0 0 0 / 0%); \r\n        box-shadow: none;\r\n        border-radius: 10px;\r\n        z-index: 1;\r\n\r\n        \r\n        \r\n         .uxp-widget-title-bar{ \r\n            background: transparent;\r\n            color: #1f9b7f;\r\n            border-bottom: 1px solid #dedede;\r\n            margin-bottom: 1em;\r\n            padding: 0;\r\n            outline: none;\r\n            min-height: 38px;\r\n            width: 95%;\r\n            position: relative;\r\n\r\n            .title-section { \r\n                font-size: 1em;\r\n                padding-left: 2.5em;\r\n            }\r\n\r\n            &::before{\r\n                content: \"\";\r\n                position: absolute;\r\n                background-color: #dededea1;\r\n                width: 6%;\r\n                height: 3px;\r\n                bottom: -4px;\r\n                left: 0;\r\n                border-radius: 0px 0px 30px 30px;\r\n            }\r\n\r\n            &::after{\r\n                content: \"\";\r\n                position: absolute;\r\n                background-color: #dededea1;\r\n                width: 6px;\r\n                height: 6px;\r\n                bottom: -3px;\r\n                right: -6px;\r\n                border-radius: 50%;\r\n            }\r\n\r\n                .txt{\r\n                    // color: #1f9b7f;  \r\n                    color: #0fd6a9;\r\n                    font-weight: 600;\r\n                     font-size: 1.1em;\r\n                    // font-size: .9vw;\r\n                }\r\n        }\r\n\r\n        .sub_title_bar{ \r\n            margin-bottom: 0.8em;\r\n            padding: 0;\r\n            min-height: 15px;\r\n            width: 80%;\r\n             font-size: 0.95em; \r\n            color: #fff;\r\n            font-weight: 500;\r\n            outline: none;\r\n\r\n            &.district-waste{\r\n                background-image: url(\"https://static.iviva.com/images/Udhayimages/garbage1.png\");\r\n                background-position: left top;\r\n                background-repeat: no-repeat;\r\n                background-size: contain;\r\n                width: 100%;\r\n                padding-left: 20px;\r\n            }\r\n        }\r\n\r\n        .smart-city-content {\r\n           display: inline-block; \r\n            width: 95%;\r\n            margin-top: 1em;   \r\n           \r\n            &::-webkit-scrollbar {\r\n                width: 5px!important;\r\n            }\r\n        \r\n            /* Track */\r\n            &::-webkit-scrollbar-track {\r\n                background: #aafbe8!important; \r\n            }\r\n        \r\n            /* Handle */\r\n            &::-webkit-scrollbar-thumb {\r\n                \r\n                background: #08ac87!important; \r\n            }\r\n        \r\n            /* Handle on hover */\r\n            &::-webkit-scrollbar-thumb:hover {\r\n                background: #08ac87!important;  \r\n            }\r\n\r\n            .technician_chart{ \r\n               \r\n\r\n            }\r\n        } \r\n\r\n    &.order_trend-box{\r\n        .smart-city-content{\r\n\r\n            display: block;\r\n            margin-top: 1em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n            \r\n            .technician_chart{ \r\n                .recharts-text{\r\n                    fill:#ededed;\r\n                }\r\n            } \r\n        }\r\n    }\r\n\r\n    &.order_summary-box{ \r\n\r\n        .smart-city-content{\r\n            height: 250px; \r\n            overflow: auto;\r\n\r\n\r\n            .work_order-content{\r\n                display: inline-block;\r\n                width: 100%;\r\n\r\n                table{\r\n                    width: 100%;\r\n                    tr{\r\n                        border-bottom: 1px solid rgba(0, 0, 0, 0.12);\r\n                        display: table;\r\n                        width: 100%;\r\n                        th{\r\n                            background-color: transparent;\r\n                            color: #1dcb8d;\r\n                            text-align: left;\r\n                            padding: 10px 0px;\r\n                            font-size: 10px;\r\n                        }\r\n                        td{\r\n                            background-color: transparent;\r\n                            color: #ffffff;\r\n                            padding: 8px 0;\r\n                            font-size: 0.88em;\r\n                            text-align: left;\r\n                            align-items: start;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n\r\n            .data-list-container{\r\n                background-color: transparent;\r\n\r\n                .data-list{\r\n                    background-color: transparent;\r\n                    overflow: hidden;\r\n\r\n                    .data-table{\r\n                        background-color: transparent;\r\n                        tr {\r\n                            background-color: transparent;\r\n\r\n                            th{ \r\n                                background-color: transparent;\r\n                                color: #1dcb8d;\r\n                                text-align: left;\r\n                                padding: 10px 3px;\r\n                                font-size: 10px;\r\n                            }\r\n                            td{\r\n                                .item-card{\r\n                                    background-color: transparent;\r\n                                    color: #ffffff;\r\n                                    min-height: 30px; \r\n\r\n                                   \r\n\r\n                                    .content{\r\n                                        padding: 0;\r\n                                        .sub-title{\r\n                                            font-size: 10px;\r\n                                        }\r\n                                    }\r\n\r\n                                        &::after{\r\n                                            content: \"\";\r\n                                            width: 18px;\r\n                                            height: 18px;\r\n                                            position: absolute;\r\n                                            top: 5px;\r\n                                            background-size: 100% auto;\r\n                                            background-repeat: no-repeat;\r\n                                            left: 0%;\r\n                                        } \r\n\r\n                                        &.attention{ \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');\r\n                                                } \r\n                                        }\r\n                                        &.pending{ \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');\r\n                                                } \r\n                                        }\r\n                                        &.resloved{\r\n                                            \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');\r\n                                                } \r\n                                        } \r\n\r\n                                        &.Green{\r\n                                            .content{\r\n                                                .sub-title{\r\n                                                    background-color: #00b36c; \r\n                                                    padding: 5px 5px;\r\n                                                    border-radius: 1px;\r\n                                                    width: 44px;\r\n                                                    text-align: center;\r\n                                                }\r\n                                            }\r\n                                        }\r\n                                        &.Red{\r\n                                            .content{\r\n                                                .sub-title{\r\n                                                    background-color: #cb0000; \r\n                                                    padding: 5px 5px;\r\n                                                    border-radius: 1px;\r\n                                                    width: 44px;\r\n                                                    text-align: center;\r\n                                                }\r\n                                            }\r\n                                        }\r\n                                }\r\n                            } \r\n                        }\r\n                    }\r\n                }\r\n\r\n                .data-list-footer{\r\n                    background-color: transparent;\r\n\r\n                    .go-up-btn-container{\r\n                        background-color: rgb(5 81 54 / 34%);\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n \r\n    &.cctv-box{ \r\n\r\n        .body{\r\n            height: 250px;  \r\n            width: 100%;\r\n            display: inline-block;\r\n            background-image: url(https://static.iviva.com/images/Udhayimages/waste-footage.jpg);\r\n            // background-size: 100% 100%;\r\n            background-size: auto 100%;\r\n            background-position: center center;\r\n            background-repeat: no-repeat;\r\n        }\r\n    }\r\n\r\n    &.waste-bin-box{ \r\n\r\n        .smart-city-content{ \r\n\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                // padding: 1em 8% 1.3em 8%;\r\n                padding: 0.5em 0% 1em 0%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n\r\n                    h3{\r\n                        font-size: 1.8em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        text-shadow: 0px 0px 1px #000000, 0px 0px 2px #dcdcdc;\r\n\r\n                        span{\r\n                            font-size: 0.5em;\r\n                        }\r\n                    }\r\n                    p{\r\n                        font-size: 0.8em;\r\n                        padding: 0.5em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                        position: relative;\r\n\r\n                        &::after{\r\n                            content: \"\";\r\n                            width: 16px;\r\n                            height: 16px;\r\n                            position: absolute;\r\n                            top: 5px;\r\n                            background-size: 100% auto;\r\n                            background-repeat: no-repeat;\r\n                            right: 16%;\r\n                        }\r\n                    }\r\n\r\n                &.Attention{\r\n                    h3{\r\n                       color: rgb(211, 1, 1);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');\r\n                        }\r\n                    }\r\n                }\r\n                &.Pending{\r\n                    h3{\r\n                        color: rgb(218, 218, 1);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');\r\n                        }\r\n                    }\r\n                }\r\n                &.Resloved{\r\n                    h3{\r\n                        color: rgb(19 232 61);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');\r\n                        }\r\n                    }\r\n                }\r\n                }\r\n            } \r\n\r\n            .technician_chart{\r\n                margin-top: 0em;\r\n                // height: 90%;\r\n\r\n                .chart-sec{\r\n                    width: 100%;\r\n                    display: flex;\r\n                    margin-top: 0.85em;\r\n\r\n                    .chart-issue{\r\n                       display: inline-block;\r\n                       width: 75%;\r\n                       text-align: center;\r\n                    }\r\n                    .chart-pending{\r\n                        display: inline-block;\r\n                        width: 25%;\r\n                        text-align: center;\r\n                    }\r\n                    h3{\r\n                        font-size: 1.7em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    p{\r\n                        font-size: .85em;\r\n                        padding: 0;\r\n                        margin: 0.3em 0 0 0;\r\n                        color: #fff;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n    &.waste-collection-vehicle{ \r\n\r\n        .smart-city-content{\r\n             margin-top: 0;\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 2% 3em 2%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n\r\n                    .vahicle-icon{\r\n                        display: inline-block;\r\n                        width: 52px;\r\n                        height: 52px;\r\n                        background-position: center center;\r\n                        background-repeat: no-repeat;\r\n                        background-size: 75% auto;\r\n                        margin-bottom: 0.5em;\r\n                        // background-color: #ffffff9c;\r\n                        border-radius: 10px;\r\n                        filter: drop-shadow(0px 0px 2px #fff);\r\n\r\n                        &.co2-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);\r\n                        }\r\n                        &.fuel-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);\r\n                        }\r\n                        &.s-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/money.png);\r\n                        }\r\n                    }\r\n\r\n                    p{\r\n                        font-size: 0.9em;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 1.8em;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n\r\n                       \r\n                    }\r\n                   span{\r\n                        font-size: 0.75em;\r\n                        color: #fff;\r\n                   }\r\n\r\n                }\r\n            } \r\n \r\n        }\r\n    }\r\n\r\n    &.segregation_metrics-box{\r\n        .recharts-legend-wrapper{\r\n            width: 180px !important;\r\n            // right: -145px !important;\r\n           right : -35px !important;\r\n            top: 20px;\r\n            left: auto !important;\r\n\r\n            ul{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin: 0;\r\n                padding: 0;\r\n                li{\r\n                    padding: 0.7em 0;\r\n                    list-style: none;\r\n\r\n                    .data_values{\r\n                        margin-left: 10px;\r\n                    }\r\n                    em{\r\n                        width: 10px;\r\n                        height: 7px;\r\n                        display: inline-block;\r\n                        margin-right: 5px;\r\n                        vertical-align: top;\r\n                        margin-top: 3px;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        &.waste-segregation_metrics-box{\r\n            .recharts-legend-wrapper{\r\n               right: -145px !important;  \r\n            }\r\n        }\r\n    }\r\n\r\n    &.vehicle_summary-box{\r\n        .smart-city-content{\r\n\r\n            display: block;\r\n            margin-top: 0em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n\r\n\r\n            .technician_chart{ \r\n\r\n                text{color: #fff; fill:#fff!important;} \r\n            }\r\n        }\r\n    }\r\n\r\n    &.energy_consumption-box{ \r\n\r\n        .smart-city-content{\r\n                display: block;\r\n                margin-top: 0em;\r\n                flex: 1;\r\n                width: 100%;\r\n                height: 100%;\r\n\r\n\r\n            .technician_chart{ \r\n                margin-top: 0em; \r\n                height: 90%;\r\n\r\n                .recharts-responsive-container{ \r\n                    height: 90%!important;\r\n                }\r\n                .recharts-wrapper{\r\n                    fill: transparent; \r\n                    font-size: .88em;\r\n                }\r\n                .recharts-layer, .recharts-cartesian-axis-line{\r\n                    text{ fill:#fff!important;} \r\n                }\r\n                .recharts-cartesian-axis-ticks, .recharts-legend-item-text{\r\n                    fill:#fff!important;\r\n                    color: #fff;\r\n                }\r\n\r\n                .chart-top{\r\n                    margin-top: 0.5em;\r\n                    .sub_title_bar{\r\n                        &.hrs{\r\n                            display: flex;\r\n                            width: auto;\r\n                            margin-right: 2em;\r\n                            justify-content: end;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        &.expenditure-box{\r\n             .uxp-widget-title-bar{\r\n                width: 98%;\r\n            }\r\n        }\r\n    }\r\n\r\n    &.water_summary-box{ \r\n\r\n        .smart-city-content{\r\n             \r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 0% 0em 0%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n                    // background-color: rgba(0, 97, 67, 0.61);\r\n                    background-color: rgba(13, 80, 60, 0.77);\r\n                    border-radius: 10px;\r\n                    margin-right: 3%;\r\n                    padding-bottom: 1em;\r\n\r\n                    .vehicle-icon{\r\n                        display: inline-block;\r\n                        width: 60px;\r\n                        height: 60px;\r\n                        background-position: center center;\r\n                        background-repeat: no-repeat;\r\n                        background-size: 75% auto;\r\n                        margin-bottom: 0.5em;\r\n                        margin-top: 0.8em;\r\n\r\n                        &.co2-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-consumption.png);\r\n                        }\r\n                        &.fuel-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-polution.png);\r\n                        }\r\n                        &.s-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-troubles.png);\r\n                        }\r\n                    }\r\n\r\n                    p{\r\n                        font-size: 0.85em;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 2.2em;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n\r\n                        span{\r\n                            font-size: 0.3em; \r\n                        }\r\n                    }\r\n                   span{\r\n                        font-size: 0.85em;\r\n                        padding-bottom: 1em;\r\n                       \r\n                        &.red{\r\n                            color: #ff0000;\r\n                        }\r\n                        &.green{\r\n                            color: #00e51a;\r\n                        }\r\n                   }\r\n                    &:last-child{\r\n                        margin-right: 0;\r\n                    }\r\n                }\r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.water_consumption-box{\r\n        .smart-city-content{\r\n            display: block;\r\n            margin-top: 1em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 0% 0em 0%;\r\n                color: #ffffff;\r\n                height: 90%;\r\n\r\n                .recharts-surface{\r\n                    fill: #ffffff;\r\n                    color: #ffffff;\r\n                    .recharts-layer{\r\n                        fill: #ffffff;\r\n                        color: #ffffff;\r\n                    } \r\n                } \r\n                 \r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.iaq-box{ \r\n\r\n        .smart-city-content{\r\n             \r\n            .status-content{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin: 0;\r\n                padding: 0;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 30%;\r\n                    text-align: center; \r\n                    border-radius: 2px;\r\n                    padding: 2em;\r\n                    margin: 1em 0em 0em 1em;\r\n                    background-color: rgb(13 80 60 / 77%);\r\n\r\n                   \r\n\r\n                    p{\r\n                        font-size: 1em;\r\n                        // font-size: .8vw;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 2.2em;\r\n                        // font-size: 1.7vw;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n                    }\r\n                   span{\r\n                         font-size: 0.85em;\r\n                        // font-size: .7vw;\r\n                        padding-bottom: 1em;\r\n                        color: #fff; \r\n                        font-weight: bold;\r\n                   }\r\n\r\n                   &.NO2, &.CO {\r\n                        p, h2, span{\r\n                            \r\n                            color: rgb(209, 171, 0);\r\n                        } \r\n                   }\r\n                   &.SO2 {\r\n                    p, h2, span{\r\n                        \r\n                        color: rgb(118, 0, 0);\r\n                    } \r\n               }\r\n\r\n                }\r\n\r\n                .air-quality-status-overall{\r\n                    \r\n                    display: inline-block;\r\n                    width: 100%;\r\n                    text-align: center;\r\n\r\n                    .air-quality-status-box{\r\n                        display: inherit;\r\n                        width: 60%; \r\n                        border-radius: 2px;\r\n                        padding: 2em;\r\n                        margin: 0em 1em 1em 1em;\r\n                        text-align: center;\r\n                        text-transform: uppercase;\r\n                        align-items: center; \r\n                        background-color: rgb(13 80 60 / 77%);\r\n    \r\n                        p{\r\n                            font-size: 1em;\r\n                            padding: 0em 0 0 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                        }\r\n                        h5{\r\n                            font-size: 2.3em;\r\n                            padding: 0;\r\n                            margin: 0.4em 0 0.2em 0;\r\n                            color: #fff;\r\n                        }\r\n                    }\r\n\r\n                        .air-progress-bars{\r\n                            display: flex;\r\n                            width: 60%;\r\n                            margin-left: 20%;\r\n                            margin-top: 2em;\r\n                      \r\n\r\n                            .semi-circle-progress-bar {\r\n                                width: 50%;\r\n                                height: 130px;\r\n                                position: relative;\r\n                                display: flex;\r\n                                align-items: center;\r\n                                justify-content: center;\r\n                                flex-direction: column;\r\n\r\n                                svg {\r\n                                    transform: rotate(-90deg);\r\n                                    width: 100%;\r\n                                    height: 100%;\r\n                                }\r\n                                \r\n                                circle {\r\n                                    fill: transparent;\r\n                                    stroke-width: 8;\r\n                                    stroke: #fff;\r\n                                }\r\n                                \r\n                                .progress-bar {\r\n                                    fill: transparent;\r\n                                    stroke-width: 10px;\r\n                                    stroke: rgb(0 97 67);\r\n                                    stroke-dasharray: 64;\r\n                                    stroke-dashoffset: 0;\r\n                                    transition: stroke-dashoffset 0.5s ease;\r\n                                }\r\n                                \r\n                                .percentage {\r\n                                    position: absolute;\r\n                                    top: 40%;\r\n                                    left: 50%;\r\n                                    transform: translate(-50%, -50%);\r\n                                    font-size: 18px;\r\n                                    font-weight: bold;\r\n                                    color: #fff;\r\n                                }\r\n                                .value{\r\n                                    font-size: 13px;\r\n                                    font-weight: normal;\r\n                                    color: #fff;\r\n                                    position: absolute;\r\n                                    top: 58%;\r\n                                    left: 50%;\r\n                                    transform: translate(-50%, -50%);\r\n                                }\r\n                            } \r\n\r\n                        }\r\n                } \r\n                \r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.compare-iaq{\r\n\r\n        .smart-city-content { \r\n\r\n            .status-content { \r\n\r\n                .loaction-status-content{\r\n                    display: inline-block;\r\n                    width: 46%;\r\n                    text-align: center;\r\n        \r\n                   .status { \r\n\r\n                        display: inline-block;\r\n                        width: 28%;\r\n                        text-align: center; \r\n                        background-color: rgb(13 80 60 / 77%);\r\n                        border-radius: 2px;\r\n                        padding: 0.8em;\r\n                        margin: 0.8em 0.8em 0em 0em;\r\n\r\n                        &.yellow-bg{\r\n                           background-color: rgb(209 171 0);\r\n                        }\r\n                        &.red-bg{\r\n                            background-color: rgb(118 0 0);\r\n                        }\r\n                        \r\n                        p{\r\n                            font-size: 0.88em;\r\n                        }\r\n                        span{\r\n                            font-size: 0.75em;\r\n                        }\r\n\r\n                        &:nth-child(4n), &:nth-child(7n){\r\n                            margin-right: 0em;\r\n                        }\r\n        \r\n                        h2 {\r\n                            font-size: 1.3em;\r\n                            padding: 0;\r\n                            margin: 0.2em 0 0.1em 0;\r\n                            color: #fff;\r\n                        } \r\n                       \r\n                    }\r\n                    &.loaction2-status-content { \r\n                            margin-left:0em; \r\n                    } \r\n\r\n                    .uxp-form-group{\r\n                        .uxp-search-box-container{ \r\n\r\n                            .uxp-input-container{\r\n                                .uxp-form-input{\r\n                                    width: 100%;\r\n                                    min-width: 100%;\r\n                                }\r\n                            } \r\n                        } \r\n                    }\r\n                }\r\n\r\n                .versus{\r\n                    display: inline-block;\r\n                    width: 8%;\r\n                    color: #fff;\r\n                    font-size: 1.2em;\r\n                    text-align: center;\r\n                    vertical-align: top;\r\n                    padding-top: 10em;\r\n                }\r\n            } \r\n\r\n            &.smart-city-content-chart{\r\n                display: block;\r\n                margin-top: 0em;\r\n                flex: 1;\r\n                width: 100%;\r\n                height: 100%;\r\n\r\n                .status-content { \r\n                    display: flex;\r\n                    width: 100%; \r\n                    height: 40%;\r\n                }\r\n            }\r\n        }\r\n      \r\n    }\r\n\r\n    .top_tabs{\r\n        float: right;\r\n        width: auto;\r\n\r\n        .uxp-toggle-filter, .toggle-filter{\r\n                background: transparent;\r\n                float: right;\r\n                margin: 0;\r\n                display: inline-flex;\r\n\r\n            .uxp-toggle-option, button{\r\n\r\n                    background: rgb(3, 7, 9);\r\n                    color: #fff;\r\n                    font-size: 1em;\r\n                    text-transform: uppercase;\r\n                    border-radius: 2px;\r\n                    margin: auto 0px;\r\n                    outline: none;\r\n                    border: none;\r\n                    padding: 8px 20px;\r\n                    cursor: pointer;\r\n\r\n                &.selected, &.active{ \r\n\r\n                    background: #18d6b8;\r\n                    box-shadow: 0px 0px 12px 1px #02eec9;\r\n                }\r\n            }\r\n        } \r\n    }\r\n\r\n    &.cctv-overview-box{\r\n        .uxp-widget-title-bar{\r\n            width: 100%;\r\n        }\r\n\r\n        .uxp-toggle-filter{\r\n            background: transparent;\r\n            .uxp-toggle-option{\r\n\r\n                    background: rgb(3, 7, 9);\r\n                    color: #fff;\r\n                    font-size: 1em;\r\n                    text-transform: uppercase;\r\n                    border-radius: 2px;\r\n                    margin: auto 0px;\r\n\r\n                &.selected{\r\n                    // background: rgb(0 180 151);\r\n                    background: #18d6b8;\r\n                    box-shadow: 0px 0px 12px 1px #02eec9;\r\n                }\r\n            }\r\n        }\r\n\r\n        .smart-city-content{\r\n            width: 100%;\r\n            .status-content{\r\n                .cctv-list{\r\n                    display: inline-block;\r\n                    width: 18%;\r\n                    margin-right: 2%;\r\n                    margin-bottom: 2em;\r\n\r\n                    &:nth-child(5n){\r\n                        margin-right: 0;\r\n                    }\r\n                    select{\r\n                        background: transparent;\r\n                        outline: none;\r\n                        border: none;\r\n                        color: #fff;\r\n                        font-size: 1em;\r\n                        margin: 10px 0px;\r\n                        width: 100%;\r\n                        text-transform: uppercase;\r\n                        option {\r\n                            padding: 8px 12px;\r\n                            cursor: pointer;\r\n                            background-color: rgba(0, 97, 67, 0.61);\r\n\r\n                            &:checked, &:hover {\r\n                                background-color: rgba(0, 97, 67, 0.61);\r\n                                color: #fff;\r\n                            }\r\n                            \r\n                        }\r\n                    }\r\n                    .cctv-pict{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        img{\r\n                            // height: 19.5em;\r\n                            height: 26vh;\r\n                            width: 100%;\r\n                            border: 1px solid #012417;\r\n                        }\r\n                    }\r\n\r\n                    .loction{\r\n                        color: #fff;\r\n                        font-size: 0.8em;\r\n                        margin-top: .7em;\r\n                    }\r\n                    .loction-number{\r\n                        color: #fff;\r\n                        font-size: 0.8em;\r\n                        margin-top: .7em;\r\n                    }\r\n                    .loction-status{\r\n                        color: #fff;\r\n                        padding: 4px 0;\r\n                        width: 60px;\r\n                        text-align: center;\r\n                        margin-top: 0.7em;\r\n                        font-size: 0.85em;\r\n\r\n                        &.Red{\r\n                            background: #cb0000;\r\n                        }\r\n                        &.Green{\r\n                            background: #00b36c;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .chart-top{\r\n        display: flex;\r\n        justify-content: flex-end;\r\n        margin-bottom: 0em;\r\n\r\n        .uxp-toggle-filter{\r\n            background: transparent;\r\n            display: inline-flex;\r\n            padding: 0;\r\n\r\n            width: 158px;\r\n\r\n            .uxp-toggle-option{\r\n                color: #00c397;\r\n                box-shadow: none;\r\n                font-weight: bold;\r\n                font-size: 1em;\r\n                padding: 8px 6px;\r\n                border-radius: 0;\r\n\r\n                &.selected{\r\n                    box-shadow: none;\r\n                    background: transparent;\r\n                    color: #ffffff;\r\n                }\r\n            }\r\n        }\r\n        .showcase-input{\r\n            display: flex;\r\n            width: 100%!important;\r\n            padding: 0;\r\n\r\n            .uxp-search-box-container{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 27%;\r\n                min-width: 27%;\r\n\r\n              \r\n\r\n                .uxp-input-container{ \r\n                    width: 70%;\r\n                    min-width: 70%;\r\n\r\n                    .uxp-form-input{ \r\n                        width: 100%;\r\n                        font-size: 9px;\r\n                        min-width: 140%;\r\n                    }\r\n                }\r\n\r\n                &.active{\r\n                    display: grid;\r\n                    \r\n                        .search-box-container{\r\n                            background-color: transparent;\r\n                            box-shadow: none;\r\n                            border-bottom: 1px solid #fff;\r\n                            border-radius: 0;\r\n                            color: #fff;\r\n\r\n                             .uxp-input-container{\r\n\r\n                                .uxp-form-input{\r\n                                    font-size: 10px;\r\n                                    color: #fff;\r\n                                    padding: 10px 3px;\r\n                                }\r\n\r\n                             } \r\n\r\n                             .uxp-search-box-icons{\r\n                                .uxp-icon-button{\r\n                                    .icon-container{\r\n                                        .icon.close{\r\n                                            filter: brightness(0) invert(1);  \r\n                                            top: 2px;\r\n                                            background-size: 27%;\r\n                                            opacity: 0.8;\r\n                                        }\r\n                                    }\r\n                                }\r\n                             }\r\n                        }\r\n                    } \r\n            }\r\n            .uxp-form-select{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 21%;\r\n                min-width: 21%;\r\n\r\n                .uxp-select-placeholder{\r\n                    font-size: 10px;\r\n                    background-color: transparent;\r\n                    box-shadow: none;\r\n                    color: #fff;\r\n                    border-radius: 0;\r\n                    padding: 14px 3px;\r\n\r\n                    &::before{\r\n                        filter: brightness(0) invert(1);\r\n                    }\r\n                }\r\n            }\r\n            .uxp-date-time-picker-container{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 23%;\r\n                min-width: 23%;\r\n                padding: 0;\r\n\r\n                .placeholder{\r\n                    .label{\r\n                        padding: 10px 10px;\r\n                    }\r\n                    .value{\r\n                        padding: 10px 0px;\r\n                        min-width: 80px;\r\n                        width: 80%;\r\n                        font-size: 9px;\r\n                    }\r\n                }\r\n            }\r\n\r\n\r\n            .uxp-search-box-container .search-box-container{\r\n                background: transparent;\r\n                box-shadow: none;\r\n            }\r\n        } \r\n\r\n    }\r\n\r\n    .technician_chart{ \r\n        margin-top: 0em; \r\n        .recharts-wrapper{\r\n            fill: transparent; \r\n        }\r\n        .recharts-layer, .recharts-cartesian-axis-line{\r\n            text{ fill:#fff!important;} \r\n        }\r\n        .recharts-cartesian-axis-ticks, .recharts-legend-item-text{\r\n            fill:#fff!important;\r\n            color: #fff;\r\n        }\r\n\r\n        .sub_title_bar{\r\n            width: 90%;\r\n            font-size: 1em;\r\n        }\r\n    }\r\n\r\n    &.empty-box{ \r\n\r\n       .header-content{\r\n            display: inline-flex;\r\n            width: 100%;\r\n            padding: 1em 1em 0em 1em;\r\n\r\n            .logo{ \r\n                display: inline-block;\r\n                 width: 32%;\r\n                // width: 25%;\r\n                background-image: url(\"https://static.iviva.com/images/Udhayimages/MDA_LOGO.png\");\r\n                // background-image: url(\"https://www.iviva.com/wp-content/uploads/2023/07/iviva-logo-1.svg\");\r\n                background-position: center center;\r\n                background-repeat: no-repeat;\r\n                background-size: 90% auto;\r\n                margin-top: 0em;\r\n                height: 7.5em;\r\n            }\r\n            h2{\r\n                display: inline-block;\r\n                width: 65%;\r\n                font-size: 2.5em;\r\n                font-weight: bold;\r\n                color: #ffffff;\r\n                margin-left: 5%;\r\n                padding: 0;\r\n                margin: 1.3em 0 0 0%;\r\n                text-transform: uppercase; \r\n\r\n            }\r\n\r\n            &.iviva-header-content{\r\n                .logo{   \r\n                    width: 22%;  \r\n                    background-image: url(\"https://www.iviva.com/wp-content/uploads/2023/06/logo-text-white-1.svg\"); \r\n                }\r\n                h2{   \r\n                    width: 68%;\r\n                    font-size: 2.3em; \r\n                    margin-left: 5%; \r\n                    margin: 1.2em 0 0 1%; \r\n    \r\n                }\r\n            }\r\n       }\r\n       h4{\r\n            display: inline-block;\r\n            width: 100%;\r\n            font-size: 1.2em;\r\n            color: #ffffff;\r\n            margin: 0em 0 0 1em;\r\n            padding: 0;\r\n            text-transform: uppercase;\r\n            margin-top: 1em;\r\n       } \r\n    } \r\n\r\n    &.power-by-box{ \r\n\r\n        .header-content{\r\n             display: inline-flex;\r\n             width: 100%;\r\n             padding: 1em 1em 0em 1em;\r\n\r\n\r\n             .power-by-cont{\r\n                display: flex;\r\n                width: 100%;\r\n                height: 70%;\r\n                p{  \r\n                    width: auto;\r\n                    font-size: 1.5em;\r\n                    font-weight: bold;\r\n                    color: #ffffff;\r\n                    margin-left: 5%;\r\n                    padding: 0;\r\n                    margin: 0;\r\n                    position: relative;\r\n                    height: auto;\r\n                    align-items: end;\r\n                    display: flex;\r\n                    text-transform: uppercase;\r\n\r\n                    sub{\r\n                        font-size: 0.6em;\r\n                    }\r\n                }\r\n                .raseel_logo{ \r\n                    display: inline-block;\r\n                    width: 32%;\r\n                    background-image: url(\"https://static.iviva.com/images/Udhayimages/Raseel/Raseel-Logo.svg\");\r\n                    background-position: center center;\r\n                    background-repeat: no-repeat;\r\n                    background-size: 90% auto;\r\n                    margin-top: 0em;\r\n                    height: 5.5em;\r\n                    margin-left: 1em;\r\n                }\r\n             } \r\n        }  \r\n     }\r\n     \r\n     &.partnership-box{ \r\n\r\n        .header-content{\r\n             display: inline-flex;\r\n             width: 100%;\r\n             padding: 1em 1em 0em 1em; \r\n\r\n             .partnership-cont{\r\n                display: flex;\r\n                width: 100%;\r\n                height: 70%;\r\n                p{  \r\n                    width: auto;\r\n                    font-size: 1.5em;\r\n                    font-weight: bold;\r\n                    color: #ffffff;\r\n                    margin-left: 5%;\r\n                    padding: 0;\r\n                    margin: 0;\r\n                    position: relative;\r\n                    height: auto;\r\n                    align-items: end;\r\n                    display: flex;\r\n\r\n                    sub{\r\n                        font-size: 0.6em;\r\n                    }\r\n                }\r\n                .ssi_logo{ \r\n                    display: inline-block;\r\n                    width: 32%;\r\n                    background-image: url(\"https://static.iviva.com/images/company-logos/ssi-logo.svg\");\r\n                    background-position: center center;\r\n                    background-repeat: no-repeat;\r\n                    background-size: 90% auto;\r\n                    margin-top: 0em;\r\n                    height: 5.5em;\r\n                    margin-left: 1em;\r\n                    filter: brightness(0) invert(1);\r\n                }\r\n             }  \r\n        }  \r\n     }\r\n\r\n    &.top-rht-container-box{\r\n       \r\n        display: inline-block;\r\n\r\n        .header-rht-content{ \r\n            width: 100%;\r\n            margin-top: 2em;\r\n            float: right;\r\n\r\n                .rgt-head-cont{\r\n                    display: inline-block;\r\n                    width: 25%;\r\n                    text-align: center;\r\n                    font-size: 1.1em;\r\n                    color: #fff;\r\n                    border-left: 2px solid #fff;\r\n                    position: relative;\r\n\r\n                    &.head-timer{\r\n                        border-left: 0px solid transparent;\r\n                    }\r\n                     \r\n                    &.head-weather{ \r\n\r\n                        &::before {\r\n                                    background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n                                    content: \"\";\r\n                                    width: 15px;\r\n                                    height: 15px;\r\n                                    display: block;\r\n                                    background-size: 100% auto;\r\n                                    position: absolute;\r\n                                    top: 0px;\r\n                                    left: 8px;\r\n                                    background-repeat: no-repeat;\r\n                                    background-position: center center;\r\n                                }\r\n                    }\r\n                    &.head-location{\r\n                        font-size: 0.9em;\r\n                        padding-top: 3px;\r\n\r\n                        &::before {\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/pin.png);\r\n                            content: \"\";\r\n                            width: 12px;\r\n                            height: 12px;\r\n                            display: block;\r\n                            background-size: 100% auto;\r\n                            position: absolute;\r\n                            top: 2px;\r\n                            left: 5px;\r\n                            background-repeat: no-repeat;\r\n                            background-position: center center;\r\n                        }\r\n                    }\r\n                }\r\n        }\r\n        .power-by-cont{\r\n            display: inline-block;\r\n            width: 27%;\r\n            vertical-align: bottom;\r\n            padding: 0px 0 0 0;\r\n            margin: 0px 0 0 0;\r\n            position: relative;\r\n            top: 10px;\r\n            text-align: right;\r\n\r\n            p{\r\n                padding: 0;\r\n                margin: 0;\r\n                font-size: 0.75em;\r\n                color: #fff;\r\n                text-align: end;\r\n                position: absolute;\r\n                bottom: 6px;\r\n                right: 75px;\r\n            }\r\n            h1{\r\n                padding: 0;\r\n                margin: 0;\r\n                font-size: 3em;\r\n                color: #fff;\r\n                padding-left: 0;\r\n                padding-right: 0;\r\n\r\n                sub{\r\n                    font-size: 0.3em;\r\n                    bottom: 7px;\r\n                    position: relative;\r\n                }\r\n                 \r\n            }\r\n        }\r\n    }\r\n\r\n}\r\n\r\n.uxp-select-dropdown-container{\r\n    .uxp-select-dropdown{ \r\n      .uxp-select-option {\r\n            padding: 12px 10px 12px 10px;\r\n        }\r\n    }\r\n}\r\n  \r\n  .afterhours_inner_widget {\r\n    display: inline-block;\r\n    width: 100%;\r\n    margin-top: 0px;\r\n    .afterhours_tree {\r\n      display: inline-flex;\r\n      width: 98%; \r\n      height: 100%;\r\n      position: relative;\r\n     \r\n  \r\n      ul {\r\n        margin: 3px 0 0 0;\r\n        padding: 0;\r\n        display: inline-block;\r\n        width: 95%;\r\n        margin-left: 5%;\r\n        column-count: 2;\r\n  \r\n        li {\r\n            display: inline-block;\r\n            padding-left: 10px;\r\n            position: relative;\r\n            width: 100%;\r\n            box-sizing: border-box;\r\n            padding: 1px 0;\r\n           \r\n          &:last-child {\r\n            &::before {\r\n              display: none;\r\n            }\r\n          }\r\n          p {\r\n            font-size: 9px;\r\n            margin: 3px 0;\r\n            position: relative;\r\n            display: inline-block;\r\n            width: 95%;\r\n            color: #fff;\r\n\r\n            &::before {\r\n                content: \"\";\r\n                position: absolute;\r\n                top: 0px;\r\n                left: -20px;\r\n                width: 15px;\r\n                height: 7px;\r\n                text-align: center;\r\n                pointer-events: none;\r\n                border-radius: 2px;\r\n              }\r\n\r\n            span { \r\n                width: 25%;\r\n                font-size: 8px;\r\n                float: right;\r\n            }\r\n          }\r\n\r\n            &:nth-child(n + 1) { p {&::before { background-color: #82d963; }}} \r\n            &:nth-child(n + 2) { p {&::before { background-color: #f5ec00; }}} \r\n            &:nth-child(n + 3) { p {&::before { background-color: #d879e1; }}} \r\n            &:nth-child(n + 4) { p {&::before { background-color: #5ee3f4; }}} \r\n            &:nth-child(n + 5) { p {&::before { background-color: #7cbef6; }}} \r\n            &:nth-child(n + 6) { p {&::before { background-color: #9d7cf6; }}} \r\n            &:nth-child(n + 7) { p {&::before { background-color: #f79598; }}}  \r\n            &:nth-child(n + 8) { p {&::before { background-color: #f6a67c; }}}  \r\n            &:nth-child(n + 9) { p {&::before { background-color: #1057b4; }}} \r\n            &:nth-child(n + 10) { p {&::before { background-color: #0bccb2; }}} \r\n            &:nth-child(n + 11) { p {&::before { background-color: #650bcc; }}}  \r\n            &:nth-child(n + 12) { p {&::before { background-color: #3bcc0b; }}}  \r\n            &:nth-child(n + 13) { p {&::before { background-color: #0bccb2; }}} \r\n            &:nth-child(n + 14) { p {&::before { background-color: #0b42cc; }}} \r\n            &:nth-child(n + 15) { p {&::before { background-color: #cc0b58; }}}  \r\n            &:nth-child(n + 16) { p {&::before { background-color: #e0a3e7; }}}  \r\n            &:nth-child(n + 17) { p {&::before { background-color: #67d7e9; }}} \r\n            &:nth-child(n + 18) { p {&::before { background-color: #bfcc0b; }}} \r\n            &:nth-child(n + 19) { p {&::before { background-color: #0b78cc; }}}  \r\n            &:nth-child(n + 20) { p {&::before { background-color: #cc0b78; }}}  \r\n            &:nth-child(n + 21) { p {&::before { background-color: #f21456; }}} \r\n            &:nth-child(n + 22) { p {&::before { background-color: #650bcc; }}} \r\n            &:nth-child(n + 23) { p {&::before { background-color: #0b78cc; }}}  \r\n            &:nth-child(n + 24) { p {&::before { background-color: #06f51a; }}} \r\n \r\n          }\r\n        }\r\n      }\r\n     \r\n\r\n    .color_value {\r\n      display: inline-block;\r\n      width: 100%; \r\n      ul {\r\n        display: flex;\r\n        margin: 0;\r\n        padding: 0; \r\n        overflow: hidden;\r\n        li {\r\n          display: inline-block;\r\n          height: 3.4vh;\r\n          width: 10vw;\r\n  \r\n          &:nth-child(n + 1) { background-color: #82d963; }\r\n          &:nth-child(n + 2) { background-color: #f5ec00; }\r\n          &:nth-child(n + 3) { background-color: #d879e1; }\r\n          &:nth-child(n + 4) { background-color: #5ee3f4; }\r\n          &:nth-child(n + 5) { background-color: #7cbef6; }\r\n          &:nth-child(n + 6) { background-color: #9d7cf6; }\r\n          &:nth-child(n + 7) { background-color: #f79598; }\r\n          &:nth-child(n + 8) { background-color: #f6a67c; }\r\n          &:nth-child(n + 9) { background-color: #1057b4; }\r\n          &:nth-child(n + 10) { background-color: #0bccb2; }\r\n          &:nth-child(n + 11) { background-color: #650bcc; }\r\n          &:nth-child(n + 12) { background-color: #3bcc0b; }\r\n          &:nth-child(n + 13) { background-color: #0bccb2; }\r\n          &:nth-child(n + 14) { background-color: #0b42cc; }\r\n          &:nth-child(n + 15) { background-color: #cc0b58; }\r\n          &:nth-child(n + 16) { background-color: #e0a3e7; }\r\n          &:nth-child(n + 17) { background-color: #67d7e9; }\r\n          &:nth-child(n + 18) { background-color: #bfcc0b; }\r\n          &:nth-child(n + 19) { background-color: #0b78cc; }\r\n          &:nth-child(n + 20) { background-color: #cc0b78; } \r\n          &:nth-child(n + 21) { background-color: #f21456; }\r\n          &:nth-child(n + 22) { background-color: #650bcc; }\r\n          &:nth-child(n + 23) { background-color: #0b78cc; }\r\n          &:nth-child(n + 24) { background-color: #06f51a; }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  \r\n  .afterhours-arrow {\r\n    display: inline-block;\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n    width: 17px;\r\n    height: 17px;\r\n    background-size: contain;\r\n    background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.445' height='23.445' viewBox='0 0 23.445 23.445'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23424242;opacity:0.333;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M23.445,11.722A11.722,11.722,0,1,1,11.722,0,11.72,11.72,0,0,1,23.445,11.722ZM9.643,6.239v5.483H6.291a.568.568,0,0,0-.4.969l5.431,5.4a.562.562,0,0,0,.8,0l5.431-5.4a.567.567,0,0,0-.4-.969H13.8V6.239a.569.569,0,0,0-.567-.567H10.21A.569.569,0,0,0,9.643,6.239Z' transform='translate(23.445) rotate(90)'/%3E%3C/svg%3E\");\r\n    left: 50%;\r\n    margin-left: -10px;\r\n    cursor: pointer;\r\n    z-index: 11;\r\n    position: relative;\r\n  \r\n    &#topArrowAfterhours {\r\n      transform: rotate(90deg);\r\n      top: -10px;\r\n      margin-bottom: -11px;\r\n    }\r\n    &#downArrowAfterhours {\r\n      transform: rotate(270deg);\r\n    }\r\n  }\r\n    \r\n\r\n\r\n.progress-bar-container {\r\n    width: 100%; \r\n    display: inline-flex;\r\n   // background: linear-gradient(to right,  #005936 1%,#005842 71%,#01af94 100%);  \r\n\r\n    .progress-bar {\r\n        height: 12px; \r\n      //  background: linear-gradient(to right,  #005842 1%,#005842 41%,#01af94 100%);   \r\n\r\n        &.installedLamps{\r\n              background: linear-gradient(to right,  #005842 1%,#005842 41%,#009b79 100%);  \r\n            //background: #005745; \r\n        }\r\n\r\n        &.working-lamps{\r\n            background: linear-gradient(to right,  #005936 1%,#005842 41%,#01af94 100%);   \r\n            // background: #009b79;\r\n        }\r\n      }\r\n  }\r\n   \r\n\r\n.top-nav-tabs{ \r\n\r\n    position: relative;\r\n    top: 6em;\r\n    left: 50%;\r\n    z-index: 5;\r\n    transform: translateX(-50%);\r\n    width: 100%;\r\n\r\n    ul{\r\n        padding: 0;\r\n        margin: 0;\r\n        display: inline-flex;\r\n        width: 100%;\r\n\r\n        li{\r\n            list-style: none;\r\n            width: 17%;\r\n            display: inline-block;\r\n            text-align: center;\r\n\r\n            a{\r\n                cursor: pointer;\r\n                display: inline-block;\r\n                width: 100%;\r\n                padding: 10px 0px;\r\n\r\n            span{ \r\n                \r\n                width: 20px;\r\n                height: 20px;\r\n                display: inline-block;\r\n                background-position: center center;\r\n                background-repeat: no-repeat;\r\n                background-size: contain;\r\n                position: relative;  \r\n            }\r\n            label{\r\n                color: #fff; \r\n                 font-size: 0.8em;\r\n                width: 100%;\r\n                display: inline-block;\r\n                padding: 5px 0 0 0;\r\n                margin: 0;\r\n                text-transform: uppercase;\r\n                font-weight: 600;\r\n                cursor: pointer;\r\n            } \r\n        } \r\n            &.waste{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock.png);\r\n                }\r\n            } \r\n            &.energy{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/energy.png);\r\n                }\r\n            } \r\n            &.streetlight{\r\n                span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/street-light.png); \r\n                }\r\n            }  \r\n            &.cctv{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/security-camera.png);\r\n                }\r\n            } \r\n            &.water{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/waterdrop.png);\r\n                }\r\n            }\r\n            &.pollution{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/factory.png);\r\n                }\r\n            }\r\n            &.fire{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/fire.png);\r\n                }\r\n            }\r\n            &.emission{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/co2.png);\r\n                }\r\n            }\r\n\r\n             &.active{\r\n                label{\r\n                    color: #0fd6a9;\r\n                    text-shadow: 0px 0px 10px #02eec9;\r\n                } \r\n                span{\r\n                    box-shadow:  0px 0px 12px 1px #02eec9;\r\n                }\r\n\r\n\r\n                &.waste{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock-active.png);\r\n                    }\r\n                } \r\n                &.energy{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/energy-active.png);\r\n                    }\r\n                } \r\n                &.streetlight{\r\n                    span{\r\n                           background-image: url(https://static.iviva.com/images/Udhayimages/street-light-active.png); \r\n                    }\r\n                }  \r\n                &.cctv{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/security-camera-active.png);\r\n                    }\r\n                } \r\n                &.water{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/drop-active.png);\r\n                    }\r\n                }\r\n                &.pollution{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/factory-active.png);\r\n                    }\r\n                }\r\n                &.fire{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/fire-active.png);\r\n                    }\r\n                } \r\n                &.carbon-emission{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/co2-active.png);\r\n                    }\r\n                } \r\n                \r\n            }\r\n        }\r\n    }\r\n}\r\n  \r\n  \r\n.weather-list{\r\n    display: inline-block;\r\n    position: relative; \r\n    align-items: end;\r\n    text-align: right;\r\n    right: 5px !important;\r\n\r\n    ul{  \r\n      margin: 0;\r\n      padding: 0;\r\n      display: inline-flex; \r\n      width: auto;\r\n      border-radius: 5px;\r\n\r\n      li{  \r\n\r\n            list-style: none;\r\n            display: inline-block;\r\n            width: 50px;\r\n            height: 38px;\r\n            margin: 3px 3px;\r\n            text-align: center;\r\n\r\n        a{\r\n            cursor: pointer;\r\n            width: 100%;\r\n            display: inline-block;\r\n            height: 100%;\r\n\r\n          img{\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n          }\r\n        } \r\n          \r\n      }\r\n    }\r\n  }\r\n \r\n  \r\n  .slider {   \r\n    width: 2px;\r\n    height: 20vh;\r\n    position: absolute;\r\n    top: 1em;\r\n    right: 0em;\r\n    border-radius: 20px;\r\n    background: linear-gradient(100deg, rgba(0, 0, 0, 0.100) 0%, rgb(255 255 255 / 100%) 35%, rgba(255, 255, 255, 0) 100%);\r\n    transform: rotate(180deg);\r\n    box-shadow: 0px 0px 1px #353535;\r\n\r\n    &::before{\r\n      background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\r\n      content: \"\";\r\n      width: 12px;\r\n      height: 12px;\r\n      display: block;\r\n      background-size: 100% auto;\r\n      position: absolute;\r\n      bottom: -1.8em;\r\n      left: -4px;\r\n      background-repeat: no-repeat;\r\n      background-position: center center;\r\n      transform: rotate(180deg);\r\n    }\r\n    &::after{\r\n      background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n      content: \"\";\r\n      width: 20px;\r\n      height: 20px;\r\n      display: block;\r\n      background-size: 100% auto;\r\n      position: absolute;\r\n      top: -2.5em;\r\n      left: -8px;\r\n      background-repeat: no-repeat;\r\n      background-position: center center;\r\n  }\r\n\r\n    span{\r\n      width: 20px;\r\n      height: 20px;\r\n      display: inline-block;\r\n      background-color: #fff;\r\n      border-radius: 50%;\r\n      cursor: pointer;\r\n      position: absolute;\r\n      left: -9px;\r\n      bottom: 0.7em;\r\n      box-shadow: 0px 0px 3px #ffffff;\r\n      transition: bottom 0.4s ease;\r\n    }\r\n  }\r\n   \r\n  .slider.active {  \r\n    span{\r\n      bottom: 16vh;  \r\n    }\r\n  }\r\n\r\n\r\n  .timer-widget{\r\n    // display: inline-block;\r\n    // width: 100%;\r\n    // position: relative; \r\n\r\n    // width: 100%;\r\n\t// height: 100%;\r\n\t// position: relative;\r\n\t// display: flex;\r\n\t// align-items: center;\r\n\t// justify-content: center;\r\n\t// border: 1px solid red;\r\n\t// padding: 50px 0;\r\n\r\n    width: 100%;\r\n    height: 100%;\r\n    position: relative; \r\n    // border: 1px solid red; \r\n\r\n\r\n    //Sun Controll new design\r\n    // .timer-icons{\r\n    //     display: inline-block;\r\n    //     width: 20px; \r\n    //     ul{\r\n    //         display: inline-block;\r\n    //         margin: 10px 0 0 0;\r\n    //         padding: 0;\r\n    //         height: 100%;\r\n    //         width: 100%;\r\n    //         li{\r\n    //             display: inline-block;\r\n    //             width: 100%;\r\n    //             height: 37px;\r\n    //             img{\r\n    //                 max-width: 80%;\r\n    //                 max-height: 80%;\r\n    //             }\r\n    //         }\r\n    //     }\r\n    // }\r\n\r\n  .timer-slider {\r\n\r\n    // align-items: center;\r\n    // width: 35%;\r\n    // height: 100%;\r\n    // position: relative;\r\n    // display: inline-flex;\r\n\r\n    align-items: center;\r\n    // width: 53%;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    display: inline-flex;\r\n    right: 1px!important;\r\n    \r\n   \r\n\r\n       .timer-range {\r\n            display: inline-block;\r\n             width: 100%;\r\n           // width: auto;\r\n            transform: rotate(90deg);\r\n            background: linear-gradient(100deg, rgba(0, 0, 0, 0.100) 0%, rgb(255 255 255 / 100%) 35%, rgba(255, 255, 255, 0) 100%);\r\n            box-shadow: 0px 0px 1px #353535; \r\n            -webkit-appearance: none;\r\n            appearance: none;\r\n            -moz-appearance: none;\r\n            outline: none; \r\n            height: 2px;\r\n            position: relative;\r\n\r\n            &::before {  \r\n\r\n                background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n                content: \"\";\r\n                width: 40px;\r\n                height: 40px;\r\n                display: block;\r\n                background-size: 100% auto;\r\n                position: absolute;\r\n                top: -18px;\r\n                left: -50px;\r\n                background-repeat: no-repeat;\r\n                background-position: center center;\r\n                \r\n            }\r\n            &::after {   \r\n                \r\n                background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\r\n                content: \"\";\r\n                width: 35px;\r\n                height: 35px;\r\n                display: block;\r\n                background-size: 100% auto;\r\n                position: absolute;\r\n                bottom: -20px;\r\n                right: -45px;\r\n                background-repeat: no-repeat;\r\n                background-position: center center;\r\n                transform: rotate(160deg);\r\n            }\r\n\r\n                &::-webkit-slider-thumb {\r\n                    -webkit-appearance:none;\r\n                    -moz-appearance:none;\r\n                    appearance:none;\r\n                    // background:#023d28;\r\n                    background:#fefefe;\r\n                    width:18px;\r\n                    height:18px;\r\n                    border-radius:50%; \r\n                    cursor:pointer;\r\n                    box-shadow: 0px 0px 3px #9f9f9f;\r\n                }  \r\n        }   \r\n\r\n    .timer-slider {\r\n        // position: relative;\r\n        display: none;\r\n      }\r\n      \r\n      .tooltip {\r\n        position: absolute;\r\n        background-color: #023d28;\r\n        color: #fff;\r\n        padding: 0.5rem;\r\n        border-radius: 4px;\r\n        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\r\n        font-size: 0.9rem;\r\n\r\n        &:before {\r\n            content: '';\r\n            position: absolute;\r\n            border-style: solid;\r\n            border-width: 8px 0 8px 8px;\r\n            border-color: transparent transparent transparent #023d28;\r\n            top: calc(50% - 8px);\r\n            right: -8px;\r\n          }\r\n      }  \r\n        \r\n        .timer-range ~ .tooltip:hover p {\r\n            visibility: visible;\r\n            opacity: 1;\r\n          } \r\n    }  \r\n  } \r\n\r\n  .toggle-container {\r\n    display: inline-block;\r\n    // right: 2.1em;\r\n    position: relative;\r\n    align-items: end;\r\n    text-align: right; \r\n        \r\n        .toggle-button { \r\n\r\n            position: relative;\r\n            width: 66px;\r\n            height: 32px;\r\n            border: none;\r\n            background-color: #ccc;\r\n            outline: none;\r\n            cursor: pointer;\r\n            border-radius: 15px;\r\n            padding: 0px;\r\n            margin-top: 0em;\r\n            transform: rotate(90deg);\r\n            margin-right: 0px;\r\n\r\n            .slider-toggle {\r\n                position: absolute;\r\n                width: 27px;\r\n                height: 27px;\r\n                border-radius: 50%;\r\n                background-color: #034d3c;\r\n                transition: transform 0.3s ease;\r\n                top: 2px;\r\n                left: 5px;\r\n\r\n                &.on{\r\n                    transform: translateX(30px);\r\n                }\r\n                \r\n                &.off {\r\n                    transform: translateX(0);\r\n                }\r\n            }\r\n        }\r\n  \r\n    .toggle-label{\r\n        color: #ffffff;\r\n        font-size: 1em;\r\n        text-align: center;\r\n        margin: 15px 0 0 0;\r\n        font-weight: 600;\r\n    } \r\n   \r\n}\r\n\r\n.ed3-map-controls-widget-wrapper{\r\n    width: 15%;\r\n    align-items: end;\r\n    text-align: right;\r\n    // right: calc(-50% + 60px);\r\n    // top: 1.5em; \r\n\r\n    .ed3-map-zoom-controls-container { \r\n        transform: rotate(90deg);\r\n        align-items: end;\r\n        text-align: right;\r\n        padding: 0;\r\n\r\n        .ed3-map-zoom-controls-button { \r\n            border-radius: 0;\r\n            background-color: #d2d2d24a; \r\n            margin: 0;\r\n\r\n            &:nth-child(3){\r\n                transform: rotate(90deg);\r\n            }\r\n        }\r\n    }\r\n}\r\n \r\n.smart-city_box{\r\n    .uxp-form-select{\r\n        display: inline-block;\r\n        margin-right: 0.5em;\r\n        width: 23%;\r\n        min-width: 23%;\r\n\r\n        .uxp-select-placeholder{\r\n            font-size: 10px;\r\n            background-color: transparent;\r\n            box-shadow: none;\r\n            color: #fff;\r\n            border-radius: 0;\r\n            padding: 14px 3px;\r\n\r\n            &::before{\r\n                filter: brightness(0) invert(1);\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n.uxp-date-time-picker-container{\r\n    font-size: 10px;\r\n        background-color: transparent;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        border-radius: 0;\r\n        padding: 14px 3px;\r\n\r\n        .date-time-placeholder-container{\r\n            .placeholder{\r\n                font-size: 10px;\r\n            }\r\n            .icon-container{\r\n                .icon{\r\n                    filter: brightness(0) invert(1); \r\n                }\r\n            }\r\n        }\r\n} \r\n\r\n&.mode-change-box{\r\n    display: block;\r\n\r\n    .showcase-input{\r\n       width : 100% !important;\r\n\r\n       .uxp-form-select{\r\n         width: 100%;\r\n\r\n        .uxp-select-placeholder{ \r\n             font-size: 0.95em; \r\n              padding: 10px 10px; \r\n            background-color: rgb(0 88 66 / 50%);\r\n            border-radius: 4px;\r\n\r\n            .selected{\r\n                font-size: 1em; \r\n            }\r\n        }\r\n       }\r\n    } \r\n} \r\n\r\n&.building_summary-box{\r\n        .building-details{\r\n\r\n            .building-top{\r\n                display: inline-flex;\r\n                width: 100%;\r\n\r\n                .building-pict{\r\n                    // display: inline-block;\r\n                    // width: 30%;\r\n\r\n                    display: inline-block;\r\n                    width: 21em;\r\n                    height: 18em;\r\n                    background-size:cover ;\r\n                    background-repeat: no-repeat;\r\n                    background-position: center center; \r\n                  \r\n\r\n                    img{\r\n                        max-width: 100%;\r\n                        max-height: 100%;\r\n                    }\r\n                }\r\n                .building-header{\r\n                    display: inline-block;\r\n                    width: 70%;\r\n                    vertical-align: top;\r\n\r\n                    .building-title{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        text-align: center;\r\n                        font-size: 3em;\r\n                        color: #fff;\r\n                        font-weight: bold;\r\n                    }\r\n                    .building-nav{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        text-align: center;\r\n                        margin-top: 3em;\r\n                        ul{\r\n                            display: inline-flex;\r\n                            width: 100%;\r\n                            li{\r\n                                display: inline-block;\r\n                                width: 33%;\r\n                                .building-nav-icon{\r\n                                    display: inline-block;\r\n                                    width: 100%;\r\n\r\n                                    img{\r\n                                        max-width:100% ;\r\n                                        max-height:100% ;\r\n                                        box-shadow: 0 0 9px 5px #16c69b;\r\n                                    }\r\n                                }\r\n                                .building-nav-title{\r\n                                    display: inline-block;\r\n                                    width: 100%;\r\n                                    margin-top: 1em;\r\n                                    font-size: 1.05em;\r\n                                    color: #fff;\r\n                                    font-weight: bold;\r\n\r\n                                    a{\r\n                                        color: #fff;\r\n                                        text-decoration: none;\r\n                                    }\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            .building-info-box{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 0em;\r\n                // background: #12967899;\r\n                padding: 0em 1em 0em 1em;\r\n\r\n                ul{\r\n                    margin: 0;\r\n                    padding: 0;\r\n                    li{\r\n                        list-style: none;\r\n                        display: inline-flex;\r\n                        width: 100%;\r\n                        margin: 0.45em 0;\r\n                        \r\n                        &::before{\r\n                            content: \"\";\r\n                            // background-image: url(\"https://static.iviva.com/images/Udhayimages/blk-star.png\");\r\n                            background-repeat: no-repeat;\r\n                            background-position: 0 0;\r\n                            background-size: contain;\r\n                            width: 17px;\r\n                            height: 17px;\r\n                            filter: invert(1);\r\n                        }\r\n\r\n                        label{\r\n                            display: inline-block;\r\n                            padding: 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                            font-size: 1.5em;\r\n                            margin-right: 1em;\r\n                            margin-left: 0.5em;\r\n                            font-weight: bold;\r\n                        }\r\n                       span{\r\n                            display: inline-block;\r\n                            font-size: 1.4em;\r\n                            color: #fff;\r\n                        }\r\n\r\n                        &.building-code{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/building-code.png\"); \r\n                                \r\n                            }\r\n                        }\r\n                        &.building-name{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/building-name.png\"); \r\n                            }\r\n                        }\r\n                        &.street-number{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/street-number.png\"); \r\n                            }\r\n                        }\r\n                        &.street-name{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/street-name.png\"); \r\n                            }\r\n                        }\r\n                        &.city{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/city.png\"); \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            .building-nearby-box{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 1em;\r\n                background: #12967899;\r\n                padding: 1em;\r\n\r\n                ul{\r\n                    margin: 0;\r\n                    padding: 0;\r\n                    li{\r\n                        list-style: none;\r\n                        display: inline-flex;\r\n                        width: 100%;\r\n                        margin: 0.7em 0;\r\n\r\n                        &::before{\r\n                            content: \"\";\r\n                            // background-image: url(\"https://static.iviva.com/images/Udhayimages/blk-star.png\");\r\n                            background-repeat: no-repeat;\r\n                            background-position: 0 0;\r\n                            background-size: contain;\r\n                            width: 17px;\r\n                            height: 17px;\r\n                            filter: invert(1);\r\n                        }\r\n\r\n                        label{\r\n                            display: inline-block;\r\n                            padding: 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                            font-size: 1.6em;\r\n                            margin-right: 1em;\r\n                            margin-left: 0.5em;\r\n                            font-weight: bold;\r\n                        }\r\n                       span{\r\n                            display: inline-block;\r\n                            font-size: 1.4em;\r\n                            color: #fff;\r\n                        }\r\n\r\n\r\n                        &.hospital{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/hospital.png\"); \r\n                            }\r\n                        }\r\n                        &.pharmacy{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/pharmacy.png\"); \r\n                            }\r\n                        }\r\n                        &.police-station{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/police-station.png\"); \r\n                            }\r\n                        }\r\n                        &.mosques{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/mosques.png\"); \r\n                            }\r\n                        }\r\n                        &.restaurants{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/restaurant.png\"); \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n\r\n            .building-bot{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 0em;\r\n\r\n                .g_map-link{\r\n                    width: auto;\r\n                    text-align: center;\r\n                    float: right;\r\n                    background: rgba(18, 150, 120, 0.6);\r\n                    padding: 10px 10px 10px;\r\n                    border-radius: 4px;\r\n                    a{\r\n                        font-size: 1.1em;\r\n                        color: #fff;\r\n                        text-decoration: none;\r\n                    }\r\n                }\r\n            }\r\n            \r\n        }\r\n}\r\n\r\n&.building_layout-box{\r\n    // background-color: #447d6d;\r\n    // box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.12);\r\n    // border-radius: 10px;\r\n\r\n    .smart-city-content{\r\n        display: block;\r\n        margin-top: 0em;\r\n        flex: 1;\r\n        width: 100%;\r\n        height: 100%;\r\n\r\n        .slideshow-container{\r\n            display: flex;\r\n            width: 100%;\r\n            height: 80%;\r\n        }\r\n    }\r\n\r\n    .slideshow-container{\r\n        margin-left: 0em;\r\n        margin-top: 0;\r\n        position: relative;\r\n        background: #fff;\r\n        padding: 10px;\r\n        display: inline-block;\r\n        width: 100%;\r\n        // height: 46vh;\r\n        height: 80%;\r\n\r\n        .myslides1,  .myslides2,  .myslides3,  .myslides4 {\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        img{\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        .slider-btn{\r\n            display: inline;\r\n            position: absolute;\r\n            top: 50%;\r\n            border: 1px solid #11624b;\r\n            padding: 6px 5px;\r\n            font-size: 1.5em;\r\n            color: #11624b;\r\n            background: #07b9878c;\r\n            cursor: pointer;\r\n\r\n            &.slider-btn.prev {\r\n                left: 0;\r\n            }\r\n            &.slider-btn.next {\r\n                right: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    .build-bhk-boxes{\r\n        display: inline-flex;\r\n        width: 80%;\r\n        margin-top: 2em;\r\n        transform: translate(-50%);\r\n        left: 50%;\r\n        position: relative;\r\n\r\n        .bhk-box{\r\n            display: inline-block;\r\n            border: 1px solid #ffffff;\r\n            width: 30%;\r\n            text-align: center;\r\n            padding: 7px 0;\r\n            font-size: 1em;\r\n            color: #ffffff;\r\n\r\n            &.one_bhk{\r\n                \r\n            }\r\n            &.two_bhk{\r\n                margin: 0 5%;\r\n            }\r\n            &.mep{\r\n                 \r\n            }\r\n            \r\n        }\r\n    } \r\n     \r\n}\r\n\r\n\r\n&.building_layout-box{\r\n    // background-color: #447d6d;\r\n    // box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.12);\r\n    // border-radius: 10px;\r\n\r\n    #ViewsMenu{\r\n        display: inline-block;\r\n        width : 100%;\r\n\r\n       \r\n    \r\n    .model-items{\r\n\r\n        // display: inline-flex;\r\n        // width : 100%;\r\n\r\n        display: inline-flex;\r\n        width: 100%;\r\n        display: inline-block;\r\n\r\n        .menu-item {\r\n            position: relative;\r\n            display: inline-block;\r\n            margin: 10px;\r\n            // width: 240px;\r\n            // height: 240px;\r\n            width: 45%;\r\n            height: 17em;\r\n            box-shadow: 5px 5px 5px #00000080;\r\n            border-radius: 5px;\r\n            background-color: white;\r\n            overflow: hidden;\r\n            vertical-align: top;\r\n\r\n            .item-header { \r\n                // height: 110px; \r\n                position: relative;\r\n                // height: 80px;\r\n                height: 100%;;\r\n                width: 97%;\r\n                display: inline-block;\r\n\r\n                .blue-plate {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 3px;\r\n                    height: 100%;\r\n                    // width: 234px;\r\n                    width: 100%;\r\n                    opacity: 0.8;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/searchbg.svg);\r\n                    background-repeat: no-repeat;\r\n                }\r\n\r\n                .header-image {\r\n                    position: absolute;\r\n                    height: 94px;\r\n                    // width: 234px;\r\n                    width: 100%;\r\n                    padding-top: 3px;\r\n                    padding-left: 3px;\r\n                    border: none;\r\n                    display: none;\r\n                }\r\n\r\n                .header-no-image {\r\n                    position: absolute;\r\n                    height: 50px;\r\n                    width: 230px;\r\n                    top: 20px;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/Viewport_single.svg);\r\n                    background-repeat: no-repeat;\r\n                    background-position: center;\r\n                    opacity: 0.3;\r\n                }\r\n\r\n                .blue-overlay {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 3px;\r\n                    height: 100px;\r\n                    width: 234px;\r\n                    opacity: 0.2;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/searchbg.svg);\r\n                    background-repeat: no-repeat;\r\n                    display: none;\r\n                }\r\n                .blue-overlay-mask {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 79px;\r\n                    height: 35px;\r\n                    width: 234px;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/Mask_bleed.svg);\r\n                    background-repeat: no-repeat;\r\n                    display: none;\r\n                } \r\n\r\n            }\r\n            .item-body{\r\n                display: block;\r\n                position: absolute;\r\n                bottom: 3.5em;\r\n\r\n                .primary-text {\r\n                    color: #0066ff;\r\n                    font-size: 14px;\r\n                    margin: 0px 10px 0 10px;\r\n                    font-weight: bold;\r\n                }\r\n                .secondary-text {\r\n                    color: #424242;\r\n                    font-size: 13px;\r\n                    margin: 5px 10px 0 10px;\r\n                    overflow-wrap: break-word;\r\n                }\r\n            }\r\n          \r\n            .centering-container {\r\n                text-align: center;\r\n                position: absolute;\r\n                width: 100%;\r\n                bottom: 10px;\r\n\r\n                .blue-button.enabled {\r\n                    color: white;\r\n                    background-color: #0066ff;\r\n                    border-color: white;\r\n                    cursor: pointer;\r\n                    a{\r\n                        color: white;\r\n                        text-decoration: none;\r\n                    }\r\n                }\r\n\r\n                .blue-button {\r\n                    color: #0066ff;\r\n                    background-color: white;\r\n                    font-size: 14px;\r\n                    padding: 5px 20px 5px 20px;\r\n                    border: 1px solid #0066ff;\r\n                    border-radius: 13px;\r\n                    display: inline-block;\r\n                }\r\n            }\r\n        }\r\n    }\r\n    }\r\n}\r\n\r\n&.iot_filter-detail-box{\r\n    .iot-filter{\r\n        display: inline-block;\r\n        width: 100%;\r\n\r\n        .iot-filter-top{\r\n            display: inline-block;\r\n            width: 100%;  \r\n\r\n            .uxp-button.done{\r\n                display: none;\r\n            }\r\n\r\n                .select-filter{ \r\n                    width: 25%;\r\n                    .uxp-form-select{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                       \r\n\r\n                    }\r\n                }  \r\n\r\n\r\n        }\r\n\r\n        .iot-filter-content{\r\n            display: inline-block;\r\n            width: 100%;\r\n            ul{\r\n                padding: 0;\r\n                margin: 8px 0 8px 0;\r\n                display: inline-block;\r\n                width: 100%;\r\n                li{\r\n                    display: inline-flex;\r\n                    width: 100%;\r\n                    font-size: 1em;\r\n                    padding: 9px 0;\r\n\r\n                    label{\r\n                        display: inline-block;\r\n                        width: 50%;\r\n                        font-size: 1em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                    }\r\n                    span{\r\n                        display: inline-block;\r\n                        width: 50%;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n&.madinah-facts-box{\r\n\r\n    .madinah-facts-details{\r\n        display: inline-block;\r\n        width: 100%; \r\n      \r\n            ul{\r\n                padding: 0;\r\n                margin: 8px 0 8px 0;\r\n                display: inline-block;\r\n                width: 100%;\r\n                li{\r\n                    display: inline-flex;\r\n                    width: 100%;\r\n                    font-size: 1em;\r\n                    border: 1px solid #fff;\r\n                    border-radius: 10px;\r\n                    margin-bottom: 1em;\r\n                    padding: 1em;\r\n\r\n                    span{\r\n                        display: inline-block;\r\n                        width: 20%;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        color: #ffffff;\r\n                        font-size: 1.2em;\r\n                    }\r\n                    label{\r\n                        display: inline-block;\r\n                        width: 80%;\r\n                        font-size: 1em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        color: #ffffff;\r\n                        font-size: 1em;\r\n                    }\r\n                }\r\n            }\r\n        \r\n    }\r\n} \r\n\r\n&.pole-detail-box{\r\n    .pole-details{\r\n        display: inline-block;\r\n        width: 100%;\r\n\r\n        .pole-details-top{\r\n            display: inline-block;\r\n            width: 100%; \r\n\r\n            .pole-number{\r\n                display: inline-block;\r\n                width: 75%;\r\n\r\n               label{\r\n                    display: inline-block;\r\n                    width: 70%;\r\n                    margin-right: 5%;\r\n                    background-color: #fff;\r\n                    padding: 10px; \r\n               } \r\n\r\n                span{\r\n                    display: inline-block;\r\n                    width: 25%;\r\n                    background-color: #fff;\r\n                    padding: 10px;\r\n                    margin: 0;\r\n                }\r\n            }\r\n\r\n            .pole-logo{ \r\n                   display: inline-block;\r\n                    width: 20%;\r\n                    background-color: #fff; \r\n                    margin-left: 5%;\r\n                    span{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                    }  \r\n            }\r\n           \r\n        }\r\n\r\n        .pole-details-content{\r\n            display: inline-block;\r\n            width: 100%;\r\n            ul{\r\n                padding: 0;\r\n                margin: 8px 0 8px 0;\r\n                display: inline-block;\r\n                width: 100%;\r\n                li{\r\n                    display: inline-flex;\r\n                    width: 100%;\r\n                    font-size: 1em;\r\n                    padding: 9px 0;\r\n\r\n                    label{\r\n                        display: inline-block;\r\n                        width: 50%;\r\n                        font-size: 1em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                    }\r\n                    span{\r\n                        display: inline-block;\r\n                        width: 50%;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n} \r\n\r\n\r\n  #streamingVideo { \r\n    top: 0em;\r\n} \r\n\r\n.smplr-wrapper {\r\n    position: relative;\r\n    width: 100%;\r\n    //max-width: calc(16 / 9 * 75vh);\r\n    aspect-ratio: 16 / 9;\r\n    background-color: #ecf1f5;\r\n  }\r\n  \r\n  .smplr-embed {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\n  #powered-by{display: none;}\r\n\r\n  body.loginScreen,  body.thumbnailsScreen{\r\n    display: block!important;\r\n  } \r\n\r\n\r\n/********* CCTV Screen ************/\r\n  \r\n.header8PAXAuto {\r\n    position: absolute;\r\n    top: 0;\r\n    width: 100%;\r\n    height: 60px;\r\n    padding: 8px 15px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    border-bottom: 1px solid #ccc;\r\n  \r\n    .title8PAXAuto {\r\n        width: auto;\r\n        height: auto;\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: center;\r\n        font-size: 12px;\r\n        font-weight: 500; \r\n    \r\n  \r\n        .text8PAXAuto {\r\n            text-transform: uppercase;\r\n            font-weight: bold;\r\n  \r\n            span {\r\n                width: auto;\r\n                height: auto;\r\n                padding: 6px 15px;\r\n                border-radius: 50px;\r\n                margin-left: 80px;\r\n  \r\n                &.high {\r\n                    background-color: #ec4b7b;\r\n                    color: white;\r\n                }\r\n  \r\n                &.low {\r\n                    background-color: #707070;\r\n                    color: white;\r\n                }\r\n            }\r\n        }\r\n    }\r\n  }\r\n  \r\n  .parent8PAXAuto {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: black;\r\n    overflow: auto;\r\n  \r\n    .child8PAXAuto {\r\n      width: 25%;\r\n      height: 49%;\r\n      flex-shrink: 0;\r\n      flex-grow: 0;\r\n      flex-wrap: wrap;\r\n      padding:0;\r\n\r\n      .iframe-resize{\r\n        position: relative;\r\n        z-index: 1; \r\n        width: 100%!important;\r\n        height: 100%!important;\r\n      }\r\n      .overlay8PAXAuto{\r\n        position:absolute;\r\n        top:0;\r\n        left:0;\r\n        z-index:1;\r\n        padding:4px;\r\n        padding-left: 4px;\r\n        font-weight: bolder;\r\n        color: white;\r\n      }\r\n\r\n      .cctv_err_onplayer{\r\n        position: absolute;\r\n        display: inline;\r\n        z-index: 1;\r\n        transform: translate(-50%, -50%);\r\n       // transform: translate(50%, 180%);\r\n        visibility: visible;\r\n        width: 100px;\r\n        height: 52px;\r\n        left: 50%;\r\n        top: 50%;\r\n        z-index: 1;\r\n\r\n        #player_error_icon {\r\n            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;\r\n            transform: translate3d(0, 0, 0);\r\n            backface-visibility: visible;\r\n            perspective: 1000px;\r\n\r\n            font-size: 34px;\r\n            color: rgba(255, 39, 0, 0.86);\r\n            text-align: center;\r\n\r\n            .glyphicon {\r\n                position: relative;\r\n                top: 1px;\r\n                display: inline-block;\r\n                font-family: 'Glyphicons Halflings';\r\n                font-style: normal;\r\n                font-weight: 400;\r\n                line-height: 1;\r\n                -webkit-font-smoothing: antialiased;\r\n                -moz-osx-font-smoothing: grayscale;\r\n\r\n               &:before {\r\n                    content: \"\\e107\";\r\n                }\r\n            }\r\n       \r\n        }\r\n        \r\n        #player_error_text {\r\n            font-size: 10px;\r\n            color: rgb(225, 38, 1);\r\n            text-align: center;\r\n            margin-top: -1px;\r\n            /* text-shadow: 1px 1px 1px #f70606, 0 0 1em #f4433659, 0 0 0.2em #ffeb3b4f; */\r\n            font-weight: bold;\r\n        }\r\n      }\r\n     \r\n    }\r\n  } \r\n\r\n  .incident-manage-box.smart-city_box {\r\n        .uxp-widget-title-bar{\r\n            width: 99%;\r\n        }\r\n    }\r\n  \r\n\r\n.uxp-select-dropdown-container{\r\n    background-color: #629284;\r\n    color: #ffffff;\r\n\r\n    .uxp-search-box-container{\r\n        .search-box-container{\r\n            background-color: #629284;\r\n            color: #ffffff;\r\n            .uxp-form-input{\r\n                color: #ffffff;\r\n            }\r\n        }\r\n    }  \r\n\r\n    .uxp-select-dropdown{\r\n        color: #ffffff;\r\n        .data-list-container{ \r\n            .data-list{\r\n                background-color: #629284;  \r\n                color: #ffffff; \r\n            .uxp-select-option-container{ \r\n                &.highlighted{ \r\n                    background-color: rgb(2, 79, 58);   \r\n                    color: #ffffff;\r\n                }\r\n                &.selected{\r\n                     background-color: #216e57;\r\n                   \r\n                }\r\n                }\r\n            }\r\n        }\r\n    } \r\n\r\n}\r\n}\r\n\r\n/**************Serach box********************/\r\n\r\n.searchBox-widget{\r\n    display: inline-block;\r\n    width: 100%;\r\n\r\n    .searchbox-container{\r\n        position: relative; \r\n        align-items: end;\r\n        text-align: right;\r\n\r\n        .searchbox{\r\n            border: 1px solid #033649;\r\n            padding: 9px 5px;\r\n            border-radius: 5px;\r\n            font-size: 1em;\r\n            // width: 100%;\r\n            width: 90%;\r\n            text-align: left;\r\n            outline: none;\r\n            margin-right: 6%;\r\n            &:focus{\r\n                outline: none;\r\n            }\r\n        }\r\n \r\n        .clear-button{\r\n            position: absolute;\r\n            top: 0.6em;\r\n            right: 0.7em;\r\n            font-size: 1.1em;\r\n            font-weight: bold;\r\n            cursor: pointer;\r\n        }\r\n    } \r\n\r\n    ul.search-list{\r\n        padding: 0;\r\n        margin: 1.5em 0 0 1em;\r\n        color: #fff;\r\n        height: 5em;\r\n        overflow: auto;\r\n        text-align: left;\r\n        width: 90%;\r\n\r\n        li{\r\n            list-style: none; \r\n            margin: 0 0 3px 0;\r\n            padding: 6px 5px;\r\n            width: 100%;\r\n            cursor: pointer; \r\n\r\n            &:hover{ \r\n                background: rgba(17, 8, 8, 0.708);\r\n            }\r\n        }\r\n    }\r\n  }\r\n \r\n .uxp-select-dropdown-container{\r\n\r\n            \r\n                background-color: #629284;\r\n                color: #ffffff;\r\n\r\n                .search-box-container{\r\n                    background-color: #629284;\r\n                    color: #ffffff;\r\n\r\n                    &:hover{\r\n                        background-color: #629284;\r\n                        color: #ffffff;\r\n                    }\r\n                }\r\n            \r\n                .data-list-container{ \r\n                    .data-list{\r\n                        background-color: #629284;  \r\n                        color: #ffffff; \r\n                    .uxp-select-option-container{ \r\n                        &.highlighted{ \r\n                            background-color: rgb(2, 79, 58);   \r\n                            color: #ffffff;\r\n                        }\r\n                        &.selected{\r\n                             background-color: #216e57;\r\n                           \r\n                        }\r\n                        }\r\n                    }\r\n                }\r\n\r\n                //  &.highlighted{ \r\n                //     background-color: rgb(2, 79, 58);   \r\n                //     color: #ffffff;\r\n                // }\r\n                // &.selected{\r\n                //      background-color: #216e57;\r\n                   \r\n                // }\r\n       \r\n }\r\n  .uxp-select-dropdown-container .uxp-select-dropdown-footer > .uxp-button{\r\n    display: none;\r\n  }\r\n\r\n\r\n// /* Define styles for the pie chart segments */\r\n// .technician_chart .recharts-pie-sector {\r\n//     transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.5, 1.2), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.5, 1.2), opacity 0.3s cubic-bezier(0.25, 0.8, 0.5, 1.2);\r\n//   }\r\n  \r\n//   /* Scale up and add box shadow to the hovered segment */\r\n//   .technician_chart .recharts-pie-sector:hover {\r\n//     transform: scale(1.05);\r\n//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);\r\n//     opacity: 1;\r\n//   }\r\n  \r\n//   /* Scale down and reduce opacity of non-hovered segments */\r\n//   .technician_chart .recharts-pie-sector:not(:hover) {\r\n//     transform: scale(0.95);\r\n//     opacity: 0.7;\r\n//   }\r\n  \r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"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","sourcesContent":[" \r\n.main-content-block {\r\n    // width: 100%;\r\n    // display: inline-block; \r\n    // background-image: url(/images/Madina_1.jpeg);\r\n    // background-image: url(https://static.iviva.com/images/Udhayimages/Madina_1.jpeg);\r\n    // background-size: 100% 100%;\r\n    // background-position: center center;\r\n    // background-repeat: no-repeat;\r\n    // position: relative;\r\n      z-index: 0;\r\n\r\n    \r\n\r\n    .widget-container-block {\r\n        z-index: 1;\r\n        position: relative;\r\n        min-height: 176vh;\r\n        background: rgb(20 65 49 / 82%);\r\n        // padding-left: 10px;\r\n \r\n    }\r\n//For E3D ref//\r\n//For E3D ref//\r\n.react-grid-layout{\r\n    z-index: 1;\r\n}\r\n.react-grid-layout.player{\r\n    z-index: 1;\r\n    position: relative; \r\n// background-size: 100% 100%;\r\n// background-position: 0px 0px,0px 0px,0px 0px;\r\n// background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%);\r\n \r\n\r\n    padding-top: 0em; \r\n    padding-left: 0em; \r\n\r\n    &::before{  \r\n\r\n        content: \"\";\r\n        left: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 100vh;\r\n        position: absolute;\r\n        z-index: 1;  \r\n\r\n        // background-size: 100% 100%;\r\n        // background-position: 0px 0px,0px 0px,0px 0px;\r\n        // background-image: linear-gradient(90deg, #0000 76%, #006056C9 95%),linear-gradient(270deg, #0000 76%, #006056C9 95%),linear-gradient(0deg, #0000 88%, #0060567D 95%);\r\n\r\n        background-size: 100% 100%;\r\n        background-position: 0px 0px,0px 0px,0px 0px;\r\n       // background-image: linear-gradient(90deg, #0000 76%, #006056AD 89%, #006056C9 96%),linear-gradient(270deg, #0000 76%, #006056AD 89%, #006056C9 96%),linear-gradient(0deg, #0000 88%, #0060567D 95%);\r\n       \r\n        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 70%, rgb(8 55 50 / 91%) 85%, rgb(0 61 54 / 92%) 96%), linear-gradient(270deg, rgba(0, 0, 0, 0) 70%, rgb(8 55 50 / 91%) 85%, rgb(0 61 54 / 92%) 96%), linear-gradient(0deg, rgba(0, 0, 0, 0) 88%, rgba(0, 96, 86, 0.4901960784) 95%);\r\n\r\n        pointer-events: none;\r\n\r\n    } \r\n\r\n    &::after{   \r\n        content: \"\";\r\n        right: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 100vh;\r\n        position: absolute;\r\n        z-index: 1; \r\n        background-size: 100% 100%;\r\n        background-position: 0px 0px,0px 0px,0px 0px;\r\n       // background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%);\r\n        pointer-events: none;\r\n\r\n    } \r\n}\r\n}\r\n\r\n    .smart-city_box{ \r\n        background: rgb(0 0 0 / 0%); \r\n        box-shadow: none;\r\n        border-radius: 10px;\r\n        z-index: 1;\r\n\r\n        &.lft-widget-box{\r\n            margin-left: 1em;\r\n        }\r\n\r\n        \r\n        \r\n         .uxp-widget-title-bar{ \r\n            background: transparent;\r\n            color: #1f9b7f;\r\n            border-bottom: 1px solid #dedede;\r\n            margin-bottom: 1em;\r\n            padding: 0;\r\n            outline: none;\r\n            min-height: 38px;\r\n            width: 95%;\r\n            position: relative;\r\n\r\n            .title-section { \r\n                font-size: 1em;\r\n                padding-left: 2.5em;\r\n            }\r\n\r\n            &::before{\r\n                content: \"\";\r\n                position: absolute;\r\n                background-color: #dededea1;\r\n                width: 6%;\r\n                height: 3px;\r\n                bottom: -4px;\r\n                left: 0;\r\n                border-radius: 0px 0px 30px 30px;\r\n            }\r\n\r\n            &::after{\r\n                content: \"\";\r\n                position: absolute;\r\n                background-color: #dededea1;\r\n                width: 6px;\r\n                height: 6px;\r\n                bottom: -3px;\r\n                right: -6px;\r\n                border-radius: 50%;\r\n            }\r\n\r\n                .txt{\r\n                    // color: #1f9b7f;  \r\n                    color: #0fd6a9;\r\n                    font-weight: 600;\r\n                     font-size: 1.1em;\r\n                    // font-size: .9vw;\r\n                }\r\n        }\r\n\r\n        .sub_title_bar{ \r\n            margin-bottom: 0.8em;\r\n            padding: 0;\r\n            min-height: 15px;\r\n            width: 80%;\r\n             font-size: 0.95em; \r\n            color: #fff;\r\n            font-weight: 500;\r\n            outline: none;\r\n\r\n            &.district-waste{\r\n                background-image: url(\"https://static.iviva.com/images/Udhayimages/garbage1.png\");\r\n                background-position: left top;\r\n                background-repeat: no-repeat;\r\n                background-size: contain;\r\n                width: 100%;\r\n                padding-left: 20px;\r\n            }\r\n        }\r\n\r\n        .smart-city-content {\r\n           display: inline-block; \r\n            width: 95%;\r\n            margin-top: 1em;   \r\n           \r\n            &::-webkit-scrollbar {\r\n                width: 5px!important;\r\n            }\r\n        \r\n            /* Track */\r\n            &::-webkit-scrollbar-track {\r\n                background: #aafbe8!important; \r\n            }\r\n        \r\n            /* Handle */\r\n            &::-webkit-scrollbar-thumb {\r\n                \r\n                background: #08ac87!important; \r\n            }\r\n        \r\n            /* Handle on hover */\r\n            &::-webkit-scrollbar-thumb:hover {\r\n                background: #08ac87!important;  \r\n            }\r\n\r\n            .technician_chart{ \r\n               \r\n\r\n            }\r\n        } \r\n\r\n    &.order_trend-box{\r\n        .smart-city-content{\r\n\r\n            display: block;\r\n            margin-top: 1em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n            \r\n            .technician_chart{ \r\n                .recharts-text{\r\n                    fill:#ededed;\r\n                }\r\n            } \r\n        }\r\n    }\r\n\r\n    &.order_summary-box{ \r\n\r\n        .smart-city-content{\r\n            height: 250px; \r\n            overflow: auto;\r\n\r\n\r\n            .work_order-content{\r\n                display: inline-block;\r\n                width: 100%;\r\n\r\n                table{\r\n                    width: 100%;\r\n                    tr{\r\n                        border-bottom: 1px solid rgba(0, 0, 0, 0.12);\r\n                        display: table;\r\n                        width: 100%;\r\n                        th{\r\n                            background-color: transparent;\r\n                            color: #1dcb8d;\r\n                            text-align: left;\r\n                            padding: 10px 0px;\r\n                            font-size: 10px;\r\n                        }\r\n                        td{\r\n                            background-color: transparent;\r\n                            color: #ffffff;\r\n                            padding: 8px 0;\r\n                            font-size: 0.88em;\r\n                            text-align: left;\r\n                            align-items: start;\r\n\r\n\r\n                            a{\r\n\r\n                               &.cwo_key{\r\n                                    background-image: url(\"https://static.iviva.com/images/Udhayimages/new-tab.png\");\r\n                                    background-position: center;\r\n                                    background-repeat: no-repeat;\r\n                                    background-size: auto 100%;\r\n                                    width: 12px;\r\n                                    height: 12px;\r\n                                    display: inline-block;\r\n                                }\r\n                                color: #ffffff;\r\n                                text-decoration: none;\r\n                                cursor: pointer;\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n\r\n            .data-list-container{\r\n                background-color: transparent;\r\n\r\n                .data-list{\r\n                    background-color: transparent;\r\n                    overflow: hidden;\r\n\r\n                    .data-table{\r\n                        background-color: transparent;\r\n                        tr {\r\n                            background-color: transparent;\r\n\r\n                            th{ \r\n                                background-color: transparent;\r\n                                color: #1dcb8d;\r\n                                text-align: left;\r\n                                padding: 10px 3px;\r\n                                font-size: 10px;\r\n                            }\r\n                            td{\r\n                                .item-card{\r\n                                    background-color: transparent;\r\n                                    color: #ffffff;\r\n                                    min-height: 30px; \r\n\r\n                                   \r\n\r\n                                    .content{\r\n                                        padding: 0;\r\n                                        .sub-title{\r\n                                            font-size: 10px;\r\n                                        }\r\n                                    }\r\n\r\n                                        &::after{\r\n                                            content: \"\";\r\n                                            width: 18px;\r\n                                            height: 18px;\r\n                                            position: absolute;\r\n                                            top: 5px;\r\n                                            background-size: 100% auto;\r\n                                            background-repeat: no-repeat;\r\n                                            left: 0%;\r\n                                        } \r\n\r\n                                        &.attention{ \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');\r\n                                                } \r\n                                        }\r\n                                        &.pending{ \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');\r\n                                                } \r\n                                        }\r\n                                        &.resloved{\r\n                                            \r\n                                                &::after{\r\n                                                    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');\r\n                                                } \r\n                                        } \r\n\r\n                                        &.Green{\r\n                                            .content{\r\n                                                .sub-title{\r\n                                                    background-color: #00b36c; \r\n                                                    padding: 5px 5px;\r\n                                                    border-radius: 1px;\r\n                                                    width: 44px;\r\n                                                    text-align: center;\r\n                                                }\r\n                                            }\r\n                                        }\r\n                                        &.Red{\r\n                                            .content{\r\n                                                .sub-title{\r\n                                                    background-color: #cb0000; \r\n                                                    padding: 5px 5px;\r\n                                                    border-radius: 1px;\r\n                                                    width: 44px;\r\n                                                    text-align: center;\r\n                                                }\r\n                                            }\r\n                                        }\r\n                                }\r\n                            } \r\n                        }\r\n                    }\r\n                }\r\n\r\n                .data-list-footer{\r\n                    background-color: transparent;\r\n\r\n                    .go-up-btn-container{\r\n                        background-color: rgb(5 81 54 / 34%);\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n \r\n    &.cctv-box{ \r\n\r\n        .body{\r\n            height: 250px;  \r\n            width: 100%;\r\n            display: inline-block;\r\n            background-image: url(https://static.iviva.com/images/Udhayimages/waste-footage.jpg);\r\n            // background-size: 100% 100%;\r\n            background-size: auto 100%;\r\n            background-position: center center;\r\n            background-repeat: no-repeat;\r\n        }\r\n    }\r\n\r\n    &.waste-bin-box{ \r\n\r\n        .smart-city-content{ \r\n\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                // padding: 1em 8% 1.3em 8%;\r\n                padding: 0.5em 0% 1em 0%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n\r\n                    h3{\r\n                        font-size: 1.8em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        text-shadow: 0px 0px 1px #000000, 0px 0px 2px #dcdcdc;\r\n\r\n                        span{\r\n                            font-size: 0.5em;\r\n                        }\r\n                    }\r\n                    p{\r\n                        font-size: 0.8em;\r\n                        padding: 0.5em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                        position: relative;\r\n\r\n                        &::after{\r\n                            content: \"\";\r\n                            width: 16px;\r\n                            height: 16px;\r\n                            position: absolute;\r\n                            top: 5px;\r\n                            background-size: 100% auto;\r\n                            background-repeat: no-repeat;\r\n                            right: 16%;\r\n                        }\r\n                    }\r\n\r\n                &.Attention{\r\n                    h3{\r\n                       color: rgb(211, 1, 1);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAyFJREFUWIW1lzlMVFEUhr9zRwERcUk0JKIOBLDA4BYRKxkTFwa1MDFqQ6KJhZUVog0maiJY2bk0Vu6JhQtiXEAT49JoNBQqgRFRcIkLgjLgm2PxhmWc0blvhL95887c//z/u+fe8+4TLKEFFdlEtBLVVcBCwA9Mi/79FQgBT1G9Q3rGNXlx+btNXkkqnB8sIuLUIGwFMi39/gA9i2i9tN18lZIBzd08iYk9B4HdwARL4T8xCHoUHaiVUHO/tQHNX12ImkvAghSF/8z4kIhsktc3upIa0HkVizGRG8DMsREfRidIpbQ3PvurgeiT3x8H8RET6lsmoYbuoYAZFveXZ6Dm4jiKA+QizlXN3TxpKDCyuCT9EO72ssOGlbAh4P6+0gRX7toyl5LWsxfYD9ESaH6wCHVasF3tKxbC6frY2LZqePTc1kQv6iuUUEO3W4KIU2MtDrC8JD5WZj95QBY4tQBGCyqyo03GHqqehieEUKXzN04xRLQS+w7noj8cH/uZsM/8C5MJ9wdNtLd7w89EBhLEkkHMKoOXlT/WBoiUGCDPM68/wXQnKktSSL4Bsj3zxmwGmGqSj7E14HkRAm4r7vHMetMdH+uIe9HZ4JsB2j3TOrrgxEW3H6jC8fPQ+T4FfW0TzVt7EtiZAhtmzXCvHz6nREf0hEH1TkrkwrmwZwdUb4eCuakZUHNbtLg8ix/p3cBka2JmBjSdgpnT3fsPnyGw3etO6CMznGOkpbkX9JwXJv7ZI+LgliIv11MK4Iy0NPe621C0Hhi0pobewqcvI/cfv7gxewzgOHUw6kimeWuOgFRbp5jvh11b3F1w7AK8DNnLq9RJqHFfrAF/eQaS1gRSZp8pJTzAZwLSej0cY8A1EcxBnMfAnHESf8fgxFLpvDpcr5hW7J5WZT3QOQ7ibxDfutHicQYApL3xGT6zBLg3huIPUF+ptDXEHRoTvoyk9fpHfGYNwgGg7z+EB1A9jM8ERn8LxGgly6D+YA44tQhV2DerPpDTOL/qpeNW278GJjUwbKS4PIu+tEoMAVQW4R5kRn+etyM8QWkiM9zgNrjk+A3NlgyisFCRCAAAAABJRU5ErkJggg==');\r\n                        }\r\n                    }\r\n                }\r\n                &.Pending{\r\n                    h3{\r\n                        color: rgb(218, 218, 1);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAn1JREFUWIXFl01rE1EUhp9zm5hkY+3ClVoQo1U3ahVUmjYUdSVY1N/hQhQX6tZP/ADxf0S7LaU0iR+IKK5UGoVaXbWkVqGTMWaOi06Sacw0mWaavru598x9Xu6dOfMObLIkSLEqQj46iJoRlD0gfe5MEeEL4uRIld+JoKEa0Hyin4pzBTgP7GpRPgdkwDyQtDXXkQGdoJdo7AbCJSDejlmPSghPsO3bcoalwAZ0KpbEMA4cCAhu1AyOnpPRP5+aTZqm8Gw8jZE3IcAB9mLMS52OjzSb/G8HNB8boCKvQPtCgHtRi6DHJW3PeEdX7YBO0EuF8fDh4K45rq/Z6muALbGbwL7w4TXtx45f9w7UjkAnEzuIODNAYgMNAJToMQOSsr6BdwcizrUuwAHiVJzL1QsDbodbaTLd0gWX6e7AdPQYrTtcmOonFz1SN2DMUBfhK3JMCiACgJL0LYxuh94hkJ5gAK3A0gsoz/tVJOsG0G2+XfnwJCTW+WYuf4a3h/wc9oFPK15d1/aXtdnNLSvcHZCfvhUfTndwBPk1CmSxbkAo+Jotz8PCs2Dw9lSA6hGIk9sIwppSJwvuk6eKkI3N0q1eIMwybO8WQQ2Am+EyXYEDKJlqbqy/BX/NfWC5C3gLzKPqRc2AnLJ+IDzdcLzIY29YbcgD9i2gaXYLSR8xpbvegVUG5AS/MHIWWAifLYvAmKT47WsAQIZLX0EuVhtFSPAiylhjHoTWsfw5cLBDevBYDiCjdoGYfRLkHmCtA2yhcoce+6gfHNr9NZtK7MQ4V1lJTf1rFguzKBkc81BGre+t1g70cwqg2eggaoaBZC2+qxSBAuLkJF1+H3TNTdU/bjvCYAjMUEYAAAAASUVORK5CYII=');\r\n                        }\r\n                    }\r\n                }\r\n                &.Resloved{\r\n                    h3{\r\n                        color: rgb(19 232 61);\r\n                    } \r\n                    p{\r\n                        &::after{\r\n                            background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9JJREFUWIW9l9tPXFUUh7+1ZzpDoXQgQJsarcIMSW1AiKl9aBsvL2oTY2qbaosCh5DUh6Ze+qTxtfXSxIem6SUkyMAEyhsm9T8wtZa0pCJgUoeiMUGkw8AURoSZs7cP4jBc5saIv6ez9lprfyv7nLPOOkKOavi1odQZc9YjqlIQz9LyjGgzhpN7/kr/TC77SdbQuKsFzEmQZwGVItQ2MKCQ66JMRzbFpC3g+PBxV6G70DIi54CKbIpNUhi4oBQX/ZX+v3IuwBq1ajX0Ad4cwatkgsY43wj42ofW8657lE3BpsMavs0fDiA+kfitd4LWkXW9qxeaHzS/boz0pSouD2kjHAlU+W+kLODtn1v2OpT5DvCwKTJzCjng9/p/XFOANWYVaM0Q/8mxpy0i6NHbay5VX1qApGPWNmc2Hw4gvoiaPZ2wAKwxq0QbghjK8tl6x5YdnNl5muH5EfrCX7NgFlKFTm9xOXztT7SHFYBtTGu+cEFoLW9ht2s3hz2vcnbXh+nCS2OLdiMs3QIxnMgHDvDS9hfZs3VPwp6MTaZPWGLKUpsNkcdrV+4s4/zj5yhQBQBE7Agf//YJUR1Nl2YrRblyLbrq8oEDWBVWAg7QFQpkggM44oZapRVV+cBfKH6e2q01Cfv7udvcid7NKtdhxKeSPqk5q8RRwltlbybsWXuO7qmerPM1xpP10R8qPsix0qM4ZDmlpcKiSBUl7MBUgEf2o6wLAHAaTCRT0Cuel2koOwnAY65dXJm8xv6i/dQX1iVi7kYHuD3XnxMcw4xTaR7oDOdwqPhg4npf0T7e3/keXvfyoxPVUbpCgdzggFGMqkXX4g+AnS7wyh9XmbGXh5u6wmfY5tiWsLunrq/wZym70LgGVc+TPdMGBtJF/h6b4LPxLwjHp9f4Bv8c5ObszVzhINLf5m2L/NMJoTdT/ERsgvPjn/Iw/jCxNq/n6Qh15g4HROteWGpASvEVwlSmpFA8xOfjFxiZH2E8Ns7lyauE4+EN4E3ILe5OSJoHmkats8CXG9htI/qgy+u/CEkt2KOLL4MJ/g/w+x5dfO1fY8VI1vhL49NiO26xaSMZs8Y4DiRPyCs6QOCpwE9GaAT0JsA1SMPq8XxNCwpU+W9g9GtAxg6ZvcycNhzr8nZ8s9qT8sekMdhaIxLvA/HlSb8v2hztrO4cXs+ZsgkHfO1DBdPuvWLMu0CG8WZdhYGPlKIuFRyy/Dm1xqwSrWnGcALhOcCRItRGpF+07nWLu7PN25bxNmZVQLJOjZ7yzKtYvdJUaYwHQCERRI/G7fi97urunL7HfwO7DlznGoWJOQAAAABJRU5ErkJggg==');\r\n                        }\r\n                    }\r\n                }\r\n                }\r\n            } \r\n\r\n            .technician_chart{\r\n                margin-top: 0em;\r\n                // height: 90%;\r\n\r\n                .chart-sec{\r\n                    width: 100%;\r\n                    display: flex;\r\n                    margin-top: 0.85em;\r\n\r\n                    .chart-issue{\r\n                       display: inline-block;\r\n                       width: 75%;\r\n                       text-align: center;\r\n                    }\r\n                    .chart-pending{\r\n                        display: inline-block;\r\n                        width: 25%;\r\n                        text-align: center;\r\n                    }\r\n                    h3{\r\n                        font-size: 1.7em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    p{\r\n                        font-size: .85em;\r\n                        padding: 0;\r\n                        margin: 0.3em 0 0 0;\r\n                        color: #fff;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n    &.waste-collection-vehicle{ \r\n\r\n        .smart-city-content{\r\n             margin-top: 0;\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 2% 3em 2%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n\r\n                    .vahicle-icon{\r\n                        display: inline-block;\r\n                        width: 52px;\r\n                        height: 52px;\r\n                        background-position: center center;\r\n                        background-repeat: no-repeat;\r\n                        background-size: 75% auto;\r\n                        margin-bottom: 0.5em;\r\n                        // background-color: #ffffff9c;\r\n                        border-radius: 10px;\r\n                        filter: drop-shadow(0px 0px 2px #fff);\r\n\r\n                        &.co2-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);\r\n                        }\r\n                        &.fuel-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);\r\n                        }\r\n                        &.s-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/money.png);\r\n                        }\r\n                    }\r\n\r\n                    p{\r\n                        font-size: 0.9em;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 1.8em;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n\r\n                       \r\n                    }\r\n                   span{\r\n                        font-size: 0.75em;\r\n                        color: #fff;\r\n                   }\r\n\r\n                }\r\n            } \r\n \r\n        }\r\n    }\r\n\r\n    &.segregation_metrics-box{\r\n        .recharts-legend-wrapper{\r\n            width: 180px !important;\r\n            // right: -145px !important;\r\n           right : -35px !important;\r\n            top: 20px;\r\n            left: auto !important;\r\n\r\n            ul{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin: 0;\r\n                padding: 0;\r\n                li{\r\n                    padding: 0.7em 0;\r\n                    list-style: none;\r\n\r\n                    .data_values{\r\n                        margin-left: 10px;\r\n                    }\r\n                    em{\r\n                        width: 10px;\r\n                        height: 7px;\r\n                        display: inline-block;\r\n                        margin-right: 5px;\r\n                        vertical-align: top;\r\n                        margin-top: 3px;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        &.waste-segregation_metrics-box{\r\n            .recharts-legend-wrapper{\r\n               right: -145px !important;  \r\n            }\r\n        }\r\n    }\r\n\r\n    &.vehicle_summary-box{\r\n        .smart-city-content{\r\n\r\n            display: block;\r\n            margin-top: 0em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n\r\n\r\n            .technician_chart{ \r\n\r\n                text{color: #fff; fill:#fff!important;} \r\n            }\r\n        }\r\n    }\r\n\r\n    &.energy_consumption-box{ \r\n       \r\n        .smart-city-content{\r\n                display: block;\r\n                margin-top: 0em;\r\n                flex: 1;\r\n                width: 100%;\r\n                height: 100%;\r\n\r\n\r\n            .technician_chart{ \r\n                margin-top: 0em; \r\n                height: 90%;\r\n\r\n                .recharts-responsive-container{ \r\n                    height: 90%!important;\r\n                }\r\n                .recharts-wrapper{\r\n                    fill: transparent; \r\n                    font-size: .88em;\r\n                }\r\n                .recharts-layer, .recharts-cartesian-axis-line{\r\n                    text{ fill:#fff!important;} \r\n                }\r\n                .recharts-cartesian-axis-ticks, .recharts-legend-item-text{\r\n                    fill:#fff!important;\r\n                    color: #fff;\r\n                }\r\n\r\n                .chart-top{\r\n                    margin-top: 0.5em;\r\n                    .sub_title_bar{\r\n                        &.hrs{\r\n                            display: flex;\r\n                            width: auto;\r\n                            margin-right: 2em;\r\n                            justify-content: end;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        &.expenditure-box{\r\n             .uxp-widget-title-bar{\r\n                width: 98%;\r\n            }\r\n        }\r\n    }\r\n\r\n    &.water_summary-box{ \r\n\r\n        .smart-city-content{\r\n             \r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 0% 0em 0%;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 33%;\r\n                    text-align: center;\r\n                    // background-color: rgba(0, 97, 67, 0.61);\r\n                    background-color: rgba(13, 80, 60, 0.77);\r\n                    border-radius: 10px;\r\n                    margin-right: 3%;\r\n                    padding-bottom: 1em;\r\n\r\n                    .vehicle-icon{\r\n                        display: inline-block;\r\n                        width: 60px;\r\n                        height: 60px;\r\n                        background-position: center center;\r\n                        background-repeat: no-repeat;\r\n                        background-size: 75% auto;\r\n                        margin-bottom: 0.5em;\r\n                        margin-top: 0.8em;\r\n\r\n                        &.co2-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-consumption.png);\r\n                        }\r\n                        &.fuel-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-polution.png);\r\n                        }\r\n                        &.s-consumption-icon{\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/water-troubles.png);\r\n                        }\r\n                    }\r\n\r\n                    p{\r\n                        font-size: 0.85em;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 2.2em;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n\r\n                        span{\r\n                            font-size: 0.3em; \r\n                        }\r\n                    }\r\n                   span{\r\n                        font-size: 0.85em;\r\n                        padding-bottom: 1em;\r\n                       \r\n                        &.red{\r\n                            color: #ff0000;\r\n                        }\r\n                        &.green{\r\n                            color: #00e51a;\r\n                        }\r\n                   }\r\n                    &:last-child{\r\n                        margin-right: 0;\r\n                    }\r\n                }\r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.water_consumption-box{\r\n        .smart-city-content{\r\n            display: block;\r\n            margin-top: 1em;\r\n            flex: 1;\r\n            width: 100%;\r\n            height: 100%;\r\n\r\n            .status-content{\r\n                display: flex;\r\n                width: 100%;\r\n                padding: 0.5em 0% 0em 0%;\r\n                color: #ffffff;\r\n                height: 90%;\r\n\r\n                .recharts-surface{\r\n                    fill: #ffffff;\r\n                    color: #ffffff;\r\n                    .recharts-layer{\r\n                        fill: #ffffff;\r\n                        color: #ffffff;\r\n                    } \r\n                } \r\n                 \r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.iaq-box{ \r\n\r\n        .smart-city-content{\r\n             \r\n            .status-content{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin: 0;\r\n                padding: 0;\r\n\r\n                .status{\r\n                    display: inline-block;\r\n                    width: 30%;\r\n                    text-align: center; \r\n                    border-radius: 2px;\r\n                    padding: 2em;\r\n                    margin: 1em 0em 0em 1em;\r\n                    background-color: rgb(13 80 60 / 77%);\r\n\r\n                   \r\n\r\n                    p{\r\n                        font-size: 1em;\r\n                        // font-size: .8vw;\r\n                        padding: 0em 0 0 0;\r\n                        margin: 0;\r\n                        color: #fff;\r\n                    }\r\n                    h2{\r\n                        font-size: 2.2em;\r\n                        // font-size: 1.7vw;\r\n                        padding: 0;\r\n                        margin: 0.4em 0 0.2em 0;\r\n                        color: #fff;\r\n                    }\r\n                   span{\r\n                         font-size: 0.85em;\r\n                        // font-size: .7vw;\r\n                        padding-bottom: 1em;\r\n                        color: #fff; \r\n                        font-weight: bold;\r\n                   }\r\n\r\n                   &.NO2, &.CO {\r\n                        p, h2, span{\r\n                            \r\n                            color: rgb(209, 171, 0);\r\n                        } \r\n                   }\r\n                   &.SO2 {\r\n                    p, h2, span{\r\n                        \r\n                        color: rgb(118, 0, 0);\r\n                    } \r\n               }\r\n\r\n                }\r\n\r\n                .air-quality-status-overall{\r\n                    \r\n                    display: inline-block;\r\n                    width: 100%;\r\n                    text-align: center;\r\n\r\n                    .air-quality-status-box{\r\n                        display: inherit;\r\n                        width: 60%; \r\n                        border-radius: 2px;\r\n                        padding: 2em;\r\n                        margin: 0em 1em 1em 1em;\r\n                        text-align: center;\r\n                        text-transform: uppercase;\r\n                        align-items: center; \r\n                        background-color: rgb(13 80 60 / 77%);\r\n    \r\n                        p{\r\n                            font-size: 1em;\r\n                            padding: 0em 0 0 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                        }\r\n                        h5{\r\n                            font-size: 2.3em;\r\n                            padding: 0;\r\n                            margin: 0.4em 0 0.2em 0;\r\n                            color: #fff;\r\n                        }\r\n                    }\r\n\r\n                        .air-progress-bars{\r\n                            display: flex;\r\n                            width: 60%;\r\n                            margin-left: 20%;\r\n                            margin-top: 2em;\r\n                      \r\n\r\n                            .semi-circle-progress-bar {\r\n                                width: 50%;\r\n                                height: 130px;\r\n                                position: relative;\r\n                                display: flex;\r\n                                align-items: center;\r\n                                justify-content: center;\r\n                                flex-direction: column;\r\n\r\n                                svg {\r\n                                    transform: rotate(-90deg);\r\n                                    width: 100%;\r\n                                    height: 100%;\r\n                                }\r\n                                \r\n                                circle {\r\n                                    fill: transparent;\r\n                                    stroke-width: 8;\r\n                                    stroke: #fff;\r\n                                }\r\n                                \r\n                                .progress-bar {\r\n                                    fill: transparent;\r\n                                    stroke-width: 10px;\r\n                                    stroke: rgb(0 97 67);\r\n                                    stroke-dasharray: 64;\r\n                                    stroke-dashoffset: 0;\r\n                                    transition: stroke-dashoffset 0.5s ease;\r\n                                }\r\n                                \r\n                                .percentage {\r\n                                    position: absolute;\r\n                                    top: 40%;\r\n                                    left: 50%;\r\n                                    transform: translate(-50%, -50%);\r\n                                    font-size: 18px;\r\n                                    font-weight: bold;\r\n                                    color: #fff;\r\n                                }\r\n                                .value{\r\n                                    font-size: 13px;\r\n                                    font-weight: normal;\r\n                                    color: #fff;\r\n                                    position: absolute;\r\n                                    top: 58%;\r\n                                    left: 50%;\r\n                                    transform: translate(-50%, -50%);\r\n                                }\r\n                            } \r\n\r\n                        }\r\n                } \r\n                \r\n            }\r\n \r\n        }\r\n    }\r\n\r\n    &.compare-iaq{\r\n\r\n        .smart-city-content { \r\n\r\n            .status-content { \r\n\r\n                .loaction-status-content{\r\n                    display: inline-block;\r\n                    width: 46%;\r\n                    text-align: center;\r\n        \r\n                   .status { \r\n\r\n                        display: inline-block;\r\n                        width: 28%;\r\n                        text-align: center; \r\n                        background-color: rgb(13 80 60 / 77%);\r\n                        border-radius: 2px;\r\n                        padding: 0.8em;\r\n                        margin: 0.8em 0.8em 0em 0em;\r\n\r\n                        &.yellow-bg{\r\n                           background-color: rgb(209 171 0);\r\n                        }\r\n                        &.red-bg{\r\n                            background-color: rgb(118 0 0);\r\n                        }\r\n                        \r\n                        p{\r\n                            font-size: 0.88em;\r\n                        }\r\n                        span{\r\n                            font-size: 0.75em;\r\n                        }\r\n\r\n                        &:nth-child(4n), &:nth-child(7n){\r\n                            margin-right: 0em;\r\n                        }\r\n        \r\n                        h2 {\r\n                            font-size: 1.3em;\r\n                            padding: 0;\r\n                            margin: 0.2em 0 0.1em 0;\r\n                            color: #fff;\r\n                        } \r\n                       \r\n                    }\r\n                    &.loaction2-status-content { \r\n                            margin-left:0em; \r\n                    } \r\n\r\n                    .uxp-form-group{\r\n                        .uxp-search-box-container{ \r\n\r\n                            .uxp-input-container{\r\n                                .uxp-form-input{\r\n                                    width: 100%;\r\n                                    min-width: 100%;\r\n                                }\r\n                            } \r\n                        } \r\n                    }\r\n                }\r\n\r\n                .versus{\r\n                    display: inline-block;\r\n                    width: 8%;\r\n                    color: #fff;\r\n                    font-size: 1.2em;\r\n                    text-align: center;\r\n                    vertical-align: top;\r\n                    padding-top: 10em;\r\n                }\r\n            } \r\n\r\n            &.smart-city-content-chart{\r\n                display: block;\r\n                margin-top: 0em;\r\n                flex: 1;\r\n                width: 100%;\r\n                height: 100%;\r\n\r\n                .status-content { \r\n                    display: flex;\r\n                    width: 100%; \r\n                    height: 40%;\r\n                }\r\n            }\r\n        }\r\n      \r\n    }\r\n\r\n    .top_tabs{\r\n        float: right;\r\n        width: auto;\r\n\r\n        .uxp-toggle-filter, .toggle-filter{\r\n                background: transparent;\r\n                float: right;\r\n                margin: 0;\r\n                display: inline-flex;\r\n\r\n            .uxp-toggle-option, button{\r\n\r\n                    background: rgb(3, 7, 9);\r\n                    color: #fff;\r\n                    font-size: 1em;\r\n                    text-transform: uppercase;\r\n                    border-radius: 2px;\r\n                    margin: auto 0px;\r\n                    outline: none;\r\n                    border: none;\r\n                    padding: 8px 20px;\r\n                    cursor: pointer;\r\n\r\n                &.selected, &.active{ \r\n\r\n                    background: #18d6b8;\r\n                    box-shadow: 0px 0px 12px 1px #02eec9;\r\n                }\r\n            }\r\n        } \r\n    }\r\n\r\n    &.cctv-overview-box{\r\n        .uxp-widget-title-bar{\r\n            width: 100%;\r\n        }\r\n\r\n        .uxp-toggle-filter{\r\n            background: transparent;\r\n            .uxp-toggle-option{\r\n\r\n                    background: rgb(3, 7, 9);\r\n                    color: #fff;\r\n                    font-size: 1em;\r\n                    text-transform: uppercase;\r\n                    border-radius: 2px;\r\n                    margin: auto 0px;\r\n\r\n                &.selected{\r\n                    // background: rgb(0 180 151);\r\n                    background: #18d6b8;\r\n                    box-shadow: 0px 0px 12px 1px #02eec9;\r\n                }\r\n            }\r\n        }\r\n\r\n        .smart-city-content{\r\n            width: 100%;\r\n            .status-content{\r\n                .cctv-list{\r\n                    display: inline-block;\r\n                    width: 18%;\r\n                    margin-right: 2%;\r\n                    margin-bottom: 2em;\r\n\r\n                    &:nth-child(5n){\r\n                        margin-right: 0;\r\n                    }\r\n                    select{\r\n                        background: transparent;\r\n                        outline: none;\r\n                        border: none;\r\n                        color: #fff;\r\n                        font-size: 1em;\r\n                        margin: 10px 0px;\r\n                        width: 100%;\r\n                        text-transform: uppercase;\r\n                        option {\r\n                            padding: 8px 12px;\r\n                            cursor: pointer;\r\n                            background-color: rgba(0, 97, 67, 0.61);\r\n\r\n                            &:checked, &:hover {\r\n                                background-color: rgba(0, 97, 67, 0.61);\r\n                                color: #fff;\r\n                            }\r\n                            \r\n                        }\r\n                    }\r\n                    .cctv-pict{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        img{\r\n                            // height: 19.5em;\r\n                            height: 26vh;\r\n                            width: 100%;\r\n                            border: 1px solid #012417;\r\n                        }\r\n                    }\r\n\r\n                    .loction{\r\n                        color: #fff;\r\n                        font-size: 0.8em;\r\n                        margin-top: .7em;\r\n                    }\r\n                    .loction-number{\r\n                        color: #fff;\r\n                        font-size: 0.8em;\r\n                        margin-top: .7em;\r\n                    }\r\n                    .loction-status{\r\n                        color: #fff;\r\n                        padding: 4px 0;\r\n                        width: 60px;\r\n                        text-align: center;\r\n                        margin-top: 0.7em;\r\n                        font-size: 0.85em;\r\n\r\n                        &.Red{\r\n                            background: #cb0000;\r\n                        }\r\n                        &.Green{\r\n                            background: #00b36c;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .chart-top{\r\n        display: flex;\r\n        justify-content: flex-end;\r\n        margin-bottom: 0em;\r\n\r\n        .uxp-toggle-filter{\r\n            background: transparent;\r\n            display: inline-flex;\r\n            padding: 0;\r\n\r\n            width: 158px;\r\n\r\n            .uxp-toggle-option{\r\n                color: #00c397;\r\n                box-shadow: none;\r\n                font-weight: bold;\r\n                font-size: 1em;\r\n                padding: 8px 6px;\r\n                border-radius: 0;\r\n\r\n                &.selected{\r\n                    box-shadow: none;\r\n                    background: transparent;\r\n                    color: #ffffff;\r\n                }\r\n            }\r\n        }\r\n        .showcase-input{\r\n            display: flex;\r\n            width: 100%!important;\r\n            padding: 0;\r\n\r\n            .uxp-search-box-container{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 27%;\r\n                min-width: 27%;\r\n\r\n              \r\n\r\n                .uxp-input-container{ \r\n                    width: 70%;\r\n                    min-width: 70%;\r\n\r\n                    .uxp-form-input{ \r\n                        width: 100%;\r\n                        font-size: 9px;\r\n                        min-width: 140%;\r\n                    }\r\n                }\r\n\r\n                &.active{\r\n                    display: grid;\r\n                    \r\n                        .search-box-container{\r\n                            background-color: transparent;\r\n                            box-shadow: none;\r\n                            border-bottom: 1px solid #fff;\r\n                            border-radius: 0;\r\n                            color: #fff;\r\n\r\n                             .uxp-input-container{\r\n\r\n                                .uxp-form-input{\r\n                                    font-size: 10px;\r\n                                    color: #fff;\r\n                                    padding: 10px 3px;\r\n                                }\r\n\r\n                             } \r\n\r\n                             .uxp-search-box-icons{\r\n                                .uxp-icon-button{\r\n                                    .icon-container{\r\n                                        .icon.close{\r\n                                            filter: brightness(0) invert(1);  \r\n                                            top: 2px;\r\n                                            background-size: 27%;\r\n                                            opacity: 0.8;\r\n                                        }\r\n                                    }\r\n                                }\r\n                             }\r\n                        }\r\n                    } \r\n            }\r\n            .uxp-form-select{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 21%;\r\n                min-width: 21%;\r\n\r\n                .uxp-select-placeholder{\r\n                    font-size: 10px;\r\n                    background-color: transparent;\r\n                    box-shadow: none;\r\n                    color: #fff;\r\n                    border-radius: 0;\r\n                    padding: 14px 3px;\r\n\r\n                    &::before{\r\n                        filter: brightness(0) invert(1);\r\n                    }\r\n                }\r\n            }\r\n            .uxp-date-time-picker-container{\r\n                display: inline-block;\r\n                margin-right: 0.5em;\r\n                width: 23%;\r\n                min-width: 23%;\r\n                padding: 0;\r\n\r\n                .placeholder{\r\n                    .label{\r\n                        padding: 10px 10px;\r\n                    }\r\n                    .value{\r\n                        padding: 10px 0px;\r\n                        min-width: 80px;\r\n                        width: 80%;\r\n                        font-size: 9px;\r\n                    }\r\n                }\r\n            }\r\n\r\n\r\n            .uxp-search-box-container .search-box-container{\r\n                background: transparent;\r\n                box-shadow: none;\r\n            }\r\n        } \r\n\r\n    }\r\n\r\n    .technician_chart{ \r\n        margin-top: 0em; \r\n        .recharts-wrapper{\r\n            fill: transparent; \r\n        }\r\n        .recharts-layer, .recharts-cartesian-axis-line{\r\n            text{ fill:#fff!important;} \r\n        }\r\n        .recharts-cartesian-axis-ticks, .recharts-legend-item-text{\r\n            fill:#fff!important;\r\n            color: #fff;\r\n        }\r\n\r\n        .sub_title_bar{\r\n            width: 90%;\r\n            font-size: 1em;\r\n        }\r\n    }\r\n\r\n    &.empty-box{ \r\n\r\n       .header-content{\r\n            display: inline-flex;\r\n            width: 100%;\r\n            padding: 1em 1em 0em 1em;\r\n            position: relative;\r\n\r\n            .logo{ \r\n                // display: inline-block;\r\n                //  width: 32%; \r\n                // background-image: url(\"https://static.iviva.com/images/Udhayimages/MDA_LOGO.png\"); \r\n                // background-position: center center;\r\n                // background-repeat: no-repeat;\r\n                // background-size: 100% auto;\r\n                // margin-top: 0em;\r\n                // height: 8em;\r\n\r\n                display: inline-block;\r\n                width: 33%;\r\n                // background-image: url(\"https://static.iviva.com/images/Udhayimages/MDA_LOGO.png\");\r\n                background-image: url(\"https://static.iviva.com/images/Udhayimages/MDA_LOGO_white.png\");\r\n                background-position: center center;\r\n                background-repeat: no-repeat;\r\n                background-size: 95% auto;\r\n                margin-top: 0em;\r\n                height: 9em;\r\n            }\r\n            h2{\r\n                display: inline-block;\r\n                width: 65%;\r\n                font-size: 2.5em;\r\n                font-weight: bold;\r\n                color: #ffffff;\r\n                margin-left: 5%;\r\n                padding: 0;\r\n                margin: 1.3em 0 0 0%;\r\n                text-transform: uppercase; \r\n\r\n            }\r\n            h3{\r\n                display: inline-block;\r\n                width: 65%;\r\n                font-size: 2.1em;\r\n                font-weight: bold;\r\n                color: #ffffff;\r\n                margin-left: 5%;\r\n                padding: 0;\r\n                margin: 1.4em 0 0 0%;\r\n                text-transform: uppercase; \r\n\r\n            }\r\n\r\n            &.iviva-header-content{\r\n                .logo{   \r\n                    width: 22%;  \r\n                    background-image: url(\"https://www.iviva.com/wp-content/uploads/2023/06/logo-text-white-1.svg\"); \r\n                }\r\n                h2{   \r\n                    width: 68%;\r\n                    font-size: 2.3em; \r\n                    margin-left: 5%; \r\n                    margin: 1.2em 0 0 1%; \r\n    \r\n                }\r\n            }\r\n       }\r\n       h4{\r\n            display: inline-block;\r\n            width: 100%;\r\n            font-size: 1.2em;\r\n            color: #ffffff;\r\n            margin: 0em 0 0 1em;\r\n            padding: 0;\r\n            text-transform: uppercase;\r\n            margin-top: 1em;\r\n       } \r\n    } \r\n\r\n    &.power-by-box{ \r\n\r\n        .header-content{\r\n             display: inline-flex;\r\n             width: 100%;\r\n             padding: 1em 1em 0em 1em;\r\n\r\n\r\n             .power-by-cont{\r\n                display: flex;\r\n                width: 100%;\r\n                height: 70%;\r\n                p{  \r\n                    width: auto;\r\n                    font-size: 1.5em;\r\n                    font-weight: bold;\r\n                    color: #ffffff;\r\n                    margin-left: 5%;\r\n                    padding: 0;\r\n                    margin: 0;\r\n                    position: relative;\r\n                    height: auto;\r\n                    align-items: end;\r\n                    display: flex;\r\n                    text-transform: uppercase;\r\n\r\n                    sub{\r\n                        font-size: 0.6em;\r\n                    }\r\n                }\r\n                .raseel_logo{ \r\n                    display: inline-block;\r\n                    width: 32%;\r\n                    background-image: url(\"https://static.iviva.com/images/Udhayimages/Raseel/Raseel-Logo.svg\");\r\n                    background-position: center center;\r\n                    background-repeat: no-repeat;\r\n                    background-size: 90% auto;\r\n                    margin-top: 0em;\r\n                    height: 5.5em;\r\n                    margin-left: 1em;\r\n                }\r\n             } \r\n        }  \r\n     }\r\n     \r\n     &.partnership-box{ \r\n\r\n        .header-content{\r\n             display: inline-flex;\r\n             width: 100%;\r\n             padding: 1em 1em 0em 1em; \r\n\r\n             .partnership-cont{\r\n                display: flex;\r\n                width: 100%;\r\n                height: 70%;\r\n                p{  \r\n                    width: auto;\r\n                    font-size: 1.5em;\r\n                    font-weight: bold;\r\n                    color: #ffffff;\r\n                    margin-left: 5%;\r\n                    padding: 0;\r\n                    margin: 0;\r\n                    position: relative;\r\n                    height: auto;\r\n                    align-items: end;\r\n                    display: flex;\r\n\r\n                    sub{\r\n                        font-size: 0.6em;\r\n                    }\r\n                }\r\n                .ssi_logo{ \r\n                    display: inline-block;\r\n                    width: 32%;\r\n                    background-image: url(\"https://static.iviva.com/images/company-logos/ssi-logo.svg\");\r\n                    background-position: center center;\r\n                    background-repeat: no-repeat;\r\n                    background-size: 90% auto;\r\n                    margin-top: 0em;\r\n                    height: 5.5em;\r\n                    margin-left: 1em;\r\n                    filter: brightness(0) invert(1);\r\n                }\r\n             }  \r\n        }  \r\n     }\r\n\r\n    &.top-rht-container-box{\r\n       \r\n        display: inline-block;\r\n\r\n        .header-rht-content{ \r\n            width: 100%;\r\n            margin-top: 2em;\r\n            float: right;\r\n\r\n                .rgt-head-cont{\r\n                    display: inline-block;\r\n                    width: 25%;\r\n                    text-align: center;\r\n                    font-size: 1.1em;\r\n                    color: #fff;\r\n                    border-left: 2px solid #fff;\r\n                    position: relative;\r\n\r\n                    &.head-timer{\r\n                        border-left: 0px solid transparent;\r\n                    }\r\n                     \r\n                    &.head-weather{ \r\n\r\n                        &::before {\r\n                                    background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n                                    content: \"\";\r\n                                    width: 15px;\r\n                                    height: 15px;\r\n                                    display: block;\r\n                                    background-size: 100% auto;\r\n                                    position: absolute;\r\n                                    top: 0px;\r\n                                    left: 8px;\r\n                                    background-repeat: no-repeat;\r\n                                    background-position: center center;\r\n                                }\r\n                    }\r\n                    &.head-location{\r\n                        font-size: 0.9em;\r\n                        padding-top: 3px;\r\n\r\n                        &::before {\r\n                            background-image: url(https://static.iviva.com/images/Udhayimages/pin.png);\r\n                            content: \"\";\r\n                            width: 12px;\r\n                            height: 12px;\r\n                            display: block;\r\n                            background-size: 100% auto;\r\n                            position: absolute;\r\n                            top: 2px;\r\n                            left: 5px;\r\n                            background-repeat: no-repeat;\r\n                            background-position: center center;\r\n                        }\r\n                    }\r\n                }\r\n        }\r\n        .power-by-cont{\r\n            display: inline-block;\r\n            width: 27%;\r\n            vertical-align: bottom;\r\n            padding: 0px 0 0 0;\r\n            margin: 0px 0 0 0;\r\n            position: relative;\r\n            top: 10px;\r\n            text-align: right;\r\n\r\n            p{\r\n                padding: 0;\r\n                margin: 0;\r\n                font-size: 0.75em;\r\n                color: #fff;\r\n                text-align: end;\r\n                position: absolute;\r\n                bottom: 6px;\r\n                right: 75px;\r\n            }\r\n            h1{\r\n                padding: 0;\r\n                margin: 0;\r\n                font-size: 3em;\r\n                color: #fff;\r\n                padding-left: 0;\r\n                padding-right: 0;\r\n\r\n                sub{\r\n                    font-size: 0.3em;\r\n                    bottom: 7px;\r\n                    position: relative;\r\n                }\r\n                 \r\n            }\r\n        }\r\n    }\r\n\r\n}\r\n\r\n.uxp-select-dropdown-container{\r\n    .uxp-select-dropdown{ \r\n      .uxp-select-option {\r\n            padding: 12px 10px 12px 10px;\r\n        }\r\n    }\r\n}\r\n  \r\n  .afterhours_inner_widget {\r\n    display: inline-block;\r\n    width: 100%;\r\n    margin-top: 0px;\r\n    .afterhours_tree {\r\n      display: inline-flex;\r\n      width: 98%; \r\n      height: 100%;\r\n      position: relative;\r\n     \r\n  \r\n      ul {\r\n        margin: 3px 0 0 0;\r\n        padding: 0;\r\n        display: inline-block;\r\n        width: 95%;\r\n        margin-left: 5%;\r\n        column-count: 2;\r\n  \r\n        li {\r\n            display: inline-block;\r\n            padding-left: 10px;\r\n            position: relative;\r\n            width: 100%;\r\n            box-sizing: border-box;\r\n            padding: 1px 0;\r\n           \r\n          &:last-child {\r\n            &::before {\r\n              display: none;\r\n            }\r\n          }\r\n          p {\r\n            font-size: 9px;\r\n            margin: 3px 0;\r\n            position: relative;\r\n            display: inline-block;\r\n            width: 95%;\r\n            color: #fff;\r\n\r\n            &::before {\r\n                content: \"\";\r\n                position: absolute;\r\n                top: 0px;\r\n                left: -20px;\r\n                width: 15px;\r\n                height: 7px;\r\n                text-align: center;\r\n                pointer-events: none;\r\n                border-radius: 2px;\r\n              }\r\n\r\n            span { \r\n                width: 25%;\r\n                font-size: 8px;\r\n                float: right;\r\n            }\r\n          }\r\n\r\n            &:nth-child(n + 1) { p {&::before { background-color: #82d963; }}} \r\n            &:nth-child(n + 2) { p {&::before { background-color: #f5ec00; }}} \r\n            &:nth-child(n + 3) { p {&::before { background-color: #d879e1; }}} \r\n            &:nth-child(n + 4) { p {&::before { background-color: #5ee3f4; }}} \r\n            &:nth-child(n + 5) { p {&::before { background-color: #7cbef6; }}} \r\n            &:nth-child(n + 6) { p {&::before { background-color: #9d7cf6; }}} \r\n            &:nth-child(n + 7) { p {&::before { background-color: #f79598; }}}  \r\n            &:nth-child(n + 8) { p {&::before { background-color: #f6a67c; }}}  \r\n            &:nth-child(n + 9) { p {&::before { background-color: #1057b4; }}} \r\n            &:nth-child(n + 10) { p {&::before { background-color: #0bccb2; }}} \r\n            &:nth-child(n + 11) { p {&::before { background-color: #650bcc; }}}  \r\n            &:nth-child(n + 12) { p {&::before { background-color: #3bcc0b; }}}  \r\n            &:nth-child(n + 13) { p {&::before { background-color: #0bccb2; }}} \r\n            &:nth-child(n + 14) { p {&::before { background-color: #0b42cc; }}} \r\n            &:nth-child(n + 15) { p {&::before { background-color: #cc0b58; }}}  \r\n            &:nth-child(n + 16) { p {&::before { background-color: #e0a3e7; }}}  \r\n            &:nth-child(n + 17) { p {&::before { background-color: #67d7e9; }}} \r\n            &:nth-child(n + 18) { p {&::before { background-color: #bfcc0b; }}} \r\n            &:nth-child(n + 19) { p {&::before { background-color: #0b78cc; }}}  \r\n            &:nth-child(n + 20) { p {&::before { background-color: #cc0b78; }}}  \r\n            &:nth-child(n + 21) { p {&::before { background-color: #f21456; }}} \r\n            &:nth-child(n + 22) { p {&::before { background-color: #650bcc; }}} \r\n            &:nth-child(n + 23) { p {&::before { background-color: #0b78cc; }}}  \r\n            &:nth-child(n + 24) { p {&::before { background-color: #06f51a; }}} \r\n \r\n          }\r\n        }\r\n      }\r\n     \r\n\r\n    .color_value {\r\n      display: inline-block;\r\n      width: 100%; \r\n      ul {\r\n        display: flex;\r\n        margin: 0;\r\n        padding: 0; \r\n        overflow: hidden;\r\n        li {\r\n          display: inline-block;\r\n          height: 3.4vh;\r\n          width: 10vw;\r\n  \r\n          &:nth-child(n + 1) { background-color: #82d963; }\r\n          &:nth-child(n + 2) { background-color: #f5ec00; }\r\n          &:nth-child(n + 3) { background-color: #d879e1; }\r\n          &:nth-child(n + 4) { background-color: #5ee3f4; }\r\n          &:nth-child(n + 5) { background-color: #7cbef6; }\r\n          &:nth-child(n + 6) { background-color: #9d7cf6; }\r\n          &:nth-child(n + 7) { background-color: #f79598; }\r\n          &:nth-child(n + 8) { background-color: #f6a67c; }\r\n          &:nth-child(n + 9) { background-color: #1057b4; }\r\n          &:nth-child(n + 10) { background-color: #0bccb2; }\r\n          &:nth-child(n + 11) { background-color: #650bcc; }\r\n          &:nth-child(n + 12) { background-color: #3bcc0b; }\r\n          &:nth-child(n + 13) { background-color: #0bccb2; }\r\n          &:nth-child(n + 14) { background-color: #0b42cc; }\r\n          &:nth-child(n + 15) { background-color: #cc0b58; }\r\n          &:nth-child(n + 16) { background-color: #e0a3e7; }\r\n          &:nth-child(n + 17) { background-color: #67d7e9; }\r\n          &:nth-child(n + 18) { background-color: #bfcc0b; }\r\n          &:nth-child(n + 19) { background-color: #0b78cc; }\r\n          &:nth-child(n + 20) { background-color: #cc0b78; } \r\n          &:nth-child(n + 21) { background-color: #f21456; }\r\n          &:nth-child(n + 22) { background-color: #650bcc; }\r\n          &:nth-child(n + 23) { background-color: #0b78cc; }\r\n          &:nth-child(n + 24) { background-color: #06f51a; }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  \r\n  .afterhours-arrow {\r\n    display: inline-block;\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n    width: 17px;\r\n    height: 17px;\r\n    background-size: contain;\r\n    background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.445' height='23.445' viewBox='0 0 23.445 23.445'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23424242;opacity:0.333;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M23.445,11.722A11.722,11.722,0,1,1,11.722,0,11.72,11.72,0,0,1,23.445,11.722ZM9.643,6.239v5.483H6.291a.568.568,0,0,0-.4.969l5.431,5.4a.562.562,0,0,0,.8,0l5.431-5.4a.567.567,0,0,0-.4-.969H13.8V6.239a.569.569,0,0,0-.567-.567H10.21A.569.569,0,0,0,9.643,6.239Z' transform='translate(23.445) rotate(90)'/%3E%3C/svg%3E\");\r\n    left: 50%;\r\n    margin-left: -10px;\r\n    cursor: pointer;\r\n    z-index: 11;\r\n    position: relative;\r\n  \r\n    &#topArrowAfterhours {\r\n      transform: rotate(90deg);\r\n      top: -10px;\r\n      margin-bottom: -11px;\r\n    }\r\n    &#downArrowAfterhours {\r\n      transform: rotate(270deg);\r\n    }\r\n  }\r\n    \r\n\r\n\r\n.progress-bar-container {\r\n    width: 100%; \r\n    display: inline-flex;\r\n   // background: linear-gradient(to right,  #005936 1%,#005842 71%,#01af94 100%);  \r\n\r\n    .progress-bar {\r\n        height: 12px; \r\n      //  background: linear-gradient(to right,  #005842 1%,#005842 41%,#01af94 100%);   \r\n\r\n        &.installedLamps{\r\n              background: linear-gradient(to right,  #005842 1%,#005842 41%,#009b79 100%);  \r\n            //background: #005745; \r\n        }\r\n\r\n        &.working-lamps{\r\n            background: linear-gradient(to right,  #005936 1%,#005842 41%,#01af94 100%);   \r\n            // background: #009b79;\r\n        }\r\n      }\r\n  }\r\n   \r\n\r\n.top-nav-tabs{ \r\n\r\n    position: relative;\r\n    top: 6em;\r\n    left: 50%;\r\n    z-index: 5;\r\n    transform: translateX(-50%);\r\n    width: 100%;\r\n\r\n    ul{\r\n        padding: 0;\r\n        margin: 0;\r\n        display: inline-flex;\r\n        width: 100%;\r\n\r\n        li{\r\n            list-style: none;\r\n            width: 17%;\r\n            display: inline-block;\r\n            text-align: center;\r\n\r\n            a{\r\n                cursor: pointer;\r\n                display: inline-block;\r\n                width: 100%;\r\n                padding: 10px 0px;\r\n\r\n            span{ \r\n                \r\n                width: 20px;\r\n                height: 20px;\r\n                display: inline-block;\r\n                background-position: center center;\r\n                background-repeat: no-repeat;\r\n                background-size: contain;\r\n                position: relative;  \r\n            }\r\n            label{\r\n                color: #fff; \r\n                 font-size: 0.8em;\r\n                width: 100%;\r\n                display: inline-block;\r\n                padding: 5px 0 0 0;\r\n                margin: 0;\r\n                text-transform: uppercase;\r\n                font-weight: 600;\r\n                cursor: pointer;\r\n            } \r\n        } \r\n            &.waste{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock.png);\r\n                }\r\n            } \r\n            &.energy{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/energy.png);\r\n                }\r\n            } \r\n            &.streetlight{\r\n                span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/street-light.png); \r\n                }\r\n            }  \r\n            &.cctv{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/security-camera.png);\r\n                }\r\n            } \r\n            &.water{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/waterdrop.png);\r\n                }\r\n            }\r\n            &.pollution{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/factory.png);\r\n                }\r\n            }\r\n            &.fire{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/fire.png);\r\n                }\r\n            }\r\n            &.emission{\r\n                span{\r\n                    background-image: url(https://static.iviva.com/images/Udhayimages/co2.png);\r\n                }\r\n            }\r\n\r\n             &.active{\r\n                label{\r\n                    color: #0fd6a9;\r\n                    text-shadow: 0px 0px 10px #02eec9;\r\n                } \r\n                span{\r\n                    box-shadow:  0px 0px 12px 1px #02eec9;\r\n                }\r\n\r\n\r\n                &.waste{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/trash-sock-active.png);\r\n                    }\r\n                } \r\n                &.energy{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/energy-active.png);\r\n                    }\r\n                } \r\n                &.streetlight{\r\n                    span{\r\n                           background-image: url(https://static.iviva.com/images/Udhayimages/street-light-active.png); \r\n                    }\r\n                }  \r\n                &.cctv{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/security-camera-active.png);\r\n                    }\r\n                } \r\n                &.water{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/drop-active.png);\r\n                    }\r\n                }\r\n                &.pollution{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/factory-active.png);\r\n                    }\r\n                }\r\n                &.fire{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/fire-active.png);\r\n                    }\r\n                } \r\n                &.carbon-emission{\r\n                    span{\r\n                        background-image: url(https://static.iviva.com/images/Udhayimages/co2-active.png);\r\n                    }\r\n                } \r\n                \r\n            }\r\n        }\r\n    }\r\n}\r\n  \r\n  \r\n.weather-list{\r\n    display: inline-block;\r\n    position: relative; \r\n    align-items: end;\r\n    text-align: right;\r\n    right: 5px !important;\r\n\r\n    ul{  \r\n      margin: 0;\r\n      padding: 0;\r\n      display: inline-flex; \r\n      width: auto;\r\n      border-radius: 5px;\r\n\r\n      li{  \r\n\r\n            list-style: none;\r\n            display: inline-block;\r\n            width: 50px;\r\n            height: 38px;\r\n            margin: 3px 3px;\r\n            text-align: center;\r\n\r\n        a{\r\n            cursor: pointer;\r\n            width: 100%;\r\n            display: inline-block;\r\n            height: 100%;\r\n\r\n          img{\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n          }\r\n        } \r\n          \r\n      }\r\n    }\r\n  }\r\n \r\n  \r\n  .slider {   \r\n    width: 2px;\r\n    height: 20vh;\r\n    position: absolute;\r\n    top: 1em;\r\n    right: 0em;\r\n    border-radius: 20px;\r\n    background: linear-gradient(100deg, rgba(0, 0, 0, 0.100) 0%, rgb(255 255 255 / 100%) 35%, rgba(255, 255, 255, 0) 100%);\r\n    transform: rotate(180deg);\r\n    box-shadow: 0px 0px 1px #353535;\r\n\r\n    &::before{\r\n      background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\r\n      content: \"\";\r\n      width: 12px;\r\n      height: 12px;\r\n      display: block;\r\n      background-size: 100% auto;\r\n      position: absolute;\r\n      bottom: -1.8em;\r\n      left: -4px;\r\n      background-repeat: no-repeat;\r\n      background-position: center center;\r\n      transform: rotate(180deg);\r\n    }\r\n    &::after{\r\n      background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n      content: \"\";\r\n      width: 20px;\r\n      height: 20px;\r\n      display: block;\r\n      background-size: 100% auto;\r\n      position: absolute;\r\n      top: -2.5em;\r\n      left: -8px;\r\n      background-repeat: no-repeat;\r\n      background-position: center center;\r\n  }\r\n\r\n    span{\r\n      width: 20px;\r\n      height: 20px;\r\n      display: inline-block;\r\n      background-color: #fff;\r\n      border-radius: 50%;\r\n      cursor: pointer;\r\n      position: absolute;\r\n      left: -9px;\r\n      bottom: 0.7em;\r\n      box-shadow: 0px 0px 3px #ffffff;\r\n      transition: bottom 0.4s ease;\r\n    }\r\n  }\r\n   \r\n  .slider.active {  \r\n    span{\r\n      bottom: 16vh;  \r\n    }\r\n  }\r\n\r\n\r\n  .timer-widget{\r\n    // display: inline-block;\r\n    // width: 100%;\r\n    // position: relative; \r\n\r\n    // width: 100%;\r\n\t// height: 100%;\r\n\t// position: relative;\r\n\t// display: flex;\r\n\t// align-items: center;\r\n\t// justify-content: center;\r\n\t// border: 1px solid red;\r\n\t// padding: 50px 0;\r\n\r\n    width: 100%;\r\n    height: 100%;\r\n    position: relative; \r\n    // border: 1px solid red; \r\n\r\n\r\n    //Sun Controll new design\r\n    // .timer-icons{\r\n    //     display: inline-block;\r\n    //     width: 20px; \r\n    //     ul{\r\n    //         display: inline-block;\r\n    //         margin: 10px 0 0 0;\r\n    //         padding: 0;\r\n    //         height: 100%;\r\n    //         width: 100%;\r\n    //         li{\r\n    //             display: inline-block;\r\n    //             width: 100%;\r\n    //             height: 37px;\r\n    //             img{\r\n    //                 max-width: 80%;\r\n    //                 max-height: 80%;\r\n    //             }\r\n    //         }\r\n    //     }\r\n    // }\r\n\r\n  .timer-slider {\r\n\r\n    // align-items: center;\r\n    // width: 35%;\r\n    // height: 100%;\r\n    // position: relative;\r\n    // display: inline-flex;\r\n\r\n    align-items: center;\r\n    // width: 53%;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    display: inline-flex;\r\n    right: -55px!important;\r\n    \r\n   \r\n\r\n       .timer-range {\r\n            display: inline-block;\r\n             width: 100%;\r\n           // width: auto;\r\n            transform: rotate(90deg);\r\n            background: linear-gradient(100deg, rgba(0, 0, 0, 0.100) 0%, rgb(255 255 255 / 100%) 35%, rgba(255, 255, 255, 0) 100%);\r\n            box-shadow: 0px 0px 1px #353535; \r\n            -webkit-appearance: none;\r\n            appearance: none;\r\n            -moz-appearance: none;\r\n            outline: none; \r\n            height: 2px;\r\n            position: relative;\r\n\r\n            &::before {  \r\n\r\n                background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);\r\n                content: \"\";\r\n                width: 40px;\r\n                height: 40px;\r\n                display: block;\r\n                background-size: 100% auto;\r\n                position: absolute;\r\n                top: -18px;\r\n                left: -50px;\r\n                background-repeat: no-repeat;\r\n                background-position: center center;\r\n                \r\n            }\r\n            &::after {   \r\n                \r\n                background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);\r\n                content: \"\";\r\n                width: 35px;\r\n                height: 35px;\r\n                display: block;\r\n                background-size: 100% auto;\r\n                position: absolute;\r\n                bottom: -20px;\r\n                right: -45px;\r\n                background-repeat: no-repeat;\r\n                background-position: center center;\r\n                transform: rotate(160deg);\r\n            }\r\n\r\n                &::-webkit-slider-thumb {\r\n                    -webkit-appearance:none;\r\n                    -moz-appearance:none;\r\n                    appearance:none;\r\n                    // background:#023d28;\r\n                    background:#fefefe;\r\n                    width:18px;\r\n                    height:18px;\r\n                    border-radius:50%; \r\n                    cursor:pointer;\r\n                    box-shadow: 0px 0px 3px #9f9f9f;\r\n                }  \r\n        }   \r\n\r\n    .timer-slider {\r\n        // position: relative;\r\n        display: none;\r\n      }\r\n      \r\n      .tooltip {\r\n        position: absolute;\r\n        background-color: #023d28;\r\n        color: #fff;\r\n        padding: 0.5rem;\r\n        border-radius: 4px;\r\n        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\r\n        font-size: 0.9rem;\r\n\r\n        &:before {\r\n            content: '';\r\n            position: absolute;\r\n            border-style: solid;\r\n            border-width: 8px 0 8px 8px;\r\n            border-color: transparent transparent transparent #023d28;\r\n            top: calc(50% - 8px);\r\n            right: -8px;\r\n          }\r\n      }  \r\n        \r\n        .timer-range ~ .tooltip:hover p {\r\n            visibility: visible;\r\n            opacity: 1;\r\n          } \r\n    }  \r\n  } \r\n\r\n  .toggle-container {\r\n    display: inline-block;\r\n    // right: 2.1em;\r\n    position: relative;\r\n    align-items: end;\r\n    text-align: right; \r\n        \r\n        .toggle-button { \r\n\r\n            position: relative;\r\n            width: 66px;\r\n            height: 32px;\r\n            border: none;\r\n            background-color: #ccc;\r\n            outline: none;\r\n            cursor: pointer;\r\n            border-radius: 15px;\r\n            padding: 0px;\r\n            margin-top: 0em;\r\n            transform: rotate(90deg);\r\n            margin-right: 0px;\r\n\r\n            .slider-toggle {\r\n                position: absolute;\r\n                width: 27px;\r\n                height: 27px;\r\n                border-radius: 50%;\r\n                background-color: #034d3c;\r\n                transition: transform 0.3s ease;\r\n                top: 2px;\r\n                left: 5px;\r\n\r\n                &.on{\r\n                    transform: translateX(30px);\r\n                }\r\n                \r\n                &.off {\r\n                    transform: translateX(0);\r\n                }\r\n            }\r\n        }\r\n  \r\n    .toggle-label{\r\n        color: #ffffff;\r\n        font-size: 1em;\r\n        text-align: center;\r\n        margin: 15px 0 0 0;\r\n        font-weight: 600;\r\n    } \r\n   \r\n}\r\n\r\n.ed3-map-controls-widget-wrapper{\r\n    width: 15%;\r\n    align-items: end;\r\n    text-align: right;\r\n    // right: calc(-50% + 60px);\r\n    // top: 1.5em; \r\n\r\n    .ed3-map-zoom-controls-container { \r\n        transform: rotate(90deg);\r\n        align-items: end;\r\n        text-align: right;\r\n        padding: 0;\r\n\r\n        .ed3-map-zoom-controls-button { \r\n            border-radius: 0;\r\n            background-color: #d2d2d24a; \r\n            margin: 0;\r\n\r\n            &:nth-child(3){\r\n                transform: rotate(90deg);\r\n            }\r\n        }\r\n    }\r\n}\r\n \r\n.smart-city_box{\r\n    .uxp-form-select{\r\n        display: inline-block;\r\n        margin-right: 0.5em;\r\n        width: 23%;\r\n        min-width: 23%;\r\n\r\n        .uxp-select-placeholder{\r\n            font-size: 10px;\r\n            background-color: transparent;\r\n            box-shadow: none;\r\n            color: #fff;\r\n            border-radius: 0;\r\n            padding: 14px 3px;\r\n\r\n            &::before{\r\n                filter: brightness(0) invert(1);\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n.uxp-date-time-picker-container{\r\n    font-size: 10px;\r\n        background-color: transparent;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        border-radius: 0;\r\n        padding: 14px 3px;\r\n\r\n        .date-time-placeholder-container{\r\n            .placeholder{\r\n                font-size: 10px;\r\n            }\r\n            .icon-container{\r\n                .icon{\r\n                    filter: brightness(0) invert(1); \r\n                }\r\n            }\r\n        }\r\n} \r\n\r\n&.mode-change-box{\r\n    display: block;\r\n\r\n    .showcase-input{\r\n       width : 100% !important;\r\n\r\n       .uxp-form-select{\r\n         width: 100%;\r\n\r\n        .uxp-select-placeholder{ \r\n             font-size: 0.95em; \r\n              padding: 10px 10px; \r\n            background-color: rgb(0 88 66 / 50%);\r\n            border-radius: 4px;\r\n\r\n            .selected{\r\n                font-size: 1em; \r\n            }\r\n        }\r\n       }\r\n    } \r\n} \r\n\r\n&.building_summary-box{\r\n        .building-details{\r\n\r\n            .building-top{\r\n                display: inline-flex;\r\n                width: 100%;\r\n\r\n                .building-pict{\r\n                    // display: inline-block;\r\n                    // width: 30%;\r\n\r\n                    display: inline-block;\r\n                    width: 21em;\r\n                    height: 18em;\r\n                    background-size:cover ;\r\n                    background-repeat: no-repeat;\r\n                    background-position: center center; \r\n                  \r\n\r\n                    img{\r\n                        max-width: 100%;\r\n                        max-height: 100%;\r\n                    }\r\n                }\r\n                .building-header{\r\n                    display: inline-block;\r\n                    width: 70%;\r\n                    vertical-align: top;\r\n\r\n                    .building-title{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        text-align: center;\r\n                        font-size: 2.75em;\r\n                        color: #fff;\r\n                        font-weight: bold;\r\n                    }\r\n                    .building-nav{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                        text-align: center;\r\n                        margin-top: 3em;\r\n                        ul{\r\n                            display: inline-flex;\r\n                            width: 100%;\r\n                            li{\r\n                                display: inline-block;\r\n                                width: 33%;\r\n                                .building-nav-icon{\r\n                                    display: inline-block;\r\n                                    width: 100%;\r\n\r\n                                    img{\r\n                                        max-width:100% ;\r\n                                        max-height:100% ;\r\n                                        box-shadow: 0 0 9px 5px #16c69b;\r\n                                    }\r\n                                }\r\n                                .building-nav-title{\r\n                                    display: inline-block;\r\n                                    width: 100%;\r\n                                    margin-top: 1em;\r\n                                    font-size: 1.05em;\r\n                                    color: #fff;\r\n                                    font-weight: bold;\r\n\r\n                                    a{\r\n                                        color: #fff;\r\n                                        text-decoration: none;\r\n                                    }\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            .building-info-box{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 0em;\r\n                // background: #12967899;\r\n                padding: 0em 1em 0em 1em;\r\n\r\n                ul{\r\n                    margin: 0;\r\n                    padding: 0;\r\n                    li{\r\n                        list-style: none;\r\n                        display: inline-flex;\r\n                        width: 100%;\r\n                        margin: 0.45em 0;\r\n                        \r\n                        &::before{\r\n                            content: \"\";\r\n                            // background-image: url(\"https://static.iviva.com/images/Udhayimages/blk-star.png\");\r\n                            background-repeat: no-repeat;\r\n                            background-position: 0 0;\r\n                            background-size: contain;\r\n                            width: 17px;\r\n                            height: 17px;\r\n                            filter: invert(1);\r\n                        }\r\n\r\n                        label{\r\n                            display: inline-block;\r\n                            padding: 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                            font-size: 1.4em;\r\n                            margin-right: 1em;\r\n                            margin-left: 0.5em;\r\n                            font-weight: bold;\r\n                            width: 45%;\r\n                        }\r\n                       span{\r\n                            display: inline-block;\r\n                            font-size: 1.3em;\r\n                            color: #fff;\r\n\r\n                            width: 55%;\r\n                            text-align: left;\r\n                        }\r\n\r\n                        &.building-code{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/building-code.png\"); \r\n                                \r\n                            }\r\n                        }\r\n                        &.building-name{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/building-name.png\"); \r\n                            }\r\n                        }\r\n                        &.street-number{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/street-number.png\"); \r\n                            }\r\n                        }\r\n                        &.street-name{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/street-name.png\"); \r\n                            }\r\n                        }\r\n                        &.city{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/city.png\"); \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            .building-nearby-box{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 1em;\r\n                background: #12967899;\r\n                padding: 1em;\r\n\r\n                ul{\r\n                    margin: 0;\r\n                    padding: 0;\r\n                    li{\r\n                        list-style: none;\r\n                        display: inline-flex;\r\n                        width: 100%;\r\n                        margin: 0.7em 0;\r\n\r\n                        &::before{\r\n                            content: \"\";\r\n                            // background-image: url(\"https://static.iviva.com/images/Udhayimages/blk-star.png\");\r\n                            background-repeat: no-repeat;\r\n                            background-position: 0 0;\r\n                            background-size: contain;\r\n                            width: 17px;\r\n                            height: 17px;\r\n                            filter: invert(1);\r\n                        }\r\n\r\n                        label{\r\n                            display: inline-block;\r\n                            padding: 0;\r\n                            margin: 0;\r\n                            color: #fff;\r\n                            font-size: 1.6em;\r\n                            margin-right: 1em;\r\n                            margin-left: 0.5em;\r\n                            font-weight: bold;\r\n                        }\r\n                       span{\r\n                            display: inline-block;\r\n                            font-size: 1.4em;\r\n                            color: #fff;\r\n                        }\r\n\r\n\r\n                        &.hospital{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/hospital.png\"); \r\n                            }\r\n                        }\r\n                        &.pharmacy{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/pharmacy.png\"); \r\n                            }\r\n                        }\r\n                        &.police-station{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/police-station.png\"); \r\n                            }\r\n                        }\r\n                        &.mosques{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/mosques.png\"); \r\n                            }\r\n                        }\r\n                        &.restaurants{\r\n                            &::before{ \r\n                                background-image: url(\"https://static.iviva.com/images/Udhayimages/mda-building-images/restaurant.png\"); \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n\r\n            .building-bot{\r\n                display: inline-block;\r\n                width: 100%;\r\n                margin-top: 0em;\r\n\r\n                .g_map-link{\r\n                    width: auto;\r\n                    text-align: center;\r\n                    float: right;\r\n                    background: rgba(18, 150, 120, 0.6);\r\n                    padding: 10px 10px 10px;\r\n                    border-radius: 4px;\r\n                    a{\r\n                        font-size: 1.1em;\r\n                        color: #fff;\r\n                        text-decoration: none;\r\n                    }\r\n                }\r\n            }\r\n            \r\n        }\r\n}\r\n\r\n&.building_layout-box{\r\n    // background-color: #447d6d;\r\n    // box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.12);\r\n    // border-radius: 10px;\r\n\r\n    .smart-city-content{\r\n        display: block;\r\n        margin-top: 0em;\r\n        flex: 1;\r\n        width: 100%;\r\n        height: 100%;\r\n\r\n        .slideshow-container{\r\n            display: flex;\r\n            width: 100%;\r\n            height: 80%;\r\n        }\r\n    }\r\n\r\n    .slideshow-container{\r\n        margin-left: 0em;\r\n        margin-top: 0;\r\n        position: relative;\r\n        background: #fff;\r\n        padding: 10px;\r\n        display: inline-block;\r\n        width: 100%;\r\n        // height: 46vh;\r\n        height: 80%;\r\n\r\n        .myslides1,  .myslides2,  .myslides3,  .myslides4 {\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        img{\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        .slider-btn{\r\n            display: inline;\r\n            position: absolute;\r\n            top: 50%;\r\n            border: 1px solid #11624b;\r\n            padding: 6px 5px;\r\n            font-size: 1.5em;\r\n            color: #11624b;\r\n            background: #07b9878c;\r\n            cursor: pointer;\r\n\r\n            &.slider-btn.prev {\r\n                left: 0;\r\n            }\r\n            &.slider-btn.next {\r\n                right: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    .build-bhk-boxes{\r\n        display: inline-flex;\r\n        width: 80%;\r\n        margin-top: 2em;\r\n        transform: translate(-50%);\r\n        left: 50%;\r\n        position: relative;\r\n\r\n        .bhk-box{\r\n            display: inline-block;\r\n            border: 1px solid #ffffff;\r\n            width: 30%;\r\n            text-align: center;\r\n            padding: 7px 0;\r\n            font-size: 1em;\r\n            color: #ffffff;\r\n\r\n            &.one_bhk{\r\n                \r\n            }\r\n            &.two_bhk{\r\n                margin: 0 5%;\r\n            }\r\n            &.mep{\r\n                 \r\n            }\r\n            \r\n        }\r\n    } \r\n     \r\n}\r\n\r\n\r\n&.building_layout-box{\r\n    // background-color: #447d6d;\r\n    // box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.12);\r\n    // border-radius: 10px;\r\n\r\n    #ViewsMenu{\r\n        display: inline-block;\r\n        width : 100%;\r\n\r\n       \r\n    \r\n    .model-items{\r\n\r\n        // display: inline-flex;\r\n        // width : 100%;\r\n\r\n        display: inline-flex;\r\n        width: 100%;\r\n        display: inline-block;\r\n\r\n        .menu-item {\r\n            position: relative;\r\n            display: inline-block;\r\n            margin: 10px;\r\n            // width: 240px;\r\n            // height: 240px;\r\n            width: 45%;\r\n            height: 17em;\r\n            box-shadow: 5px 5px 5px #00000080;\r\n            border-radius: 5px;\r\n            background-color: white;\r\n            overflow: hidden;\r\n            vertical-align: top;\r\n\r\n            .item-header { \r\n                // height: 110px; \r\n                position: relative;\r\n                // height: 80px;\r\n                height: 100%;;\r\n                width: 97%;\r\n                display: inline-block;\r\n\r\n                .blue-plate {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 3px;\r\n                    height: 100%;\r\n                    // width: 234px;\r\n                    width: 100%;\r\n                    opacity: 0.8;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/searchbg.svg);\r\n                    background-repeat: no-repeat;\r\n                }\r\n\r\n                .header-image {\r\n                    position: absolute;\r\n                    height: 94px;\r\n                    // width: 234px;\r\n                    width: 100%;\r\n                    padding-top: 3px;\r\n                    padding-left: 3px;\r\n                    border: none;\r\n                    display: none;\r\n                }\r\n\r\n                .header-no-image {\r\n                    position: absolute;\r\n                    height: 50px;\r\n                    width: 230px;\r\n                    top: 20px;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/Viewport_single.svg);\r\n                    background-repeat: no-repeat;\r\n                    background-position: center;\r\n                    opacity: 0.3;\r\n                }\r\n\r\n                .blue-overlay {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 3px;\r\n                    height: 100px;\r\n                    width: 234px;\r\n                    opacity: 0.2;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/searchbg.svg);\r\n                    background-repeat: no-repeat;\r\n                    display: none;\r\n                }\r\n                .blue-overlay-mask {\r\n                    position: absolute;\r\n                    left: 3px;\r\n                    top: 79px;\r\n                    height: 35px;\r\n                    width: 234px;\r\n                    background-image: url(https://demo.iviva.cloud/Resources/SmartBim/icons/Mask_bleed.svg);\r\n                    background-repeat: no-repeat;\r\n                    display: none;\r\n                } \r\n\r\n            }\r\n            .item-body{\r\n                display: block;\r\n                position: absolute;\r\n                bottom: 3.5em;\r\n\r\n                .primary-text {\r\n                    color: #0066ff;\r\n                    font-size: 14px;\r\n                    margin: 0px 10px 0 10px;\r\n                    font-weight: bold;\r\n                }\r\n                .secondary-text {\r\n                    color: #424242;\r\n                    font-size: 13px;\r\n                    margin: 5px 10px 0 10px;\r\n                    overflow-wrap: break-word;\r\n                }\r\n            }\r\n          \r\n            .centering-container {\r\n                text-align: center;\r\n                position: absolute;\r\n                width: 100%;\r\n                bottom: 10px;\r\n\r\n                .blue-button.enabled {\r\n                    color: white;\r\n                    background-color: #0066ff;\r\n                    border-color: white;\r\n                    cursor: pointer;\r\n                    a{\r\n                        color: white;\r\n                        text-decoration: none;\r\n                    }\r\n                }\r\n\r\n                .blue-button {\r\n                    color: #0066ff;\r\n                    background-color: white;\r\n                    font-size: 14px;\r\n                    padding: 5px 20px 5px 20px;\r\n                    border: 1px solid #0066ff;\r\n                    border-radius: 13px;\r\n                    display: inline-block;\r\n                }\r\n            }\r\n        }\r\n    }\r\n    }\r\n}\r\n\r\n&.iot_filter-detail-box{\r\n    .iot-filter{\r\n        display: inline-block;\r\n        width: 100%;\r\n\r\n        .iot-filter-top{\r\n            display: inline-block;\r\n            width: 100%;  \r\n\r\n            .uxp-button.done{\r\n                display: none;\r\n            }\r\n\r\n                .select-filter{ \r\n                    width: 25%;\r\n                    .uxp-form-select{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                       \r\n\r\n                    }\r\n                }  \r\n\r\n\r\n        }\r\n\r\n        .iot-filter-content{\r\n            display: inline-block;\r\n            width: 100%;\r\n            ul{\r\n                padding: 0;\r\n                margin: 8px 0 8px 0;\r\n                display: inline-block;\r\n                width: 100%;\r\n                li{\r\n                    display: inline-flex;\r\n                    width: 100%;\r\n                    font-size: 1em;\r\n                    padding: 9px 0;\r\n\r\n                    label{\r\n                        display: inline-block;\r\n                        width: 50%;\r\n                        font-size: 1em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                    }\r\n                    span{\r\n                        display: inline-block;\r\n                        width: 50%;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n&.madinah-facts-box{\r\n\r\n    .madinah-facts-details{\r\n        display: inline-block;\r\n        width: 100%; \r\n      \r\n            ul{\r\n                padding: 0;\r\n                margin: 8px 0 8px 0;\r\n                display: inline-block;\r\n                width: 100%;\r\n                li{\r\n                    display: inline-flex;\r\n                    width: 100%;\r\n                    font-size: 1em;\r\n                    border: 1px solid #fff;\r\n                    border-radius: 10px;\r\n                    margin-bottom: 1em;\r\n                    padding: 1em;\r\n\r\n                    span{\r\n                        display: inline-block;\r\n                        width: 20%;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        color: #ffffff;\r\n                        font-size: 1.2em;\r\n                    }\r\n                    label{\r\n                        display: inline-block;\r\n                        width: 80%;\r\n                        font-size: 1em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                        color: #ffffff;\r\n                        font-size: 1em;\r\n                    }\r\n                }\r\n            }\r\n        \r\n    }\r\n} \r\n\r\n&.pole-detail-box{\r\n    .pole-details{\r\n        display: inline-block;\r\n        width: 100%;\r\n\r\n        .pole-details-top{\r\n            display: inline-block;\r\n            width: 100%; \r\n\r\n            .pole-number{\r\n                display: inline-block;\r\n                width: 75%;\r\n\r\n               label{\r\n                    display: inline-block;\r\n                    width: 70%;\r\n                    margin-right: 5%;\r\n                    background-color: #fff;\r\n                    padding: 10px; \r\n               } \r\n\r\n                span{\r\n                    display: inline-block;\r\n                    width: 25%;\r\n                    background-color: #fff;\r\n                    padding: 10px;\r\n                    margin: 0;\r\n                }\r\n            }\r\n\r\n            .pole-logo{ \r\n                   display: inline-block;\r\n                    width: 20%;\r\n                    background-color: #fff; \r\n                    margin-left: 5%;\r\n                    span{\r\n                        display: inline-block;\r\n                        width: 100%;\r\n                    }  \r\n            }\r\n           \r\n        }\r\n\r\n        .pole-details-content{\r\n            display: inline-block;\r\n            width: 100%;\r\n            ul{\r\n                padding: 0;\r\n                margin: 8px 0 8px 0;\r\n                display: inline-block;\r\n                width: 100%;\r\n                li{\r\n                    display: inline-flex;\r\n                    width: 100%;\r\n                    font-size: 1em;\r\n                    padding: 9px 0;\r\n\r\n                    label{\r\n                        display: inline-block;\r\n                        width: 50%;\r\n                        font-size: 1em;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                    }\r\n                    span{\r\n                        display: inline-block;\r\n                        width: 50%;\r\n                        padding: 0;\r\n                        margin: 0;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n} \r\n&.refresh-btn-box{\r\n   .refresh-btn{\r\n        display: inline-block;\r\n        width: 100%;\r\n        display: inline-block;\r\n        width: 100%;\r\n        background: rgb(6 68 46);\r\n        color: #fff;\r\n        box-shadow: 0px 0px 2px #00000094;\r\n   }\r\n} \r\n\r\n  #streamingVideo { \r\n    top: 0em;\r\n} \r\n\r\n.smplr-wrapper {\r\n    position: relative;\r\n    width: 100%;\r\n    //max-width: calc(16 / 9 * 75vh);\r\n    aspect-ratio: 16 / 9;\r\n    background-color: #ecf1f5;\r\n  }\r\n  \r\n  .smplr-embed {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\n  #powered-by{display: none;}\r\n\r\n  body.loginScreen,  body.thumbnailsScreen{\r\n    display: block!important;\r\n  } \r\n\r\n\r\n/********* CCTV Screen ************/\r\n  \r\n.header8PAXAuto {\r\n    position: absolute;\r\n    top: 0;\r\n    width: 100%;\r\n    height: 60px;\r\n    padding: 8px 15px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    border-bottom: 1px solid #ccc;\r\n  \r\n    .title8PAXAuto {\r\n        width: auto;\r\n        height: auto;\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: center;\r\n        font-size: 12px;\r\n        font-weight: 500; \r\n    \r\n  \r\n        .text8PAXAuto {\r\n            text-transform: uppercase;\r\n            font-weight: bold;\r\n  \r\n            span {\r\n                width: auto;\r\n                height: auto;\r\n                padding: 6px 15px;\r\n                border-radius: 50px;\r\n                margin-left: 80px;\r\n  \r\n                &.high {\r\n                    background-color: #ec4b7b;\r\n                    color: white;\r\n                }\r\n  \r\n                &.low {\r\n                    background-color: #707070;\r\n                    color: white;\r\n                }\r\n            }\r\n        }\r\n    }\r\n  }\r\n  \r\n  .parent8PAXAuto {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: black;\r\n    overflow: auto;\r\n  \r\n    .child8PAXAuto {\r\n      width: 25%;\r\n      height: 49%;\r\n      flex-shrink: 0;\r\n      flex-grow: 0;\r\n      flex-wrap: wrap;\r\n      padding:0;\r\n\r\n      .iframe-resize{\r\n        position: relative;\r\n        z-index: 1; \r\n        width: 100%!important;\r\n        height: 100%!important;\r\n      }\r\n      .overlay8PAXAuto{\r\n        position:absolute;\r\n        top:0;\r\n        left:0;\r\n        z-index:1;\r\n        padding:4px;\r\n        padding-left: 4px;\r\n        font-weight: bolder;\r\n        color: white;\r\n      }\r\n\r\n      .cctv_err_onplayer{\r\n        position: absolute;\r\n        display: inline;\r\n        z-index: 1;\r\n        transform: translate(-50%, -50%);\r\n       // transform: translate(50%, 180%);\r\n        visibility: visible;\r\n        width: 100px;\r\n        height: 52px;\r\n        left: 50%;\r\n        top: 50%;\r\n        z-index: 1;\r\n\r\n        #player_error_icon {\r\n            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;\r\n            transform: translate3d(0, 0, 0);\r\n            backface-visibility: visible;\r\n            perspective: 1000px;\r\n\r\n            font-size: 34px;\r\n            color: rgba(255, 39, 0, 0.86);\r\n            text-align: center;\r\n\r\n            .glyphicon {\r\n                position: relative;\r\n                top: 1px;\r\n                display: inline-block;\r\n                font-family: 'Glyphicons Halflings';\r\n                font-style: normal;\r\n                font-weight: 400;\r\n                line-height: 1;\r\n                -webkit-font-smoothing: antialiased;\r\n                -moz-osx-font-smoothing: grayscale;\r\n\r\n               &:before {\r\n                    content: \"\\e107\";\r\n                }\r\n            }\r\n       \r\n        }\r\n        \r\n        #player_error_text {\r\n            font-size: 10px;\r\n            color: rgb(225, 38, 1);\r\n            text-align: center;\r\n            margin-top: -1px;\r\n            /* text-shadow: 1px 1px 1px #f70606, 0 0 1em #f4433659, 0 0 0.2em #ffeb3b4f; */\r\n            font-weight: bold;\r\n        }\r\n      }\r\n     \r\n    }\r\n  } \r\n\r\n  .incident-manage-box.smart-city_box {\r\n        .uxp-widget-title-bar{\r\n            width: 99%;\r\n        }\r\n    }\r\n  \r\n\r\n.uxp-select-dropdown-container{\r\n    background-color: #629284;\r\n    color: #ffffff;\r\n\r\n    .uxp-search-box-container{\r\n        .search-box-container{\r\n            background-color: #629284;\r\n            color: #ffffff;\r\n            .uxp-form-input{\r\n                color: #ffffff;\r\n            }\r\n        }\r\n    }  \r\n\r\n    .uxp-select-dropdown{\r\n        color: #ffffff;\r\n        .data-list-container{ \r\n            .data-list{\r\n                background-color: #629284;  \r\n                color: #ffffff; \r\n            .uxp-select-option-container{ \r\n                &.highlighted{ \r\n                    background-color: rgb(2, 79, 58);   \r\n                    color: #ffffff;\r\n                }\r\n                &.selected{\r\n                     background-color: #216e57;\r\n                   \r\n                }\r\n                }\r\n            }\r\n        }\r\n    } \r\n\r\n}\r\n}\r\n\r\n/**************Serach box********************/\r\n\r\n.searchBox-widget{\r\n    display: inline-block;\r\n    width: 100%;\r\n\r\n    .searchbox-container{\r\n        position: relative; \r\n        align-items: end;\r\n        text-align: right;\r\n\r\n        background: #fff;\r\n        border: 1px solid #033649;\r\n        border-radius: 5px;\r\n        padding: 1px 0;\r\n\r\n        .searchbox{\r\n            // border: 1px solid #033649;\r\n            // padding: 9px 5px;\r\n            // border-radius: 5px;\r\n            // font-size: 1em;\r\n            // // width: 100%;\r\n            // width: 90%;\r\n            // text-align: left;\r\n            // outline: none;\r\n            // margin-right: 6%;\r\n            padding: 9px 5px;\r\n            border-radius: 5px;\r\n            font-size: 1em;\r\n            width: 91%;\r\n            text-align: left;\r\n            outline: none;\r\n            margin-right: 6%;\r\n            border: 1px solid transparent;\r\n            &:focus{\r\n                outline: none;\r\n            }\r\n        }\r\n \r\n        .clear-button{\r\n            position: absolute;\r\n            top: 0.6em;\r\n            right: 0.7em;\r\n            font-size: 1.1em;\r\n            font-weight: bold;\r\n            cursor: pointer;\r\n        }\r\n    } \r\n\r\n    ul.search-list{\r\n        padding: 0;\r\n        margin: 1.5em 0 0 1em;\r\n        color: #fff;\r\n        height: 5em;\r\n        overflow: auto;\r\n        text-align: left;\r\n        width: 90%;\r\n\r\n        li{\r\n            list-style: none; \r\n            margin: 0 0 3px 0;\r\n            padding: 6px 5px;\r\n            width: 100%;\r\n            cursor: pointer; \r\n\r\n            &:hover{ \r\n                background: rgba(17, 8, 8, 0.708);\r\n            }\r\n        }\r\n    }\r\n  }\r\n \r\n .uxp-select-dropdown-container{\r\n\r\n            \r\n                background-color: #629284;\r\n                color: #ffffff;\r\n\r\n                .search-box-container{\r\n                    background-color: #629284;\r\n                    color: #ffffff;\r\n\r\n                    &:hover{\r\n                        background-color: #629284;\r\n                        color: #ffffff;\r\n                    }\r\n                }\r\n            \r\n                .data-list-container{ \r\n                    .data-list{\r\n                        background-color: #629284;  \r\n                        color: #ffffff; \r\n                    .uxp-select-option-container{ \r\n                        &.highlighted{ \r\n                            background-color: rgb(2, 79, 58);   \r\n                            color: #ffffff;\r\n                        }\r\n                        &.selected{\r\n                             background-color: #216e57;\r\n                           \r\n                        }\r\n                        }\r\n                    }\r\n                }\r\n\r\n                //  &.highlighted{ \r\n                //     background-color: rgb(2, 79, 58);   \r\n                //     color: #ffffff;\r\n                // }\r\n                // &.selected{\r\n                //      background-color: #216e57;\r\n                   \r\n                // }\r\n       \r\n }\r\n  .uxp-select-dropdown-container .uxp-select-dropdown-footer > .uxp-button{\r\n    display: none;\r\n  }\r\n\r\n\r\n// /* Define styles for the pie chart segments */\r\n// .technician_chart .recharts-pie-sector {\r\n//     transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.5, 1.2), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.5, 1.2), opacity 0.3s cubic-bezier(0.25, 0.8, 0.5, 1.2);\r\n//   }\r\n  \r\n//   /* Scale up and add box shadow to the hovered segment */\r\n//   .technician_chart .recharts-pie-sector:hover {\r\n//     transform: scale(1.05);\r\n//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);\r\n//     opacity: 1;\r\n//   }\r\n  \r\n//   /* Scale down and reduce opacity of non-hovered segments */\r\n//   .technician_chart .recharts-pie-sector:not(:hover) {\r\n//     transform: scale(0.95);\r\n//     opacity: 0.7;\r\n//   }\r\n  \r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -15965,6 +16009,8 @@ const SunController = (props) => {
         setCurrentHour(newHour);
         console.log(`Current Time: ${changeFormatTime(newHour)}`);
         (_a = uxpContext.eventHandler) === null || _a === void 0 ? void 0 : _a.call(uxpContext, index_1.EventsEnum.SunPosition, { time: changeFormatTime(currentHour) });
+        // Deselect the input element
+        event.target.blur();
     };
     const handleMouseEnter = () => {
         setShowTooltip(true);
@@ -15986,73 +16032,6 @@ const SunController = (props) => {
                 "Time: ",
                 changeFormatTime(currentHour))))));
 };
-// import React, { useState, ChangeEvent, useEffect } from 'react';
-// import { IContextProvider } from '../uxp';
-// import { EventsEnum } from '../index';
-// interface IMapChangeMode {
-//   uxpContext: IContextProvider;
-// }
-// const SunController: React.FunctionComponent<IMapChangeMode> = (props) => {
-//   const [currentHour, setCurrentHour] = useState(12); // 12 pm in hours
-//   const [showTooltip, setShowTooltip] = useState(false);
-//   const { uxpContext } = props;
-//  useEffect(() => { 
-//     const now = new Date();
-//     // const initialHour = now.getHours();
-//     const initialHour = now.getHours() + now.getMinutes() / 60;
-//     setCurrentHour(initialHour);
-//   }, []); 
-//   const changeFormatTime = (value: number) => { 
-//     const hours = Math.floor(value) % 24; 
-//     //const continuousHours = value % 24;  
-//     const formattedHours = String(hours).padStart(2, '0'); 
-//     const minutes = Math.round((value % 1) * 60); 
-//     const formattedMinutes = String(minutes).padStart(2, '0');  
-//     return `${formattedHours}:${formattedMinutes}`;
-//   };
-//   const handleTimeChange = (event: ChangeEvent<HTMLInputElement>) => {
-//     const newHour = parseFloat(event.target.value);
-//     setCurrentHour(newHour);
-//     console.log(`Current Time: ${changeFormatTime(newHour)}`);
-//     uxpContext.eventHandler?.(EventsEnum.SunPosition, { time: changeFormatTime(currentHour) });
-//   };
-//   const handleMouseEnter = () => {
-//     setShowTooltip(true);
-//   };
-//   const handleMouseLeave = () => {
-//     setShowTooltip(false);
-//   };
-//   const calculateGradientPercentage = () => {
-//     const start = 6;  
-//     const end = 29;  
-//     return ((currentHour - start) / (end - start)) * 100;
-//   };
-//   return (
-//     <div className='timer-widget'>
-//       <div className='timer-slider' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-//         <input 
-//           className='timer-range'
-//           type="range"
-//           min={6}
-//           max={29}
-//           step={0.5}
-//           value={currentHour}
-//           onChange={handleTimeChange}
-//           onClick={() => uxpContext.eventHandler?.(EventsEnum.SunPosition, { time: changeFormatTime(currentHour) })} 
-//           style={{
-//             background: `linear-gradient(to right, rgb(9 230 152) 0%, #023d28 ${calculateGradientPercentage()}%, #fff ${calculateGradientPercentage()}%, #ddd 100%)`
-//           }} 
-//           title={`Selected Time: ${changeFormatTime(currentHour)}`}
-//         />
-//         {showTooltip && (
-//           <p className='tooltip' style={{ top: `calc(${calculateGradientPercentage()}% - 5rem)` }}>
-//             Time: {changeFormatTime(currentHour)}
-//           </p>
-//         )}
-//       </div>
-//     </div>
-//   ); 
-//  }
 exports["default"] = SunController;
 // import React, { useState, ChangeEvent, useEffect } from 'react';
 // import { IContextProvider } from '../uxp';
@@ -17035,13 +17014,13 @@ const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 // import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
 const BuildingSummary = (_a) => {
-    var _b, _c, _d, _e, _f, _g, _h, _j;
+    var _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p;
     var { page, selectedAsset } = _a, props = __rest(_a, ["page", "selectedAsset"]);
     const [building_Summary, setBuilding_Summary] = (0, react_1.useState)(null);
-    const lat = selectedAsset === null || selectedAsset === void 0 ? void 0 : selectedAsset.long;
-    const long = selectedAsset === null || selectedAsset === void 0 ? void 0 : selectedAsset.lat;
-    // const long = 39.6103515625;
-    // const lat = 24.47159767150879;
+    //  const lat = selectedAsset?.long;
+    //  const long = selectedAsset?.lat;
+    const long = 39.6131591796875;
+    const lat = 24.4643611907959;
     console.log('Selected Asset are', selectedAsset);
     console.log('latitude are', lat);
     console.log('Longitude are', long);
@@ -17065,58 +17044,58 @@ const BuildingSummary = (_a) => {
     react_1.default.useEffect(() => {
         getBuildingSummaryData();
     }, [lat, long]);
-    console.log('Image', (_b = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _b === void 0 ? void 0 : _b.buildingImage);
+    console.log('buildingCode Body', (building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) || "N/A");
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box building_summary-box" },
         react_1.default.createElement(components_1.TitleBar, { title: "Building Summary", icon: 'https://static.iviva.com/images/Udhayimages/mda-building-images/layout.png' }),
         react_1.default.createElement("div", { className: "smart-city-content", style: { height: '350px' } },
             react_1.default.createElement("div", { className: 'building-details' },
                 react_1.default.createElement("div", { className: 'building-top' },
                     react_1.default.createElement("div", { className: "building-pict", style: {
-                            backgroundImage: `url(${((_c = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _c === void 0 ? void 0 : _c.buildingImage) || 'https://static.iviva.com/images/Udhayimages/buildings-summary-pict.png'})`,
+                            backgroundImage: `url(${((_b = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _b === void 0 ? void 0 : _b.buildingImage) || 'https://static.iviva.com/images/Udhayimages/buildings-summary-pict.png'})`,
                             // backgroundImage: `url("https://static.iviva.com/images/Udhayimages/buildings-summary-pict.png")`
                         } }),
                     react_1.default.createElement("div", { className: 'building-header' },
-                        react_1.default.createElement("div", { className: 'building-title' }, ((_d = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _d === void 0 ? void 0 : _d.buildingName) || ""),
+                        react_1.default.createElement("div", { className: 'building-title' }, ((_c = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _c === void 0 ? void 0 : _c.buildingName) === "null" ? "N/A" : (_d = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.header) === null || _d === void 0 ? void 0 : _d.buildingName),
                         react_1.default.createElement("div", { className: 'building-nav' },
                             react_1.default.createElement("ul", null,
                                 react_1.default.createElement("li", null,
-                                    react_1.default.createElement("a", { target: "_blank", href: 'http://150.230.244.155/Apps/UXP/dashboards/IM20220324028' },
+                                    react_1.default.createElement("a", { target: "_blank", href: 'https://ccc-demo.raseel.city/Apps/IncidentManagement/dashboard' },
                                         react_1.default.createElement("div", { className: 'building-nav-icon' },
                                             react_1.default.createElement("img", { src: "https://static.iviva.com/images/Udhayimages/incident-icon.png" })),
                                         react_1.default.createElement("div", { className: 'building-nav-title' }, "Report Incident"))),
                                 react_1.default.createElement("li", null,
-                                    react_1.default.createElement("a", { target: "_blank", href: '#' },
+                                    react_1.default.createElement("a", { target: "_blank", href: 'https://ccc-demo.raseel.city/Apps/ivivaFacility/wsp-workorders' },
                                         react_1.default.createElement("div", { className: 'building-nav-icon' },
                                             react_1.default.createElement("img", { src: "https://static.iviva.com/images/Udhayimages/facility-management.png" })),
                                         react_1.default.createElement("div", { className: 'building-nav-title' }, "Facility Issue"))),
                                 react_1.default.createElement("li", null,
-                                    react_1.default.createElement("a", { target: "_blank", href: 'http://150.230.244.155/Apps/UXP/dashboards/IM20220324028' },
+                                    react_1.default.createElement("a", { target: "_blank", href: 'https://ccc-demo.raseel.city/Apps/ContractManagement/dashboard' },
                                         react_1.default.createElement("div", { className: 'building-nav-icon' },
                                             react_1.default.createElement("img", { src: "https://static.iviva.com/images/Udhayimages/agenda.png" })),
-                                        react_1.default.createElement("div", { className: 'building-nav-title' }, "Report Incident"))))))),
+                                        react_1.default.createElement("div", { className: 'building-nav-title' }, "Leasing info"))))))),
                 react_1.default.createElement("div", { className: 'building-info-box' },
                     react_1.default.createElement("ul", null,
                         react_1.default.createElement("li", { className: 'building-code' },
                             react_1.default.createElement("label", null, "Building Code : "),
                             react_1.default.createElement("span", null,
                                 " ",
-                                ((_e = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _e === void 0 ? void 0 : _e.buildingCode) || 'N/A')),
+                                ((_e = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _e === void 0 ? void 0 : _e.buildingCode) === "null" ? "N/A" : (_f = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _f === void 0 ? void 0 : _f.buildingCode)),
                         react_1.default.createElement("li", { className: 'building-name' },
                             react_1.default.createElement("label", null, "Building Name : "),
                             react_1.default.createElement("span", null,
                                 " ",
-                                ((_f = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _f === void 0 ? void 0 : _f.buildingName) || 'N/A')),
+                                ((_g = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _g === void 0 ? void 0 : _g.buildingName) === "null" ? "N/A" : (_h = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _h === void 0 ? void 0 : _h.buildingName)),
                         react_1.default.createElement("li", { className: 'street-number' },
                             react_1.default.createElement("label", null, "Street Number : "),
                             react_1.default.createElement("span", null,
                                 " ",
-                                ((_g = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _g === void 0 ? void 0 : _g.streetNumber) || 'N/A')),
+                                ((_j = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _j === void 0 ? void 0 : _j.streetNumber) === "null" ? "N/A" : (_k = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _k === void 0 ? void 0 : _k.streetNumber)),
                         react_1.default.createElement("li", { className: 'street-name' },
                             react_1.default.createElement("label", null, "Street Name : "),
-                            react_1.default.createElement("span", null, ((_h = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _h === void 0 ? void 0 : _h.streetName) || 'N/A')),
+                            react_1.default.createElement("span", null, ((_l = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _l === void 0 ? void 0 : _l.streetName) === "null" ? "N/A" : (_m = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _m === void 0 ? void 0 : _m.streetName)),
                         react_1.default.createElement("li", { className: 'city' },
                             react_1.default.createElement("label", null, "City : "),
-                            react_1.default.createElement("span", null, ((_j = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _j === void 0 ? void 0 : _j.city) || 'N/A')))),
+                            react_1.default.createElement("span", null, ((_o = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _o === void 0 ? void 0 : _o.city) === "null" ? "N/A" : (_p = building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.body) === null || _p === void 0 ? void 0 : _p.city)))),
                 react_1.default.createElement("div", { className: 'building-bot' },
                     react_1.default.createElement("div", { className: 'g_map-link' },
                         react_1.default.createElement("a", { href: building_Summary === null || building_Summary === void 0 ? void 0 : building_Summary.url, target: "_blank" }, "More : Gmap Link")))))));
@@ -19638,17 +19617,27 @@ const EnergyConsumption = (props) => {
     };
     react_1.default.useEffect(() => {
         fetchData();
-    }, [hierarchy, start, end, filter]);
+    }, [filter]);
     const fetchData = () => __awaiter(void 0, void 0, void 0, function* () {
-        let newStart = start;
-        let newEnd = end;
-        if (filter === 'Month') {
-            newStart = new Date('2024-02-03T00:00:00').toISOString();
-            newEnd = new Date().toISOString();
+        let start, end = new Date().toISOString();
+        if (toggleFilterValue === "day") {
+            let today = new Date();
+            var dayOfWeek = today.getUTCDay();
+            var diff = today.getUTCDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 0);
+            var lastSunday = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), diff - 1)).toISOString();
+            start = `${lastSunday.substring(0, 10)}T18:30:00.000Z`;
+        }
+        if (toggleFilterValue === 'week') {
+            let today = new Date();
+            let firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+            start = firstDayOfMonth.toISOString().substring(0, 10) + "T18:30:00.000Z";
+        }
+        if (toggleFilterValue === "month") {
+            var today = new Date();
+            start = new Date(today.getFullYear(), 0, 1).toISOString();
         }
         try {
-            const res = yield props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncDataNew", { hierarchy, start: newStart, end: newEnd, filter }, { json: true });
-            //console.log("Response From API is", res, typeof res);
+            const res = yield props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncDataNew", { hierarchy, start: start, end: end, filter }, { json: true });
             setEnergyConsumptionData(res);
         }
         catch (e) {
@@ -19726,7 +19715,8 @@ const EnergyConsumption = (props) => {
     };
     const selectedData = filterToDataMap[toggleFilterValue] || transformedData1;
     const transformedChartData = selectedData.map((item) => (Object.assign(Object.assign({}, item), { powerConsumption: item.powerConsumption / 1000, burningHours: item.burningHours / 1000 })));
-    return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box energy_consumption-box" },
+    console.log("Filter is", toggleFilterValue);
+    return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box energy_consumption-box lft-widget-box" },
         react_1.default.createElement(components_1.TitleBar, { icon: 'https://static.iviva.com/images/Udhayimages/energy.png', title: "Streetlight Energy Consumption" }, " "),
         react_1.default.createElement("div", { className: "smart-city-content" },
             react_1.default.createElement("div", { className: "technician_chart" },
@@ -19797,921 +19787,6 @@ const EnergyConsumption = (props) => {
                                 react_1.default.createElement("stop", { offset: "90%", stopColor: "#053122", stopOpacity: 0.9 })))))))));
 };
 exports["default"] = EnergyConsumption;
-// import React, { useState, useEffect } from 'react';
-// import { WidgetWrapper, TitleBar, ToggleFilter } from "uxp/components";
-// import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-// import { IContextProvider } from '../uxp';
-// interface EnergyConsumptionData {
-//   "Power Consumption"?: {
-//     [key: string]: { [key: string]: number }[]
-//   };
-//   "Burning Hours"?: {
-//     [key: string]: { [key: string]: number }[]
-//   };
-// }
-// interface IWidgetProps {
-//   instanceId?: string;
-//   uxpContext?: IContextProvider;
-// } 
-// const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => {
-//     const [energyConsumptionData, setEnergyConsumptionData] = React.useState<EnergyConsumptionData>({});
-//     const [toggleFilterValue, setToggleFilterValue] = useState<"day" | "week" | "month">("day");
-//     const [filter, setFilter] = useState<'Day' | 'Week' | 'Month'>('Day');
-//     const currentDate = new Date();
-//     currentDate.setDate(0);  
-//     const startDate = currentDate.toISOString();  
-//     const endDate = new Date().toISOString(); 
-//     const hierarchy = 'منطقة المدينة';
-//     const start = startDate;
-//     const end = endDate;   
-//     const handleFilterChange = (value: "day" | "week" | "month") => {
-//       console.log("Selected Filter Value:", value);
-//       setToggleFilterValue(value);
-//       if (value === 'day') {
-//         setFilter('Day');
-//       } else if (value === 'week') {
-//         setFilter('Week');
-//       } else if (value === 'month') { 
-//         setFilter('Month'); 
-//       }
-//     };    
-//     const fetchData = async () => {
-//       let newStart = start;
-//       let newEnd = end;
-//       if (filter === 'Month') {
-//           newStart = new Date('2024-02-03T00:00:00').toISOString();
-//           newEnd = new Date().toISOString();
-//       }
-//       try {
-//           const res = await props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncDataNew", { hierarchy, start: newStart, end: newEnd, filter }, { json: true });
-//           //console.log("Response From API is", res, typeof res);
-//           setEnergyConsumptionData(res);
-//       } catch (e) {
-//           console.error("Error fetching data:", e);
-//       }
-//   };
-//     React.useEffect(() => {
-//       fetchData();
-//     }, [hierarchy, start, end, filter]); 
-//  const transformData = (rawData: EnergyConsumptionData, filterType: "day" | "week" | "month") => {
-//     let filteredData: { name: string; powerConsumption: number; burningHours: number }[] = [];
-//     const powerConsumptionData: (any[] | { [key: string]: { [key: string]: number; }[]; }) = rawData["Power Consumption"] || [];
-//     const burningHoursData: (any[] | { [key: string]: { [key: string]: number; }[]; }) = rawData["Burning Hours"] || [];
-//   if (filterType === "day") {   
-//     const daysInWeekFull: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-//     const daysInWeekAbbr: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; 
-//     filteredData = daysInWeekAbbr.map((abbr, index) => {
-//         const fullDayName = daysInWeekFull[index]; 
-//         const currentDate = new Date();  
-//         currentDate.setDate(currentDate.getDate() + index - 1);    
-//         const day = currentDate.getDate();
-//         const month = currentDate.toLocaleString('default', { month: 'short' });
-//         // const year = currentDate.getFullYear(); 
-//         const year = currentDate.toLocaleString('default', { year: '2-digit' });  
-//         const dateString = `${day}/${month}/${year}`; 
-//         const powerEntry = (powerConsumptionData as any[]).find((entry: { day: string; }) => entry.day === fullDayName);
-//         const burningEntry = (burningHoursData as any[]).find((entry: { day: string; }) => entry.day === fullDayName); 
-//         const fullDateString = currentDate.toLocaleDateString(); // Full date string for tooltip
-//         return {
-//              name: abbr,
-//             // name: dateString,
-//             fullDate: fullDateString, 
-//             powerConsumption: powerEntry ? powerEntry.value : 0,
-//             burningHours: burningEntry ? burningEntry.value : 0,
-//         };
-//     }); 
-//     }
-//     else if (filterType === "week") {   
-//         const WeekNamesFull: string[] = ["Week1", "Week2", "Week3", "Week4"];  
-//         filteredData = WeekNamesFull.map(weekName => {  
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { week: string; }) => entry.week === weekName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { week: string; }) => entry.week === weekName); 
-//             const powerValue = powerEntry ? powerEntry.value : 0;
-//             const burningValue = burningEntry ? burningEntry.value : 0;
-//             return {
-//                 name: weekName,
-//                 powerConsumption: powerValue,
-//                 burningHours: burningValue,
-//             };
-//         }); 
-//     } 
-//     else if (filterType === "month") {   
-//         const startDate = new Date('2024-02-01T00:00:00').toISOString(); 
-//         const monthNamesFull: string[] = [ "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
-//         const monthNamesabbr: string[] = [ "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-//             filteredData = monthNamesabbr.map((abbr, index) => {
-//             const fullMonthName = monthNamesFull[index];
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { month: string; }) => entry.month === fullMonthName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { month: string; }) => entry.month === fullMonthName); 
-//             const powerValue = powerEntry ? powerEntry.value : 0;
-//             const burningValue = burningEntry ? burningEntry.value : 0;
-//             return {
-//                 name: abbr,
-//                 powerConsumption: powerValue,
-//                 burningHours: burningValue,
-//             };
-//         }); 
-//     }  
-//     return filteredData;
-// }; 
-//   const transformedData1 = transformData(energyConsumptionData, 'month');
-//   const transformedData2 = transformData(energyConsumptionData, 'week'); // Corrected from 'Week' to 'week'
-//   const transformedData3 = transformData(energyConsumptionData, 'day');
-//   const filterToDataMap: { [key: string]: any[] } = {
-//     month: transformedData1,
-//     week: transformedData2,  
-//     day: transformedData3,
-//   };
-//   const selectedData = filterToDataMap[toggleFilterValue] || transformedData1; 
-//   const transformedChartData = selectedData.map((item) => ({
-//     ...item,
-//     powerConsumption: item.powerConsumption / 1000,  
-//     burningHours: item.burningHours / 1000,  
-//   }));
-//   return (
-//     <WidgetWrapper className="smart-city_box energy_consumption-box">
-//       <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Streetlight Energy Consumption"> </TitleBar>
-//       <div className="smart-city-content">
-//         <div className="technician_chart">
-//           <div className='chart-top'> 
-//             <ToggleFilter
-//               options={[
-//                 { label: "7D", value: "day" },
-//                 { label: "1M", value: "week" },
-//                 { label: "1Y", value: "month" },
-//               ]}
-//               value={toggleFilterValue}
-//               onChange={handleFilterChange}
-//             /> 
-//           </div>
-//           <div className='chart-top' style={{marginTop:"0.5em"}}>
-//             <div className="sub_title_bar">Total mWh</div>  
-//             <div className="sub_title_bar hrs">Hours</div>
-//           </div>
-//           <ResponsiveContainer> 
-//                   <AreaChart
-//                     data={transformedChartData}  
-//                     margin={{
-//                         top: 10,
-//                         right: 0,
-//                         left: 0,
-//                         bottom: 30,
-//                     }}
-//                 > 
-//                     <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
-//                     <XAxis dataKey="name"  />    
-//                     <YAxis yAxisId="left" /> 
-//                     {/* <YAxis yAxisId="left" ticks={[0, 20, 40, 60, 80]} />   */}
-//                     {/* <YAxis  ticks={[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4]} yAxisId="right" orientation="right" tickFormatter={(value) => `${(value)}K`}/>  */}
-//                     <YAxis  yAxisId="right" orientation="right" tickFormatter={(value) => `${(value)}K`}/> 
-//                   <Tooltip
-//                     formatter={(value: any, name: any, props: any) => {
-//                       if (name === "Burning Hours") {
-//                         return [`${value} hours`, name];
-//                       } else {
-//                         return [`${value} mWh`, name];
-//                       }
-//                     }}
-//                     labelFormatter={(label: string) => {
-//                       if (toggleFilterValue === 'day') {
-//                         const dayIndexMap: { [key: string]: number } = {
-//                           "Sun": 0,
-//                           "Mon": 1,
-//                           "Tue": 2,
-//                           "Wed": 3,
-//                           "Thu": 4,
-//                           "Fri": 5,
-//                           "Sat": 6
-//                         };
-//                         const dayIndex = dayIndexMap[label];
-//                         const currentDate = new Date();
-//                         const currentDay = currentDate.getDay();
-//                         const startDate = new Date(currentDate);
-//                         startDate.setDate(startDate.getDate() - currentDay);
-//                         const targetDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - currentDate.getDay() + dayIndex);
-//                         const day = targetDate.getDate();
-//                         const month = targetDate.getMonth() + 1;
-//                         const year = targetDate.getFullYear();
-//                         const formattedDate = `${day}/${month}/${year}`;
-//                         return `Date: ${formattedDate}`;
-//                       } else {
-//                         return `Date: ${label}`;
-//                       }
-//                     }}
-//                   />
-//                     <Legend /> 
-//                     <Area
-//                         type="monotone"
-//                         dataKey="powerConsumption"
-//                         name="Power Consumption (MWh)"
-//                         stackId="1"
-//                         stroke="#001912"
-//                         fill="url(#gradient1)"
-//                         yAxisId="left"
-//                     />
-//                     <Area
-//                         type="monotone"
-//                         dataKey="burningHours"
-//                         name="Burning Hours"
-//                         stackId="1"
-//                         stroke="#79dccc"
-//                         fill="url(#gradient2)"
-//                         yAxisId="left"
-//                     />
-//                     <Area
-//                         type="monotone"
-//                         dataKey="hours"
-//                         stackId="0"
-//                         fill="url(#gradient3)"
-//                         yAxisId="right"
-//                         style={{ display: "none" }}
-//                         legendType="none"
-//                     />
-//                     <defs> 
-//                         <linearGradient id="gradient1" x1="0" y1="0" x2="0" y2="1">
-//                             <stop offset="10%" stopColor="#01a4ef" stopOpacity={0.8} />
-//                             <stop offset="90%" stopColor="#013335" stopOpacity={0.9} />
-//                         </linearGradient>
-//                         <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
-//                             <stop offset="10%" stopColor="#00947b" stopOpacity={0.8} />
-//                             <stop offset="90%" stopColor="#053122" stopOpacity={0.9} />
-//                         </linearGradient> 
-//                     </defs>
-//                 </AreaChart>
-//           </ResponsiveContainer>
-//         </div>
-//       </div>
-//     </WidgetWrapper>
-//   );
-// };
-// export default EnergyConsumption;
-// import React, { useState, useEffect } from 'react';
-// import { WidgetWrapper, TitleBar, ToggleFilter } from "uxp/components";
-// import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-// import { IContextProvider } from '../uxp';
-// interface EnergyConsumptionData {
-//   "Power Consumption"?: {
-//     [key: string]: { [key: string]: number }[]
-//   };
-//   "Burning Hours"?: {
-//     [key: string]: { [key: string]: number }[]
-//   };
-// }
-// interface IWidgetProps {
-//   instanceId?: string;
-//   uxpContext?: IContextProvider;
-// } 
-// const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => {
-//     const [energyConsumptionData, setEnergyConsumptionData] = React.useState<EnergyConsumptionData>({});
-//     const [toggleFilterValue, setToggleFilterValue] = useState<"day" | "week" | "month">("day");
-//     const [filter, setFilter] = useState<'Day' | 'Week' | 'Month'>('Day');
-//     // const currentDate = new Date();
-//     // currentDate.setDate(-1); 
-//     const currentDate = new Date();
-//     currentDate.setDate(0);  
-//     const startDate = currentDate.toISOString();  
-//     const endDate = new Date().toISOString(); 
-//     const hierarchy = 'منطقة المدينة';
-//     const start = startDate;
-//     const end = endDate;   
-//     const handleFilterChange = (value: "day" | "week" | "month") => {
-//       console.log("Selected Filter Value:", value);
-//       setToggleFilterValue(value);
-//       if (value === 'day') {
-//         setFilter('Day');
-//       } else if (value === 'week') {
-//         setFilter('Week');
-//       } else if (value === 'month') { 
-//         setFilter('Month'); 
-//       }
-//     };    
-//     const fetchData = () => { 
-//         let newStart = start;
-//         let newEnd = end;  
-//         //  if (filter === 'Day') {  
-//         //     newStart = new Date(-1).toISOString();  
-//         //     newEnd = new Date().toISOString(); 
-//         //   }   
-//         if (filter === 'Month') {
-//           newStart = new Date('2024-02-03T00:00:00').toISOString(); 
-//           newEnd = new Date().toISOString(); 
-//         }
-//         props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncDataNew", { hierarchy, start: newStart, end: newEnd, filter }, { json: true })
-//           .then((res: any) => {
-//             console.log("Response From API is", res, typeof res);
-//             setEnergyConsumptionData(res);
-//           }).catch((e: any) => {
-//             console.error("Error fetching data:", e);
-//           });
-//       };
-//     React.useEffect(() => {
-//       fetchData();
-//     }, [hierarchy, start, end, filter]); 
-//  const transformData = (rawData: EnergyConsumptionData, filterType: "day" | "week" | "month") => {
-//     let filteredData: { name: string; powerConsumption: number; burningHours: number }[] = [];
-//     const powerConsumptionData: (any[] | { [key: string]: { [key: string]: number; }[]; }) = rawData["Power Consumption"] || [];
-//     const burningHoursData: (any[] | { [key: string]: { [key: string]: number; }[]; }) = rawData["Burning Hours"] || [];
-//   // if (filterType === "day") {   
-//   //       const daysInWeekFull: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-//   //       const daysInWeekAbbr: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-//   //       // filteredData = daysInWeekAbbr.map((abbr, index) => {
-//   //       //     const fullDayName = daysInWeekFull[index];
-//   //       //     const powerEntry = (powerConsumptionData as any[]).find((entry: { day: string; }) => entry.day === fullDayName);
-//   //       //     const burningEntry = (burningHoursData as any[]).find((entry: { day: string; }) => entry.day === fullDayName); 
-//   //       //     return {
-//   //       //         name: abbr, new Date(),
-//   //       //         powerConsumption: powerEntry ? powerEntry.value : 0,
-//   //       //         burningHours: burningEntry ? burningEntry.value : 0,
-//   //       //     };
-//   //       // });
-//   //       filteredData = daysInWeekAbbr.map((abbr, index) => {
-//   //         const fullDayName = daysInWeekFull[index];
-//   //         const currentDate = new Date();  
-//   //         currentDate.setDate(currentDate.getDate() + index - 1);   
-//   //         const dateString = currentDate.toLocaleDateString();  
-//   //         const powerEntry = (powerConsumptionData as any[]).find((entry: { day: string; }) => entry.day === fullDayName);
-//   //         const burningEntry = (burningHoursData as any[]).find((entry: { day: string; }) => entry.day === fullDayName); 
-//   //         return {
-//   //             name: abbr || dateString,
-//   //             powerConsumption: powerEntry ? powerEntry.value : 0,
-//   //             burningHours: burningEntry ? burningEntry.value : 0,
-//   //         };
-//   //     });
-//   if (filterType === "day") {   
-//     const daysInWeekFull: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-//     const daysInWeekAbbr: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-//     filteredData = daysInWeekAbbr.map((abbr, index) => {
-//         const fullDayName = daysInWeekFull[index];
-//         // const currentDate = new Date();  
-//         // currentDate.setDate(currentDate.getDate() + index - 1);   
-//         // const dateString = currentDate.toLocaleDateString();   
-//         const currentDate = new Date();  
-//         currentDate.setDate(currentDate.getDate() + index - 1);    
-//         const day = currentDate.getDate();
-//         const month = currentDate.toLocaleString('default', { month: 'short' });
-//         // const year = currentDate.getFullYear(); 
-//         const year = currentDate.toLocaleString('default', { year: '2-digit' });  
-//         const dateString = `${day}/${month}/${year}`; 
-//         const powerEntry = (powerConsumptionData as any[]).find((entry: { day: string; }) => entry.day === fullDayName);
-//         const burningEntry = (burningHoursData as any[]).find((entry: { day: string; }) => entry.day === fullDayName); 
-//         const fullDateString = currentDate.toLocaleDateString(); // Full date string for tooltip
-//         return {
-//            //  name: abbr,
-//              name: dateString,
-//             fullDate: fullDateString, // Store the full date string separately
-//             powerConsumption: powerEntry ? powerEntry.value : 0,
-//             burningHours: burningEntry ? burningEntry.value : 0,
-//         };
-//     }); 
-//     }
-//     else if (filterType === "week") {   
-//         const WeekNamesFull: string[] = ["Week1", "Week2", "Week3", "Week4"];  
-//         filteredData = WeekNamesFull.map(weekName => {  
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { week: string; }) => entry.week === weekName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { week: string; }) => entry.week === weekName); 
-//             const powerValue = powerEntry ? powerEntry.value : 0;
-//             const burningValue = burningEntry ? burningEntry.value : 0;
-//             return {
-//                 name: weekName,
-//                 powerConsumption: powerValue,
-//                 burningHours: burningValue,
-//             };
-//         }); 
-//     } 
-//     else if (filterType === "month") {   
-//         const startDate = new Date('2024-02-01T00:00:00').toISOString();
-//         const monthNamesFull: string[] = [ "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
-//         const monthNamesabbr: string[] = [ "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-//             filteredData = monthNamesabbr.map((abbr, index) => {
-//             const fullMonthName = monthNamesFull[index];
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { month: string; }) => entry.month === fullMonthName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { month: string; }) => entry.month === fullMonthName); 
-//             const powerValue = powerEntry ? powerEntry.value : 0;
-//             const burningValue = burningEntry ? burningEntry.value : 0;
-//             return {
-//                 name: abbr,
-//                 powerConsumption: powerValue,
-//                 burningHours: burningValue,
-//             };
-//         }); 
-//     }  
-//     return filteredData;
-// }; 
-//   const transformedData1 = transformData(energyConsumptionData, 'month');
-//   const transformedData2 = transformData(energyConsumptionData, 'week'); // Corrected from 'Week' to 'week'
-//   const transformedData3 = transformData(energyConsumptionData, 'day');
-//   const filterToDataMap: { [key: string]: any[] } = {
-//     month: transformedData1,
-//     week: transformedData2,  
-//     day: transformedData3,
-//   };
-//   const selectedData = filterToDataMap[toggleFilterValue] || transformedData1; 
-//   const transformedChartData = selectedData.map((item) => ({
-//     ...item,
-//     powerConsumption: item.powerConsumption / 1000,  
-//     burningHours: item.burningHours / 1000,  
-//   }));
-//   return (
-//     <WidgetWrapper className="smart-city_box energy_consumption-box">
-//       <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Streetlight Energy Consumption"> </TitleBar>
-//       <div className="smart-city-content">
-//         <div className="technician_chart">
-//           <div className='chart-top'> 
-//             <ToggleFilter
-//               options={[
-//                 { label: "7D", value: "day" },
-//                 { label: "1M", value: "week" },
-//                 { label: "1Y", value: "month" },
-//               ]}
-//               value={toggleFilterValue}
-//               onChange={handleFilterChange}
-//             /> 
-//           </div>
-//           <div className='chart-top' style={{marginTop:"0.5em"}}>
-//             <div className="sub_title_bar">Total MWh</div>  
-//             <div className="sub_title_bar hrs">Hours</div>
-//           </div>
-//           <ResponsiveContainer> 
-//                 <AreaChart
-//                 data={transformedChartData}  
-//                 margin={{
-//                     top: 10,
-//                     right: 0,
-//                     left: 0,
-//                     bottom: 30,
-//                 }}
-//                 > 
-//                 <CartesianGrid stroke="#0b3e35cf" strokeDasharray="1 1" />
-//                 <XAxis dataKey="name" /> 
-//                   {/* <YAxis yAxisId="left" tickFormatter={(value) => `${(value / 1000).toFixed(2)} MWh`} />  */}
-//                  <YAxis yAxisId="left" />  
-//                 {/* <YAxis yAxisId="left" ticks={[0,100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000]} /> */}
-//                 <YAxis yAxisId="right" orientation="right" tickFormatter={(value) => `${(value)}K`}/>
-//                 <Tooltip
-//                     formatter={(value: any, name: any, props: any) => [`${value} kWh`, name]}
-//                     labelFormatter={(label: any) => `Day: ${label}`}
-//                 />  
-//                 <Legend />
-//                 <Area
-//                     type="monotone"
-//                     dataKey="powerConsumption"
-//                     name="Power Consumption (MWh)"
-//                     stackId="1"
-//                     stroke="#001912"
-//                     fill="url(#gradient1)"
-//                     yAxisId="left"
-//                 />
-//                 <Area
-//                     type="monotone"
-//                     dataKey="burningHours"
-//                     name="Burning Hours (MWh)"
-//                     stackId="1"
-//                     stroke="#79dccc"
-//                     fill="url(#gradient2)"
-//                     yAxisId="left"
-//                 />
-//                 <Area
-//                     type="monotone"
-//                     dataKey="hours"
-//                     stackId="0"
-//                     fill="url(#gradient3)"
-//                     yAxisId="right"
-//                     style={{ display: "none" }}
-//                     legendType="none"
-//                 />
-//                 <defs> 
-//                     <linearGradient id="gradient1" x1="0" y1="0" x2="0" y2="1">
-//                         <stop offset="10%" stopColor="#01a4ef" stopOpacity={0.8} />
-//                         <stop offset="90%" stopColor="#013335" stopOpacity={0.9} />
-//                     </linearGradient>
-//                     <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
-//                         <stop offset="10%" stopColor="#00947b" stopOpacity={0.8} />
-//                         <stop offset="90%" stopColor="#053122" stopOpacity={0.9} />
-//                     </linearGradient> 
-//                 </defs>
-//                 </AreaChart>
-//           </ResponsiveContainer>
-//         </div>
-//       </div>
-//     </WidgetWrapper>
-//   );
-// };
-// export default EnergyConsumption;
-// import React, { useState, useEffect } from 'react';
-// import { WidgetWrapper, TitleBar, ToggleFilter } from "uxp/components";
-// import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-// import { IContextProvider } from '../uxp';
-// interface EnergyConsumptionData {
-//   "Power Consumption"?: {
-//     [key: string]: { [key: string]: number }[]
-//   };
-//   "Burning Hours"?: {
-//     [key: string]: { [key: string]: number }[]
-//   };
-// }
-// interface IWidgetProps {
-//   instanceId?: string;
-//   uxpContext?: IContextProvider;
-// } 
-// const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => {
-//     const [energyConsumptionData, setEnergyConsumptionData] = React.useState<EnergyConsumptionData>({});
-//     const [toggleFilterValue, setToggleFilterValue] = useState<"day" | "week" | "month">("day");
-//     const [filter, setFilter] = useState<'Day' | 'Week' | 'Month'>('Day');
-//     const currentDate = new Date();
-//     currentDate.setDate(-1); 
-//     const startDate = currentDate.toISOString();  
-//     const endDate = new Date().toISOString(); 
-//     const hierarchy = 'منطقة المدينة';
-//     const start = startDate;
-//     const end = endDate;   
-//     const handleFilterChange = (value: "day" | "week" | "month") => {
-//       console.log("Selected Filter Value:", value);
-//       setToggleFilterValue(value);
-//       if (value === 'day') {
-//         setFilter('Day');
-//       } else if (value === 'week') {
-//         setFilter('Week');
-//       } else if (value === 'month') { 
-//         setFilter('Month'); 
-//       }
-//     };   
-//     // const fetchData = () => { 
-//     //   props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncDataNew", { hierarchy, start, end, filter }, { json: true })
-//     //     .then((res: any) => {
-//     //       console.log("Response From API is", res, typeof res);
-//     //       setEnergyConsumptionData(res);
-//     //     }).catch((e: any) => {
-//     //       console.error("Error fetching data:", e);
-//     //     });
-//     // };
-//     const fetchData = () => { 
-//         let newStart = start;
-//         let newEnd = end;
-//         //  if (filter === 'Day') {
-//         //     newStart = new Date('2024-03-31T00:00:00').toISOString(); 
-//         //     newStart = new Date('2024-03-31T00:00:00').toISOString(); 
-//         //     newEnd = new Date().toISOString(); 
-//         //   }  
-//         //  if (filter === 'Week') {
-//         //    // newStart = new Date('2024-04-01T00:00:00').toISOString(); 
-//         //     newEnd = new Date().toISOString(); 
-//         //     newEnd = new Date('2024-04-09T17:45:00').toISOString(); 
-//         //   }  
-//         if (filter === 'Month') {
-//           newStart = new Date('2024-02-03T00:00:00').toISOString(); 
-//           newEnd = new Date().toISOString(); 
-//         } 
-//         props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncDataNew", { hierarchy, start: newStart, end: newEnd, filter }, { json: true })
-//           .then((res: any) => {
-//             console.log("Response From API is", res, typeof res);
-//             setEnergyConsumptionData(res);
-//           }).catch((e: any) => {
-//             console.error("Error fetching data:", e);
-//           });
-//       };
-//     React.useEffect(() => {
-//       fetchData();
-//     }, [hierarchy, start, end, filter]); 
-//  const transformData = (rawData: EnergyConsumptionData, filterType: "day" | "week" | "month") => {
-//     let filteredData: { name: string; powerConsumption: number; burningHours: number }[] = [];
-//     const powerConsumptionData: (any[] | { [key: string]: { [key: string]: number; }[]; }) = rawData["Power Consumption"] || [];
-//     const burningHoursData: (any[] | { [key: string]: { [key: string]: number; }[]; }) = rawData["Burning Hours"] || [];
-//     if (filterType === "day") {    
-//         const daysInWeekFull: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-//         const daysInWeekAbbr: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-//         filteredData = daysInWeekAbbr.map((abbr, index) => {
-//             const fullDayName = daysInWeekFull[index];
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { day: string; }) => entry.day === fullDayName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { day: string; }) => entry.day === fullDayName); 
-//             return {
-//                 name: abbr,
-//                 powerConsumption: powerEntry ? powerEntry.value : 0,
-//                 burningHours: burningEntry ? burningEntry.value : 0,
-//             };
-//         });
-//     }
-//     else if (filterType === "week") {  
-//         const WeekNamesFull: string[] = ["Week1", "Week2", "Week3", "Week4"];  
-//         filteredData = WeekNamesFull.map(weekName => {  
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { week: string; }) => entry.week === weekName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { week: string; }) => entry.week === weekName); 
-//             const powerValue = powerEntry ? powerEntry.value : 0;
-//             const burningValue = burningEntry ? burningEntry.value : 0;
-//             return {
-//                 name: weekName,
-//                 powerConsumption: powerValue,
-//                 burningHours: burningValue,
-//             };
-//         }); 
-//     } 
-//     else if (filterType === "month") {   
-//         const startDate = new Date('2024-02-01T00:00:00').toISOString();
-//         const monthNamesFull: string[] = [ "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
-//         const monthNamesabbr: string[] = [ "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-//             filteredData = monthNamesabbr.map((abbr, index) => {
-//             const fullMonthName = monthNamesFull[index];
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { month: string; }) => entry.month === fullMonthName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { month: string; }) => entry.month === fullMonthName); 
-//             const powerValue = powerEntry ? powerEntry.value : 0;
-//             const burningValue = burningEntry ? burningEntry.value : 0;
-//             return {
-//                 name: abbr,
-//                 powerConsumption: powerValue,
-//                 burningHours: burningValue,
-//             };
-//         }); 
-//     }  
-//     return filteredData;
-// };
-//   const transformedData1 = transformData(energyConsumptionData, 'month');
-//   const transformedData2 = transformData(energyConsumptionData, 'week'); // Corrected from 'Week' to 'week'
-//   const transformedData3 = transformData(energyConsumptionData, 'day');
-//   const filterToDataMap: { [key: string]: any[] } = {
-//     month: transformedData1,
-//     week: transformedData2,  
-//     day: transformedData3,
-//   };
-//   const selectedData = filterToDataMap[toggleFilterValue] || transformedData1; 
-//   return (
-//     <WidgetWrapper className="smart-city_box energy_consumption-box">
-//       <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Streetlight Energy Consumption"> </TitleBar>
-//       <div className="smart-city-content">
-//         <div className="technician_chart">
-//           <div className='chart-top'> 
-//             <ToggleFilter
-//               options={[
-//                 { label: "7D", value: "day" },
-//                 { label: "1M", value: "week" },
-//                 { label: "1Y", value: "month" },
-//               ]}
-//               value={toggleFilterValue}
-//               onChange={handleFilterChange}
-//             /> 
-//           </div>
-//            <div className='chart-top' style={{marginTop:"0.5em"}}>
-//             <div className="sub_title_bar">Total mWh</div>  
-//             <div className="sub_title_bar hrs">Hours</div>
-//           </div>  
-//           <ResponsiveContainer>  
-//                 <AreaChart
-//                 data={selectedData}
-//                 margin={{
-//                     top: 10,
-//                     right: 0,
-//                     left: 0,
-//                     bottom: 30,
-//                 }}
-//                 >
-//                 <CartesianGrid strokeDasharray="3 3" />
-//                 <XAxis dataKey="name" />
-//                 {/* <YAxis yAxisId="left" /> */}
-//                 <YAxis yAxisId="left" tickFormatter={(value) => `${(value / 1000).toFixed(2)} MWh`} /> 
-//                 <YAxis yAxisId="right" orientation="right" />
-//                  {/* <Tooltip
-//                     formatter={(value: any, name: any, props: any) => [`${value} kWh`, name]}
-//                     labelFormatter={(label: any) => `Day: ${label} ${endDate}`}
-//                 />     */}
-//                 <Tooltip
-//                     formatter={(value: any, name: any, props: any) => [`${value * 1000} mWh`, name]}
-//                     labelFormatter={(label: any) => `Day: ${label} ${endDate}`}
-//                 />
-//                 <Legend />
-//                 <Area
-//                     type="monotone"
-//                     dataKey="powerConsumption"
-//                     name="Power Consumption"
-//                     stackId="1"
-//                     stroke="#001912"
-//                     fill="url(#gradient1)"
-//                     yAxisId="left"
-//                 />
-//                 <Area
-//                     type="monotone"
-//                     dataKey="burningHours"
-//                     name="Burning Hours"
-//                     stackId="1"
-//                     stroke="#79dccc"
-//                     fill="url(#gradient2)"
-//                     yAxisId="left"
-//                 />
-//                 <Area
-//                     type="monotone"
-//                     dataKey="hours"
-//                     stackId="0"
-//                     fill="url(#gradient3)"
-//                     yAxisId="right"
-//                     style={{ display: "none" }}
-//                     legendType="none"
-//                 />
-//                 <defs>
-//                     <linearGradient id="gradient1" x1="0" y1="0" x2="0" y2="1">
-//                       <stop offset="5%" stopColor="#065168" stopOpacity={0.8} />
-//                       <stop offset="95%" stopColor="#065168" stopOpacity={0.7} />
-//                     </linearGradient>
-//                     <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
-//                       <stop offset="5%" stopColor="#008b74" stopOpacity={0.8} />
-//                       <stop offset="95%" stopColor="#79dccc" stopOpacity={0.7} />
-//                     </linearGradient>
-//                 </defs>
-//                 </AreaChart>
-//           </ResponsiveContainer>
-//         </div>
-//       </div>
-//     </WidgetWrapper>
-//   );
-// };
-// export default EnergyConsumption;
-// import React, { useState, useEffect } from 'react';
-// import { WidgetWrapper, TitleBar, ToggleFilter } from "uxp/components";
-// import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-// import { IContextProvider } from '../uxp';
-// interface EnergyConsumptionData {
-//   "Power Consumption"?: {
-//     [key: string]: { [key: string]: number }[]
-//   };
-//   "Burning Hours"?: {
-//     [key: string]: { [key: string]: number }[]
-//   };
-// }
-// interface IWidgetProps {
-//   instanceId?: string;
-//   uxpContext?: IContextProvider;
-// } 
-// interface ConsumptionEntry {
-//     day: string;
-//     value: number;
-//   } 
-// const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => {
-//   const [energyConsumptionData, setEnergyConsumptionData] = React.useState<EnergyConsumptionData>({});
-//     const currentDate = new Date();
-//     currentDate.setDate(1); 
-//     const startDate = currentDate.toISOString();  
-//     const endDate = new Date().toISOString(); 
-//     const hierarchy = 'منطقة المدينة';
-//     const start = startDate;
-//     const end = endDate; 
-//     let filter: 'Day' | 'Week' | 'Month';
-//     //let filter = 'Month'; // For example, set it to 'Day' initially
-// function getEnergyConsumptionData() {
-//     props.uxpContext.executeAction("TataStreetLightAPI", "GetSyncDataNew", { hierarchy, start, end, filter }, { json: true })
-//       .then((res: any) => {
-//         console.log("Response From API is", res, typeof res);
-//         setEnergyConsumptionData(res);
-//       }).catch((e: any) => {
-//         console.error("Error fetching data:", e);
-//       });
-//   }
-//   React.useEffect(() => {
-//     getEnergyConsumptionData();
-//   }, [hierarchy, start, end, filter]); 
-//   const [toggleFilterValue, setToggleFilterValue] = useState<"day" | "week" | "month">("day");
-//   const handleFilterChange = (value: "day" | "week" | "month") => {
-//     console.log("Selected Filter Value:", value);
-//     setToggleFilterValue(value);
-//   };   
-// const transformData = (rawData: EnergyConsumptionData, filterType: "day" | "week" | "month") => {
-//     let filteredData: { name: string; powerConsumption: number; burningHours: number }[] = [];
-//       const powerConsumptionData: (any[] | { [key: string]: { [key: string]: number; }[]; }) = rawData["Power Consumption"] || [];
-//       const burningHoursData: (any[] | { [key: string]: { [key: string]: number; }[]; }) = rawData["Burning Hours"] || [];
-//     if (filterType === "day") {   
-//         filter = 'Day';
-//         const daysInWeekFull: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-//         const daysInWeekAbbr: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-//         filteredData = daysInWeekAbbr.map((abbr, index) => {
-//             const fullDayName = daysInWeekFull[index];
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { day: string; }) => entry.day === fullDayName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { day: string; }) => entry.day === fullDayName); 
-//             return {
-//                 name: abbr,
-//                 powerConsumption: powerEntry ? powerEntry.value : 0,
-//                 burningHours: burningEntry ? burningEntry.value : 0,
-//             };
-//         });
-//     }
-//     else if (filterType === "week") { 
-//         filter = 'Week';
-//         const WeekNamesFull: string[] = ["Week1", "Week2", "Week3", "Week4"];  
-//         filteredData = WeekNamesFull.map(weekName => {  
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { week: string; }) => entry.week === weekName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { week: string; }) => entry.week === weekName); 
-//             const powerValue = powerEntry ? powerEntry.value : 0;
-//             const burningValue = burningEntry ? burningEntry.value : 0;
-//             return {
-//                 name: weekName,
-//                 powerConsumption: powerValue,
-//                 burningHours: burningValue,
-//             };
-//         });
-//     } 
-//     else if (filterType === "month") {  
-//         filter = 'Month';
-//         const monthNamesFull: string[] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
-//         const monthNamesabbr: string[] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-//             filteredData = monthNamesabbr.map((abbr, index) => {
-//             const fullMonthName = monthNamesFull[index];
-//             const powerEntry = (powerConsumptionData as any[]).find((entry: { month: string; }) => entry.month === fullMonthName);
-//             const burningEntry = (burningHoursData as any[]).find((entry: { month: string; }) => entry.month === fullMonthName); 
-//             const powerValue = powerEntry ? powerEntry.value : 0;
-//             const burningValue = burningEntry ? burningEntry.value : 0;
-//             return {
-//                 name: abbr,
-//                 powerConsumption: powerValue,
-//                 burningHours: burningValue,
-//             };
-//         }); 
-//     } 
-//     return filteredData;
-// };
-//   const transformedData1 = transformData(energyConsumptionData, 'month');
-//   const transformedData2 = transformData(energyConsumptionData, 'week'); // Corrected from 'Week' to 'week'
-//   const transformedData3 = transformData(energyConsumptionData, 'day');
-//   const filterToDataMap: { [key: string]: any[] } = {
-//     month: transformedData1,
-//     week: transformedData2,  
-//     day: transformedData3,
-//   };
-//   const selectedData = filterToDataMap[toggleFilterValue] || transformedData1; 
-//   return (
-//     <WidgetWrapper className="smart-city_box energy_consumption-box">
-//       <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Streetlight Energy Consumption"> </TitleBar>
-//       <div className="smart-city-content">
-//         <div className="technician_chart">
-//           <div className='chart-top'>
-//             <div className="sub_title_bar">Total kWh</div>
-//             <ToggleFilter
-//               options={[
-//                 { label: "7D", value: "day" },
-//                 { label: "1M", value: "week" },
-//                 { label: "1Y", value: "month" },
-//               ]}
-//               value={toggleFilterValue}
-//               onChange={handleFilterChange}
-//             />
-//           </div>
-//           <ResponsiveContainer> 
-//                 <AreaChart
-//                 data={selectedData}
-//                 margin={{
-//                     top: 10,
-//                     right: 0,
-//                     left: 0,
-//                     bottom: 30,
-//                 }}
-//                 >
-//                 <CartesianGrid strokeDasharray="3 3" />
-//                 <XAxis dataKey="name" />
-//                 <YAxis yAxisId="left" />
-//                 <YAxis yAxisId="right" orientation="right" />
-//                 <Tooltip
-//                     formatter={(value: any, name: any, props: any) => [`${value} kWh`, name]}
-//                     labelFormatter={(label: any) => `Day: ${label}`}
-//                 />
-//                 <Legend />
-//                 <Area
-//                     type="monotone"
-//                     dataKey="powerConsumption"
-//                     name="Power Consumption"
-//                     stackId="1"
-//                     stroke="#001912"
-//                     fill="url(#gradient1)"
-//                     yAxisId="left"
-//                 />
-//                 <Area
-//                     type="monotone"
-//                     dataKey="burningHours"
-//                     name="Burning Hours"
-//                     stackId="1"
-//                     stroke="#79dccc"
-//                     fill="url(#gradient2)"
-//                     yAxisId="left"
-//                 />
-//                 <Area
-//                     type="monotone"
-//                     dataKey="hours"
-//                     stackId="0"
-//                     fill="url(#gradient3)"
-//                     yAxisId="right"
-//                     style={{ display: "none" }}
-//                     legendType="none"
-//                 />
-//                 <defs>
-//                     <linearGradient id="gradient1" x1="0" y1="0" x2="0" y2="1">
-//                     <stop offset="5%" stopColor="#065168" stopOpacity={0.8} />
-//                     <stop offset="95%" stopColor="#065168" stopOpacity={0.7} />
-//                     </linearGradient>
-//                     <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
-//                     <stop offset="5%" stopColor="#008b74" stopOpacity={0.8} />
-//                     <stop offset="95%" stopColor="#79dccc" stopOpacity={0.7} />
-//                     </linearGradient>
-//                 </defs>
-//                 </AreaChart>
-//           </ResponsiveContainer>
-//         </div>
-//       </div>
-//     </WidgetWrapper>
-//   );
-// };
-// export default EnergyConsumption;
 
 
 /***/ }),
@@ -21056,7 +20131,7 @@ const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
 const index_1 = __webpack_require__(/*! ../index */ "./src/index.tsx");
 const IOT_Filter = (props) => {
-    const { uxpContext } = props;
+    const { uxpContext, appMode } = props;
     const [assetCategory, setAssetCategory] = (0, react_1.useState)(['Streetlight']);
     const [assetState, setAssetState] = (0, react_1.useState)(['Normal']);
     const [assetEffect, setAssetEffect] = (0, react_1.useState)(['Steady']);
@@ -21090,20 +20165,17 @@ const IOT_Filter = (props) => {
         { value: 'Blink', label: 'Blink' }
     ];
     const [assetLocationData, setAssetLocationData] = (0, react_1.useState)([]);
-    let [data, setData] = react_1.default.useState([]);
+    (0, react_1.useEffect)(() => {
+        getData();
+    }, []);
     function getData() {
         props.uxpContext.executeAction("E3D", "GetDistrictDetails", {}, { json: true }).then((res) => {
             console.log("District", res.map((value) => ({ label: value.name, value: value.name })));
             setAssetLocationData(res.map((value) => ({ label: value.name, value: value.name })));
-            //setData(res);
         }).catch((e) => {
         });
     }
-    (0, react_1.useEffect)(() => {
-        getData();
-    }, []);
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box iot_filter-detail-box" },
-        react_1.default.createElement(components_1.TitleBar, { title: "Asset Filter", icon: 'https://static.iviva.com/images/Udhayimages/shopping-list.png' }),
         react_1.default.createElement("div", { className: "smart-city-content", style: { width: 'auto', overflow: "none" } },
             react_1.default.createElement("div", { className: "iot-filter" },
                 react_1.default.createElement("div", { className: "iot-filter-top chart-top" },
@@ -21118,6 +20190,121 @@ const IOT_Filter = (props) => {
                             react_1.default.createElement(components_1.MultiSelect, { placeholder: "Asset Location", options: assetLocationData, onChange: (value) => setAssetLocation(value), selected: assetLocation, isValid: !!assetLocation, hideDoneButton: true }))))))));
 };
 exports["default"] = IOT_Filter;
+// import React, { useEffect, useState } from 'react';
+// import { DataList, WidgetWrapper,MultiSelect, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
+// import { AutoSizer } from 'react-virtualized'; 
+// import { IContextProvider } from '../uxp';
+// import { EventsEnum } from '../index';
+// interface IWidgetProps {
+//     uxpContext?: IContextProvider,
+//     instanceId: string,
+//     locationkey: string 
+// } 
+// const IOT_Filter: React.FunctionComponent<IWidgetProps> = (props:any) => {
+//     const { uxpContext } = props;    
+//     const [assetCategory, setAssetCategory] = useState(['Streetlight'])
+//     const [assetState, setAssetState] = useState(['Normal'])
+//     const [assetEffect, setAssetEffect] = useState(['Steady'])
+//     const [assetLocation, setAssetLocation] = useState(['Ad Dar Dist']) 
+//     useEffect(() => {
+//         uxpContext.eventHandler?.(
+//             EventsEnum.SummaryGroupFilter, 
+//                 { 
+//                     AssetCategory : assetCategory, 
+//                     AssetState : assetState, 
+//                     AssetEffect : assetEffect,
+//                     AssetLocation : assetLocation
+//                 }
+//             ); 
+//     },[
+//         assetCategory,
+//         assetState,
+//         assetEffect,
+//         assetLocation
+//     ]);  
+//     const assetCategoryData = [
+//         { value: 'Streetlight', label: 'Streetlight' },
+//         { value: 'CCTV', label: 'CCTV' }
+//     ];
+//     const assetStateData = [
+//         { value: 'Normal', label: 'Normal' },
+//         { value: 'Warning', label: 'Warning' },
+//         { value: 'Alert', label: 'Alert' }
+//     ];
+//     const assetEffectData = [
+//         { value: 'Steady', label: 'Steady' },
+//         { value: 'Glow', label: 'Glow' },
+//         { value: 'Blink', label: 'Blink' }
+//     ]; 
+//    const [assetLocationData, setAssetLocationData] = useState([]) 
+//      let [data,setData] = React.useState<any>([]) 
+//     function getData () {  
+//         props.uxpContext.executeAction("E3D","GetDistrictDetails",{},{json:true}).then((res: any)=>{ 
+//             console.log("District",res.map( (value:any) => ({label:value.name, value:value.name})));
+//             setAssetLocationData(res.map( (value:any) => ({label:value.name, value:value.name})))
+//             //setData(res); 
+//         }).catch((e: any)=>{
+//         }); 
+//     }  
+//     useEffect(() =>{
+//          getData() 
+//     }, [])   
+//     return (    
+//     <WidgetWrapper className="smart-city_box iot_filter-detail-box"> 
+//           <TitleBar title="Asset Filter" icon='https://static.iviva.com/images/Udhayimages/shopping-list.png'></TitleBar>
+//            <div className="smart-city-content" style={{width:'auto', overflow:"none"}}>
+//           <div className="iot-filter">
+//                <div className="iot-filter-top chart-top">
+//                   <FormField inline className="showcase-input" > 
+//                   <div className="select-filter">  
+//                         <MultiSelect 
+//                             placeholder="Asset Category"
+//                             options={assetCategoryData}
+//                             onChange={(value:any) => setAssetCategory(value)}
+//                             selected={assetCategory}
+//                             isValid={!!assetCategory}
+//                             hideClearButton  
+//                             hideDoneButton 
+//                         />
+//                     </div>
+//                     <div className='select-filter'>  
+//                          <MultiSelect
+//                             placeholder="Asset State"
+//                             options={assetStateData}
+//                             onChange={(value:any) => setAssetState(value)}
+//                             selected={assetState}
+//                             isValid={!!assetState}
+//                             hideDoneButton= {true} 
+//                         />  
+//                     </div>
+//                     <div className='select-filter'>   
+//                           <MultiSelect    
+//                             placeholder="Asset Effect"
+//                             options={assetEffectData}
+//                             onChange={(value:any) => setAssetEffect(value)}
+//                             selected={assetEffect}
+//                             isValid={!!assetEffect}
+//                             hideDoneButton= {true} 
+//                         /> 
+//                     </div>
+//                     <div className='select-filter'>  
+//                     <MultiSelect
+//                         placeholder="Asset Location"
+//                         options={assetLocationData}
+//                         onChange={(value: any) => setAssetLocation(value)}
+//                         selected={assetLocation}
+//                         isValid={!!assetLocation}
+//                         hideDoneButton
+//                     /> 
+//                     </div> 
+//                   </FormField>
+//                 </div>
+//             </div> 
+//           </div>  
+//           </WidgetWrapper> 
+//     )
+// }; 
+//  export default IOT_Filter
 
 
 /***/ }),
@@ -21584,17 +20771,13 @@ const react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
 const __1 = __webpack_require__(/*! .. */ "./src/index.tsx");
 const ModeChangeWidget = (props) => {
-    const { uxpContext } = props;
-    const handleModeChange = (newMode) => {
+    const { uxpContext, appMode } = props;
+    const handleModeChange = (selectedOption) => {
         var _a;
-        // uxpContext.eventHandler?.(
-        //   EventsEnum.ChangeAppMode,
-        //   { mode: newMode }
-        // ); 
-        (_a = uxpContext.eventHandler) === null || _a === void 0 ? void 0 : _a.call(uxpContext, __1.EventsEnum.ChangeAppMode, { mode: 'Land Bank Management' });
+        console.log("The mode", selectedOption);
+        (_a = uxpContext.eventHandler) === null || _a === void 0 ? void 0 : _a.call(uxpContext, __1.EventsEnum.ChangeAppMode, { mode: selectedOption });
     };
-    // const [selected, setSelected] = React.useState<string | null>("Land Bank Management"); 
-    const [selected, setSelected] = react_1.default.useState("Land Bank Management");
+    const [selected, setSelected] = react_1.default.useState(appMode || "Land Bank Management");
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box mode-change-box" },
         react_1.default.createElement(components_1.FormField, { inline: true, className: "showcase-input" },
             react_1.default.createElement(components_1.Select, { selected: selected, options: [
@@ -21603,7 +20786,7 @@ const ModeChangeWidget = (props) => {
                 ], onChange: (selectedOption) => {
                     setSelected(selectedOption);
                     handleModeChange(selectedOption);
-                }, placeholder: "Select Mode" }))));
+                }, placeholder: "Land Bank Management" }))));
 };
 exports["default"] = ModeChangeWidget;
 
@@ -21761,6 +20944,35 @@ exports["default"] = PowerByWidget;
 
 /***/ }),
 
+/***/ "./src/components/refresh.tsx":
+/*!************************************!*\
+  !*** ./src/components/refresh.tsx ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
+const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
+const __1 = __webpack_require__(/*! .. */ "./src/index.tsx");
+const Refresh_Btn = (props) => {
+    const { uxpContext } = props;
+    const handleModeChange = () => {
+        var _a;
+        (_a = uxpContext.eventHandler) === null || _a === void 0 ? void 0 : _a.call(uxpContext, __1.EventsEnum.UpdateIOTAssetData, {});
+    };
+    return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box refresh-btn-box" },
+        react_1.default.createElement(components_1.Button, { className: 'refresh-btn', title: "Refresh", onClick: handleModeChange })));
+};
+exports["default"] = Refresh_Btn;
+
+
+/***/ }),
+
 /***/ "./src/components/search_box.tsx":
 /*!***************************************!*\
   !*** ./src/components/search_box.tsx ***!
@@ -21799,6 +21011,7 @@ const SearchBoxContainer = (props) => {
     const { uxpContext } = props;
     const [searchTerm, setSearchTerm] = (0, react_1.useState)('');
     const [searchResults, setSearchResults] = (0, react_1.useState)([]);
+    const inputRef = (0, react_1.useRef)(null); // Ref for the input element
     let [data, setData] = react_1.default.useState([]);
     function getData() {
         props.uxpContext.executeAction("E3D", "GetDistrictDetails", {}, { json: true }).then(res => {
@@ -21810,34 +21023,21 @@ const SearchBoxContainer = (props) => {
     (0, react_1.useEffect)(() => {
         getData();
     }, []);
-    // const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    //   const inputValue = event.target.value.toLowerCase();
-    //   setSearchTerm(inputValue);
-    //   if (inputValue === '') { 
-    //     setSearchResults([]);
-    //   } else {    
-    //    const filteredResults = data.filter((item: { name: string; }) => item.name.toLowerCase().includes(inputValue));
-    //    setSearchResults(filteredResults);
-    //   }
-    // };
-    // const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    //   const inputValue = event.target.value.toLowerCase();
-    //   setSearchTerm(inputValue);
-    //   if (inputValue === '') { 
-    //     setSearchResults([]);
-    //   } else {    
-    //     const filteredResults = data.filter((item: { name: string; longitude: number; latitude: number; }) => {
-    //       const lowerCaseName = item.name.toLowerCase();
-    //       const lowerCaseInput = inputValue.toLowerCase(); 
-    //       return (
-    //         lowerCaseName.includes(lowerCaseInput) ||
-    //         String(item.longitude).includes(inputValue) ||
-    //         String(item.latitude).includes(inputValue)
-    //       );
-    //     });
-    //     setSearchResults(filteredResults);
-    //   }
-    // };
+    (0, react_1.useEffect)(() => {
+        // Attach event listener to document for outside clicks
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            // Clean up event listener on component unmount
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
+    const handleClickOutside = (event) => {
+        // Check if the click occurred outside of the input element
+        if (inputRef.current && !inputRef.current.contains(event.target)) {
+            // Blur the input element to lose focus
+            inputRef.current.blur();
+        }
+    };
     const handleInputChange = (event) => {
         const inputValue = event.target.value.toLowerCase();
         setSearchTerm(inputValue);
@@ -21845,14 +21045,7 @@ const SearchBoxContainer = (props) => {
             setSearchResults([]);
         }
         else {
-            const filteredResults = data.filter((item) => {
-                const lowerCaseName = item.name.toLowerCase();
-                const lowerCaseInput = inputValue.toLowerCase();
-                return (lowerCaseName.includes(lowerCaseInput)
-                // String(item.longitude).includes(inputValue) ||
-                // String(item.latitude).includes(inputValue)
-                );
-            });
+            const filteredResults = data.filter((item) => item.name.toLowerCase().includes(inputValue));
             setSearchResults(filteredResults);
         }
     };
@@ -21862,8 +21055,6 @@ const SearchBoxContainer = (props) => {
         if (uxpContext.eventHandler) {
             uxpContext.eventHandler(index_1.EventsEnum.DistrictJump, {
                 name: result.name,
-                // longitude: result.longitude,
-                // latitude: result.latitude,
             });
         }
     };
@@ -21873,11 +21064,177 @@ const SearchBoxContainer = (props) => {
     };
     return (react_1.default.createElement("div", { className: 'searchBox-widget' },
         react_1.default.createElement("div", { className: 'searchbox-container' },
-            react_1.default.createElement("input", { className: 'searchbox', type: 'text', value: searchTerm, onChange: handleInputChange, placeholder: 'Search District' }),
+            react_1.default.createElement("input", { ref: inputRef, className: 'searchbox', type: 'text', value: searchTerm, onChange: handleInputChange, placeholder: 'Search District' }),
             searchTerm && (react_1.default.createElement("a", { className: 'clear-button', onClick: handleClearClick }, " X "))),
         react_1.default.createElement("ul", { className: 'search-list' }, searchResults.map((result, index) => (react_1.default.createElement("li", { key: index, onClick: () => handleResultClick(result) }, result.name))))));
 };
 exports["default"] = SearchBoxContainer;
+// import React, { useEffect, useState, useRef } from 'react';
+// import { IContextProvider } from '../uxp';
+// import { EventsEnum } from '../index';
+// interface IMapChangeMode {
+//   uxpContext: IContextProvider;
+// }
+// const SearchBoxContainer: React.FunctionComponent<IMapChangeMode> = (props) => {
+//   const { uxpContext } = props;
+//   const [searchTerm, setSearchTerm] = useState('');
+//   const [searchResults, setSearchResults] = useState([]);
+//   const [isOpen, setIsOpen] = useState(false);
+//   let [data, setData] = useState<any>([]);
+//   useEffect(() => {
+//     getData();
+//   }, []);
+//   function getData() {
+//     props.uxpContext
+//       .executeAction("E3D", "GetDistrictDetails", {}, { json: true })
+//       .then((res) => {
+//         console.log("District", res);
+//         setData(res);
+//       })
+//       .catch((e) => {});
+//   }
+//   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+//     const inputValue = event.target.value.toLowerCase();
+//     setSearchTerm(inputValue);
+//     if (inputValue === '') {
+//       setSearchResults([]);
+//       setIsOpen(false);
+//     } else {
+//       const filteredResults = data.filter((item: { name: string }) =>
+//         item.name.toLowerCase().includes(inputValue)
+//       );
+//       setSearchResults(filteredResults);
+//       setIsOpen(true);
+//     }
+//   };
+//   const handleResultClick = (result: { name: string }) => {
+//     setSearchTerm(result.name);
+//     setSearchResults([]);
+//     setIsOpen(false);
+//     if (uxpContext.eventHandler) {
+//       uxpContext.eventHandler(EventsEnum.DistrictJump, {
+//         name: result.name,
+//       });
+//     }
+//   };
+//   const handleClearClick = () => {
+//     setSearchTerm('');
+//     setSearchResults([]);
+//     setIsOpen(false);
+//   };
+//   const dropdownRef = useRef<HTMLDivElement>(null);
+//   useEffect(() => {
+//     function handleClickOutside(event: MouseEvent) {
+//       if (
+//         dropdownRef.current &&
+//         !dropdownRef.current.contains(event.target as Node)
+//       ) {
+//         setIsOpen(false);
+//       }
+//     }
+//     document.addEventListener('mousedown', handleClickOutside);
+//     return () => {
+//       document.removeEventListener('mousedown', handleClickOutside);
+//     };
+//   }, [dropdownRef]);
+//   return (
+//     <div className='searchBox-widget'>
+//       <div className='searchbox-container' ref={dropdownRef}>
+//         <input
+//           className='searchbox'
+//           type='text'
+//           value={searchTerm}
+//           onChange={handleInputChange}
+//           placeholder='Search District'
+//         />
+//         {searchTerm && (
+//           <a className='clear-button' onClick={handleClearClick}>
+//             X
+//           </a>
+//         )}
+//       </div>
+//       {isOpen && (
+//         <ul className='search-list'>
+//           {searchResults.map((result, index) => (
+//             <li key={index} onClick={() => handleResultClick(result)}>
+//               {result.name}
+//             </li>
+//           ))}
+//         </ul>
+//       )}
+//     </div>
+//   );
+// };
+// export default SearchBoxContainer;
+// import React, { useEffect, useState } from 'react';
+// import { IContextProvider } from '../uxp';
+// import { EventsEnum } from '../index';
+// interface IMapChangeMode {
+//   uxpContext: IContextProvider;
+// }
+// const SearchBoxContainer: React.FunctionComponent<IMapChangeMode> = (props) => {
+//   const { uxpContext } = props;
+//   const [searchTerm, setSearchTerm] = useState('');
+//   const [searchResults, setSearchResults] = useState([]);
+// let [data,setData] = React.useState<any>([]) 
+// function getData () {  
+//     props.uxpContext.executeAction("E3D","GetDistrictDetails",{},{json:true}).then(res=>{ 
+//         console.log("District",res);
+//         setData(res);
+//     }).catch(e=>{
+//     }); 
+// }  
+// useEffect(() =>{
+//   getData() 
+// }, [])
+// const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+//   const inputValue = event.target.value.toLowerCase();
+//   setSearchTerm(inputValue);
+//   if (inputValue === '') { 
+//     setSearchResults([]);
+//   } else {    
+//    const filteredResults = data.filter((item: { name: string; }) => item.name.toLowerCase().includes(inputValue));
+//    setSearchResults(filteredResults);
+//   }
+// }; 
+// const handleResultClick = (result: { name: string;   }) => {
+//   setSearchTerm(result.name);
+//   setSearchResults([]);
+//   if (uxpContext.eventHandler) { 
+//     uxpContext.eventHandler(EventsEnum.DistrictJump, {
+//       name: result.name, 
+//     });
+//   }
+// };
+// const handleClearClick = () => {
+//   setSearchTerm('');
+//   setSearchResults([]);
+// };
+// return (
+//   <div className='searchBox-widget'>
+//     <div className='searchbox-container'>
+//       <input
+//         className='searchbox'
+//         type='text'
+//         value={searchTerm}
+//         onChange={handleInputChange}
+//         placeholder='Search District'
+//       />
+//       {searchTerm && (
+//         <a className='clear-button' onClick={handleClearClick}> X </a>
+//       )}
+//     </div>
+//     <ul className='search-list'>
+//       {searchResults.map((result, index) => (
+//         <li key={index} onClick={() => handleResultClick(result)}>
+//           {result.name}
+//         </li>
+//       ))}
+//     </ul>
+//   </div>
+// );
+// };
+// export default SearchBoxContainer;
 
 
 /***/ }),
@@ -22060,31 +21417,26 @@ const Street_Light__Status_Widget = (props) => {
         }
     };
     console.log("for Check context", props.uxpContext);
-    // const fetchData = () => {  
-    //        let newStart = start;
-    //       let newEnd = end;    
-    //       if (filter === 'Month') {
-    //         newStart = new Date('2024-02-03T00:00:00').toISOString(); 
-    //         newEnd = new Date().toISOString(); 
-    //       }
-    //   props.uxpContext.executeAction("TataStreetLightAPI", "GetExpenditure", { hierarchy, start: start, end: end, filter }, { json: true })
-    //       .then((res: any) => { 
-    //             console.log("Response From GetExpenditure API is", res, typeof res);
-    //             setEnergyConsumptionData(res);
-    //         })
-    //         .catch((e: any) => {
-    //             console.error("Error fetching data:", e);
-    //         });
-    // };
     const fetchData = () => __awaiter(void 0, void 0, void 0, function* () {
-        let newStart = start;
-        let newEnd = end;
-        if (filter === 'Month') {
-            newStart = new Date('2024-02-03T00:00:00').toISOString();
-            newEnd = new Date().toISOString();
+        let start, end = new Date().toISOString();
+        if (toggleFilterValue === "day") {
+            let today = new Date();
+            var dayOfWeek = today.getUTCDay();
+            var diff = today.getUTCDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 0);
+            var lastSunday = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), diff - 1)).toISOString();
+            start = `${lastSunday.substring(0, 10)}T18:30:00.000Z`;
+        }
+        if (toggleFilterValue === 'week') {
+            let today = new Date();
+            let firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+            start = firstDayOfMonth.toISOString().substring(0, 10) + "T18:30:00.000Z";
+        }
+        if (toggleFilterValue === "month") {
+            var today = new Date();
+            start = new Date(today.getFullYear(), 0, 1).toISOString();
         }
         try {
-            const res = yield props.uxpContext.executeAction("TataStreetLightAPI", "GetExpenditure", { hierarchy, start: newStart, end: newEnd, filter }, { json: true });
+            const res = yield props.uxpContext.executeAction("TataStreetLightAPI", "GetExpenditure", { hierarchy, start: start, end: end, filter }, { json: true });
             console.log("Response From  Expenditure API is", res, typeof res);
             setEnergyConsumptionData(res);
         }
@@ -22094,7 +21446,7 @@ const Street_Light__Status_Widget = (props) => {
     });
     react_1.default.useEffect(() => {
         fetchData();
-    }, [hierarchy, start, end, filter]);
+    }, [filter]);
     const transformData = (rawData, filterType) => {
         let filteredData = [];
         const expenditureData = rawData["Expenditure"] || [];
@@ -22157,7 +21509,7 @@ const Street_Light__Status_Widget = (props) => {
     const selectedData = filterToDataMap[toggleFilterValue] || transformedData1;
     const transformedChartData = selectedData.map((item) => (Object.assign(Object.assign({}, item), { powerConsumption: item.powerConsumption / 1000 })));
     const colorArray = ['#005745'];
-    return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box waste-bin-box" },
+    return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box waste-bin-box lft-widget-box" },
         react_1.default.createElement(components_1.TitleBar, { title: "Street Light Alerts", icon: 'https://static.iviva.com/images/Udhayimages/streetlight-alert.png' }),
         react_1.default.createElement("div", { className: "smart-city-content" },
             loading ? (react_1.default.createElement("div", null, "Loading...")) : (react_1.default.createElement("div", { className: 'status-content' },
@@ -22204,7 +21556,7 @@ const Street_Light__Status_Widget = (props) => {
                                         { label: "1Y", value: "month" },
                                     ], value: toggleFilterValue, onChange: handleFilterChange })),
                             react_1.default.createElement("div", { className: 'chart-top', style: { marginTop: "0.5em" } },
-                                react_1.default.createElement("div", { className: "sub_title_bar" }, "Total SAR")),
+                                react_1.default.createElement("div", { className: "sub_title_bar" }, "SAR  ( \u2715 1000 )")),
                             react_1.default.createElement(recharts_1.ResponsiveContainer, null,
                                 react_1.default.createElement(recharts_1.BarChart, { data: transformedChartData, margin: {
                                         top: 10,
@@ -22223,114 +21575,6 @@ const Street_Light__Status_Widget = (props) => {
                                         react_1.default.createElement("stop", { offset: "85%", stopColor: '#005745', stopOpacity: 0.9 }))))))))))))));
 };
 exports["default"] = Street_Light__Status_Widget;
-// import React, { useState, useEffect } from 'react';
-// import {
-//   WidgetWrapper,
-//   TitleBar,
-// } from "uxp/components";
-// import { IContextProvider } from '../uxp';
-// import StreetLightStatusChart from './lightStatusChart'; 
-//   import EnergyConsumption from './energy_consumption';
-// interface IWidgetProps { 
-//     instanceId?: string,
-//     uxpContext?: IContextProvider,
-//     ilmAlerts?: {
-//         "AC Voltage"?: string;
-//         "Load Fail"?: string;
-//         "Lux Sensor Blocked"?: string;
-//         "Main Fail"?: string;
-//         "Partial Failure"?: string;
-//         "Power Factor"?: string; 
-//       };
-// } 
-// const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (props) => {    
-//     const [health, setHealth] = useState(null); 
-//     const [lampdata,setLampData] = useState(null);
-//     const [loading, setLoading] = useState(true); // Initialize loading state
-//     const hierarchy = 'منطقة المدينة';   
-//     function getHealthData() { 
-//       props.uxpContext
-//         .executeAction("TataStreetLightAPI", "Alert Summary", { hierarchy: hierarchy }, { json: true })
-//         .then((res: any) => {
-//           console.log("Response From API is", res, typeof res);
-//           setHealth(res);
-//           setLoading(false); // Set loading to false when data is fetched
-//         })
-//         .catch((e: any) => {
-//           console.error("Error fetching health data:", e);
-//           setLoading(false); // Set loading to false in case of error
-//         });
-//     } 
-//     React.useEffect(() => {
-//       getHealthData();
-//     }, []); 
-//     function getsetLampData () {   
-//         props.uxpContext.executeAction("TataStreetLightAPI", "Installed vs Working Lamps (ILM)/Devices (GLM)", {}, { json: true })
-//         .then((res: any) => {
-//           console.log("Response From lampdata API is", res, typeof res);
-//           setLampData(res);
-//           setLoading(false);  
-//         })
-//         .catch((e: any) => {
-//           console.error("Error fetching health data:", e);
-//           setLoading(false);  
-//         });
-//     }
-//     React.useEffect(() =>{
-//       getsetLampData();
-//     }, []) 
-//     const calculatePercentage = (value: number, total: number) => {
-//       return ((value / total) * 100).toFixed(2);
-//     };     
-//     return ( 
-//          <WidgetWrapper className="smart-city_box waste-bin-box">   
-//             <TitleBar title="Street Light Alerts" icon='https://static.iviva.com/images/Udhayimages/streetlight-alert.png'></TitleBar>
-//             <div className="smart-city-content">  
-//                   {loading ? (  
-//                   <div>Loading...</div>
-//                 ) : (
-//                   <div className='status-content'>  
-//                       <div className='status Attention'>
-//                               <h3>{health?.ilmAlerts?.["Main Fail"] + health?.ilmAlerts?.["Lamp Flickering"]} <span></span></h3> 
-//                           <p>High</p>
-//                       </div>
-//                       <div className='status Pending'>
-//                       <h3>{health?.ilmAlerts?.["Load Fail"] + health?.ilmAlerts?.["Lux Sensor Blocked"] + health?.ilmAlerts?.["Partial Failure"]} <span></span></h3>
-//                           <p>Medium</p>
-//                       </div>
-//                       <div className='status Resloved'>
-//                       <h3>{health?.ilmAlerts?.["Power Factor"] + health?.ilmAlerts?.["AC Voltage"]} <span></span></h3>  
-//                           <p>Low</p>
-//                       </div>    
-//                   </div>
-//                 )}  
-//                 <div className="technician_chart">  
-//                 <div className='sub_title_bar'>Installed vs Working lamps</div>   
-//                     <div className="progress-bar-container">   
-//                         <>   
-//                           <div className="progress-bar installedLamps" style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 75), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))) < 10 ? 10 : Math.max(10, Number(calculatePercentage(Number(lampdata?.ilm?.installedLamps ?? 75), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))))}%` }}></div>
-//                           <div className='progress-bar working-lamps' style={{ width: `${Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25))) < 10 ? 10 : Number(calculatePercentage(Number(lampdata?.ilm?.workingLamps ?? 25), Number(lampdata?.ilm?.installedLamps ?? 75) + Number(lampdata?.ilm?.workingLamps ?? 25)))}%` }}></div> 
-//                         </>    
-//                     </div> 
-//                     <div className='chart-sec'>   
-//                         <div className='chart-issue'>       
-//                             <h3>{lampdata?.ilm?.installedLamps ?? "N/A"}</h3>
-//                             <p>Installed lamps</p>
-//                         </div> 
-//                         <div className='chart-pending'>       
-//                             <h3>{lampdata?.ilm?.workingLamps ?? "N/A"}</h3>
-//                             <p>Working lamps</p>
-//                         </div>    
-//                     </div> 
-//                 </div>     
-//                 <div className="smart-city-content" style={{height:'400px'}}>  
-//                         <StreetLightStatusChart />   
-//                 </div>
-//             </div>
-//         </WidgetWrapper> 
-//     )
-// };  
-// export default Street_Light__Status_Widget;
 
 
 /***/ }),
@@ -22366,75 +21610,140 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
-const StreetLightWorkOrder = () => {
+const index_1 = __webpack_require__(/*! ../index */ "./src/index.tsx");
+const StreetLightWorkOrder = (_a) => {
+    // const StreetLightWorkOrder: React.FunctionComponent<IWidgetProps> = (props) => { 
+    var { workOrderAsset } = _a, props = __rest(_a, ["workOrderAsset"]);
+    let { uxpContext } = props;
     let [selected, setSelected] = react_1.default.useState("op-1");
     let [inputValue, setInputValue] = react_1.default.useState("Work Order");
     let [inputValue1, setInputValue1] = react_1.default.useState("Location");
     const [workOrders, setWorkOrders] = (0, react_1.useState)([]);
-    const apiUrl = 'https://ccc-demo.raseel.city/lucy/workorder/v1/cwos?fields=CWOKey,CWOID,RequesterObjectType,RequesterObjectKey,RequesterObjectID,LocationKey,SiteLocationFullName,CreatedDateTime,ProblemType';
-    (0, react_1.useEffect)(() => {
-        const fetchData = () => __awaiter(void 0, void 0, void 0, function* () {
-            try {
-                const response = yield fetch(apiUrl, {
-                    headers: {
-                        Authorization: 'SC:mcr:52cc6fe4f2fdf340'
-                    }
-                });
-                const data = yield response.json();
-                setWorkOrders(data);
-            }
-            catch (error) {
-                console.error('Error fetching data:', error);
-            }
+    // const apiUrl = 'https://ccc-demo.raseel.city/lucy/workorder/v1/cwos?fields=CWOKey,CWOID,RequesterObjectType,RequesterObjectKey,RequesterObjectID,LocationKey,SiteLocationFullName,CreatedDateTime,ProblemType,PriorityID,Description';
+    // useEffect(() => {
+    //   const fetchData = async () => {
+    //     try {
+    //       const response = await fetch(apiUrl, {
+    //         headers: {
+    //           Authorization: 'SC:mcr:52cc6fe4f2fdf340'
+    //         }
+    //       });
+    //       const data = await response.json();
+    //       setWorkOrders(data);
+    //     } catch (error) {
+    //       console.error('Error fetching data:', error);
+    //     }
+    //   };
+    //   fetchData();
+    // }, []); 
+    function getWorkOrders() {
+        props.uxpContext
+            .executeAction("DigitalTwin", "Get Work Orders", {}, { json: true })
+            .then((res) => {
+            console.log("Response From Get Work Orders API is", res, typeof res);
+            setWorkOrders(res);
+            // setLoading(false);  
+        })
+            .catch((e) => {
+            console.error("Error fetching health data:", e);
+            // setLoading(false);  
         });
-        fetchData();
+    }
+    react_1.default.useEffect(() => {
+        getWorkOrders();
     }, []);
     const streetLightData = [
         {
             id: '1',
-            name: 'Attention',
-            value: 12
+            name: 'High',
+            name1: 'Attention',
+            value: workOrders.filter(order => order.PriorityID === 'Urgent').length
         },
         {
             id: '2',
-            name: 'Pending',
-            value: 2
+            name: 'Medium',
+            name1: 'Pending',
+            value: workOrders.filter(order => order.PriorityID === 'Medium').length
         },
         {
             id: '3',
-            name: 'Resloved',
-            value: 12
+            name: 'Low',
+            name1: 'Resloved',
+            value: workOrders.filter(order => order.PriorityID === 'Low').length
         }
     ];
-    // const getDataItems = (max: number, pageToken: string) => {
-    //       let last = 0
-    //       if (pageToken !== null) last = parseInt(pageToken);
-    //       let p = new Promise<{ items: Array<any>, pageToken: string }>((resolve, reject) => {
-    //           let data = order_Summarydata.filter((item: any, key: number) => (key > last && key <= last + max));
-    //           let response = { items: data, pageToken: (last + data.length).toString() }
-    //           resolve(response);
-    //       })
-    //       return p;
-    //   }
+    const [poleData, setPoleData] = (0, react_1.useState)(null);
+    react_1.default.useEffect(() => {
+        workOrders.forEach(workOrder => {
+            const regex = /Pole\s+(.*?)\s+has\s+a\s+total/;
+            const match = workOrder.Description.match(regex);
+            const word = match ? match[1] : null;
+            console.log(word);
+            if (word) {
+                getPoleData(word);
+            }
+        });
+    }, [workOrders]);
+    function getPoleData(poleName) {
+        props.uxpContext
+            .executeAction("DigitalTwin", "GetAssetByPoleName", { poleName }, { json: true })
+            .then((res) => {
+            //  console.log("Response is Pole", res, typeof res);
+            setPoleData(res);
+            console.log("my pole name", poleName);
+            console.log("my pole lat", res.latitude);
+            console.log("my pole lat", res.longitude);
+        })
+            .catch((e) => {
+            console.error("Error fetching Pole data:", e);
+        });
+    }
+    var lat = poleData === null || poleData === void 0 ? void 0 : poleData.latitude;
+    var long = poleData === null || poleData === void 0 ? void 0 : poleData.longitude;
+    var viewAngle = 0;
+    var altitude = 75;
+    console.log("To Check Lat and Long", lat, long);
+    const handleResultClick = () => {
+        var _a, _b;
+        (_b = (_a = props.uxpContext).eventHandler) === null || _b === void 0 ? void 0 : _b.call(_a, index_1.EventsEnum.DistrictJump, {
+            longitude: long,
+            latitude: lat,
+            viewAngle: viewAngle,
+            altitude: altitude
+        });
+        console.log("Hi Hello", long, lat);
+    };
+    const problemTypeColors = {
+        'Main Fail': 'rgb(106, 186, 53)',
+        'AC Voltage': 'rgb(99, 245, 227)',
+        'Power Factor': 'rgb(25, 157, 142)',
+        'Load Fail': 'rgb(25, 190, 92)',
+        'Lux Sensor Blocked': '#619482',
+        'Partial Failure': 'rgb(179, 238, 142',
+        'Lamp Flickering': 'rgb(99, 245, 227)'
+    };
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box order_summary-box" },
-        react_1.default.createElement(components_1.TitleBar, { title: "Street Light Work Order", icon: 'https://static.iviva.com/images/Udhayimages/traffic-light.png' }),
+        react_1.default.createElement(components_1.TitleBar, { title: "Street Light Work Order Priority", icon: 'https://static.iviva.com/images/Udhayimages/work-list.png' }),
         react_1.default.createElement("div", { className: 'smart-city_box waste-bin-box ' },
             react_1.default.createElement("div", { className: "smart-city-content", style: { height: '80px' } },
-                react_1.default.createElement("div", { className: 'status-content' }, streetLightData.map((item) => (react_1.default.createElement("div", { key: item.id, className: `status ${item.name}` },
-                    react_1.default.createElement("h3", null, item.value),
-                    react_1.default.createElement("p", null, item.name))))))),
+                react_1.default.createElement("div", { className: 'status-content' }, streetLightData.map((item) => (react_1.default.createElement("div", { key: item.id, className: `status ${item === null || item === void 0 ? void 0 : item.name1}` },
+                    react_1.default.createElement("h3", null, item === null || item === void 0 ? void 0 : item.value),
+                    react_1.default.createElement("p", null, item === null || item === void 0 ? void 0 : item.name))))))),
+        react_1.default.createElement(components_1.TitleBar, { title: "Street Light Work Order", icon: 'https://static.iviva.com/images/Udhayimages/work-order.png' }),
         react_1.default.createElement("div", { className: "smart-city-content", style: { height: '215px', borderBottom: '1px solid' } },
             react_1.default.createElement("div", { className: "chart-top" },
                 react_1.default.createElement(components_1.FormField, { inline: true, className: "showcase-input" },
@@ -22454,66 +21763,739 @@ const StreetLightWorkOrder = () => {
                 react_1.default.createElement("table", null,
                     react_1.default.createElement("thead", null,
                         react_1.default.createElement("tr", null,
-                            react_1.default.createElement("th", { style: { width: '30%' } }, "CWOID"),
-                            react_1.default.createElement("th", { style: { width: '20%' } }, "Site Location"),
+                            react_1.default.createElement("th", { style: { width: '28%' } }, "CWO ID"),
+                            react_1.default.createElement("th", { style: { width: '15%' } }, "Site Location"),
                             react_1.default.createElement("th", { style: { width: '30%' } }, "Created Date"),
-                            react_1.default.createElement("th", { style: { width: '20%' } }, "Problem Type"))),
+                            react_1.default.createElement("th", { style: { width: '20%' } }, "Problem Type"),
+                            react_1.default.createElement("th", { style: { width: '10%' } }))),
                     react_1.default.createElement("tbody", null, workOrders.map((workOrder, index) => (react_1.default.createElement("tr", { key: index },
-                        react_1.default.createElement("td", { style: { width: '30%' } }, workOrder.CWOID),
-                        react_1.default.createElement("td", { style: { width: '20%' } }, workOrder.SiteLocationFullName),
-                        react_1.default.createElement("td", { style: { width: '30%' } }, workOrder.CreatedDateTime),
-                        react_1.default.createElement("td", { style: { width: '20%' } }, workOrder.ProblemType))))))))));
+                        react_1.default.createElement("td", { style: { width: '28%' } },
+                            react_1.default.createElement("a", { onClick: () => handleResultClick() }, workOrder === null || workOrder === void 0 ? void 0 : workOrder.CWOID)),
+                        react_1.default.createElement("td", { style: { width: '15%' } },
+                            react_1.default.createElement("a", { onClick: () => handleResultClick() }, workOrder === null || workOrder === void 0 ? void 0 : workOrder.SiteLocationFullName)),
+                        react_1.default.createElement("td", { style: { width: '30%' } },
+                            react_1.default.createElement("a", { onClick: () => handleResultClick() }, workOrder === null || workOrder === void 0 ? void 0 : workOrder.CreatedDateTime)),
+                        react_1.default.createElement("td", { style: { width: '20%', color: problemTypeColors[workOrder.ProblemType] || 'inherit' } },
+                            react_1.default.createElement("a", { onClick: () => handleResultClick() }, workOrder === null || workOrder === void 0 ? void 0 : workOrder.ProblemType)),
+                        react_1.default.createElement("td", { style: { width: '7%' } },
+                            react_1.default.createElement("a", { className: 'cwo_key', target: "_blank", href: `https://ccc-demo.raseel.city/Apps/ivivaFacility/wo-details?key=${workOrder === null || workOrder === void 0 ? void 0 : workOrder.CWOKey}` })))))))))));
 };
 exports["default"] = StreetLightWorkOrder;
-// import React, { useState } from 'react';
+// import React, { useState, useEffect } from 'react';
+// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+// import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
+// import { IContextProvider } from '../uxp';
+// import { EventsEnum } from '../index';
+// interface IWidgetProps {
+//   uxpContext: IContextProvider;  
+//   workOrderAsset:IWorkOrderAsset
+// } 
+// interface IWorkOrderAsset {
+//   // name: string;
+//   longitude?: number;
+//   latitude?: number;
+//   viewAngle?: number;
+//   altitude?: number;
+// }  
+// const StreetLightWorkOrder: React.FunctionComponent<IWidgetProps> = ({ workOrderAsset, ...props }) => {
+//  // const StreetLightWorkOrder: React.FunctionComponent<IWidgetProps> = (props) => { 
+//  let { uxpContext} = props;  
+//   let [selected, setSelected] = React.useState<string | null>("op-1");
+//   let [inputValue, setInputValue] = React.useState<string | null>("Work Order");
+//   let [inputValue1, setInputValue1] = React.useState<string | null>("Location");
+//   const [workOrders, setWorkOrders] = useState([]);
+//   const apiUrl = 'https://ccc-demo.raseel.city/lucy/workorder/v1/cwos?fields=CWOKey,CWOID,RequesterObjectType,RequesterObjectKey,RequesterObjectID,LocationKey,SiteLocationFullName,CreatedDateTime,ProblemType,PriorityID,Description';
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const response = await fetch(apiUrl, {
+//           headers: {
+//             Authorization: 'SC:mcr:52cc6fe4f2fdf340'
+//           }
+//         });
+//         const data = await response.json();
+//         setWorkOrders(data);
+//       } catch (error) {
+//         console.error('Error fetching data:', error);
+//       }
+//     };
+//     fetchData();
+//   }, []); 
+// const streetLightData = [
+//     {
+//       id: '1',
+//       name: 'High',
+//       name1:'Attention',
+//       value: workOrders.filter(order => order.PriorityID === 'Urgent').length
+//     },
+//     {
+//       id: '2',
+//       name: 'Medium',
+//       name1:'Pending',
+//       value: workOrders.filter(order => order.PriorityID === 'Medium').length
+//     },
+//     {
+//       id: '3',
+//       name: 'Low',
+//       name1:'Resloved',
+//       value: workOrders.filter(order => order.PriorityID === 'Low').length
+//     }
+//   ];  
+// const [poleData, setPoleData] = useState(null);
+// React.useEffect(() => {
+//   workOrders.forEach(workOrder => {
+//     const regex = /Pole\s+(.*?)\s+has\s+a\s+total/;
+//     const match = workOrder.Description.match(regex);
+//     const word = match ? match[1] : null;
+//     console.log(word);
+//     if (word) {
+//       getPoleData(word);
+//     }
+//   });
+// }, [workOrders]); 
+// function getPoleData(poleName: any) { 
+//   props.uxpContext
+//     .executeAction("DigitalTwin", "GetAssetByPoleName", { poleName }, { json: true })
+//     .then((res: any) => {
+//     //  console.log("Response is Pole", res, typeof res);
+//       setPoleData(res);  
+//       console.log("my pole name", poleName);
+//       console.log("my pole lat", res.latitude);
+//       console.log("my pole lat", res.longitude);
+//     })
+//     .catch((e: any) => {
+//       console.error("Error fetching Pole data:", e); 
+//     });
+// }
+//   var lat = poleData?.latitude;
+//   var long = poleData?.longitude; 
+//     var viewAngle= 0; 
+//     var altitude = 10;
+//   console.log("To Check Lat and Long",lat, long )
+//   const handleResultClick = () => { 
+//     props.uxpContext.eventHandler?.(
+//       EventsEnum.DistrictJump, 
+//         {  
+//           longitude: long,
+//           latitude: lat,
+//           viewAngle : viewAngle,
+//           altitude:altitude
+//         }
+//       ); 
+//     console.log("Hi Hello",long, lat)
+//   }; 
+//   const problemTypeColors: { [key: string]: string } = {
+//     'Main Fail': 'rgb(106, 186, 53)',
+//     'AC Voltage': 'rgb(99, 245, 227)',
+//     'Power Factor': 'rgb(25, 157, 142)',
+//     'Load Fail': 'rgb(25, 190, 92)',
+//     'Lux Sensor Blocked': '#619482',
+//     'Partial Failure': 'rgb(179, 238, 142',
+//     'Lamp Flickering': 'rgb(99, 245, 227)'
+//   };
+//       return (  
+//          <WidgetWrapper className="smart-city_box order_summary-box"> 
+//           <TitleBar title="Street Light Work Order Priority" icon='https://static.iviva.com/images/Udhayimages/work-list.png'></TitleBar>
+//           <div className='smart-city_box waste-bin-box '>
+//             <div className="smart-city-content" style={{height:'80px'}}>  
+//                   <div className='status-content'> 
+//                          {streetLightData.map((item) => ( 
+//                           <div  key={item.id} className={`status ${item?.name1}`}>
+//                               <h3>{item?.value}</h3>
+//                               <p>{item?.name}</p>
+//                           </div> 
+//                       ))}  
+//                   </div>
+//               </div>
+//           </div>
+//           <TitleBar title="Street Light Work Order" icon='https://static.iviva.com/images/Udhayimages/work-order.png'></TitleBar>
+//           <div className="smart-city-content"  style={{height:'215px', borderBottom:'1px solid'}}>
+//               <div className="chart-top">
+//                   <FormField inline className="showcase-input" >
+//                         <SearchBox
+//                             value={inputValue}
+//                             onChange={(newValue) => { setInputValue(newValue) }}
+//                             position="left"
+//                             placeholder=''
+//                         />  
+//                         <SearchBox
+//                             value={inputValue1}
+//                             onChange={(newValue) => { setInputValue1(newValue) }}
+//                             position="left"
+//                             placeholder=''
+//                         />          
+//                       <Select
+//                           selected={selected}
+//                           options={[
+//                               { label: "All Alert", value: "op-1" },
+//                               { label: "All Alert 1", value: "op-2" },
+//                               { label: "All Alert 2", value: "op-3" },
+//                           ]}
+//                           onChange={(value) => { setSelected(value) }}
+//                           placeholder=" -- select --"
+//                       /> 
+//                       <Select
+//                           selected={selected}
+//                           options={[
+//                               { label: "Alert Type", value: "op-1" },
+//                               { label: "Alert Type 1", value: "op-2" },
+//                               { label: "Alert Type 2", value: "op-3" },
+//                           ]}
+//                           onChange={(value) => { setSelected(value) }}
+//                           placeholder=" -- select --"
+//                       />  
+//                   </FormField>
+//             </div>
+//                 <div className='work_order-content'>
+//                     <table>
+//                         <thead>
+//                         <tr>
+//                             <th style={{width:'28%'}}>CWOID</th>
+//                             <th style={{width:'15%'}}>Site Location</th>
+//                             <th style={{width:'30%'}}>Created Date</th>
+//                             <th style={{width:'20%'}}>Problem Type</th>
+//                             <th style={{width:'10%'}}></th>
+//                         </tr>
+//                         </thead>
+//                         <tbody> 
+//                         {workOrders.map((workOrder, index) => (
+//                             <tr key={index}>
+//                                 <td style={{width:'28%'}}><a onClick={() => handleResultClick()}>{workOrder?.CWOID}</a></td>
+//                                 <td style={{width:'15%'}}><a onClick={() => handleResultClick()}>{workOrder?.SiteLocationFullName}</a></td>
+//                                 <td style={{width:'30%'}}><a onClick={() => handleResultClick()}>{workOrder?.CreatedDateTime}</a></td>
+//                                 {/* <td style={{width:'20%'}}>{workOrder.ProblemType}</td> */}
+//                                 <td style={{width:'20%', color: problemTypeColors[workOrder.ProblemType] || 'inherit'}}><a onClick={() => handleResultClick()}>{workOrder?.ProblemType}</a></td>
+//                                 <td style={{width:'7%'}}><a className='cwo_key' target="_blank" href={`https://ccc-demo.raseel.city/Apps/ivivaFacility/wo-details?key=${workOrder?.CWOKey}`}></a></td>
+//                             </tr>
+//                         ))}
+//                         </tbody>
+//                     </table>
+//                  </div> 
+//           </div> 
+//           </WidgetWrapper>  
+//       )
+//   };
+// export default StreetLightWorkOrder;
+// import React, { useState, useEffect } from 'react';
+// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+// import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
+// import { IContextProvider } from '../uxp';
+// import { EventsEnum } from '../index';
+// interface IWidgetProps {
+//   uxpContext: IContextProvider;  
+//  workOrderAsset:IWorkOrderAsset
+// } 
+// interface IWorkOrderAsset {
+//   // name: string;
+//   longitude?: number;
+//   latitude?: number;
+// }  
+// const StreetLightWorkOrder: React.FunctionComponent<IWidgetProps> = ({ workOrderAsset, ...props }) => {
+//  // const StreetLightWorkOrder: React.FunctionComponent<IWidgetProps> = (props) => { 
+//   let [selected, setSelected] = React.useState<string | null>("op-1");
+//   let [inputValue, setInputValue] = React.useState<string | null>("Work Order");
+//   let [inputValue1, setInputValue1] = React.useState<string | null>("Location");
+//   const [workOrders, setWorkOrders] = useState([]);
+//   const apiUrl = 'https://ccc-demo.raseel.city/lucy/workorder/v1/cwos?fields=CWOKey,CWOID,RequesterObjectType,RequesterObjectKey,RequesterObjectID,LocationKey,SiteLocationFullName,CreatedDateTime,ProblemType,PriorityID,Description';
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const response = await fetch(apiUrl, {
+//           headers: {
+//             Authorization: 'SC:mcr:52cc6fe4f2fdf340'
+//           }
+//         });
+//         const data = await response.json();
+//         // console.log("Priority ID is",data.map((order: { PriorityID: any; }) => order.PriorityID));
+//         setWorkOrders(data);
+//       } catch (error) {
+//         console.error('Error fetching data:', error);
+//       }
+//     };
+//     fetchData();
+//   }, []); 
+// const streetLightData = [
+//     {
+//       id: '1',
+//       name: 'High',
+//       name1:'Attention',
+//       value: workOrders.filter(order => order.PriorityID === 'Urgent').length
+//     },
+//     {
+//       id: '2',
+//       name: 'Medium',
+//       name1:'Pending',
+//       value: workOrders.filter(order => order.PriorityID === 'Medium').length
+//     },
+//     {
+//       id: '3',
+//       name: 'Low',
+//       name1:'Resloved',
+//       value: workOrders.filter(order => order.PriorityID === 'Low').length
+//     }
+//   ];  
+// //   const [poleData, setpoleData] = useState(null);  
+// //   workOrders.forEach(workOrder => {
+// //     const regex = /Pole\s+(.*?)\s+has\s+a\s+total/; 
+// //     const match = workOrder.Description.match(regex);
+// //     const word = match ? match[1] : null;
+// //     console.log("Hey Fool",word);
+// //   });
+// // var pole = word;
+// // // var poleName = 'ن92-1-10';
+// // function getHealthData() { 
+// //   props.uxpContext
+// //     .executeAction("DigitalTwin", "GetAssetByPoleName", { poleName: poleName }, { json: true })
+// //     .then((res: any) => {
+// //       console.log("Response UDKKKKKKKKD is", res, typeof res);
+// //       setpoleData(res);  
+// //     })
+// //     .catch((e: any) => {
+// //       console.error("Error fetching health data:", e); 
+// //     });
+// // } 
+// // React.useEffect(() => {
+// //   getHealthData();
+// // }, []);  
+// const [poleData, setPoleData] = useState(null);
+// React.useEffect(() => {
+//   workOrders.forEach(workOrder => {
+//     const regex = /Pole\s+(.*?)\s+has\s+a\s+total/;
+//     const match = workOrder.Description.match(regex);
+//     const word = match ? match[1] : null;
+//     console.log("Hey Fool", word);
+//     // Assign the value of 'word' to 'poleName' and call 'getHealthData'
+//     if (word) {
+//       getPoleData(word);
+//     }
+//   });
+// }, [workOrders]); 
+// function getPoleData(poleName: any) { 
+//   props.uxpContext
+//     .executeAction("DigitalTwin", "GetAssetByPoleName", { poleName }, { json: true })
+//     .then((res: any) => {
+//      console.log("Response is Pole", res, typeof res);
+//       setPoleData(res);  
+//     })
+//     .catch((e: any) => {
+//       console.error("Error fetching health data:", e); 
+//     });
+// }
+//   var lat = poleData?.latitude;
+//   var long = poleData?.longitude;
+//   const handleResultClick = () => {
+//     if (props.uxpContext.eventHandler) { 
+//       props.uxpContext.eventHandler(EventsEnum.DistrictJump, { 
+//         longitude: long,
+//         latitude: lat
+//       });
+//     }
+//     console.log("Hi Hello",longitude, latitude)
+//   }; 
+//   // Define a mapping of ProblemType values to colors
+//   const problemTypeColors: { [key: string]: string } = {
+//     'Main Fail': 'rgb(106, 186, 53)',
+//     'AC Voltage': 'rgb(99, 245, 227)',
+//     'Power Factor': 'rgb(25, 157, 142)',
+//     'Load Fail': 'rgb(25, 190, 92)',
+//     'Lux Sensor Blocked': '#619482',
+//     'Partial Failure': 'rgb(179, 238, 142',
+//     'Lamp Flickering': 'rgb(99, 245, 227)'
+//   };
+//       return (  
+//          <WidgetWrapper className="smart-city_box order_summary-box"> 
+//           <TitleBar title="Street Light Work Order Priority" icon='https://static.iviva.com/images/Udhayimages/work-list.png'></TitleBar>
+//           <div className='smart-city_box waste-bin-box '>
+//             <div className="smart-city-content" style={{height:'80px'}}>  
+//                   <div className='status-content'> 
+//                          {streetLightData.map((item) => ( 
+//                           <div  key={item.id} className={`status ${item?.name1}`}>
+//                               <h3>{item?.value}</h3>
+//                               <p>{item?.name}</p>
+//                           </div> 
+//                       ))}  
+//                   </div>
+//               </div>
+//           </div>
+//           <TitleBar title="Street Light Work Order" icon='https://static.iviva.com/images/Udhayimages/work-order.png'></TitleBar>
+//           <div className="smart-city-content"  style={{height:'215px', borderBottom:'1px solid'}}>
+//               <div className="chart-top">
+//                   <FormField inline className="showcase-input" >
+//                         <SearchBox
+//                             value={inputValue}
+//                             onChange={(newValue) => { setInputValue(newValue) }}
+//                             position="left"
+//                             placeholder=''
+//                         /> 
+//                         <SearchBox
+//                             value={inputValue1}
+//                             onChange={(newValue) => { setInputValue1(newValue) }}
+//                             position="left"
+//                             placeholder=''
+//                         /> 
+//                       <Select
+//                           selected={selected}
+//                           options={[
+//                               { label: "All Alert", value: "op-1" },
+//                               { label: "All Alert 1", value: "op-2" },
+//                               { label: "All Alert 2", value: "op-3" },
+//                           ]}
+//                           onChange={(value) => { setSelected(value) }}
+//                           placeholder=" -- select --"
+//                       />
+//                       <Select
+//                           selected={selected}
+//                           options={[
+//                               { label: "Alert Type", value: "op-1" },
+//                               { label: "Alert Type 1", value: "op-2" },
+//                               { label: "Alert Type 2", value: "op-3" },
+//                           ]}
+//                           onChange={(value) => { setSelected(value) }}
+//                           placeholder=" -- select --"
+//                       />  
+//                   </FormField>
+//             </div>
+//                 <div className='work_order-content'>
+//                     <table>
+//                         <thead>
+//                         <tr>
+//                             <th style={{width:'28%'}}>CWOID</th>
+//                             <th style={{width:'15%'}}>Site Location</th>
+//                             <th style={{width:'30%'}}>Created Date</th>
+//                             <th style={{width:'20%'}}>Problem Type</th>
+//                             <th style={{width:'10%'}}></th>
+//                         </tr>
+//                         </thead>
+//                         <tbody> 
+//                         {workOrders.map((workOrder, index) => (
+//                             <tr key={index}>
+//                                 <td style={{width:'28%'}}><a onClick={() => handleResultClick()}>{workOrder?.CWOID}</a></td>
+//                                 <td style={{width:'15%'}}><a onClick={() => handleResultClick()}>{workOrder?.SiteLocationFullName}</a></td>
+//                                 <td style={{width:'30%'}}><a onClick={() => handleResultClick()}>{workOrder?.CreatedDateTime}</a></td>
+//                                 {/* <td style={{width:'20%'}}>{workOrder.ProblemType}</td> */}
+//                                 <td style={{width:'20%', color: problemTypeColors[workOrder.ProblemType] || 'inherit'}}><a onClick={() => handleResultClick()}>{workOrder?.ProblemType}</a></td>
+//                                 <td style={{width:'7%'}}><a className='cwo_key' target="_blank" href={`https://ccc-demo.raseel.city/Apps/ivivaFacility/wo-details?key=${workOrder?.CWOKey}`}></a></td>
+//                             </tr>
+//                         ))}
+//                         </tbody>
+//                     </table>
+//                  </div> 
+//           </div> 
+//           </WidgetWrapper>  
+//       )
+//   };
+// export default StreetLightWorkOrder;
+// import React, { useState, useEffect } from 'react';
+// import { DataList, WidgetWrapper, SearchBox, TitleBar, FormField, Select } from "uxp/components";
+// const StreetLightWorkOrder: React.FunctionComponent<{}> = () => {
+//   let [selected, setSelected] = React.useState<string | null>("op-1");
+//   const [inputValue, setInputValue] = useState<string>('');
+//   const [inputValue1, setInputValue1] = useState<string>(''); 
+//   const [workOrders, setWorkOrders] = useState([]);
+//   const apiUrl = 'https://ccc-demo.raseel.city/lucy/workorder/v1/cwos?fields=CWOKey,CWOID,RequesterObjectType,RequesterObjectKey,RequesterObjectID,LocationKey,SiteLocationFullName,CreatedDateTime,ProblemType,PriorityID';
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const response = await fetch(apiUrl, {
+//           headers: {
+//             Authorization: 'SC:mcr:52cc6fe4f2fdf340'
+//           }
+//         });
+//         const data = await response.json();
+//         console.log("Priority ID is", data.map((order: { PriorityID: any; }) => order.PriorityID));
+//         setWorkOrders(data);
+//       } catch (error) {
+//         console.error('Error fetching data:', error);
+//       }
+//     };
+//     fetchData();
+//   }, []);
+//   const streetLightData = [
+//     {
+//       id: '1',
+//       name: 'High',
+//       name1: 'Attention',
+//       value: workOrders.filter(order => order.PriorityID === 'Urgent').length
+//     },
+//     {
+//       id: '2',
+//       name: 'Medium',
+//       name1: 'Pending',
+//       value: workOrders.filter(order => order.PriorityID === 'Medium').length
+//     },
+//     {
+//       id: '3',
+//       name: 'Low',
+//       name1: 'Resloved',
+//       value: workOrders.filter(order => order.PriorityID === 'Low').length
+//     }
+//   ];
+//   const problemTypeColors: { [key: string]: string } = {
+//     'Main Fail': 'rgb(106, 186, 53)',
+//     'AC Voltage': 'rgb(99, 245, 227)',
+//     'Power Factor': 'rgb(25, 157, 142)',
+//     'Load Fail': 'rgb(25, 190, 92)',
+//     'Lux Sensor Blocked': '#619482',
+//     'Partial Failure': 'rgb(179, 238, 142',
+//     'Lamp Flickering': 'rgb(99, 245, 227)'
+//   };
+//   const filteredWorkOrdersByCwoId = workOrders.filter(order =>
+//     order.CWOID.toLowerCase().includes(inputValue.toLowerCase())
+//   );
+//   const filteredWorkOrders = workOrders.filter(order =>
+//     order.SiteLocationFullName.toLowerCase().includes(inputValue1.toLowerCase())
+//   );
+//   return (
+//     <WidgetWrapper className="smart-city_box order_summary-box">
+//       <TitleBar title="Street Light Work Order Priority" icon='https://static.iviva.com/images/Udhayimages/work-list.png'></TitleBar>
+//       <div className='smart-city_box waste-bin-box '>
+//         <div className="smart-city-content" style={{ height: '80px' }}>
+//           <div className='status-content'>
+//             {streetLightData.map((item) => (
+//               <div key={item.id} className={`status ${item.name1}`}>
+//                 <h3>{item.value}</h3>
+//                 <p>{item.name}</p>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//       <TitleBar title="Street Light Work Order" icon='https://static.iviva.com/images/Udhayimages/work-order.png'></TitleBar>
+//       <div className="smart-city-content" style={{ height: '215px', borderBottom: '1px solid' }}>
+//         <div className="chart-top">
+//           <FormField inline className="showcase-input">
+//             {/* <SearchBox
+//               value={inputValue}
+//               onChange={(newValue) => { setInputValue(newValue) }}
+//               position="left"
+//               placeholder=''
+//             /> */}
+//             <SearchBox
+//               value={inputValue}
+//               onChange={(newValue) => { setInputValue(newValue) }}
+//               position="left"
+//               placeholder='Filter by CWOID'
+//             />
+//             <SearchBox
+//               value={inputValue1}
+//               onChange={(newValue) => { setInputValue1(newValue) }}
+//               position="left"
+//               placeholder=''
+//             />
+//             <Select
+//               selected={selected}
+//               options={[
+//                 { label: "All Alert", value: "op-1" },
+//                 { label: "All Alert 1", value: "op-2" },
+//                 { label: "All Alert 2", value: "op-3" },
+//               ]}
+//               onChange={(value) => { setSelected(value) }}
+//               placeholder=" -- select --"
+//             />
+//             <Select
+//               selected={selected}
+//               options={[
+//                 { label: "Alert Type", value: "op-1" },
+//                 { label: "Alert Type 1", value: "op-2" },
+//                 { label: "Alert Type 2", value: "op-3" },
+//               ]}
+//               onChange={(value) => { setSelected(value) }}
+//               placeholder=" -- select --"
+//             />
+//           </FormField>
+//         </div>
+//         <div className='work_order-content'>
+//           <table>
+//             <thead>
+//               <tr>
+//                 <th style={{ width: '30%' }}>CWOID</th>
+//                 <th style={{ width: '20%' }}>Site Location</th>
+//                 <th style={{ width: '30%' }}>Created Date</th>
+//                 <th style={{ width: '20%' }}>Problem Type</th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               {filteredWorkOrders.map((workOrder, index) => (
+//                 <tr key={index}>
+//                   <td style={{ width: '30%' }}><a target="_blank" href='https://ccc-demo.raseel.city/Apps/Auth/userlogin#!tabs.dashboardtabs=1'>{workOrder.CWOID}</a></td>
+//                   <td style={{ width: '20%' }}>{workOrder.SiteLocationFullName}</td>
+//                   <td style={{ width: '30%' }}>{workOrder.CreatedDateTime}</td>
+//                   <td style={{ width: '20%', color: problemTypeColors[workOrder.ProblemType] || 'inherit' }}>{workOrder.ProblemType}</td>
+//                 </tr>
+//               ))}
+//             </tbody>
+//           </table>
+//         </div>
+//       </div>
+//     </WidgetWrapper>
+//   );
+// };
+// export default StreetLightWorkOrder;
+// import React, { useState, useEffect } from 'react';
 // import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 // import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
 // const StreetLightWorkOrder: React.FunctionComponent<{}> = () => {   
 //   let [selected, setSelected] = React.useState<string | null>("op-1");
 //   let [inputValue, setInputValue] = React.useState<string | null>("Work Order");
 //   let [inputValue1, setInputValue1] = React.useState<string | null>("Location");
-//   var order_Summarydata = [ 
-//       {
-//           "id": "1", 
-//           "work_Order": 'Wo-123456789',
-//           "location": "Al Haram Dist", 
-//           "alert_Time":"2023-01-11 07:56:46", 
-//           'status': 'attention', 
-//           "alert_Type" : "Faulty" 
-//       },
-//       {
-//           "id": "2",
-//           "work_Order": 'Wo-123456789',
-//           "location": "Al Haram Dist", 
-//           "alert_Time":"2023-01-11 07:56:46",
-//           "status" : "attention",
-//           "alert_Type" : "Faulty" 
-//       },
-//       {
-//           "id": "3",
-//           "work_Order": 'Wo-123456789',
-//           "location": "Al Haram Dist", 
-//           "alert_Time":"2023-01-11 07:56:46",
-//           "status" : "attention",
-//           "alert_Type" : "Offline" 
-//       },
-//       {
-//           "id": "4", 
-//           "work_Order": 'Wo-123456789',
-//           "location": "Al Haram Dist", 
-//           "alert_Time":"2023-01-11 07:56:46",
-//           "status" : "pending",
-//           "alert_Type" : "Offline" 
-//       } ,
-//       {
-//           "id": "5", 
-//           "work_Order": 'Wo-123456789',
-//           "location": "Al Haram Dist", 
-//           "alert_Time":"2023-01-11 07:56:46",
-//           "status" : "pending",
-//           "alert_Type" : "Working" 
-//       }  
+//   const [workOrders, setWorkOrders] = useState([]);
+//   const apiUrl = 'https://ccc-demo.raseel.city/lucy/workorder/v1/cwos?fields=CWOKey,CWOID,RequesterObjectType,RequesterObjectKey,RequesterObjectID,LocationKey,SiteLocationFullName,CreatedDateTime,ProblemType,PriorityID';
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const response = await fetch(apiUrl, {
+//           headers: {
+//             Authorization: 'SC:mcr:52cc6fe4f2fdf340'
+//           }
+//         });
+//         const data = await response.json();
+//         console.log("Priority ID is",data.map((order: { PriorityID: any; }) => order.PriorityID));
+//         setWorkOrders(data);
+//       } catch (error) {
+//         console.error('Error fetching data:', error);
+//       }
+//     };
+//     fetchData();
+//   }, []);
+// const streetLightData = [
+//     {
+//       id: '1',
+//       name: 'High',
+//       name1:'Attention',
+//       value: workOrders.filter(order => order.PriorityID === 'Urgent').length
+//     },
+//     {
+//       id: '2',
+//       name: 'Medium',
+//       name1:'Pending',
+//       value: workOrders.filter(order => order.PriorityID === 'Medium').length
+//     },
+//     {
+//       id: '3',
+//       name: 'Low',
+//       name1:'Resloved',
+//       value: workOrders.filter(order => order.PriorityID === 'Low').length
+//     }
 //   ];
+//   // Define a mapping of ProblemType values to colors
+//   const problemTypeColors: { [key: string]: string } = {
+//   'Main Fail': 'rgb(106, 186, 53)',
+//   'AC Voltage': 'rgb(99, 245, 227)',
+//   'Power Factor': 'rgb(25, 157, 142)',
+//   'Load Fail': 'rgb(25, 190, 92)',
+//   'Lux Sensor Blocked': '#619482',
+//   'Partial Failure': 'rgb(179, 238, 142',
+//   'Lamp Flickering': 'rgb(99, 245, 227)'
+// };
+//       return ( 
+//          <WidgetWrapper className="smart-city_box order_summary-box"> 
+//           <TitleBar title="Street Light Work Order Priority" icon='https://static.iviva.com/images/Udhayimages/work-list.png'></TitleBar>
+//           <div className='smart-city_box waste-bin-box '>
+//             <div className="smart-city-content" style={{height:'80px'}}>  
+//                   <div className='status-content'> 
+//                          {streetLightData.map((item) => ( 
+//                           <div  key={item.id} className={`status ${item.name1}`}>
+//                               <h3>{item.value}</h3>
+//                               <p>{item.name}</p>
+//                           </div> 
+//                       ))}  
+//                   </div>
+//               </div>
+//           </div>
+//           <TitleBar title="Street Light Work Order" icon='https://static.iviva.com/images/Udhayimages/work-order.png'></TitleBar>
+//           <div className="smart-city-content"  style={{height:'215px', borderBottom:'1px solid'}}>
+//               <div className="chart-top">
+//                   <FormField inline className="showcase-input" >
+//                         <SearchBox
+//                             value={inputValue}
+//                             onChange={(newValue) => { setInputValue(newValue) }}
+//                             position="left"
+//                             placeholder=''
+//                         /> 
+//                         <SearchBox
+//                             value={inputValue1}
+//                             onChange={(newValue) => { setInputValue1(newValue) }}
+//                             position="left"
+//                             placeholder=''
+//                         /> 
+//                       <Select
+//                           selected={selected}
+//                           options={[
+//                               { label: "All Alert", value: "op-1" },
+//                               { label: "All Alert 1", value: "op-2" },
+//                               { label: "All Alert 2", value: "op-3" },
+//                           ]}
+//                           onChange={(value) => { setSelected(value) }}
+//                           placeholder=" -- select --"
+//                       />
+//                       <Select
+//                           selected={selected}
+//                           options={[
+//                               { label: "Alert Type", value: "op-1" },
+//                               { label: "Alert Type 1", value: "op-2" },
+//                               { label: "Alert Type 2", value: "op-3" },
+//                           ]}
+//                           onChange={(value) => { setSelected(value) }}
+//                           placeholder=" -- select --"
+//                       />  
+//                   </FormField>
+//             </div>
+//                 <div className='work_order-content'>
+//                     <table>
+//                         <thead>
+//                         <tr>
+//                             <th style={{width:'28%'}}>CWOID</th>
+//                             <th style={{width:'15%'}}>Site Location</th>
+//                             <th style={{width:'30%'}}>Created Date</th>
+//                             <th style={{width:'20%'}}>Problem Type</th>
+//                             <th style={{width:'10%'}}></th>
+//                         </tr>
+//                         </thead>
+//                         <tbody>
+//                         {/* {workOrders.map((workOrder, index) => ( */}
+//                         {workOrders.map((workOrder, index) => (
+//                             <tr key={index}>
+//                             <td style={{width:'28%'}}>{workOrder.CWOID}</td>
+//                             <td style={{width:'15%'}}>{workOrder.SiteLocationFullName}</td>
+//                             <td style={{width:'30%'}}>{workOrder.CreatedDateTime}</td>
+//                             {/* <td style={{width:'20%'}}>{workOrder.ProblemType}</td> */}
+//                             <td style={{width:'20%', color: problemTypeColors[workOrder.ProblemType] || 'inherit'}}>{workOrder.ProblemType}</td>
+//                             <td style={{width:'7%'}}><a className='cwo_key' target="_blank" href={`https://ccc-demo.raseel.city/Apps/ivivaFacility/wo-details?key=${workOrder.CWOKey}`}></a></td>
+//                             </tr>
+//                         ))}
+//                         </tbody>
+//                     </table>
+//                  </div> 
+//           </div> 
+//           </WidgetWrapper>  
+//       )
+//   };
+// export default StreetLightWorkOrder;
+// import React, { useState, useEffect } from 'react';
+// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+// import { DataList, WidgetWrapper, DynamicSelect, SearchBox, DataTable, MapComponent, TitleBar, ItemListCard, FilterPanel, DataGrid, ItemCard, FormField, Label, Select, Input, DateRangePicker, DatePicker, Checkbox, ProfileImage, Popover, TrendChartComponent, ToggleFilter } from "uxp/components";
+// const StreetLightWorkOrder: React.FunctionComponent<{}> = () => {   
+//   let [selected, setSelected] = React.useState<string | null>("op-1");
+//   let [inputValue, setInputValue] = React.useState<string | null>("Work Order");
+//   let [inputValue1, setInputValue1] = React.useState<string | null>("Location");
+//   const [workOrders, setWorkOrders] = useState([]);
+//   const apiUrl = 'https://ccc-demo.raseel.city/lucy/workorder/v1/cwos?fields=CWOKey,CWOID,RequesterObjectType,RequesterObjectKey,RequesterObjectID,LocationKey,SiteLocationFullName,CreatedDateTime,ProblemType';
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const response = await fetch(apiUrl, {
+//           headers: {
+//             Authorization: 'SC:mcr:52cc6fe4f2fdf340'
+//           }
+//         });
+//         const data = await response.json();
+//         setWorkOrders(data);
+//       } catch (error) {
+//         console.error('Error fetching data:', error);
+//       }
+//     };
+//     fetchData();
+//   }, []);
 //   const streetLightData  = [ 
 //     {
 //         id: '1',
@@ -22531,16 +22513,6 @@ exports["default"] = StreetLightWorkOrder;
 //         value: 12 
 //     }
 // ];  
-//   const getDataItems = (max: number, pageToken: string) => {
-//       let last = 0
-//       if (pageToken !== null) last = parseInt(pageToken);
-//       let p = new Promise<{ items: Array<any>, pageToken: string }>((resolve, reject) => {
-//           let data = order_Summarydata.filter((item: any, key: number) => (key > last && key <= last + max));
-//           let response = { items: data, pageToken: (last + data.length).toString() }
-//           resolve(response);
-//       })
-//       return p;
-//   }
 //       return ( 
 //          <WidgetWrapper className="smart-city_box order_summary-box"> 
 //           <TitleBar title="Street Light Work Order" icon='https://static.iviva.com/images/Udhayimages/traffic-light.png'></TitleBar>
@@ -22593,57 +22565,28 @@ exports["default"] = StreetLightWorkOrder;
 //                       />  
 //                   </FormField>
 //             </div>
-//               <DataTable
-//                   data={(max, last) => getDataItems(max, last)}
-//                   pageSize={10}
-//                   columns={[
-//                       {
-//                           title: "Work Order",
-//                           width: "20%",
-//                           renderColumn: (item) => <ItemCard
-//                               item={item}
-//                               subTitleField="work_Order"
-//                               className="data-table-item"
-//                           />
-//                       },
-//                       {
-//                           title: "Location",
-//                           width: "25%",
-//                           renderColumn: (item) => <ItemCard
-//                               item={item}
-//                               subTitleField="location"
-//                               className="data-table-item"
-//                           />
-//                       },
-//                       {
-//                           title: "Alert Time",
-//                           width: "25%",
-//                           renderColumn: (item) => <ItemCard
-//                               item={item}
-//                               subTitleField="alert_Time"
-//                               className="data-table-item"
-//                           />
-//                       },
-//                       {
-//                           title: "Alert Type",
-//                           width: "20%",
-//                           renderColumn: (item) => <ItemCard
-//                               item={item}
-//                               subTitleField="alert_Type"
-//                               className="data-table-item"
-//                           />
-//                       },
-//                       {
-//                           title: " ",
-//                           width: "10%",
-//                           renderColumn: (item) => <ItemCard
-//                               item={item}
-//                               subTitleField=""
-//                               className={`data-table-item ${item.status}`}
-//                           />
-//                       }
-//                   ]}
-//               /> 
+//                 <div className='work_order-content'>
+//                     <table>
+//                         <thead>
+//                         <tr>
+//                             <th style={{width:'30%'}}>CWOID</th>
+//                             <th style={{width:'20%'}}>Site Location</th>
+//                             <th style={{width:'30%'}}>Created Date</th>
+//                             <th style={{width:'20%'}}>Problem Type</th>
+//                         </tr>
+//                         </thead>
+//                         <tbody>
+//                         {workOrders.map((workOrder, index) => (
+//                             <tr key={index}>
+//                             <td style={{width:'30%'}}>{workOrder.CWOID}</td>
+//                             <td style={{width:'20%'}}>{workOrder.SiteLocationFullName}</td>
+//                             <td style={{width:'30%'}}>{workOrder.CreatedDateTime}</td>
+//                             <td style={{width:'20%'}}>{workOrder.ProblemType}</td>
+//                             </tr>
+//                         ))}
+//                         </tbody>
+//                     </table>
+//                  </div> 
 //           </div> 
 //           </WidgetWrapper>  
 //       )
@@ -22698,7 +22641,7 @@ const TopHeader = (props) => {
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box empty-box" },
         react_1.default.createElement("div", { className: "header-content" },
             react_1.default.createElement("div", { className: 'logo' }),
-            react_1.default.createElement("h2", null, "Madina Smart City"))));
+            react_1.default.createElement("h3", null, "Madina Smart City"))));
 };
 exports["default"] = TopHeader;
 // import React, { useState, useEffect } from 'react';
@@ -22880,8 +22823,12 @@ const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components")
 const index_1 = __webpack_require__(/*! ../index */ "./src/index.tsx");
 react_1.default.createElement("link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" });
 const TopNavTabs = (props) => {
-    const { uxpContext } = props;
+    const { uxpContext, page, currentPage } = props;
     const [activeTab, setActiveTab] = (0, react_1.useState)('Streetlight');
+    (0, react_1.useEffect)(() => {
+        if (page)
+            setActiveTab(page);
+    }, [page]);
     const tabs = {
         Waste: { label: 'Waste', className: 'waste', id: 'waste' },
         Streetlight: { label: 'Streetlight', className: 'streetlight', id: 'streetlight' },
@@ -22890,43 +22837,28 @@ const TopNavTabs = (props) => {
         Pollution: { label: 'Pollution', className: 'pollution', id: 'pollution' },
         Fire: { label: 'Fire', className: 'fire', id: 'fire' },
     };
-    (0, react_1.useEffect)(() => {
-        if (!!props.page)
-            setActiveTab(props.page);
-    }, [props.page]);
     const handleTabClick = (label) => {
         var _a;
-        console.log('Tab clicked:', label); // Add this line to check if the function is triggered
         setActiveTab(label);
-        const page = tabs[label];
-        if (page) {
-            // Remove 'active' class from all tabs
-            document.querySelectorAll('.nav-link').forEach((element) => {
-                element.classList.remove('active');
-            });
-            // Add 'active' class to the clicked tab
-            const clickedTab = document.querySelector(`.nav-link.${label}`);
-            clickedTab === null || clickedTab === void 0 ? void 0 : clickedTab.classList.add('active');
-            (_a = uxpContext.eventHandler) === null || _a === void 0 ? void 0 : _a.call(uxpContext, index_1.EventsEnum.Navigation, { page: page.id });
-            console.log('Hello', page);
-        }
+        (_a = uxpContext.eventHandler) === null || _a === void 0 ? void 0 : _a.call(uxpContext, index_1.EventsEnum.Navigation, { page: label.toLowerCase() });
     };
     return (react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box" },
         react_1.default.createElement("div", { className: "top-nav-tabs" },
-            react_1.default.createElement("ul", { id: "navList" }, Object.values(tabs).map((tab) => (react_1.default.createElement("li", { key: tab.id, onClick: () => handleTabClick(tab.label), className: `nav-link ${tab.className}` },
-                react_1.default.createElement("a", { href: "javascript:void(0);", onClick: (e) => e.preventDefault() },
+            react_1.default.createElement("ul", { id: "navList" }, Object.values(tabs).map((tab) => (react_1.default.createElement("li", { key: tab.id, onClick: () => handleTabClick(tab.label), className: `nav-link ${tab.className} ${tab.label === activeTab ? 'active' : ''}` },
+                react_1.default.createElement("a", { href: "javascript:void(0);" },
                     react_1.default.createElement("span", null),
                     react_1.default.createElement("label", null, tab.label)))))))));
 };
 exports["default"] = TopNavTabs;
-// import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useMemo, useState } from 'react';
 // import { WidgetWrapper } from 'uxp/components';
 // import { IContextProvider } from '../uxp';
 // import { EventsEnum } from '../index';
-// interface IMapChangeMode {
+// interface INavmode {
 //   uxpContext: IContextProvider;
 //   page?:string,
-//   objectId?:string
+//   objectId?:string,
+//   currentPage?:string,
 // }
 // <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 // interface ITab {
@@ -22934,67 +22866,45 @@ exports["default"] = TopNavTabs;
 //  label: string,
 //  className: string
 // }
-// const TopNavTabs: React.FunctionComponent<IMapChangeMode> = (props) => {
-//   const { uxpContext } = props;
+// const TopNavTabs: React.FunctionComponent<INavmode> = (props) => {
+//   const { uxpContext, page, currentPage } = props;
 //   const [activeTab, setActiveTab] = useState('Streetlight');
-//  const tabs: { [key: string]: ITab } = { 
+//   const tabs: Record<string, ITab> = useMemo(() => ({
 //       Waste: { label: 'Waste', className: 'waste', id: 'waste' },
-//       Streetlight:  { label: 'Streetlight', className: 'streetlight', id: 'streetlight' },
-//       CCTV: { label: 'CCTV', className: 'cctv', id: 'cctv' }, 
+//       Streetlight: { label: 'Streetlight', className: 'streetlight', id: 'streetlight' },
+//       CCTV: { label: 'CCTV', className: 'cctv', id: 'cctv' },
 //       Water: { label: 'Water', className: 'water', id: 'water' },
 //       Pollution: { label: 'Pollution', className: 'pollution', id: 'pollution' },
-//       Fire: { label: 'Fire', className: 'fire', id: 'fire' },  
-//       //Emission: { label: 'Emission', className: 'emission', id: 'emission' },
-//     };
-//     useEffect(() => {
-//       if(!!props.page) setActiveTab(props.page)
-//     },[props.page])
-//     const handleTabClick = (label: string) => {
+//       Fire: { label: 'Fire', className: 'fire', id: 'fire' },
+//   }), []);
+//   useEffect(() => {
+//       if (page) setActiveTab(page);
+//   }, [page]);
+//   const handleTabClick = (label: string) => {
 //       setActiveTab(label);
-//       const page = tabs[label];
-//       // if (page) {
-//       //   uxpContext.eventHandler?.(EventsEnum.Navigation, { page: page.id });
-//       // }
-//     if (page) { 
-//       document.querySelectorAll('.nav-link').forEach((element) => {
-//         element.classList.remove('active');
-//       }); 
-//       document.querySelector(`.nav-link.${label}`)?.classList.add('active');  
-//       setActiveTab(label);  
-//       uxpContext.eventHandler?.(EventsEnum.Navigation, { page: page.id });
-//       console.log('Hello',page);
-//     }
-//     };
-//   return (
+//       uxpContext.eventHandler?.(EventsEnum.Navigation, { page: label.toLowerCase() });
+//   };
+//   return ( 
 //     <WidgetWrapper className="smart-city_box">
 //       <div className="top-nav-tabs">
 //         <ul id="navList">
-//           { Object.values(tabs).map((tab) => (
+//           { Object.values(tabs).map((tab) => ( 
 //             <li
-//               key={tab.id} 
-//               onClick={() => handleTabClick(tab.label)}
-//               className={`nav-link ${tab.className} ${activeTab === tab.label ? 'active' : ''}`}
-//             >
-//               <a href="javascript:void(0);" onClick={(e) => e.preventDefault()}>
+//                   key={tab.id}
+//                   onClick={() => handleTabClick(tab.label)} className={`nav-link ${tab.className} ${tab.label === activeTab ? ' active' : ''}`}
+//               >
+//               <a href="javascript:void(0);">
 //                 <span></span>
 //                 <label>{tab.label}</label>
 //               </a>
-//             </li>
-//             //   <li  key={tab.id} onClick={() => handleTabClick(tab.label)}
-//             //   className={`nav-link ${tab.className} ${activeTab === tab.label ? 'active' : ''}`}
-//             // >
-//             //   <a href="javascript:void(0);" onClick={(e) => e.preventDefault()}>
-//             //     <span><FontAwesomeIcon icon="fa-solid fa-traffic-light" /></span>
-//             //     <label>{tab.label}</label>
-//             //   </a>
-//             // </li>
+//             </li> 
 //           ))}
 //         </ul>
 //       </div>
 //     </WidgetWrapper>
 //   );
 // };
-// export default TopNavTabs; 
+// export default TopNavTabs;
 
 
 /***/ }),
@@ -24223,7 +24133,7 @@ const Waste_Generated_Trend = () => {
                         data: selectedData, margin: {
                             top: 2, right: 0, left: 0, bottom: 2,
                         } },
-                        react_1.default.createElement(recharts_1.CartesianGrid, { strokeDasharray: "0 0" }),
+                        react_1.default.createElement(recharts_1.CartesianGrid, { stroke: "#1a6f60cf", strokeDasharray: "1 1" }),
                         react_1.default.createElement(recharts_1.XAxis, { dataKey: "name" }),
                         react_1.default.createElement(recharts_1.YAxis, { orientation: "left" }),
                         react_1.default.createElement(recharts_1.Tooltip, null),
@@ -24635,7 +24545,7 @@ const Water_ConsumptionWidget = () => {
                             left: 20,
                             bottom: 5,
                         } },
-                        react_1.default.createElement(recharts_1.CartesianGrid, { stroke: "#0b3e35cf", strokeDasharray: "1 1" }),
+                        react_1.default.createElement(recharts_1.CartesianGrid, { stroke: "#1a6f60cf", strokeDasharray: "1 1" }),
                         react_1.default.createElement(recharts_1.XAxis, { dataKey: "name", tick: { fill: '#ffffff' } }),
                         react_1.default.createElement(recharts_1.YAxis, { tick: { fill: '#ffffff' } }),
                         react_1.default.createElement(recharts_1.Tooltip, null),
@@ -24988,7 +24898,6 @@ const top_section_1 = __importDefault(__webpack_require__(/*! ./components/top-s
 const WeatherIcons_1 = __importDefault(__webpack_require__(/*! ./components/WeatherIcons */ "./src/components/WeatherIcons.tsx"));
 const SunController_1 = __importDefault(__webpack_require__(/*! ./components/SunController */ "./src/components/SunController.tsx"));
 const heightMap_1 = __importDefault(__webpack_require__(/*! ./components/heightMap */ "./src/components/heightMap.tsx"));
-// import DistrictToggle from './components/district-toggle'
 const top_header_1 = __importDefault(__webpack_require__(/*! ./components/top-header */ "./src/components/top-header.tsx"));
 const top_rht_header_1 = __importDefault(__webpack_require__(/*! ./components/top-rht-header */ "./src/components/top-rht-header.tsx"));
 const search_box_1 = __importDefault(__webpack_require__(/*! ./components/search_box */ "./src/components/search_box.tsx"));
@@ -25005,6 +24914,7 @@ const incident_managment_1 = __importDefault(__webpack_require__(/*! ./component
 const iot_filter_1 = __importDefault(__webpack_require__(/*! ./components/iot_filter */ "./src/components/iot_filter.tsx"));
 const pole_details_1 = __importDefault(__webpack_require__(/*! ./components/pole_details */ "./src/components/pole_details.tsx"));
 const madinah_Facts_1 = __importDefault(__webpack_require__(/*! ./components/madinah_Facts */ "./src/components/madinah_Facts.tsx"));
+const refresh_1 = __importDefault(__webpack_require__(/*! ./components/refresh */ "./src/components/refresh.tsx"));
 // export enum EventsEnum {
 //   Mode = 'mode',
 //   MapModeChange = "MapModeChange"
@@ -25021,6 +24931,7 @@ var EventsEnum;
     EventsEnum["DistrictJump"] = "district-jump";
     EventsEnum["ChangeAppMode"] = "change-app-mode";
     EventsEnum["SummaryGroupFilter"] = "summary-group-filter";
+    EventsEnum["UpdateIOTAssetData"] = "update-iot-asset-data";
 })(EventsEnum = exports.EventsEnum || (exports.EventsEnum = {}));
 const TopNavBar = () => {
     return (react_1.default.createElement("div", null));
@@ -25518,7 +25429,7 @@ const TopNavBar = () => {
     widget: building_summary_1.default,
     configs: {
         layout: {
-            w: 11,
+            w: 12,
             h: 14,
             // w: 17,
             // h: 18,
@@ -25590,8 +25501,8 @@ const TopNavBar = () => {
     widget: iot_filter_1.default,
     configs: {
         layout: {
-            w: 12,
-            h: 8,
+            w: 11,
+            h: 5,
             // minH: 3,
             // minW: 2,
             //  maxH: 3,
@@ -25620,6 +25531,20 @@ const TopNavBar = () => {
         layout: {
             w: 15,
             h: 15,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        }
+    }
+});
+(0, uxp_1.registerWidget)({
+    id: "refresh_Btn",
+    widget: refresh_1.default,
+    configs: {
+        layout: {
+            w: 3,
+            h: 2,
             // minH: 3,
             // minW: 2,
             //  maxH: 3,
@@ -26451,7 +26376,7 @@ function _unsupportedIterableToArray(o, minLen) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"id":"e6a7f72a-85de-4259-ed4e-7412d22635d9","author":"eutech","widgets":[{"id":"topNavTabs","name":"Top Nav Tabs","description":" ","icon":"","tags":[]},{"id":"weatherIcons","name":"Weather Icons","description":" ","icon":"","tags":[]},{"id":"sunController","name":"Sun Controller","description":" ","icon":"","tags":[]},{"id":"cesiumOSMMap","name":"Cesium OSM Map","description":"Order Trend widget","icon":"","tags":[]},{"id":"maintenance_WorkOrder_Trend","name":"Maintenance Work Order Trend","description":"Order Trend widget","icon":"","tags":[]},{"id":"Order_Summary","name":"Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"segregation_Metrics_Chart","name":"Segregation Metrics Chart","description":"A sample widget","icon":"","tags":[]},{"id":"cctvWidget","name":"CCTV Widget","description":"A sample widget","icon":"","tags":[]},{"id":"wasteBinStatus","name":"Waste Bin Status","description":"A sample widget","icon":"","tags":[]},{"id":"waste_Collection_Vehicle","name":"Waste Collection Vehicle","description":"A sample widget","icon":"","tags":[]},{"id":"waste_segregation_Metrics","name":"Waste Segregation Metrics","description":"A sample widget","icon":"","tags":[]},{"id":"vehicleSummaryWidget","name":"Vehicle Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"energyConsumption","name":"Energy Consumption Widget","description":"A sample widget","icon":"","tags":[]},{"id":"streetLightStatusWidget","name":"Street Ligh Status Widget","description":"A sample widget","icon":"","tags":[]},{"id":"waterSummary","name":"Water Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"water_consumption","name":"Water Consumption Widget","description":"A sample widget","icon":"","tags":[]},{"id":"mapComponent","name":"Map Component","description":"A sample widget","icon":"","tags":[]},{"id":"streetLightWorkOrder","name":"Street Light Work Order","description":"A sample widget","icon":"","tags":[]},{"id":"waste-Generated-Trend","name":"Waste Generated Trend","description":"A sample widget","icon":"","tags":[]},{"id":"maintenance-Work-Order-Summary","name":"Maintenance Work Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"water_Leakage_Work_Order","name":"Water Leakage Work Order","description":"A sample widget","icon":"","tags":[]},{"id":"alert-Work-Order-Summary","name":"Alert WOrk Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"counts_Widget","name":"Counts","description":"A sample widget","icon":"","tags":[]},{"id":"alertTrends","name":"Alert Trends","description":"A sample widget","icon":"","tags":[]},{"id":"emergencyWorkOrderSummary","name":"Emergency Work Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"traffic_Control","name":"Traffic Control","description":"A sample widget","icon":"","tags":[]},{"id":"iaq_Summary","name":"IAQ Summary","description":"A sample widget","icon":"","tags":[]},{"id":"iaq_Widget","name":"IAQ","description":"A sample widget","icon":"","tags":[]},{"id":"comapre-IAQ","name":"Comapre IAQ","description":"A sample widget","icon":"","tags":[]},{"id":"cctvoverviewWidget","name":"CCTV Overview Widget","description":"A sample widget","icon":"","tags":[]},{"id":"heightMap","name":"Height Map","description":"A sample widget","icon":"","tags":[]},{"id":"districtToggle","name":"District Toggle","description":"A sample widget","icon":"","tags":[]},{"id":"top_Header","name":"Top Header","description":"A sample widget","icon":"","tags":[]},{"id":"top_IvivaHeader","name":"Top Iviva Header","description":"A sample widget","icon":"","tags":[]},{"id":"top_Right_Header","name":"Top Right Header","description":"A sample widget","icon":"","tags":[]},{"id":"searchBox_Container","name":"SearchBox Container","description":"A sample widget","icon":"","tags":[]},{"id":"powerBy_Widget","name":"PowerBy Widget","description":"A sample widget","icon":"","tags":[]},{"id":"partnership_Widget","name":"Partnership Widget","description":"A sample widget","icon":"","tags":[]},{"id":"cityNames_Widget","name":"CityNames Widget","description":"A sample widget","icon":"","tags":[]},{"id":"modeChange_Widget","name":"Mode Change Widget","description":"A sample widget","icon":"","tags":[]},{"id":"building_Summary","name":"Building Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"floor_Layout","name":"Building Floor Layout","description":"A sample widget","icon":"","tags":[]},{"id":"building_SmartBim","name":"Building Smart Bim","description":"A sample widget","icon":"","tags":[]},{"id":"building_Occupancy","name":"Building Occupancy","description":"A sample widget","icon":"","tags":[]},{"id":"incident_Management","name":"Incident Management","description":"A sample widget","icon":"","tags":[]},{"id":"iOT_Filter","name":"IOT Filter","description":"A sample widget","icon":"","tags":[]},{"id":"madinah_Facts","name":"Madinah Facts","description":"A sample widget","icon":"","tags":[]},{"id":"pole_Details","name":"Pole Details","description":"A sample widget","icon":"","tags":[]}],"sidebarLinks":[],"uis":[],"menuItems":[]}');
+module.exports = /*#__PURE__*/JSON.parse('{"id":"e6a7f72a-85de-4259-ed4e-7412d22635d9","author":"eutech","widgets":[{"id":"topNavTabs","name":"Top Nav Tabs","description":" ","icon":"","tags":[]},{"id":"weatherIcons","name":"Weather Icons","description":" ","icon":"","tags":[]},{"id":"sunController","name":"Sun Controller","description":" ","icon":"","tags":[]},{"id":"cesiumOSMMap","name":"Cesium OSM Map","description":"Order Trend widget","icon":"","tags":[]},{"id":"maintenance_WorkOrder_Trend","name":"Maintenance Work Order Trend","description":"Order Trend widget","icon":"","tags":[]},{"id":"Order_Summary","name":"Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"segregation_Metrics_Chart","name":"Segregation Metrics Chart","description":"A sample widget","icon":"","tags":[]},{"id":"cctvWidget","name":"CCTV Widget","description":"A sample widget","icon":"","tags":[]},{"id":"wasteBinStatus","name":"Waste Bin Status","description":"A sample widget","icon":"","tags":[]},{"id":"waste_Collection_Vehicle","name":"Waste Collection Vehicle","description":"A sample widget","icon":"","tags":[]},{"id":"waste_segregation_Metrics","name":"Waste Segregation Metrics","description":"A sample widget","icon":"","tags":[]},{"id":"vehicleSummaryWidget","name":"Vehicle Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"energyConsumption","name":"Energy Consumption Widget","description":"A sample widget","icon":"","tags":[]},{"id":"streetLightStatusWidget","name":"Street Ligh Status Widget","description":"A sample widget","icon":"","tags":[]},{"id":"waterSummary","name":"Water Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"water_consumption","name":"Water Consumption Widget","description":"A sample widget","icon":"","tags":[]},{"id":"mapComponent","name":"Map Component","description":"A sample widget","icon":"","tags":[]},{"id":"streetLightWorkOrder","name":"Street Light Work Order","description":"A sample widget","icon":"","tags":[]},{"id":"waste-Generated-Trend","name":"Waste Generated Trend","description":"A sample widget","icon":"","tags":[]},{"id":"maintenance-Work-Order-Summary","name":"Maintenance Work Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"water_Leakage_Work_Order","name":"Water Leakage Work Order","description":"A sample widget","icon":"","tags":[]},{"id":"alert-Work-Order-Summary","name":"Alert WOrk Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"counts_Widget","name":"Counts","description":"A sample widget","icon":"","tags":[]},{"id":"alertTrends","name":"Alert Trends","description":"A sample widget","icon":"","tags":[]},{"id":"emergencyWorkOrderSummary","name":"Emergency Work Order Summary","description":"A sample widget","icon":"","tags":[]},{"id":"traffic_Control","name":"Traffic Control","description":"A sample widget","icon":"","tags":[]},{"id":"iaq_Summary","name":"IAQ Summary","description":"A sample widget","icon":"","tags":[]},{"id":"iaq_Widget","name":"IAQ","description":"A sample widget","icon":"","tags":[]},{"id":"comapre-IAQ","name":"Comapre IAQ","description":"A sample widget","icon":"","tags":[]},{"id":"cctvoverviewWidget","name":"CCTV Overview Widget","description":"A sample widget","icon":"","tags":[]},{"id":"heightMap","name":"Height Map","description":"A sample widget","icon":"","tags":[]},{"id":"districtToggle","name":"District Toggle","description":"A sample widget","icon":"","tags":[]},{"id":"top_Header","name":"Top Header","description":"A sample widget","icon":"","tags":[]},{"id":"top_IvivaHeader","name":"Top Iviva Header","description":"A sample widget","icon":"","tags":[]},{"id":"top_Right_Header","name":"Top Right Header","description":"A sample widget","icon":"","tags":[]},{"id":"searchBox_Container","name":"SearchBox Container","description":"A sample widget","icon":"","tags":[]},{"id":"powerBy_Widget","name":"PowerBy Widget","description":"A sample widget","icon":"","tags":[]},{"id":"partnership_Widget","name":"Partnership Widget","description":"A sample widget","icon":"","tags":[]},{"id":"cityNames_Widget","name":"CityNames Widget","description":"A sample widget","icon":"","tags":[]},{"id":"modeChange_Widget","name":"Mode Change Widget","description":"A sample widget","icon":"","tags":[]},{"id":"building_Summary","name":"Building Summary Widget","description":"A sample widget","icon":"","tags":[]},{"id":"floor_Layout","name":"Building Floor Layout","description":"A sample widget","icon":"","tags":[]},{"id":"building_SmartBim","name":"Building Smart Bim","description":"A sample widget","icon":"","tags":[]},{"id":"building_Occupancy","name":"Building Occupancy","description":"A sample widget","icon":"","tags":[]},{"id":"incident_Management","name":"Incident Management","description":"A sample widget","icon":"","tags":[]},{"id":"iOT_Filter","name":"IOT Filter","description":"A sample widget","icon":"","tags":[]},{"id":"madinah_Facts","name":"Madinah Facts","description":"A sample widget","icon":"","tags":[]},{"id":"pole_Details","name":"Pole Details","description":"A sample widget","icon":"","tags":[]},{"id":"refresh_Btn","name":"Refresh Btn","description":"A sample widget","icon":"","tags":[]}],"sidebarLinks":[],"uis":[],"menuItems":[]}');
 
 /***/ })
 

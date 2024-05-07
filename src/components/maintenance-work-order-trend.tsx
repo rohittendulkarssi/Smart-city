@@ -149,7 +149,7 @@ return (
             margin={{
                 top: 2, right: 0, left: 0, bottom: 2,
             }}>
-            <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
+             <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
             <XAxis dataKey="name" />
             <YAxis orientation="left" />
             <Tooltip />
