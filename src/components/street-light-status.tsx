@@ -242,7 +242,7 @@ if (filterType === "day") {
 
 
     return ( 
-         <WidgetWrapper className="smart-city_box waste-bin-box">   
+         <WidgetWrapper className="smart-city_box waste-bin-box lft-widget-box">   
             <TitleBar title="Street Light Alerts" icon='https://static.iviva.com/images/Udhayimages/streetlight-alert.png'></TitleBar>
            
             <div className="smart-city-content">  
@@ -316,7 +316,7 @@ if (filterType === "day") {
                       </div>
 
                       <div className='chart-top' style={{marginTop:"0.5em"}}>
-                        <div className="sub_title_bar">Total SAR</div>  
+                        <div className="sub_title_bar">SAR  &#40; &#10005; 1000 &#41;</div>  
                       </div>
                       
                        <ResponsiveContainer> 

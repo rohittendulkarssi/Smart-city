@@ -33,8 +33,8 @@
 // background-image: linear-gradient(90deg, #0000 90%, #142827E8 100%),linear-gradient(270deg, #0000 90%, #142827E8 100%);
  
 
-    padding-top: 1.5em; 
-    padding-left: 1em; 
+    padding-top: 0em; 
+    padding-left: 0em; 
 
     &::before{  
 
@@ -82,6 +82,10 @@
         box-shadow: none;
         border-radius: 10px;
         z-index: 1;
+
+        &.lft-widget-box{
+            margin-left: 1em;
+        }
 
         
         
@@ -601,7 +605,7 @@
     }
 
     &.energy_consumption-box{ 
-
+       
         .smart-city-content{
                 display: block;
                 margin-top: 0em;
@@ -2041,7 +2045,7 @@
     height: 100%;
     position: absolute;
     display: inline-flex;
-    right: 1px!important;
+    right: -55px!important;
     
    
 
@@ -3176,16 +3180,29 @@
         align-items: end;
         text-align: right;
 
+        background: #fff;
+        border: 1px solid #033649;
+        border-radius: 5px;
+        padding: 1px 0;
+
         .searchbox{
-            border: 1px solid #033649;
+            // border: 1px solid #033649;
+            // padding: 9px 5px;
+            // border-radius: 5px;
+            // font-size: 1em;
+            // // width: 100%;
+            // width: 90%;
+            // text-align: left;
+            // outline: none;
+            // margin-right: 6%;
             padding: 9px 5px;
             border-radius: 5px;
             font-size: 1em;
-            // width: 100%;
-            width: 90%;
+            width: 91%;
             text-align: left;
             outline: none;
             margin-right: 6%;
+            border: 1px solid transparent;
             &:focus{
                 outline: none;
             }

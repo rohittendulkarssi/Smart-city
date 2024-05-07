@@ -240,7 +240,7 @@ function getPoleData(poleName: any) {
                     <table>
                         <thead>
                         <tr>
-                            <th style={{width:'28%'}}>CWOID</th>
+                            <th style={{width:'28%'}}>CWO ID</th>
                             <th style={{width:'15%'}}>Site Location</th>
                             <th style={{width:'30%'}}>Created Date</th>
                             <th style={{width:'20%'}}>Problem Type</th>
